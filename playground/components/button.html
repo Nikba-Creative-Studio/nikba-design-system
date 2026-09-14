@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en" data-theme="frost" data-glass="soft">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nikba Button and Icon Button component reference." />
+    <title>Button · Nikba Design System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body class="nds-scope">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="ambient ambient--one"></div><div class="ambient ambient--two"></div>
+    <header data-catalog-header data-current="components"></header>
+    <aside data-appearance-panel aria-label="Appearance controls"></aside>
+    <main id="main" class="nds-container page-main">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Overview</a><span aria-hidden="true">/</span><a href="/components/">Components</a><span aria-hidden="true">/</span><span aria-current="page">Button</span></nav>
+      <header class="page-hero component-hero">
+        <div><p class="eyebrow">Component 01 · Complete</p><h1 class="nds-display">Button</h1></div>
+        <p>Triggers an immediate action. Hierarchy comes from purpose, while native semantics carry interaction and accessibility.</p>
+      </header>
+      <div class="page-layout">
+        <nav class="page-sidebar" aria-label="Component sections"><span>Button</span><a href="#variants">Variants</a><a href="#sizes">Sizes</a><a href="#icons">Icons</a><a href="#states">States</a><a href="#guidance">Guidance</a><hr /><a href="/components/link.html">Link →</a></nav>
+        <div class="page-content">
+          <section id="variants" class="specimen reveal" aria-labelledby="variants-title">
+            <div class="specimen-heading"><p class="component-label">Variants</p><h2 id="variants-title">Action hierarchy</h2><p>Use one Primary action per decision region. Danger communicates consequence.</p></div>
+            <div class="specimen-row">
+              <div><span>Primary</span><button class="nds-button" type="button">Save changes</button></div>
+              <div><span>Secondary</span><button class="nds-button nds-button--secondary" type="button">Preview</button></div>
+              <div><span>Ghost</span><button class="nds-button nds-button--ghost" type="button">Cancel</button></div>
+              <div><span>Danger</span><button class="nds-button nds-button--danger" type="button">Delete project</button></div>
+            </div>
+          </section>
+          <section id="sizes" class="specimen reveal" aria-labelledby="sizes-title">
+            <div class="specimen-heading"><p class="component-label">Sizes</p><h2 id="sizes-title">Three density levels</h2><p>Medium and Large meet the minimum touch-target height. Reserve Small for dense pointer-first toolbars.</p></div>
+            <div class="specimen-row specimen-row--baseline"><div><span>Small · 36px</span><button class="nds-button nds-button--small" type="button">Small</button></div><div><span>Medium · 44px</span><button class="nds-button nds-button--medium" type="button">Medium</button></div><div><span>Large · 48px</span><button class="nds-button nds-button--large" type="button">Large</button></div></div>
+          </section>
+          <section id="icons" class="specimen reveal" aria-labelledby="icons-title">
+            <div class="specimen-heading"><p class="component-label">Icons</p><h2 id="icons-title">Support the label</h2><p>Decorative icons stay hidden from assistive technology. Icon-only controls require an accessible name.</p></div>
+            <div class="specimen-row">
+              <div><span>Leading</span><button class="nds-button nds-button--secondary" type="button"><span class="nds-button__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M8 3v10M3 8h10" /></svg></span>Add member</button></div>
+              <div><span>Trailing</span><button class="nds-button" type="button">Continue <span class="nds-button__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></button></div>
+              <div><span>Icon only</span><button class="nds-button nds-button--secondary nds-button--icon nds-button--medium" type="button" aria-label="Open settings"><span class="nds-button__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="2.25" /><path d="M8 2.25v1.2M8 12.55v1.2M13.75 8h-1.2M3.45 8h-1.2M12.07 3.93l-.85.85M4.78 11.22l-.85.85M12.07 12.07l-.85-.85M4.78 4.78l-.85-.85" /></svg></span></button></div>
+            </div>
+          </section>
+          <section id="states" class="specimen reveal" aria-labelledby="states-title">
+            <div class="specimen-heading"><p class="component-label">States</p><h2 id="states-title">Behavior is part of the contract</h2><p>Keyboard focus, asynchronous work, toggle state, and unavailability remain explicit.</p></div>
+            <div class="specimen-row">
+              <div><span>Loading</span><button class="nds-button" type="button" aria-busy="true" disabled>Saving changes</button></div>
+              <div><span>Toggle</span><button class="nds-button nds-button--secondary" type="button" aria-pressed="false" data-toggle-button>Grid view</button></div>
+              <div><span>Disabled</span><button class="nds-button" type="button" disabled>Publish</button></div>
+            </div>
+          </section>
+          <section id="guidance" class="guidance-panel nds-glass reveal" aria-labelledby="guidance-title"><p class="component-label">Content guidance</p><h2 id="guidance-title">Start with a clear verb.</h2><p>Write “Save changes,” “Add member,” or “Delete project.” Keep labels concise, specific, and on one line.</p><a class="nds-link nds-link--standalone" href="/components/link.html">Next component: Link <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></section>
+        </div>
+      </div>
+    </main>
+    <footer class="catalog-footer nds-container"><span>Nikba Design System</span><a class="nds-link" href="/components/">All components</a></footer>
+  </body>
+</html>

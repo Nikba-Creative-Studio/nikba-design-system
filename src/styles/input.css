@@ -1,0 +1,124 @@
+.nds-input {
+  width: 100%;
+  min-height: var(--nds-control-height-xl);
+  padding: var(--nds-space-3) var(--nds-space-4);
+  border: var(--nds-border-width) solid var(--nds-border);
+  border-radius: var(--nds-radius-md);
+  background: var(--nds-surface);
+  color: var(--nds-text);
+  font: var(--nds-font-weight-regular) var(--nds-font-size-base)/1.4 var(--nds-font-sans);
+  transition: border-color var(--nds-duration-fast) var(--nds-ease-standard),
+    box-shadow var(--nds-duration-fast) var(--nds-ease-standard),
+    background-color var(--nds-duration-fast) var(--nds-ease-standard);
+}
+
+.nds-input--small {
+  min-height: var(--nds-control-height-sm);
+  padding: var(--nds-space-2) var(--nds-space-3);
+  font-size: var(--nds-font-size-sm);
+}
+
+.nds-input--medium {
+  min-height: var(--nds-control-height-md);
+  padding: var(--nds-space-2) var(--nds-space-4);
+  font-size: var(--nds-font-size-md);
+}
+
+.nds-input--large {
+  min-height: var(--nds-control-height-xl);
+}
+
+.nds-input::placeholder { color: var(--nds-text-tertiary); }
+.nds-input:hover:not(:disabled, :read-only) { border-color: var(--nds-border-hover); }
+
+.nds-input:focus {
+  border-color: var(--nds-focus);
+  outline: none;
+  box-shadow: 0 0 0 var(--nds-focus-ring-width) color-mix(in srgb, var(--nds-focus) 18%, transparent);
+}
+
+.nds-input:disabled { opacity: var(--nds-disabled-opacity); cursor: not-allowed; }
+.nds-input:read-only { background: var(--nds-surface-alt); cursor: default; }
+.nds-input[aria-invalid='true'] { border-color: var(--nds-danger); }
+
+.nds-input[aria-invalid='true']:focus {
+  border-color: var(--nds-danger);
+  box-shadow: 0 0 0 var(--nds-focus-ring-width) color-mix(in srgb, var(--nds-danger) 18%, transparent);
+}
+
+.nds-input-shell {
+  min-height: var(--nds-control-height-xl);
+  padding-inline: var(--nds-space-4);
+  display: flex;
+  align-items: center;
+  gap: var(--nds-space-2);
+  border: var(--nds-border-width) solid var(--nds-border);
+  border-radius: var(--nds-radius-md);
+  background: var(--nds-surface);
+  color: var(--nds-text-tertiary);
+  transition: border-color var(--nds-duration-fast) var(--nds-ease-standard),
+    box-shadow var(--nds-duration-fast) var(--nds-ease-standard),
+    background-color var(--nds-duration-fast) var(--nds-ease-standard);
+}
+
+.nds-input-shell:hover:not(.nds-input-shell--disabled) { border-color: var(--nds-border-hover); }
+
+.nds-input-shell:focus-within {
+  border-color: var(--nds-focus);
+  box-shadow: 0 0 0 var(--nds-focus-ring-width) color-mix(in srgb, var(--nds-focus) 18%, transparent);
+}
+
+.nds-input-shell[data-invalid='true'] { border-color: var(--nds-danger); }
+
+.nds-input-shell[data-invalid='true']:focus-within {
+  box-shadow: 0 0 0 var(--nds-focus-ring-width) color-mix(in srgb, var(--nds-danger) 18%, transparent);
+}
+
+.nds-input-shell--disabled { opacity: var(--nds-disabled-opacity); cursor: not-allowed; }
+
+.nds-input-shell .nds-input {
+  min-width: 0;
+  min-height: calc(var(--nds-control-height-xl) - 2 * var(--nds-border-width));
+  padding-inline: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.nds-input-shell .nds-input:focus { border: 0; box-shadow: none; }
+
+.nds-input-shell__icon {
+  width: 1.125em;
+  height: 1.125em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  line-height: 0;
+}
+
+.nds-input-shell__icon > svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.nds-input-shell__text {
+  flex: 0 0 auto;
+  color: var(--nds-text-secondary);
+  font-size: var(--nds-font-size-sm);
+}
+
+@media (forced-colors: active) {
+  .nds-input { border-color: CanvasText; }
+  .nds-input:focus { outline: var(--nds-focus-ring-width) solid Highlight; outline-offset: var(--nds-focus-ring-offset); box-shadow: none; }
+  .nds-input[aria-invalid='true'] { border-color: Mark; }
+  .nds-input-shell { border-color: CanvasText; }
+  .nds-input-shell:focus-within { outline: var(--nds-focus-ring-width) solid Highlight; outline-offset: var(--nds-focus-ring-offset); box-shadow: none; }
+}

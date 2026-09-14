@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en" data-theme="frost" data-glass="soft">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nikba Checkbox and Radio component reference." />
+    <title>Checkbox and Radio · Nikba Design System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body class="nds-scope">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="ambient ambient--one"></div><div class="ambient ambient--two"></div>
+    <header data-catalog-header data-current="components"></header>
+    <aside data-appearance-panel aria-label="Appearance controls"></aside>
+    <main id="main" class="nds-container page-main">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Overview</a><span aria-hidden="true">/</span><a href="/components/">Components</a><span aria-hidden="true">/</span><span aria-current="page">Checkbox and Radio</span></nav>
+      <header class="page-hero component-hero">
+        <div><p class="eyebrow">Component 07 · Complete</p><h1 class="nds-display">Checkbox and Radio</h1></div>
+        <p>Checkbox supports independent selections. Radio chooses exactly one option from a visible, mutually exclusive group.</p>
+      </header>
+      <div class="page-layout">
+        <nav class="page-sidebar" aria-label="Component sections"><span>Checkbox and Radio</span><a href="#checkbox">Checkbox</a><a href="#indeterminate">Indeterminate</a><a href="#radio">Radio</a><a href="#cards">Choice cards</a><a href="#states">States</a><hr /><a href="/components/select.html">← Native Select</a></nav>
+        <div class="page-content">
+          <section id="checkbox" class="specimen reveal" aria-labelledby="checkbox-title">
+            <div class="specimen-heading"><p class="component-label">Checkbox</p><h2 id="checkbox-title">Choose any number of options</h2><p>Each option remains independently selectable and uses a visible native label.</p></div>
+            <fieldset class="nds-choice-group"><legend class="nds-choice-group__legend">Email preferences</legend>
+              <label class="nds-choice"><input class="nds-checkbox" type="checkbox" name="email-preferences" checked /><span class="nds-choice__control" aria-hidden="true"><svg class="nds-choice__check" viewBox="0 0 16 16"><path d="m3.5 8 3 3 6-6" /></svg><svg class="nds-choice__mixed" viewBox="0 0 16 16"><path d="M4 8h8" /></svg></span><span class="nds-choice__content"><span class="nds-choice__label">Project updates</span><span class="nds-choice__description">Milestones, comments, and delivery changes.</span></span></label>
+              <label class="nds-choice"><input class="nds-checkbox" type="checkbox" name="email-preferences" /><span class="nds-choice__control" aria-hidden="true"><svg class="nds-choice__check" viewBox="0 0 16 16"><path d="m3.5 8 3 3 6-6" /></svg><svg class="nds-choice__mixed" viewBox="0 0 16 16"><path d="M4 8h8" /></svg></span><span class="nds-choice__content"><span class="nds-choice__label">Product announcements</span><span class="nds-choice__description">New capabilities and important releases.</span></span></label>
+            </fieldset>
+          </section>
+          <section id="indeterminate" class="specimen reveal" aria-labelledby="indeterminate-title">
+            <div class="specimen-heading"><p class="component-label">Indeterminate</p><h2 id="indeterminate-title">Reflect a partially selected group</h2><p>The parent updates from its child checkboxes and can select or clear the entire group.</p></div>
+            <fieldset class="nds-choice-group" data-checkbox-group><legend class="nds-choice-group__legend">Project access</legend>
+              <label class="nds-choice nds-choice--large"><input class="nds-checkbox" type="checkbox" data-checkbox-master /><span class="nds-choice__control" aria-hidden="true"><svg class="nds-choice__check" viewBox="0 0 16 16"><path d="m3.5 8 3 3 6-6" /></svg><svg class="nds-choice__mixed" viewBox="0 0 16 16"><path d="M4 8h8" /></svg></span><span class="nds-choice__content"><span class="nds-choice__label">Select all access</span><span class="nds-choice__description">Controls every permission in this group.</span></span></label>
+              <div class="choice-indent">
+                <label class="nds-choice"><input class="nds-checkbox" type="checkbox" checked data-checkbox-item /><span class="nds-choice__control" aria-hidden="true"><svg class="nds-choice__check" viewBox="0 0 16 16"><path d="m3.5 8 3 3 6-6" /></svg><svg class="nds-choice__mixed" viewBox="0 0 16 16"><path d="M4 8h8" /></svg></span><span class="nds-choice__content"><span class="nds-choice__label">View projects</span></span></label>
+                <label class="nds-choice"><input class="nds-checkbox" type="checkbox" checked data-checkbox-item /><span class="nds-choice__control" aria-hidden="true"><svg class="nds-choice__check" viewBox="0 0 16 16"><path d="m3.5 8 3 3 6-6" /></svg><svg class="nds-choice__mixed" viewBox="0 0 16 16"><path d="M4 8h8" /></svg></span><span class="nds-choice__content"><span class="nds-choice__label">Edit content</span></span></label>
+                <label class="nds-choice"><input class="nds-checkbox" type="checkbox" data-checkbox-item /><span class="nds-choice__control" aria-hidden="true"><svg class="nds-choice__check" viewBox="0 0 16 16"><path d="m3.5 8 3 3 6-6" /></svg><svg class="nds-choice__mixed" viewBox="0 0 16 16"><path d="M4 8h8" /></svg></span><span class="nds-choice__content"><span class="nds-choice__label">Manage billing</span></span></label>
+              </div>
+            </fieldset>
+          </section>
+          <section id="radio" class="specimen reveal" aria-labelledby="radio-title">
+            <div class="specimen-heading"><p class="component-label">Radio</p><h2 id="radio-title">Choose exactly one option</h2><p>A native fieldset and legend name the group. Arrow-key behavior stays native.</p></div>
+            <fieldset class="nds-choice-group nds-choice-group--inline"><legend class="nds-choice-group__legend">Team size</legend>
+              <label class="nds-choice"><input class="nds-radio" type="radio" name="team-size" value="small" checked /><span class="nds-choice__control" aria-hidden="true"></span><span class="nds-choice__content"><span class="nds-choice__label">1–10</span></span></label>
+              <label class="nds-choice"><input class="nds-radio" type="radio" name="team-size" value="medium" /><span class="nds-choice__control" aria-hidden="true"></span><span class="nds-choice__content"><span class="nds-choice__label">11–50</span></span></label>
+              <label class="nds-choice"><input class="nds-radio" type="radio" name="team-size" value="large" /><span class="nds-choice__control" aria-hidden="true"></span><span class="nds-choice__content"><span class="nds-choice__label">51+</span></span></label>
+            </fieldset>
+          </section>
+          <section id="cards" class="specimen reveal" aria-labelledby="cards-title">
+            <div class="specimen-heading"><p class="component-label">Choice cards</p><h2 id="cards-title">Add description without changing semantics</h2><p>The complete card remains the label and selection still uses native Radio behavior.</p></div>
+            <fieldset class="nds-choice-group choice-card-grid"><legend class="nds-choice-group__legend">Workspace visibility</legend>
+              <label class="nds-choice nds-choice--card"><input class="nds-radio" type="radio" name="visibility" value="private" checked /><span class="nds-choice__control" aria-hidden="true"></span><span class="nds-choice__content"><span class="nds-choice__label">Private</span><span class="nds-choice__description">Only invited members can access this workspace.</span></span></label>
+              <label class="nds-choice nds-choice--card"><input class="nds-radio" type="radio" name="visibility" value="organization" /><span class="nds-choice__control" aria-hidden="true"></span><span class="nds-choice__content"><span class="nds-choice__label">Organization</span><span class="nds-choice__description">Everyone in the organization can discover it.</span></span></label>
+            </fieldset>
+          </section>
+          <section id="states" class="specimen reveal" aria-labelledby="states-title">
+            <div class="specimen-heading"><p class="component-label">States</p><h2 id="states-title">Unavailable and invalid choices remain explicit</h2><p>Native disabled prevents interaction. Invalid groups connect a specific recovery message.</p></div>
+            <div class="field-grid">
+              <label class="nds-choice"><input class="nds-checkbox" type="checkbox" disabled /><span class="nds-choice__control" aria-hidden="true"><svg class="nds-choice__check" viewBox="0 0 16 16"><path d="m3.5 8 3 3 6-6" /></svg><svg class="nds-choice__mixed" viewBox="0 0 16 16"><path d="M4 8h8" /></svg></span><span class="nds-choice__content"><span class="nds-choice__label">Advanced reporting</span><span class="nds-choice__description">Unavailable on the current plan.</span></span></label>
+              <fieldset class="nds-choice-group" aria-describedby="terms-error"><legend class="nds-choice-group__legend">Confirmation</legend><label class="nds-choice"><input class="nds-checkbox" type="checkbox" required aria-invalid="true" /><span class="nds-choice__control" aria-hidden="true"><svg class="nds-choice__check" viewBox="0 0 16 16"><path d="m3.5 8 3 3 6-6" /></svg><svg class="nds-choice__mixed" viewBox="0 0 16 16"><path d="M4 8h8" /></svg></span><span class="nds-choice__content"><span class="nds-choice__label">I confirm the project details are correct</span></span></label><p class="nds-field__error" id="terms-error">Confirm the project details to continue.</p></fieldset>
+            </div>
+          </section>
+          <section class="guidance-panel nds-glass reveal" aria-labelledby="guidance-title"><p class="component-label">Usage guidance</p><h2 id="guidance-title">Make the selection model obvious.</h2><p>Use Checkbox for independent choices and Radio when one visible option must replace another.</p><a class="nds-link nds-link--standalone" href="/components/">Back to components <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></section>
+        </div>
+      </div>
+    </main>
+    <footer class="catalog-footer nds-container"><span>Nikba Design System</span><a class="nds-link" href="/components/">All components</a></footer>
+  </body>
+</html>

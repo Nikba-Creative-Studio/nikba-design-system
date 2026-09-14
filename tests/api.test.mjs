@@ -1,0 +1,27 @@
+import assert from 'node:assert/strict';
+import {
+  glassLevels,
+  setGlassLevel,
+  setTheme,
+  themes,
+} from '../dist/nikba-design-system.js';
+
+const target = { dataset: {} };
+
+assert.deepEqual(themes, ['frost', 'mist', 'graphite']);
+assert.deepEqual(glassLevels, ['off', 'soft', 'clear']);
+
+for (const theme of themes) {
+  setTheme(theme, target);
+  assert.equal(target.dataset.theme, theme);
+}
+
+for (const level of glassLevels) {
+  setGlassLevel(level, target);
+  assert.equal(target.dataset.glass, level);
+}
+
+assert.throws(() => setTheme('unknown', target), TypeError);
+assert.throws(() => setGlassLevel('unknown', target), TypeError);
+
+console.log('Public theme and glass APIs passed.');

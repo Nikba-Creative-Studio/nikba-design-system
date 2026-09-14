@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en" data-theme="frost" data-glass="soft">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nikba Badge and selectable Chip component reference." />
+    <title>Badge and Chip · Nikba Design System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body class="nds-scope">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="ambient ambient--one"></div><div class="ambient ambient--two"></div>
+    <header data-catalog-header data-current="components"></header>
+    <aside data-appearance-panel aria-label="Appearance controls"></aside>
+    <main id="main" class="nds-container page-main">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Overview</a><span aria-hidden="true">/</span><a href="/components/">Components</a><span aria-hidden="true">/</span><span aria-current="page">Badge and Chip</span></nav>
+      <header class="page-hero component-hero">
+        <div><p class="eyebrow">Component 03 · Complete</p><h1 class="nds-display">Badge and Chip</h1></div>
+        <p>Badge communicates compact status or metadata. Chip is an interactive control that lets a user select a filter or option.</p>
+      </header>
+      <div class="page-layout">
+        <nav class="page-sidebar" aria-label="Component sections"><span>Badge and Chip</span><a href="#badge">Badge</a><a href="#tones">Tones</a><a href="#chip">Chip</a><a href="#states">States</a><a href="#guidance">Guidance</a><hr /><a href="/components/link.html">← Link</a></nav>
+        <div class="page-content">
+          <section id="badge" class="specimen reveal" aria-labelledby="badge-title">
+            <div class="specimen-heading"><p class="component-label">Badge</p><h2 id="badge-title">Compact, read-only information</h2><p>Use Badge for a status, category, count, or short piece of metadata. It never receives focus or triggers an action.</p></div>
+            <div class="specimen-row specimen-row--baseline">
+              <div><span>Default</span><span class="nds-badge">Draft</span></div>
+              <div><span>With indicator</span><span class="nds-badge nds-badge--success"><span class="nds-badge__dot" aria-hidden="true"></span>Active</span></div>
+              <div><span>Large</span><span class="nds-badge nds-badge--large">Enterprise</span></div>
+              <div><span>Accent</span><span class="nds-badge nds-badge--accent">New</span></div>
+            </div>
+          </section>
+          <section id="tones" class="specimen reveal" aria-labelledby="tones-title">
+            <div class="specimen-heading"><p class="component-label">Semantic tones</p><h2 id="tones-title">Meaning stays consistent across themes</h2><p>Pair the tone with explicit text. Color supports the message and never carries it alone.</p></div>
+            <div class="specimen-row">
+              <span class="nds-badge nds-badge--success">Approved</span>
+              <span class="nds-badge nds-badge--warning">Needs review</span>
+              <span class="nds-badge nds-badge--danger">Payment failed</span>
+              <span class="nds-badge nds-badge--info">Scheduled</span>
+            </div>
+          </section>
+          <section id="chip" class="specimen reveal" aria-labelledby="chip-title">
+            <div class="specimen-heading"><p class="component-label">Selectable Chip</p><h2 id="chip-title">Independent filter choices</h2><p>Use a native button with <code>aria-pressed</code>. Each chip toggles independently and exposes its state to assistive technology.</p></div>
+            <div class="chip-demo" role="group" aria-label="Filter projects">
+              <button class="nds-chip" type="button" aria-pressed="true" data-toggle-button><span class="nds-chip__check" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="m3.5 8 3 3 6-6" /></svg></span>All projects</button>
+              <button class="nds-chip" type="button" aria-pressed="false" data-toggle-button><span class="nds-chip__check" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="m3.5 8 3 3 6-6" /></svg></span>Branding <span class="nds-chip__count">8</span></button>
+              <button class="nds-chip" type="button" aria-pressed="false" data-toggle-button><span class="nds-chip__check" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="m3.5 8 3 3 6-6" /></svg></span>Digital <span class="nds-chip__count">12</span></button>
+              <button class="nds-chip" type="button" aria-pressed="false" data-toggle-button><span class="nds-chip__check" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="m3.5 8 3 3 6-6" /></svg></span>Strategy</button>
+            </div>
+          </section>
+          <section id="states" class="specimen reveal" aria-labelledby="states-title">
+            <div class="specimen-heading"><p class="component-label">Variants and states</p><h2 id="states-title">Clear selection and availability</h2><p>Selection changes both surface and icon visibility. Disabled controls retain a readable label.</p></div>
+            <div class="specimen-row">
+              <div><span>Quiet</span><button class="nds-chip nds-chip--quiet" type="button" aria-pressed="false" data-toggle-button><span class="nds-chip__check" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="m3.5 8 3 3 6-6" /></svg></span>Archived</button></div>
+              <div><span>Medium</span><button class="nds-chip nds-chip--medium" type="button" aria-pressed="true" data-toggle-button><span class="nds-chip__check" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="m3.5 8 3 3 6-6" /></svg></span>Selected</button></div>
+              <div><span>Disabled</span><button class="nds-chip" type="button" aria-pressed="false" disabled>Unavailable</button></div>
+            </div>
+          </section>
+          <section id="guidance" class="guidance-panel nds-glass reveal" aria-labelledby="guidance-title"><p class="component-label">Usage guidance</p><h2 id="guidance-title">Keep information and interaction distinct.</h2><p>A Badge describes something. A Chip changes a selection. Do not style a Badge like an interactive control or use a Chip for static status.</p><a class="nds-link nds-link--standalone" href="/components/field.html">Next component: Field <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></section>
+        </div>
+      </div>
+    </main>
+    <footer class="catalog-footer nds-container"><span>Nikba Design System</span><a class="nds-link" href="/components/">All components</a></footer>
+  </body>
+</html>

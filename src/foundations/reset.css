@@ -1,0 +1,31 @@
+.nds-scope {
+  min-height: 100%;
+  background: var(--nds-bg);
+  color: var(--nds-text);
+  font-family: var(--nds-font-sans);
+  line-height: var(--nds-line-height-body);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+:where(.nds-scope, .nds-scope *, .nds-scope *::before, .nds-scope *::after) {
+  box-sizing: border-box;
+}
+
+:where(.nds-scope button, .nds-scope input, .nds-scope select, .nds-scope textarea) {
+  font: inherit;
+}
+
+:where(.nds-scope button, .nds-scope input, .nds-scope select, .nds-scope textarea, .nds-scope a) {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.nds-scope [hidden] {
+  display: none !important;
+}
+
+.nds-focusable:focus-visible {
+  outline: var(--nds-focus-ring-width) solid var(--nds-focus);
+  outline-offset: var(--nds-focus-ring-offset);
+}
+

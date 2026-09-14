@@ -1,9 +1,26 @@
 .nds-glass {
-  border: 1px solid var(--nds-border);
+  border: var(--nds-border-width) solid var(--nds-border);
   background: var(--nds-glass);
+  background: color-mix(in srgb, var(--nds-glass) var(--nds-glass-opacity), transparent);
   box-shadow: var(--nds-glass-highlight), var(--nds-shadow-subtle);
-  backdrop-filter: blur(var(--nds-glass-blur)) saturate(120%);
-  -webkit-backdrop-filter: blur(var(--nds-glass-blur)) saturate(120%);
+  backdrop-filter: var(--nds-glass-filter);
+  -webkit-backdrop-filter: var(--nds-glass-filter);
+}
+
+@media (forced-colors: active) {
+  .nds-glass {
+    border-color: CanvasText;
+    background: Canvas;
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+}
+
+[data-glass='off'] .nds-glass,
+.nds-glass[data-glass='off'] {
+  background: var(--nds-surface);
+  box-shadow: var(--nds-shadow-subtle);
 }
 
 @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {

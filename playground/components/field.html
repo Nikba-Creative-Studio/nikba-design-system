@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en" data-theme="frost" data-glass="soft">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nikba Field, Label, Helper Text, and Error Message reference." />
+    <title>Field · Nikba Design System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body class="nds-scope">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="ambient ambient--one"></div><div class="ambient ambient--two"></div>
+    <header data-catalog-header data-current="components"></header>
+    <aside data-appearance-panel aria-label="Appearance controls"></aside>
+    <main id="main" class="nds-container page-main">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Overview</a><span aria-hidden="true">/</span><a href="/components/">Components</a><span aria-hidden="true">/</span><span aria-current="page">Field</span></nav>
+      <header class="page-hero component-hero">
+        <div><p class="eyebrow">Component 04 · Complete</p><h1 class="nds-display">Field</h1></div>
+        <p>Connects a label, form control, supporting guidance, and validation message into one understandable input experience.</p>
+      </header>
+      <div class="page-layout">
+        <nav class="page-sidebar" aria-label="Component sections"><span>Field</span><a href="#anatomy">Anatomy</a><a href="#optional">Optional</a><a href="#invalid">Invalid</a><a href="#states">States</a><a href="#inline">Inline</a><hr /><a href="/components/badge-chip.html">← Badge and Chip</a></nav>
+        <div class="page-content">
+          <section id="anatomy" class="specimen reveal" aria-labelledby="anatomy-title">
+            <div class="specimen-heading"><p class="component-label">Anatomy</p><h2 id="anatomy-title">A visible label and useful guidance</h2><p>The label names the value. Helper text explains format or consequence before the user encounters an error.</p></div>
+            <div class="field-specimen">
+              <div class="nds-field">
+                <div class="nds-field__label-row"><label class="nds-field__label" for="project-name">Project name<span class="nds-field__required" aria-hidden="true">*</span></label></div>
+                <input class="nds-input" id="project-name" name="project-name" type="text" placeholder="Website redesign" required aria-describedby="project-name-help" />
+                <p class="nds-field__helper" id="project-name-help">Use the name your team will recognize.</p>
+              </div>
+            </div>
+          </section>
+          <section id="optional" class="specimen reveal" aria-labelledby="optional-title">
+            <div class="specimen-heading"><p class="component-label">Optional value</p><h2 id="optional-title">State optionality explicitly</h2><p>When most fields are required, mark the exceptions as optional. Avoid long instructions inside placeholders.</p></div>
+            <div class="field-specimen">
+              <div class="nds-field">
+                <div class="nds-field__label-row"><label class="nds-field__label" for="reference">Internal reference</label><span class="nds-field__optional">Optional</span></div>
+                <input class="nds-input" id="reference" name="reference" type="text" placeholder="e.g. NK-2048" aria-describedby="reference-help" />
+                <p class="nds-field__helper" id="reference-help">Visible only to your organization.</p>
+              </div>
+            </div>
+          </section>
+          <section id="invalid" class="specimen reveal" aria-labelledby="invalid-title">
+            <div class="specimen-heading"><p class="component-label">Validation</p><h2 id="invalid-title">Explain how to recover</h2><p>Keep the entered value when validation fails. Connect the message to the control and describe the correction.</p></div>
+            <div class="field-specimen">
+              <div class="nds-field">
+                <div class="nds-field__label-row"><label class="nds-field__label" for="email">Work email<span class="nds-field__required" aria-hidden="true">*</span></label></div>
+                <input class="nds-input" id="email" name="email" type="email" value="hello@" required aria-invalid="true" aria-describedby="email-error" />
+                <p class="nds-field__error" id="email-error"><span class="nds-field__error-icon" aria-hidden="true"><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="6" /><path d="M8 4.75v4.1M8 11.35v.1" /></svg></span>Enter a complete email address, such as name@company.com.</p>
+              </div>
+            </div>
+          </section>
+          <section id="states" class="specimen reveal" aria-labelledby="states-title">
+            <div class="specimen-heading"><p class="component-label">States</p><h2 id="states-title">Disabled and readonly are different</h2><p>Disabled values are unavailable. Readonly values remain focusable and can be selected or copied.</p></div>
+            <div class="field-grid">
+              <div class="nds-field nds-field--disabled"><div class="nds-field__label-row"><label class="nds-field__label" for="workspace">Workspace</label></div><input class="nds-input" id="workspace" type="text" value="Nikba Studio" disabled /><p class="nds-field__helper">Managed by your administrator.</p></div>
+              <div class="nds-field"><div class="nds-field__label-row"><label class="nds-field__label" for="account-id">Account ID</label></div><input class="nds-input" id="account-id" type="text" value="NKB-0048" readonly aria-describedby="account-id-help" /><p class="nds-field__helper" id="account-id-help">Select and copy this value when contacting support.</p></div>
+            </div>
+          </section>
+          <section id="inline" class="specimen reveal" aria-labelledby="inline-title">
+            <div class="specimen-heading"><p class="component-label">Responsive layout</p><h2 id="inline-title">Inline when space supports it</h2><p>The label moves above the control on smaller screens while source order and associations stay intact.</p></div>
+            <div class="nds-field nds-field--inline"><div class="nds-field__label-row"><label class="nds-field__label" for="timezone">Time zone</label></div><input class="nds-input" id="timezone" type="text" value="Europe/Chisinau" aria-describedby="timezone-help" /><p class="nds-field__helper" id="timezone-help">Used for reports and scheduled activity.</p></div>
+          </section>
+          <section class="guidance-panel nds-glass reveal" aria-labelledby="guidance-title"><p class="component-label">Usage guidance</p><h2 id="guidance-title">Write labels that survive without placeholders.</h2><p>Use short nouns for labels, concise instructions for helper text, and specific recovery steps for errors.</p><a class="nds-link nds-link--standalone" href="/components/input-textarea.html">Next component: Input and Textarea <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></section>
+        </div>
+      </div>
+    </main>
+    <footer class="catalog-footer nds-container"><span>Nikba Design System</span><a class="nds-link" href="/components/">All components</a></footer>
+  </body>
+</html>

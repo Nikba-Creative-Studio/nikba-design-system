@@ -1,0 +1,61 @@
+.nds-textarea {
+  width: 100%;
+  min-height: 10rem;
+  padding: var(--nds-space-3) var(--nds-space-4);
+  display: block;
+  resize: vertical;
+  border: var(--nds-border-width) solid var(--nds-border);
+  border-radius: var(--nds-radius-md);
+  background: var(--nds-surface);
+  color: var(--nds-text);
+  font: var(--nds-font-weight-regular) var(--nds-font-size-base)/1.5 var(--nds-font-sans);
+  transition: border-color var(--nds-duration-fast) var(--nds-ease-standard),
+    box-shadow var(--nds-duration-fast) var(--nds-ease-standard),
+    background-color var(--nds-duration-fast) var(--nds-ease-standard);
+}
+
+.nds-textarea--small { min-height: 7.5rem; }
+.nds-textarea--large { min-height: 14rem; }
+.nds-textarea::placeholder { color: var(--nds-text-tertiary); }
+.nds-textarea:hover:not(:disabled, :read-only) { border-color: var(--nds-border-hover); }
+
+.nds-textarea:focus {
+  border-color: var(--nds-focus);
+  outline: none;
+  box-shadow: 0 0 0 var(--nds-focus-ring-width) color-mix(in srgb, var(--nds-focus) 18%, transparent);
+}
+
+.nds-textarea:disabled { opacity: var(--nds-disabled-opacity); cursor: not-allowed; resize: none; }
+.nds-textarea:read-only { background: var(--nds-surface-alt); cursor: default; }
+.nds-textarea[aria-invalid='true'] { border-color: var(--nds-danger); }
+
+.nds-textarea[aria-invalid='true']:focus {
+  border-color: var(--nds-danger);
+  box-shadow: 0 0 0 var(--nds-focus-ring-width) color-mix(in srgb, var(--nds-danger) 18%, transparent);
+}
+
+.nds-textarea-meta {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--nds-space-3);
+}
+
+.nds-character-count {
+  margin-inline-start: auto;
+  color: var(--nds-text-tertiary);
+  font-size: var(--nds-font-size-xs);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.nds-character-count[data-limit-near='true'] { color: var(--nds-warning); }
+.nds-character-count[data-limit-reached='true'] { color: var(--nds-danger); font-weight: var(--nds-font-weight-semibold); }
+
+@media (forced-colors: active) {
+  .nds-textarea { border-color: CanvasText; }
+  .nds-textarea:focus { outline: var(--nds-focus-ring-width) solid Highlight; outline-offset: var(--nds-focus-ring-offset); box-shadow: none; }
+  .nds-textarea[aria-invalid='true'] { border-color: Mark; }
+  .nds-character-count[data-limit-near='true'],
+  .nds-character-count[data-limit-reached='true'] { color: Mark; }
+}

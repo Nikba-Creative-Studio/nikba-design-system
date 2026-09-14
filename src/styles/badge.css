@@ -1,0 +1,51 @@
+.nds-badge {
+  --nds-badge-tone: var(--nds-text-secondary);
+
+  min-height: 24px;
+  padding-inline: var(--nds-space-2);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--nds-space-1);
+  border: var(--nds-border-width) solid color-mix(in srgb, var(--nds-badge-tone) 32%, transparent);
+  border-radius: var(--nds-radius-pill);
+  background: color-mix(in srgb, var(--nds-badge-tone) 9%, transparent);
+  color: var(--nds-badge-tone);
+  font: var(--nds-font-weight-semibold) var(--nds-font-size-xs)/1 var(--nds-font-sans);
+  white-space: nowrap;
+}
+
+.nds-badge--accent {
+  --nds-badge-tone: var(--nds-text-inverse);
+
+  border-color: var(--nds-accent);
+  background: var(--nds-accent);
+}
+
+.nds-badge--success { --nds-badge-tone: var(--nds-success); }
+.nds-badge--warning { --nds-badge-tone: var(--nds-warning); }
+.nds-badge--danger { --nds-badge-tone: var(--nds-danger); }
+.nds-badge--info { --nds-badge-tone: var(--nds-info); }
+
+.nds-badge--large {
+  min-height: 28px;
+  padding-inline: var(--nds-space-3);
+  font-size: var(--nds-font-size-sm);
+}
+
+.nds-badge__dot {
+  width: 0.5em;
+  height: 0.5em;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+@media (forced-colors: active) {
+  .nds-badge,
+  .nds-badge--accent {
+    border-color: CanvasText;
+    background: Canvas;
+    color: CanvasText;
+  }
+}

@@ -1,0 +1,80 @@
+:root {
+  --nds-font-sans: 'Onest', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  --nds-font-weight-regular: 400;
+  --nds-font-weight-medium: 500;
+  --nds-font-weight-semibold: 600;
+  --nds-font-weight-bold: 700;
+
+  --nds-font-size-xs: 0.75rem;
+  --nds-font-size-sm: 0.875rem;
+  --nds-font-size-md: 0.9375rem;
+  --nds-font-size-base: 1rem;
+  --nds-font-size-lg: 1.125rem;
+  --nds-font-size-xl: 1.25rem;
+  --nds-font-size-heading-3: clamp(1.25rem, 2vw, 1.75rem);
+  --nds-font-size-heading-2: clamp(1.75rem, 3vw, 2.75rem);
+  --nds-font-size-heading-1: clamp(2.25rem, 5vw, 4.75rem);
+  --nds-font-size-display: clamp(3.5rem, 8vw, 7.5rem);
+
+  --nds-line-height-tight: 0.94;
+  --nds-line-height-heading: 1.05;
+  --nds-line-height-control: 1;
+  --nds-line-height-body: 1.65;
+
+  --nds-letter-spacing-display: -0.055em;
+  --nds-letter-spacing-heading: -0.035em;
+  --nds-letter-spacing-body: -0.006em;
+  --nds-letter-spacing-label: 0.08em;
+
+  --nds-space-0: 0;
+  --nds-space-1: 0.25rem;
+  --nds-space-2: 0.5rem;
+  --nds-space-3: 0.75rem;
+  --nds-space-4: 1rem;
+  --nds-space-5: 1.5rem;
+  --nds-space-6: 2rem;
+  --nds-space-7: 3rem;
+  --nds-space-8: 4rem;
+  --nds-space-9: 6rem;
+  --nds-space-10: 9rem;
+
+  --nds-control-height-sm: 2.25rem;
+  --nds-control-height-md: 2.75rem;
+  --nds-control-height-lg: 3rem;
+  --nds-control-height-xl: 3.25rem;
+
+  --nds-radius-none: 0;
+  --nds-radius-sm: 0.75rem;
+  --nds-radius-md: 1rem;
+  --nds-radius-lg: 1.75rem;
+  --nds-radius-xl: 2.25rem;
+  --nds-radius-pill: 999px;
+
+  --nds-border-width: 1px;
+  --nds-border-width-strong: 2px;
+
+  --nds-opacity-disabled: 0.42;
+  --nds-opacity-muted: 0.68;
+
+  --nds-duration-instant: 0ms;
+  --nds-duration-fast: 180ms;
+  --nds-duration-normal: 260ms;
+  --nds-duration-slow: 650ms;
+  --nds-ease-standard: ease;
+  --nds-ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+
+  --nds-breakpoint-mobile: 43.75rem;
+  --nds-breakpoint-tablet: 68.75rem;
+
+  --nds-z-base: 0;
+  --nds-z-dropdown: 100;
+  --nds-z-sticky: 200;
+  --nds-z-overlay: 400;
+  --nds-z-modal: 500;
+  --nds-z-toast: 600;
+
+  --nds-container-max: 80rem;
+  --nds-prose-max: 47.5rem;
+}
+

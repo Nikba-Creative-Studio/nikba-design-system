@@ -1,0 +1,100 @@
+:root,
+[data-theme='frost'] {
+  color-scheme: light;
+  --nds-color-canvas: #f5f5f3;
+  --nds-color-surface: #ffffff;
+  --nds-color-surface-alt: #ececea;
+  --nds-color-surface-hover: #f9f9f8;
+  --nds-color-glass: rgba(255, 255, 255, 0.68);
+  --nds-color-glass-strong: rgba(255, 255, 255, 0.84);
+  --nds-color-border: #d9d9d5;
+  --nds-color-border-hover: #b8b8b2;
+  --nds-color-text: #171716;
+  --nds-color-text-secondary: #5f5f5a;
+  --nds-color-text-tertiary: #74746e;
+  --nds-color-text-inverse: #ffffff;
+  --nds-color-accent: #20211f;
+  --nds-color-accent-hover: #3a3b38;
+  --nds-color-focus: #667085;
+  --nds-color-success: #237a57;
+  --nds-color-warning: #956b20;
+  --nds-color-danger: #b43b3b;
+  --nds-color-danger-hover: #963131;
+  --nds-color-info: #496a86;
+  --nds-elevation-subtle: 0 1px 2px rgba(23, 23, 22, 0.05), 0 8px 30px rgba(23, 23, 22, 0.04);
+  --nds-elevation-raised: 0 18px 54px rgba(23, 23, 22, 0.13);
+  --nds-glass-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.72);
+}
+
+[data-theme='mist'] {
+  color-scheme: light;
+  --nds-color-canvas: #e9e9e5;
+  --nds-color-surface: #f4f4f1;
+  --nds-color-surface-alt: #deded9;
+  --nds-color-surface-hover: #fafaf7;
+  --nds-color-glass: rgba(246, 246, 242, 0.62);
+  --nds-color-glass-strong: rgba(246, 246, 242, 0.8);
+  --nds-color-border: #cbcbc5;
+  --nds-color-border-hover: #aaa9a2;
+  --nds-color-text: #1c1d1b;
+  --nds-color-text-secondary: #5c5d58;
+  --nds-color-text-tertiary: #6f706a;
+  --nds-color-text-inverse: #ffffff;
+  --nds-color-accent: #292b28;
+  --nds-color-accent-hover: #444640;
+  --nds-color-focus: #69716b;
+  --nds-color-success: #237a57;
+  --nds-color-warning: #8b6728;
+  --nds-color-danger: #a83e3e;
+  --nds-color-danger-hover: #8e3434;
+  --nds-color-info: #4b6b7c;
+  --nds-elevation-subtle: 0 1px 2px rgba(28, 29, 27, 0.06), 0 10px 32px rgba(28, 29, 27, 0.06);
+  --nds-elevation-raised: 0 18px 54px rgba(28, 29, 27, 0.14);
+  --nds-glass-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.62);
+}
+
+[data-theme='graphite'] {
+  color-scheme: dark;
+  --nds-color-canvas: #111210;
+  --nds-color-surface: #1a1b19;
+  --nds-color-surface-alt: #222320;
+  --nds-color-surface-hover: #292a27;
+  --nds-color-glass: rgba(31, 32, 29, 0.62);
+  --nds-color-glass-strong: rgba(31, 32, 29, 0.82);
+  --nds-color-border: #343632;
+  --nds-color-border-hover: #555851;
+  --nds-color-text: #f2f2ee;
+  --nds-color-text-secondary: #b4b5ae;
+  --nds-color-text-tertiary: #85877f;
+  --nds-color-text-inverse: #161714;
+  --nds-color-accent: #eeeee9;
+  --nds-color-accent-hover: #d4d5ce;
+  --nds-color-focus: #a6ada7;
+  --nds-color-success: #65b68e;
+  --nds-color-warning: #d3ac63;
+  --nds-color-danger: #e27a7a;
+  --nds-color-danger-hover: #f08d8d;
+  --nds-color-info: #8db6d2;
+  --nds-elevation-subtle: 0 1px 2px rgba(0, 0, 0, 0.18), 0 10px 34px rgba(0, 0, 0, 0.16);
+  --nds-elevation-raised: 0 20px 60px rgba(0, 0, 0, 0.32);
+  --nds-glass-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+:root,
+[data-glass='soft'] {
+  --nds-glass-blur: 8px;
+  --nds-glass-opacity: 100%;
+  --nds-glass-filter: blur(var(--nds-glass-blur)) saturate(120%);
+}
+
+[data-glass='off'] {
+  --nds-glass-blur: 0px;
+  --nds-glass-opacity: 100%;
+  --nds-glass-filter: none;
+}
+
+[data-glass='clear'] {
+  --nds-glass-blur: 14px;
+  --nds-glass-opacity: 78%;
+  --nds-glass-filter: blur(var(--nds-glass-blur)) saturate(120%);
+}

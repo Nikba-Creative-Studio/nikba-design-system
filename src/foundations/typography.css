@@ -1,0 +1,68 @@
+.nds-display,
+.nds-heading-1,
+.nds-heading-2,
+.nds-heading-3,
+.nds-body,
+.nds-body-large,
+.nds-label {
+  margin-block: 0;
+  font-family: var(--nds-font-sans);
+}
+
+.nds-display {
+  font-size: var(--nds-font-size-display);
+  font-weight: var(--nds-font-weight-semibold);
+  line-height: var(--nds-line-height-tight);
+  letter-spacing: var(--nds-letter-spacing-display);
+}
+
+.nds-heading-1 {
+  font-size: var(--nds-font-size-heading-1);
+  font-weight: var(--nds-font-weight-semibold);
+  line-height: 1;
+  letter-spacing: -0.045em;
+}
+
+.nds-heading-2 {
+  font-size: var(--nds-font-size-heading-2);
+  font-weight: var(--nds-font-weight-semibold);
+  line-height: var(--nds-line-height-heading);
+  letter-spacing: var(--nds-letter-spacing-heading);
+}
+
+.nds-heading-3 {
+  font-size: var(--nds-font-size-heading-3);
+  font-weight: var(--nds-font-weight-semibold);
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+}
+
+.nds-body,
+.nds-body-large {
+  font-weight: var(--nds-font-weight-regular);
+  letter-spacing: var(--nds-letter-spacing-body);
+}
+
+.nds-body {
+  font-size: var(--nds-font-size-base);
+  line-height: var(--nds-line-height-body);
+}
+
+.nds-body-large {
+  font-size: clamp(var(--nds-font-size-lg), 1.8vw, 1.5rem);
+  line-height: 1.5;
+  letter-spacing: -0.012em;
+}
+
+.nds-label {
+  font-size: var(--nds-font-size-xs);
+  font-weight: var(--nds-font-weight-semibold);
+  line-height: 1.2;
+  letter-spacing: var(--nds-letter-spacing-label);
+  text-transform: uppercase;
+}
+
+.nds-prose {
+  width: min(100%, var(--nds-prose-max));
+}
+

@@ -16,9 +16,16 @@
     "./css": "./dist/nikba-design-system.css"
   },
   "scripts": {
-    "dev": "vite playground",
-    "build": "vite build",
-    "preview": "vite preview --outDir dist-playground"
+    "dev": "vite --config vite.playground.config.js",
+    "build": "npm run build:library && npm run build:catalog",
+    "build:library": "vite build",
+    "build:catalog": "vite build --config vite.playground.config.js",
+    "preview": "vite preview --config vite.playground.config.js",
+    "test:api": "node tests/api.test.mjs",
+    "test:css": "node tests/css-contract.test.mjs",
+    "test:contrast": "node tests/contrast.test.mjs",
+    "test": "npm run test:api && npm run test:css && npm run test:contrast",
+    "verify": "npm run build && npm test && npm pack --dry-run"
   },
   "keywords": [
     "design-system",
@@ -35,5 +42,8 @@
   },
   "devDependencies": {
     "vite": "^8.3.0"
+  },
+  "engines": {
+    "node": ">=20"
   }
 }

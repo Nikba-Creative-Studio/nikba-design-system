@@ -1,17 +1,17 @@
 .nds-tag {
-  min-height: 38px;
-  padding: 0.55rem 0.82rem;
+  min-height: var(--nds-control-height-sm);
+  padding: var(--nds-space-2) var(--nds-space-3);
   display: inline-flex;
   align-items: center;
-  border: 1px solid var(--nds-border);
+  border: var(--nds-border-width) solid var(--nds-border);
   border-radius: var(--nds-radius-pill);
   background: var(--nds-glass);
   color: var(--nds-text-secondary);
-  font: 600 0.78rem/1 var(--nds-font-sans);
+  font: var(--nds-font-weight-semibold) var(--nds-font-size-xs)/var(--nds-line-height-control) var(--nds-font-sans);
   cursor: pointer;
-  transition: background-color var(--nds-duration-fast) ease,
-    border-color var(--nds-duration-fast) ease,
-    color var(--nds-duration-fast) ease;
+  transition: background-color var(--nds-duration-fast) var(--nds-ease-standard),
+    border-color var(--nds-duration-fast) var(--nds-ease-standard),
+    color var(--nds-duration-fast) var(--nds-ease-standard);
 }
 
 .nds-tag:hover {
@@ -21,11 +21,23 @@
 }
 
 .nds-tag:focus-visible {
-  outline: 3px solid var(--nds-focus);
-  outline-offset: 3px;
+  outline: var(--nds-focus-ring-width) solid var(--nds-focus);
+  outline-offset: var(--nds-focus-ring-offset);
 }
 
+.nds-tag:disabled,
 .nds-tag[aria-disabled='true'] {
-  opacity: 0.42;
+  opacity: var(--nds-disabled-opacity);
+  cursor: not-allowed;
   pointer-events: none;
+}
+
+@media (forced-colors: active) {
+  .nds-tag {
+    border-color: ButtonText;
+  }
+
+  .nds-tag:focus-visible {
+    outline-color: Highlight;
+  }
 }

@@ -8,6 +8,7 @@ export default defineConfig({
       name: 'NikbaDesignSystem',
       fileName: 'nikba-design-system',
       cssFileName: 'nikba-design-system',
+      formats: ['es'],
     },
   },
 });

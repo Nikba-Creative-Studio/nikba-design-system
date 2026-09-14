@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en" data-theme="frost" data-glass="soft">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nikba Link component reference." />
+    <title>Link · Nikba Design System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body class="nds-scope">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="ambient ambient--one"></div><div class="ambient ambient--two"></div>
+    <header data-catalog-header data-current="components"></header>
+    <aside data-appearance-panel aria-label="Appearance controls"></aside>
+    <main id="main" class="nds-container page-main">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Overview</a><span aria-hidden="true">/</span><a href="/components/">Components</a><span aria-hidden="true">/</span><span aria-current="page">Link</span></nav>
+      <header class="page-hero component-hero">
+        <div><p class="eyebrow">Component 02 · Complete</p><h1 class="nds-display">Link</h1></div>
+        <p>Navigates to another location or resource. Its language and destination should make the result of activation clear.</p>
+      </header>
+      <div class="page-layout">
+        <nav class="page-sidebar" aria-label="Component sections"><span>Link</span><a href="#variants">Variants</a><a href="#context">In context</a><a href="#states">States</a><a href="#external">External links</a><a href="#guidance">Guidance</a><hr /><a href="/components/button.html">← Button</a></nav>
+        <div class="page-content">
+          <section id="variants" class="specimen reveal" aria-labelledby="variants-title">
+            <div class="specimen-heading"><p class="component-label">Variants</p><h2 id="variants-title">Match emphasis to context</h2><p>Inline links retain an underline. Standalone links carry their own directional rhythm.</p></div>
+            <div class="specimen-row">
+              <div><span>Default</span><a class="nds-link" href="#context">Read the usage guidance</a></div>
+              <div><span>Subtle</span><a class="nds-link nds-link--subtle" href="/foundations.html">Foundation reference</a></div>
+              <div><span>Standalone</span><a class="nds-link nds-link--standalone" href="/components/">Browse components <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></div>
+            </div>
+            <div class="inverse-panel"><span>Inverse</span><a class="nds-link nds-link--inverse" href="/">Return to overview</a></div>
+          </section>
+          <section id="context" class="specimen reveal" aria-labelledby="context-title">
+            <div class="specimen-heading"><p class="component-label">In context</p><h2 id="context-title">Visible inside real copy</h2></div>
+            <p class="link-copy">Load Onest in the consuming application and use semantic tokens for component decisions. The <a class="nds-link" href="/foundations.html">foundation reference explains font delivery and theme nesting</a> with copyable examples.</p>
+          </section>
+          <section id="states" class="specimen reveal" aria-labelledby="states-title">
+            <div class="specimen-heading"><p class="component-label">States</p><h2 id="states-title">Location and availability</h2><p>Current location is programmatic. A disabled link leaves the focus order and needs activation prevention in the application.</p></div>
+            <div class="specimen-row">
+              <div><span>Current</span><a class="nds-link" href="/components/link.html" aria-current="page">Link</a></div>
+              <div><span>Disabled</span><a class="nds-link" href="/components/link.html" aria-disabled="true" tabindex="-1" onclick="event.preventDefault()">Unavailable destination</a></div>
+            </div>
+          </section>
+          <section id="external" class="specimen reveal" aria-labelledby="external-title">
+            <div class="specimen-heading"><p class="component-label">External destination</p><h2 id="external-title">Announce a new browsing context</h2></div>
+            <a class="nds-link nds-link--standalone" href="https://example.com" target="_blank" rel="noreferrer">External resource <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M4 12 12 4M6 4h6v6" /></svg></span><span class="nds-visually-hidden"> (opens in a new tab)</span></a>
+          </section>
+          <section id="guidance" class="guidance-panel nds-glass reveal" aria-labelledby="guidance-title"><p class="component-label">Content guidance</p><h2 id="guidance-title">Name the destination.</h2><p>Prefer “Foundation reference” over “Click here.” Use a Button for an interface action and a Link for navigation.</p><a class="nds-link nds-link--standalone" href="/components/badge-chip.html">Next component: Badge and Chip <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></section>
+        </div>
+      </div>
+    </main>
+    <footer class="catalog-footer nds-container"><span>Nikba Design System</span><a class="nds-link" href="/components/">All components</a></footer>
+  </body>
+</html>

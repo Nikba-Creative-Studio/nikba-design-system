@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en" data-theme="frost" data-glass="soft">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nikba Input and Textarea component reference." />
+    <title>Input and Textarea · Nikba Design System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body class="nds-scope">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="ambient ambient--one"></div><div class="ambient ambient--two"></div>
+    <header data-catalog-header data-current="components"></header>
+    <aside data-appearance-panel aria-label="Appearance controls"></aside>
+    <main id="main" class="nds-container page-main">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Overview</a><span aria-hidden="true">/</span><a href="/components/">Components</a><span aria-hidden="true">/</span><span aria-current="page">Input and Textarea</span></nav>
+      <header class="page-hero component-hero">
+        <div><p class="eyebrow">Component 05 · Complete</p><h1 class="nds-display">Input and Textarea</h1></div>
+        <p>Collect short and multiline text while preserving native behavior, visible labels, clear focus, and recoverable validation.</p>
+      </header>
+      <div class="page-layout">
+        <nav class="page-sidebar" aria-label="Component sections"><span>Input and Textarea</span><a href="#input">Input</a><a href="#sizes">Sizes</a><a href="#adornments">Adornments</a><a href="#states">States</a><a href="#textarea">Textarea</a><a href="#count">Character count</a><hr /><a href="/components/field.html">← Field</a></nav>
+        <div class="page-content">
+          <section id="input" class="specimen reveal" aria-labelledby="input-title">
+            <div class="specimen-heading"><p class="component-label">Input</p><h2 id="input-title">Use the native type that matches the value</h2><p>Correct types improve keyboards, autofill, validation, and assistive-technology context.</p></div>
+            <div class="field-grid">
+              <div class="nds-field"><div class="nds-field__label-row"><label class="nds-field__label" for="full-name">Full name</label></div><input class="nds-input" id="full-name" name="name" type="text" autocomplete="name" placeholder="Alex Morgan" /></div>
+              <div class="nds-field"><div class="nds-field__label-row"><label class="nds-field__label" for="work-email">Work email</label></div><input class="nds-input" id="work-email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="alex@company.com" /></div>
+            </div>
+          </section>
+          <section id="sizes" class="specimen reveal" aria-labelledby="sizes-title">
+            <div class="specimen-heading"><p class="component-label">Sizes</p><h2 id="sizes-title">Match density to the interface</h2><p>Medium and Large work for touch. Small is reserved for dense desktop tools.</p></div>
+            <div class="input-size-grid">
+              <div class="nds-field"><label class="nds-field__label" for="input-small">Small · 36px</label><input class="nds-input nds-input--small" id="input-small" type="text" value="Compact value" /></div>
+              <div class="nds-field"><label class="nds-field__label" for="input-medium">Medium · 44px</label><input class="nds-input nds-input--medium" id="input-medium" type="text" value="Standard value" /></div>
+              <div class="nds-field"><label class="nds-field__label" for="input-large">Large · 52px</label><input class="nds-input nds-input--large" id="input-large" type="text" value="Prominent value" /></div>
+            </div>
+          </section>
+          <section id="adornments" class="specimen reveal" aria-labelledby="adornments-title">
+            <div class="specimen-heading"><p class="component-label">Adornments</p><h2 id="adornments-title">Clarify format without replacing the label</h2><p>Icons are decorative when the label already explains the value. Prefixes and suffixes stay outside the editable value.</p></div>
+            <div class="field-grid">
+              <div class="nds-field"><label class="nds-field__label" for="project-search">Search projects</label><div class="nds-input-shell"><span class="nds-input-shell__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><circle cx="7" cy="7" r="4.25" /><path d="m10.25 10.25 3 3" /></svg></span><input class="nds-input" id="project-search" type="search" placeholder="Search by name" /></div></div>
+              <div class="nds-field"><label class="nds-field__label" for="website">Website</label><div class="nds-input-shell"><span class="nds-input-shell__text">https://</span><input class="nds-input" id="website" type="url" inputmode="url" placeholder="example.com" /><span class="nds-input-shell__text">/</span></div></div>
+            </div>
+          </section>
+          <section id="states" class="specimen reveal" aria-labelledby="states-title">
+            <div class="specimen-heading"><p class="component-label">States</p><h2 id="states-title">Preserve meaning and entered values</h2><p>Invalid feedback stays connected to the control. Disabled and readonly use their native HTML behavior.</p></div>
+            <div class="field-grid">
+              <div class="nds-field"><label class="nds-field__label" for="invalid-code">Project code</label><input class="nds-input" id="invalid-code" type="text" value="12" aria-invalid="true" aria-describedby="invalid-code-error" /><p class="nds-field__error" id="invalid-code-error">Use at least four characters.</p></div>
+              <div class="nds-field nds-field--disabled"><label class="nds-field__label" for="disabled-input">Organization</label><input class="nds-input" id="disabled-input" type="text" value="Nikba Studio" disabled /></div>
+              <div class="nds-field"><label class="nds-field__label" for="readonly-input">Client ID</label><input class="nds-input" id="readonly-input" type="text" value="CLI-2048" readonly /></div>
+            </div>
+          </section>
+          <section id="textarea" class="specimen reveal" aria-labelledby="textarea-title">
+            <div class="specimen-heading"><p class="component-label">Textarea</p><h2 id="textarea-title">Long-form text with vertical resize</h2><p>Textarea grows vertically at the user’s request and never breaks the page width.</p></div>
+            <div class="nds-field"><label class="nds-field__label" for="project-brief">Project brief</label><textarea class="nds-textarea" id="project-brief" name="brief" placeholder="Describe the goal, audience, and desired outcome."></textarea><p class="nds-field__helper">Include the context needed for someone new to understand the project.</p></div>
+          </section>
+          <section id="count" class="specimen reveal" aria-labelledby="count-title">
+            <div class="specimen-heading"><p class="component-label">Character count</p><h2 id="count-title">Show limits before they become errors</h2><p>The count updates while typing and changes emphasis near the native maximum length.</p></div>
+            <div class="nds-field"><label class="nds-field__label" for="summary">Short summary</label><textarea class="nds-textarea nds-textarea--small" id="summary" name="summary" maxlength="160" data-character-input placeholder="Summarize the project in one or two sentences."></textarea><div class="nds-textarea-meta"><p class="nds-field__helper">Used in project cards and search results.</p><span class="nds-character-count" data-character-count="summary">0 / 160</span></div></div>
+          </section>
+          <section class="guidance-panel nds-glass reveal" aria-labelledby="guidance-title"><p class="component-label">Usage guidance</p><h2 id="guidance-title">Ask only for information the experience needs.</h2><p>Choose the correct native type, enable relevant autocomplete, and keep placeholder examples short.</p><a class="nds-link nds-link--standalone" href="/components/select.html">Next component: Native Select <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></section>
+        </div>
+      </div>
+    </main>
+    <footer class="catalog-footer nds-container"><span>Nikba Design System</span><a class="nds-link" href="/components/">All components</a></footer>
+  </body>
+</html>

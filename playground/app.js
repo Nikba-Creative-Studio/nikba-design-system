@@ -1,55 +1,180 @@
+import { glassLevels, setGlassLevel, setTheme, themes } from '../src/index.js';
+import logoUrl from '../src/logo.svg?url';
+import './styles.css';
+
 const root = document.documentElement;
-const themeButtons = document.querySelectorAll('[data-theme-choice]');
-const glassButtons = document.querySelectorAll('[data-glass-choice]');
-const navigation = document.querySelector('[data-nav]');
+const themeKey = 'nds-catalog-theme';
+const glassKey = 'nds-catalog-glass';
 
-themeButtons.forEach((button) => {
-  button.addEventListener('click', (event) => {
-    const value = event.currentTarget.getAttribute('data-theme-choice');
-    root.setAttribute('data-theme', value);
-    themeButtons.forEach((item) => {
-      item.setAttribute('aria-pressed', String(item.getAttribute('data-theme-choice') === value));
-    });
-  });
-});
-
-glassButtons.forEach((button) => {
-  button.addEventListener('click', (event) => {
-    const value = event.currentTarget.getAttribute('data-glass-choice');
-    root.setAttribute('data-glass', value);
-    glassButtons.forEach((item) => {
-      item.setAttribute('aria-pressed', String(item.getAttribute('data-glass-choice') === value));
-    });
-  });
-});
-
-const revealObserver = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (!entry.isIntersecting) return;
-    entry.target.classList.add('is-visible');
-    revealObserver.unobserve(entry.target);
-  });
-}, { threshold: 0.14 });
-
-document.querySelectorAll('.reveal').forEach((element) => revealObserver.observe(element));
-
-function updateNavigation() {
-  navigation?.classList.toggle('is-scrolled', window.scrollY > 20);
+function readPreference(key, allowedValues, fallback) {
+  try {
+    const value = localStorage.getItem(key);
+    return allowedValues.includes(value) ? value : fallback;
+  } catch {
+    return fallback;
+  }
 }
 
-window.addEventListener('scroll', updateNavigation, { passive: true });
-updateNavigation();
+function writePreference(key, value) {
+  try {
+    localStorage.setItem(key, value);
+  } catch {
+    return;
+  }
+}
 
-if (matchMedia('(hover: hover)').matches) {
-  document.querySelectorAll('.spotlight').forEach((card) => {
-    let frame;
-    card.addEventListener('pointermove', (event) => {
-      cancelAnimationFrame(frame);
-      frame = requestAnimationFrame(() => {
-        const bounds = card.getBoundingClientRect();
-        card.style.setProperty('--pointer-x', `${event.clientX - bounds.left}px`);
-        card.style.setProperty('--pointer-y', `${event.clientY - bounds.top}px`);
-      });
-    });
+const currentSection = document.querySelector('[data-catalog-header]')?.dataset.current;
+const navigationItems = [
+  ['overview', '/', 'Overview'],
+  ['foundations', '/foundations.html', 'Foundations'],
+  ['components', '/components/', 'Components'],
+];
+
+document.querySelector('[data-catalog-header]')?.replaceChildren(
+  Object.assign(document.createElement('nav'), {
+    className: 'catalog-nav',
+    ariaLabel: 'Primary navigation',
+    innerHTML: `
+      <a class="wordmark" href="/" aria-label="Nikba home">
+        <img src="${logoUrl}" width="102" height="34" alt="" />
+      </a>
+      <div class="catalog-nav__links">
+        ${navigationItems
+          .map(
+            ([id, href, label]) =>
+              `<a href="${href}"${id === currentSection ? ' aria-current="page"' : ''}>${label}</a>`,
+          )
+          .join('')}
+      </div>
+      <span class="release-badge">Alpha 01</span>
+    `,
+  }),
+);
+
+document.querySelector('[data-appearance-panel]')?.replaceChildren(
+  Object.assign(document.createElement('div'), {
+    className: 'lab-panel nds-glass',
+    innerHTML: `
+      <fieldset class="control-group">
+        <legend>Theme</legend>
+        <div class="segmented" data-theme-controls>
+          <button type="button" data-value="frost">Frost</button>
+          <button type="button" data-value="mist">Mist</button>
+          <button type="button" data-value="graphite">Graphite</button>
+        </div>
+      </fieldset>
+      <fieldset class="control-group">
+        <legend>Glass</legend>
+        <div class="segmented" data-glass-controls>
+          <button type="button" data-value="off">Off</button>
+          <button type="button" data-value="soft">Soft</button>
+          <button type="button" data-value="clear">Clear</button>
+        </div>
+      </fieldset>
+    `,
+  }),
+);
+
+function updatePressedState(selector, value) {
+  document.querySelectorAll(`${selector} button`).forEach((button) => {
+    button.setAttribute('aria-pressed', String(button.dataset.value === value));
   });
+}
+
+function applyTheme(theme) {
+  setTheme(theme);
+  updatePressedState('[data-theme-controls]', theme);
+  writePreference(themeKey, theme);
+}
+
+function applyGlass(level) {
+  setGlassLevel(level);
+  updatePressedState('[data-glass-controls]', level);
+  document.querySelectorAll('[data-glass-label]').forEach((label) => {
+    label.textContent = level.charAt(0).toUpperCase() + level.slice(1);
+  });
+  writePreference(glassKey, level);
+}
+
+applyTheme(readPreference(themeKey, themes, root.dataset.theme || 'frost'));
+applyGlass(readPreference(glassKey, glassLevels, root.dataset.glass || 'soft'));
+
+document.querySelector('[data-theme-controls]')?.addEventListener('click', (event) => {
+  const button = event.target.closest('button[data-value]');
+  if (button) applyTheme(button.dataset.value);
+});
+
+document.querySelector('[data-glass-controls]')?.addEventListener('click', (event) => {
+  const button = event.target.closest('button[data-value]');
+  if (button) applyGlass(button.dataset.value);
+});
+
+document.querySelectorAll('[data-toggle-button]').forEach((button) => {
+  button.addEventListener('click', () => {
+    button.setAttribute('aria-pressed', String(button.getAttribute('aria-pressed') !== 'true'));
+  });
+});
+
+document.querySelectorAll('[data-character-input]').forEach((control) => {
+  const counter = document.querySelector(`[data-character-count="${control.id}"]`);
+  if (!counter) return;
+
+  const updateCharacterCount = () => {
+    const limit = control.maxLength;
+    const current = control.value.length;
+    const nearLimit = limit > 0 && current >= limit * 0.9;
+    const atLimit = limit > 0 && current >= limit;
+
+    counter.textContent = `${current} / ${limit}`;
+    counter.dataset.limitNear = String(nearLimit && !atLimit);
+    counter.dataset.limitReached = String(atLimit);
+    counter.setAttribute('aria-live', nearLimit ? 'polite' : 'off');
+  };
+
+  updateCharacterCount();
+  control.addEventListener('input', updateCharacterCount);
+});
+
+document.querySelectorAll('[data-checkbox-group]').forEach((group) => {
+  const master = group.querySelector('[data-checkbox-master]');
+  const items = [...group.querySelectorAll('[data-checkbox-item]')];
+  if (!master || items.length === 0) return;
+
+  const updateMaster = () => {
+    const selectedCount = items.filter((item) => item.checked).length;
+    master.checked = selectedCount === items.length;
+    master.indeterminate = selectedCount > 0 && selectedCount < items.length;
+  };
+
+  master.addEventListener('change', () => {
+    items.forEach((item) => {
+      item.checked = master.checked;
+    });
+    updateMaster();
+  });
+
+  items.forEach((item) => item.addEventListener('change', updateMaster));
+  updateMaster();
+});
+
+const catalogNav = document.querySelector('.catalog-nav');
+const updateNavigationSurface = () => catalogNav?.classList.toggle('is-scrolled', scrollY > 12);
+updateNavigationSurface();
+addEventListener('scroll', updateNavigationSurface, { passive: true });
+
+if ('IntersectionObserver' in window) {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.12 },
+  );
+  document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
+} else {
+  document.querySelectorAll('.reveal').forEach((element) => element.classList.add('is-visible'));
 }

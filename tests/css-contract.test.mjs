@@ -1,0 +1,74 @@
+import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
+
+const css = await readFile(new URL('../dist/nikba-design-system.css', import.meta.url), 'utf8');
+
+const requiredContracts = [
+  '--nds-space-10',
+  '--nds-color-canvas',
+  '--nds-focus-ring-width',
+  '.nds-container',
+  '.nds-stack',
+  '.nds-cluster',
+  '.nds-grid',
+  '.nds-visually-hidden',
+  '.nds-display',
+  '.nds-button',
+  '.nds-button--small',
+  '.nds-button--secondary',
+  '.nds-button--ghost',
+  '.nds-button--danger',
+  '.nds-button--icon',
+  '.nds-button[aria-busy=true]',
+  '.nds-button:focus-visible',
+  '.nds-link',
+  '.nds-link--subtle',
+  '.nds-link--standalone',
+  '.nds-link--inverse',
+  '.nds-link[aria-current]',
+  '.nds-link:focus-visible',
+  '.nds-badge',
+  '.nds-badge--success',
+  '.nds-badge--danger',
+  '.nds-badge__dot',
+  '.nds-chip',
+  '.nds-chip--medium',
+  '.nds-chip[aria-pressed=true]',
+  '.nds-chip:focus-visible',
+  '.nds-field',
+  '.nds-field--inline',
+  '.nds-field__label',
+  '.nds-field__helper',
+  '.nds-field__error',
+  '.nds-input',
+  '.nds-input--small',
+  '.nds-input--medium',
+  '.nds-input-shell',
+  '.nds-input-shell__icon',
+  '.nds-input[aria-invalid=true]',
+  '.nds-textarea',
+  '.nds-textarea--large',
+  '.nds-character-count',
+  '.nds-select-shell',
+  '.nds-select',
+  '.nds-select--small',
+  '.nds-select--medium',
+  '.nds-select[aria-invalid=true]',
+  '.nds-choice-group',
+  '.nds-choice',
+  '.nds-choice--card',
+  '.nds-checkbox',
+  '.nds-radio',
+  '.nds-checkbox:checked',
+  '.nds-checkbox:indeterminate',
+  '.nds-radio:checked',
+  '.nds-glass',
+];
+
+for (const contract of requiredContracts) {
+  assert.ok(css.includes(contract), `Missing CSS contract: ${contract}`);
+}
+
+assert.ok(!css.includes('fonts.googleapis.com'), 'The CSS bundle must not download fonts.');
+
+console.log('Public CSS foundation contract passed.');

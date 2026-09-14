@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en" data-theme="frost" data-glass="soft">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nikba Native Select component reference." />
+    <title>Native Select · Nikba Design System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body class="nds-scope">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="ambient ambient--one"></div><div class="ambient ambient--two"></div>
+    <header data-catalog-header data-current="components"></header>
+    <aside data-appearance-panel aria-label="Appearance controls"></aside>
+    <main id="main" class="nds-container page-main">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Overview</a><span aria-hidden="true">/</span><a href="/components/">Components</a><span aria-hidden="true">/</span><span aria-current="page">Native Select</span></nav>
+      <header class="page-hero component-hero">
+        <div><p class="eyebrow">Component 06 · Complete</p><h1 class="nds-display">Native Select</h1></div>
+        <p>Lets a user choose one value from a familiar native menu with platform keyboard, pointer, and assistive-technology behavior.</p>
+      </header>
+      <div class="page-layout">
+        <nav class="page-sidebar" aria-label="Component sections"><span>Native Select</span><a href="#default">Default</a><a href="#sizes">Sizes</a><a href="#groups">Groups</a><a href="#states">States</a><a href="#content">Content</a><hr /><a href="/components/input-textarea.html">← Input and Textarea</a></nav>
+        <div class="page-content">
+          <section id="default" class="specimen reveal" aria-labelledby="default-title">
+            <div class="specimen-heading"><p class="component-label">Default</p><h2 id="default-title">One choice from a known set</h2><p>A placeholder explains what to choose and cannot become a submitted value.</p></div>
+            <div class="field-specimen"><div class="nds-field"><label class="nds-field__label" for="project-status">Project status</label><div class="nds-select-shell"><select class="nds-select" id="project-status" name="status" required aria-describedby="project-status-help"><option value="" selected disabled>Select a status</option><option value="draft">Draft</option><option value="review">In review</option><option value="approved">Approved</option><option value="archived">Archived</option></select></div><p class="nds-field__helper" id="project-status-help">Status controls where the project appears in team views.</p></div></div>
+          </section>
+          <section id="sizes" class="specimen reveal" aria-labelledby="sizes-title">
+            <div class="specimen-heading"><p class="component-label">Sizes</p><h2 id="sizes-title">Three density levels</h2><p>Medium and Large work for touch. Use Small only in dense desktop interfaces.</p></div>
+            <div class="input-size-grid">
+              <div class="nds-field"><label class="nds-field__label" for="select-small">Small · 36px</label><div class="nds-select-shell"><select class="nds-select nds-select--small" id="select-small"><option>Last 7 days</option><option>Last 30 days</option></select></div></div>
+              <div class="nds-field"><label class="nds-field__label" for="select-medium">Medium · 44px</label><div class="nds-select-shell"><select class="nds-select nds-select--medium" id="select-medium"><option>Last 30 days</option><option>Last 90 days</option></select></div></div>
+              <div class="nds-field"><label class="nds-field__label" for="select-large">Large · 52px</label><div class="nds-select-shell"><select class="nds-select nds-select--large" id="select-large"><option>This year</option><option>Last year</option></select></div></div>
+            </div>
+          </section>
+          <section id="groups" class="specimen reveal" aria-labelledby="groups-title">
+            <div class="specimen-heading"><p class="component-label">Option groups</p><h2 id="groups-title">Organize a longer list</h2><p>Native <code>optgroup</code> labels help scan related values without adding a second interaction layer.</p></div>
+            <div class="field-specimen"><div class="nds-field"><label class="nds-field__label" for="office">Office location</label><div class="nds-select-shell"><select class="nds-select" id="office" name="office"><optgroup label="Europe"><option>Chisinau</option><option>Bucharest</option><option>London</option></optgroup><optgroup label="North America"><option>New York</option><option>Toronto</option></optgroup></select></div></div></div>
+          </section>
+          <section id="states" class="specimen reveal" aria-labelledby="states-title">
+            <div class="specimen-heading"><p class="component-label">States</p><h2 id="states-title">Validation and availability remain native</h2><p>Select has no readonly state. Use disabled only when the value is unavailable and explain why when needed.</p></div>
+            <div class="field-grid">
+              <div class="nds-field"><label class="nds-field__label" for="invalid-role">Project role</label><div class="nds-select-shell"><select class="nds-select" id="invalid-role" aria-invalid="true" aria-describedby="invalid-role-error"><option value="" selected>Select a role</option><option>Owner</option><option>Editor</option><option>Viewer</option></select></div><p class="nds-field__error" id="invalid-role-error">Select a role to continue.</p></div>
+              <div class="nds-field nds-field--disabled"><label class="nds-field__label" for="disabled-plan">Billing plan</label><div class="nds-select-shell"><select class="nds-select" id="disabled-plan" disabled aria-describedby="disabled-plan-help"><option>Enterprise</option></select></div><p class="nds-field__helper" id="disabled-plan-help">Managed by your organization.</p></div>
+            </div>
+          </section>
+          <section id="content" class="specimen reveal" aria-labelledby="content-title">
+            <div class="specimen-heading"><p class="component-label">Content</p><h2 id="content-title">Keep labels concise and distinct</h2><p>Start options with the words that differentiate them. The control truncates visually when space is limited while the native menu preserves the complete label.</p></div>
+            <div class="field-specimen field-specimen--narrow"><div class="nds-field"><label class="nds-field__label" for="template">Report template</label><div class="nds-select-shell"><select class="nds-select" id="template"><option>Quarterly performance overview for leadership</option><option>Monthly delivery summary for project teams</option><option>Weekly operational risks and decisions</option></select></div></div></div>
+          </section>
+          <section class="guidance-panel nds-glass reveal" aria-labelledby="guidance-title"><p class="component-label">Usage guidance</p><h2 id="guidance-title">Use Select when the options are known.</h2><p>For two to five choices that benefit from immediate comparison, Radio may be clearer. Use autocomplete patterns for large or searchable datasets.</p><a class="nds-link nds-link--standalone" href="/components/checkbox-radio.html">Next component: Checkbox and Radio <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></section>
+        </div>
+      </div>
+    </main>
+    <footer class="catalog-footer nds-container"><span>Nikba Design System</span><a class="nds-link" href="/components/">All components</a></footer>
+  </body>
+</html>

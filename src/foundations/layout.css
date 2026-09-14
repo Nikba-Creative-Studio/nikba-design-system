@@ -1,0 +1,47 @@
+.nds-container {
+  width: min(calc(100% - var(--nds-page-gutter) - var(--nds-page-gutter)), var(--nds-container-max));
+  margin-inline: auto;
+}
+
+.nds-stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--nds-stack-gap, var(--nds-space-4));
+}
+
+.nds-cluster {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--nds-cluster-gap, var(--nds-space-3));
+}
+
+.nds-grid {
+  display: grid;
+  grid-template-columns: repeat(var(--nds-grid-columns, 12), minmax(0, 1fr));
+  gap: var(--nds-grid-gap, var(--nds-component-gap));
+}
+
+.nds-visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+@media (max-width: 68.6875rem) {
+  .nds-grid {
+    --nds-grid-columns: 8;
+  }
+}
+
+@media (max-width: 43.6875rem) {
+  .nds-grid {
+    --nds-grid-columns: 4;
+  }
+}
+

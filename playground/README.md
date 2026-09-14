@@ -1,9 +1,20 @@
-# Nikba 2027 — Design System Lab
+# Nikba Design System Catalog
 
-Prototip static pentru compararea variantelor Frost, Mist și Graphite și a intensității efectului glassmorphism.
+The catalog is the live development and review environment for the public package. It imports `src/index.js` directly, so source changes appear through Vite hot reload.
+
+The catalog is split into focused pages for the overview, foundations, the component index, and each complete component. Shared appearance controls preserve the selected theme and glass level across navigation.
+
+From the repository root:
 
 ```bash
-python3 -m http.server 4173 --directory prototypes/design-system
+npm run dev
 ```
 
-Deschide `http://localhost:4173`.
+To build and preview the static catalog:
+
+```bash
+npm run build:catalog
+npm run preview
+```
+
+Catalog-specific layout belongs in `playground/styles.css`. Tokens, foundations, component styles, and public behavior must remain in `src`.

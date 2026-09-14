@@ -1,0 +1,105 @@
+.nds-link {
+  color: var(--nds-text);
+  text-decoration-line: underline;
+  text-decoration-color: var(--nds-border-hover);
+  text-decoration-thickness: var(--nds-link-underline-thickness);
+  text-underline-offset: var(--nds-link-underline-offset);
+  transition: color var(--nds-duration-fast) var(--nds-ease-standard),
+    text-decoration-color var(--nds-duration-fast) var(--nds-ease-standard),
+    opacity var(--nds-duration-fast) var(--nds-ease-standard);
+}
+
+.nds-link--subtle {
+  color: var(--nds-text-secondary);
+}
+
+.nds-link--standalone {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--nds-space-1);
+  font-weight: var(--nds-font-weight-semibold);
+  text-decoration: none;
+}
+
+.nds-link--inverse {
+  color: var(--nds-text-inverse);
+  text-decoration-color: currentColor;
+}
+
+.nds-link__icon {
+  width: 1em;
+  height: 1em;
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  transition: transform var(--nds-duration-fast) var(--nds-ease-standard);
+}
+
+.nds-link__icon > svg,
+.nds-link__icon > img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.nds-link__icon > svg {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.nds-link[aria-current]:not([aria-current='false']) {
+  font-weight: var(--nds-font-weight-semibold);
+  text-decoration-thickness: var(--nds-border-width-strong);
+}
+
+.nds-link:active {
+  opacity: var(--nds-opacity-muted);
+}
+
+.nds-link:focus-visible {
+  border-radius: var(--nds-radius-none);
+  outline: var(--nds-focus-ring-width) solid var(--nds-focus);
+  outline-offset: var(--nds-focus-ring-offset);
+}
+
+.nds-link[aria-disabled='true'] {
+  opacity: var(--nds-disabled-opacity);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+@media (hover: hover) {
+  .nds-link:not([aria-disabled='true']):hover {
+    color: var(--nds-text-secondary);
+    text-decoration-color: currentColor;
+  }
+
+  .nds-link--subtle:not([aria-disabled='true']):hover {
+    color: var(--nds-text);
+  }
+
+  .nds-link--standalone:not([aria-disabled='true']):hover .nds-link__icon {
+    transform: translateX(0.2em);
+  }
+}
+
+@media (forced-colors: active) {
+  .nds-link,
+  .nds-link--subtle,
+  .nds-link--inverse {
+    color: LinkText;
+  }
+
+  .nds-link:focus-visible {
+    outline-color: Highlight;
+  }
+
+  .nds-link[aria-disabled='true'] {
+    color: GrayText;
+  }
+}
