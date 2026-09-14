@@ -28,6 +28,7 @@ export default defineConfig({
         resolve(import.meta.dirname, 'playground/components/alert.html'),
         resolve(import.meta.dirname, 'playground/components/disclosure-accordion.html'),
         resolve(import.meta.dirname, 'playground/components/tabs.html'),
+        resolve(import.meta.dirname, 'playground/components/dialog.html'),
       ],
     },
   },

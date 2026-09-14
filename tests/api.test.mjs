@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import {
   glassLevels,
   initAccordions,
+  initDialogs,
   initTabs,
   setGlassLevel,
   setTheme,
@@ -13,6 +14,7 @@ const target = { dataset: {} };
 assert.deepEqual(themes, ['frost', 'mist', 'graphite']);
 assert.deepEqual(glassLevels, ['off', 'soft', 'clear']);
 assert.equal(typeof initAccordions, 'function');
+assert.equal(typeof initDialogs, 'function');
 assert.equal(typeof initTabs, 'function');
 
 for (const theme of themes) {

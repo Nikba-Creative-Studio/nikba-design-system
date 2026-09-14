@@ -55,6 +55,9 @@ The project follows [Semantic Versioning](https://semver.org/). Before `1.0.0`, 
 - Tabs styles for standard, contained, vertical, disabled, and overflow compositions.
 - An idempotent Tabs initializer with automatic and manual activation, roving focus, cleanup, and a bubbling change event.
 - A complete Tabs contract with a dedicated catalog page and behavior test.
+- Native Dialog styles for default, small, large, destructive confirmation, and scrolling compositions.
+- An idempotent Dialog initializer with initial focus, explicit and optional backdrop dismissal, focus restoration, lifecycle events, and cleanup.
+- A complete Dialog contract with a dedicated catalog page and behavior test.
 - A read-only MCP server that exposes design-system documentation and tokens to compatible AI hosts.
 - MCP resources, component and token query tools, an implementation prompt, host setup documentation, and an end-to-end protocol test.
 - A dedicated MCP catalog page and primary navigation entry for the AI integration.

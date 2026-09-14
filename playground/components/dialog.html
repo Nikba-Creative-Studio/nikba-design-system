@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en" data-theme="frost" data-glass="soft">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nikba Dialog component reference." />
+    <title>Dialog · Nikba Design System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body class="nds-scope">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="ambient ambient--one"></div><div class="ambient ambient--two"></div>
+    <header data-catalog-header data-current="components"></header>
+    <aside data-appearance-panel aria-label="Appearance controls"></aside>
+    <main id="main" class="nds-container page-main">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Overview</a><span aria-hidden="true">/</span><a href="/components/">Components</a><span aria-hidden="true">/</span><span aria-current="page">Dialog</span></nav>
+      <header class="page-hero component-hero"><div><p class="eyebrow">Component 17 · Complete</p><h1 class="nds-display">Dialog</h1></div><p>Creates a focused modal task with native focus containment, predictable dismissal, and focus restoration.</p></header>
+      <div class="page-layout">
+        <nav class="page-sidebar" aria-label="Component sections"><span>Dialog</span><a href="#default">Default</a><a href="#confirmation">Confirmation</a><a href="#sizes">Sizes</a><a href="#scroll">Overflow</a><a href="#lifecycle">Lifecycle</a><hr /><a href="/components/tabs.html">← Tabs</a></nav>
+        <div class="page-content">
+          <section id="default" class="specimen reveal" aria-labelledby="default-title">
+            <div class="specimen-heading"><p class="component-label">Default</p><h2 id="default-title">Keep the task focused</h2><p>The opener launches a native modal Dialog. Focus enters the first relevant field and returns to the opener after dismissal.</p></div>
+            <button class="nds-button" type="button" data-nds-dialog-open="invite-dialog">Invite member</button>
+          </section>
+
+          <section id="confirmation" class="specimen reveal" aria-labelledby="confirmation-title">
+            <div class="specimen-heading"><p class="component-label">Destructive confirmation</p><h2 id="confirmation-title">Name the consequence clearly</h2><p>Use a compact Dialog for a short decision. Keep initial focus on the safe secondary action.</p></div>
+            <button class="nds-button nds-button--danger" type="button" data-nds-dialog-open="delete-dialog">Delete project</button>
+          </section>
+
+          <section id="sizes" class="specimen reveal" aria-labelledby="sizes-title">
+            <div class="specimen-heading"><p class="component-label">Sizes</p><h2 id="sizes-title">Match width to task complexity</h2><p>Small supports confirmation, default supports short forms, and large supports structured review content.</p></div>
+            <div class="button-row"><button class="nds-button nds-button--secondary" type="button" data-nds-dialog-open="small-dialog">Small</button><button class="nds-button nds-button--secondary" type="button" data-nds-dialog-open="large-dialog">Large</button></div>
+          </section>
+
+          <section id="scroll" class="specimen reveal" aria-labelledby="scroll-title">
+            <div class="specimen-heading"><p class="component-label">Content overflow</p><h2 id="scroll-title">Keep title and actions stable</h2><p>The body scrolls independently when content grows beyond the available viewport height.</p></div>
+            <button class="nds-button nds-button--secondary" type="button" data-nds-dialog-open="terms-dialog">Review release notes</button>
+          </section>
+
+          <section id="lifecycle" class="specimen reveal" aria-labelledby="lifecycle-title">
+            <div class="specimen-heading"><p class="component-label">Lifecycle</p><h2 id="lifecycle-title">Restore the previous context</h2><p>The initializer connects open and close controls, emits lifecycle events, and removes only its own listeners during cleanup.</p></div>
+            <div class="tabs-lifecycle-grid"><div><span>Initialize</span><code>const cleanup = initDialogs(root)</code></div><div><span>Observe</span><code>nds:dialog-open / close</code></div><div><span>Remove</span><code>cleanup()</code></div></div>
+          </section>
+
+          <section class="guidance-panel nds-glass reveal" aria-labelledby="guidance-title"><p class="component-label">Usage guidance</p><h2 id="guidance-title">Use a modal only for a focused interruption.</h2><p>Keep longer workflows on a page. Avoid nested Dialogs and never hide essential information behind a modal.</p><a class="nds-link nds-link--standalone" href="/components/">Back to components <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></section>
+        </div>
+      </div>
+
+      <dialog class="nds-dialog" id="invite-dialog" data-nds-dialog data-dismiss-backdrop="true" aria-labelledby="invite-title" aria-describedby="invite-description">
+        <header class="nds-dialog__header"><div><h2 class="nds-dialog__title" id="invite-title">Invite a member</h2><p class="nds-dialog__description" id="invite-description">Give someone access to this workspace.</p></div><button class="nds-dialog__close" type="button" data-nds-dialog-close="dismiss" aria-label="Close dialog"><svg viewBox="0 0 16 16"><path d="M3 3l10 10M13 3L3 13" /></svg></button></header>
+        <div class="nds-dialog__body"><label class="nds-field"><span class="nds-field__label">Email address</span><input class="nds-input" type="email" placeholder="name@company.com" data-nds-dialog-initial-focus /></label><p class="nds-field__helper">An invitation remains valid for seven days.</p></div>
+        <footer class="nds-dialog__footer"><button class="nds-button nds-button--secondary" type="button" data-nds-dialog-close="cancel">Cancel</button><button class="nds-button" type="button" data-nds-dialog-close="invite">Send invite</button></footer>
+      </dialog>
+
+      <dialog class="nds-dialog nds-dialog--small" id="delete-dialog" data-nds-dialog aria-labelledby="delete-title" aria-describedby="delete-description">
+        <header class="nds-dialog__header"><div><h2 class="nds-dialog__title" id="delete-title">Delete this project?</h2><p class="nds-dialog__description" id="delete-description">Files, activity, and member access will be permanently removed.</p></div></header>
+        <footer class="nds-dialog__footer"><button class="nds-button nds-button--secondary" type="button" data-nds-dialog-close="cancel" data-nds-dialog-initial-focus>Keep project</button><button class="nds-button nds-button--danger" type="button" data-nds-dialog-close="delete">Delete project</button></footer>
+      </dialog>
+
+      <dialog class="nds-dialog nds-dialog--small" id="small-dialog" data-nds-dialog aria-labelledby="small-title"><header class="nds-dialog__header"><div><h2 class="nds-dialog__title" id="small-title">Small Dialog</h2><p class="nds-dialog__description">Best for a concise decision or acknowledgment.</p></div><button class="nds-dialog__close" type="button" data-nds-dialog-close="dismiss" aria-label="Close dialog"><svg viewBox="0 0 16 16"><path d="M3 3l10 10M13 3L3 13" /></svg></button></header><div class="nds-dialog__body"><p>Keep the content and action count limited.</p></div></dialog>
+
+      <dialog class="nds-dialog nds-dialog--large" id="large-dialog" data-nds-dialog aria-labelledby="large-title"><header class="nds-dialog__header"><div><h2 class="nds-dialog__title" id="large-title">Large Dialog</h2><p class="nds-dialog__description">Useful when a review needs more structured space.</p></div><button class="nds-dialog__close" type="button" data-nds-dialog-close="dismiss" aria-label="Close dialog"><svg viewBox="0 0 16 16"><path d="M3 3l10 10M13 3L3 13" /></svg></button></header><div class="nds-dialog__body"><div class="dialog-review-grid"><div><strong>Scope</strong><span>16 components</span></div><div><strong>Theme</strong><span>Graphite</span></div><div><strong>Validation</strong><span>All checks passed</span></div></div></div></dialog>
+
+      <dialog class="nds-dialog" id="terms-dialog" data-nds-dialog aria-labelledby="terms-title"><header class="nds-dialog__header"><div><h2 class="nds-dialog__title" id="terms-title">Release notes</h2><p class="nds-dialog__description">Review the complete Alpha 01 changes.</p></div><button class="nds-dialog__close" type="button" data-nds-dialog-close="dismiss" aria-label="Close dialog"><svg viewBox="0 0 16 16"><path d="M3 3l10 10M13 3L3 13" /></svg></button></header><div class="nds-dialog__body dialog-long-copy"><h3>Foundations</h3><p>Semantic tokens coordinate color, spacing, typography, geometry, motion, and elevation across all themes.</p><h3>Controls</h3><p>Buttons, inputs, choices, switches, and native selects share predictable sizing and state behavior.</p><h3>Content primitives</h3><p>Cards, avatars, dividers, alerts, loading indicators, and skeletons establish reusable presentation patterns.</p><h3>Interactions</h3><p>Disclosure, Accordion, and Tabs add deterministic keyboard behavior and explicit lifecycle contracts.</p><h3>AI integration</h3><p>The local MCP server exposes component documentation and design tokens to compatible hosts.</p></div><footer class="nds-dialog__footer"><button class="nds-button" type="button" data-nds-dialog-close="done">Done</button></footer></dialog>
+    </main>
+    <footer class="catalog-footer nds-container"><span>Nikba Design System</span><a class="nds-link" href="/components/">All components</a></footer>
+  </body>
+</html>

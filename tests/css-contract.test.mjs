@@ -146,6 +146,15 @@ const requiredContracts = [
   '.nds-tabs__panel',
   '.nds-tabs--contained',
   '.nds-tabs--vertical',
+  '.nds-dialog',
+  '.nds-dialog--small',
+  '.nds-dialog--large',
+  '.nds-dialog__header',
+  '.nds-dialog__title',
+  '.nds-dialog__description',
+  '.nds-dialog__close',
+  '.nds-dialog__body',
+  '.nds-dialog__footer',
   '.nds-glass',
 ];
 

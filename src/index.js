@@ -1,6 +1,7 @@
 import './index.css';
 export { initAccordions } from './behaviors/accordion.js';
 export { initTabs } from './behaviors/tabs.js';
+export { initDialogs } from './behaviors/dialog.js';
 
 export const themes = Object.freeze(['frost', 'mist', 'graphite']);
 export const glassLevels = Object.freeze(['off', 'soft', 'clear']);

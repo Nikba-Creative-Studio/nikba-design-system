@@ -1,4 +1,4 @@
-import { glassLevels, initAccordions, initTabs, setGlassLevel, setTheme, themes } from '../src/index.js';
+import { glassLevels, initAccordions, initDialogs, initTabs, setGlassLevel, setTheme, themes } from '../src/index.js';
 import logoUrl from '../src/logo.svg?url';
 import './styles.css';
 
@@ -101,6 +101,7 @@ applyTheme(readPreference(themeKey, themes, root.dataset.theme || 'frost'));
 applyGlass(readPreference(glassKey, glassLevels, root.dataset.glass || 'soft'));
 initAccordions();
 initTabs();
+initDialogs();
 
 document.querySelectorAll('[data-accordion-output]').forEach((output) => {
   document.getElementById(output.dataset.accordionOutput)?.addEventListener('nds:accordion-change', (event) => {
