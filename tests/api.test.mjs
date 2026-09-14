@@ -3,6 +3,7 @@ import {
   glassLevels,
   initAccordions,
   initDialogs,
+  initPopovers,
   initTabs,
   setGlassLevel,
   setTheme,
@@ -15,6 +16,7 @@ assert.deepEqual(themes, ['frost', 'mist', 'graphite']);
 assert.deepEqual(glassLevels, ['off', 'soft', 'clear']);
 assert.equal(typeof initAccordions, 'function');
 assert.equal(typeof initDialogs, 'function');
+assert.equal(typeof initPopovers, 'function');
 assert.equal(typeof initTabs, 'function');
 
 for (const theme of themes) {

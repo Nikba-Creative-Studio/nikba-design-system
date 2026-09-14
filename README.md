@@ -76,10 +76,10 @@ The server publishes discoverable resources, four query tools, and a `build_with
 
 - Themes: Frost, Mist, Graphite
 - Glass levels: Off, Soft, Clear
-- CSS: tokens, typography, layout, Button, Link, Badge, Chip, Field, Input, Textarea, Native Select, Checkbox, Radio, Switch, Card, Divider, Avatar, Spinner, Skeleton, Alert, Disclosure, Accordion, Tabs, Dialog, Tag, Glass surface, and scoped foundations
-- JavaScript: theme and glass constants and setters, plus the Accordion, Tabs, and Dialog initializers with lifecycle cleanup
+- CSS: tokens, typography, layout, Button, Link, Badge, Chip, Field, Input, Textarea, Native Select, Checkbox, Radio, Switch, Card, Divider, Avatar, Spinner, Skeleton, Alert, Disclosure, Accordion, Tabs, Dialog, Popover, Dropdown Menu, Tag, Glass surface, and scoped foundations
+- JavaScript: theme and glass constants and setters, plus the Accordion, Tabs, Dialog, and Popover initializers with lifecycle cleanup
 
-Component contracts are published under [`docs/components`](./docs/components/), including [Button and Icon Button](./docs/components/button.md), [Link](./docs/components/link.md), [Badge and Chip](./docs/components/badge-chip.md), [Field](./docs/components/field.md), [Input and Textarea](./docs/components/input-textarea.md), [Native Select](./docs/components/select.md), [Checkbox and Radio](./docs/components/checkbox-radio.md), [Switch](./docs/components/switch.md), [Card](./docs/components/card.md), [Divider](./docs/components/divider.md), [Avatar](./docs/components/avatar.md), [Spinner](./docs/components/spinner.md), [Skeleton](./docs/components/skeleton.md), [Alert](./docs/components/alert.md), [Disclosure and Accordion](./docs/components/disclosure-accordion.md), [Tabs](./docs/components/tabs.md), and [Dialog](./docs/components/dialog.md).
+Component contracts are published under [`docs/components`](./docs/components/), including [Button and Icon Button](./docs/components/button.md), [Link](./docs/components/link.md), [Badge and Chip](./docs/components/badge-chip.md), [Field](./docs/components/field.md), [Input and Textarea](./docs/components/input-textarea.md), [Native Select](./docs/components/select.md), [Checkbox and Radio](./docs/components/checkbox-radio.md), [Switch](./docs/components/switch.md), [Card](./docs/components/card.md), [Divider](./docs/components/divider.md), [Avatar](./docs/components/avatar.md), [Spinner](./docs/components/spinner.md), [Skeleton](./docs/components/skeleton.md), [Alert](./docs/components/alert.md), [Disclosure and Accordion](./docs/components/disclosure-accordion.md), [Tabs](./docs/components/tabs.md), [Dialog](./docs/components/dialog.md), and [Popover and Dropdown Menu](./docs/components/popover-menu.md).
 
 ## License
 

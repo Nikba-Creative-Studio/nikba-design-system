@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en" data-theme="frost" data-glass="soft">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nikba Popover and Dropdown Menu component reference." />
+    <title>Popover and Dropdown Menu · Nikba Design System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body class="nds-scope">
+    <a class="skip-link" href="#main">Skip to content</a><div class="ambient ambient--one"></div><div class="ambient ambient--two"></div>
+    <header data-catalog-header data-current="components"></header><aside data-appearance-panel aria-label="Appearance controls"></aside>
+    <main id="main" class="nds-container page-main">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Overview</a><span aria-hidden="true">/</span><a href="/components/">Components</a><span aria-hidden="true">/</span><span aria-current="page">Popover and Dropdown Menu</span></nav>
+      <header class="page-hero component-hero"><div><p class="eyebrow">Component 18 · Complete</p><h1 class="nds-display">Popover<br />and Menu</h1></div><p>Anchors short context and compact actions with native light dismissal and deterministic keyboard navigation.</p></header>
+      <div class="page-layout">
+        <nav class="page-sidebar" aria-label="Component sections"><span>Popover and Menu</span><a href="#popover">Popover</a><a href="#menu">Action menu</a><a href="#selection">Selection</a><a href="#alignment">Alignment</a><a href="#keyboard">Keyboard</a><hr /><a href="/components/dialog.html">← Dialog</a></nav>
+        <div class="page-content">
+          <section id="popover" class="specimen reveal" aria-labelledby="popover-title">
+            <div class="specimen-heading"><p class="component-label">Popover</p><h2 id="popover-title">Add context near its source</h2><p>A generic Popover keeps short supporting information in the top layer and dismisses after an outside interaction.</p></div>
+            <button class="nds-button nds-button--secondary" type="button" aria-controls="release-popover" data-nds-popover-trigger="release-popover">Release details</button>
+            <aside class="nds-popover" id="release-popover" popover="auto" data-nds-popover aria-labelledby="release-popover-title"><h3 class="nds-popover__title" id="release-popover-title">Alpha 01</h3><p class="nds-popover__description">The package contract is active while component coverage continues to expand.</p></aside>
+          </section>
+
+          <section id="menu" class="specimen reveal" aria-labelledby="menu-title">
+            <div class="specimen-heading"><p class="component-label">Action menu</p><h2 id="menu-title">Keep actions close to their object</h2><p>Arrow keys wrap through enabled items, typeahead finds labels, and selecting an action returns focus to the trigger.</p></div>
+            <button class="nds-button nds-button--secondary" type="button" aria-haspopup="menu" aria-controls="project-menu" data-nds-popover-trigger="project-menu">Project actions</button>
+            <div class="nds-popover nds-menu" id="project-menu" role="menu" popover="auto" data-nds-popover>
+              <p class="nds-menu__label">Project</p>
+              <button class="nds-menu__item" type="button" role="menuitem"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 11.5V13h1.5L12 5.5 10.5 4 3 11.5Z" /></svg>Rename<span class="nds-menu__shortcut">R</span></button>
+              <button class="nds-menu__item" type="button" role="menuitem"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="5" y="5" width="8" height="8" rx="1" /><path d="M3 10H2V2h8v1" /></svg>Duplicate</button>
+              <button class="nds-menu__item" type="button" role="menuitem" aria-disabled="true">Archive<span class="nds-menu__shortcut">Unavailable</span></button>
+              <hr class="nds-menu__separator" role="separator" />
+              <button class="nds-menu__item nds-menu__item--danger" type="button" role="menuitem">Delete project</button>
+            </div>
+            <p class="tabs-event-log"><span>Last action</span><strong data-menu-output="project-menu">None</strong></p>
+          </section>
+
+          <section id="selection" class="specimen reveal" aria-labelledby="selection-title">
+            <div class="specimen-heading"><p class="component-label">Selection menu</p><h2 id="selection-title">Expose persistent choices</h2><p>Checkbox and radio items update their checked state and remain open so people can make several related choices.</p></div>
+            <button class="nds-button nds-button--secondary" type="button" aria-haspopup="menu" aria-controls="view-menu" data-nds-popover-trigger="view-menu">View options</button>
+            <div class="nds-popover nds-menu" id="view-menu" role="menu" popover="auto" data-nds-popover>
+              <p class="nds-menu__label">Visible details</p>
+              <button class="nds-menu__item" type="button" role="menuitemcheckbox" aria-checked="true"><span class="nds-menu__indicator" aria-hidden="true"></span>Descriptions</button>
+              <button class="nds-menu__item" type="button" role="menuitemcheckbox" aria-checked="false"><span class="nds-menu__indicator" aria-hidden="true"></span>Metadata</button>
+              <hr class="nds-menu__separator" role="separator" />
+              <p class="nds-menu__label">Density</p>
+              <button class="nds-menu__item" type="button" role="menuitemradio" aria-checked="true" data-group="density"><span class="nds-menu__indicator" aria-hidden="true"></span>Comfortable</button>
+              <button class="nds-menu__item" type="button" role="menuitemradio" aria-checked="false" data-group="density"><span class="nds-menu__indicator" aria-hidden="true"></span>Compact</button>
+            </div>
+          </section>
+
+          <section id="alignment" class="specimen reveal" aria-labelledby="alignment-title">
+            <div class="specimen-heading"><p class="component-label">Alignment</p><h2 id="alignment-title">Stay inside the viewport</h2><p>End alignment supports controls near the inline edge. Placement flips above when the lower viewport has insufficient space.</p></div>
+            <div class="popover-alignment-demo"><span>Aligned to the container edge</span><button class="nds-button nds-button--secondary" type="button" aria-haspopup="menu" aria-controls="export-menu" data-nds-popover-trigger="export-menu">Export</button></div>
+            <div class="nds-popover nds-menu" id="export-menu" role="menu" popover="auto" data-nds-popover data-align="end"><button class="nds-menu__item" type="button" role="menuitem">Export PDF</button><button class="nds-menu__item" type="button" role="menuitem">Export CSV</button><button class="nds-menu__item" type="button" role="menuitem">Copy public link</button></div>
+          </section>
+
+          <section id="keyboard" class="specimen reveal" aria-labelledby="keyboard-title">
+            <div class="specimen-heading"><p class="component-label">Keyboard contract</p><h2 id="keyboard-title">Make every action reachable</h2><p>The lifecycle stays local to each Popover and exposes selection without prescribing application side effects.</p></div>
+            <div class="tabs-lifecycle-grid"><div><span>Open</span><code>Click / Arrow Up / Arrow Down</code></div><div><span>Navigate</span><code>Arrows / Home / End / typeahead</code></div><div><span>Dismiss</span><code>Escape / Tab / outside action</code></div></div>
+          </section>
+
+          <section class="guidance-panel nds-glass reveal" aria-labelledby="guidance-title"><p class="component-label">Usage guidance</p><h2 id="guidance-title">Keep menus compact and action-oriented.</h2><p>Use a generic Popover for context and a Menu for commands. Move forms and multi-step decisions into a Dialog or page.</p><a class="nds-link nds-link--standalone" href="/components/">Back to components <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></section>
+        </div>
+      </div>
+    </main>
+    <footer class="catalog-footer nds-container"><span>Nikba Design System</span><a class="nds-link" href="/components/">All components</a></footer>
+  </body>
+</html>

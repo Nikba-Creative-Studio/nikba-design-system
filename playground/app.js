@@ -1,4 +1,4 @@
-import { glassLevels, initAccordions, initDialogs, initTabs, setGlassLevel, setTheme, themes } from '../src/index.js';
+import { glassLevels, initAccordions, initDialogs, initPopovers, initTabs, setGlassLevel, setTheme, themes } from '../src/index.js';
 import logoUrl from '../src/logo.svg?url';
 import './styles.css';
 
@@ -102,6 +102,7 @@ applyGlass(readPreference(glassKey, glassLevels, root.dataset.glass || 'soft'));
 initAccordions();
 initTabs();
 initDialogs();
+initPopovers();
 
 document.querySelectorAll('[data-accordion-output]').forEach((output) => {
   document.getElementById(output.dataset.accordionOutput)?.addEventListener('nds:accordion-change', (event) => {
@@ -112,6 +113,12 @@ document.querySelectorAll('[data-accordion-output]').forEach((output) => {
 document.querySelectorAll('[data-tabs-output]').forEach((output) => {
   document.getElementById(output.dataset.tabsOutput)?.addEventListener('nds:tabs-change', (event) => {
     output.textContent = event.detail.tab.textContent.trim();
+  });
+});
+
+document.querySelectorAll('[data-menu-output]').forEach((output) => {
+  document.getElementById(output.dataset.menuOutput)?.addEventListener('nds:menu-select', (event) => {
+    output.textContent = event.detail.item.textContent.trim();
   });
 });
 

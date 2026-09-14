@@ -8,7 +8,7 @@
   border-radius: var(--nds-radius-lg);
   background: var(--nds-surface);
   color: var(--nds-text);
-  box-shadow: var(--nds-shadow-strong);
+  box-shadow: var(--nds-shadow-elevated);
 }
 
 .nds-dialog--small { max-width: 26rem; }
@@ -32,7 +32,7 @@
 }
 
 .nds-dialog__title { margin: 0; font-size: var(--nds-font-size-xl); line-height: var(--nds-line-height-tight); }
-.nds-dialog__description { margin: var(--nds-space-2) 0 0; color: var(--nds-text-secondary); line-height: var(--nds-line-height-relaxed); }
+.nds-dialog__description { margin: var(--nds-space-2) 0 0; color: var(--nds-text-secondary); line-height: var(--nds-line-height-body); }
 
 .nds-dialog__close {
   width: var(--nds-control-height-sm);
@@ -56,7 +56,7 @@
   padding: 0 var(--nds-space-6) var(--nds-space-6);
   overflow-y: auto;
   color: var(--nds-text-secondary);
-  line-height: var(--nds-line-height-relaxed);
+  line-height: var(--nds-line-height-body);
 }
 
 .nds-dialog__body > :first-child { margin-top: 0; }

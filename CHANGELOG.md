@@ -58,6 +58,9 @@ The project follows [Semantic Versioning](https://semver.org/). Before `1.0.0`, 
 - Native Dialog styles for default, small, large, destructive confirmation, and scrolling compositions.
 - An idempotent Dialog initializer with initial focus, explicit and optional backdrop dismissal, focus restoration, lifecycle events, and cleanup.
 - A complete Dialog contract with a dedicated catalog page and behavior test.
+- Popover and Dropdown Menu styles for contextual, action, selection, aligned, disabled, and destructive compositions.
+- An idempotent Popover initializer with viewport-aware placement, native light dismissal, roving menu focus, typeahead, selection state, events, and cleanup.
+- A complete Popover and Dropdown Menu contract with a dedicated catalog page and behavior test.
 - A read-only MCP server that exposes design-system documentation and tokens to compatible AI hosts.
 - MCP resources, component and token query tools, an implementation prompt, host setup documentation, and an end-to-end protocol test.
 - A dedicated MCP catalog page and primary navigation entry for the AI integration.

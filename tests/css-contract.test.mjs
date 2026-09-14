@@ -155,6 +155,15 @@ const requiredContracts = [
   '.nds-dialog__close',
   '.nds-dialog__body',
   '.nds-dialog__footer',
+  '.nds-popover',
+  '.nds-popover__title',
+  '.nds-popover__description',
+  '.nds-menu',
+  '.nds-menu__label',
+  '.nds-menu__item',
+  '.nds-menu__item--danger',
+  '.nds-menu__shortcut',
+  '.nds-menu__separator',
   '.nds-glass',
 ];
 
@@ -163,5 +172,14 @@ for (const contract of requiredContracts) {
 }
 
 assert.ok(!css.includes('fonts.googleapis.com'), 'The CSS bundle must not download fonts.');
+
+const definedCustomProperties = new Set([...css.matchAll(/(--nds-[a-z0-9-]+)\s*:/g)].map((match) => match[1]));
+const usedCustomProperties = new Set(
+  [...css.matchAll(/var\((--nds-[a-z0-9-]+)\s*(,|\))/g)]
+    .filter((match) => match[2] === ')')
+    .map((match) => match[1]),
+);
+const undefinedCustomProperties = [...usedCustomProperties].filter((property) => !definedCustomProperties.has(property));
+assert.deepEqual(undefinedCustomProperties, [], `Undefined public custom properties: ${undefinedCustomProperties.join(', ')}`);
 
 console.log('Public CSS foundation contract passed.');
