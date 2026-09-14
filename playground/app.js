@@ -1,4 +1,4 @@
-import { createToastManager, glassLevels, initAccordions, initDialogs, initNavigations, initPopovers, initTables, initTabs, initTooltips, setGlassLevel, setTheme, themes } from '../src/index.js';
+import { createToastManager, glassLevels, initAccordions, initDialogs, initForms, initNavigations, initPopovers, initTables, initTabs, initTooltips, setGlassLevel, setTheme, themes } from '../src/index.js';
 import logoUrl from '../src/logo.svg?url';
 import './styles.css';
 
@@ -106,6 +106,7 @@ initPopovers();
 initTooltips();
 initNavigations();
 initTables();
+initForms();
 
 document.querySelectorAll('[data-table-output]').forEach((output) => {
   const table = document.getElementById(output.dataset.tableOutput);
@@ -168,6 +169,33 @@ document.querySelectorAll('[data-filter-demo]').forEach((demo) => {
   form.addEventListener('reset', () => queueMicrotask(update));
   demo.querySelector('[data-filter-reset]')?.addEventListener('click', () => { form.reset(); queueMicrotask(update); });
   update();
+});
+
+document.querySelectorAll('[data-form-demo]').forEach((form) => {
+  const submit = form.querySelector('[data-form-submit]');
+  const status = form.querySelector('[data-form-status]');
+  const success = form.querySelector('[data-form-success]');
+
+  form.addEventListener('submit', (event) => {
+    if (event.defaultPrevented) return;
+    event.preventDefault();
+    submit.disabled = true;
+    submit.setAttribute('aria-busy', 'true');
+    status.textContent = 'Saving profile…';
+    if (success) success.hidden = true;
+
+    window.setTimeout(() => {
+      submit.disabled = false;
+      submit.removeAttribute('aria-busy');
+      status.textContent = '';
+      if (success) success.hidden = false;
+    }, 700);
+  });
+
+  form.addEventListener('reset', () => {
+    status.textContent = '';
+    if (success) success.hidden = true;
+  });
 });
 
 document.querySelectorAll('[data-toast-demo-region]').forEach((region) => {

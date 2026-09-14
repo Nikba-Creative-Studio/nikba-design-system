@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" data-theme="frost" data-glass="soft">
+  <head>
+    <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nikba Form Validation and Submission pattern reference." /><title>Form Validation and Submission · Nikba Design System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&amp;display=swap" rel="stylesheet" /><script type="module" src="/app.js"></script>
+  </head>
+  <body class="nds-scope">
+    <a class="skip-link" href="#main">Skip to content</a><div class="ambient ambient--one"></div><div class="ambient ambient--two"></div>
+    <header data-catalog-header data-current="components"></header><aside data-appearance-panel aria-label="Appearance controls"></aside>
+    <main id="main" class="nds-container page-main">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Overview</a><span aria-hidden="true">/</span><a href="/components/">Components</a><span aria-hidden="true">/</span><span aria-current="page">Form Validation</span></nav>
+      <header class="page-hero component-hero"><div><p class="eyebrow">Pattern 26 · Complete</p><h1 class="nds-display">Form Validation<br />and Submission</h1></div><p>Collects related data with native constraints, actionable errors, protected submission, and persistent outcomes.</p></header>
+      <div class="page-layout">
+        <nav class="page-sidebar" aria-label="Pattern sections"><span>Form Validation</span><a href="#demo">Functional demo</a><a href="#errors">Error model</a><a href="#submission">Submission states</a><a href="#responsive">Responsive</a><hr /><a href="/components/search-filter.html">← Search and Filter</a></nav>
+        <div class="page-content">
+          <section id="demo" class="specimen specimen--wide reveal" aria-labelledby="demo-title"><div class="specimen-heading"><p class="component-label">Functional demo</p><h2 id="demo-title">Validate before sending</h2><p>Submit the empty form to inspect summary focus and inline errors. A valid submission demonstrates a protected pending state and an announced success.</p></div>
+            <form class="nds-form" method="post" action="/components/form-validation.html" data-nds-form data-form-demo>
+              <div class="nds-error-summary" data-nds-error-summary tabindex="-1" hidden><h3 class="nds-error-summary__title">Check the highlighted fields</h3><ul class="nds-error-summary__list"><li><a href="#profile-name">Enter your full name.</a></li><li><a href="#profile-email">Enter a valid email address.</a></li><li><a href="#profile-role">Choose a role.</a></li></ul></div>
+              <div class="nds-alert nds-alert--success" data-form-success role="status" hidden><span class="nds-alert__icon" aria-hidden="true">✓</span><div class="nds-alert__content"><h3 class="nds-alert__title">Profile saved</h3><p class="nds-alert__description">The example submission completed successfully.</p></div></div>
+              <fieldset class="nds-form__section"><legend class="nds-form__legend">Profile details</legend><div class="nds-form__grid">
+                <label class="nds-field"><span class="nds-field__label">Full name <span class="nds-field__required" aria-hidden="true">*</span></span><input class="nds-input" id="profile-name" name="name" autocomplete="name" required aria-describedby="profile-name-error" /><span class="nds-field__error" id="profile-name-error" data-nds-error="name" hidden>Enter your full name.</span></label>
+                <label class="nds-field"><span class="nds-field__label">Email <span class="nds-field__required" aria-hidden="true">*</span></span><input class="nds-input" id="profile-email" name="email" type="email" autocomplete="email" required aria-describedby="profile-email-helper profile-email-error" /><span class="nds-field__helper" id="profile-email-helper">Used for account notifications.</span><span class="nds-field__error" id="profile-email-error" data-nds-error="email" hidden>Enter a valid email address.</span></label>
+                <label class="nds-field nds-form__full"><span class="nds-field__label">Role <span class="nds-field__required" aria-hidden="true">*</span></span><span class="nds-select-shell"><select class="nds-select" id="profile-role" name="role" required aria-describedby="profile-role-error"><option value="">Choose a role</option><option>Designer</option><option>Developer</option><option>Product manager</option></select></span><span class="nds-field__error" id="profile-role-error" data-nds-error="role" hidden>Choose a role.</span></label>
+              </div></fieldset>
+              <div class="nds-form__actions"><button class="nds-button" type="submit" data-form-submit>Save profile</button><button class="nds-button nds-button--ghost" type="reset">Clear</button><span class="nds-form__status" data-form-status aria-live="polite"></span></div>
+            </form>
+          </section>
+          <section id="errors" class="specimen reveal" aria-labelledby="errors-title"><div class="specimen-heading"><p class="component-label">Error model</p><h2 id="errors-title">Connect summary, field, and recovery</h2><p>The summary receives focus, every message names the correction, and each link returns to its control. Values remain available for repair.</p></div><div class="tabs-lifecycle-grid"><div><span>Summary</span><code>tabindex="-1"</code></div><div><span>Control</span><code>aria-invalid="true"</code></div><div><span>Message</span><code>aria-describedby</code></div></div></section>
+          <section id="submission" class="specimen reveal" aria-labelledby="submission-title"><div class="specimen-heading"><p class="component-label">Submission</p><h2 id="submission-title">Protect the transition</h2><p>Prevent duplicate requests while pending. Keep entered data on failure and announce an in-place success without moving focus unexpectedly.</p></div><div class="header-variant-grid"><div><span>Pending</span><strong>Busy and disabled</strong></div><div><span>Failure</span><strong>Preserve values</strong></div><div><span>Success</span><strong>Announce outcome</strong></div></div></section>
+          <section id="responsive" class="specimen reveal" aria-labelledby="responsive-title"><div class="specimen-heading"><p class="component-label">Responsive behavior</p><h2 id="responsive-title">Keep source order stable</h2><p>Related fields use two columns when space allows and collapse to one column with full-width actions on compact screens.</p></div></section>
+          <section class="guidance-panel nds-glass reveal" aria-labelledby="guidance-title"><p class="component-label">Usage guidance</p><h2 id="guidance-title">Validate at the point of commitment.</h2><p>Avoid interrupting unfinished input. On submission, show every current problem together and keep the path to recovery short.</p><a class="nds-link nds-link--standalone" href="/components/">Back to components <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></section>
+        </div>
+      </div>
+    </main>
+    <footer class="catalog-footer nds-container"><span>Nikba Design System</span><a class="nds-link" href="/components/">All components</a></footer>
+  </body>
+</html>

@@ -7,6 +7,7 @@ export { initTooltips } from './behaviors/tooltip.js';
 export { createToastManager } from './behaviors/toast.js';
 export { initNavigations } from './behaviors/navigation.js';
 export { initTables } from './behaviors/table.js';
+export { initForms } from './behaviors/form.js';
 
 export const themes = Object.freeze(['frost', 'mist', 'graphite']);
 export const glassLevels = Object.freeze(['off', 'soft', 'clear']);

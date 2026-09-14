@@ -233,6 +233,14 @@ const requiredContracts = [
   '.nds-search-filter__summary',
   '.nds-search-filter__active',
   '.nds-search-filter__results',
+  '.nds-form',
+  '.nds-form__section',
+  '.nds-form__legend',
+  '.nds-form__grid',
+  '.nds-form__actions',
+  '.nds-error-summary',
+  '.nds-error-summary__title',
+  '.nds-error-summary__list',
   '.nds-glass',
 ];
 
