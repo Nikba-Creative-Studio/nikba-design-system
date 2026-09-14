@@ -178,6 +178,17 @@ const requiredContracts = [
   '.nds-toast__message',
   '.nds-toast__action',
   '.nds-toast__close',
+  '.nds-header',
+  '.nds-header--sticky',
+  '.nds-header--glass',
+  '.nds-header__inner',
+  '.nds-header__brand',
+  '.nds-header__brand-mark',
+  '.nds-header__nav',
+  '.nds-header__list',
+  '.nds-header__link',
+  '.nds-header__actions',
+  '.nds-header__menu-trigger',
   '.nds-glass',
 ];
 

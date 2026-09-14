@@ -184,7 +184,7 @@ Exit gate: every interactive component has deterministic keyboard behavior, focu
 
 Goal: compose primitives into reusable solutions for real products.
 
-- [ ] Header and responsive navigation
+- [x] Header and responsive navigation
 - [ ] Breadcrumbs and Pagination
 - [ ] Table with sorting, selection, overflow, and responsive guidance
 - [ ] Empty, loading, error, and success states
@@ -258,9 +258,8 @@ Open decisions belong in the relevant component document. Once a decision ships 
 
 Begin Phase 4 in this order:
 
-1. Header and responsive navigation.
-2. Breadcrumbs and Pagination.
-3. Table with sorting, selection, overflow, and responsive guidance.
-4. Empty, loading, error, and success states.
+1. Breadcrumbs and Pagination.
+2. Table with sorting, selection, overflow, and responsive guidance.
+3. Empty, loading, error, and success states.
 
 Each interactive component ships with an explicit initializer, cleanup contract, native fallback where available, and targeted behavior tests.

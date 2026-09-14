@@ -32,6 +32,7 @@ export default defineConfig({
         resolve(import.meta.dirname, 'playground/components/popover-menu.html'),
         resolve(import.meta.dirname, 'playground/components/tooltip.html'),
         resolve(import.meta.dirname, 'playground/components/toast.html'),
+        resolve(import.meta.dirname, 'playground/components/header-navigation.html'),
       ],
     },
   },

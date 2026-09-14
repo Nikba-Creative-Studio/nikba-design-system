@@ -1,4 +1,4 @@
-import { createToastManager, glassLevels, initAccordions, initDialogs, initPopovers, initTabs, initTooltips, setGlassLevel, setTheme, themes } from '../src/index.js';
+import { createToastManager, glassLevels, initAccordions, initDialogs, initNavigations, initPopovers, initTabs, initTooltips, setGlassLevel, setTheme, themes } from '../src/index.js';
 import logoUrl from '../src/logo.svg?url';
 import './styles.css';
 
@@ -104,6 +104,7 @@ initTabs();
 initDialogs();
 initPopovers();
 initTooltips();
+initNavigations();
 
 document.querySelectorAll('[data-toast-demo-region]').forEach((region) => {
   const manager = createToastManager(region, { maxVisible: 3, duration: 6000 });

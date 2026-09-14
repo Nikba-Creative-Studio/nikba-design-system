@@ -4,6 +4,7 @@ import {
   glassLevels,
   initAccordions,
   initDialogs,
+  initNavigations,
   initPopovers,
   initTooltips,
   initTabs,
@@ -20,6 +21,7 @@ assert.deepEqual(themes, ['frost', 'mist', 'graphite']);
 assert.deepEqual(glassLevels, ['off', 'soft', 'clear']);
 assert.equal(typeof initAccordions, 'function');
 assert.equal(typeof initDialogs, 'function');
+assert.equal(typeof initNavigations, 'function');
 assert.equal(typeof initPopovers, 'function');
 assert.equal(typeof initTooltips, 'function');
 assert.equal(typeof initTabs, 'function');
