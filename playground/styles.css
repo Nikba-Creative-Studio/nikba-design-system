@@ -1165,6 +1165,7 @@ button {
 .dialog-long-copy h3 { margin: var(--nds-space-6) 0 var(--nds-space-2); color: var(--nds-text); }
 .popover-alignment-demo { width: 100%; max-width: 720px; min-height: 120px; padding: var(--nds-space-5); display: flex; align-items: center; justify-content: space-between; gap: var(--nds-space-4); border: var(--nds-border-width) solid var(--nds-border); border-radius: var(--nds-radius-md); background: var(--nds-surface-alt); color: var(--nds-text-secondary); }
 .tooltip-toolbar { padding: var(--nds-space-3); display: inline-flex; gap: var(--nds-space-2); border: var(--nds-border-width) solid var(--nds-border); border-radius: var(--nds-radius-md); background: var(--nds-surface-alt); }
+.toast-demo-region { inset-block-end: 7rem; }
 
 .section-heading {
   margin-bottom: clamp(48px, 7vw, 88px);
@@ -1574,6 +1575,7 @@ button {
 }
 
 @media (max-width: 30rem) {
+  .toast-demo-region { inset-block-end: 13rem; }
   .lab-panel {
     flex-direction: column;
   }

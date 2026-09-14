@@ -36,7 +36,8 @@
     "test:dialog": "node tests/dialog.test.mjs",
     "test:popover": "node tests/popover.test.mjs",
     "test:tooltip": "node tests/tooltip.test.mjs",
-    "test": "npm run test:api && npm run test:css && npm run test:contrast && npm run test:accordion && npm run test:tabs && npm run test:dialog && npm run test:popover && npm run test:tooltip && npm run test:mcp",
+    "test:toast": "node tests/toast.test.mjs",
+    "test": "npm run test:api && npm run test:css && npm run test:contrast && npm run test:accordion && npm run test:tabs && npm run test:dialog && npm run test:popover && npm run test:tooltip && npm run test:toast && npm run test:mcp",
     "mcp": "node ./mcp/server.js",
     "verify": "npm run build && npm test && npm pack --dry-run"
   },

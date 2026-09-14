@@ -169,14 +169,14 @@ Delivery order:
 3. [x] Dialog
 4. [x] Popover and Dropdown Menu
 5. [x] Tooltip
-6. Toast
+6. [x] Toast
 
 Shared work:
 
-- [ ] Define initialization, teardown, events, and DOM-update compatibility.
-- [ ] Define focus placement, restoration, dismissal, Escape behavior, and nested-overlay rules.
-- [ ] Avoid global listeners unless documented behavior requires them.
-- [ ] Verify no-JavaScript fallback or progressive enhancement.
+- [x] Define initialization, teardown, events, and DOM-update compatibility.
+- [x] Define focus placement, restoration, dismissal, Escape behavior, and nested-overlay rules.
+- [x] Avoid global listeners unless documented behavior requires them.
+- [x] Verify no-JavaScript fallback or progressive enhancement.
 
 Exit gate: every interactive component has deterministic keyboard behavior, focus management, a documented lifecycle, and automated behavior checks.
 
@@ -256,8 +256,11 @@ Open decisions belong in the relevant component document. Once a decision ships 
 
 ## 10. Immediate next work package
 
-Continue Phase 3 in this order:
+Begin Phase 4 in this order:
 
-1. Toast with live-region and queue guidance.
+1. Header and responsive navigation.
+2. Breadcrumbs and Pagination.
+3. Table with sorting, selection, overflow, and responsive guidance.
+4. Empty, loading, error, and success states.
 
 Each interactive component ships with an explicit initializer, cleanup contract, native fallback where available, and targeted behavior tests.

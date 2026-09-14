@@ -166,6 +166,18 @@ const requiredContracts = [
   '.nds-menu__shortcut',
   '.nds-menu__separator',
   '.nds-tooltip',
+  '.nds-toast-region',
+  '.nds-toast',
+  '.nds-toast--neutral',
+  '.nds-toast--info',
+  '.nds-toast--success',
+  '.nds-toast--warning',
+  '.nds-toast--danger',
+  '.nds-toast__content',
+  '.nds-toast__title',
+  '.nds-toast__message',
+  '.nds-toast__action',
+  '.nds-toast__close',
   '.nds-glass',
 ];
 

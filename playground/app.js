@@ -1,4 +1,4 @@
-import { glassLevels, initAccordions, initDialogs, initPopovers, initTabs, initTooltips, setGlassLevel, setTheme, themes } from '../src/index.js';
+import { createToastManager, glassLevels, initAccordions, initDialogs, initPopovers, initTabs, initTooltips, setGlassLevel, setTheme, themes } from '../src/index.js';
 import logoUrl from '../src/logo.svg?url';
 import './styles.css';
 
@@ -104,6 +104,25 @@ initTabs();
 initDialogs();
 initPopovers();
 initTooltips();
+
+document.querySelectorAll('[data-toast-demo-region]').forEach((region) => {
+  const manager = createToastManager(region, { maxVisible: 3, duration: 6000 });
+  document.querySelectorAll(`[data-toast-region="${region.id}"]`).forEach((button) => {
+    button.addEventListener('click', () => {
+      if (button.dataset.toastDismissAll === 'true') {
+        manager.dismissAll();
+        return;
+      }
+      manager.show({
+        title: button.dataset.toastTitle,
+        message: button.dataset.toastMessage,
+        tone: button.dataset.toastTone,
+        duration: button.dataset.toastPersistent === 'true' ? 0 : undefined,
+        action: button.dataset.toastAction ? { label: button.dataset.toastAction } : undefined,
+      });
+    });
+  });
+});
 
 document.querySelectorAll('[data-accordion-output]').forEach((output) => {
   document.getElementById(output.dataset.accordionOutput)?.addEventListener('nds:accordion-change', (event) => {

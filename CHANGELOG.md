@@ -64,6 +64,9 @@ The project follows [Semantic Versioning](https://semver.org/). Before `1.0.0`, 
 - Tooltip styles with adaptive viewport placement, reduced motion, and forced-color support.
 - An idempotent Tooltip initializer with delayed pointer and focus activation, Escape dismissal, accessible-description preservation, events, and cleanup.
 - A complete Tooltip contract with a dedicated catalog page and behavior test.
+- Toast styles for neutral, informational, success, warning, danger, action, and responsive stack compositions.
+- An idempotent Toast manager with safe text rendering, bounded visible queues, timed and persistent messages, interaction pause, lifecycle events, and cleanup.
+- A complete Toast contract with a dedicated catalog page and behavior test.
 - A read-only MCP server that exposes design-system documentation and tokens to compatible AI hosts.
 - MCP resources, component and token query tools, an implementation prompt, host setup documentation, and an end-to-end protocol test.
 - A dedicated MCP catalog page and primary navigation entry for the AI integration.

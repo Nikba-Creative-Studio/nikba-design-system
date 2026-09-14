@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import {
+  createToastManager,
   glassLevels,
   initAccordions,
   initDialogs,
@@ -12,6 +13,8 @@ import {
 } from '../dist/nikba-design-system.js';
 
 const target = { dataset: {} };
+
+assert.equal(typeof createToastManager, 'function');
 
 assert.deepEqual(themes, ['frost', 'mist', 'graphite']);
 assert.deepEqual(glassLevels, ['off', 'soft', 'clear']);

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" data-theme="frost" data-glass="soft">
+  <head>
+    <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nikba Toast component reference." /><title>Toast · Nikba Design System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&amp;display=swap" rel="stylesheet" /><script type="module" src="/app.js"></script>
+  </head>
+  <body class="nds-scope">
+    <a class="skip-link" href="#main">Skip to content</a><div class="ambient ambient--one"></div><div class="ambient ambient--two"></div>
+    <header data-catalog-header data-current="components"></header><aside data-appearance-panel aria-label="Appearance controls"></aside>
+    <main id="main" class="nds-container page-main">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Overview</a><span aria-hidden="true">/</span><a href="/components/">Components</a><span aria-hidden="true">/</span><span aria-current="page">Toast</span></nav>
+      <header class="page-hero component-hero"><div><p class="eyebrow">Component 20 · Complete</p><h1 class="nds-display">Toast</h1></div><p>Announces brief outcomes through a bounded queue, semantic priority, optional actions, and interaction-aware timing.</p></header>
+      <div class="page-layout">
+        <nav class="page-sidebar" aria-label="Component sections"><span>Toast</span><a href="#default">Default</a><a href="#tones">Tones</a><a href="#actions">Actions</a><a href="#queue">Queue</a><a href="#lifecycle">Lifecycle</a><hr /><a href="/components/tooltip.html">← Tooltip</a></nav>
+        <div class="page-content">
+          <section id="default" class="specimen reveal" aria-labelledby="default-title"><div class="specimen-heading"><p class="component-label">Default</p><h2 id="default-title">Confirm an outcome without interruption</h2><p>Toast appears at the viewport edge without moving focus. Hover or keyboard interaction pauses its timer.</p></div><button class="nds-button" type="button" data-toast-region="toast-region" data-toast-title="Changes saved" data-toast-message="Your latest edits are available to the team." data-toast-tone="success">Show Toast</button></section>
+
+          <section id="tones" class="specimen reveal" aria-labelledby="tones-title"><div class="specimen-heading"><p class="component-label">Semantic tones</p><h2 id="tones-title">Match announcement priority to impact</h2><p>Neutral, info, and success are polite. Warning and danger use assertive announcement semantics.</p></div><div class="button-row"><button class="nds-button nds-button--secondary" type="button" data-toast-region="toast-region" data-toast-title="Draft saved" data-toast-tone="neutral">Neutral</button><button class="nds-button nds-button--secondary" type="button" data-toast-region="toast-region" data-toast-title="Update available" data-toast-tone="info">Info</button><button class="nds-button nds-button--secondary" type="button" data-toast-region="toast-region" data-toast-title="Upload complete" data-toast-tone="success">Success</button><button class="nds-button nds-button--secondary" type="button" data-toast-region="toast-region" data-toast-title="Connection unstable" data-toast-tone="warning">Warning</button><button class="nds-button nds-button--secondary" type="button" data-toast-region="toast-region" data-toast-title="Publish failed" data-toast-message="Check your connection and try again." data-toast-tone="danger" data-toast-persistent="true">Danger</button></div></section>
+
+          <section id="actions" class="specimen reveal" aria-labelledby="actions-title"><div class="specimen-heading"><p class="component-label">Optional action</p><h2 id="actions-title">Offer one clear next step</h2><p>An action dismisses its Toast after selection. Use a persistent duration when the action is important.</p></div><button class="nds-button nds-button--secondary" type="button" data-toast-region="toast-region" data-toast-title="Project archived" data-toast-message="You can restore it from archived projects." data-toast-tone="neutral" data-toast-action="Undo" data-toast-persistent="true">Archive project</button></section>
+
+          <section id="queue" class="specimen reveal" aria-labelledby="queue-title"><div class="specimen-heading"><p class="component-label">Queue</p><h2 id="queue-title">Bound the visible stack</h2><p>The demo shows up to three messages. Additional messages wait in insertion order and appear as visible Toasts leave.</p></div><div class="button-row"><button class="nds-button nds-button--secondary" type="button" data-toast-region="toast-region" data-toast-title="Queued notification" data-toast-message="Each click adds one message to the queue." data-toast-tone="info">Add message</button><button class="nds-button nds-button--ghost" type="button" data-toast-region="toast-region" data-toast-dismiss-all="true">Dismiss all</button></div></section>
+
+          <section id="lifecycle" class="specimen reveal" aria-labelledby="lifecycle-title"><div class="specimen-heading"><p class="component-label">Lifecycle</p><h2 id="lifecycle-title">Keep application effects explicit</h2><p>The manager owns presentation and timing. Application code owns the action callback and any resulting product state.</p></div><div class="tabs-lifecycle-grid"><div><span>Create</span><code>createToastManager(region)</code></div><div><span>Notify</span><code>manager.show(options)</code></div><div><span>Remove</span><code>manager.destroy()</code></div></div></section>
+
+          <section class="guidance-panel nds-glass reveal" aria-labelledby="guidance-title"><p class="component-label">Usage guidance</p><h2 id="guidance-title">Reserve Toast for brief outcomes.</h2><p>Keep validation errors beside their fields and confirmation before destructive actions. Use Toast after the operation completes.</p><a class="nds-link nds-link--standalone" href="/components/">Back to components <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></section>
+        </div>
+      </div>
+    </main>
+    <div class="nds-toast-region toast-demo-region" id="toast-region" data-toast-demo-region aria-label="Demo notifications"></div>
+    <footer class="catalog-footer nds-container"><span>Nikba Design System</span><a class="nds-link" href="/components/">All components</a></footer>
+  </body>
+</html>
