@@ -35,9 +35,14 @@ The project follows [Semantic Versioning](https://semver.org/). Before `1.0.0`, 
 - Checkbox and Radio groups, descriptions, Choice Cards, disabled and invalid states.
 - Functional parent Checkbox synchronization with checked and indeterminate states.
 - A complete Checkbox and Radio contract with a dedicated catalog page.
+- Switch sizes, settings cards, disabled behavior, and asynchronous busy state.
+- A complete Switch contract with a dedicated catalog page.
+- Card density, depth, composition, Media, horizontal, and interactive variants.
+- A complete Card contract with a dedicated catalog page.
 
 ### Changed
 
+- Overview now uses a structured system-status panel and a denser editorial card grid.
 - The catalog navigation now uses the official Nikba SVG logo from the source package.
 - English is now the project language for documentation, source comments, public APIs, tests, and release notes.
 - Glass levels now control the rendered surface and filter behavior.
@@ -51,7 +56,9 @@ The project follows [Semantic Versioning](https://semver.org/). Before `1.0.0`, 
 
 ### Fixed
 
+- Catalog Header now uses the shared 1280px Container and responsive page gutters.
 - Icon slots now center SVG artwork consistently with adjacent text in Link, Button, Chip, and Field messages.
+- Checkbox selection now uses a centered rounded-square indicator; indeterminate remains a distinct short bar.
 - Invalid and readonly Field states.
 - Native disabled styling for Tag controls.
 - Explicit light color schemes for Frost and Mist.

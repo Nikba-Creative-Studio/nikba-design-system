@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
     <script type="module" src="/app.js"></script>
   </head>
-  <body class="nds-scope">
+  <body class="nds-scope page-home">
     <a class="skip-link" href="#main">Skip to content</a>
     <div class="ambient ambient--one"></div>
     <div class="ambient ambient--two"></div>
@@ -32,9 +32,15 @@
           </div>
         </div>
         <div class="proof nds-glass" aria-label="System status">
-          <div><strong>3</strong><span>themes</span></div>
-          <div><strong>3</strong><span>glass levels</span></div>
-          <div><strong>7</strong><span>complete components</span></div>
+          <div class="proof__summary">
+            <span class="proof__status"><span aria-hidden="true"></span>System status</span>
+            <strong>Ready to build.</strong>
+          </div>
+          <dl class="proof__metrics">
+            <div><dt>Themes</dt><dd><strong>3</strong><span>available</span></dd></div>
+            <div><dt>Glass levels</dt><dd><strong>3</strong><span>tunable</span></dd></div>
+            <div><dt>Components</dt><dd><strong>9</strong><span>complete</span></dd></div>
+          </dl>
         </div>
       </section>
 
@@ -44,7 +50,7 @@
           <h2 id="explore-title">One focused page for every system layer.</h2>
         </div>
         <div class="catalog-index-grid">
-          <a class="catalog-index-card" href="/foundations.html">
+          <a class="catalog-index-card catalog-index-card--feature" href="/foundations.html">
             <span class="status">Foundation</span>
             <div><h3>Foundations</h3><p>Tokens, typography, color, layout, motion, and glass behavior.</p></div>
             <span aria-hidden="true">↗</span>
@@ -82,6 +88,16 @@
           <a class="catalog-index-card" href="/components/checkbox-radio.html">
             <span class="status status--complete">Complete</span>
             <div><h3>Checkbox and Radio</h3><p>Independent and exclusive selection with native semantics.</p></div>
+            <span aria-hidden="true">↗</span>
+          </a>
+          <a class="catalog-index-card" href="/components/switch.html">
+            <span class="status status--complete">Complete</span>
+            <div><h3>Switch</h3><p>Immediate binary settings with explicit on and off semantics.</p></div>
+            <span aria-hidden="true">↗</span>
+          </a>
+          <a class="catalog-index-card" href="/components/card.html">
+            <span class="status status--complete">Complete</span>
+            <div><h3>Card</h3><p>Semantic content surfaces with flexible depth and composition.</p></div>
             <span aria-hidden="true">↗</span>
           </a>
         </div>

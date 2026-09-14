@@ -18,6 +18,8 @@ export default defineConfig({
         resolve(import.meta.dirname, 'playground/components/input-textarea.html'),
         resolve(import.meta.dirname, 'playground/components/select.html'),
         resolve(import.meta.dirname, 'playground/components/checkbox-radio.html'),
+        resolve(import.meta.dirname, 'playground/components/switch.html'),
+        resolve(import.meta.dirname, 'playground/components/card.html'),
       ],
     },
   },

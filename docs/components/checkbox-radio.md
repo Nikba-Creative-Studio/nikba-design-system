@@ -14,7 +14,7 @@ Use Switch for an immediate binary setting that takes effect when toggled. Use C
 4. Optional description
 5. Optional group Legend, Helper Text, or Error Message
 
-The native input remains focusable and interactive. The custom control and icon are decorative representations of its state.
+The native input remains focusable and interactive. The custom control and indicator are decorative representations of its state.
 
 ## Public API
 
@@ -29,8 +29,6 @@ The native input remains focusable and interactive. The custom control and icon 
 | `.nds-checkbox` | Native Checkbox input |
 | `.nds-radio` | Native Radio input |
 | `.nds-choice__control` | Decorative visual control |
-| `.nds-choice__check` | Checked-state icon |
-| `.nds-choice__mixed` | Indeterminate-state icon |
 | `.nds-choice__content` | Groups Label and description |
 | `.nds-choice__label` | Visible option label |
 | `.nds-choice__description` | Optional supporting description |
@@ -58,7 +56,7 @@ Choice Card adds description and a larger pointer target without changing semant
 | State | Visual | Behavior |
 | --- | --- | --- |
 | Unchecked | Empty control | Available but not selected |
-| Checked | Accent surface and check or dot | Native selected state |
+| Checked | Accent surface with a rounded square or circular dot | Native selected state |
 | Indeterminate | Accent surface and horizontal mark | Partial Checkbox group selection |
 | Focus-visible | Shared focus ring around control | Native input owns focus |
 | Disabled | Reduced control and content opacity | Native input cannot focus or change |
@@ -88,14 +86,7 @@ Checkbox:
 ```html
 <label class="nds-choice">
   <input class="nds-checkbox" type="checkbox" name="updates" />
-  <span class="nds-choice__control" aria-hidden="true">
-    <svg class="nds-choice__check" viewBox="0 0 16 16">
-      <path d="m3.5 8 3 3 6-6" />
-    </svg>
-    <svg class="nds-choice__mixed" viewBox="0 0 16 16">
-      <path d="M4 8h8" />
-    </svg>
-  </span>
+  <span class="nds-choice__control" aria-hidden="true"></span>
   <span class="nds-choice__content">
     <span class="nds-choice__label">Project updates</span>
   </span>

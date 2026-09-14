@@ -66,10 +66,10 @@ Use native `disabled` whenever the HTML element supports it. A link styled as a 
 
 - Themes: Frost, Mist, Graphite
 - Glass levels: Off, Soft, Clear
-- CSS: tokens, typography, layout, Button, Link, Badge, Chip, Field, Input, Textarea, Native Select, Checkbox, Radio, Tag, Glass surface, and scoped foundations
+- CSS: tokens, typography, layout, Button, Link, Badge, Chip, Field, Input, Textarea, Native Select, Checkbox, Radio, Switch, Card, Tag, Glass surface, and scoped foundations
 - JavaScript: theme and glass constants and setters
 
-Component contracts are published under [`docs/components`](./docs/components/), including [Button and Icon Button](./docs/components/button.md), [Link](./docs/components/link.md), [Badge and Chip](./docs/components/badge-chip.md), [Field](./docs/components/field.md), [Input and Textarea](./docs/components/input-textarea.md), [Native Select](./docs/components/select.md), and [Checkbox and Radio](./docs/components/checkbox-radio.md).
+Component contracts are published under [`docs/components`](./docs/components/), including [Button and Icon Button](./docs/components/button.md), [Link](./docs/components/link.md), [Badge and Chip](./docs/components/badge-chip.md), [Field](./docs/components/field.md), [Input and Textarea](./docs/components/input-textarea.md), [Native Select](./docs/components/select.md), [Checkbox and Radio](./docs/components/checkbox-radio.md), [Switch](./docs/components/switch.md), and [Card](./docs/components/card.md).
 
 ## License
 

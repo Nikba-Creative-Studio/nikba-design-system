@@ -53,7 +53,6 @@
 .nds-choice__control {
   width: 1.25rem;
   height: 1.25rem;
-  margin-top: 0.125rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -70,19 +69,18 @@
 
 .nds-radio + .nds-choice__control { border-radius: 50%; }
 
-.nds-choice__control > svg {
-  width: 0.875rem;
-  height: 0.875rem;
-  display: block;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2.2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+.nds-checkbox + .nds-choice__control::before {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 0.125rem;
+  background: currentColor;
+  content: '';
   opacity: 0;
   transform: scale(0.65);
   transition: opacity var(--nds-duration-fast) var(--nds-ease-out),
-    transform var(--nds-duration-fast) var(--nds-ease-out);
+    transform var(--nds-duration-fast) var(--nds-ease-out),
+    width var(--nds-duration-fast) var(--nds-ease-out),
+    height var(--nds-duration-fast) var(--nds-ease-out);
 }
 
 .nds-radio + .nds-choice__control::after {
@@ -104,9 +102,16 @@
   background: var(--nds-accent);
 }
 
-.nds-checkbox:checked + .nds-choice__control > .nds-choice__check,
-.nds-checkbox:indeterminate + .nds-choice__control > .nds-choice__mixed,
+.nds-checkbox:checked + .nds-choice__control::before,
 .nds-radio:checked + .nds-choice__control::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.nds-checkbox:indeterminate + .nds-choice__control::before {
+  width: 0.625rem;
+  height: 0.1875rem;
+  border-radius: var(--nds-radius-pill);
   opacity: 1;
   transform: scale(1);
 }
@@ -138,12 +143,17 @@
 .nds-choice--large .nds-choice__control {
   width: 1.5rem;
   height: 1.5rem;
-  margin-top: 0;
+  margin-top: -0.125rem;
 }
 
-.nds-choice--large .nds-choice__control > svg {
-  width: 1rem;
-  height: 1rem;
+.nds-choice--large .nds-checkbox + .nds-choice__control::before {
+  width: 0.625rem;
+  height: 0.625rem;
+}
+
+.nds-choice--large .nds-checkbox:indeterminate + .nds-choice__control::before {
+  width: 0.75rem;
+  height: 0.1875rem;
 }
 
 .nds-choice--card {

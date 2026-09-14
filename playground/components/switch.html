@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en" data-theme="frost" data-glass="soft">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nikba Switch component reference." />
+    <title>Switch · Nikba Design System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body class="nds-scope">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="ambient ambient--one"></div><div class="ambient ambient--two"></div>
+    <header data-catalog-header data-current="components"></header>
+    <aside data-appearance-panel aria-label="Appearance controls"></aside>
+    <main id="main" class="nds-container page-main">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Overview</a><span aria-hidden="true">/</span><a href="/components/">Components</a><span aria-hidden="true">/</span><span aria-current="page">Switch</span></nav>
+      <header class="page-hero component-hero">
+        <div><p class="eyebrow">Component 08 · Complete</p><h1 class="nds-display">Switch</h1></div>
+        <p>Changes an immediate binary setting and communicates whether that setting is currently on or off.</p>
+      </header>
+      <div class="page-layout">
+        <nav class="page-sidebar" aria-label="Component sections"><span>Switch</span><a href="#default">Default</a><a href="#sizes">Sizes</a><a href="#cards">Settings list</a><a href="#states">States</a><a href="#content">Content</a><hr /><a href="/components/checkbox-radio.html">← Checkbox and Radio</a></nav>
+        <div class="page-content">
+          <section id="default" class="specimen reveal" aria-labelledby="default-title">
+            <div class="specimen-heading"><p class="component-label">Default</p><h2 id="default-title">Apply a setting immediately</h2><p>The complete row is clickable. The native control exposes Switch semantics and announces its current state.</p></div>
+            <div class="field-specimen">
+              <label class="nds-switch">
+                <span class="nds-switch__content"><span class="nds-switch__label">Project notifications</span><span class="nds-switch__description">Receive updates when project status changes.</span></span>
+                <input class="nds-switch__input" type="checkbox" role="switch" name="project-notifications" checked />
+                <span class="nds-switch__track" aria-hidden="true"><span class="nds-switch__thumb"></span></span>
+              </label>
+            </div>
+          </section>
+          <section id="sizes" class="specimen reveal" aria-labelledby="sizes-title">
+            <div class="specimen-heading"><p class="component-label">Sizes</p><h2 id="sizes-title">Match the surrounding density</h2><p>Medium is the default. Small supports compact desktop settings, while Large gives prominent controls more presence.</p></div>
+            <div class="field-grid">
+              <div class="nds-switch-group">
+                <label class="nds-switch nds-switch--small"><span class="nds-switch__content"><span class="nds-switch__label">Small · 36px</span></span><input class="nds-switch__input" type="checkbox" role="switch" checked /><span class="nds-switch__track" aria-hidden="true"><span class="nds-switch__thumb"></span></span></label>
+                <label class="nds-switch"><span class="nds-switch__content"><span class="nds-switch__label">Medium · 44px</span></span><input class="nds-switch__input" type="checkbox" role="switch" checked /><span class="nds-switch__track" aria-hidden="true"><span class="nds-switch__thumb"></span></span></label>
+                <label class="nds-switch nds-switch--large"><span class="nds-switch__content"><span class="nds-switch__label">Large · 52px</span></span><input class="nds-switch__input" type="checkbox" role="switch" checked /><span class="nds-switch__track" aria-hidden="true"><span class="nds-switch__thumb"></span></span></label>
+              </div>
+            </div>
+          </section>
+          <section id="cards" class="specimen reveal" aria-labelledby="cards-title">
+            <div class="specimen-heading"><p class="component-label">Settings list</p><h2 id="cards-title">Group related controls without hiding them</h2><p>Card treatment separates settings while preserving one direct interaction per row.</p></div>
+            <div class="nds-switch-group">
+              <label class="nds-switch nds-switch--card"><span class="nds-switch__content"><span class="nds-switch__label">Weekly summary</span><span class="nds-switch__description">Send a concise report every Monday morning.</span></span><input class="nds-switch__input" type="checkbox" role="switch" checked /><span class="nds-switch__track" aria-hidden="true"><span class="nds-switch__thumb"></span></span></label>
+              <label class="nds-switch nds-switch--card"><span class="nds-switch__content"><span class="nds-switch__label">Product research</span><span class="nds-switch__description">Allow anonymized usage data to improve the product.</span></span><input class="nds-switch__input" type="checkbox" role="switch" /><span class="nds-switch__track" aria-hidden="true"><span class="nds-switch__thumb"></span></span></label>
+            </div>
+          </section>
+          <section id="states" class="specimen reveal" aria-labelledby="states-title">
+            <div class="specimen-heading"><p class="component-label">States</p><h2 id="states-title">Make availability and progress explicit</h2><p>Disabled settings cannot change. A busy state keeps the current value visible while a server update completes.</p></div>
+            <div class="field-grid">
+              <div class="nds-switch-group">
+                <label class="nds-switch"><span class="nds-switch__content"><span class="nds-switch__label">Disabled off</span><span class="nds-switch__description">Unavailable for this workspace.</span></span><input class="nds-switch__input" type="checkbox" role="switch" disabled /><span class="nds-switch__track" aria-hidden="true"><span class="nds-switch__thumb"></span></span></label>
+                <label class="nds-switch"><span class="nds-switch__content"><span class="nds-switch__label">Disabled on</span><span class="nds-switch__description">Required by your organization.</span></span><input class="nds-switch__input" type="checkbox" role="switch" checked disabled /><span class="nds-switch__track" aria-hidden="true"><span class="nds-switch__thumb"></span></span></label>
+              </div>
+              <label class="nds-switch" aria-busy="true"><span class="nds-switch__content"><span class="nds-switch__label">Saving setting</span><span class="nds-switch__description">The previous value remains active until saving completes.</span></span><input class="nds-switch__input" type="checkbox" role="switch" checked disabled /><span class="nds-switch__track" aria-hidden="true"><span class="nds-switch__thumb"></span></span></label>
+            </div>
+          </section>
+          <section id="content" class="specimen reveal" aria-labelledby="content-title">
+            <div class="specimen-heading"><p class="component-label">Content</p><h2 id="content-title">Name the state that becomes active</h2><p>Use a short noun phrase such as “Project notifications.” The Switch itself communicates on or off, so avoid labels that contain both states.</p></div>
+            <div class="field-specimen field-specimen--narrow">
+              <label class="nds-switch nds-switch--card"><span class="nds-switch__content"><span class="nds-switch__label">Public profile</span><span class="nds-switch__description">Anyone with the link can view your profile.</span></span><input class="nds-switch__input" type="checkbox" role="switch" /><span class="nds-switch__track" aria-hidden="true"><span class="nds-switch__thumb"></span></span></label>
+            </div>
+          </section>
+          <section class="guidance-panel nds-glass reveal" aria-labelledby="guidance-title"><p class="component-label">Usage guidance</p><h2 id="guidance-title">Use Switch only for immediate changes.</h2><p>Use Checkbox when the choice belongs to a form that the user submits later. Describe the effect before the control changes it.</p><a class="nds-link nds-link--standalone" href="/components/card.html">Next component: Card <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></section>
+        </div>
+      </div>
+    </main>
+    <footer class="catalog-footer nds-container"><span>Nikba Design System</span><a class="nds-link" href="/components/">All components</a></footer>
+  </body>
+</html>

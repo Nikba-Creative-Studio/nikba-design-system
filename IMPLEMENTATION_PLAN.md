@@ -137,8 +137,14 @@ Delivery order:
 5. [x] Input and Textarea
 6. [x] Native Select
 7. [x] Checkbox and Radio
-8. [ ] Switch
-9. [ ] Card, Divider, Avatar, Spinner, Skeleton, and Alert
+8. [x] Switch
+9. [ ] Content primitives
+   - [x] Card
+   - [ ] Divider
+   - [ ] Avatar
+   - [ ] Spinner
+   - [ ] Skeleton
+   - [ ] Alert
 
 For each component:
 
