@@ -34,6 +34,7 @@ export default defineConfig({
         resolve(import.meta.dirname, 'playground/components/toast.html'),
         resolve(import.meta.dirname, 'playground/components/header-navigation.html'),
         resolve(import.meta.dirname, 'playground/components/breadcrumb-pagination.html'),
+        resolve(import.meta.dirname, 'playground/components/table.html'),
       ],
     },
   },

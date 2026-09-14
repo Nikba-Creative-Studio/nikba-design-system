@@ -38,7 +38,8 @@
     "test:tooltip": "node tests/tooltip.test.mjs",
     "test:toast": "node tests/toast.test.mjs",
     "test:navigation": "node tests/navigation.test.mjs",
-    "test": "npm run test:api && npm run test:css && npm run test:contrast && npm run test:accordion && npm run test:tabs && npm run test:dialog && npm run test:popover && npm run test:tooltip && npm run test:toast && npm run test:navigation && npm run test:mcp",
+    "test:table": "node tests/table.test.mjs",
+    "test": "npm run test:api && npm run test:css && npm run test:contrast && npm run test:accordion && npm run test:tabs && npm run test:dialog && npm run test:popover && npm run test:tooltip && npm run test:toast && npm run test:navigation && npm run test:table && npm run test:mcp",
     "mcp": "node ./mcp/server.js",
     "verify": "npm run build && npm test && npm pack --dry-run"
   },

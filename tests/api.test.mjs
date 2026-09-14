@@ -8,6 +8,7 @@ import {
   initPopovers,
   initTooltips,
   initTabs,
+  initTables,
   setGlassLevel,
   setTheme,
   themes,
@@ -25,6 +26,7 @@ assert.equal(typeof initNavigations, 'function');
 assert.equal(typeof initPopovers, 'function');
 assert.equal(typeof initTooltips, 'function');
 assert.equal(typeof initTabs, 'function');
+assert.equal(typeof initTables, 'function');
 
 for (const theme of themes) {
   setTheme(theme, target);

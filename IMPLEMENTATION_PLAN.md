@@ -186,7 +186,7 @@ Goal: compose primitives into reusable solutions for real products.
 
 - [x] Header and responsive navigation
 - [x] Breadcrumbs and Pagination
-- [ ] Table with sorting, selection, overflow, and responsive guidance
+- [x] Table with sorting, selection, overflow, and responsive guidance
 - [ ] Empty, loading, error, and success states
 - [ ] Search and filter pattern
 - [ ] Form validation and submission pattern
@@ -258,7 +258,6 @@ Open decisions belong in the relevant component document. Once a decision ships 
 
 Begin Phase 4 in this order:
 
-1. Table with sorting, selection, overflow, and responsive guidance.
-2. Empty, loading, error, and success states.
+1. Empty, loading, error, and success states.
 
 Each interactive component ships with an explicit initializer, cleanup contract, native fallback where available, and targeted behavior tests.

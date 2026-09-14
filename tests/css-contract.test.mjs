@@ -201,6 +201,17 @@ const requiredContracts = [
   '.nds-pagination__link',
   '.nds-pagination__ellipsis',
   '.nds-pagination__summary',
+  '.nds-table-scroll',
+  '.nds-table',
+  '.nds-table--compact',
+  '.nds-table--comfortable',
+  '.nds-table--sticky',
+  '.nds-table__numeric',
+  '.nds-table__selection',
+  '.nds-table__cell-title',
+  '.nds-table__cell-description',
+  '.nds-table__empty',
+  '.nds-table__sort',
   '.nds-glass',
 ];
 

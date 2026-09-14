@@ -72,6 +72,9 @@ The project follows [Semantic Versioning](https://semver.org/). Before `1.0.0`, 
 - A complete Header and Responsive Navigation contract with a dedicated catalog page and behavior test.
 - Breadcrumb and Pagination styles for hierarchy, long paths, numeric and compact navigation, current state, disabled boundaries, and responsive reduction.
 - A complete Breadcrumb and Pagination contract with a dedicated catalog page and no-JavaScript navigation examples.
+- Table styles for standard, compact, comfortable, sticky, numeric, descriptive, selected, overflow, and empty states.
+- An idempotent Table initializer with text and numeric sorting, semantic sort state, Select all synchronization, selection events, and cleanup.
+- A complete Table contract with a dedicated catalog page and behavior test.
 - A read-only MCP server that exposes design-system documentation and tokens to compatible AI hosts.
 - MCP resources, component and token query tools, an implementation prompt, host setup documentation, and an end-to-end protocol test.
 - A dedicated MCP catalog page and primary navigation entry for the AI integration.
