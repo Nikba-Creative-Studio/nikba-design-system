@@ -75,6 +75,8 @@ The project follows [Semantic Versioning](https://semver.org/). Before `1.0.0`, 
 - Table styles for standard, compact, comfortable, sticky, numeric, descriptive, selected, overflow, and empty states.
 - An idempotent Table initializer with text and numeric sorting, semantic sort state, Select all synchronization, selection events, and cleanup.
 - A complete Table contract with a dedicated catalog page and behavior test.
+- Product State styles for centered, compact, inline, loading, error, success, action, and metadata compositions.
+- Empty, no-result, predictable and indeterminate loading, recoverable error, and success patterns with a dedicated catalog page and implementation guidance.
 - A read-only MCP server that exposes design-system documentation and tokens to compatible AI hosts.
 - MCP resources, component and token query tools, an implementation prompt, host setup documentation, and an end-to-end protocol test.
 - A dedicated MCP catalog page and primary navigation entry for the AI integration.
