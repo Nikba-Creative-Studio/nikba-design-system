@@ -1,0 +1,31 @@
+.nds-field {
+  width: 100%;
+  min-height: 52px;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--nds-border);
+  border-radius: var(--nds-radius-md);
+  background: var(--nds-surface);
+  color: var(--nds-text);
+  font: 400 1rem/1.4 var(--nds-font-sans);
+  transition: border-color var(--nds-duration-fast) ease,
+    box-shadow var(--nds-duration-fast) ease;
+}
+
+.nds-field::placeholder {
+  color: var(--nds-text-tertiary);
+}
+
+.nds-field:hover {
+  border-color: var(--nds-border-hover);
+}
+
+.nds-field:focus {
+  border-color: var(--nds-focus);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(var(--nds-accent-rgb), 0.12);
+}
+
+.nds-field:disabled {
+  opacity: 0.48;
+  cursor: not-allowed;
+}

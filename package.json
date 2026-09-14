@@ -1,0 +1,39 @@
+{
+  "name": "@nikba/design-system",
+  "version": "0.1.0-alpha.1",
+  "description": "Neutral interface foundations, Onest typography and performant glassmorphism by Nikba.",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/nikba-design-system.js",
+  "module": "./dist/nikba-design-system.js",
+  "style": "./dist/nikba-design-system.css",
+  "exports": {
+    ".": {
+      "import": "./dist/nikba-design-system.js"
+    },
+    "./css": "./dist/nikba-design-system.css"
+  },
+  "scripts": {
+    "dev": "vite playground",
+    "build": "vite build",
+    "preview": "vite preview --outDir dist-playground"
+  },
+  "keywords": [
+    "design-system",
+    "glassmorphism",
+    "onest",
+    "css",
+    "laravel"
+  ],
+  "author": "Nikba Creative Studio",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nikba-Creative-Studio/nikba-design-system.git"
+  },
+  "devDependencies": {
+    "vite": "^8.3.0"
+  }
+}

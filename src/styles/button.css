@@ -1,0 +1,52 @@
+.nds-button {
+  min-height: 48px;
+  padding: 0.78rem 1.15rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 1px solid var(--nds-accent);
+  border-radius: var(--nds-radius-pill);
+  background: var(--nds-accent);
+  color: var(--nds-text-inverse);
+  font: 600 0.9375rem/1 var(--nds-font-sans);
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform var(--nds-duration-fast) ease,
+    background-color var(--nds-duration-fast) ease,
+    border-color var(--nds-duration-fast) ease,
+    opacity var(--nds-duration-fast) ease;
+}
+
+.nds-button:hover {
+  background: var(--nds-accent-hover);
+  transform: translateY(-1px);
+}
+
+.nds-button:active {
+  transform: scale(0.98);
+}
+
+.nds-button:focus-visible {
+  outline: 3px solid var(--nds-focus);
+  outline-offset: 3px;
+}
+
+.nds-button:disabled,
+.nds-button[aria-disabled='true'] {
+  opacity: 0.42;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.nds-button--secondary {
+  border-color: var(--nds-border);
+  background: var(--nds-surface);
+  color: var(--nds-text);
+  box-shadow: var(--nds-shadow-subtle);
+}
+
+.nds-button--secondary:hover {
+  border-color: var(--nds-border-hover);
+  background: var(--nds-surface-hover);
+}

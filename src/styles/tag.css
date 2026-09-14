@@ -1,0 +1,31 @@
+.nds-tag {
+  min-height: 38px;
+  padding: 0.55rem 0.82rem;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--nds-border);
+  border-radius: var(--nds-radius-pill);
+  background: var(--nds-glass);
+  color: var(--nds-text-secondary);
+  font: 600 0.78rem/1 var(--nds-font-sans);
+  cursor: pointer;
+  transition: background-color var(--nds-duration-fast) ease,
+    border-color var(--nds-duration-fast) ease,
+    color var(--nds-duration-fast) ease;
+}
+
+.nds-tag:hover {
+  border-color: var(--nds-border-hover);
+  background: var(--nds-glass-strong);
+  color: var(--nds-text);
+}
+
+.nds-tag:focus-visible {
+  outline: 3px solid var(--nds-focus);
+  outline-offset: 3px;
+}
+
+.nds-tag[aria-disabled='true'] {
+  opacity: 0.42;
+  pointer-events: none;
+}
