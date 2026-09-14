@@ -77,6 +77,8 @@ The project follows [Semantic Versioning](https://semver.org/). Before `1.0.0`, 
 - A complete Table contract with a dedicated catalog page and behavior test.
 - Product State styles for centered, compact, inline, loading, error, success, action, and metadata compositions.
 - Empty, no-result, predictable and indeterminate loading, recoverable error, and success patterns with a dedicated catalog page and implementation guidance.
+- Search and Filter styles for query, criteria, actions, result summary, active filters, results, and responsive form layouts.
+- A complete Search and Filter pattern with native GET behavior, functional catalog filtering, removable active criteria, live result count, reset, and no-results recovery.
 - A read-only MCP server that exposes design-system documentation and tokens to compatible AI hosts.
 - MCP resources, component and token query tools, an implementation prompt, host setup documentation, and an end-to-end protocol test.
 - A dedicated MCP catalog page and primary navigation entry for the AI integration.

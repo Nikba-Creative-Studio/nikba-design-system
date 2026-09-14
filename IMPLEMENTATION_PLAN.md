@@ -188,7 +188,7 @@ Goal: compose primitives into reusable solutions for real products.
 - [x] Breadcrumbs and Pagination
 - [x] Table with sorting, selection, overflow, and responsive guidance
 - [x] Empty, loading, error, and success states
-- [ ] Search and filter pattern
+- [x] Search and filter pattern
 - [ ] Form validation and submission pattern
 - [ ] Settings and account pattern
 - [ ] Modal and destructive-action confirmation pattern
@@ -258,8 +258,7 @@ Open decisions belong in the relevant component document. Once a decision ships 
 
 Begin Phase 4 in this order:
 
-1. Search and filter pattern.
-2. Form validation and submission pattern.
-3. Settings and account pattern.
+1. Form validation and submission pattern.
+2. Settings and account pattern.
 
 Each interactive component ships with an explicit initializer, cleanup contract, native fallback where available, and targeted behavior tests.

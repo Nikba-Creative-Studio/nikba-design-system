@@ -36,6 +36,7 @@ export default defineConfig({
         resolve(import.meta.dirname, 'playground/components/breadcrumb-pagination.html'),
         resolve(import.meta.dirname, 'playground/components/table.html'),
         resolve(import.meta.dirname, 'playground/components/product-states.html'),
+        resolve(import.meta.dirname, 'playground/components/search-filter.html'),
       ],
     },
   },

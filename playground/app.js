@@ -117,6 +117,59 @@ document.querySelectorAll('[data-table-output]').forEach((output) => {
   });
 });
 
+document.querySelectorAll('[data-filter-demo]').forEach((demo) => {
+  const form = demo.querySelector('form');
+  const results = demo.querySelector('[data-filter-results]');
+  const count = demo.querySelector('[data-filter-count]');
+  const active = demo.querySelector('[data-filter-active]');
+  const empty = demo.querySelector('[data-filter-empty]');
+  if (!form || !results || !count || !active || !empty) return;
+
+  const items = [...results.querySelectorAll('[data-filter-item]')];
+  const filterLabels = { query: 'Search', status: 'Status', type: 'Type' };
+
+  const update = () => {
+    const values = Object.fromEntries(new FormData(form));
+    const query = String(values.query || '').trim().toLocaleLowerCase();
+    const visibleItems = items.filter((item) => {
+      const matchesQuery = !query || item.textContent.toLocaleLowerCase().includes(query);
+      const matchesStatus = !values.status || item.dataset.status === values.status;
+      const matchesType = !values.type || item.dataset.type === values.type;
+      item.hidden = !(matchesQuery && matchesStatus && matchesType);
+      return !item.hidden;
+    });
+
+    count.textContent = `${visibleItems.length} ${visibleItems.length === 1 ? 'result' : 'results'}`;
+    empty.hidden = visibleItems.length > 0;
+    results.hidden = visibleItems.length === 0;
+    active.replaceChildren();
+
+    Object.entries(values).filter(([, value]) => value).forEach(([key, value]) => {
+      const control = form.elements.namedItem(key);
+      const displayValue = control instanceof HTMLSelectElement
+        ? control.selectedOptions[0]?.textContent.trim() || value
+        : value;
+      const item = document.createElement('li');
+      const button = document.createElement('button');
+      button.className = 'nds-chip';
+      button.type = 'button';
+      button.textContent = `${filterLabels[key]}: ${displayValue} ×`;
+      button.setAttribute('aria-label', `Remove ${filterLabels[key]} filter: ${displayValue}`);
+      button.addEventListener('click', () => {
+        if (control) control.value = '';
+        update();
+      });
+      item.append(button);
+      active.append(item);
+    });
+  };
+
+  form.addEventListener('submit', (event) => { event.preventDefault(); update(); });
+  form.addEventListener('reset', () => queueMicrotask(update));
+  demo.querySelector('[data-filter-reset]')?.addEventListener('click', () => { form.reset(); queueMicrotask(update); });
+  update();
+});
+
 document.querySelectorAll('[data-toast-demo-region]').forEach((region) => {
   const manager = createToastManager(region, { maxVisible: 3, duration: 6000 });
   document.querySelectorAll(`[data-toast-region="${region.id}"]`).forEach((button) => {

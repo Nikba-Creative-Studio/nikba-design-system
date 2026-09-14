@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en" data-theme="frost" data-glass="soft">
+  <head>
+    <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nikba Search and Filter pattern reference." /><title>Search and Filter · Nikba Design System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&amp;display=swap" rel="stylesheet" /><script type="module" src="/app.js"></script>
+  </head>
+  <body class="nds-scope">
+    <a class="skip-link" href="#main">Skip to content</a><div class="ambient ambient--one"></div><div class="ambient ambient--two"></div>
+    <header data-catalog-header data-current="components"></header><aside data-appearance-panel aria-label="Appearance controls"></aside>
+    <main id="main" class="nds-container page-main">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Overview</a><span aria-hidden="true">/</span><a href="/components/">Components</a><span aria-hidden="true">/</span><span aria-current="page">Search and Filter</span></nav>
+      <header class="page-hero component-hero"><div><p class="eyebrow">Pattern 25 · Complete</p><h1 class="nds-display">Search<br />and Filter</h1></div><p>Narrows a collection through durable query parameters, explicit criteria, active-filter visibility, and recoverable empty results.</p></header>
+      <div class="page-layout">
+        <nav class="page-sidebar" aria-label="Pattern sections"><span>Search and Filter</span><a href="#demo">Functional demo</a><a href="#active">Active filters</a><a href="#empty">No results</a><a href="#responsive">Responsive</a><hr /><a href="/components/product-states.html">← Product States</a></nav>
+        <div class="page-content">
+          <section id="demo" class="specimen specimen--wide reveal" aria-labelledby="demo-title"><div class="specimen-heading"><p class="component-label">Functional demo</p><h2 id="demo-title">Apply related criteria together</h2><p>Search projects by name or owner, narrow by status and type, then Apply. The native GET form remains meaningful without JavaScript.</p></div><div class="nds-search-filter" data-filter-demo>
+            <form class="nds-search-filter__form" method="get" action="/components/search-filter.html">
+              <label class="nds-field nds-search-filter__query"><span class="nds-field__label">Search projects</span><span class="nds-search-filter__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><circle cx="7" cy="7" r="4.5" /><path d="m10.5 10.5 3 3" /></svg></span><input class="nds-input" type="search" name="query" placeholder="Name or owner" /></label>
+              <label class="nds-field"><span class="nds-field__label">Status</span><span class="nds-select-shell"><select class="nds-select" name="status"><option value="">Any status</option><option value="active">Active</option><option value="review">In review</option><option value="draft">Draft</option></select></span></label>
+              <label class="nds-field"><span class="nds-field__label">Type</span><span class="nds-select-shell"><select class="nds-select" name="type"><option value="">Any type</option><option value="system">Design system</option><option value="brand">Brand</option><option value="product">Product</option></select></span></label>
+              <div class="nds-search-filter__actions"><button class="nds-button" type="submit">Apply</button><button class="nds-button nds-button--ghost" type="reset">Reset</button></div>
+            </form>
+            <div class="nds-search-filter__summary"><strong data-filter-count aria-live="polite">4 results</strong><ul class="nds-search-filter__active" data-filter-active aria-label="Active filters"></ul></div>
+            <div class="nds-search-filter__results" data-filter-results><article class="nds-card nds-card--compact" data-filter-item data-status="active" data-type="system"><div class="nds-card__body"><h3 class="nds-card__title">Nikba Design System</h3><p class="nds-card__description">Maya Chen · Design system · Active</p></div></article><article class="nds-card nds-card--compact" data-filter-item data-status="review" data-type="product"><div class="nds-card__body"><h3 class="nds-card__title">Account settings</h3><p class="nds-card__description">Jordan Lee · Product · In review</p></div></article><article class="nds-card nds-card--compact" data-filter-item data-status="draft" data-type="brand"><div class="nds-card__body"><h3 class="nds-card__title">Studio identity</h3><p class="nds-card__description">Alex Morgan · Brand · Draft</p></div></article><article class="nds-card nds-card--compact" data-filter-item data-status="active" data-type="product"><div class="nds-card__body"><h3 class="nds-card__title">Project dashboard</h3><p class="nds-card__description">Maya Chen · Product · Active</p></div></article></div>
+            <section class="nds-state nds-state--compact" data-filter-empty hidden aria-labelledby="filter-empty-title"><div class="nds-state__content"><div class="nds-state__body"><h3 class="nds-state__title" id="filter-empty-title">No matching projects</h3><p class="nds-state__description">Try another query or remove the active filters.</p></div><div class="nds-state__actions"><button class="nds-button nds-button--secondary" type="button" data-filter-reset>Reset filters</button></div></div></section>
+          </div></section>
+
+          <section id="active" class="specimen reveal" aria-labelledby="active-title"><div class="specimen-heading"><p class="component-label">Active criteria</p><h2 id="active-title">Keep applied filters visible</h2><p>Removable Chips expose criteria that would otherwise disappear inside closed controls.</p></div><ul class="nds-search-filter__active" aria-label="Example active filters"><li><button class="nds-chip" type="button">Status: Active ×</button></li><li><button class="nds-chip" type="button">Type: Product ×</button></li></ul></section>
+
+          <section id="empty" class="specimen reveal" aria-labelledby="empty-title"><div class="specimen-heading"><p class="component-label">No results</p><h2 id="empty-title">Keep the criteria and recovery together</h2><p>The query stays in the form while the result region becomes a compact Product State with a Reset action.</p></div><div class="header-variant-grid"><div><span>Context</span><strong>Criteria remain visible</strong></div><div><span>Message</span><strong>Name the collection</strong></div><div><span>Recovery</span><strong>Reset in one action</strong></div></div></section>
+
+          <section id="responsive" class="specimen reveal" aria-labelledby="responsive-title"><div class="specimen-heading"><p class="component-label">Responsive behavior</p><h2 id="responsive-title">Stack without changing meaning</h2><p>The query spans the form at medium widths. All controls and actions stack into one readable column on compact screens.</p></div><div class="tabs-lifecycle-grid"><div><span>Wide</span><code>Query + filters + actions</code></div><div><span>Medium</span><code>Query / filters + actions</code></div><div><span>Compact</span><code>One control per row</code></div></div></section>
+
+          <section class="guidance-panel nds-glass reveal" aria-labelledby="guidance-title"><p class="component-label">Usage guidance</p><h2 id="guidance-title">Make every applied criterion reversible.</h2><p>Preserve the active state in URLs, Pagination, and sorting. Keep one clear Reset path whenever criteria can produce no results.</p><a class="nds-link nds-link--standalone" href="/components/">Back to components <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></section>
+        </div>
+      </div>
+    </main>
+    <footer class="catalog-footer nds-container"><span>Nikba Design System</span><a class="nds-link" href="/components/">All components</a></footer>
+  </body>
+</html>
