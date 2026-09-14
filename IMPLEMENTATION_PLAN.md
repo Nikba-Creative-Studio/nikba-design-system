@@ -140,7 +140,7 @@ Delivery order:
 6. [x] Native Select
 7. [x] Checkbox and Radio
 8. [x] Switch
-9. [ ] Content primitives
+9. [x] Content primitives
    - [x] Card
    - [x] Divider
    - [x] Avatar
@@ -164,8 +164,8 @@ Goal: provide reliable keyboard and focus behavior for application interfaces.
 
 Delivery order:
 
-1. Disclosure and Accordion
-2. Tabs
+1. [x] Disclosure and Accordion
+2. [x] Tabs
 3. Dialog
 4. Popover and Dropdown Menu
 5. Tooltip
@@ -256,12 +256,11 @@ Open decisions belong in the relevant component document. Once a decision ships 
 
 ## 10. Immediate next work package
 
-Phase 0 will be delivered in this order:
+Continue Phase 3 in this order:
 
-1. Translate and reconcile existing documentation and catalog copy.
-2. Connect the playground to `src` and remove duplicated public styles.
-3. Repair library/catalog build and preview commands.
-4. Fix the P1 foundation defects identified in [AUDIT.md](./AUDIT.md).
-5. Add baseline verification and changelog files.
+1. Dialog with focus placement, containment, dismissal, and restoration.
+2. Popover and Dropdown Menu with deterministic keyboard behavior.
+3. Tooltip with pointer, keyboard, and dismissal support.
+4. Toast with live-region and queue guidance.
 
-This package intentionally avoids new components. Its purpose is to make every later component implementation trustworthy and reviewable.
+Each interactive component ships with an explicit initializer, cleanup contract, native fallback where available, and targeted behavior tests.

@@ -31,7 +31,9 @@
     "test:css": "node tests/css-contract.test.mjs",
     "test:contrast": "node tests/contrast.test.mjs",
     "test:mcp": "node tests/mcp.test.mjs",
-    "test": "npm run test:api && npm run test:css && npm run test:contrast && npm run test:mcp",
+    "test:accordion": "node tests/accordion.test.mjs",
+    "test:tabs": "node tests/tabs.test.mjs",
+    "test": "npm run test:api && npm run test:css && npm run test:contrast && npm run test:accordion && npm run test:tabs && npm run test:mcp",
     "mcp": "node ./mcp/server.js",
     "verify": "npm run build && npm test && npm pack --dry-run"
   },

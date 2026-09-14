@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en" data-theme="frost" data-glass="soft">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nikba Disclosure and Accordion component reference." />
+    <title>Disclosure and Accordion · Nikba Design System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body class="nds-scope">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="ambient ambient--one"></div><div class="ambient ambient--two"></div>
+    <header data-catalog-header data-current="components"></header>
+    <aside data-appearance-panel aria-label="Appearance controls"></aside>
+    <main id="main" class="nds-container page-main">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Overview</a><span aria-hidden="true">/</span><a href="/components/">Components</a><span aria-hidden="true">/</span><span aria-current="page">Disclosure and Accordion</span></nav>
+      <header class="page-hero component-hero">
+        <div><p class="eyebrow">Component 15 · Complete</p><h1 class="nds-display">Disclosure<br />and Accordion</h1></div>
+        <p>Reveals supporting content with native semantics, stable focus, and optional single-open behavior.</p>
+      </header>
+      <div class="page-layout">
+        <nav class="page-sidebar" aria-label="Component sections"><span>Disclosure</span><a href="#default">Default</a><a href="#contained">Contained</a><a href="#multiple">Multiple</a><a href="#single">Single open</a><a href="#nested">Nested</a><a href="#lifecycle">Lifecycle</a><hr /><a href="/components/alert.html">← Alert</a></nav>
+        <div class="page-content">
+          <section id="default" class="specimen reveal" aria-labelledby="default-title">
+            <div class="specimen-heading"><p class="component-label">Default</p><h2 id="default-title">Let the browser own disclosure behavior</h2><p>Native Details and Summary provide expanded-state semantics, keyboard activation, focus, and a usable experience without JavaScript.</p></div>
+            <div class="disclosure-demo">
+              <details class="nds-disclosure" open><summary class="nds-disclosure__summary"><span class="nds-disclosure__heading">What does the package include?</span></summary><div class="nds-disclosure__content"><p>Semantic tokens, foundations, accessible components, interaction behaviors, and implementation guidance.</p></div></details>
+              <details class="nds-disclosure"><summary class="nds-disclosure__summary"><span class="nds-disclosure__heading">Which browsers are supported?</span></summary><div class="nds-disclosure__content"><p>The latest two stable versions of Chrome, Edge, Firefox, and Safari form the current baseline.</p></div></details>
+            </div>
+          </section>
+
+          <section id="contained" class="specimen reveal" aria-labelledby="contained-title">
+            <div class="specimen-heading"><p class="component-label">Contained</p><h2 id="contained-title">Create a focused standalone surface</h2><p>Contained appearance suits a disclosure that sits independently from a list or needs stronger visual separation.</p></div>
+            <details class="nds-disclosure nds-disclosure--contained disclosure-demo" open><summary class="nds-disclosure__summary"><span class="nds-disclosure__heading">Theme behavior<span class="nds-disclosure__description">How Frost, Mist, and Graphite use the same semantic roles</span></span></summary><div class="nds-disclosure__content"><p>Components consume stable semantic tokens. Each theme maps those roles to a coordinated surface, text, border, action, and feedback palette.</p></div></details>
+          </section>
+
+          <section id="multiple" class="specimen reveal" aria-labelledby="multiple-title">
+            <div class="specimen-heading"><p class="component-label">Multiple open</p><h2 id="multiple-title">Keep comparison available</h2><p>The default Accordion allows any number of sections to remain open. No JavaScript is required.</p></div>
+            <div class="nds-accordion disclosure-demo">
+              <details class="nds-disclosure" open><summary class="nds-disclosure__summary"><span class="nds-disclosure__heading">Foundations<span class="nds-disclosure__description">Tokens, typography, color, layout, and motion</span></span></summary><div class="nds-disclosure__content"><p>Shared visual and technical decisions used by every component.</p></div></details>
+              <details class="nds-disclosure" open><summary class="nds-disclosure__summary"><span class="nds-disclosure__heading">Components<span class="nds-disclosure__description">Controls, content primitives, and interactions</span></span></summary><div class="nds-disclosure__content"><p>Reusable public APIs with documented semantics, states, and acceptance criteria.</p></div></details>
+              <details class="nds-disclosure"><summary class="nds-disclosure__summary"><span class="nds-disclosure__heading">Integrations<span class="nds-disclosure__description">MCP, plain HTML, and future framework adapters</span></span></summary><div class="nds-disclosure__content"><p>Guidance that connects the system to implementation environments.</p></div></details>
+            </div>
+          </section>
+
+          <section id="single" class="specimen reveal" aria-labelledby="single-title">
+            <div class="specimen-heading"><p class="component-label">Single open</p><h2 id="single-title">Reduce vertical expansion</h2><p>The initializer closes direct siblings after a new item opens and emits a change event from the group.</p></div>
+            <div class="nds-accordion nds-accordion--separated disclosure-demo" id="single-accordion" data-nds-accordion="single">
+              <details class="nds-disclosure nds-disclosure--contained" open><summary class="nds-disclosure__summary"><span class="nds-disclosure__heading">Brand</span></summary><div class="nds-disclosure__content"><p>Logo, typography, voice, and the visual principles that define Nikba.</p></div></details>
+              <details class="nds-disclosure nds-disclosure--contained"><summary class="nds-disclosure__summary"><span class="nds-disclosure__heading">Product</span></summary><div class="nds-disclosure__content"><p>Accessible controls and patterns for consistent product interfaces.</p></div></details>
+              <details class="nds-disclosure nds-disclosure--contained"><summary class="nds-disclosure__summary"><span class="nds-disclosure__heading">Engineering</span></summary><div class="nds-disclosure__content"><p>Versioned CSS and JavaScript APIs with reproducible package verification.</p></div></details>
+            </div>
+            <p class="accordion-event-log"><span>Last opened</span><strong data-accordion-output="single-accordion">Brand</strong></p>
+          </section>
+
+          <section id="nested" class="specimen reveal" aria-labelledby="nested-title">
+            <div class="specimen-heading"><p class="component-label">Nested content</p><h2 id="nested-title">Keep group boundaries explicit</h2><p>Single-open behavior affects only direct Disclosure children. A nested Disclosure remains independent.</p></div>
+            <details class="nds-disclosure nds-disclosure--contained disclosure-demo" open><summary class="nds-disclosure__summary"><span class="nds-disclosure__heading">Advanced settings</span></summary><div class="nds-disclosure__content"><p>Settings in this region share one broader context.</p><details class="nds-disclosure nds-disclosure--compact"><summary class="nds-disclosure__summary"><span class="nds-disclosure__heading">Rendering options</span></summary><div class="nds-disclosure__content"><p>Control progressive visual effects without changing content semantics.</p></div></details></div></details>
+          </section>
+
+          <section id="lifecycle" class="specimen reveal" aria-labelledby="lifecycle-title">
+            <div class="specimen-heading"><p class="component-label">Lifecycle</p><h2 id="lifecycle-title">Initialize the region that changed</h2><p>The public initializer accepts a Document or Element, skips existing groups, and returns cleanup for the listeners it adds.</p></div>
+            <div class="disclosure-lifecycle-grid"><div><span>Initialize</span><code>const cleanup = initAccordions(root)</code></div><div><span>Observe</span><code>nds:accordion-change</code></div><div><span>Remove</span><code>cleanup()</code></div></div>
+          </section>
+
+          <section class="guidance-panel nds-glass reveal" aria-labelledby="guidance-title"><p class="component-label">Usage guidance</p><h2 id="guidance-title">Keep essential information visible.</h2><p>Use Disclosure for supporting detail. Show short content, errors, and information users need to compare without requiring another action.</p><a class="nds-link nds-link--standalone" href="/components/tabs.html">Next component: Tabs <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></section>
+        </div>
+      </div>
+    </main>
+    <footer class="catalog-footer nds-container"><span>Nikba Design System</span><a class="nds-link" href="/components/">All components</a></footer>
+  </body>
+</html>

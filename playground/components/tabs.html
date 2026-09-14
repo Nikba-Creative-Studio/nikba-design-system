@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en" data-theme="frost" data-glass="soft">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nikba Tabs component reference." />
+    <title>Tabs · Nikba Design System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body class="nds-scope">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="ambient ambient--one"></div><div class="ambient ambient--two"></div>
+    <header data-catalog-header data-current="components"></header>
+    <aside data-appearance-panel aria-label="Appearance controls"></aside>
+    <main id="main" class="nds-container page-main">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Overview</a><span aria-hidden="true">/</span><a href="/components/">Components</a><span aria-hidden="true">/</span><span aria-current="page">Tabs</span></nav>
+      <header class="page-hero component-hero">
+        <div><p class="eyebrow">Component 16 · Complete</p><h1 class="nds-display">Tabs</h1></div>
+        <p>Switches between related views with explicit selection, roving focus, and automatic or manual activation.</p>
+      </header>
+      <div class="page-layout">
+        <nav class="page-sidebar" aria-label="Component sections"><span>Tabs</span><a href="#automatic">Automatic</a><a href="#contained">Contained</a><a href="#manual">Manual</a><a href="#vertical">Vertical</a><a href="#overflow">Overflow</a><a href="#lifecycle">Lifecycle</a><hr /><a href="/components/disclosure-accordion.html">← Disclosure</a></nav>
+        <div class="page-content">
+          <section id="automatic" class="specimen reveal" aria-labelledby="automatic-title">
+            <div class="specimen-heading"><p class="component-label">Automatic activation</p><h2 id="automatic-title">Reveal content as focus moves</h2><p>Use automatic activation when every panel is already available. Arrow keys move focus and selection together.</p></div>
+            <div class="nds-tabs tabs-demo" id="automatic-tabs" data-nds-tabs>
+              <div class="nds-tabs__list" role="tablist" aria-label="Project details">
+                <button class="nds-tabs__tab" id="overview-tab" type="button" role="tab" aria-selected="true" aria-controls="overview-panel">Overview</button>
+                <button class="nds-tabs__tab" id="activity-tab" type="button" role="tab" aria-selected="false" aria-controls="activity-panel" tabindex="-1">Activity</button>
+                <button class="nds-tabs__tab" id="access-tab" type="button" role="tab" aria-selected="false" aria-controls="access-panel" tabindex="-1">Access</button>
+              </div>
+              <div class="nds-tabs__panel" id="overview-panel" role="tabpanel" aria-labelledby="overview-tab" tabindex="0"><div class="tabs-panel-card"><strong>Project overview</strong><p>Key status, ownership, and delivery information in one focused view.</p></div></div>
+              <div class="nds-tabs__panel" id="activity-panel" role="tabpanel" aria-labelledby="activity-tab" tabindex="0" hidden><div class="tabs-panel-card"><strong>Recent activity</strong><p>Twelve changes were published during the last seven days.</p></div></div>
+              <div class="nds-tabs__panel" id="access-panel" role="tabpanel" aria-labelledby="access-tab" tabindex="0" hidden><div class="tabs-panel-card"><strong>Project access</strong><p>Eight members can view this project and three can edit it.</p></div></div>
+            </div>
+            <p class="tabs-event-log"><span>Selected view</span><strong data-tabs-output="automatic-tabs">Overview</strong></p>
+          </section>
+
+          <section id="contained" class="specimen reveal" aria-labelledby="contained-title">
+            <div class="specimen-heading"><p class="component-label">Contained</p><h2 id="contained-title">Strengthen the selected state</h2><p>The contained appearance works well inside settings surfaces and compact tool regions.</p></div>
+            <div class="nds-tabs nds-tabs--contained tabs-demo" data-nds-tabs>
+              <div class="nds-tabs__list" role="tablist" aria-label="Account settings">
+                <button class="nds-tabs__tab" id="profile-tab" type="button" role="tab" aria-selected="true" aria-controls="profile-panel">Profile</button>
+                <button class="nds-tabs__tab" id="security-tab" type="button" role="tab" aria-selected="false" aria-controls="security-panel" tabindex="-1">Security</button>
+                <button class="nds-tabs__tab" id="billing-tab" type="button" role="tab" aria-selected="false" aria-controls="billing-panel" tabindex="-1">Billing</button>
+              </div>
+              <div class="nds-tabs__panel" id="profile-panel" role="tabpanel" aria-labelledby="profile-tab"><p>Manage the name, role, and image shown across your workspace.</p></div>
+              <div class="nds-tabs__panel" id="security-panel" role="tabpanel" aria-labelledby="security-tab" hidden><p>Review authentication methods and active sessions.</p></div>
+              <div class="nds-tabs__panel" id="billing-panel" role="tabpanel" aria-labelledby="billing-tab" hidden><p>Manage plan details, invoices, and payment methods.</p></div>
+            </div>
+          </section>
+
+          <section id="manual" class="specimen reveal" aria-labelledby="manual-title">
+            <div class="specimen-heading"><p class="component-label">Manual activation</p><h2 id="manual-title">Separate focus from selection</h2><p>Use manual activation when changing panels may involve latency. Arrow keys move focus; Enter or Space selects the focused tab.</p></div>
+            <div class="nds-tabs tabs-demo" id="manual-tabs" data-nds-tabs data-activation="manual">
+              <div class="nds-tabs__list" role="tablist" aria-label="Reports">
+                <button class="nds-tabs__tab" id="summary-tab" type="button" role="tab" aria-selected="true" aria-controls="summary-panel">Summary</button>
+                <button class="nds-tabs__tab" id="weekly-tab" type="button" role="tab" aria-selected="false" aria-controls="weekly-panel" tabindex="-1">Weekly</button>
+                <button class="nds-tabs__tab" id="monthly-tab" type="button" role="tab" aria-selected="false" aria-controls="monthly-panel" tabindex="-1">Monthly</button>
+              </div>
+              <div class="nds-tabs__panel" id="summary-panel" role="tabpanel" aria-labelledby="summary-tab"><p>Current performance across the complete reporting period.</p></div>
+              <div class="nds-tabs__panel" id="weekly-panel" role="tabpanel" aria-labelledby="weekly-tab" hidden><p>Weekly performance grouped into seven-day intervals.</p></div>
+              <div class="nds-tabs__panel" id="monthly-panel" role="tabpanel" aria-labelledby="monthly-tab" hidden><p>Monthly performance grouped into calendar periods.</p></div>
+            </div>
+            <p class="tabs-event-log"><span>Selected report</span><strong data-tabs-output="manual-tabs">Summary</strong></p>
+          </section>
+
+          <section id="vertical" class="specimen reveal" aria-labelledby="vertical-title">
+            <div class="specimen-heading"><p class="component-label">Vertical</p><h2 id="vertical-title">Support broader navigation labels</h2><p>Vertical Tabs use Up and Down Arrow keys and keep their orientation at every viewport size.</p></div>
+            <div class="nds-tabs nds-tabs--vertical tabs-demo" data-nds-tabs>
+              <div class="nds-tabs__list" role="tablist" aria-label="Design system areas" aria-orientation="vertical">
+                <button class="nds-tabs__tab" id="brand-tab" type="button" role="tab" aria-selected="true" aria-controls="brand-panel">Brand language</button>
+                <button class="nds-tabs__tab" id="product-tab" type="button" role="tab" aria-selected="false" aria-controls="product-panel" tabindex="-1">Product interface</button>
+                <button class="nds-tabs__tab" id="engineering-tab" type="button" role="tab" aria-selected="false" aria-controls="engineering-panel" tabindex="-1">Engineering</button>
+              </div>
+              <div class="nds-tabs__panel" id="brand-panel" role="tabpanel" aria-labelledby="brand-tab"><div class="tabs-panel-card"><strong>Brand language</strong><p>Principles, identity, type, color, voice, and visual expression.</p></div></div>
+              <div class="nds-tabs__panel" id="product-panel" role="tabpanel" aria-labelledby="product-tab" hidden><div class="tabs-panel-card"><strong>Product interface</strong><p>Components and patterns for consistent digital experiences.</p></div></div>
+              <div class="nds-tabs__panel" id="engineering-panel" role="tabpanel" aria-labelledby="engineering-tab" hidden><div class="tabs-panel-card"><strong>Engineering</strong><p>Versioned APIs, integration guidance, and validation contracts.</p></div></div>
+            </div>
+          </section>
+
+          <section id="overflow" class="specimen reveal" aria-labelledby="overflow-title">
+            <div class="specimen-heading"><p class="component-label">Overflow and disabled</p><h2 id="overflow-title">Keep one readable row</h2><p>The Tab list scrolls horizontally when labels exceed its width. Disabled tabs remain visible and arrow navigation skips them.</p></div>
+            <div class="nds-tabs tabs-demo tabs-demo--narrow" data-nds-tabs>
+              <div class="nds-tabs__list" role="tablist" aria-label="Analytics period">
+                <button class="nds-tabs__tab" id="realtime-tab" type="button" role="tab" aria-selected="true" aria-controls="realtime-panel">Real-time activity</button>
+                <button class="nds-tabs__tab" id="acquisition-tab" type="button" role="tab" aria-selected="false" aria-controls="acquisition-panel" tabindex="-1">Acquisition channels</button>
+                <button class="nds-tabs__tab" id="retention-tab" type="button" role="tab" aria-selected="false" aria-controls="retention-panel" aria-disabled="true" tabindex="-1">Retention</button>
+              </div>
+              <div class="nds-tabs__panel" id="realtime-panel" role="tabpanel" aria-labelledby="realtime-tab"><p>Live activity from active visitors.</p></div>
+              <div class="nds-tabs__panel" id="acquisition-panel" role="tabpanel" aria-labelledby="acquisition-tab" hidden><p>Traffic grouped by acquisition source.</p></div>
+              <div class="nds-tabs__panel" id="retention-panel" role="tabpanel" aria-labelledby="retention-tab" hidden><p>Retention data is not available yet.</p></div>
+            </div>
+          </section>
+
+          <section id="lifecycle" class="specimen reveal" aria-labelledby="lifecycle-title">
+            <div class="specimen-heading"><p class="component-label">Lifecycle</p><h2 id="lifecycle-title">Initialize only the region that changed</h2><p>The initializer accepts a Document or Element, skips initialized groups, and returns cleanup for every listener it adds.</p></div>
+            <div class="tabs-lifecycle-grid"><div><span>Initialize</span><code>const cleanup = initTabs(root)</code></div><div><span>Observe</span><code>nds:tabs-change</code></div><div><span>Remove</span><code>cleanup()</code></div></div>
+          </section>
+
+          <section class="guidance-panel nds-glass reveal" aria-labelledby="guidance-title"><p class="component-label">Usage guidance</p><h2 id="guidance-title">Keep every view at the same level.</h2><p>Use Tabs for related peers inside one context. Use navigation when each destination needs its own URL, history entry, or independent page title.</p><a class="nds-link nds-link--standalone" href="/components/">Back to components <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></section>
+        </div>
+      </div>
+    </main>
+    <footer class="catalog-footer nds-container"><span>Nikba Design System</span><a class="nds-link" href="/components/">All components</a></footer>
+  </body>
+</html>

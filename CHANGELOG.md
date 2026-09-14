@@ -49,6 +49,12 @@ The project follows [Semantic Versioning](https://semver.org/). Before `1.0.0`, 
 - A complete Skeleton contract with a dedicated catalog page.
 - Alert neutral, informational, success, warning, danger, compact, action, and dismissible variants.
 - A complete Alert contract with a dedicated catalog page and functional dismissal example.
+- Native Disclosure and Accordion styles with contained, compact, separated, multiple-open, and nested compositions.
+- An idempotent single-open Accordion initializer with cleanup and a bubbling change event.
+- A complete Disclosure and Accordion contract with a dedicated catalog page and behavior test.
+- Tabs styles for standard, contained, vertical, disabled, and overflow compositions.
+- An idempotent Tabs initializer with automatic and manual activation, roving focus, cleanup, and a bubbling change event.
+- A complete Tabs contract with a dedicated catalog page and behavior test.
 - A read-only MCP server that exposes design-system documentation and tokens to compatible AI hosts.
 - MCP resources, component and token query tools, an implementation prompt, host setup documentation, and an end-to-end protocol test.
 - A dedicated MCP catalog page and primary navigation entry for the AI integration.
@@ -60,6 +66,8 @@ The project follows [Semantic Versioning](https://semver.org/). Before `1.0.0`, 
 - Overview now uses a structured system-status panel and a denser editorial card grid.
 - Component catalog cards now share the Overview's editorial surfaces, directional controls, and compact responsive sizing.
 - Overview metrics now use aligned number and label columns on mobile.
+- Header and appearance controls now share the responsive Container gutter at narrow viewport widths.
+- Accordion hover surfaces now clip cleanly inside rounded item corners.
 - The catalog navigation now uses the official Nikba SVG logo from the source package.
 - English is now the project language for documentation, source comments, public APIs, tests, and release notes.
 - Glass levels now control the rendered surface and filter behavior.

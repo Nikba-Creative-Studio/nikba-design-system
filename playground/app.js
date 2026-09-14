@@ -1,4 +1,4 @@
-import { glassLevels, setGlassLevel, setTheme, themes } from '../src/index.js';
+import { glassLevels, initAccordions, initTabs, setGlassLevel, setTheme, themes } from '../src/index.js';
 import logoUrl from '../src/logo.svg?url';
 import './styles.css';
 
@@ -99,6 +99,20 @@ function applyGlass(level) {
 
 applyTheme(readPreference(themeKey, themes, root.dataset.theme || 'frost'));
 applyGlass(readPreference(glassKey, glassLevels, root.dataset.glass || 'soft'));
+initAccordions();
+initTabs();
+
+document.querySelectorAll('[data-accordion-output]').forEach((output) => {
+  document.getElementById(output.dataset.accordionOutput)?.addEventListener('nds:accordion-change', (event) => {
+    output.textContent = event.detail.openItem.querySelector('.nds-disclosure__heading')?.firstChild?.textContent?.trim() || 'Item';
+  });
+});
+
+document.querySelectorAll('[data-tabs-output]').forEach((output) => {
+  document.getElementById(output.dataset.tabsOutput)?.addEventListener('nds:tabs-change', (event) => {
+    output.textContent = event.detail.tab.textContent.trim();
+  });
+});
 
 document.querySelector('[data-theme-controls]')?.addEventListener('click', (event) => {
   const button = event.target.closest('button[data-value]');
