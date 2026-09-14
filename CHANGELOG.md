@@ -39,10 +39,27 @@ The project follows [Semantic Versioning](https://semver.org/). Before `1.0.0`, 
 - A complete Switch contract with a dedicated catalog page.
 - Card density, depth, composition, Media, horizontal, and interactive variants.
 - A complete Card contract with a dedicated catalog page.
+- Divider emphasis, spacing, inset, labeled, and vertical variants.
+- A complete Divider contract with a dedicated catalog page.
+- Avatar images, initials, fallback, sizes, presence, groups, and interactive wrapper.
+- A complete Avatar contract with a dedicated catalog page.
+- Spinner sizes, tones, accessible Status labels, and busy-region patterns.
+- A complete Spinner contract with a dedicated catalog page.
+- Skeleton text, heading, avatar, square, media, button, static, and composition variants.
+- A complete Skeleton contract with a dedicated catalog page.
+- Alert neutral, informational, success, warning, danger, compact, action, and dismissible variants.
+- A complete Alert contract with a dedicated catalog page and functional dismissal example.
+- A read-only MCP server that exposes design-system documentation and tokens to compatible AI hosts.
+- MCP resources, component and token query tools, an implementation prompt, host setup documentation, and an end-to-end protocol test.
+- A dedicated MCP catalog page and primary navigation entry for the AI integration.
 
 ### Changed
 
+- Overview Footer now credits Nikba Creative Studio and links to nikba.com.
+- Avatar examples now use the supplied neutral profile illustration.
 - Overview now uses a structured system-status panel and a denser editorial card grid.
+- Component catalog cards now share the Overview's editorial surfaces, directional controls, and compact responsive sizing.
+- Overview metrics now use aligned number and label columns on mobile.
 - The catalog navigation now uses the official Nikba SVG logo from the source package.
 - English is now the project language for documentation, source comments, public APIs, tests, and release notes.
 - Glass levels now control the rendered surface and filter behavior.

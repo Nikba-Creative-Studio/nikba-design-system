@@ -28,6 +28,7 @@ const navigationItems = [
   ['overview', '/', 'Overview'],
   ['foundations', '/foundations.html', 'Foundations'],
   ['components', '/components/', 'Components'],
+  ['mcp', '/mcp.html', 'MCP'],
 ];
 
 document.querySelector('[data-catalog-header]')?.replaceChildren(
@@ -155,6 +156,30 @@ document.querySelectorAll('[data-checkbox-group]').forEach((group) => {
 
   items.forEach((item) => item.addEventListener('change', updateMaster));
   updateMaster();
+});
+
+document.querySelectorAll('[data-alert-demo]').forEach((demo) => {
+  const dismissButton = demo.querySelector('[data-alert-dismiss]');
+  const restoreButton = demo.querySelector('[data-alert-restore]');
+  const announcer = demo.querySelector('[data-alert-announcer]');
+  if (!dismissButton || !restoreButton) return;
+
+  const alert = document.getElementById(dismissButton.dataset.alertDismiss);
+  if (!alert) return;
+
+  dismissButton.addEventListener('click', () => {
+    alert.hidden = true;
+    restoreButton.disabled = false;
+    if (announcer) announcer.textContent = 'Notification dismissed.';
+    restoreButton.focus();
+  });
+
+  restoreButton.addEventListener('click', () => {
+    alert.hidden = false;
+    restoreButton.disabled = true;
+    if (announcer) announcer.textContent = 'Notification shown.';
+    dismissButton.focus();
+  });
 });
 
 const catalogNav = document.querySelector('.catalog-nav');

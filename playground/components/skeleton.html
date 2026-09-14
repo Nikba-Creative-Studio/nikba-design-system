@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en" data-theme="frost" data-glass="soft">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nikba Skeleton component reference." />
+    <title>Skeleton · Nikba Design System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body class="nds-scope">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="ambient ambient--one"></div><div class="ambient ambient--two"></div>
+    <header data-catalog-header data-current="components"></header>
+    <aside data-appearance-panel aria-label="Appearance controls"></aside>
+    <main id="main" class="nds-container page-main">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Overview</a><span aria-hidden="true">/</span><a href="/components/">Components</a><span aria-hidden="true">/</span><span aria-current="page">Skeleton</span></nav>
+      <header class="page-hero component-hero">
+        <div><p class="eyebrow">Component 13 · Complete</p><h1 class="nds-display">Skeleton</h1></div>
+        <p>Preserves the expected content layout while a page or local region is loading.</p>
+      </header>
+      <div class="page-layout">
+        <nav class="page-sidebar" aria-label="Component sections"><span>Skeleton</span><a href="#default">Default</a><a href="#text">Text</a><a href="#shapes">Shapes</a><a href="#composition">Composition</a><a href="#static">Static</a><a href="#accessibility">Accessibility</a><hr /><a href="/components/spinner.html">← Spinner</a><a href="/components/alert.html">Alert →</a></nav>
+        <div class="page-content">
+          <section id="default" class="specimen reveal" aria-labelledby="default-title">
+            <div class="specimen-heading"><p class="component-label">Default</p><h2 id="default-title">Preserve the space content will use</h2><p>Skeleton follows the geometry of the resolved profile row, preventing the surrounding layout from shifting.</p></div>
+            <div class="skeleton-profile-demo" aria-busy="true"><span class="nds-visually-hidden" role="status">Loading profile…</span><div class="skeleton-profile-demo__content" aria-hidden="true"><span class="nds-skeleton nds-skeleton--avatar"></span><div class="nds-skeleton-stack"><span class="nds-skeleton nds-skeleton--text" style="--nds-skeleton-width: 9rem"></span><span class="nds-skeleton nds-skeleton--text" style="--nds-skeleton-width: 6rem"></span></div></div></div>
+          </section>
+
+          <section id="text" class="specimen reveal" aria-labelledby="text-title">
+            <div class="specimen-heading"><p class="component-label">Text</p><h2 id="text-title">Suggest hierarchy and natural rhythm</h2><p>Combine heading and text variants. Shorten selected lines to reflect the expected copy rather than creating a uniform block.</p></div>
+            <div class="skeleton-copy-demo" aria-busy="true"><span class="nds-visually-hidden" role="status">Loading article…</span><div class="nds-skeleton-stack" aria-hidden="true"><span class="nds-skeleton nds-skeleton--heading" style="--nds-skeleton-width: 64%"></span><span class="nds-skeleton nds-skeleton--text"></span><span class="nds-skeleton nds-skeleton--text" style="--nds-skeleton-width: 92%"></span><span class="nds-skeleton nds-skeleton--text" style="--nds-skeleton-width: 76%"></span></div></div>
+          </section>
+
+          <section id="shapes" class="specimen reveal" aria-labelledby="shapes-title">
+            <div class="specimen-heading"><p class="component-label">Shapes</p><h2 id="shapes-title">Match recognizable interface geometry</h2><p>Use purpose-built shapes for identity, icons, media, and controls. Custom properties support exceptional dimensions.</p></div>
+            <div class="skeleton-shape-grid" aria-hidden="true"><div><span class="nds-skeleton nds-skeleton--avatar"></span><small>Avatar</small></div><div><span class="nds-skeleton nds-skeleton--square"></span><small>Square</small></div><div class="skeleton-shape-grid__media"><span class="nds-skeleton nds-skeleton--media"></span><small>Media · 16:9</small></div><div><span class="nds-skeleton nds-skeleton--button"></span><small>Button</small></div></div>
+          </section>
+
+          <section id="composition" class="specimen reveal" aria-labelledby="composition-title">
+            <div class="specimen-heading"><p class="component-label">Composition</p><h2 id="composition-title">Build the placeholder inside the real container</h2><p>The Card supplies layout and spacing. Skeleton represents only the content that has not arrived.</p></div>
+            <div class="skeleton-card-grid">
+              <article class="nds-card skeleton-card-demo" aria-busy="true"><span class="nds-visually-hidden" role="status">Loading project…</span><div aria-hidden="true" class="nds-skeleton-stack"><span class="nds-skeleton nds-skeleton--media"></span><span class="nds-skeleton nds-skeleton--heading" style="--nds-skeleton-width: 72%"></span><span class="nds-skeleton nds-skeleton--text"></span><span class="nds-skeleton nds-skeleton--text" style="--nds-skeleton-width: 68%"></span></div></article>
+              <article class="nds-card skeleton-card-demo" aria-busy="true"><span class="nds-visually-hidden" role="status">Loading project…</span><div aria-hidden="true" class="nds-skeleton-stack"><span class="nds-skeleton nds-skeleton--media"></span><span class="nds-skeleton nds-skeleton--heading" style="--nds-skeleton-width: 58%"></span><span class="nds-skeleton nds-skeleton--text"></span><span class="nds-skeleton nds-skeleton--text" style="--nds-skeleton-width: 82%"></span></div></article>
+            </div>
+          </section>
+
+          <section id="static" class="specimen reveal" aria-labelledby="static-title">
+            <div class="specimen-heading"><p class="component-label">Static</p><h2 id="static-title">Remove movement when activity is not the message</h2><p>The static variant preserves the same visual structure without shimmer. Reduced-motion preferences also stop repeated animation automatically.</p></div>
+            <div class="skeleton-copy-demo" aria-busy="true"><span class="nds-visually-hidden" role="status">Loading summary…</span><div class="nds-skeleton-stack" aria-hidden="true"><span class="nds-skeleton nds-skeleton--heading nds-skeleton--static" style="--nds-skeleton-width: 52%"></span><span class="nds-skeleton nds-skeleton--text nds-skeleton--static"></span><span class="nds-skeleton nds-skeleton--text nds-skeleton--static" style="--nds-skeleton-width: 74%"></span></div></div>
+          </section>
+
+          <section id="accessibility" class="specimen reveal" aria-labelledby="accessibility-title">
+            <div class="specimen-heading"><p class="component-label">Accessibility</p><h2 id="accessibility-title">Announce the region once</h2><p>Hide visual shapes from assistive technology. The region owns <code>aria-busy="true"</code> and one concise Status identifies the content being loaded.</p></div>
+            <div class="skeleton-accessibility-demo"><div><code>aria-busy="true"</code><span>Applied to the affected region</span></div><div><code>aria-hidden="true"</code><span>Applied to the placeholder group</span></div><div><code>role="status"</code><span>Used once for the loading message</span></div></div>
+          </section>
+
+          <section class="guidance-panel nds-glass reveal" aria-labelledby="guidance-title"><p class="component-label">Usage guidance</p><h2 id="guidance-title">Match the content, then leave cleanly.</h2><p>Use Skeleton only when the expected layout is known. Clear the busy state and replace the complete placeholder group when content arrives.</p><a class="nds-link nds-link--standalone" href="/components/alert.html">Next component: Alert <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></section>
+        </div>
+      </div>
+    </main>
+    <footer class="catalog-footer nds-container"><span>Nikba Design System</span><a class="nds-link" href="/components/">All components</a></footer>
+  </body>
+</html>

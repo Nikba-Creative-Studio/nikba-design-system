@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en" data-theme="frost" data-glass="soft">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nikba Alert component reference." />
+    <title>Alert · Nikba Design System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body class="nds-scope">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="ambient ambient--one"></div><div class="ambient ambient--two"></div>
+    <header data-catalog-header data-current="components"></header>
+    <aside data-appearance-panel aria-label="Appearance controls"></aside>
+    <main id="main" class="nds-container page-main">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Overview</a><span aria-hidden="true">/</span><a href="/components/">Components</a><span aria-hidden="true">/</span><span aria-current="page">Alert</span></nav>
+      <header class="page-hero component-hero">
+        <div><p class="eyebrow">Component 14 · Complete</p><h1 class="nds-display">Alert</h1></div>
+        <p>Communicates persistent contextual feedback with semantic tone, clear recovery, and deliberate announcement behavior.</p>
+      </header>
+      <div class="page-layout">
+        <nav class="page-sidebar" aria-label="Component sections"><span>Alert</span><a href="#default">Default</a><a href="#tones">Tones</a><a href="#actions">Actions</a><a href="#dismissible">Dismissible</a><a href="#semantics">Semantics</a><hr /><a href="/components/skeleton.html">← Skeleton</a></nav>
+        <div class="page-content">
+          <section id="default" class="specimen reveal" aria-labelledby="default-title">
+            <div class="specimen-heading"><p class="component-label">Default</p><h2 id="default-title">Keep relevant context in the page</h2><p>A static Alert needs no live-region role. Its title communicates the condition while the description provides useful context.</p></div>
+            <aside class="nds-alert"><span class="nds-alert__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" /><path d="M12 11v5M12 8h.01" /></svg></span><div class="nds-alert__content"><h3 class="nds-alert__title">Preview environment</h3><p class="nds-alert__description">Changes made here do not affect the published website.</p></div></aside>
+          </section>
+
+          <section id="tones" class="specimen reveal" aria-labelledby="tones-title">
+            <div class="specimen-heading"><p class="component-label">Tones</p><h2 id="tones-title">Match the message, not its intensity</h2><p>Semantic tones support meaning across themes. Every title remains clear when color and icons are unavailable.</p></div>
+            <div class="alert-demo-stack">
+              <aside class="nds-alert nds-alert--info"><span class="nds-alert__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" /><path d="M12 11v5M12 8h.01" /></svg></span><div class="nds-alert__content"><h3 class="nds-alert__title">New sharing controls</h3><p class="nds-alert__description">Project owners can now define access for individual collaborators.</p></div></aside>
+              <aside class="nds-alert nds-alert--success"><span class="nds-alert__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" /><path d="m8 12 2.5 2.5L16 9" /></svg></span><div class="nds-alert__content"><h3 class="nds-alert__title">Changes saved</h3><p class="nds-alert__description">The new settings are available to your team.</p></div></aside>
+              <aside class="nds-alert nds-alert--warning"><span class="nds-alert__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 4 21 20H3L12 4Z" /><path d="M12 10v4M12 17h.01" /></svg></span><div class="nds-alert__content"><h3 class="nds-alert__title">Storage almost full</h3><p class="nds-alert__description">Uploads will stop when the remaining 2 GB is used.</p></div></aside>
+              <aside class="nds-alert nds-alert--danger"><span class="nds-alert__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" /><path d="M12 8v5M12 16h.01" /></svg></span><div class="nds-alert__content"><h3 class="nds-alert__title">Upload failed</h3><p class="nds-alert__description">The connection was interrupted. Your source file remains unchanged.</p></div></aside>
+            </div>
+          </section>
+
+          <section id="actions" class="specimen reveal" aria-labelledby="actions-title">
+            <div class="specimen-heading"><p class="component-label">Actions</p><h2 id="actions-title">Offer a clear next step</h2><p>Include only actions that directly resolve or explain the condition. Keep hierarchy proportional to the surrounding page.</p></div>
+            <aside class="nds-alert nds-alert--warning"><span class="nds-alert__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 4 21 20H3L12 4Z" /><path d="M12 10v4M12 17h.01" /></svg></span><div class="nds-alert__content"><h3 class="nds-alert__title">Payment method expires this month</h3><p class="nds-alert__description">Update billing details to keep scheduled publishing active.</p></div><div class="nds-alert__actions"><a class="nds-button nds-button--small" href="#actions">Update billing</a><a class="nds-link nds-link--standalone" href="#semantics">Learn more</a></div></aside>
+          </section>
+
+          <section id="dismissible" class="specimen reveal" aria-labelledby="dismissible-title">
+            <div class="specimen-heading"><p class="component-label">Dismissible</p><h2 id="dismissible-title">Preserve a logical focus destination</h2><p>The close control has a specific accessible name. After dismissal, focus moves to the adjacent restore control in this demonstration.</p></div>
+            <div class="alert-dismiss-demo" data-alert-demo>
+              <aside class="nds-alert nds-alert--info" id="release-alert"><span class="nds-alert__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" /><path d="M12 11v5M12 8h.01" /></svg></span><div class="nds-alert__content"><h3 class="nds-alert__title">Release notes available</h3><p class="nds-alert__description">Review the component changes included in Alpha 01.</p></div><button class="nds-alert__close" type="button" aria-label="Dismiss release notes notification" data-alert-dismiss="release-alert" data-focus-return="restore-release-alert"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 4 8 8M12 4l-8 8" /></svg></button></aside>
+              <button class="nds-button nds-button--secondary nds-button--small" type="button" id="restore-release-alert" data-alert-restore="release-alert" disabled>Show notification</button>
+              <span class="nds-visually-hidden" aria-live="polite" data-alert-announcer></span>
+            </div>
+          </section>
+
+          <section id="semantics" class="specimen reveal" aria-labelledby="semantics-title">
+            <div class="specimen-heading"><p class="component-label">Semantics</p><h2 id="semantics-title">Choose announcement behavior deliberately</h2><p>Presence at page load and urgency determine semantics. Visual tone alone does not determine the live-region role.</p></div>
+            <div class="alert-semantics-grid"><div><code>No role</code><strong>Static context</strong><span>Already present when the page loads</span></div><div><code>role="status"</code><strong>Polite update</strong><span>Dynamic, useful, and non-urgent</span></div><div><code>role="alert"</code><strong>Urgent update</strong><span>Dynamic and requiring immediate attention</span></div></div>
+          </section>
+
+          <section class="guidance-panel nds-glass reveal" aria-labelledby="guidance-title"><p class="component-label">Usage guidance</p><h2 id="guidance-title">Lead with the outcome or condition.</h2><p>Use the description for impact and recovery. Avoid generic titles, vague actions, and urgent announcement semantics for ordinary messages.</p><a class="nds-link nds-link--standalone" href="/components/">Back to components <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></section>
+        </div>
+      </div>
+    </main>
+    <footer class="catalog-footer nds-container"><span>Nikba Design System</span><a class="nds-link" href="/components/">All components</a></footer>
+  </body>
+</html>

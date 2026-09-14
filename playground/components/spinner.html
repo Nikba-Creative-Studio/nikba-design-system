@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en" data-theme="frost" data-glass="soft">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nikba Spinner component reference." />
+    <title>Spinner · Nikba Design System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body class="nds-scope">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="ambient ambient--one"></div><div class="ambient ambient--two"></div>
+    <header data-catalog-header data-current="components"></header>
+    <aside data-appearance-panel aria-label="Appearance controls"></aside>
+    <main id="main" class="nds-container page-main">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Overview</a><span aria-hidden="true">/</span><a href="/components/">Components</a><span aria-hidden="true">/</span><span aria-current="page">Spinner</span></nav>
+      <header class="page-hero component-hero">
+        <div><p class="eyebrow">Component 12 · Complete</p><h1 class="nds-display">Spinner</h1></div>
+        <p>Communicates indeterminate progress when the duration or amount of work cannot be measured.</p>
+      </header>
+      <div class="page-layout">
+        <nav class="page-sidebar" aria-label="Component sections"><span>Spinner</span><a href="#default">Default</a><a href="#sizes">Sizes</a><a href="#tones">Tones</a><a href="#labels">Labels</a><a href="#regions">Loading region</a><a href="#buttons">Controls</a><hr /><a href="/components/avatar.html">← Avatar</a><a href="/components/skeleton.html">Skeleton →</a></nav>
+        <div class="page-content">
+          <section id="default" class="specimen reveal" aria-labelledby="default-title">
+            <div class="specimen-heading"><p class="component-label">Default</p><h2 id="default-title">Show work with an unknown duration</h2><p>The visual Spinner is decorative. A nearby live Status communicates what is happening.</p></div>
+            <div class="spinner-stage"><div class="nds-spinner-label" role="status"><span class="nds-spinner" aria-hidden="true"></span><span>Loading projects…</span></div></div>
+          </section>
+          <section id="sizes" class="specimen reveal" aria-labelledby="sizes-title">
+            <div class="specimen-heading"><p class="component-label">Sizes</p><h2 id="sizes-title">Match the space and emphasis</h2><p>Small fits compact controls, Medium is the default, Large supports local regions, and Extra Large suits an empty content area.</p></div>
+            <div class="spinner-size-demo"><div><span class="nds-spinner nds-spinner--small" aria-hidden="true"></span><small>Small · 16px</small></div><div><span class="nds-spinner" aria-hidden="true"></span><small>Medium · 20px</small></div><div><span class="nds-spinner nds-spinner--large" aria-hidden="true"></span><small>Large · 32px</small></div><div><span class="nds-spinner nds-spinner--xlarge" aria-hidden="true"></span><small>Extra Large · 48px</small></div></div>
+          </section>
+          <section id="tones" class="specimen reveal" aria-labelledby="tones-title">
+            <div class="specimen-heading"><p class="component-label">Tones</p><h2 id="tones-title">Inherit the surrounding emphasis</h2><p>Default uses primary text, Muted reduces emphasis, Accent follows the theme, and Inverse supports a dark or accent surface.</p></div>
+            <div class="spinner-tone-demo"><div><span class="nds-spinner nds-spinner--large" aria-hidden="true"></span><small>Default</small></div><div><span class="nds-spinner nds-spinner--large nds-spinner--muted" aria-hidden="true"></span><small>Muted</small></div><div><span class="nds-spinner nds-spinner--large nds-spinner--accent" aria-hidden="true"></span><small>Accent</small></div><div class="spinner-inverse-demo"><span class="nds-spinner nds-spinner--large nds-spinner--inverse" aria-hidden="true"></span><small>Inverse</small></div></div>
+          </section>
+          <section id="labels" class="specimen reveal" aria-labelledby="labels-title">
+            <div class="specimen-heading"><p class="component-label">Labels</p><h2 id="labels-title">Say what the interface is doing</h2><p>Use a concise present-participle phrase. Stacked layout works when the status owns a larger centered region.</p></div>
+            <div class="field-grid"><div class="spinner-stage"><div class="nds-spinner-label" role="status"><span class="nds-spinner" aria-hidden="true"></span><span>Saving changes…</span></div></div><div class="spinner-stage spinner-stage--tall"><div class="nds-spinner-label nds-spinner-label--stacked" role="status"><span class="nds-spinner nds-spinner--large" aria-hidden="true"></span><span>Preparing preview…</span></div></div></div>
+          </section>
+          <section id="regions" class="specimen reveal" aria-labelledby="regions-title">
+            <div class="specimen-heading"><p class="component-label">Loading region</p><h2 id="regions-title">Keep the busy state on the affected area</h2><p>The region exposes <code>aria-busy="true"</code>. The Status names the current work without blocking unrelated content.</p></div>
+            <article class="nds-card spinner-region-demo" aria-busy="true" aria-labelledby="report-title"><header class="nds-card__header"><p class="nds-card__eyebrow">Analytics</p><h3 class="nds-card__title" id="report-title">Weekly performance</h3></header><div class="spinner-region-demo__body"><div class="nds-spinner-label nds-spinner-label--stacked" role="status"><span class="nds-spinner nds-spinner--large" aria-hidden="true"></span><span>Loading report…</span></div></div></article>
+          </section>
+          <section id="buttons" class="specimen reveal" aria-labelledby="buttons-title">
+            <div class="specimen-heading"><p class="component-label">Controls</p><h2 id="buttons-title">Prevent repeated actions while pending</h2><p>Use the Button loading contract for pending actions. The Button owns its accessible busy state and remains disabled until completion.</p></div>
+            <div class="specimen-row"><div><span>Pending action</span><button class="nds-button" type="button" aria-busy="true" disabled>Saving changes</button></div><div><span>Compact custom control</span><button class="spinner-icon-button" type="button" aria-label="Refreshing data" aria-busy="true" disabled><span class="nds-spinner nds-spinner--small" aria-hidden="true"></span></button></div></div>
+          </section>
+          <section class="guidance-panel nds-glass reveal" aria-labelledby="guidance-title"><p class="component-label">Usage guidance</p><h2 id="guidance-title">Use determinate progress when measurement exists.</h2><p>Spinner is appropriate only when progress cannot be quantified. For content placeholders that preserve layout, use Skeleton.</p><a class="nds-link nds-link--standalone" href="/components/skeleton.html">Next component: Skeleton <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></section>
+        </div>
+      </div>
+    </main>
+    <footer class="catalog-footer nds-container"><span>Nikba Design System</span><a class="nds-link" href="/components/">All components</a></footer>
+  </body>
+</html>

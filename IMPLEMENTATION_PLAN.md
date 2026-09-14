@@ -10,6 +10,8 @@ Nikba Design System will provide the visual foundations, accessible components, 
 
 The core remains framework-agnostic. CSS is the primary delivery layer. Small dependency-free JavaScript modules support components that require behavior. Framework adapters may be added later without changing the core contract.
 
+AI integrations consume the published system through a read-only MCP server. The server exposes the same versioned component contracts and tokens that ship with the package, so generated interfaces can follow the public API without maintaining a separate knowledge source.
+
 ## 2. Working principles
 
 1. **One source of truth.** Tokens and component styles live in `src`. The catalog imports and demonstrates that exact implementation.
@@ -140,11 +142,11 @@ Delivery order:
 8. [x] Switch
 9. [ ] Content primitives
    - [x] Card
-   - [ ] Divider
-   - [ ] Avatar
-   - [ ] Spinner
-   - [ ] Skeleton
-   - [ ] Alert
+   - [x] Divider
+   - [x] Avatar
+   - [x] Spinner
+   - [x] Skeleton
+   - [x] Alert
 
 For each component:
 

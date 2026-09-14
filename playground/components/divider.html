@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en" data-theme="frost" data-glass="soft">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nikba Divider component reference." />
+    <title>Divider · Nikba Design System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body class="nds-scope">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="ambient ambient--one"></div><div class="ambient ambient--two"></div>
+    <header data-catalog-header data-current="components"></header>
+    <aside data-appearance-panel aria-label="Appearance controls"></aside>
+    <main id="main" class="nds-container page-main">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Overview</a><span aria-hidden="true">/</span><a href="/components/">Components</a><span aria-hidden="true">/</span><span aria-current="page">Divider</span></nav>
+      <header class="page-hero component-hero">
+        <div><p class="eyebrow">Component 10 · Complete</p><h1 class="nds-display">Divider</h1></div>
+        <p>Separates content by topic, hierarchy, or control group while keeping the visual boundary quiet.</p>
+      </header>
+      <div class="page-layout">
+        <nav class="page-sidebar" aria-label="Component sections"><span>Divider</span><a href="#default">Default</a><a href="#emphasis">Emphasis</a><a href="#spacing">Spacing</a><a href="#label">With label</a><a href="#vertical">Vertical</a><a href="#semantics">Semantics</a><hr /><a href="/components/card.html">← Card</a></nav>
+        <div class="page-content">
+          <section id="default" class="specimen reveal" aria-labelledby="default-title">
+            <div class="specimen-heading"><p class="component-label">Default</p><h2 id="default-title">Separate a meaningful change in topic</h2><p>A native Horizontal Rule communicates a thematic break to assistive technology.</p></div>
+            <article class="divider-demo-panel"><div><p class="component-label">Overview</p><h3>Research direction</h3><p>Start with the user problem and the decisions the work must support.</p></div><hr class="nds-divider" /><div><p class="component-label">Next</p><h3>Interface principles</h3><p>Turn the strongest findings into repeatable product rules.</p></div></article>
+          </section>
+          <section id="emphasis" class="specimen reveal" aria-labelledby="emphasis-title">
+            <div class="specimen-heading"><p class="component-label">Emphasis</p><h2 id="emphasis-title">Match the strength of the boundary</h2><p>Default supports ordinary separation. Strong marks a more significant change without becoming a decorative accent.</p></div>
+            <div class="divider-demo-stack"><div><span>Default</span><hr class="nds-divider nds-divider--compact" /></div><div><span>Strong</span><hr class="nds-divider nds-divider--strong nds-divider--compact" /></div><div><span>Inset</span><hr class="nds-divider nds-divider--inset nds-divider--compact" /></div></div>
+          </section>
+          <section id="spacing" class="specimen reveal" aria-labelledby="spacing-title">
+            <div class="specimen-heading"><p class="component-label">Spacing</p><h2 id="spacing-title">Keep separation proportional to content</h2><p>Compact fits dense settings, Default separates ordinary sections, and Spacious creates an editorial pause.</p></div>
+            <div class="divider-demo-stack"><div><span>Compact · 12px</span><hr class="nds-divider nds-divider--compact" /></div><div><span>Default · 32px</span><hr class="nds-divider" /></div><div><span>Spacious · 64px</span><hr class="nds-divider nds-divider--spacious" /></div></div>
+          </section>
+          <section id="label" class="specimen reveal" aria-labelledby="label-title">
+            <div class="specimen-heading"><p class="component-label">With label</p><h2 id="label-title">Explain two equivalent paths</h2><p>A short visible label can clarify a split between alternatives. The wrapper carries Separator semantics.</p></div>
+            <div class="field-specimen"><button class="nds-button nds-button--block" type="button">Continue with email</button><div class="nds-divider-label" role="separator" aria-label="Alternative sign-in method"><span>or continue with</span></div><button class="nds-button nds-button--secondary nds-button--block" type="button">Single sign-on</button></div>
+          </section>
+          <section id="vertical" class="specimen reveal" aria-labelledby="vertical-title">
+            <div class="specimen-heading"><p class="component-label">Vertical</p><h2 id="vertical-title">Separate compact inline groups</h2><p>Use Vertical Divider only when adjacent items already share one horizontal context.</p></div>
+            <div class="divider-inline-demo"><span><strong>24</strong> projects</span><div class="nds-divider nds-divider--vertical" role="separator" aria-orientation="vertical"></div><span><strong>8</strong> members</span><div class="nds-divider nds-divider--vertical nds-divider--strong" role="separator" aria-orientation="vertical"></div><span><strong>3</strong> teams</span></div>
+          </section>
+          <section id="semantics" class="specimen reveal" aria-labelledby="semantics-title">
+            <div class="specimen-heading"><p class="component-label">Semantics</p><h2 id="semantics-title">Expose structure only when it carries meaning</h2><p>Use a native Horizontal Rule for a thematic break. Hide purely visual boundaries from assistive technology.</p></div>
+            <div class="card-demo-grid divider-card-grid"><article class="nds-card nds-card--compact"><h3 class="nds-card__title">Semantic</h3><p class="nds-card__description">Use <code>&lt;hr class="nds-divider" /&gt;</code> when the content changes topic.</p></article><article class="nds-card nds-card--compact"><h3 class="nds-card__title">Decorative</h3><p class="nds-card__description">Use a neutral element with <code>aria-hidden="true"</code> for visual grouping only.</p></article></div>
+          </section>
+          <section class="guidance-panel nds-glass reveal" aria-labelledby="guidance-title"><p class="component-label">Usage guidance</p><h2 id="guidance-title">Try spacing before adding a line.</h2><p>Use Divider when space alone cannot communicate the relationship. Avoid repeated rules that fragment a simple page.</p><a class="nds-link nds-link--standalone" href="/components/avatar.html">Next component: Avatar <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></section>
+        </div>
+      </div>
+    </main>
+    <footer class="catalog-footer nds-container"><span>Nikba Design System</span><a class="nds-link" href="/components/">All components</a></footer>
+  </body>
+</html>

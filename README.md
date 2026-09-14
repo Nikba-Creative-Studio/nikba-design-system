@@ -62,14 +62,24 @@ The CSS bundle declares the Onest-based font stack but does not download a font.
 
 Use native `disabled` whenever the HTML element supports it. A link styled as a button requires `aria-disabled="true"`, `tabindex="-1"`, and application logic that prevents programmatic activation.
 
+## AI and MCP
+
+The package includes a read-only Model Context Protocol server that exposes component contracts and design tokens to compatible AI hosts.
+
+```bash
+npm run mcp
+```
+
+The server publishes discoverable resources, four query tools, and a `build_with_nikba` prompt. See [AI Integration with MCP](./docs/MCP.md) for host configuration and the complete interface, or explore the MCP section in the local catalog.
+
 ## Current public surface
 
 - Themes: Frost, Mist, Graphite
 - Glass levels: Off, Soft, Clear
-- CSS: tokens, typography, layout, Button, Link, Badge, Chip, Field, Input, Textarea, Native Select, Checkbox, Radio, Switch, Card, Tag, Glass surface, and scoped foundations
+- CSS: tokens, typography, layout, Button, Link, Badge, Chip, Field, Input, Textarea, Native Select, Checkbox, Radio, Switch, Card, Divider, Avatar, Spinner, Skeleton, Alert, Tag, Glass surface, and scoped foundations
 - JavaScript: theme and glass constants and setters
 
-Component contracts are published under [`docs/components`](./docs/components/), including [Button and Icon Button](./docs/components/button.md), [Link](./docs/components/link.md), [Badge and Chip](./docs/components/badge-chip.md), [Field](./docs/components/field.md), [Input and Textarea](./docs/components/input-textarea.md), [Native Select](./docs/components/select.md), [Checkbox and Radio](./docs/components/checkbox-radio.md), [Switch](./docs/components/switch.md), and [Card](./docs/components/card.md).
+Component contracts are published under [`docs/components`](./docs/components/), including [Button and Icon Button](./docs/components/button.md), [Link](./docs/components/link.md), [Badge and Chip](./docs/components/badge-chip.md), [Field](./docs/components/field.md), [Input and Textarea](./docs/components/input-textarea.md), [Native Select](./docs/components/select.md), [Checkbox and Radio](./docs/components/checkbox-radio.md), [Switch](./docs/components/switch.md), [Card](./docs/components/card.md), [Divider](./docs/components/divider.md), [Avatar](./docs/components/avatar.md), [Spinner](./docs/components/spinner.md), [Skeleton](./docs/components/skeleton.md), and [Alert](./docs/components/alert.md).
 
 ## License
 

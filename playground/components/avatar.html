@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en" data-theme="frost" data-glass="soft">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nikba Avatar component reference." />
+    <title>Avatar · Nikba Design System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body class="nds-scope">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="ambient ambient--one"></div><div class="ambient ambient--two"></div>
+    <header data-catalog-header data-current="components"></header>
+    <aside data-appearance-panel aria-label="Appearance controls"></aside>
+    <main id="main" class="nds-container page-main">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Overview</a><span aria-hidden="true">/</span><a href="/components/">Components</a><span aria-hidden="true">/</span><span aria-current="page">Avatar</span></nav>
+      <header class="page-hero component-hero">
+        <div><p class="eyebrow">Component 11 · Complete</p><h1 class="nds-display">Avatar</h1></div>
+        <p>Represents a person, team, or organization through an image, initials, or a stable fallback.</p>
+      </header>
+      <div class="page-layout">
+        <nav class="page-sidebar" aria-label="Component sections"><span>Avatar</span><a href="#default">Default</a><a href="#sizes">Sizes</a><a href="#fallbacks">Fallbacks</a><a href="#presence">Presence</a><a href="#group">Group</a><a href="#interactive">Interactive</a><hr /><a href="/components/divider.html">← Divider</a></nav>
+        <div class="page-content">
+          <section id="default" class="specimen reveal" aria-labelledby="default-title">
+            <div class="specimen-heading"><p class="component-label">Default</p><h2 id="default-title">Represent one identity consistently</h2><p>Use a clear Image when available and keep the visible name beside the Avatar in identity rows.</p></div>
+            <div class="avatar-profile-demo"><span class="nds-avatar nds-avatar--xlarge" aria-hidden="true"><span class="nds-avatar__visual"><img class="nds-avatar__image" src="/avatar-demo.svg" alt="" /></span></span><span><strong>Maya Chen</strong><small>Product designer</small></span></div>
+          </section>
+          <section id="sizes" class="specimen reveal" aria-labelledby="sizes-title">
+            <div class="specimen-heading"><p class="component-label">Sizes</p><h2 id="sizes-title">Use size to match context</h2><p>Small fits dense lists, Medium is the default, Large supports prominent rows, and Extra Large suits profile summaries.</p></div>
+            <div class="avatar-size-demo">
+              <div><span class="nds-avatar nds-avatar--small" role="img" aria-label="Maya Chen"><span class="nds-avatar__visual"><img class="nds-avatar__image" src="/avatar-demo.svg" alt="" /></span></span><small>Small · 32px</small></div>
+              <div><span class="nds-avatar" role="img" aria-label="Maya Chen"><span class="nds-avatar__visual"><img class="nds-avatar__image" src="/avatar-demo.svg" alt="" /></span></span><small>Medium · 40px</small></div>
+              <div><span class="nds-avatar nds-avatar--large" role="img" aria-label="Maya Chen"><span class="nds-avatar__visual"><img class="nds-avatar__image" src="/avatar-demo.svg" alt="" /></span></span><small>Large · 48px</small></div>
+              <div><span class="nds-avatar nds-avatar--xlarge" role="img" aria-label="Maya Chen"><span class="nds-avatar__visual"><img class="nds-avatar__image" src="/avatar-demo.svg" alt="" /></span></span><small>Extra Large · 64px</small></div>
+            </div>
+          </section>
+          <section id="fallbacks" class="specimen reveal" aria-labelledby="fallbacks-title">
+            <div class="specimen-heading"><p class="component-label">Fallbacks</p><h2 id="fallbacks-title">Remain recognizable without an image</h2><p>Use one or two initials when a stable name exists. Use the generic icon only when identity information is unavailable.</p></div>
+            <div class="avatar-size-demo">
+              <div><span class="nds-avatar nds-avatar--large" role="img" aria-label="Noah Brown"><span class="nds-avatar__visual">NB</span></span><small>Initials</small></div>
+              <div><span class="nds-avatar nds-avatar--large nds-avatar--square" role="img" aria-label="Nikba team"><span class="nds-avatar__visual">N</span></span><small>Team</small></div>
+              <div><span class="nds-avatar nds-avatar--large" role="img" aria-label="Unknown user"><span class="nds-avatar__visual"><svg class="nds-avatar__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4.5 21c.8-4.2 3.4-6.5 7.5-6.5s6.7 2.3 7.5 6.5"/></svg></span></span><small>Generic</small></div>
+            </div>
+          </section>
+          <section id="presence" class="specimen reveal" aria-labelledby="presence-title">
+            <div class="specimen-heading"><p class="component-label">Presence</p><h2 id="presence-title">Keep availability secondary</h2><p>The colored indicator supplements a visible text status. Color alone does not communicate availability.</p></div>
+            <div class="avatar-presence-grid">
+              <div><span class="nds-avatar nds-avatar--large" aria-hidden="true"><span class="nds-avatar__visual">MC</span><span class="nds-avatar__status nds-avatar__status--online"></span></span><span><strong>Maya Chen</strong><small>Online</small></span></div>
+              <div><span class="nds-avatar nds-avatar--large" aria-hidden="true"><span class="nds-avatar__visual">NB</span><span class="nds-avatar__status nds-avatar__status--away"></span></span><span><strong>Noah Brown</strong><small>Away</small></span></div>
+              <div><span class="nds-avatar nds-avatar--large" aria-hidden="true"><span class="nds-avatar__visual">AK</span><span class="nds-avatar__status nds-avatar__status--busy"></span></span><span><strong>Amira Khan</strong><small>Do not disturb</small></span></div>
+              <div><span class="nds-avatar nds-avatar--large" aria-hidden="true"><span class="nds-avatar__visual">LS</span><span class="nds-avatar__status nds-avatar__status--offline"></span></span><span><strong>Leo Stone</strong><small>Offline</small></span></div>
+            </div>
+          </section>
+          <section id="group" class="specimen reveal" aria-labelledby="group-title">
+            <div class="specimen-heading"><p class="component-label">Avatar Group</p><h2 id="group-title">Summarize a small set of people</h2><p>Show a few recognizable members and collapse the remainder into a count. Provide the complete member list elsewhere.</p></div>
+            <div class="avatar-group-demo"><div class="nds-avatar-group" role="group" aria-label="Maya Chen, Noah Brown, Amira Khan, and 5 more members"><span class="nds-avatar nds-avatar--large" aria-hidden="true"><span class="nds-avatar__visual"><img class="nds-avatar__image" src="/avatar-demo.svg" alt="" /></span></span><span class="nds-avatar nds-avatar--large" aria-hidden="true"><span class="nds-avatar__visual">NB</span></span><span class="nds-avatar nds-avatar--large" aria-hidden="true"><span class="nds-avatar__visual">AK</span></span><span class="nds-avatar nds-avatar--large nds-avatar--overflow" aria-hidden="true"><span class="nds-avatar__visual">+5</span></span></div><span>8 project members</span></div>
+          </section>
+          <section id="interactive" class="specimen reveal" aria-labelledby="interactive-title">
+            <div class="specimen-heading"><p class="component-label">Interactive</p><h2 id="interactive-title">Wrap the Avatar in a real control</h2><p>Use Avatar Button for an account menu or profile action. Its accessible name describes the action, and its target remains at least 44px.</p></div>
+            <div class="specimen-row"><div><span>Account menu</span><button class="nds-avatar-button" type="button" aria-label="Open Maya Chen account menu"><span class="nds-avatar" aria-hidden="true"><span class="nds-avatar__visual"><img class="nds-avatar__image" src="/avatar-demo.svg" alt="" /></span></span></button></div><div><span>Disabled</span><button class="nds-avatar-button" type="button" aria-label="Maya Chen account menu unavailable" disabled><span class="nds-avatar" aria-hidden="true"><span class="nds-avatar__visual">MC</span></span></button></div></div>
+          </section>
+          <section class="guidance-panel nds-glass reveal" aria-labelledby="guidance-title"><p class="component-label">Usage guidance</p><h2 id="guidance-title">Pair identity with a visible name.</h2><p>Avatar supports recognition but should rarely carry the full identity alone. Use initials generated from a stable display name when an Image is unavailable.</p><a class="nds-link nds-link--standalone" href="/components/spinner.html">Next component: Spinner <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></section>
+        </div>
+      </div>
+    </main>
+    <footer class="catalog-footer nds-container"><span>Nikba Design System</span><a class="nds-link" href="/components/">All components</a></footer>
+  </body>
+</html>

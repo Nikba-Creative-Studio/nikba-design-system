@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en" data-theme="frost" data-glass="soft">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Connect AI hosts to Nikba Design System through Model Context Protocol." />
+    <title>MCP · Nikba Design System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body class="nds-scope">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="ambient ambient--one"></div><div class="ambient ambient--two"></div>
+    <header data-catalog-header data-current="mcp"></header>
+    <aside data-appearance-panel aria-label="Appearance controls"></aside>
+
+    <main id="main" class="nds-container page-main">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Overview</a><span aria-hidden="true">/</span><span aria-current="page">MCP</span></nav>
+      <header class="page-hero mcp-hero">
+        <p class="eyebrow">AI integration · Read only</p>
+        <h1 class="nds-display">Give AI the same source of truth.</h1>
+        <p>The Nikba MCP server connects compatible AI hosts directly to published component contracts and design tokens.</p>
+      </header>
+
+      <div class="page-layout">
+        <nav class="page-sidebar" aria-label="MCP sections">
+          <span>On this page</span>
+          <a href="#overview">Overview</a><a href="#resources">Resources</a><a href="#tools">Tools</a><a href="#connect">Connect</a>
+        </nav>
+        <div class="page-content">
+          <section id="overview" class="specimen reveal" aria-labelledby="overview-title">
+            <div class="specimen-heading">
+              <p class="component-label">01 · Architecture</p>
+              <h2 id="overview-title">One contract from source to output</h2>
+              <p>The server reads only versioned files shipped with the package. It does not modify projects, call external services, or collect prompts.</p>
+            </div>
+            <ol class="mcp-flow" aria-label="MCP information flow">
+              <li><span>01</span><strong>Source files</strong><small>Tokens and component contracts</small></li>
+              <li><span>02</span><strong>Nikba MCP</strong><small>Discoverable, structured context</small></li>
+              <li><span>03</span><strong>AI host</strong><small>Implementation with public APIs</small></li>
+            </ol>
+          </section>
+
+          <section id="resources" class="specimen reveal" aria-labelledby="resources-title">
+            <div class="specimen-heading">
+              <p class="component-label">02 · Resources</p>
+              <h2 id="resources-title">Published knowledge</h2>
+              <p>Hosts can discover stable URIs and read the exact documentation included in the installed package.</p>
+            </div>
+            <div class="mcp-resource-grid">
+              <article class="mcp-resource-card"><span>Overview</span><code>nikba://system/overview</code><p>Principles, setup, usage, and the current public surface.</p></article>
+              <article class="mcp-resource-card"><span>Tokens</span><code>nikba://foundations/tokens</code><p>Primitive, semantic, and theme CSS custom properties.</p></article>
+              <article class="mcp-resource-card mcp-resource-card--wide"><span>Components</span><code>nikba://components/{slug}</code><p>Purpose, API, variants, states, accessibility, examples, and acceptance criteria for every documented component.</p></article>
+            </div>
+          </section>
+
+          <section id="tools" class="specimen reveal" aria-labelledby="tools-title">
+            <div class="specimen-heading">
+              <p class="component-label">03 · Tools</p>
+              <h2 id="tools-title">Focused retrieval for AI</h2>
+              <p>Every tool is read only, deterministic for a given package version, and limited to Nikba Design System files.</p>
+            </div>
+            <dl class="mcp-tool-list">
+              <div><dt><code>list_components</code></dt><dd>Discover component names, descriptions, slugs, and resource URIs.</dd></div>
+              <div><dt><code>get_component</code></dt><dd>Read the complete contract for a component by slug.</dd></div>
+              <div><dt><code>get_tokens</code></dt><dd>Read all design tokens or one primitive, semantic, or theme layer.</dd></div>
+              <div><dt><code>search_design_system</code></dt><dd>Find the most relevant component guidance for a word or phrase.</dd></div>
+            </dl>
+            <div class="mcp-prompt-note"><span>Prompt</span><div><strong><code>build_with_nikba</code></strong><p>Directs the host to inspect relevant contracts and tokens before implementing an interface.</p></div></div>
+          </section>
+
+          <section id="connect" class="specimen reveal" aria-labelledby="connect-title">
+            <div class="specimen-heading">
+              <p class="component-label">04 · Connect</p>
+              <h2 id="connect-title">Start through standard input and output</h2>
+              <p>Run the server locally, then register its executable in any compatible MCP host.</p>
+            </div>
+            <div class="mcp-command">
+              <span>Terminal</span>
+              <pre><code>npm run mcp</code></pre>
+            </div>
+            <div class="mcp-command">
+              <span>Host configuration</span>
+              <pre><code>{
+  "mcpServers": {
+    "nikba-design-system": {
+      "command": "nikba-design-system-mcp"
+    }
+  }
+}</code></pre>
+            </div>
+            <p class="mcp-verification"><span aria-hidden="true"></span><strong>Protocol verified.</strong> The automated test performs a real MCP handshake, discovers capabilities, invokes tools, and reads a resource.</p>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="catalog-footer nds-container"><span>Nikba Design System</span><a class="nds-link nds-link--standalone" href="/components/">Explore components <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></footer>
+  </body>
+</html>

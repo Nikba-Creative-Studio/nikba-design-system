@@ -4,8 +4,14 @@
   "description": "Neutral interface foundations, Onest typography and performant glassmorphism by Nikba.",
   "type": "module",
   "files": [
-    "dist"
+    "dist",
+    "docs",
+    "mcp",
+    "src/tokens"
   ],
+  "bin": {
+    "nikba-design-system-mcp": "./mcp/server.js"
+  },
   "main": "./dist/nikba-design-system.js",
   "module": "./dist/nikba-design-system.js",
   "style": "./dist/nikba-design-system.css",
@@ -24,7 +30,9 @@
     "test:api": "node tests/api.test.mjs",
     "test:css": "node tests/css-contract.test.mjs",
     "test:contrast": "node tests/contrast.test.mjs",
-    "test": "npm run test:api && npm run test:css && npm run test:contrast",
+    "test:mcp": "node tests/mcp.test.mjs",
+    "test": "npm run test:api && npm run test:css && npm run test:contrast && npm run test:mcp",
+    "mcp": "node ./mcp/server.js",
     "verify": "npm run build && npm test && npm pack --dry-run"
   },
   "keywords": [
@@ -41,9 +49,14 @@
     "url": "git+https://github.com/Nikba-Creative-Studio/nikba-design-system.git"
   },
   "devDependencies": {
+    "@modelcontextprotocol/client": "^2.0.0",
     "vite": "^8.3.0"
   },
   "engines": {
     "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "^2.0.0",
+    "zod": "^4.6.5"
   }
 }

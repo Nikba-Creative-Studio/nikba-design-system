@@ -18,3 +18,8 @@
 @import './styles/choice.css';
 @import './styles/switch.css';
 @import './styles/card.css';
+@import './styles/divider.css';
+@import './styles/avatar.css';
+@import './styles/spinner.css';
+@import './styles/skeleton.css';
+@import './styles/alert.css';
