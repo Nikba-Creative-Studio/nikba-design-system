@@ -1181,6 +1181,7 @@ button {
 .header-variant-grid > div:last-child { border-inline-end: 0; }
 .header-variant-grid span { color: var(--nds-text-tertiary); font-size: var(--nds-font-size-xs); font-weight: var(--nds-font-weight-semibold); text-transform: uppercase; }
 .header-variant-grid strong { color: var(--nds-text); }
+.navigation-demo-surface { width: 100%; padding: var(--nds-space-5); border: var(--nds-border-width) solid var(--nds-border); border-radius: var(--nds-radius-md); background: var(--nds-surface-alt); }
 
 .section-heading {
   margin-bottom: clamp(48px, 7vw, 88px);

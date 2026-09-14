@@ -189,6 +189,18 @@ const requiredContracts = [
   '.nds-header__link',
   '.nds-header__actions',
   '.nds-header__menu-trigger',
+  '.nds-breadcrumb',
+  '.nds-breadcrumb__list',
+  '.nds-breadcrumb__item',
+  '.nds-breadcrumb__link',
+  '.nds-breadcrumb__current',
+  '.nds-breadcrumb__ellipsis',
+  '.nds-pagination',
+  '.nds-pagination--compact',
+  '.nds-pagination__list',
+  '.nds-pagination__link',
+  '.nds-pagination__ellipsis',
+  '.nds-pagination__summary',
   '.nds-glass',
 ];
 
