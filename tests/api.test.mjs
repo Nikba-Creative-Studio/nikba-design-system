@@ -4,6 +4,7 @@ import {
   initAccordions,
   initDialogs,
   initPopovers,
+  initTooltips,
   initTabs,
   setGlassLevel,
   setTheme,
@@ -17,6 +18,7 @@ assert.deepEqual(glassLevels, ['off', 'soft', 'clear']);
 assert.equal(typeof initAccordions, 'function');
 assert.equal(typeof initDialogs, 'function');
 assert.equal(typeof initPopovers, 'function');
+assert.equal(typeof initTooltips, 'function');
 assert.equal(typeof initTabs, 'function');
 
 for (const theme of themes) {

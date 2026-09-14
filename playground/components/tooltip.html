@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en" data-theme="frost" data-glass="soft">
+  <head>
+    <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nikba Tooltip component reference." /><title>Tooltip · Nikba Design System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&amp;display=swap" rel="stylesheet" /><script type="module" src="/app.js"></script>
+  </head>
+  <body class="nds-scope">
+    <a class="skip-link" href="#main">Skip to content</a><div class="ambient ambient--one"></div><div class="ambient ambient--two"></div>
+    <header data-catalog-header data-current="components"></header><aside data-appearance-panel aria-label="Appearance controls"></aside>
+    <main id="main" class="nds-container page-main">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Overview</a><span aria-hidden="true">/</span><a href="/components/">Components</a><span aria-hidden="true">/</span><span aria-current="page">Tooltip</span></nav>
+      <header class="page-hero component-hero"><div><p class="eyebrow">Component 19 · Complete</p><h1 class="nds-display">Tooltip</h1></div><p>Provides a concise supporting label on pointer hover and keyboard focus without interrupting the current task.</p></header>
+      <div class="page-layout">
+        <nav class="page-sidebar" aria-label="Component sections"><span>Tooltip</span><a href="#default">Default</a><a href="#icons">Icon controls</a><a href="#placement">Placement</a><a href="#content">Content</a><a href="#lifecycle">Lifecycle</a><hr /><a href="/components/popover-menu.html">← Popover</a></nav>
+        <div class="page-content">
+          <section id="default" class="specimen reveal" aria-labelledby="default-title"><div class="specimen-heading"><p class="component-label">Default</p><h2 id="default-title">Add a short explanation</h2><p>Hover the control or move keyboard focus to it. The default delay prevents distracting flashes during pointer movement.</p></div><button class="nds-button nds-button--secondary" type="button" data-nds-tooltip-trigger="publish-tooltip">Publish</button><span class="nds-tooltip" id="publish-tooltip" role="tooltip" data-nds-tooltip hidden>Makes this version visible to everyone</span></section>
+
+          <section id="icons" class="specimen reveal" aria-labelledby="icons-title"><div class="specimen-heading"><p class="component-label">Icon controls</p><h2 id="icons-title">Clarify unfamiliar symbols</h2><p>The accessible name identifies the control. Tooltip text can repeat that label visually for sighted pointer and keyboard users.</p></div><div class="tooltip-toolbar" role="toolbar" aria-label="Document actions"><button class="nds-button nds-button--secondary nds-button--icon" type="button" aria-label="Copy link" data-nds-tooltip-trigger="copy-tooltip"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M7 6V4a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-2M4 7h7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2Z" /></svg></button><button class="nds-button nds-button--secondary nds-button--icon" type="button" aria-label="Share project" data-nds-tooltip-trigger="share-tooltip"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="15" cy="5" r="2" /><circle cx="5" cy="10" r="2" /><circle cx="15" cy="15" r="2" /><path d="m7 9 6-3M7 11l6 3" /></svg></button></div><span class="nds-tooltip" id="copy-tooltip" role="tooltip" data-nds-tooltip hidden>Copy link</span><span class="nds-tooltip" id="share-tooltip" role="tooltip" data-nds-tooltip hidden>Share project</span></section>
+
+          <section id="placement" class="specimen reveal" aria-labelledby="placement-title"><div class="specimen-heading"><p class="component-label">Placement</p><h2 id="placement-title">Prefer a side and allow fallback</h2><p>Top is the default. Bottom can be preferred, while the initializer still flips and clamps the surface when space changes.</p></div><div class="button-row"><button class="nds-button nds-button--secondary" type="button" data-nds-tooltip-trigger="top-tooltip" data-tooltip-delay="0">Top placement</button><button class="nds-button nds-button--secondary" type="button" data-nds-tooltip-trigger="bottom-tooltip" data-tooltip-delay="0">Bottom placement</button></div><span class="nds-tooltip" id="top-tooltip" role="tooltip" data-nds-tooltip hidden>Preferred above</span><span class="nds-tooltip" id="bottom-tooltip" role="tooltip" data-nds-tooltip data-placement="bottom" hidden>Preferred below</span></section>
+
+          <section id="content" class="specimen reveal" aria-labelledby="content-title"><div class="specimen-heading"><p class="component-label">Content</p><h2 id="content-title">Keep it concise</h2><p>A compact sentence can add useful context. Longer explanations and interactive content belong in Popover.</p></div><button class="nds-button nds-button--secondary" type="button" data-nds-tooltip-trigger="version-tooltip">Version status</button><span class="nds-tooltip" id="version-tooltip" role="tooltip" data-nds-tooltip hidden>Saved automatically after every published change</span></section>
+
+          <section id="lifecycle" class="specimen reveal" aria-labelledby="lifecycle-title"><div class="specimen-heading"><p class="component-label">Lifecycle</p><h2 id="lifecycle-title">Preserve existing descriptions</h2><p>Initialization adds the Tooltip ID to `aria-describedby`; cleanup restores the exact value that existed before initialization.</p></div><div class="tabs-lifecycle-grid"><div><span>Initialize</span><code>const cleanup = initTooltips(root)</code></div><div><span>Observe</span><code>nds:tooltip-show / hide</code></div><div><span>Remove</span><code>cleanup()</code></div></div></section>
+
+          <section class="guidance-panel nds-glass reveal" aria-labelledby="guidance-title"><p class="component-label">Usage guidance</p><h2 id="guidance-title">Never hide essential information in a Tooltip.</h2><p>Use visible labels and helper text for instructions, state, and errors. Tooltips should remain short, optional, and non-interactive.</p><a class="nds-link nds-link--standalone" href="/components/">Back to components <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></section>
+        </div>
+      </div>
+    </main>
+    <footer class="catalog-footer nds-container"><span>Nikba Design System</span><a class="nds-link" href="/components/">All components</a></footer>
+  </body>
+</html>

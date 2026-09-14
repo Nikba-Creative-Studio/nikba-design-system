@@ -1,0 +1,27 @@
+.nds-tooltip {
+  position: fixed;
+  z-index: var(--nds-z-tooltip);
+  inset: auto;
+  width: max-content;
+  max-width: min(16rem, calc(100vw - (var(--nds-space-4) * 2)));
+  padding: var(--nds-space-2) var(--nds-space-3);
+  border-radius: var(--nds-radius-sm);
+  background: var(--nds-text);
+  color: var(--nds-surface);
+  box-shadow: var(--nds-shadow-elevated);
+  font-size: var(--nds-font-size-xs);
+  font-weight: var(--nds-font-weight-medium);
+  line-height: 1.4;
+  pointer-events: none;
+}
+
+.nds-tooltip:not([hidden]) { animation: nds-tooltip-enter var(--nds-duration-fast) var(--nds-ease-out); }
+.nds-tooltip[data-resolved-placement='top'] { transform-origin: bottom center; }
+.nds-tooltip[data-resolved-placement='bottom'] { transform-origin: top center; }
+
+@keyframes nds-tooltip-enter {
+  from { opacity: 0; transform: translateY(2px) scale(0.97); }
+}
+
+@media (prefers-reduced-motion: reduce) { .nds-tooltip:not([hidden]) { animation: none; } }
+@media (forced-colors: active) { .nds-tooltip { border: 1px solid CanvasText; background: Canvas; color: CanvasText; } }

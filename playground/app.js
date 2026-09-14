@@ -1,4 +1,4 @@
-import { glassLevels, initAccordions, initDialogs, initPopovers, initTabs, setGlassLevel, setTheme, themes } from '../src/index.js';
+import { glassLevels, initAccordions, initDialogs, initPopovers, initTabs, initTooltips, setGlassLevel, setTheme, themes } from '../src/index.js';
 import logoUrl from '../src/logo.svg?url';
 import './styles.css';
 
@@ -103,6 +103,7 @@ initAccordions();
 initTabs();
 initDialogs();
 initPopovers();
+initTooltips();
 
 document.querySelectorAll('[data-accordion-output]').forEach((output) => {
   document.getElementById(output.dataset.accordionOutput)?.addEventListener('nds:accordion-change', (event) => {

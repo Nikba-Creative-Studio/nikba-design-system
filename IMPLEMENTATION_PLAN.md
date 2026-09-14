@@ -168,7 +168,7 @@ Delivery order:
 2. [x] Tabs
 3. [x] Dialog
 4. [x] Popover and Dropdown Menu
-5. Tooltip
+5. [x] Tooltip
 6. Toast
 
 Shared work:
@@ -258,7 +258,6 @@ Open decisions belong in the relevant component document. Once a decision ships 
 
 Continue Phase 3 in this order:
 
-1. Tooltip with pointer, keyboard, and dismissal support.
-2. Toast with live-region and queue guidance.
+1. Toast with live-region and queue guidance.
 
 Each interactive component ships with an explicit initializer, cleanup contract, native fallback where available, and targeted behavior tests.

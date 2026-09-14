@@ -70,6 +70,7 @@
   --nds-z-base: 0;
   --nds-z-dropdown: 100;
   --nds-z-sticky: 200;
+  --nds-z-tooltip: 300;
   --nds-z-overlay: 400;
   --nds-z-modal: 500;
   --nds-z-toast: 600;
@@ -77,4 +78,3 @@
   --nds-container-max: 80rem;
   --nds-prose-max: 47.5rem;
 }
-

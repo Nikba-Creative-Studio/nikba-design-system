@@ -61,6 +61,9 @@ The project follows [Semantic Versioning](https://semver.org/). Before `1.0.0`, 
 - Popover and Dropdown Menu styles for contextual, action, selection, aligned, disabled, and destructive compositions.
 - An idempotent Popover initializer with viewport-aware placement, native light dismissal, roving menu focus, typeahead, selection state, events, and cleanup.
 - A complete Popover and Dropdown Menu contract with a dedicated catalog page and behavior test.
+- Tooltip styles with adaptive viewport placement, reduced motion, and forced-color support.
+- An idempotent Tooltip initializer with delayed pointer and focus activation, Escape dismissal, accessible-description preservation, events, and cleanup.
+- A complete Tooltip contract with a dedicated catalog page and behavior test.
 - A read-only MCP server that exposes design-system documentation and tokens to compatible AI hosts.
 - MCP resources, component and token query tools, an implementation prompt, host setup documentation, and an end-to-end protocol test.
 - A dedicated MCP catalog page and primary navigation entry for the AI integration.

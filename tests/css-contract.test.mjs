@@ -7,6 +7,7 @@ const requiredContracts = [
   '--nds-space-10',
   '--nds-color-canvas',
   '--nds-focus-ring-width',
+  '--nds-z-tooltip',
   '.nds-container',
   '.nds-stack',
   '.nds-cluster',
@@ -164,6 +165,7 @@ const requiredContracts = [
   '.nds-menu__item--danger',
   '.nds-menu__shortcut',
   '.nds-menu__separator',
+  '.nds-tooltip',
   '.nds-glass',
 ];
 
