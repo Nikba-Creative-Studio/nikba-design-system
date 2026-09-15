@@ -13,7 +13,7 @@ Header establishes a stable product landmark for brand identity, primary navigat
 - `.nds-header`: header surface.
 - `.nds-header--sticky`: sticks the landmark to the viewport start.
 - `.nds-header--glass`: uses the active glass tokens.
-- `.nds-header__inner`: Container-aligned layout.
+- `.nds-header__inner`: Container-aligned three-zone layout with centered Navigation.
 - `.nds-header__brand`, `__brand-mark`: brand link and optional mark.
 - `.nds-header__nav`, `__list`, `__link`: navigation structure.
 - `.nds-header__actions`: global action group.
@@ -56,6 +56,8 @@ Call `initNavigations()` after markup exists. The initializer is idempotent and 
 - The outside-action listener exists only while the compact panel is open.
 - Changes emit `nds:navigation-change` with `{ open }`.
 - Without JavaScript, Navigation remains visible and wraps below the brand on narrow screens.
+
+The desktop inner layout uses equal flexible side columns around Navigation. Brand stays aligned to the start, Navigation remains centered, and global actions align to the end even when their widths differ. Compact layout keeps brand, global actions, and Menu control on one balanced row while space permits, then moves actions below at the smallest supported width.
 
 ## Content guidance
 

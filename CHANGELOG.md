@@ -138,6 +138,7 @@ The project follows [Semantic Versioning](https://semver.org/). Before `1.0.0`, 
 
 ### Fixed
 
+- Header brand, Navigation, and actions now align on a symmetric three-zone grid, including compact previews.
 - Dialog Field helper text now follows the shared Field spacing and description contract.
 - Select validation and disabled-state examples now use the designed listbox behavior consistently.
 - Tooltip icon-control examples now use the public Icon Button structure and a compact toolbar surface.
