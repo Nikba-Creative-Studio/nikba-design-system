@@ -8,6 +8,7 @@ The project follows [Semantic Versioning](https://semver.org/). Before `1.0.0`, 
 
 ### Added
 
+- A structured destructive-confirmation target surface for identity, scope metadata, risk, and action placement.
 - Progressive Select enhancement that preserves native form values, reset, validation, labels, option groups, and no-JavaScript fallback.
 - Structured Search and Filter result rows with distinct identity, category, and status regions.
 - Rich next-module previews and a verified circular reading order across all 28 component and pattern reference pages.

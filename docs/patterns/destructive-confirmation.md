@@ -1,7 +1,7 @@
 # Modal and Destructive-Action Confirmation
 
 Status: Complete  
-Public CSS: `.nds-confirmation`, `.nds-confirmation__subject`, `.nds-confirmation__subject-copy`, `.nds-confirmation__consequences`, `.nds-confirmation__verify`  
+Public CSS: `.nds-confirmation`, `.nds-confirmation-target`, `.nds-confirmation-target__mark`, `.nds-confirmation-target__content`, `.nds-confirmation-target__meta`, `.nds-confirmation-target__action`, `.nds-confirmation__subject`, `.nds-confirmation__subject-copy`, `.nds-confirmation__consequences`, `.nds-confirmation__verify`
 Composes: Dialog, Button, Field, Input, Alert
 
 ## Purpose
@@ -17,6 +17,8 @@ Use this pattern immediately before a destructive action whose effect is difficu
 ## Contract
 
 Use the public native Dialog contract. The safe action comes first in source and visual order and receives initial focus. The destructive button repeats the exact action label. Do not use ambiguous labels such as Yes or Continue.
+
+When confirmation starts from a project or account summary, use the confirmation target surface to keep identity, scope metadata, and the destructive action in one scan path. Keep the risk label beside the action and let the action region stack below the target on compact screens.
 
 Typed verification must state the exact text to enter, compare it predictably, and keep confirmation disabled until it matches. It supplements the consequence explanation; it does not replace it.
 
