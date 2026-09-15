@@ -49,6 +49,8 @@ For server-rendered DOM updates, `observeComponents()` initializes added compone
 
 The [Filament integration boundary](./docs/integrations/filament.md) supports public Panel theming and scoped Nikba compositions while retaining Filament ownership of forms, tables, actions, notifications, and modals. A reference provider, theme addition, and custom Blade region live in the [Filament example](./examples/filament/).
 
+Product-specific Three.js scenes remain outside the core package. See the [Three.js integration boundary](./docs/integrations/threejs.md) for accessibility, lifecycle, fallback, and performance requirements.
+
 Pull requests and pushes to `main` run the complete build, behavior contracts, package validation, and clean packed-consumer build on Node.js 20 and 22.
 CI also checks catalog accessibility structure, compares representative desktop and compact Chrome screenshots with approved sampled-pixel baselines, and uploads the rendered snapshots for review.
 

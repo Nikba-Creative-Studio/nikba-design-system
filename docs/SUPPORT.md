@@ -31,6 +31,7 @@ The JavaScript bundle has no framework dependency. Applications import only the 
 - Compact controls retain desktop density and expand to a 44px minimum interactive target when the primary pointer is coarse.
 - Toast queues are bounded; overlay and navigation listeners are installed only for initialized instances and removed by cleanup.
 - Catalog effects and examples are not part of the published runtime bundle.
+- Product-owned Three.js scenes stay outside the core package, load after primary content, pause outside the viewport, cap rendering work for compact devices, and retain a static fallback.
 
 Run `npm run test:budgets` after a library build. A budget increase requires a changelog entry that names the user-facing capability responsible for the growth.
 

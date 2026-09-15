@@ -111,6 +111,8 @@ Motion is short, fluid, and tied to user action or content entry.
 
 The core interface must remain usable without JavaScript. JavaScript enhances state and interaction where native HTML cannot meet the contract.
 
+Product-owned immersive media may use Three.js outside the component layer. It must preserve readable HTML content, remain decorative to assistive technology, pause outside the viewport, respect reduced motion, and provide a static fallback when WebGL is unavailable.
+
 ## 9. Responsive behavior
 
 | Range | Grid | Primary change |
@@ -140,7 +142,8 @@ Accessibility claims require browser, keyboard, and assistive-technology verific
 - Gradient or shadow effects on text
 - Glass across long reading surfaces
 - Animated blur filters
-- SVG displacement, canvas, WebGL, or decorative 3D surfaces
+- SVG displacement, canvas, or WebGL effects inside interface components
+- 3D media without a static fallback or a defined performance budget
 - Custom global cursors
 - Emoji used as interface icons
 - Readability sacrificed for visual effects
