@@ -16,7 +16,7 @@ Use a labeled navigation landmark for settings categories and one main content c
 - Use a Switch only when a setting takes effect immediately. Announce a failed update and restore the previous value.
 - Use a form and explicit Save action when several fields form one transaction.
 - Describe sessions with device, approximate location, and recent activity before offering Sign out.
-- Put destructive account actions in a distinct final section. Explain consequences before opening a confirmation Dialog.
+- Put destructive account actions in a distinct final section. Explain consequences before opening a confirmation Dialog with a visible risk signal, symmetric actions, and initial focus on the safe action.
 - Preserve unsaved edits if submission fails. Warn about unsaved changes only when leaving would lose meaningful work.
 
 ## Responsive behavior
