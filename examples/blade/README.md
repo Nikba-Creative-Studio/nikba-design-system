@@ -11,3 +11,5 @@ The CSS entry imports the public stylesheet. The JavaScript entry initializes on
 The Button component maps a finite prop vocabulary to public variants and preserves caller attributes through Laravel's attribute bag. The Dialog component generates stable accessible-name references from its required ID and leaves actions in an explicit footer slot.
 
 Do not translate every Nikba class into a Blade component. Use ordinary semantic HTML for simple compositions. Create a wrapper when it removes repeated server-side logic, enforces a valid variant set, or generates required accessibility relationships.
+
+The JavaScript entry uses `observeComponents()` so Livewire morphs initialize new roots and clean removed behavior. The complete ownership and navigation contract is documented in [`docs/integrations/livewire.md`](../../docs/integrations/livewire.md).

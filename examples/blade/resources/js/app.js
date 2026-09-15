@@ -1,4 +1,5 @@
-import { initDialogs, initForms } from '@nikba/design-system';
+import { observeComponents } from '@nikba/design-system';
 
-initDialogs();
-initForms();
+const nikba = observeComponents();
+
+document.addEventListener('livewire:navigated', () => nikba.refresh());

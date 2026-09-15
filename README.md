@@ -41,6 +41,8 @@ The [plain HTML and JavaScript consumer](./examples/plain/) imports the packed p
 
 The [Blade integration example](./examples/blade/) provides thin Button and Dialog wrappers, public CSS and JavaScript entries, and an account view that preserves native semantics and Laravel attribute forwarding.
 
+For server-rendered DOM updates, `observeComponents()` initializes added component roots and cleans removed ones. See the [Livewire integration guide](./docs/integrations/livewire.md) for lifecycle ownership, navigation refresh, stable keys, and validation scenarios.
+
 ## Usage
 
 ```js
@@ -81,7 +83,7 @@ The server publishes discoverable resources, four query tools, and a `build_with
 - Themes: Frost, Mist, Graphite
 - Glass levels: Off, Soft, Clear
 - CSS: tokens, typography, layout, Button, Link, Badge, Chip, Field, Input, Textarea, Native Select, Checkbox, Radio, Switch, Card, Divider, Avatar, Spinner, Skeleton, Alert, Disclosure, Accordion, Tabs, Dialog, Popover, Dropdown Menu, Tooltip, Toast, Header, Navigation, Breadcrumb, Pagination, Table, Product States, Search and Filter, Form Validation, Settings and Account, Destructive Confirmation, Tag, Glass surface, and scoped foundations
-- JavaScript: theme and glass constants and setters, interactive-component initializers with cleanup, Form validation, and the Toast manager
+- JavaScript: theme and glass constants and setters, interactive-component initializers with cleanup, dynamic DOM lifecycle observation, Form validation, and the Toast manager
 
 Component contracts are published under [`docs/components`](./docs/components/), including [Button and Icon Button](./docs/components/button.md), [Link](./docs/components/link.md), [Badge and Chip](./docs/components/badge-chip.md), [Field](./docs/components/field.md), [Input and Textarea](./docs/components/input-textarea.md), [Native Select](./docs/components/select.md), [Checkbox and Radio](./docs/components/checkbox-radio.md), [Switch](./docs/components/switch.md), [Card](./docs/components/card.md), [Divider](./docs/components/divider.md), [Avatar](./docs/components/avatar.md), [Spinner](./docs/components/spinner.md), [Skeleton](./docs/components/skeleton.md), [Alert](./docs/components/alert.md), [Disclosure and Accordion](./docs/components/disclosure-accordion.md), [Tabs](./docs/components/tabs.md), [Dialog](./docs/components/dialog.md), [Popover and Dropdown Menu](./docs/components/popover-menu.md), [Tooltip](./docs/components/tooltip.md), [Toast](./docs/components/toast.md), [Header and Responsive Navigation](./docs/components/header-navigation.md), [Breadcrumb and Pagination](./docs/components/breadcrumb-pagination.md), and [Table](./docs/components/table.md).
 

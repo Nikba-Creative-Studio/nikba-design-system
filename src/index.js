@@ -8,6 +8,7 @@ export { createToastManager } from './behaviors/toast.js';
 export { initNavigations } from './behaviors/navigation.js';
 export { initTables } from './behaviors/table.js';
 export { initForms } from './behaviors/form.js';
+export { observeComponents } from './integrations/dom-lifecycle.js';
 
 export const themes = Object.freeze(['frost', 'mist', 'graphite']);
 export const glassLevels = Object.freeze(['off', 'soft', 'clear']);

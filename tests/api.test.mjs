@@ -10,6 +10,7 @@ import {
   initTooltips,
   initTabs,
   initTables,
+  observeComponents,
   setGlassLevel,
   setTheme,
   themes,
@@ -29,6 +30,7 @@ assert.equal(typeof initPopovers, 'function');
 assert.equal(typeof initTooltips, 'function');
 assert.equal(typeof initTabs, 'function');
 assert.equal(typeof initTables, 'function');
+assert.equal(typeof observeComponents, 'function');
 
 for (const theme of themes) {
   setTheme(theme, target);

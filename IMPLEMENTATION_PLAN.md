@@ -201,7 +201,7 @@ Goal: prove that the package works in intended environments and prepare a stable
 
 - [x] Add built-package examples for plain HTML and JavaScript.
 - [x] Add Blade integration examples.
-- [ ] Validate Livewire DOM updates and interaction lifecycle.
+- [x] Validate Livewire DOM updates and interaction lifecycle.
 - [ ] Evaluate Filament integration and document supported customization boundaries.
 - [ ] Add CI for builds, package validation, behavior, accessibility, and selected visual regression checks.
 - [ ] Establish browser coverage, bundle-size budgets, and performance checks.
@@ -258,7 +258,7 @@ Open decisions belong in the relevant component document. Once a decision ships 
 
 Begin Phase 4 in this order:
 
-1. Validate Livewire DOM updates and interaction lifecycle.
-2. Evaluate Filament integration and document supported customization boundaries.
+1. Evaluate Filament integration and document supported customization boundaries.
+2. Add CI for builds, package validation, behavior, accessibility, and selected visual regression checks.
 
 Each interactive component ships with an explicit initializer, cleanup contract, native fallback where available, and targeted behavior tests.
