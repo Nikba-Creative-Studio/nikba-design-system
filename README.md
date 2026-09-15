@@ -39,6 +39,8 @@ npm run verify
 
 The [plain HTML and JavaScript consumer](./examples/plain/) imports the packed public API through a framework-free Vite entry. `npm run test:consumer` packs the current library, installs the archive into a temporary consumer, and proves its production build.
 
+The [Blade integration example](./examples/blade/) provides thin Button and Dialog wrappers, public CSS and JavaScript entries, and an account view that preserves native semantics and Laravel attribute forwarding.
+
 ## Usage
 
 ```js

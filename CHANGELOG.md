@@ -88,6 +88,8 @@ The project follows [Semantic Versioning](https://semver.org/). Before `1.0.0`, 
 - A complete Destructive Confirmation pattern with risk levels, safe initial focus, protected pending state, success announcement, documentation, and a functional catalog demonstration.
 - A framework-free HTML and JavaScript consumer that imports only published CSS and JavaScript package exports.
 - A clean-room consumer test that packs the library, installs the archive into a temporary application, and verifies its production build.
+- Laravel Blade examples for package entry points, finite Button props, accessible Dialog relationships, named slots, and attribute forwarding.
+- A static Blade integration contract test and PHP syntax checks for the example templates.
 - A read-only MCP server that exposes design-system documentation and tokens to compatible AI hosts.
 - MCP resources, component and token query tools, an implementation prompt, host setup documentation, and an end-to-end protocol test.
 - A dedicated MCP catalog page and primary navigation entry for the AI integration.
