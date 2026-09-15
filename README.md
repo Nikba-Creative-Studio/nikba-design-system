@@ -2,7 +2,7 @@
 
 Neutral interface foundations, Onest typography, and selective glassmorphism for Nikba websites and digital products.
 
-> Status: `0.1.0-alpha.1` — active development. Public APIs may change before `1.0.0`.
+> Status: `0.1.0-alpha.2` — active development. Public APIs may change before `1.0.0`.
 
 ## Principles
 

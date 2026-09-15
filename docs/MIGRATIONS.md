@@ -1,6 +1,6 @@
 # Migration Guide
 
-No published migration is required for `0.1.0-alpha.1`. This document becomes the chronological source for breaking changes and deprecations.
+No published migration is required for `0.1.0-alpha.2`. This document becomes the chronological source for breaking changes and deprecations.
 
 ## Entry format
 
