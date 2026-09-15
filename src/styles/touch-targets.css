@@ -1,0 +1,29 @@
+@media (pointer: coarse) {
+  :where(
+    .nds-button,
+    .nds-chip,
+    .nds-tag,
+    .nds-input,
+    .nds-select,
+    .nds-menu__item,
+    .nds-tabs__tab,
+    .nds-header__link,
+    .nds-settings__nav-link,
+    .nds-pagination__link,
+    .nds-link--standalone,
+    .nds-switch,
+    .nds-choice,
+    .nds-toast__action
+  ) {
+    min-height: var(--nds-control-height-md);
+  }
+
+  .nds-button--icon,
+  .nds-dialog__close,
+  .nds-toast__close {
+    width: var(--nds-control-height-md);
+    min-width: var(--nds-control-height-md);
+    height: var(--nds-control-height-md);
+    min-height: var(--nds-control-height-md);
+  }
+}

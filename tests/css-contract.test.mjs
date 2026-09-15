@@ -263,6 +263,8 @@ for (const contract of requiredContracts) {
 }
 
 assert.ok(!css.includes('fonts.googleapis.com'), 'The CSS bundle must not download fonts.');
+assert.ok(css.includes('@media (pointer:coarse)'), 'Coarse pointers require enlarged interactive targets.');
+assert.ok(css.includes('.nds-toast__close'), 'Compact close controls require a touch-target override.');
 
 const definedCustomProperties = new Set([...css.matchAll(/(--nds-[a-z0-9-]+)\s*:/g)].map((match) => match[1]));
 const usedCustomProperties = new Set(

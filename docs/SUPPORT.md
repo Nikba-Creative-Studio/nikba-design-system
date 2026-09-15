@@ -28,6 +28,7 @@ The JavaScript bundle has no framework dependency. Applications import only the 
 - Glass blur is progressive, theme-controlled, and absent at Glass Off.
 - Motion respects `prefers-reduced-motion`.
 - Dynamic DOM observation is opt-in through `observeComponents()` and observes only child-list changes.
+- Compact controls retain desktop density and expand to a 44px minimum interactive target when the primary pointer is coarse.
 - Toast queues are bounded; overlay and navigation listeners are installed only for initialized instances and removed by cleanup.
 - Catalog effects and examples are not part of the published runtime bundle.
 
