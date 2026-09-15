@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { spawn } from 'node:child_process';
 import { mkdir, mkdtemp, readFile, rm, writeFile } from 'node:fs/promises';
+import { createServer } from 'node:net';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { pixelGrid, readPng } from './helpers/png-grid.mjs';
@@ -57,13 +58,23 @@ function connectCdp(url) {
   });
 }
 
-async function waitForDebugPort(profile) {
-  const activePort = join(profile, 'DevToolsActivePort');
+function availablePort() {
+  return new Promise((resolve, reject) => {
+    const probe = createServer();
+    probe.once('error', reject);
+    probe.listen(0, '127.0.0.1', () => {
+      const { port } = probe.address();
+      probe.close(() => resolve(port));
+    });
+  });
+}
+
+async function waitForDebugServer(port) {
   for (let attempt = 0; attempt < 50; attempt += 1) {
-    try { return (await readFile(activePort, 'utf8')).split('\n')[0]; } catch { /* Chrome is still starting. */ }
+    try { if ((await fetch(`http://127.0.0.1:${port}/json/version`)).ok) return; } catch { /* Chrome is still starting. */ }
     await new Promise((resolve) => setTimeout(resolve, 100));
   }
-  throw new Error('Chrome did not expose a debugging port.');
+  throw new Error('Chrome did not expose its debugging server.');
 }
 
 function stop(child) {
@@ -78,7 +89,8 @@ await rm(output, { recursive: true, force: true });
 await mkdir(output, { recursive: true });
 const server = spawn(process.execPath, [join(repository, 'node_modules/vite/bin/vite.js'), 'preview', '--config', join(repository, 'vite.playground.config.js'), '--host', '127.0.0.1', '--port', String(port)], { cwd: repository, stdio: 'ignore' });
 const profile = await mkdtemp(join(tmpdir(), 'nds-browser-'));
-const browser = spawn(chrome, ['--headless', '--disable-gpu', '--hide-scrollbars', '--no-sandbox', '--remote-debugging-port=0', `--user-data-dir=${profile}`, 'about:blank'], { stdio: 'ignore' });
+const debugPort = await availablePort();
+const browser = spawn(chrome, ['--headless', '--disable-gpu', '--hide-scrollbars', '--no-sandbox', '--remote-debugging-address=127.0.0.1', `--remote-debugging-port=${debugPort}`, `--user-data-dir=${profile}`, 'about:blank'], { stdio: 'ignore' });
 let cdp;
 
 try {
@@ -87,7 +99,7 @@ try {
     await new Promise((resolve) => setTimeout(resolve, 100));
   }
 
-  const debugPort = await waitForDebugPort(profile);
+  await waitForDebugServer(debugPort);
   const targets = await fetch(`http://127.0.0.1:${debugPort}/json/list`).then((response) => response.json());
   const pageTarget = targets.find((target) => target.type === 'page');
   assert.ok(pageTarget?.webSocketDebuggerUrl, 'Chrome requires a debuggable page target.');
