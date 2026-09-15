@@ -206,7 +206,7 @@ Goal: prove that the package works in intended environments and prepare a stable
 - [ ] Add CI for builds, package validation, behavior, accessibility, and selected visual regression checks.
   - [x] Run builds, API and behavior contracts, package validation, and packed-consumer builds on supported Node versions.
   - [ ] Add browser accessibility and selected visual regression jobs.
-- [ ] Establish browser coverage, bundle-size budgets, and performance checks.
+- [x] Establish browser coverage, bundle-size budgets, and performance checks.
 - [ ] Complete contribution, release, deprecation, migration, and support policies.
 - [ ] Run a full accessibility and API audit before `1.0.0`.
 
@@ -260,7 +260,7 @@ Open decisions belong in the relevant component document. Once a decision ships 
 
 Begin Phase 4 in this order:
 
-1. Establish browser coverage, bundle-size budgets, and performance checks.
-2. Add browser accessibility and selected visual regression jobs.
+1. Add browser accessibility and selected visual regression jobs.
+2. Complete contribution, release, deprecation, migration, and support policies.
 
 Each interactive component ships with an explicit initializer, cleanup contract, native fallback where available, and targeted behavior tests.

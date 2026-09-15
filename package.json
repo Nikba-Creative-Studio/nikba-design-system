@@ -44,7 +44,8 @@
     "test:blade": "node tests/blade-examples.test.mjs",
     "test:lifecycle": "node tests/dom-lifecycle.test.mjs",
     "test:filament": "node tests/filament-examples.test.mjs",
-    "test": "npm run test:api && npm run test:css && npm run test:contrast && npm run test:accordion && npm run test:tabs && npm run test:dialog && npm run test:popover && npm run test:tooltip && npm run test:toast && npm run test:navigation && npm run test:table && npm run test:form && npm run test:lifecycle && npm run test:mcp && npm run test:blade && npm run test:filament",
+    "test:budgets": "node tests/budgets.test.mjs",
+    "test": "npm run test:api && npm run test:css && npm run test:contrast && npm run test:budgets && npm run test:accordion && npm run test:tabs && npm run test:dialog && npm run test:popover && npm run test:tooltip && npm run test:toast && npm run test:navigation && npm run test:table && npm run test:form && npm run test:lifecycle && npm run test:mcp && npm run test:blade && npm run test:filament",
     "mcp": "node ./mcp/server.js",
     "verify": "npm run build && npm test && npm run test:consumer && npm pack --dry-run"
   },

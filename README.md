@@ -47,6 +47,8 @@ The [Filament integration boundary](./docs/integrations/filament.md) supports pu
 
 Pull requests and pushes to `main` run the complete build, behavior contracts, package validation, and clean packed-consumer build on Node.js 20 and 22.
 
+[Browser and performance support](./docs/SUPPORT.md) defines the target browser matrix, progressive feature boundaries, runtime expectations, and enforced CSS and JavaScript bundle budgets.
+
 ## Usage
 
 ```js
