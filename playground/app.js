@@ -405,7 +405,7 @@ if ('IntersectionObserver' in window) {
         }
       });
     },
-    { threshold: 0.12 },
+    { threshold: 0 },
   );
   document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
 } else {
