@@ -119,6 +119,7 @@ The project follows [Semantic Versioning](https://semver.org/). Before `1.0.0`, 
 
 ### Changed
 
+- The MCP protocol verification message now uses a structured responsive status surface with clear icon, title, and description alignment.
 - Every catalog page now uses the same responsive Nikba Creative Studio credit and Alpha 02 release status Footer.
 - Package and catalog prerelease metadata now consistently identify Alpha 02 (`0.1.0-alpha.2`).
 - Select reference examples, Form Validation, and Search and Filter now use the designed popup while retaining native form semantics.

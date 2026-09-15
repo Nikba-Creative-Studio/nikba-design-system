@@ -678,9 +678,53 @@ button {
 .mcp-command pre { margin: 0; padding: var(--nds-space-5); overflow-x: auto; }
 .mcp-command code { color: inherit; font: 500 var(--nds-font-size-sm)/1.7 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
 
-.mcp-verification { margin: 0; display: flex; align-items: baseline; gap: var(--nds-space-2); color: var(--nds-text-secondary); line-height: 1.55; }
-.mcp-verification > span { width: 0.55rem; height: 0.55rem; flex: 0 0 auto; border-radius: 50%; background: var(--nds-success); box-shadow: 0 0 0 4px color-mix(in srgb, var(--nds-success) 20%, transparent); }
-.mcp-verification strong { color: var(--nds-text); }
+.mcp-verification {
+  margin: 0;
+  padding: clamp(var(--nds-space-4), 3vw, var(--nds-space-6));
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: start;
+  gap: var(--nds-space-4);
+  border: var(--nds-border-width) solid color-mix(in srgb, var(--nds-success) 38%, var(--nds-border));
+  border-radius: var(--nds-radius-xl);
+  background: color-mix(in srgb, var(--nds-success) 7%, var(--nds-surface));
+  box-shadow: var(--nds-shadow-sm);
+}
+
+.mcp-verification__icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--nds-success);
+  background: color-mix(in srgb, var(--nds-success) 15%, var(--nds-surface));
+  box-shadow: inset 0 0 0 var(--nds-border-width) color-mix(in srgb, var(--nds-success) 35%, transparent);
+}
+
+.mcp-verification__icon svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.mcp-verification strong {
+  display: block;
+  color: var(--nds-text);
+  font-size: var(--nds-font-size-md);
+  line-height: 1.35;
+}
+
+.mcp-verification p {
+  margin: var(--nds-space-2) 0 0;
+  max-width: 64ch;
+  color: var(--nds-text-secondary);
+  line-height: 1.6;
+}
 
 .catalog-section--compact { padding-block: clamp(40px, 7vw, 88px); }
 
