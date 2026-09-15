@@ -1463,12 +1463,23 @@ button {
 .catalog-footer {
   min-height: 160px;
   padding-block: 50px 130px;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: var(--nds-space-6);
   align-items: start;
   border-top: 1px solid var(--nds-border);
   color: var(--nds-text-tertiary);
   font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+.catalog-footer > :first-child {
+  max-width: 56ch;
+}
+
+.catalog-footer > :last-child {
+  white-space: nowrap;
+  text-align: end;
 }
 
 @keyframes title-enter {
@@ -1653,6 +1664,13 @@ button {
 
   .catalog-footer {
     padding-bottom: 130px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--nds-space-3);
+  }
+
+  .catalog-footer > :last-child {
+    white-space: normal;
+    text-align: start;
   }
 
   .component-hero { min-height: 420px; grid-template-columns: 1fr; align-items: end; }
