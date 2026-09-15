@@ -116,6 +116,7 @@ The project follows [Semantic Versioning](https://semver.org/). Before `1.0.0`, 
 
 ### Changed
 
+- Search and Filter result rows now respond to hover with stronger surface, border, shadow, and identity contrast.
 - Inline Success States now align icon, message, and action in a compact responsive result row.
 - Destructive Dialogs now use a clearer risk signal and symmetric confirmation actions.
 - Select now offers a fully designed listbox with keyboard navigation, typeahead, form-value synchronization, and a documented native fallback.

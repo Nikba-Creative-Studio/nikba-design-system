@@ -93,6 +93,9 @@
   border-radius: var(--nds-radius-md);
   background: color-mix(in srgb, var(--nds-surface) 88%, transparent);
   box-shadow: var(--nds-shadow-subtle);
+  transition: border-color var(--nds-duration-fast) var(--nds-ease-out),
+    background-color var(--nds-duration-fast) var(--nds-ease-out),
+    box-shadow var(--nds-duration-fast) var(--nds-ease-out);
 }
 
 .nds-search-filter__identity {
@@ -114,6 +117,8 @@
   color: var(--nds-text-secondary);
   font-size: var(--nds-font-size-xs);
   font-weight: var(--nds-font-weight-semibold);
+  transition: background-color var(--nds-duration-fast) var(--nds-ease-out),
+    color var(--nds-duration-fast) var(--nds-ease-out);
 }
 
 .nds-search-filter__copy {
@@ -144,6 +149,19 @@
 
 .nds-search-filter__type {
   white-space: nowrap;
+}
+
+@media (hover: hover) {
+  .nds-search-filter__result:hover {
+    border-color: var(--nds-border-hover);
+    background: var(--nds-surface-hover);
+    box-shadow: var(--nds-shadow-elevated);
+  }
+
+  .nds-search-filter__result:hover .nds-search-filter__avatar {
+    background: var(--nds-text);
+    color: var(--nds-surface);
+  }
 }
 
 @media (max-width: 56rem) {

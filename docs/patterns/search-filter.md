@@ -37,6 +37,7 @@ The pattern composes Field, Input, Native Select, Button, Chip, Badge, and Produ
 - Preserve criteria in Pagination and sort URLs.
 - Display the result count after criteria are applied.
 - Represent active filters outside the closed controls when they would otherwise be difficult to scan.
+- On hover-capable devices, result rows may strengthen their surface and identity contrast to aid scanning.
 - Removing an active-filter Chip updates the corresponding control and results.
 - An empty result keeps the submitted query visible and offers Reset filters.
 
