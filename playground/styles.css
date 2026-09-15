@@ -1170,7 +1170,17 @@ button {
 .dialog-review-grid strong { color: var(--nds-text); }
 .dialog-long-copy h3 { margin: var(--nds-space-6) 0 var(--nds-space-2); color: var(--nds-text); }
 .popover-alignment-demo { width: 100%; max-width: 720px; min-height: 120px; padding: var(--nds-space-5); display: flex; align-items: center; justify-content: space-between; gap: var(--nds-space-4); border: var(--nds-border-width) solid var(--nds-border); border-radius: var(--nds-radius-md); background: var(--nds-surface-alt); color: var(--nds-text-secondary); }
-.tooltip-toolbar { padding: var(--nds-space-3); display: inline-flex; gap: var(--nds-space-2); border: var(--nds-border-width) solid var(--nds-border); border-radius: var(--nds-radius-md); background: var(--nds-surface-alt); }
+.tooltip-toolbar {
+  width: fit-content;
+  padding: 5px;
+  display: inline-flex;
+  justify-self: start;
+  gap: 3px;
+  border: var(--nds-border-width) solid var(--nds-border);
+  border-radius: var(--nds-radius-pill);
+  background: var(--nds-surface-alt);
+  box-shadow: var(--nds-shadow-subtle);
+}
 .toast-demo-region { inset-block-end: 7rem; }
 .header-demo { width: 100%; position: relative; z-index: 10; border-radius: var(--nds-radius-lg); }
 .header-demo .nds-header { border: var(--nds-border-width) solid var(--nds-border); border-radius: var(--nds-radius-lg); }
