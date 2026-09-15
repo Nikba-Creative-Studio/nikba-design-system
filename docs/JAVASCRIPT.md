@@ -38,7 +38,7 @@ Every initializer accepts an optional `Document` or `Element` root, discovers ma
 | `initTabs(root?)` | `[data-nds-tabs]` | `nds:tabs-change` |
 | `initDialogs(root?)` | `dialog[data-nds-dialog]` | `nds:dialog-open`, `nds:dialog-close` |
 | `initPopovers(root?)` | `[data-nds-popover]` | `nds:menu-select` for Menu choices |
-| `initSelects(root?)` | `[data-nds-select]` | `nds:select-change` with the selected value and option |
+| `initSelects(root?)` | `[data-nds-select]` | `nds:select-change` with the selected value and option; native Select sources are progressively enhanced |
 | `initTooltips(root?)` | `[data-nds-tooltip]` | `nds:tooltip-show`, `nds:tooltip-hide` |
 | `initNavigations(root?)` | `[data-nds-navigation]` | `nds:navigation-change` |
 | `initTables(root?)` | `[data-nds-table]` | `nds:table-sort`, `nds:table-selection-change` |

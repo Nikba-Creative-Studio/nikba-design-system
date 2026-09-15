@@ -15,11 +15,19 @@ function errorFor(form, control) {
     .find((error) => error.dataset.ndsError === control.name);
 }
 
+function visibleControlFor(control) {
+  if (!control.matches?.('select[data-nds-select-value]')) return control;
+  return control.closest?.('[data-nds-select]')?.querySelector('[data-nds-select-trigger]') ?? control;
+}
+
 function syncControl(form, control) {
   const invalid = control.validity ? !control.validity.valid : false;
   const error = errorFor(form, control);
+  const visibleControl = visibleControlFor(control);
   if (invalid) control.setAttribute('aria-invalid', 'true');
   else control.removeAttribute('aria-invalid');
+  if (invalid) visibleControl.setAttribute('aria-invalid', 'true');
+  else visibleControl.removeAttribute('aria-invalid');
   if (error) error.hidden = !invalid;
   return invalid;
 }
@@ -66,7 +74,7 @@ export function initForms(root = document) {
         summary.hidden = false;
         summary.focus();
       } else {
-        invalidControls[0].focus();
+        visibleControlFor(invalidControls[0]).focus();
       }
       form.dispatchEvent(new CustomEvent('nds:form-invalid', {
         bubbles: true,
@@ -84,6 +92,7 @@ export function initForms(root = document) {
     const onReset = () => queueMicrotask(() => {
       controlsFor(form).forEach((control) => {
         control.removeAttribute('aria-invalid');
+        visibleControlFor(control).removeAttribute('aria-invalid');
         const error = errorFor(form, control);
         if (error) error.hidden = true;
       });
@@ -91,16 +100,28 @@ export function initForms(root = document) {
       if (summary) summary.hidden = true;
     });
 
+    const onSummaryClick = (event) => {
+      const link = event.target.closest?.('a[href^="#"]');
+      if (!link || !summary?.contains(link)) return;
+      const id = link.getAttribute('href').slice(1);
+      const control = controlsFor(form).find((candidate) => candidate.id === id);
+      if (!control) return;
+      event.preventDefault();
+      visibleControlFor(control).focus();
+    };
+
     form.addEventListener('submit', onSubmit);
     form.addEventListener('input', onInput);
     form.addEventListener('change', onInput);
     form.addEventListener('reset', onReset);
+    summary?.addEventListener?.('click', onSummaryClick);
 
     const cleanup = () => {
       form.removeEventListener('submit', onSubmit);
       form.removeEventListener('input', onInput);
       form.removeEventListener('change', onInput);
       form.removeEventListener('reset', onReset);
+      summary?.removeEventListener?.('click', onSummaryClick);
       form.noValidate = previousNoValidate;
       initializedForms.delete(form);
     };

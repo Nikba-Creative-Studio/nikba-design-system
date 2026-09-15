@@ -27,7 +27,7 @@ Search and Filter helps people narrow a known collection with a text query and e
 - `.nds-search-filter__owner`: owner metadata.
 - `.nds-search-filter__type`: result category.
 
-The pattern composes Field, Input, Native Select, Button, Chip, Badge, and Product State APIs.
+The pattern composes Field, Input, progressively enhanced Select, Button, Chip, Badge, and Product State APIs.
 
 ## Behavior contract
 
@@ -53,10 +53,12 @@ The pattern composes Field, Input, Native Select, Button, Chip, Badge, and Produ
         <input class="nds-input nds-input--medium" type="search" name="query" />
       </span>
     </label>
-    <label class="nds-field">
-      <span class="nds-field__label">Status</span>
-      <select class="nds-select" name="status">…</select>
-    </label>
+    <div class="nds-field">
+      <label class="nds-field__label" for="status">Status</label>
+      <div class="nds-selectbox nds-selectbox--medium" data-nds-select>
+        <select class="nds-select nds-select--medium" id="status" name="status">…</select>
+      </div>
+    </div>
     <div class="nds-search-filter__actions">
       <button class="nds-button" type="submit">Apply</button>
       <button class="nds-button nds-button--ghost" type="reset">Reset</button>

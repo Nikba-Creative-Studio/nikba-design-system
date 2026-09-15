@@ -25,21 +25,12 @@
         <nav class="page-sidebar" aria-label="Component sections"><span>Select</span><a href="#default">Custom</a><a href="#sizes">Native sizes</a><a href="#groups">Groups</a><a href="#states">States</a><a href="#content">Content</a><hr /><a href="/components/input-textarea.html">← Input and Textarea</a></nav>
         <div class="page-content">
           <section id="default" class="specimen reveal" aria-labelledby="default-title">
-            <div class="specimen-heading"><p class="component-label">Custom listbox</p><h2 id="default-title">One choice, fully designed</h2><p>The popup follows the system surface, spacing, selection, and focus language in every theme.</p></div>
+            <div class="specimen-heading"><p class="component-label">Progressive listbox</p><h2 id="default-title">One choice, fully designed</h2><p>The native Select remains the form source and fallback while the enhanced popup follows the system surface, spacing, selection, and focus language.</p></div>
             <div class="field-specimen">
               <div class="nds-field">
-                <span class="nds-field__label" id="project-status-label">Project status</span>
+                <label class="nds-field__label" for="project-status">Project status</label>
                 <div class="nds-selectbox" data-nds-select>
-                  <input type="hidden" name="status" value="draft" data-nds-select-value />
-                  <button class="nds-selectbox__trigger" type="button" role="combobox" aria-haspopup="listbox" aria-controls="project-status-options" aria-labelledby="project-status-label project-status-value" aria-describedby="project-status-help" data-nds-select-trigger>
-                    <span id="project-status-value" data-nds-select-label>Draft</span>
-                  </button>
-                  <div class="nds-selectbox__listbox" id="project-status-options" role="listbox" aria-labelledby="project-status-label" popover="auto" data-nds-select-listbox>
-                    <div class="nds-selectbox__option" id="project-status-draft" role="option" aria-selected="true" data-value="draft">Draft</div>
-                    <div class="nds-selectbox__option" id="project-status-review" role="option" aria-selected="false" data-value="review">In review</div>
-                    <div class="nds-selectbox__option" id="project-status-approved" role="option" aria-selected="false" data-value="approved">Approved</div>
-                    <div class="nds-selectbox__option" id="project-status-archived" role="option" aria-selected="false" data-value="archived">Archived</div>
-                  </div>
+                  <select class="nds-select" id="project-status" name="status" aria-describedby="project-status-help"><option value="draft">Draft</option><option value="review">In review</option><option value="approved">Approved</option><option value="archived">Archived</option></select>
                 </div>
                 <p class="nds-field__helper" id="project-status-help">Status controls where the project appears in team views.</p>
               </div>
@@ -54,8 +45,8 @@
             </div>
           </section>
           <section id="groups" class="specimen reveal" aria-labelledby="groups-title">
-            <div class="specimen-heading"><p class="component-label">Option groups</p><h2 id="groups-title">Organize a longer list</h2><p>Native <code>optgroup</code> labels help scan related values without adding a second interaction layer.</p></div>
-            <div class="field-specimen"><div class="nds-field"><label class="nds-field__label" for="office">Office location</label><div class="nds-select-shell"><select class="nds-select" id="office" name="office"><optgroup label="Europe"><option>Chisinau</option><option>Bucharest</option><option>London</option></optgroup><optgroup label="North America"><option>New York</option><option>Toronto</option></optgroup></select></div></div></div>
+            <div class="specimen-heading"><p class="component-label">Option groups</p><h2 id="groups-title">Organize a longer list</h2><p>Native <code>optgroup</code> data becomes a styled, non-interactive heading inside the designed popup.</p></div>
+            <div class="field-specimen"><div class="nds-field"><label class="nds-field__label" for="office">Office location</label><div class="nds-selectbox" data-nds-select><select class="nds-select" id="office" name="office"><optgroup label="Europe"><option>Chisinau</option><option>Bucharest</option><option>London</option></optgroup><optgroup label="North America"><option>New York</option><option>Toronto</option></optgroup></select></div></div></div>
           </section>
           <section id="states" class="specimen reveal" aria-labelledby="states-title">
             <div class="specimen-heading"><p class="component-label">States</p><h2 id="states-title">Make the next action clear</h2><p>Invalid Select connects its error to the control and clears it after a valid choice. Disabled Select remains visible and explains why it cannot change.</p></div>

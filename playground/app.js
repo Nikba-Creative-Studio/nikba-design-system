@@ -190,7 +190,10 @@ document.querySelectorAll('[data-filter-demo]').forEach((demo) => {
       button.textContent = `${filterLabels[key]}: ${displayValue} ×`;
       button.setAttribute('aria-label', `Remove ${filterLabels[key]} filter: ${displayValue}`);
       button.addEventListener('click', () => {
-        if (control) control.value = '';
+        if (control) {
+          control.value = '';
+          control.dispatchEvent(new Event('change', { bubbles: true }));
+        }
         update();
       });
       item.append(button);

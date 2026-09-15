@@ -1,4 +1,5 @@
 const initializedSelects = new WeakMap();
+let generatedSelectId = 0;
 
 function findSelects(root) {
   const selects = [...root.querySelectorAll('[data-nds-select]')];
@@ -9,6 +10,119 @@ function findSelects(root) {
 function enabledOptions(listbox) {
   return [...listbox.querySelectorAll('[role="option"]')]
     .filter((option) => option.getAttribute('aria-disabled') !== 'true');
+}
+
+function ensureId(element, prefix) {
+  if (element.id) return element.id;
+  generatedSelectId += 1;
+  element.id = `${prefix}-${generatedSelectId}`;
+  return element.id;
+}
+
+function createOption(document, option, listboxId, index) {
+  const item = document.createElement('div');
+  item.className = 'nds-selectbox__option';
+  item.id = `${listboxId}-option-${index}`;
+  item.setAttribute('role', 'option');
+  item.setAttribute('aria-selected', String(option.selected));
+  if (option.disabled) item.setAttribute('aria-disabled', 'true');
+  item.dataset.value = option.value;
+  item.textContent = option.textContent.trim();
+  return item;
+}
+
+function enhanceNativeSource(select, source) {
+  const document = select.ownerDocument;
+  const field = select.closest?.('.nds-field');
+  const fieldLabel = field?.querySelector('.nds-field__label');
+  const previousSourceId = source.id;
+  const previousLabelId = fieldLabel?.id ?? '';
+  const sourceId = ensureId(source, 'nds-select');
+  const labelId = fieldLabel ? ensureId(fieldLabel, `${sourceId}-label`) : null;
+  const listboxId = `${sourceId}-options`;
+  const valueLabelId = `${sourceId}-value`;
+  const trigger = document.createElement('button');
+  const valueLabel = document.createElement('span');
+  const listbox = document.createElement('div');
+  const selectedOption = source.selectedOptions?.[0] ?? source.options?.[0];
+  const previousTabIndex = source.getAttribute('tabindex');
+  const previousAriaHidden = source.getAttribute('aria-hidden');
+  const previousLabelFor = fieldLabel?.tagName === 'LABEL' ? fieldLabel.getAttribute('for') : null;
+  const hadValueMarker = source.hasAttribute('data-nds-select-value');
+  const hadNativeClass = source.classList.contains('nds-selectbox__native');
+  let optionIndex = 0;
+
+  trigger.className = 'nds-selectbox__trigger';
+  trigger.id = `${sourceId}-trigger`;
+  trigger.type = 'button';
+  trigger.setAttribute('role', 'combobox');
+  trigger.setAttribute('aria-haspopup', 'listbox');
+  trigger.setAttribute('aria-controls', listboxId);
+  if (labelId) trigger.setAttribute('aria-labelledby', `${labelId} ${valueLabelId}`);
+  else if (source.getAttribute('aria-label')) trigger.setAttribute('aria-label', source.getAttribute('aria-label'));
+  if (source.getAttribute('aria-describedby')) trigger.setAttribute('aria-describedby', source.getAttribute('aria-describedby'));
+  if (source.required) trigger.setAttribute('aria-required', 'true');
+  if (source.getAttribute('aria-invalid')) trigger.setAttribute('aria-invalid', source.getAttribute('aria-invalid'));
+  trigger.disabled = source.disabled;
+  trigger.dataset.ndsSelectTrigger = '';
+
+  valueLabel.id = valueLabelId;
+  valueLabel.dataset.ndsSelectLabel = '';
+  valueLabel.textContent = selectedOption?.textContent.trim() ?? '';
+  trigger.append(valueLabel);
+
+  listbox.className = 'nds-selectbox__listbox';
+  listbox.id = listboxId;
+  listbox.setAttribute('role', 'listbox');
+  if (labelId) listbox.setAttribute('aria-labelledby', labelId);
+  else if (source.getAttribute('aria-label')) listbox.setAttribute('aria-label', source.getAttribute('aria-label'));
+  listbox.setAttribute('popover', 'auto');
+  listbox.dataset.ndsSelectListbox = '';
+
+  for (const child of source.children) {
+    if (child.tagName === 'OPTGROUP') {
+      const group = document.createElement('div');
+      group.className = 'nds-selectbox__group';
+      group.setAttribute('role', 'presentation');
+      group.textContent = child.label;
+      listbox.append(group);
+      for (const option of child.children) {
+        if (option.hidden) continue;
+        listbox.append(createOption(document, option, listboxId, optionIndex));
+        optionIndex += 1;
+      }
+    } else if (child.tagName === 'OPTION') {
+      if (child.hidden) continue;
+      listbox.append(createOption(document, child, listboxId, optionIndex));
+      optionIndex += 1;
+    }
+  }
+
+  source.classList.add('nds-selectbox__native');
+  source.dataset.ndsSelectValue = '';
+  source.tabIndex = -1;
+  source.setAttribute('aria-hidden', 'true');
+  if (fieldLabel?.tagName === 'LABEL') fieldLabel.setAttribute('for', trigger.id);
+  select.append(trigger, listbox);
+  select.dataset.ndsEnhanced = 'true';
+
+  return () => {
+    trigger.remove();
+    listbox.remove();
+    if (!hadNativeClass) source.classList.remove('nds-selectbox__native');
+    if (!hadValueMarker) delete source.dataset.ndsSelectValue;
+    delete select.dataset.ndsEnhanced;
+    if (previousTabIndex === null) source.removeAttribute('tabindex');
+    else source.setAttribute('tabindex', previousTabIndex);
+    if (previousAriaHidden === null) source.removeAttribute('aria-hidden');
+    else source.setAttribute('aria-hidden', previousAriaHidden);
+    if (!previousSourceId) source.removeAttribute('id');
+    if (fieldLabel && !previousLabelId) fieldLabel.removeAttribute('id');
+    if (fieldLabel?.tagName === 'LABEL') {
+      if (previousLabelFor === null) fieldLabel.removeAttribute('for');
+      else fieldLabel.setAttribute('for', previousLabelFor);
+    }
+  };
 }
 
 function placeListbox(listbox, trigger) {
@@ -39,9 +153,16 @@ export function initSelects(root = document) {
   for (const select of findSelects(root)) {
     if (initializedSelects.has(select)) continue;
 
-    const trigger = select.querySelector('[data-nds-select-trigger]');
-    const listbox = select.querySelector('[data-nds-select-listbox]');
-    const value = select.querySelector('[data-nds-select-value]');
+    let trigger = select.querySelector('[data-nds-select-trigger]');
+    let listbox = select.querySelector('[data-nds-select-listbox]');
+    let value = select.querySelector('[data-nds-select-value]') ?? select.querySelector('select');
+    let removeGeneratedMarkup = null;
+    if (!trigger && !listbox && value?.tagName === 'SELECT') {
+      removeGeneratedMarkup = enhanceNativeSource(select, value);
+      trigger = select.querySelector('[data-nds-select-trigger]');
+      listbox = select.querySelector('[data-nds-select-listbox]');
+      value = select.querySelector('[data-nds-select-value]');
+    }
     const label = select.querySelector('[data-nds-select-label]');
     const error = select.querySelector('[data-nds-select-error]');
     if (!trigger || !listbox || !value || !label || !listbox.id) continue;
@@ -53,6 +174,7 @@ export function initSelects(root = document) {
     let activeIndex = Math.max(0, options.findIndex((option) => option.getAttribute('aria-selected') === 'true'));
     const initialValue = value.value;
     const initialLabel = label.textContent;
+    const required = select.hasAttribute('data-nds-select-required') || Boolean(value.required);
     let typeahead = '';
     let typeaheadTimer;
 
@@ -85,8 +207,9 @@ export function initSelects(root = document) {
       activeIndex = options.indexOf(option);
       value.value = nextValue;
       label.textContent = option.textContent.trim();
-      if (select.hasAttribute('data-nds-select-required')) {
+      if (required) {
         trigger.setAttribute('aria-invalid', String(!nextValue));
+        trigger.dataset.placeholder = String(!nextValue);
         if (error) error.hidden = Boolean(nextValue);
       }
       close();
@@ -97,6 +220,20 @@ export function initSelects(root = document) {
         bubbles: true,
         detail: { value: nextValue, option },
       }));
+    };
+
+    const syncFromValue = () => {
+      const selectedOption = options.find((option) => (option.dataset.value ?? option.textContent.trim()) === value.value);
+      if (selectedOption) {
+        options.forEach((option) => option.setAttribute('aria-selected', String(option === selectedOption)));
+        activeIndex = options.indexOf(selectedOption);
+        label.textContent = selectedOption.textContent.trim();
+      }
+      if (required) {
+        trigger.setAttribute('aria-invalid', String(!value.value));
+        trigger.dataset.placeholder = String(!value.value);
+        if (error) error.hidden = Boolean(value.value);
+      }
     };
 
     const onTriggerClick = () => {
@@ -169,18 +306,22 @@ export function initSelects(root = document) {
       label.textContent = initialLabel;
       options.forEach((option) => option.setAttribute('aria-selected', String(option === initialOption)));
       activeIndex = Math.max(0, initialOption ? options.indexOf(initialOption) : 0);
-      if (select.hasAttribute('data-nds-select-required')) {
+      if (required) {
         trigger.setAttribute('aria-invalid', String(!initialValue));
+        trigger.dataset.placeholder = String(!initialValue);
         if (error) error.hidden = Boolean(initialValue);
       }
     });
 
     trigger.setAttribute('aria-expanded', String(isOpen()));
+    if (required) trigger.dataset.placeholder = String(!value.value);
     trigger.addEventListener('click', onTriggerClick);
     trigger.addEventListener('keydown', onTriggerKeyDown);
     listbox.addEventListener('pointerdown', onListboxPointerDown);
     listbox.addEventListener('click', onListboxClick);
     listbox.addEventListener('beforetoggle', onBeforeToggle);
+    value.addEventListener('input', syncFromValue);
+    value.addEventListener('change', syncFromValue);
     form?.addEventListener('reset', onFormReset);
 
     const cleanup = () => {
@@ -193,7 +334,10 @@ export function initSelects(root = document) {
       listbox.removeEventListener('pointerdown', onListboxPointerDown);
       listbox.removeEventListener('click', onListboxClick);
       listbox.removeEventListener('beforetoggle', onBeforeToggle);
+      value.removeEventListener('input', syncFromValue);
+      value.removeEventListener('change', syncFromValue);
       form?.removeEventListener('reset', onFormReset);
+      removeGeneratedMarkup?.();
       initializedSelects.delete(select);
     };
 

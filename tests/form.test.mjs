@@ -16,6 +16,18 @@ class FakeControl extends EventTarget {
   focus() { this.focused = true; }
 }
 
+class FakeSelectControl extends FakeControl {
+  constructor(name, valid, trigger) {
+    super(name, valid);
+    this.trigger = trigger;
+  }
+  matches(selector) { return selector.includes('select'); }
+  closest(selector) {
+    if (selector !== '[data-nds-select]') return null;
+    return { querySelector: () => this.trigger };
+  }
+}
+
 class FakeError { constructor(name) { this.dataset = { ndsError: name }; this.hidden = true; } }
 class FakeSummary {
   constructor() { this.hidden = true; this.focused = false; }
@@ -79,5 +91,18 @@ control.validity.valid = false;
 const afterCleanup = new Event('submit', { cancelable: true });
 form.dispatchEvent(afterCleanup);
 assert.equal(afterCleanup.defaultPrevented, false);
+
+const selectTrigger = new FakeControl('', true);
+const selectControl = new FakeSelectControl('role', false, selectTrigger);
+const selectError = new FakeError('role');
+const selectForm = new FakeForm(selectControl, selectError, null);
+const selectRoot = { matches: () => false, querySelectorAll: (selector) => selector === '[data-nds-form]' ? [selectForm] : [] };
+const cleanupSelectForm = initForms(selectRoot);
+const invalidSelectSubmit = new Event('submit', { cancelable: true });
+selectForm.dispatchEvent(invalidSelectSubmit);
+assert.equal(invalidSelectSubmit.defaultPrevented, true);
+assert.equal(selectTrigger.attributes.get('aria-invalid'), 'true');
+assert.equal(selectTrigger.focused, true, 'Invalid enhanced Select focuses its visible trigger.');
+cleanupSelectForm();
 
 console.log('Form validation behavior contract passed.');

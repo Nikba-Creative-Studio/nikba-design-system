@@ -73,21 +73,54 @@
 .nds-select option { color: CanvasText; background: Canvas; }
 
 .nds-selectbox {
+  --nds-selectbox-height: var(--nds-control-height-xl);
+  --nds-selectbox-padding-block: var(--nds-space-3);
+  --nds-selectbox-padding-inline-start: var(--nds-space-4);
+  --nds-selectbox-font-size: var(--nds-font-size-base);
+
   position: relative;
   width: 100%;
 }
 
+.nds-selectbox--small {
+  --nds-selectbox-height: var(--nds-control-height-sm);
+  --nds-selectbox-padding-block: var(--nds-space-2);
+  --nds-selectbox-padding-inline-start: var(--nds-space-3);
+  --nds-selectbox-font-size: var(--nds-font-size-sm);
+}
+
+.nds-selectbox--medium {
+  --nds-selectbox-height: var(--nds-control-height-md);
+  --nds-selectbox-padding-block: var(--nds-space-2);
+  --nds-selectbox-font-size: var(--nds-font-size-md);
+}
+
+.nds-selectbox--large { --nds-selectbox-height: var(--nds-control-height-xl); }
+
+.nds-selectbox[data-nds-enhanced='true'] > .nds-selectbox__native {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  border: 0;
+  white-space: nowrap;
+}
+
 .nds-selectbox__trigger {
   width: 100%;
-  min-height: var(--nds-control-height-xl);
-  padding: var(--nds-space-3) calc(var(--nds-space-8) - var(--nds-space-1)) var(--nds-space-3) var(--nds-space-4);
+  min-height: var(--nds-selectbox-height);
+  padding: var(--nds-selectbox-padding-block) calc(var(--nds-space-8) - var(--nds-space-1)) var(--nds-selectbox-padding-block) var(--nds-selectbox-padding-inline-start);
   display: flex;
   align-items: center;
   border: var(--nds-border-width) solid var(--nds-border);
   border-radius: var(--nds-radius-md);
   background: var(--nds-surface);
   color: var(--nds-text);
-  font: var(--nds-font-weight-regular) var(--nds-font-size-base)/1.4 var(--nds-font-sans);
+  font: var(--nds-font-weight-regular) var(--nds-selectbox-font-size)/1.4 var(--nds-font-sans);
   text-align: start;
   cursor: pointer;
   transition: border-color var(--nds-duration-fast) var(--nds-ease-standard),
@@ -120,6 +153,7 @@
 }
 
 .nds-selectbox__trigger[aria-invalid='true'] { border-color: var(--nds-danger); }
+.nds-selectbox__trigger[data-placeholder='true'] { color: var(--nds-text-tertiary); }
 
 .nds-selectbox__trigger[aria-invalid='true']:focus-visible {
   border-color: var(--nds-danger);
@@ -149,6 +183,19 @@
   box-shadow: var(--nds-shadow-elevated);
 }
 
+.nds-selectbox__listbox:popover-open {
+  animation: nds-selectbox-enter var(--nds-duration-fast) var(--nds-ease-out);
+}
+
+.nds-selectbox__group {
+  padding: var(--nds-space-3) var(--nds-space-3) var(--nds-space-1);
+  color: var(--nds-text-tertiary);
+  font-size: var(--nds-font-size-xs);
+  font-weight: var(--nds-font-weight-semibold);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
 .nds-selectbox__option {
   position: relative;
   min-height: var(--nds-control-height-md);
@@ -167,6 +214,7 @@
 }
 
 .nds-selectbox__option[aria-selected='true'] {
+  background: var(--nds-surface-alt);
   color: var(--nds-text);
   font-weight: var(--nds-font-weight-semibold);
 }
@@ -185,6 +233,14 @@
 .nds-selectbox__option[aria-disabled='true'] {
   opacity: var(--nds-disabled-opacity);
   cursor: not-allowed;
+}
+
+@keyframes nds-selectbox-enter {
+  from { opacity: 0; transform: translateY(calc(var(--nds-space-2) * -1)) scale(0.98); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nds-selectbox__listbox:popover-open { animation: none; }
 }
 
 @media (forced-colors: active) {

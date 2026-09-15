@@ -8,6 +8,7 @@ The project follows [Semantic Versioning](https://semver.org/). Before `1.0.0`, 
 
 ### Added
 
+- Progressive Select enhancement that preserves native form values, reset, validation, labels, option groups, and no-JavaScript fallback.
 - Structured Search and Filter result rows with distinct identity, category, and status regions.
 - Rich next-module previews and a verified circular reading order across all 28 component and pattern reference pages.
 - A single-source component catalog that consumes the public library.
@@ -116,6 +117,7 @@ The project follows [Semantic Versioning](https://semver.org/). Before `1.0.0`, 
 
 ### Changed
 
+- Select reference examples, Form Validation, and Search and Filter now use the designed popup while retaining native form semantics.
 - Search and Filter result rows now respond to hover with stronger surface, border, shadow, and identity contrast.
 - Inline Success States now align icon, message, and action in a compact responsive result row.
 - Destructive Dialogs now use a clearer risk signal and symmetric confirmation actions.

@@ -10,7 +10,7 @@ Use this pattern for forms that collect related data, validate it, submit it, an
 
 ## Contract
 
-Add `data-nds-form` to the form. Give each invalidatable control a stable `name`, a label, native constraints, and an error element whose `data-nds-error` value matches that name. Reference helper and error text with `aria-describedby`. An optional `[data-nds-error-summary]` receives focus after an invalid submission.
+Add `data-nds-form` to the form. Give each invalidatable control a stable `name`, a label, native constraints, and an error element whose `data-nds-error` value matches that name. Reference helper and error text with `aria-describedby`. An optional `[data-nds-error-summary]` receives focus after an invalid submission. A progressively enhanced Select keeps its native source in the validation model while errors and summary links focus the visible combobox trigger.
 
 ```html
 <form class="nds-form" method="post" data-nds-form>
@@ -38,7 +38,7 @@ Call `initForms()` after rendering. It is idempotent and returns cleanup. Invali
 
 ## Accessibility
 
-Errors must explain how to recover. Do not rely on color. Preserve native `required`, input types, and autocomplete tokens. Move focus to the summary after an invalid submission so keyboard and screen-reader users encounter the problem before continuing. The unenhanced form keeps native constraint validation and submission.
+Errors must explain how to recover. Do not rely on color. Preserve native `required`, input types, and autocomplete tokens. Move focus to the summary after an invalid submission so keyboard and screen-reader users encounter the problem before continuing. Summary links focus the visible control, including an enhanced Select trigger. The unenhanced form keeps native constraint validation and submission.
 
 ## Responsive behavior
 

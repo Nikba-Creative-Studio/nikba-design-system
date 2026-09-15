@@ -10,7 +10,7 @@ Use Radio when two to five options benefit from immediate comparison. Use an aut
 
 ### Designed listbox
 
-Use the designed listbox when the popup surface and option states must match the product interface. It requires `initSelects()` and follows the select-only combobox keyboard model.
+Use the designed listbox when the popup surface and option states must match the product interface. It requires `initSelects()` and follows the select-only combobox keyboard model. A native `<select>` can remain the source of truth so form submission, reset, constraints, and no-JavaScript fallback stay intact.
 
 ### Native fallback
 
@@ -20,7 +20,7 @@ Use `.nds-select` when native validation, no JavaScript, or the platform picker 
 
 1. Field and visible Label
 2. `.nds-selectbox` root with `data-nds-select`
-3. Hidden form value with `data-nds-select-value`
+3. Native Select source or hidden form value
 4. Combobox trigger with `data-nds-select-trigger`
 5. Selected label with `data-nds-select-label`
 6. Popover listbox with `data-nds-select-listbox`
@@ -32,8 +32,13 @@ Use `.nds-select` when native validation, no JavaScript, or the platform picker 
 | API | Purpose |
 | --- | --- |
 | `.nds-selectbox` / `[data-nds-select]` | Designed Select root and behavior marker |
+| `.nds-selectbox--small` | 36px designed Select |
+| `.nds-selectbox--medium` | 44px designed Select |
+| `.nds-selectbox--large` | 52px designed Select and default size |
+| `.nds-selectbox__native` | Native source hidden only after enhancement succeeds |
 | `.nds-selectbox__trigger` | Focused combobox control |
 | `.nds-selectbox__listbox` | Top-layer option popup |
+| `.nds-selectbox__group` | Non-interactive option-group label |
 | `.nds-selectbox__option` | Selectable option |
 | `[data-nds-select-value]` | Form value updated after selection |
 | `initSelects(root?)` | Initializes keyboard, pointer, value, and popup behavior |
@@ -70,6 +75,23 @@ Focus remains on the combobox trigger. `aria-activedescendant` identifies the ac
 - Use searchable autocomplete for hundreds of values.
 
 ## Designed example
+
+Prefer the native-source form when the Select participates in submission or validation. The initializer generates the trigger, listbox, option groups, and option states while preserving the original Select as the form value and no-JavaScript fallback.
+
+```html
+<div class="nds-field">
+  <label class="nds-field__label" for="status">Project status</label>
+  <div class="nds-selectbox" data-nds-select>
+    <select class="nds-select" id="status" name="status" required>
+      <option value="">Choose a status</option>
+      <option value="draft">Draft</option>
+      <option value="review">In review</option>
+    </select>
+  </div>
+</div>
+```
+
+For interface state that does not need native constraints, authored listbox markup remains supported:
 
 ```html
 <div class="nds-field">
@@ -112,6 +134,7 @@ const cleanup = initSelects();
 
 - The designed popup uses system surfaces, borders, spacing, selected state, and focus treatment in every theme.
 - Pointer and keyboard selection update the visible label, hidden form value, `aria-selected`, and change event.
+- Native-source enhancement preserves form submission, reset, required validation, and an operable no-JavaScript fallback.
 - Opening, flipping, and viewport clamping keep the popup visible at narrow and desktop sizes.
 - Escape closes without changing the selected value.
 - Disabled options cannot be selected.
