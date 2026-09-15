@@ -39,6 +39,8 @@ State what failed, preserve entered data, and provide a retry or recovery path. 
 
 Confirm completion when the resulting page does not make success obvious. Prefer the resulting content itself when it already communicates completion.
 
+Inline Success places its semantic icon, result message, and next action on one aligned row when space permits. At narrow widths, the action spans the surface below the message so the content remains readable and the target remains easy to use.
+
 ## Structure
 
 ```html

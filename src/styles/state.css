@@ -18,7 +18,7 @@
 .nds-state--success { --nds-state-tone: var(--nds-success); }
 
 .nds-state__content { width: min(100%, 32rem); display: grid; justify-items: center; gap: var(--nds-space-4); }
-.nds-state--inline .nds-state__content { width: 100%; grid-template-columns: auto minmax(0, 1fr); justify-items: start; align-items: start; }
+.nds-state--inline .nds-state__content { width: 100%; grid-template-columns: auto minmax(0, 1fr) auto; justify-items: start; align-items: center; column-gap: var(--nds-space-4); }
 .nds-state__icon { width: 3rem; height: 3rem; display: grid; place-items: center; border-radius: var(--nds-radius-pill); background: color-mix(in srgb, var(--nds-state-tone) 12%, transparent); color: var(--nds-state-tone); }
 .nds-state__icon svg { width: 1.5rem; height: 1.5rem; stroke: currentColor; stroke-width: 1.75; fill: none; }
 .nds-state__body { display: grid; justify-items: center; gap: var(--nds-space-2); }
@@ -27,13 +27,17 @@
 .nds-state--compact .nds-state__title, .nds-state--inline .nds-state__title { font-size: var(--nds-font-size-lg); }
 .nds-state__description { max-width: 44ch; margin: 0; color: var(--nds-text-secondary); line-height: var(--nds-line-height-body); }
 .nds-state__actions { margin-top: var(--nds-space-2); display: flex; flex-wrap: wrap; justify-content: center; gap: var(--nds-space-3); }
-.nds-state--inline .nds-state__actions { grid-column: 2; justify-content: flex-start; }
+.nds-state--inline .nds-state__actions { margin-top: 0; grid-column: auto; align-self: center; justify-self: end; justify-content: flex-end; flex-wrap: nowrap; }
 .nds-state__meta { color: var(--nds-text-tertiary); font-size: var(--nds-font-size-xs); }
+
+@media (max-width: 43.75rem) {
+  .nds-state--inline .nds-state__content { grid-template-columns: auto minmax(0, 1fr); }
+  .nds-state--inline .nds-state__actions { width: 100%; grid-column: 1 / -1; justify-self: stretch; }
+  .nds-state--inline .nds-state__actions .nds-button { width: 100%; }
+}
 
 @media (max-width: 30rem) {
   .nds-state { min-height: 16rem; padding: var(--nds-space-6) var(--nds-space-5); }
-  .nds-state--inline .nds-state__content { grid-template-columns: 1fr; }
-  .nds-state--inline .nds-state__actions { grid-column: auto; }
   .nds-state__actions { width: 100%; }
   .nds-state__actions .nds-button { flex: 1 1 8rem; }
 }

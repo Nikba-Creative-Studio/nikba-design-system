@@ -115,6 +115,7 @@ The project follows [Semantic Versioning](https://semver.org/). Before `1.0.0`, 
 
 ### Changed
 
+- Inline Success States now align icon, message, and action in a compact responsive result row.
 - Destructive Dialogs now use a clearer risk signal and symmetric confirmation actions.
 - Select now offers a fully designed listbox with keyboard navigation, typeahead, form-value synchronization, and a documented native fallback.
 - Catalog presentation pages now describe the Alpha 02 system surface: 23 components, five product patterns, verified package and Laravel integrations, and 36 MCP documents.
