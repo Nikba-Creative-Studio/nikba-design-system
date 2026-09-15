@@ -190,7 +190,7 @@ Goal: compose primitives into reusable solutions for real products.
 - [x] Empty, loading, error, and success states
 - [x] Search and filter pattern
 - [x] Form validation and submission pattern
-- [ ] Settings and account pattern
+- [x] Settings and account pattern
 - [ ] Modal and destructive-action confirmation pattern
 
 Exit gate: the catalog contains representative editorial and application screens built entirely from the system, including loading, empty, error, and success paths.
@@ -258,7 +258,7 @@ Open decisions belong in the relevant component document. Once a decision ships 
 
 Begin Phase 4 in this order:
 
-1. Settings and account pattern.
-2. Modal and destructive-action confirmation pattern.
+1. Modal and destructive-action confirmation pattern.
+2. Start built-package examples for plain HTML and JavaScript.
 
 Each interactive component ships with an explicit initializer, cleanup contract, native fallback where available, and targeted behavior tests.

@@ -82,6 +82,8 @@ The project follows [Semantic Versioning](https://semver.org/). Before `1.0.0`, 
 - Form layout and error-summary styles for grouped fields, responsive grids, actions, and accessible validation feedback.
 - An idempotent Form initializer with native constraint evaluation, summary focus, inline error synchronization, lifecycle events, reset behavior, and cleanup.
 - A complete Form Validation and Submission pattern with a functional pending and success demonstration, documentation, and behavior test.
+- Settings and Account layout styles for category navigation, profile identity, preference sections, sessions, account actions, and compact screens.
+- A complete Settings and Account pattern composed from public Avatar, Form, Switch, Badge, Button, and Dialog contracts.
 - A read-only MCP server that exposes design-system documentation and tokens to compatible AI hosts.
 - MCP resources, component and token query tools, an implementation prompt, host setup documentation, and an end-to-end protocol test.
 - A dedicated MCP catalog page and primary navigation entry for the AI integration.

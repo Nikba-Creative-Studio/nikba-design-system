@@ -241,6 +241,15 @@ const requiredContracts = [
   '.nds-error-summary',
   '.nds-error-summary__title',
   '.nds-error-summary__list',
+  '.nds-settings',
+  '.nds-settings__nav',
+  '.nds-settings__nav-list',
+  '.nds-settings__nav-link',
+  '.nds-settings__content',
+  '.nds-settings__section',
+  '.nds-settings__heading',
+  '.nds-settings__profile',
+  '.nds-settings__row',
   '.nds-glass',
 ];
 
