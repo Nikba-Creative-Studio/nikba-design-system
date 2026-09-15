@@ -128,6 +128,11 @@ button {
   color: var(--nds-text);
 }
 
+.catalog-nav__links a[aria-current='page'] {
+  color: var(--nds-text);
+  font-weight: var(--nds-font-weight-semibold);
+}
+
 .release-badge {
   min-height: 36px;
   padding-inline: 14px;
@@ -1432,9 +1437,39 @@ button {
 }
 
 @media (max-width: 900px) {
-  .catalog-nav__links {
-    display: none;
+  .catalog-nav {
+    padding: 8px 12px 10px 16px;
+    flex-wrap: wrap;
+    gap: 6px 16px;
+    border-radius: 28px;
   }
+
+  .catalog-nav__links {
+    order: 3;
+    width: 100%;
+    padding-top: 6px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 4px;
+    border-top: var(--nds-border-width) solid var(--nds-border);
+  }
+
+  .catalog-nav__links a {
+    min-height: 44px;
+    padding-inline: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--nds-radius-pill);
+    font-size: var(--nds-font-size-xs);
+    text-align: center;
+  }
+
+  .catalog-nav__links a[aria-current='page'] {
+    background: var(--nds-surface-alt);
+  }
+
+  .page-main { padding-top: 168px; }
 
   .hero__footer,
   .section-heading {
@@ -1475,7 +1510,7 @@ button {
   }
 
   .hero {
-    padding-top: 150px;
+    padding-top: 190px;
   }
 
   .hero h1 {
