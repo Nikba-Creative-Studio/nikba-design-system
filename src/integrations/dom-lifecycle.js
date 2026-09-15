@@ -3,6 +3,7 @@ import { initDialogs } from '../behaviors/dialog.js';
 import { initForms } from '../behaviors/form.js';
 import { initNavigations } from '../behaviors/navigation.js';
 import { initPopovers } from '../behaviors/popover.js';
+import { initSelects } from '../behaviors/select.js';
 import { initTables } from '../behaviors/table.js';
 import { initTabs } from '../behaviors/tabs.js';
 import { initTooltips } from '../behaviors/tooltip.js';
@@ -12,6 +13,7 @@ const definitions = [
   ['[data-nds-tabs]', initTabs],
   ['dialog[data-nds-dialog]', initDialogs],
   ['[data-nds-popover]', initPopovers],
+  ['[data-nds-select]', initSelects],
   ['[data-nds-tooltip]', initTooltips],
   ['[data-nds-navigation]', initNavigations],
   ['[data-nds-table]', initTables],

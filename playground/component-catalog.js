@@ -4,7 +4,7 @@ export const componentCatalog = Object.freeze([
   { slug: 'badge-chip', title: 'Badge and Chip', description: 'Read-only status and interactive, accessible filter selection.' },
   { slug: 'field', title: 'Field', description: 'Labels, guidance, errors, required values, and responsive composition.' },
   { slug: 'input-textarea', title: 'Input and Textarea', description: 'Text entry, sizes, adornments, validation, and character limits.' },
-  { slug: 'select', title: 'Native Select', description: 'Single-choice selection, sizes, groups, validation, and disabled behavior.' },
+  { slug: 'select', title: 'Select', description: 'Designed listbox selection with native sizes, groups, validation, and fallback.' },
   { slug: 'checkbox-radio', title: 'Checkbox and Radio', description: 'Independent and exclusive selection, groups, cards, and mixed state.' },
   { slug: 'switch', title: 'Switch', description: 'Immediate binary settings, sizes, settings cards, and async state.' },
   { slug: 'card', title: 'Card', description: 'Semantic content grouping, density, depth, media, and interactive variants.' },

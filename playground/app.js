@@ -1,4 +1,4 @@
-import { createToastManager, glassLevels, initAccordions, initDialogs, initForms, initNavigations, initPopovers, initTables, initTabs, initTooltips, setGlassLevel, setTheme, themes } from '../src/index.js';
+import { createToastManager, glassLevels, initAccordions, initDialogs, initForms, initNavigations, initPopovers, initSelects, initTables, initTabs, initTooltips, setGlassLevel, setTheme, themes } from '../src/index.js';
 import logoUrl from '../src/logo.svg?url';
 import { componentCatalog } from './component-catalog.js';
 import './styles.css';
@@ -135,6 +135,7 @@ initAccordions();
 initTabs();
 initDialogs();
 initPopovers();
+initSelects();
 initTooltips();
 initNavigations();
 initTables();

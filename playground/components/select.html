@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Nikba Native Select component reference." />
-    <title>Native Select · Nikba Design System</title>
+    <meta name="description" content="Nikba Select component reference." />
+    <title>Select · Nikba Design System</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
@@ -16,20 +16,37 @@
     <header data-catalog-header data-current="components"></header>
     <aside data-appearance-panel aria-label="Appearance controls"></aside>
     <main id="main" class="nds-container page-main">
-      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Overview</a><span aria-hidden="true">/</span><a href="/components/">Components</a><span aria-hidden="true">/</span><span aria-current="page">Native Select</span></nav>
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Overview</a><span aria-hidden="true">/</span><a href="/components/">Components</a><span aria-hidden="true">/</span><span aria-current="page">Select</span></nav>
       <header class="page-hero component-hero">
-        <div><p class="eyebrow">Component 06 · Complete</p><h1 class="nds-display">Native Select</h1></div>
-        <p>Lets a user choose one value from a familiar native menu with platform keyboard, pointer, and assistive-technology behavior.</p>
+        <div><p class="eyebrow">Component 06 · Complete</p><h1 class="nds-display">Select</h1></div>
+        <p>Lets a user choose one value from a designed listbox, with a native fallback for simple forms and platform-specific contexts.</p>
       </header>
       <div class="page-layout">
-        <nav class="page-sidebar" aria-label="Component sections"><span>Native Select</span><a href="#default">Default</a><a href="#sizes">Sizes</a><a href="#groups">Groups</a><a href="#states">States</a><a href="#content">Content</a><hr /><a href="/components/input-textarea.html">← Input and Textarea</a></nav>
+        <nav class="page-sidebar" aria-label="Component sections"><span>Select</span><a href="#default">Custom</a><a href="#sizes">Native sizes</a><a href="#groups">Groups</a><a href="#states">States</a><a href="#content">Content</a><hr /><a href="/components/input-textarea.html">← Input and Textarea</a></nav>
         <div class="page-content">
           <section id="default" class="specimen reveal" aria-labelledby="default-title">
-            <div class="specimen-heading"><p class="component-label">Default</p><h2 id="default-title">One choice from a known set</h2><p>A placeholder explains what to choose and cannot become a submitted value.</p></div>
-            <div class="field-specimen"><div class="nds-field"><label class="nds-field__label" for="project-status">Project status</label><div class="nds-select-shell"><select class="nds-select" id="project-status" name="status" required aria-describedby="project-status-help"><option value="" selected disabled>Select a status</option><option value="draft">Draft</option><option value="review">In review</option><option value="approved">Approved</option><option value="archived">Archived</option></select></div><p class="nds-field__helper" id="project-status-help">Status controls where the project appears in team views.</p></div></div>
+            <div class="specimen-heading"><p class="component-label">Custom listbox</p><h2 id="default-title">One choice, fully designed</h2><p>The popup follows the system surface, spacing, selection, and focus language in every theme.</p></div>
+            <div class="field-specimen">
+              <div class="nds-field">
+                <span class="nds-field__label" id="project-status-label">Project status</span>
+                <div class="nds-selectbox" data-nds-select>
+                  <input type="hidden" name="status" value="draft" data-nds-select-value />
+                  <button class="nds-selectbox__trigger" type="button" role="combobox" aria-haspopup="listbox" aria-controls="project-status-options" aria-labelledby="project-status-label project-status-value" aria-describedby="project-status-help" data-nds-select-trigger>
+                    <span id="project-status-value" data-nds-select-label>Draft</span>
+                  </button>
+                  <div class="nds-selectbox__listbox" id="project-status-options" role="listbox" aria-labelledby="project-status-label" popover="auto" data-nds-select-listbox>
+                    <div class="nds-selectbox__option" id="project-status-draft" role="option" aria-selected="true" data-value="draft">Draft</div>
+                    <div class="nds-selectbox__option" id="project-status-review" role="option" aria-selected="false" data-value="review">In review</div>
+                    <div class="nds-selectbox__option" id="project-status-approved" role="option" aria-selected="false" data-value="approved">Approved</div>
+                    <div class="nds-selectbox__option" id="project-status-archived" role="option" aria-selected="false" data-value="archived">Archived</div>
+                  </div>
+                </div>
+                <p class="nds-field__helper" id="project-status-help">Status controls where the project appears in team views.</p>
+              </div>
+            </div>
           </section>
           <section id="sizes" class="specimen reveal" aria-labelledby="sizes-title">
-            <div class="specimen-heading"><p class="component-label">Sizes</p><h2 id="sizes-title">Three density levels</h2><p>Medium and Large work for touch. Use Small only in dense desktop interfaces.</p></div>
+            <div class="specimen-heading"><p class="component-label">Native fallback</p><h2 id="sizes-title">Three density levels</h2><p>Use native Select when platform behavior or zero-JavaScript delivery matters. Medium and Large work for touch; Small fits dense desktop interfaces.</p></div>
             <div class="input-size-grid">
               <div class="nds-field"><label class="nds-field__label" for="select-small">Small · 36px</label><div class="nds-select-shell"><select class="nds-select nds-select--small" id="select-small"><option>Last 7 days</option><option>Last 30 days</option></select></div></div>
               <div class="nds-field"><label class="nds-field__label" for="select-medium">Medium · 44px</label><div class="nds-select-shell"><select class="nds-select nds-select--medium" id="select-medium"><option>Last 30 days</option><option>Last 90 days</option></select></div></div>

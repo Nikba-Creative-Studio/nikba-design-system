@@ -8,6 +8,7 @@ import {
   initForms,
   initNavigations,
   initPopovers,
+  initSelects,
   initTooltips,
   initTabs,
   initTables,
@@ -28,6 +29,7 @@ assert.equal(typeof initDialogs, 'function');
 assert.equal(typeof initForms, 'function');
 assert.equal(typeof initNavigations, 'function');
 assert.equal(typeof initPopovers, 'function');
+assert.equal(typeof initSelects, 'function');
 assert.equal(typeof initTooltips, 'function');
 assert.equal(typeof initTabs, 'function');
 assert.equal(typeof initTables, 'function');
@@ -47,7 +49,7 @@ assert.throws(() => setTheme('unknown', target), TypeError);
 assert.throws(() => setGlassLevel('unknown', target), TypeError);
 
 const documentation = await readFile(new URL('../docs/JAVASCRIPT.md', import.meta.url), 'utf8');
-for (const name of ['createToastManager', 'glassLevels', 'initAccordions', 'initDialogs', 'initForms', 'initNavigations', 'initPopovers', 'initTables', 'initTabs', 'initTooltips', 'observeComponents', 'setGlassLevel', 'setTheme', 'themes']) {
+for (const name of ['createToastManager', 'glassLevels', 'initAccordions', 'initDialogs', 'initForms', 'initNavigations', 'initPopovers', 'initSelects', 'initTables', 'initTabs', 'initTooltips', 'observeComponents', 'setGlassLevel', 'setTheme', 'themes']) {
   assert.ok(documentation.includes(`\`${name}`), `JavaScript reference is missing ${name}.`);
 }
 

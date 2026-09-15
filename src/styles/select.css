@@ -72,9 +72,121 @@
 .nds-select:required:invalid { color: var(--nds-text-tertiary); }
 .nds-select option { color: CanvasText; background: Canvas; }
 
+.nds-selectbox {
+  position: relative;
+  width: 100%;
+}
+
+.nds-selectbox__trigger {
+  width: 100%;
+  min-height: var(--nds-control-height-xl);
+  padding: var(--nds-space-3) calc(var(--nds-space-8) - var(--nds-space-1)) var(--nds-space-3) var(--nds-space-4);
+  display: flex;
+  align-items: center;
+  border: var(--nds-border-width) solid var(--nds-border);
+  border-radius: var(--nds-radius-md);
+  background: var(--nds-surface);
+  color: var(--nds-text);
+  font: var(--nds-font-weight-regular) var(--nds-font-size-base)/1.4 var(--nds-font-sans);
+  text-align: start;
+  cursor: pointer;
+  transition: border-color var(--nds-duration-fast) var(--nds-ease-standard),
+    box-shadow var(--nds-duration-fast) var(--nds-ease-standard),
+    background-color var(--nds-duration-fast) var(--nds-ease-standard);
+}
+
+.nds-selectbox__trigger::after {
+  position: absolute;
+  inset-inline-end: var(--nds-space-4);
+  width: 0.5em;
+  height: 0.5em;
+  border-inline-end: var(--nds-border-width-strong) solid currentColor;
+  border-block-end: var(--nds-border-width-strong) solid currentColor;
+  content: '';
+  color: var(--nds-text-secondary);
+  transform: translateY(-25%) rotate(45deg);
+  transition: transform var(--nds-duration-fast) var(--nds-ease-standard);
+}
+
+.nds-selectbox__trigger:hover:not(:disabled) {
+  border-color: var(--nds-border-hover);
+  background: var(--nds-surface-hover);
+}
+
+.nds-selectbox__trigger:focus-visible {
+  border-color: var(--nds-focus);
+  outline: none;
+  box-shadow: 0 0 0 var(--nds-focus-ring-width) color-mix(in srgb, var(--nds-focus) 18%, transparent);
+}
+
+.nds-selectbox__trigger[aria-expanded='true']::after { transform: translateY(25%) rotate(225deg); }
+
+.nds-selectbox__trigger:disabled {
+  opacity: var(--nds-disabled-opacity);
+  cursor: not-allowed;
+}
+
+.nds-selectbox__listbox {
+  position: fixed;
+  z-index: var(--nds-z-dropdown);
+  min-width: 12rem;
+  max-width: calc(100vw - var(--nds-space-4));
+  max-height: min(20rem, calc(100dvh - var(--nds-space-4)));
+  margin: 0;
+  padding: var(--nds-space-2);
+  overflow-y: auto;
+  border: var(--nds-border-width) solid var(--nds-border);
+  border-radius: var(--nds-radius-md);
+  background: var(--nds-surface);
+  color: var(--nds-text);
+  box-shadow: var(--nds-shadow-elevated);
+}
+
+.nds-selectbox__option {
+  position: relative;
+  min-height: var(--nds-control-height-md);
+  padding: var(--nds-space-2) calc(var(--nds-space-8) - var(--nds-space-1)) var(--nds-space-2) var(--nds-space-3);
+  display: flex;
+  align-items: center;
+  border-radius: var(--nds-radius-sm);
+  color: var(--nds-text-secondary);
+  cursor: pointer;
+}
+
+.nds-selectbox__option:hover,
+.nds-selectbox__option[data-active='true'] {
+  background: var(--nds-surface-hover);
+  color: var(--nds-text);
+}
+
+.nds-selectbox__option[aria-selected='true'] {
+  color: var(--nds-text);
+  font-weight: var(--nds-font-weight-semibold);
+}
+
+.nds-selectbox__option[aria-selected='true']::after {
+  position: absolute;
+  inset-inline-end: var(--nds-space-3);
+  width: 0.5rem;
+  height: 0.25rem;
+  border-inline-start: var(--nds-border-width-strong) solid currentColor;
+  border-block-end: var(--nds-border-width-strong) solid currentColor;
+  content: '';
+  transform: translateY(-15%) rotate(-45deg);
+}
+
+.nds-selectbox__option[aria-disabled='true'] {
+  opacity: var(--nds-disabled-opacity);
+  cursor: not-allowed;
+}
+
 @media (forced-colors: active) {
   .nds-select { appearance: auto; border-color: CanvasText; }
   .nds-select-shell::after { display: none; }
   .nds-select:focus { outline: var(--nds-focus-ring-width) solid Highlight; outline-offset: var(--nds-focus-ring-offset); box-shadow: none; }
   .nds-select[aria-invalid='true'] { border-color: Mark; }
+  .nds-selectbox__trigger { border-color: ButtonText; }
+  .nds-selectbox__trigger:focus-visible { outline: var(--nds-focus-ring-width) solid Highlight; outline-offset: var(--nds-focus-ring-offset); box-shadow: none; }
+  .nds-selectbox__listbox { border-color: CanvasText; }
+  .nds-selectbox__option[data-active='true'] { background: Highlight; color: HighlightText; forced-color-adjust: none; }
 }

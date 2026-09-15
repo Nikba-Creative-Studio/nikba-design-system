@@ -1,116 +1,118 @@
-# Native Select
+# Select
 
 ## Purpose
 
-Native Select lets a user choose one value from a known set. It preserves the browser and operating system menu, keyboard behavior, zoom support, and assistive-technology semantics of the HTML `<select>` element.
+Select lets a user choose one value from a known set. The designed listbox provides a consistent Nikba popup across themes. The native variant preserves the browser and operating system menu for zero-JavaScript forms and platform-specific contexts.
 
-Use Radio when two to five options benefit from immediate comparison. Use an autocomplete or combobox pattern when the dataset is large, dynamic, or must be searched.
+Use Radio when two to five options benefit from immediate comparison. Use an autocomplete pattern when the dataset is large, dynamic, or searchable.
 
-## Anatomy
+## Variants
+
+### Designed listbox
+
+Use the designed listbox when the popup surface and option states must match the product interface. It requires `initSelects()` and follows the select-only combobox keyboard model.
+
+### Native fallback
+
+Use `.nds-select` when native validation, no JavaScript, or the platform picker is more valuable than visual consistency. Browsers and operating systems draw the open native menu, so its popup cannot be styled consistently.
+
+## Designed listbox anatomy
 
 1. Field and visible Label
-2. Select Shell
-3. Native `<select>` element
-4. Native `<option>` or `<optgroup>` elements
-5. Decorative disclosure indicator
-6. Optional Helper Text or Error Message
+2. `.nds-selectbox` root with `data-nds-select`
+3. Hidden form value with `data-nds-select-value`
+4. Combobox trigger with `data-nds-select-trigger`
+5. Selected label with `data-nds-select-label`
+6. Popover listbox with `data-nds-select-listbox`
+7. Options with `role="option"`, stable IDs, and `data-value`
+8. Optional Helper Text
 
 ## Public API
 
 | API | Purpose |
 | --- | --- |
-| `.nds-select-shell` | Positions the Select and decorative disclosure indicator |
-| `.nds-select` | Required native Select class and default Large size |
-| `.nds-select--small` | 36px dense Select |
-| `.nds-select--medium` | 44px standard compact Select |
-| `.nds-select--large` | 52px prominent Select and default size |
-| `aria-invalid="true"` | Exposes and displays a failed validation state |
-| `disabled` | Native unavailable state |
-
-## Sizes
-
-| Size | Height | Guidance |
-| --- | --- | --- |
-| Small | 36px | Dense desktop filters and tables |
-| Medium | 44px | Compact forms and touch interfaces |
-| Large | 52px | Default forms and prominent selection |
-
-## Placeholder option
-
-When a selection must be made, use a blank, disabled first option with native `required` on Select. The placeholder describes the choice, such as “Select a role,” and does not become valid submitted data.
-
-Do not use a placeholder when a safe default value exists and choosing it on the user’s behalf is appropriate.
-
-## Option groups
-
-Use native `<optgroup label="…">` to organize a moderately long list into meaningful categories. Keep the categories mutually understandable and the option labels distinct. A Select remains a poor fit for hundreds of options or values that require searching.
-
-## States
-
-| State | Visual | Behavior |
-| --- | --- | --- |
-| Default | Solid surface and disclosure indicator | Opens the native menu |
-| Hover | Stronger border | Applied on hover-capable devices |
-| Focus | Shared focus halo | Native keyboard focus remains on Select |
-| Invalid | Danger border and halo | Requires connected feedback and `aria-invalid="true"` |
-| Disabled | Reduced opacity | Native `disabled` prevents focus and selection |
-
-HTML Select has no readonly state. If a value must remain visible but cannot change, render it as text or use disabled only when removing it from interaction is correct.
+| `.nds-selectbox` / `[data-nds-select]` | Designed Select root and behavior marker |
+| `.nds-selectbox__trigger` | Focused combobox control |
+| `.nds-selectbox__listbox` | Top-layer option popup |
+| `.nds-selectbox__option` | Selectable option |
+| `[data-nds-select-value]` | Form value updated after selection |
+| `initSelects(root?)` | Initializes keyboard, pointer, value, and popup behavior |
+| `nds:select-change` | Bubbling event with `{ value, option }` detail |
+| `.nds-select-shell` / `.nds-select` | Native Select fallback |
+| `.nds-select--small` | 36px native Select |
+| `.nds-select--medium` | 44px native Select |
+| `.nds-select--large` | 52px native Select and default size |
 
 ## Keyboard behavior
 
-Native behavior varies slightly by platform and browser. Users can focus Select with normal sequential navigation, open or navigate its menu with platform-standard keys, choose an option, and dismiss the menu without custom JavaScript.
+| Key | Behavior |
+| --- | --- |
+| Arrow Down / Arrow Up | Opens the popup and moves through options |
+| Home / End | Moves to the first or last option while open |
+| Enter / Space | Selects the active option |
+| Printable characters | Opens the popup and moves to the first matching option |
+| Escape | Closes without changing the value |
+| Tab | Closes and continues normal focus order |
 
-Do not intercept arrow keys, Space, Enter, Escape, or type-ahead behavior.
+Focus remains on the combobox trigger. `aria-activedescendant` identifies the active option while the listbox is open.
 
 ## Accessibility
 
-- Associate a visible Label with Select through `for` and `id`.
-- Use native `<option>` and `<optgroup>` children.
-- Use `required` when a value must be selected.
-- Set `aria-invalid="true"` only after validation fails.
-- Connect Helper Text and Error Message through `aria-describedby`.
-- Keep the complete value in the option text even when the closed control truncates visually.
-- Use native `disabled`; do not simulate it with only opacity or `aria-disabled`.
-- Keep the native menu and interaction model. A custom popup requires a separate, complete combobox contract.
-- In forced-colors mode, restore the platform disclosure indicator and native system colors.
+- Give every option a unique, stable `id`.
+- Connect the visible Label and selected value to the trigger with `aria-labelledby`.
+- Keep `aria-controls`, `aria-haspopup="listbox"`, and `aria-expanded` on the trigger.
+- Put `role="listbox"` on the popup and `role="option"` with `aria-selected` on every option.
+- Use a hidden input when the value must be included in a native form submission.
+- Use `aria-disabled="true"` only for unavailable designed options. Native Select uses the `disabled` attribute.
+- Keep the complete option label in the DOM even if the closed trigger truncates it.
+- Use searchable autocomplete for hundreds of values.
 
-## Content guidance
-
-Label the value being chosen: “Project status,” “Office location,” or “Billing plan.” Placeholder text starts with an action such as “Select a status.” Options use parallel, concise wording and begin with the most distinguishing terms.
-
-## Example
+## Designed example
 
 ```html
 <div class="nds-field">
-  <label class="nds-field__label" for="project-status">Project status</label>
-  <div class="nds-select-shell">
-    <select
-      class="nds-select"
-      id="project-status"
-      name="status"
-      required
-      aria-describedby="project-status-help"
+  <span class="nds-field__label" id="status-label">Project status</span>
+  <div class="nds-selectbox" data-nds-select>
+    <input type="hidden" name="status" value="draft" data-nds-select-value />
+    <button
+      class="nds-selectbox__trigger"
+      type="button"
+      role="combobox"
+      aria-haspopup="listbox"
+      aria-controls="status-options"
+      aria-labelledby="status-label status-value"
+      data-nds-select-trigger
     >
-      <option value="" selected disabled>Select a status</option>
-      <option value="draft">Draft</option>
-      <option value="review">In review</option>
-      <option value="approved">Approved</option>
-    </select>
+      <span id="status-value" data-nds-select-label>Draft</span>
+    </button>
+    <div
+      class="nds-selectbox__listbox"
+      id="status-options"
+      role="listbox"
+      aria-labelledby="status-label"
+      popover="auto"
+      data-nds-select-listbox
+    >
+      <div class="nds-selectbox__option" id="status-draft" role="option" aria-selected="true" data-value="draft">Draft</div>
+      <div class="nds-selectbox__option" id="status-review" role="option" aria-selected="false" data-value="review">In review</div>
+    </div>
   </div>
-  <p class="nds-field__helper" id="project-status-help">
-    Status controls where the project appears in team views.
-  </p>
 </div>
+```
+
+```js
+import { initSelects } from '@nikba/design-system';
+
+const cleanup = initSelects();
 ```
 
 ## Acceptance criteria
 
-- Select opens the native platform menu without custom JavaScript.
-- Label, selected value, required state, and invalid description are exposed programmatically.
-- Small, Medium, and Large align with equivalent Input sizes.
-- Placeholder cannot become a valid submitted value when selection is required.
-- Long selected values remain contained within the control.
-- Disabled Select cannot receive focus or change value.
-- Keyboard and type-ahead behavior remain native.
-- Focus, invalid state, and disclosure remain visible in every theme and forced-colors mode.
+- The designed popup uses system surfaces, borders, spacing, selected state, and focus treatment in every theme.
+- Pointer and keyboard selection update the visible label, hidden form value, `aria-selected`, and change event.
+- Opening, flipping, and viewport clamping keep the popup visible at narrow and desktop sizes.
+- Escape closes without changing the selected value.
+- Disabled options cannot be selected.
+- Cleanup removes listeners and allows the root to initialize again.
+- Native Select remains available as a no-JavaScript fallback.
+- Forced-colors mode exposes clear trigger, listbox, active, and selected states.
