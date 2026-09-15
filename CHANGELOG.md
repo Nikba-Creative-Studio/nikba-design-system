@@ -107,6 +107,7 @@ The project follows [Semantic Versioning](https://semver.org/). Before `1.0.0`, 
 - Coarse-pointer target overrides that expand compact controls, links, choices, navigation items, and close actions to at least 44px without changing desktop density.
 - MCP resources and retrieval tools for product patterns, integration guides, foundations, support, releases, and migrations, with search across the full documentation catalog.
 - MCP server metadata derived from the packaged version instead of a duplicated literal.
+- A central JavaScript API reference for all 14 exports, including selectors, events, lifecycle ownership, return values, and errors, protected by API and MCP tests.
 - A read-only MCP server that exposes design-system documentation and tokens to compatible AI hosts.
 - MCP resources, component and token query tools, an implementation prompt, host setup documentation, and an end-to-end protocol test.
 - A dedicated MCP catalog page and primary navigation entry for the AI integration.

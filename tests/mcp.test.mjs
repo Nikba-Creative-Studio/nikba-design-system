@@ -28,6 +28,7 @@ try {
   assert.ok(resources.some(({ uri }) => uri === 'nikba://patterns/search-filter'));
   assert.ok(resources.some(({ uri }) => uri === 'nikba://integrations/livewire'));
   assert.ok(resources.some(({ uri }) => uri === 'nikba://guides/releases'));
+  assert.ok(resources.some(({ uri }) => uri === 'nikba://guides/javascript'));
   assert.deepEqual(
     tools.map(({ name }) => name).sort(),
     ['get_component', 'get_document', 'get_tokens', 'list_components', 'list_documents', 'search_design_system']

@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
 import {
   createToastManager,
   glassLevels,
@@ -44,5 +45,10 @@ for (const level of glassLevels) {
 
 assert.throws(() => setTheme('unknown', target), TypeError);
 assert.throws(() => setGlassLevel('unknown', target), TypeError);
+
+const documentation = await readFile(new URL('../docs/JAVASCRIPT.md', import.meta.url), 'utf8');
+for (const name of ['createToastManager', 'glassLevels', 'initAccordions', 'initDialogs', 'initForms', 'initNavigations', 'initPopovers', 'initTables', 'initTabs', 'initTooltips', 'observeComponents', 'setGlassLevel', 'setTheme', 'themes']) {
+  assert.ok(documentation.includes(`\`${name}`), `JavaScript reference is missing ${name}.`);
+}
 
 console.log('Public theme and glass APIs passed.');

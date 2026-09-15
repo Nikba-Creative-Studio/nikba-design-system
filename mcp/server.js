@@ -14,7 +14,7 @@ const documentationSources = [
   { category: 'patterns', directory: join(packageRoot, 'docs', 'patterns') },
   { category: 'integrations', directory: join(packageRoot, 'docs', 'integrations') },
 ];
-const guideFiles = ['FOUNDATIONS.md', 'MCP.md', 'SUPPORT.md', 'RELEASES.md', 'MIGRATIONS.md'];
+const guideFiles = ['FOUNDATIONS.md', 'JAVASCRIPT.md', 'MCP.md', 'SUPPORT.md', 'RELEASES.md', 'MIGRATIONS.md'];
 
 const tokenFiles = {
   primitive: 'primitive.css',
