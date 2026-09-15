@@ -93,6 +93,8 @@ The project follows [Semantic Versioning](https://semver.org/). Before `1.0.0`, 
 - A public `observeComponents()` lifecycle manager for idempotent initialization and cleanup across dynamically added, removed, and replaced DOM roots.
 - Livewire 3 integration guidance covering morphs, navigation, state ownership, stable keys, Dialog completion, and native fallback.
 - A simulated DOM-morph lifecycle test that protects initialization, replacement cleanup, refresh idempotence, and observer teardown.
+- Filament 5.x integration guidance defining supported Panel theming, scoped Nikba regions, Livewire lifecycle use, unsupported markup replacement, and upgrade checks.
+- A Filament reference provider, theme addition, scoped custom view, and automated boundary contract.
 - A read-only MCP server that exposes design-system documentation and tokens to compatible AI hosts.
 - MCP resources, component and token query tools, an implementation prompt, host setup documentation, and an end-to-end protocol test.
 - A dedicated MCP catalog page and primary navigation entry for the AI integration.

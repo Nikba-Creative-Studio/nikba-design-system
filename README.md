@@ -43,6 +43,8 @@ The [Blade integration example](./examples/blade/) provides thin Button and Dial
 
 For server-rendered DOM updates, `observeComponents()` initializes added component roots and cleans removed ones. See the [Livewire integration guide](./docs/integrations/livewire.md) for lifecycle ownership, navigation refresh, stable keys, and validation scenarios.
 
+The [Filament integration boundary](./docs/integrations/filament.md) supports public Panel theming and scoped Nikba compositions while retaining Filament ownership of forms, tables, actions, notifications, and modals. A reference provider, theme addition, and custom Blade region live in the [Filament example](./examples/filament/).
+
 ## Usage
 
 ```js
