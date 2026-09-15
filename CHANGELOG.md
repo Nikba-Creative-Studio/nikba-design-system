@@ -137,6 +137,7 @@ The project follows [Semantic Versioning](https://semver.org/). Before `1.0.0`, 
 
 ### Fixed
 
+- Dialog Field helper text now follows the shared Field spacing and description contract.
 - Select validation and disabled-state examples now use the designed listbox behavior consistently.
 - Tooltip icon-control examples now use the public Icon Button structure and a compact toolbar surface.
 - Catalog reveal transitions release their transformed containing block so fixed Tooltips use viewport coordinates correctly.

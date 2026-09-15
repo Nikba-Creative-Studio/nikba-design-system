@@ -52,7 +52,7 @@
 
       <dialog class="nds-dialog" id="invite-dialog" data-nds-dialog data-dismiss-backdrop="true" aria-labelledby="invite-title" aria-describedby="invite-description">
         <header class="nds-dialog__header"><div><h2 class="nds-dialog__title" id="invite-title">Invite a member</h2><p class="nds-dialog__description" id="invite-description">Give someone access to this workspace.</p></div><button class="nds-dialog__close" type="button" data-nds-dialog-close="dismiss" aria-label="Close dialog"><svg viewBox="0 0 16 16"><path d="M3 3l10 10M13 3L3 13" /></svg></button></header>
-        <div class="nds-dialog__body"><label class="nds-field"><span class="nds-field__label">Email address</span><input class="nds-input" type="email" placeholder="name@company.com" data-nds-dialog-initial-focus /></label><p class="nds-field__helper">An invitation remains valid for seven days.</p></div>
+        <div class="nds-dialog__body"><div class="nds-field"><label class="nds-field__label" for="invite-email">Email address</label><input class="nds-input" id="invite-email" type="email" placeholder="name@company.com" aria-describedby="invite-email-help" data-nds-dialog-initial-focus /><p class="nds-field__helper" id="invite-email-help">An invitation remains valid for seven days.</p></div></div>
         <footer class="nds-dialog__footer"><button class="nds-button nds-button--secondary" type="button" data-nds-dialog-close="cancel">Cancel</button><button class="nds-button" type="button" data-nds-dialog-close="invite">Send invite</button></footer>
       </dialog>
 
