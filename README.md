@@ -83,7 +83,7 @@ The package includes a read-only Model Context Protocol server that exposes comp
 npm run mcp
 ```
 
-The server publishes discoverable resources, four query tools, and a `build_with_nikba` prompt. See [AI Integration with MCP](./docs/MCP.md) for host configuration and the complete interface, or explore the MCP section in the local catalog.
+The server publishes discoverable component, pattern, integration, guide, and token resources; six query tools; and a `build_with_nikba` prompt. See [AI Integration with MCP](./docs/MCP.md) for host configuration and the complete interface, or explore the MCP section in the local catalog.
 
 ## Current public surface
 

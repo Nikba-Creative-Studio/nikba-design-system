@@ -53,6 +53,9 @@
               <article class="mcp-resource-card"><span>Overview</span><code>nikba://system/overview</code><p>Principles, setup, usage, and the current public surface.</p></article>
               <article class="mcp-resource-card"><span>Tokens</span><code>nikba://foundations/tokens</code><p>Primitive, semantic, and theme CSS custom properties.</p></article>
               <article class="mcp-resource-card mcp-resource-card--wide"><span>Components</span><code>nikba://components/{slug}</code><p>Purpose, API, variants, states, accessibility, examples, and acceptance criteria for every documented component.</p></article>
+              <article class="mcp-resource-card"><span>Patterns</span><code>nikba://patterns/{slug}</code><p>Product compositions, validation, settings, and confirmation guidance.</p></article>
+              <article class="mcp-resource-card"><span>Integrations</span><code>nikba://integrations/{slug}</code><p>Lifecycle and ownership boundaries for Livewire and Filament.</p></article>
+              <article class="mcp-resource-card"><span>Guides</span><code>nikba://guides/{slug}</code><p>Foundations, support, release, and migration policy.</p></article>
             </div>
           </section>
 
@@ -65,8 +68,10 @@
             <dl class="mcp-tool-list">
               <div><dt><code>list_components</code></dt><dd>Discover component names, descriptions, slugs, and resource URIs.</dd></div>
               <div><dt><code>get_component</code></dt><dd>Read the complete contract for a component by slug.</dd></div>
+              <div><dt><code>list_documents</code></dt><dd>Discover all documentation or one component, pattern, integration, or guide category.</dd></div>
+              <div><dt><code>get_document</code></dt><dd>Read one complete document by category and slug.</dd></div>
               <div><dt><code>get_tokens</code></dt><dd>Read all design tokens or one primitive, semantic, or theme layer.</dd></div>
-              <div><dt><code>search_design_system</code></dt><dd>Find the most relevant component guidance for a word or phrase.</dd></div>
+              <div><dt><code>search_design_system</code></dt><dd>Find relevant guidance across the complete published system.</dd></div>
             </dl>
             <div class="mcp-prompt-note"><span>Prompt</span><div><strong><code>build_with_nikba</code></strong><p>Directs the host to inspect relevant contracts and tokens before implementing an interface.</p></div></div>
           </section>

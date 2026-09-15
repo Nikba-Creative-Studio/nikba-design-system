@@ -25,9 +25,12 @@ try {
   assert.ok(resources.some(({ uri }) => uri === 'nikba://system/overview'));
   assert.ok(resources.some(({ uri }) => uri === 'nikba://foundations/tokens'));
   assert.ok(resources.some(({ uri }) => uri === 'nikba://components/button'));
+  assert.ok(resources.some(({ uri }) => uri === 'nikba://patterns/search-filter'));
+  assert.ok(resources.some(({ uri }) => uri === 'nikba://integrations/livewire'));
+  assert.ok(resources.some(({ uri }) => uri === 'nikba://guides/releases'));
   assert.deepEqual(
     tools.map(({ name }) => name).sort(),
-    ['get_component', 'get_tokens', 'list_components', 'search_design_system']
+    ['get_component', 'get_document', 'get_tokens', 'list_components', 'list_documents', 'search_design_system']
   );
   assert.ok(prompts.some(({ name }) => name === 'build_with_nikba'));
 
@@ -37,11 +40,29 @@ try {
   });
   assert.match(component.content[0].text, /^# Avatar/m);
 
+  const pattern = await client.callTool({
+    name: 'get_document',
+    arguments: { category: 'patterns', slug: 'settings-account' }
+  });
+  assert.match(pattern.content[0].text, /^# Settings and Account/m);
+
+  const patterns = await client.callTool({
+    name: 'list_documents',
+    arguments: { category: 'patterns' }
+  });
+  assert.match(patterns.content[0].text, /destructive-confirmation/);
+
   const search = await client.callTool({
     name: 'search_design_system',
     arguments: { query: 'indeterminate checkbox', limit: 3 }
   });
   assert.match(search.content[0].text, /checkbox-radio/);
+
+  const integrationSearch = await client.callTool({
+    name: 'search_design_system',
+    arguments: { query: 'Livewire morph', limit: 3 }
+  });
+  assert.match(integrationSearch.content[0].text, /"category": "integrations"/);
 
   const tokenResource = await client.readResource({ uri: 'nikba://foundations/tokens' });
   assert.match(tokenResource.contents[0].text, /--nds-color-/);

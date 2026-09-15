@@ -8,8 +8,13 @@ import { serveStdio } from '@modelcontextprotocol/server/stdio';
 import { z } from 'zod';
 
 const packageRoot = dirname(dirname(fileURLToPath(import.meta.url)));
-const componentDocsDirectory = join(packageRoot, 'docs', 'components');
 const tokenDirectory = join(packageRoot, 'src', 'tokens');
+const documentationSources = [
+  { category: 'components', directory: join(packageRoot, 'docs', 'components') },
+  { category: 'patterns', directory: join(packageRoot, 'docs', 'patterns') },
+  { category: 'integrations', directory: join(packageRoot, 'docs', 'integrations') },
+];
+const guideFiles = ['FOUNDATIONS.md', 'MCP.md', 'SUPPORT.md', 'RELEASES.md', 'MIGRATIONS.md'];
 
 const tokenFiles = {
   primitive: 'primitive.css',
@@ -26,25 +31,29 @@ function descriptionFromMarkdown(markdown) {
   return purpose?.split(/\n\s*\n/)[0]?.replace(/\s+/g, ' ') ?? '';
 }
 
-async function loadComponentCatalog() {
-  const filenames = (await readdir(componentDocsDirectory))
-    .filter((filename) => filename.endsWith('.md'))
-    .sort();
-
-  return Promise.all(
-    filenames.map(async (filename) => {
+async function loadDocumentationCatalog() {
+  const groupedDocuments = await Promise.all(documentationSources.map(async ({ category, directory }) => {
+    const filenames = (await readdir(directory)).filter((filename) => filename.endsWith('.md')).sort();
+    return Promise.all(filenames.map(async (filename) => {
       const slug = filename.replace(/\.md$/, '');
-      const markdown = await readFile(join(componentDocsDirectory, filename), 'utf8');
+      const markdown = await readFile(join(directory, filename), 'utf8');
 
       return {
+        category,
         slug,
         title: titleFromMarkdown(markdown, slug),
         description: descriptionFromMarkdown(markdown),
-        uri: `nikba://components/${slug}`,
+        uri: `nikba://${category}/${slug}`,
         markdown
       };
-    })
-  );
+    }));
+  }));
+  const guides = await Promise.all(guideFiles.map(async (filename) => {
+    const slug = filename.replace(/\.md$/, '').toLowerCase();
+    const markdown = await readFile(join(packageRoot, 'docs', filename), 'utf8');
+    return { category: 'guides', slug, title: titleFromMarkdown(markdown, slug), description: descriptionFromMarkdown(markdown), uri: `nikba://guides/${slug}`, markdown };
+  }));
+  return [...groupedDocuments.flat(), ...guides];
 }
 
 async function loadTokens(category) {
@@ -72,15 +81,17 @@ function toolError(message) {
 }
 
 async function createNikbaServer() {
-  const [components, overview, allTokens] = await Promise.all([
-    loadComponentCatalog(),
+  const [documents, overview, allTokens, packageMetadata] = await Promise.all([
+    loadDocumentationCatalog(),
     readFile(join(packageRoot, 'README.md'), 'utf8'),
-    loadTokens('all')
+    loadTokens('all'),
+    readFile(join(packageRoot, 'package.json'), 'utf8').then(JSON.parse)
   ]);
+  const components = documents.filter(({ category }) => category === 'components');
 
   const server = new McpServer({
     name: 'nikba-design-system',
-    version: '0.1.0-alpha.1'
+    version: packageMetadata.version
   });
 
   const resourceConfig = {
@@ -114,17 +125,17 @@ async function createNikbaServer() {
     })
   );
 
-  for (const component of components) {
+  for (const document of documents) {
     server.registerResource(
-      `component-${component.slug}`,
-      component.uri,
+      `${document.category}-${document.slug}`,
+      document.uri,
       {
         ...resourceConfig,
-        title: component.title,
-        description: component.description
+        title: document.title,
+        description: document.description
       },
       async (uri) => ({
-        contents: [{ uri: uri.href, mimeType: 'text/markdown', text: component.markdown }]
+        contents: [{ uri: uri.href, mimeType: 'text/markdown', text: document.markdown }]
       })
     );
   }
@@ -167,6 +178,36 @@ async function createNikbaServer() {
   );
 
   server.registerTool(
+    'list_documents',
+    {
+      title: 'List Nikba documentation',
+      description: 'List component, pattern, integration, and guide documents with MCP resource URIs.',
+      inputSchema: z.object({ category: z.enum(['all', 'components', 'patterns', 'integrations', 'guides']).default('all') }),
+      annotations: readOnlyAnnotations
+    },
+    async ({ category }) => textResult(documents
+      .filter((document) => category === 'all' || document.category === category)
+      .map(({ category: documentCategory, slug, title, description, uri }) => ({ category: documentCategory, slug, title, description, uri })))
+  );
+
+  server.registerTool(
+    'get_document',
+    {
+      title: 'Get Nikba documentation',
+      description: 'Return one complete component, pattern, integration, or guide document.',
+      inputSchema: z.object({
+        category: z.enum(['components', 'patterns', 'integrations', 'guides']),
+        slug: z.string().min(1)
+      }),
+      annotations: readOnlyAnnotations
+    },
+    async ({ category, slug }) => {
+      const document = documents.find((entry) => entry.category === category && entry.slug === slug.trim().toLowerCase());
+      return document ? textResult(document.markdown) : toolError(`Unknown ${category} document: ${slug}`);
+    }
+  );
+
+  server.registerTool(
     'get_tokens',
     {
       title: 'Get Nikba design tokens',
@@ -183,7 +224,7 @@ async function createNikbaServer() {
     'search_design_system',
     {
       title: 'Search Nikba Design System',
-      description: 'Search component contracts and return the most relevant matching excerpts.',
+      description: 'Search component, pattern, integration, and guide documents and return relevant excerpts.',
       inputSchema: z.object({
         query: z.string().min(2).describe('Word or phrase to find in component documentation.'),
         limit: z.number().int().min(1).max(10).default(5)
@@ -192,18 +233,18 @@ async function createNikbaServer() {
     },
     async ({ query, limit }) => {
       const terms = query.toLowerCase().split(/\s+/).filter(Boolean);
-      const matches = components
-        .map((component) => {
-          const searchable = `${component.title}\n${component.description}\n${component.markdown}`.toLowerCase();
+      const matches = documents
+        .map((document) => {
+          const searchable = `${document.title}\n${document.description}\n${document.markdown}`.toLowerCase();
           const score = terms.reduce((total, term) => total + searchable.split(term).length - 1, 0);
-          const firstIndex = Math.max(0, component.markdown.toLowerCase().indexOf(terms[0]));
+          const firstIndex = Math.max(0, document.markdown.toLowerCase().indexOf(terms[0]));
           const excerptStart = Math.max(0, firstIndex - 100);
-          const excerpt = component.markdown
+          const excerpt = document.markdown
             .slice(excerptStart, excerptStart + 420)
             .replace(/\s+/g, ' ')
             .trim();
 
-          return { slug: component.slug, title: component.title, uri: component.uri, score, excerpt };
+          return { category: document.category, slug: document.slug, title: document.title, uri: document.uri, score, excerpt };
         })
         .filter((match) => match.score > 0)
         .sort((left, right) => right.score - left.score || left.title.localeCompare(right.title))
@@ -228,7 +269,7 @@ async function createNikbaServer() {
           role: 'user',
           content: {
             type: 'text',
-            text: `Implement this task with Nikba Design System: ${task}\n\nRead nikba://system/overview, inspect the relevant component resources, and use published tokens and public APIs. Preserve native semantics, keyboard access, visible focus, and reduced-motion behavior.`
+            text: `Implement this task with Nikba Design System: ${task}\n\nRead nikba://system/overview, inspect the relevant component and pattern resources, and use published tokens and public APIs. Preserve native semantics, keyboard access, visible focus, and reduced-motion behavior.`
           }
         }
       ]
