@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en" data-theme="frost" data-glass="soft">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Plain HTML consumer of Nikba Design System." />
+    <title>Nikba Design System · Plain HTML</title>
+    <script type="module" src="/main.js"></script>
+  </head>
+  <body class="nds-scope">
+    <header class="nds-header nds-header--glass">
+      <div class="nds-header__inner nds-container">
+        <a class="nds-header__brand" href="#main">Nikba example</a>
+        <div class="nds-header__actions"><button class="nds-button nds-button--secondary nds-button--small" type="button" data-theme-toggle>Use Graphite</button></div>
+      </div>
+    </header>
+    <main class="nds-container nds-stack" id="main">
+      <section class="nds-card nds-card--large">
+        <div class="nds-card__body">
+          <span class="nds-badge nds-badge--success">Packed consumer</span>
+          <h1 class="nds-card__title">Plain HTML, public CSS, optional JavaScript.</h1>
+          <p class="nds-card__description">This page imports the published package API without reaching into source files.</p>
+        </div>
+        <div class="nds-card__footer"><button class="nds-button" type="button" data-nds-dialog-open="example-dialog">Open Dialog</button><a class="nds-link" href="https://nikba.com">Nikba Creative Studio</a></div>
+      </section>
+    </main>
+    <dialog class="nds-dialog nds-dialog--small" id="example-dialog" data-nds-dialog aria-labelledby="example-title">
+      <header class="nds-dialog__header"><h2 class="nds-dialog__title" id="example-title">Package initialized</h2></header>
+      <div class="nds-dialog__body"><p>The public Dialog initializer controls this native element.</p></div>
+      <footer class="nds-dialog__footer"><button class="nds-button" type="button" data-nds-dialog-close data-nds-dialog-initial-focus>Done</button></footer>
+    </dialog>
+  </body>
+</html>

@@ -40,9 +40,10 @@
     "test:navigation": "node tests/navigation.test.mjs",
     "test:table": "node tests/table.test.mjs",
     "test:form": "node tests/form.test.mjs",
+    "test:consumer": "node tests/consumer-build.test.mjs",
     "test": "npm run test:api && npm run test:css && npm run test:contrast && npm run test:accordion && npm run test:tabs && npm run test:dialog && npm run test:popover && npm run test:tooltip && npm run test:toast && npm run test:navigation && npm run test:table && npm run test:form && npm run test:mcp",
     "mcp": "node ./mcp/server.js",
-    "verify": "npm run build && npm test && npm pack --dry-run"
+    "verify": "npm run build && npm test && npm run test:consumer && npm pack --dry-run"
   },
   "keywords": [
     "design-system",

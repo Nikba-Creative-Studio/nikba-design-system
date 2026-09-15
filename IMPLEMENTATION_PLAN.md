@@ -199,7 +199,7 @@ Exit gate: the catalog contains representative editorial and application screens
 
 Goal: prove that the package works in intended environments and prepare a stable public contract.
 
-- [ ] Add built-package examples for plain HTML and JavaScript.
+- [x] Add built-package examples for plain HTML and JavaScript.
 - [ ] Add Blade integration examples.
 - [ ] Validate Livewire DOM updates and interaction lifecycle.
 - [ ] Evaluate Filament integration and document supported customization boundaries.
@@ -258,7 +258,7 @@ Open decisions belong in the relevant component document. Once a decision ships 
 
 Begin Phase 4 in this order:
 
-1. Add built-package examples for plain HTML and JavaScript.
-2. Add Blade integration examples.
+1. Add Blade integration examples.
+2. Validate Livewire DOM updates and interaction lifecycle.
 
 Each interactive component ships with an explicit initializer, cleanup contract, native fallback where available, and targeted behavior tests.

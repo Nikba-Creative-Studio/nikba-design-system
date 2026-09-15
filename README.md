@@ -37,6 +37,8 @@ npm run verify
 
 `build` creates the library in `dist` and the catalog in `dist-playground`. `verify` also checks the public JavaScript API and the package contents.
 
+The [plain HTML and JavaScript consumer](./examples/plain/) imports the packed public API through a framework-free Vite entry. `npm run test:consumer` packs the current library, installs the archive into a temporary consumer, and proves its production build.
+
 ## Usage
 
 ```js
