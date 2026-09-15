@@ -198,6 +198,38 @@ document.querySelectorAll('[data-form-demo]').forEach((form) => {
   });
 });
 
+document.querySelectorAll('[data-confirm-demo]').forEach((demo) => {
+  const dialog = document.getElementById('delete-project-dialog');
+  const input = dialog?.querySelector('[data-confirm-input]');
+  const submit = dialog?.querySelector('[data-confirm-submit]');
+  const cancel = dialog?.querySelector('[data-nds-dialog-initial-focus]');
+  const subject = demo.querySelector('[data-confirm-subject]');
+  const success = demo.querySelector('[data-confirm-success]');
+  if (!dialog || !input || !submit || !cancel || !subject || !success) return;
+
+  input.addEventListener('input', () => { submit.disabled = input.value.trim() !== 'Aurora'; });
+  dialog.addEventListener('nds:dialog-open', () => {
+    input.value = '';
+    submit.disabled = true;
+    submit.removeAttribute('aria-busy');
+    cancel.disabled = false;
+  });
+  submit.addEventListener('click', (event) => {
+    event.stopImmediatePropagation();
+    if (submit.disabled) return;
+    submit.disabled = true;
+    submit.setAttribute('aria-busy', 'true');
+    cancel.disabled = true;
+    window.setTimeout(() => {
+      dialog.close('delete');
+      subject.hidden = true;
+      success.hidden = false;
+      submit.removeAttribute('aria-busy');
+      cancel.disabled = false;
+    }, 700);
+  }, { capture: true });
+});
+
 document.querySelectorAll('[data-toast-demo-region]').forEach((region) => {
   const manager = createToastManager(region, { maxVisible: 3, duration: 6000 });
   document.querySelectorAll(`[data-toast-region="${region.id}"]`).forEach((button) => {

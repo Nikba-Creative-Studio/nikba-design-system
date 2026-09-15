@@ -84,6 +84,8 @@ The project follows [Semantic Versioning](https://semver.org/). Before `1.0.0`, 
 - A complete Form Validation and Submission pattern with a functional pending and success demonstration, documentation, and behavior test.
 - Settings and Account layout styles for category navigation, profile identity, preference sections, sessions, account actions, and compact screens.
 - A complete Settings and Account pattern composed from public Avatar, Form, Switch, Badge, Button, and Dialog contracts.
+- Destructive Confirmation styles for target identity, consequence lists, typed verification, and compact layouts.
+- A complete Destructive Confirmation pattern with risk levels, safe initial focus, protected pending state, success announcement, documentation, and a functional catalog demonstration.
 - A read-only MCP server that exposes design-system documentation and tokens to compatible AI hosts.
 - MCP resources, component and token query tools, an implementation prompt, host setup documentation, and an end-to-end protocol test.
 - A dedicated MCP catalog page and primary navigation entry for the AI integration.

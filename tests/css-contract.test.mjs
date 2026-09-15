@@ -250,6 +250,11 @@ const requiredContracts = [
   '.nds-settings__heading',
   '.nds-settings__profile',
   '.nds-settings__row',
+  '.nds-confirmation',
+  '.nds-confirmation__subject',
+  '.nds-confirmation__subject-copy',
+  '.nds-confirmation__consequences',
+  '.nds-confirmation__verify',
   '.nds-glass',
 ];
 

@@ -39,6 +39,7 @@ export default defineConfig({
         resolve(import.meta.dirname, 'playground/components/search-filter.html'),
         resolve(import.meta.dirname, 'playground/components/form-validation.html'),
         resolve(import.meta.dirname, 'playground/components/settings-account.html'),
+        resolve(import.meta.dirname, 'playground/components/destructive-confirmation.html'),
       ],
     },
   },
