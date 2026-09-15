@@ -69,12 +69,13 @@ function availablePort() {
   });
 }
 
-async function waitForDebugServer(port) {
-  for (let attempt = 0; attempt < 50; attempt += 1) {
+async function waitForDebugServer(port, child) {
+  for (let attempt = 0; attempt < 150; attempt += 1) {
+    if (child.exitCode !== null) throw new Error(`Chrome exited before exposing its debugging server (code ${child.exitCode}).`);
     try { if ((await fetch(`http://127.0.0.1:${port}/json/version`)).ok) return; } catch { /* Chrome is still starting. */ }
     await new Promise((resolve) => setTimeout(resolve, 100));
   }
-  throw new Error('Chrome did not expose its debugging server.');
+  throw new Error('Chrome did not expose its debugging server within 15 seconds.');
 }
 
 function stop(child) {
@@ -99,7 +100,7 @@ try {
     await new Promise((resolve) => setTimeout(resolve, 100));
   }
 
-  await waitForDebugServer(debugPort);
+  await waitForDebugServer(debugPort, browser);
   const targets = await fetch(`http://127.0.0.1:${debugPort}/json/list`).then((response) => response.json());
   const pageTarget = targets.find((target) => target.type === 'page');
   assert.ok(pageTarget?.webSocketDebuggerUrl, 'Chrome requires a debuggable page target.');
