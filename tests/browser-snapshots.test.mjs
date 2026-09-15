@@ -147,5 +147,5 @@ try {
 } finally {
   cdp?.close();
   await Promise.all([stop(browser), stop(server)]);
-  await rm(profile, { recursive: true, force: true });
+  await rm(profile, { recursive: true, force: true, maxRetries: 5, retryDelay: 200 });
 }
