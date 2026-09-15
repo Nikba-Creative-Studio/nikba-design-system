@@ -143,6 +143,7 @@ The project follows [Semantic Versioning](https://semver.org/). Before `1.0.0`, 
 
 ### Fixed
 
+- Field controls now retain their token height when adjacent grid fields contain helper or error text.
 - Compact Navigation now opens as a full-width Header panel without leaving permanent empty space, with an animated close state on its trigger.
 - Header brand, Navigation, and actions now align on a symmetric three-zone grid, including compact previews.
 - Dialog Field helper text now follows the shared Field spacing and description contract.

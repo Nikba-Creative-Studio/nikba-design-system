@@ -42,4 +42,4 @@ Errors must explain how to recover. Do not rely on color. Preserve native `requi
 
 ## Responsive behavior
 
-Two-column field groups collapse to one column below `43.75rem`. Actions become full width. Keep source order identical to reading and tab order.
+Two-column field groups collapse to one column below `43.75rem`. Fields align their content to the start of each shared row, so adjacent helper or error text does not change the control height. Actions become full width. Keep source order identical to reading and tab order.

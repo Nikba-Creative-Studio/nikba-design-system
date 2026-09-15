@@ -1,6 +1,7 @@
 .nds-field {
   width: 100%;
   display: grid;
+  align-content: start;
   gap: var(--nds-space-2);
 }
 
