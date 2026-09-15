@@ -13,7 +13,10 @@ function prefixCatalogLinks() {
       order: 'post',
       handler(html) {
         if (base === '/') return html;
-        return html.replace(/(\b(?:href|action)=["'])\/(?!\/)/g, `$1${base}`);
+        return html.replace(
+          /(\b(?:href|action)=["'])(\/[^"']*)/g,
+          (match, attribute, path) => path.startsWith(base) ? match : `${attribute}${base}${path.slice(1)}`,
+        );
       },
     },
   };

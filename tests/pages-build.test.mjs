@@ -3,6 +3,7 @@ import { readdir, readFile } from 'node:fs/promises';
 
 const output = new URL('../dist-playground/', import.meta.url);
 const base = '/nikba-design-system/';
+const duplicatedBase = `${base}${base.slice(1)}`;
 
 async function htmlFiles(directory) {
   const entries = await readdir(directory, { withFileTypes: true });
@@ -24,6 +25,7 @@ for (const file of files) {
   assert.ok(rootLinks.length > 0, `${file.pathname}: expected catalog links.`);
   for (const link of rootLinks) {
     assert.ok(link.startsWith(base), `${file.pathname}: ${link} escapes the GitHub Pages base.`);
+    assert.ok(!link.startsWith(duplicatedBase), `${file.pathname}: ${link} duplicates the GitHub Pages base.`);
   }
 }
 
