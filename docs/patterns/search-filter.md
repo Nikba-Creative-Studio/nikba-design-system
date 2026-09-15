@@ -12,14 +12,22 @@ Search and Filter helps people narrow a known collection with a text query and e
 
 - `.nds-search-filter`: pattern wrapper.
 - `.nds-search-filter__form`: query, filters, and actions surface.
-- `.nds-search-filter__query`: Input and search-icon wrapper.
+- `.nds-search-filter__query`: query Field wrapper.
+- `.nds-search-filter__input-shell`: Input and search-icon positioning wrapper.
 - `.nds-search-filter__icon`: decorative query icon.
 - `.nds-search-filter__actions`: Apply and Reset actions.
 - `.nds-search-filter__summary`: result count and active-state context.
 - `.nds-search-filter__active`: active-filter Chip list.
 - `.nds-search-filter__results`: result stack.
+- `.nds-search-filter__result`: structured result row.
+- `.nds-search-filter__identity`: avatar and primary result copy.
+- `.nds-search-filter__avatar`: compact owner initials.
+- `.nds-search-filter__copy`: title and owner wrapper.
+- `.nds-search-filter__title`: primary result label.
+- `.nds-search-filter__owner`: owner metadata.
+- `.nds-search-filter__type`: result category.
 
-The pattern composes Field, Input, Native Select, Button, Chip, Card, and Product State APIs.
+The pattern composes Field, Input, Native Select, Button, Chip, Badge, and Product State APIs.
 
 ## Behavior contract
 
@@ -39,7 +47,10 @@ The pattern composes Field, Input, Native Select, Button, Chip, Card, and Produc
   <form class="nds-search-filter__form" method="get">
     <label class="nds-field nds-search-filter__query">
       <span class="nds-field__label">Search projects</span>
-      <input class="nds-input" type="search" name="query" />
+      <span class="nds-search-filter__input-shell">
+        <span class="nds-search-filter__icon" aria-hidden="true">…</span>
+        <input class="nds-input nds-input--medium" type="search" name="query" />
+      </span>
     </label>
     <label class="nds-field">
       <span class="nds-field__label">Status</span>
@@ -51,7 +62,9 @@ The pattern composes Field, Input, Native Select, Button, Chip, Card, and Produc
     </div>
   </form>
   <div class="nds-search-filter__summary" aria-live="polite">…</div>
-  <div class="nds-search-filter__results">…</div>
+  <div class="nds-search-filter__results">
+    <article class="nds-search-filter__result">…</article>
+  </div>
 </section>
 ```
 
@@ -79,5 +92,6 @@ The pattern composes Field, Input, Native Select, Button, Chip, Card, and Produc
 - Query, filters, count, active criteria, reset, and no-results behavior remain synchronized.
 - Pagination and sorting can preserve the current criteria.
 - Compact layout stacks controls without horizontal overflow.
+- Result rows separate identity, category, and status into scannable regions.
 - Result updates do not steal focus.
 - Empty-result recovery is immediate and explicit.

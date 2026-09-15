@@ -8,6 +8,7 @@ The project follows [Semantic Versioning](https://semver.org/). Before `1.0.0`, 
 
 ### Added
 
+- Structured Search and Filter result rows with distinct identity, category, and status regions.
 - Rich next-module previews and a verified circular reading order across all 28 component and pattern reference pages.
 - A single-source component catalog that consumes the public library.
 - Separate library and catalog build commands.
