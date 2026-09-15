@@ -48,6 +48,7 @@
     "test:budgets": "node tests/budgets.test.mjs",
     "test:a11y": "node tests/catalog-accessibility.test.mjs",
     "test:browser": "node tests/browser-snapshots.test.mjs",
+    "test:cross-browser": "node tests/cross-browser.test.mjs",
     "test": "npm run test:api && npm run test:css && npm run test:contrast && npm run test:budgets && npm run test:a11y && npm run test:accordion && npm run test:tabs && npm run test:dialog && npm run test:popover && npm run test:select && npm run test:tooltip && npm run test:toast && npm run test:navigation && npm run test:table && npm run test:form && npm run test:lifecycle && npm run test:mcp && npm run test:blade && npm run test:filament",
     "mcp": "node ./mcp/server.js",
     "verify": "npm run build && npm test && npm run test:consumer && npm pack --dry-run"
@@ -67,6 +68,7 @@
   },
   "devDependencies": {
     "@modelcontextprotocol/client": "^2.0.0",
+    "playwright": "^1.63.0",
     "vite": "^8.3.0"
   },
   "engines": {

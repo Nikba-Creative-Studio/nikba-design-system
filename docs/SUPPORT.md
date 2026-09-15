@@ -8,7 +8,7 @@ Nikba Design System supports the latest two stable major releases of Chrome, Edg
 
 The system uses native Dialog and Popover APIs, `color-mix()`, `:has()`, `backdrop-filter`, and `:focus-visible`. Unsupported visual enhancements may fall back to solid surfaces or simpler state styling. Components whose behavior depends on a missing platform API must not be initialized in that browser; applications targeting older browsers own an explicit polyfill and its testing.
 
-Automated browser coverage is still pending. Until the browser CI job ships, this is the target support matrix rather than a claim that every release in the matrix has completed manual assistive-technology verification.
+CI exercises representative navigation, Tabs, Dialog, and Select behavior in Chromium, Firefox, and WebKit. Chrome also runs approved visual snapshots at desktop and compact viewports. Edge and mobile platform releases remain covered through their corresponding browser engines and responsive layouts; manual assistive-technology verification is still required before `1.0.0`.
 
 ## Bundle budgets
 

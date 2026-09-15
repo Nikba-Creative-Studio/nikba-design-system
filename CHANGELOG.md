@@ -104,6 +104,7 @@ The project follows [Semantic Versioning](https://semver.org/). Before `1.0.0`, 
 - Enforced gzip budgets of 20 KiB for CSS and 12 KiB for JavaScript, plus a 140 KiB combined raw-output guard.
 - Catalog accessibility structure checks for language, landmarks, heading hierarchy, duplicate IDs, image alternatives, and Dialog names.
 - A dependency-free headless Chrome snapshot smoke test across representative pages at desktop and compact viewports, with CI artifact upload.
+- Cross-browser interaction smoke coverage for Chromium, Firefox, and WebKit across responsive navigation, Tabs, Dialog, and Select behavior.
 - Release, deprecation, compatibility, support, and migration policies with an explicit release procedure and entry template.
 - Pull-request and bug-report templates covering public contracts, validation, environment, and accessibility impact.
 - Approved desktop and compact visual baselines for Overview, Form, and Destructive Confirmation with dependency-free PNG decoding and sampled pixel-difference thresholds.

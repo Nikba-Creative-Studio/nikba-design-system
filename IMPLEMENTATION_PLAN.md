@@ -261,7 +261,7 @@ Open decisions belong in the relevant component document. Once a decision ships 
 
 Begin Phase 4 in this order:
 
-1. Add Firefox and WebKit browser verification.
+1. [x] Add Firefox and WebKit browser verification.
 2. Complete the manual VoiceOver and NVDA task matrix before `1.0.0`.
 
 Each interactive component ships with an explicit initializer, cleanup contract, native fallback where available, and targeted behavior tests.
