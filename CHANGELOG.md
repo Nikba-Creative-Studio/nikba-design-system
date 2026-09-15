@@ -135,6 +135,7 @@ The project follows [Semantic Versioning](https://semver.org/). Before `1.0.0`, 
 
 ### Fixed
 
+- Catalog reveal transitions release their transformed containing block so fixed Tooltips use viewport coordinates correctly.
 - Primary catalog navigation remains visible as a two-row, touch-friendly menu on compact viewports.
 - Catalog Header now uses the shared 1280px Container and responsive page gutters.
 - Icon slots now center SVG artwork consistently with adjacent text in Link, Button, Chip, and Field messages.
