@@ -208,7 +208,7 @@ Goal: prove that the package works in intended environments and prepare a stable
   - [x] Add catalog accessibility structure checks and cross-viewport browser snapshot artifacts.
   - [ ] Add approved visual baselines and pixel-difference thresholds.
 - [x] Establish browser coverage, bundle-size budgets, and performance checks.
-- [ ] Complete contribution, release, deprecation, migration, and support policies.
+- [x] Complete contribution, release, deprecation, migration, and support policies.
 - [ ] Run a full accessibility and API audit before `1.0.0`.
 
 Exit gate: a representative consumer for every supported integration builds from the packed artifact; the public API is documented and protected by checks; known limitations are published.
@@ -261,7 +261,7 @@ Open decisions belong in the relevant component document. Once a decision ships 
 
 Begin Phase 4 in this order:
 
-1. Complete contribution, release, deprecation, migration, and support policies.
-2. Add approved visual baselines and pixel-difference thresholds.
+1. Add approved visual baselines and pixel-difference thresholds.
+2. Run a full accessibility and API audit before `1.0.0`.
 
 Each interactive component ships with an explicit initializer, cleanup contract, native fallback where available, and targeted behavior tests.

@@ -14,7 +14,7 @@ Neutral interface foundations, Onest typography, and selective glassmorphism for
 
 See [DESIGN.md](./DESIGN.md) for visual rules, [IMPLEMENTATION_PLAN.md](./IMPLEMENTATION_PLAN.md) for delivery milestones, and [AUDIT.md](./AUDIT.md) for the baseline assessment.
 
-Runtime and integration targets are defined in [SUPPORT.md](./SUPPORT.md).
+Runtime and integration targets are defined in [Browser, Performance, and Support Policy](./docs/SUPPORT.md). Versioning, deprecation, and releases are defined in [Release, Deprecation, and Support Policy](./docs/RELEASES.md), with breaking changes recorded in [Migrations](./docs/MIGRATIONS.md).
 
 ## Development
 

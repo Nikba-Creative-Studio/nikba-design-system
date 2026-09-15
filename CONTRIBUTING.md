@@ -29,3 +29,11 @@ npm run verify
 ```
 
 Update documentation and `CHANGELOG.md` whenever a public behavior changes. Breaking changes require migration guidance.
+
+Use a focused branch and keep each commit reviewable. A pull request must explain the concrete problem, resulting behavior, public contract impact, and validation. Complete the repository pull-request checklist; mark an item not applicable only when the component contract clearly excludes it.
+
+Do not mix generated build output into source commits. Do not update a snapshot solely to make CI pass: inspect the rendered difference and record the approved reason.
+
+## Releases and support
+
+[Release, deprecation, and support policy](./docs/RELEASES.md) defines version meaning, compatibility windows, release gates, and issue requirements. Add every breaking change and deprecation to [Migrations](./docs/MIGRATIONS.md) with before-and-after code.
