@@ -12,7 +12,7 @@ Neutral interface foundations, Onest typography, and selective glassmorphism for
 - Components use native semantics and progressive enhancement.
 - The core package remains framework-agnostic.
 
-See [DESIGN.md](./DESIGN.md) for visual rules, [IMPLEMENTATION_PLAN.md](./IMPLEMENTATION_PLAN.md) for delivery milestones, and [AUDIT.md](./AUDIT.md) for the baseline assessment.
+See [DESIGN.md](./DESIGN.md) for visual rules, [IMPLEMENTATION_PLAN.md](./IMPLEMENTATION_PLAN.md) for delivery milestones, [AUDIT.md](./AUDIT.md) for the original baseline, and the [current accessibility and API audit](./docs/AUDIT-2026-09-15.md) for release findings.
 
 Runtime and integration targets are defined in [Browser, Performance, and Support Policy](./docs/SUPPORT.md). Versioning, deprecation, and releases are defined in [Release, Deprecation, and Support Policy](./docs/RELEASES.md), with breaking changes recorded in [Migrations](./docs/MIGRATIONS.md).
 

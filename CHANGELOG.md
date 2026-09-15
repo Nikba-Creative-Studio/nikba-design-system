@@ -103,6 +103,7 @@ The project follows [Semantic Versioning](https://semver.org/). Before `1.0.0`, 
 - Release, deprecation, compatibility, support, and migration policies with an explicit release procedure and entry template.
 - Pull-request and bug-report templates covering public contracts, validation, environment, and accessibility impact.
 - Approved desktop and compact visual baselines for Overview, Form, and Destructive Confirmation with dependency-free PNG decoding and sampled pixel-difference thresholds.
+- A dated accessibility and public API audit covering WCAG structure, keyboard and focus behavior, touch targets, MCP discovery, JavaScript documentation, browser coverage, and assistive-technology verification gaps.
 - A read-only MCP server that exposes design-system documentation and tokens to compatible AI hosts.
 - MCP resources, component and token query tools, an implementation prompt, host setup documentation, and an end-to-end protocol test.
 - A dedicated MCP catalog page and primary navigation entry for the AI integration.

@@ -209,7 +209,7 @@ Goal: prove that the package works in intended environments and prepare a stable
   - [x] Add approved representative visual baselines and sampled pixel-difference thresholds.
 - [x] Establish browser coverage, bundle-size budgets, and performance checks.
 - [x] Complete contribution, release, deprecation, migration, and support policies.
-- [ ] Run a full accessibility and API audit before `1.0.0`.
+- [x] Run a full accessibility and API audit before `1.0.0`.
 
 Exit gate: a representative consumer for every supported integration builds from the packed artifact; the public API is documented and protected by checks; known limitations are published.
 
@@ -261,7 +261,7 @@ Open decisions belong in the relevant component document. Once a decision ships 
 
 Begin Phase 4 in this order:
 
-1. Run a full accessibility and API audit before `1.0.0`.
-2. Resolve audit findings and prepare the first release candidate.
+1. Resolve the major accessibility and MCP audit findings.
+2. Publish and protect the central JavaScript API reference.
 
 Each interactive component ships with an explicit initializer, cleanup contract, native fallback where available, and targeted behavior tests.
