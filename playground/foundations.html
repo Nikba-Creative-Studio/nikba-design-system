@@ -19,25 +19,34 @@
     <main id="main" class="nds-container page-main">
       <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Overview</a><span aria-hidden="true">/</span><span aria-current="page">Foundations</span></nav>
       <header class="page-hero">
-        <p class="eyebrow">Foundation reference</p>
+        <p class="eyebrow">Alpha 02 · Foundation reference</p>
         <h1 class="nds-display">The shared decisions behind every component.</h1>
-        <p>Semantic tokens let themes change while spacing, hierarchy, accessibility, and behavior stay consistent.</p>
+        <p>Semantic tokens let themes change while typography, spacing, accessibility, material, and behavior stay consistent across 28 published modules.</p>
       </header>
 
       <div class="page-layout">
         <nav class="page-sidebar" aria-label="Foundation sections">
           <span>On this page</span>
-          <a href="#typography">Typography</a><a href="#color">Semantic color</a><a href="#material">Glass material</a><a href="#layout">Layout</a>
+          <a href="#contract">System contract</a><a href="#typography">Typography</a><a href="#color">Semantic color</a><a href="#material">Glass material</a><a href="#layout">Layout</a>
         </nav>
         <div class="page-content">
+          <section id="contract" class="specimen reveal" aria-labelledby="contract-title">
+            <div class="specimen-heading"><p class="component-label">01 · System contract</p><h2 id="contract-title">Decisions that scale with the catalog</h2><p>Alpha 02 connects the visual language to explicit implementation and quality boundaries.</p></div>
+            <div class="mcp-resource-grid">
+              <article class="mcp-resource-card"><span>Token layers</span><strong>Primitive → semantic → theme</strong><p>Components depend on meaning, so Frost, Mist, and Graphite can evolve independently.</p></article>
+              <article class="mcp-resource-card"><span>Public surface</span><strong>CSS + JavaScript</strong><p>Documented selectors, custom properties, initializers, managers, and teardown behavior form the supported API.</p></article>
+              <article class="mcp-resource-card mcp-resource-card--wide"><span>Quality gates</span><strong>Accessibility, contrast, budgets, lifecycle, consumers, and visual baselines</strong><p>Automated checks protect the same constraints that the component contracts promise.</p></article>
+            </div>
+          </section>
+
           <section id="typography" class="specimen reveal" aria-labelledby="type-title">
-            <div class="specimen-heading"><p class="component-label">01 · Typography</p><h2 id="type-title">Onest</h2><p>A neutral grotesk with enough warmth for product and editorial interfaces.</p></div>
+            <div class="specimen-heading"><p class="component-label">02 · Typography</p><h2 id="type-title">Onest</h2><p>A neutral grotesk with enough warmth for product and editorial interfaces.</p></div>
             <div class="type-sample"><strong>Aa</strong><div><h3>Design with intent.</h3><p>Display, heading, body, label, and code roles share a deliberate scale.</p></div></div>
             <div class="card-meta"><span>400 Regular</span><span>500 Medium</span><span>600 Semibold</span><span>700 Bold</span></div>
           </section>
 
           <section id="color" class="specimen reveal" aria-labelledby="color-title">
-            <div class="specimen-heading"><p class="component-label">02 · Semantic color</p><h2 id="color-title">Meaning before pigment</h2><p>Components consume roles that remain stable across Frost, Mist, and Graphite.</p></div>
+            <div class="specimen-heading"><p class="component-label">03 · Semantic color</p><h2 id="color-title">Meaning before pigment</h2><p>Components consume roles that remain stable across Frost, Mist, and Graphite.</p></div>
             <div class="swatches">
               <div><span class="swatch swatch--success"></span><strong>Success</strong><code>--nds-success</code></div>
               <div><span class="swatch swatch--warning"></span><strong>Warning</strong><code>--nds-warning</code></div>
@@ -47,17 +56,17 @@
           </section>
 
           <section id="material" class="specimen reveal" aria-labelledby="material-title">
-            <div class="specimen-heading"><p class="component-label">03 · Material</p><h2 id="material-title">Selective glass</h2><p>Glass supports orientation and controls. Content surfaces remain solid and readable.</p></div>
+            <div class="specimen-heading"><p class="component-label">04 · Material</p><h2 id="material-title">Selective glass</h2><p>Glass supports orientation and controls. Content surfaces remain solid and readable.</p></div>
             <div class="material-example nds-glass"><span>Current level</span><strong data-glass-label>Soft</strong><p>Use the appearance controls to compare Off, Soft, and Clear.</p></div>
           </section>
 
           <section id="layout" class="specimen reveal" aria-labelledby="layout-title">
-            <div class="specimen-heading"><p class="component-label">04 · Layout</p><h2 id="layout-title">Composable primitives</h2><p>Container, Stack, Cluster, and Grid express common relationships without prescribing page structure.</p></div>
+            <div class="specimen-heading"><p class="component-label">05 · Layout</p><h2 id="layout-title">Composable primitives</h2><p>Container, Stack, Cluster, and Grid express common relationships without prescribing page structure.</p></div>
             <div class="layout-demo nds-grid"><div>Container</div><div>Stack</div><div>Cluster</div><div>Grid</div></div>
           </section>
         </div>
       </div>
     </main>
-    <footer class="catalog-footer nds-container"><span>Nikba Design System</span><a class="nds-link nds-link--standalone" href="/components/">Next: Components <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></footer>
+    <footer class="catalog-footer nds-container"><span>Designed and built with all the love in the world by the <a class="nds-link" href="https://nikba.com">Nikba Creative Studio</a>.</span><a class="nds-link nds-link--standalone" href="/components/">Next: Components <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></footer>
   </body>
 </html>

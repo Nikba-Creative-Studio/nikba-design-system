@@ -5,6 +5,7 @@ import './styles.css';
 const root = document.documentElement;
 const themeKey = 'nds-catalog-theme';
 const glassKey = 'nds-catalog-glass';
+const catalogRelease = 'Alpha 02';
 
 function readPreference(key, allowedValues, fallback) {
   try {
@@ -47,7 +48,7 @@ document.querySelector('[data-catalog-header]')?.replaceChildren(
           )
           .join('')}
       </div>
-      <span class="release-badge">Alpha 01</span>
+      <span class="release-badge">${catalogRelease}</span>
     `,
   }),
 );

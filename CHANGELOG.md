@@ -114,6 +114,7 @@ The project follows [Semantic Versioning](https://semver.org/). Before `1.0.0`, 
 
 ### Changed
 
+- Catalog presentation pages now describe the Alpha 02 system surface: 23 components, five product patterns, verified package and Laravel integrations, and 36 MCP documents.
 - Overview Footer now credits Nikba Creative Studio and links to nikba.com.
 - Avatar examples now use the supplied neutral profile illustration.
 - Overview now uses a structured system-status panel and a denser editorial card grid.
