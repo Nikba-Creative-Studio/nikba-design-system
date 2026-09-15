@@ -56,8 +56,8 @@
         <footer class="nds-dialog__footer"><button class="nds-button nds-button--secondary" type="button" data-nds-dialog-close="cancel">Cancel</button><button class="nds-button" type="button" data-nds-dialog-close="invite">Send invite</button></footer>
       </dialog>
 
-      <dialog class="nds-dialog nds-dialog--small" id="delete-dialog" data-nds-dialog aria-labelledby="delete-title" aria-describedby="delete-description">
-        <header class="nds-dialog__header"><div><h2 class="nds-dialog__title" id="delete-title">Delete this project?</h2><p class="nds-dialog__description" id="delete-description">Files, activity, and member access will be permanently removed.</p></div></header>
+      <dialog class="nds-dialog nds-dialog--small nds-dialog--confirmation" id="delete-dialog" data-nds-dialog aria-labelledby="delete-title" aria-describedby="delete-description">
+        <header class="nds-dialog__header"><span class="nds-dialog__signal" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 8v5M12 17h.01" /><path d="M10.3 4.5 3.4 16.4A2 2 0 0 0 5.1 19h13.8a2 2 0 0 0 1.7-2.6L13.7 4.5a2 2 0 0 0-3.4 0Z" /></svg></span><div><h2 class="nds-dialog__title" id="delete-title">Delete this project?</h2><p class="nds-dialog__description" id="delete-description">Files, activity, and member access will be permanently removed.</p></div></header>
         <footer class="nds-dialog__footer"><button class="nds-button nds-button--secondary" type="button" data-nds-dialog-close="cancel" data-nds-dialog-initial-focus>Keep project</button><button class="nds-button nds-button--danger" type="button" data-nds-dialog-close="delete">Delete project</button></footer>
       </dialog>
 

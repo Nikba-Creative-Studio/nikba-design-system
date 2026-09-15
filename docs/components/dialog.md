@@ -12,10 +12,12 @@ Dialog places a short, focused task above the current page. It uses the native `
 
 - `.nds-dialog`: base modal surface.
 - `.nds-dialog--small`: compact confirmation width.
+- `.nds-dialog--confirmation`: balanced confirmation layout with equal-width actions.
 - `.nds-dialog--large`: wider content width.
 - `.nds-dialog__header`: title, description, and close-control region.
 - `.nds-dialog__title`: visible dialog heading.
 - `.nds-dialog__description`: supporting context.
+- `.nds-dialog__signal`: optional status or risk symbol beside the heading.
 - `.nds-dialog__close`: icon-only close control.
 - `.nds-dialog__body`: scrollable content region.
 - `.nds-dialog__footer`: action region.
@@ -72,6 +74,7 @@ Call `initDialogs()` after the markup exists. The initializer is idempotent for 
 - Use a title that names the task or decision.
 - Keep descriptions concise and place detailed content in the body.
 - Put the safest secondary action first and the primary action last.
+- Give paired confirmation actions equal visual weight through symmetric widths and spacing.
 - Use a danger Button only when the action is destructive.
 - Avoid stacking modal Dialogs. Close the current Dialog before opening another.
 
