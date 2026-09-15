@@ -40,7 +40,7 @@ try {
   for (const [name, path] of pages) {
     for (const [width, height] of viewports) {
       const destination = join(output, `${name}-${width}x${height}.png`);
-      await run(chrome, ['--headless', '--disable-gpu', '--hide-scrollbars', '--no-sandbox', `--window-size=${width},${height}`, `--screenshot=${destination}`, `http://127.0.0.1:${port}${path}`]);
+      await run(chrome, ['--headless', '--disable-gpu', '--hide-scrollbars', '--no-sandbox', '--virtual-time-budget=3000', `--window-size=${width},${height}`, `--screenshot=${destination}`, `http://127.0.0.1:${port}${path}`]);
       const png = await readFile(destination);
       assert.equal(png.toString('hex', 1, 4), '504e47', `${destination} is a PNG.`);
       assert.equal(png.readUInt32BE(16), width, `${destination} preserves viewport width.`);
