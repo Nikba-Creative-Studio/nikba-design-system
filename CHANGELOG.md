@@ -98,6 +98,8 @@ The project follows [Semantic Versioning](https://semver.org/). Before `1.0.0`, 
 - GitHub Actions verification on Node.js 20 and 22 for locked installation, library and catalog builds, API and behavior contracts, package contents, and packed-consumer builds.
 - An alpha browser-support policy, progressive feature boundaries, and explicit runtime performance expectations.
 - Enforced gzip budgets of 20 KiB for CSS and 12 KiB for JavaScript, plus a 140 KiB combined raw-output guard.
+- Catalog accessibility structure checks for language, landmarks, heading hierarchy, duplicate IDs, image alternatives, and Dialog names.
+- A dependency-free headless Chrome snapshot smoke test across representative pages at desktop and compact viewports, with CI artifact upload.
 - A read-only MCP server that exposes design-system documentation and tokens to compatible AI hosts.
 - MCP resources, component and token query tools, an implementation prompt, host setup documentation, and an end-to-end protocol test.
 - A dedicated MCP catalog page and primary navigation entry for the AI integration.

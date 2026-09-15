@@ -33,3 +33,31 @@ jobs:
         run: npm ci
       - name: Build and verify package
         run: npm run verify
+
+  browser:
+    name: Browser accessibility and snapshots
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install locked dependencies
+        run: npm ci
+      - name: Build catalog
+        run: npm run build
+      - name: Check accessibility structure
+        run: npm run test:a11y
+      - name: Capture browser snapshots
+        run: npm run test:browser
+      - name: Upload browser snapshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: browser-snapshots
+          path: artifacts/browser
+          if-no-files-found: error

@@ -46,6 +46,7 @@ For server-rendered DOM updates, `observeComponents()` initializes added compone
 The [Filament integration boundary](./docs/integrations/filament.md) supports public Panel theming and scoped Nikba compositions while retaining Filament ownership of forms, tables, actions, notifications, and modals. A reference provider, theme addition, and custom Blade region live in the [Filament example](./examples/filament/).
 
 Pull requests and pushes to `main` run the complete build, behavior contracts, package validation, and clean packed-consumer build on Node.js 20 and 22.
+CI also checks catalog accessibility structure and captures representative desktop and compact Chrome snapshots as review artifacts.
 
 [Browser and performance support](./docs/SUPPORT.md) defines the target browser matrix, progressive feature boundaries, runtime expectations, and enforced CSS and JavaScript bundle budgets.
 

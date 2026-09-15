@@ -205,7 +205,8 @@ Goal: prove that the package works in intended environments and prepare a stable
 - [x] Evaluate Filament integration and document supported customization boundaries.
 - [ ] Add CI for builds, package validation, behavior, accessibility, and selected visual regression checks.
   - [x] Run builds, API and behavior contracts, package validation, and packed-consumer builds on supported Node versions.
-  - [ ] Add browser accessibility and selected visual regression jobs.
+  - [x] Add catalog accessibility structure checks and cross-viewport browser snapshot artifacts.
+  - [ ] Add approved visual baselines and pixel-difference thresholds.
 - [x] Establish browser coverage, bundle-size budgets, and performance checks.
 - [ ] Complete contribution, release, deprecation, migration, and support policies.
 - [ ] Run a full accessibility and API audit before `1.0.0`.
@@ -260,7 +261,7 @@ Open decisions belong in the relevant component document. Once a decision ships 
 
 Begin Phase 4 in this order:
 
-1. Add browser accessibility and selected visual regression jobs.
-2. Complete contribution, release, deprecation, migration, and support policies.
+1. Complete contribution, release, deprecation, migration, and support policies.
+2. Add approved visual baselines and pixel-difference thresholds.
 
 Each interactive component ships with an explicit initializer, cleanup contract, native fallback where available, and targeted behavior tests.
