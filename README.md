@@ -2,6 +2,8 @@
 
 Neutral interface foundations, Onest typography, and selective glassmorphism for Nikba websites and digital products.
 
+[Open the live component catalog](https://nikba-creative-studio.github.io/nikba-design-system/).
+
 > Status: `0.1.0-alpha.2` — active development. Public APIs may change before `1.0.0`.
 
 ## Principles
@@ -36,6 +38,8 @@ npm run verify
 ```
 
 `build` creates the library in `dist` and the catalog in `dist-playground`. `verify` also checks the public JavaScript API and the package contents.
+
+Every push to `main` publishes the verified catalog to GitHub Pages after the Node, browser accessibility, snapshot, and cross-browser checks pass.
 
 The [plain HTML and JavaScript consumer](./examples/plain/) imports the packed public API through a framework-free Vite entry. `npm run test:consumer` packs the current library, installs the archive into a temporary consumer, and proves its production build.
 

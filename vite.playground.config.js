@@ -1,8 +1,27 @@
 import { resolve } from 'node:path';
 import { defineConfig } from 'vite';
 
+function prefixCatalogLinks() {
+  let base = '/';
+
+  return {
+    name: 'prefix-catalog-links',
+    configResolved(config) {
+      base = config.base;
+    },
+    transformIndexHtml: {
+      order: 'post',
+      handler(html) {
+        if (base === '/') return html;
+        return html.replace(/(\b(?:href|action)=["'])\/(?!\/)/g, `$1${base}`);
+      },
+    },
+  };
+}
+
 export default defineConfig({
   root: resolve(import.meta.dirname, 'playground'),
+  plugins: [prefixCatalogLinks()],
   build: {
     outDir: resolve(import.meta.dirname, 'dist-playground'),
     emptyOutDir: true,

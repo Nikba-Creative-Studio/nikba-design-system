@@ -7,6 +7,11 @@ const root = document.documentElement;
 const themeKey = 'nds-catalog-theme';
 const glassKey = 'nds-catalog-glass';
 const catalogRelease = 'Alpha 02';
+const catalogBase = import.meta.env.BASE_URL;
+
+function catalogPath(path) {
+  return `${catalogBase}${path.replace(/^\//, '')}`;
+}
 
 function readPreference(key, allowedValues, fallback) {
   try {
@@ -38,14 +43,14 @@ document.querySelector('[data-catalog-header]')?.replaceChildren(
     className: 'catalog-nav',
     ariaLabel: 'Primary navigation',
     innerHTML: `
-      <a class="wordmark" href="/" aria-label="Nikba home">
+      <a class="wordmark" href="${catalogPath('/')}" aria-label="Nikba home">
         <img src="${logoUrl}" width="102" height="34" alt="" />
       </a>
       <div class="catalog-nav__links">
         ${navigationItems
           .map(
             ([id, href, label]) =>
-              `<a href="${href}"${id === currentSection ? ' aria-current="page"' : ''}>${label}</a>`,
+              `<a href="${catalogPath(href)}"${id === currentSection ? ' aria-current="page"' : ''}>${label}</a>`,
           )
           .join('')}
       </div>
@@ -101,7 +106,7 @@ function enhanceNextComponentPreview() {
   arrow.textContent = '↗';
   body.append(title, description);
 
-  link.href = `/components/${nextItem.slug}.html`;
+  link.href = catalogPath(`/components/${nextItem.slug}.html`);
   link.className = 'component-next-preview';
   link.replaceChildren(label, body, arrow);
 }
