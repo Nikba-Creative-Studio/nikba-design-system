@@ -6,6 +6,8 @@ The project follows [Semantic Versioning](https://semver.org/). Before `1.0.0`, 
 
 ## Unreleased
 
+## 0.1.0-alpha.3 - 2026-09-15
+
 ### Fixed
 
 - Production CSS now preserves standard and WebKit backdrop filters so Graphite Soft glass visibly blurs its backdrop across supported browsers.
