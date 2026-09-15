@@ -4,13 +4,14 @@ import { mkdir, mkdtemp, readFile, rm, writeFile } from 'node:fs/promises';
 import { createServer } from 'node:net';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
+import { chromium } from 'playwright';
 import { pixelGrid, readPng } from './helpers/png-grid.mjs';
 
 const repository = new URL('..', import.meta.url).pathname;
 const output = join(repository, 'artifacts/browser');
 const port = 4174;
 const chrome = process.env.CHROME_PATH
-  ?? (process.platform === 'darwin' ? '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' : 'google-chrome');
+  ?? (process.platform === 'darwin' ? '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' : chromium.executablePath());
 const pages = [
   ['overview', '/'],
   ['form', '/components/form-validation.html#demo'],
@@ -70,12 +71,12 @@ function availablePort() {
 }
 
 async function waitForDebugServer(port, child) {
-  for (let attempt = 0; attempt < 150; attempt += 1) {
+  for (let attempt = 0; attempt < 300; attempt += 1) {
     if (child.exitCode !== null) throw new Error(`Chrome exited before exposing its debugging server (code ${child.exitCode}).`);
     try { if ((await fetch(`http://127.0.0.1:${port}/json/version`)).ok) return; } catch { /* Chrome is still starting. */ }
     await new Promise((resolve) => setTimeout(resolve, 100));
   }
-  throw new Error('Chrome did not expose its debugging server within 15 seconds.');
+  throw new Error('Chromium did not expose its debugging server within 30 seconds.');
 }
 
 function stop(child) {

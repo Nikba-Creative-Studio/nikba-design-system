@@ -48,6 +48,8 @@ jobs:
           cache: npm
       - name: Install locked dependencies
         run: npm ci
+      - name: Install snapshot browser
+        run: npx playwright install --with-deps chromium
       - name: Build catalog
         run: npm run build
       - name: Check accessibility structure
