@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { spawn } from 'node:child_process';
-import { mkdir, readFile, rm } from 'node:fs/promises';
+import { mkdir, mkdtemp, readFile, rm, writeFile } from 'node:fs/promises';
+import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { pixelGrid, readPng } from './helpers/png-grid.mjs';
 
@@ -16,20 +17,69 @@ const pages = [
 ];
 const viewports = [[1280, 900], [390, 844]];
 const baselines = JSON.parse(await readFile(join(repository, 'tests/visual-baselines.json'), 'utf8'));
+const snapshotFont = (await readFile(join(repository, 'tests/helpers/onest-latin.woff2.base64'), 'utf8')).trim();
 
-function run(command, args) {
+function connectCdp(url) {
   return new Promise((resolve, reject) => {
-    const child = spawn(command, args, { stdio: ['ignore', 'ignore', 'pipe'] });
-    let error = '';
-    child.stderr.on('data', (chunk) => { error += chunk; });
-    child.on('error', reject);
-    child.on('exit', (code) => code === 0 ? resolve() : reject(new Error(error || `${command} exited with ${code}`)));
+    const socket = new WebSocket(url);
+    const pending = new Map();
+    const eventWaiters = new Map();
+    let nextId = 0;
+
+    socket.addEventListener('error', reject, { once: true });
+    socket.addEventListener('open', () => resolve({
+      close: () => socket.close(),
+      send(method, params = {}) {
+        const id = ++nextId;
+        socket.send(JSON.stringify({ id, method, params }));
+        return new Promise((resolveCommand, rejectCommand) => pending.set(id, { resolve: resolveCommand, reject: rejectCommand }));
+      },
+      waitFor(method) {
+        return new Promise((resolveEvent) => {
+          const waiters = eventWaiters.get(method) ?? [];
+          waiters.push(resolveEvent);
+          eventWaiters.set(method, waiters);
+        });
+      },
+    }), { once: true });
+    socket.addEventListener('message', ({ data }) => {
+      const message = JSON.parse(data);
+      if (message.id) {
+        const command = pending.get(message.id);
+        pending.delete(message.id);
+        if (message.error) command?.reject(new Error(message.error.message));
+        else command?.resolve(message.result);
+        return;
+      }
+      const waiters = eventWaiters.get(message.method);
+      waiters?.shift()?.(message.params);
+    });
+  });
+}
+
+async function waitForDebugPort(profile) {
+  const activePort = join(profile, 'DevToolsActivePort');
+  for (let attempt = 0; attempt < 50; attempt += 1) {
+    try { return (await readFile(activePort, 'utf8')).split('\n')[0]; } catch { /* Chrome is still starting. */ }
+    await new Promise((resolve) => setTimeout(resolve, 100));
+  }
+  throw new Error('Chrome did not expose a debugging port.');
+}
+
+function stop(child) {
+  if (child.exitCode !== null) return Promise.resolve();
+  return new Promise((resolve) => {
+    child.once('exit', resolve);
+    child.kill('SIGTERM');
   });
 }
 
 await rm(output, { recursive: true, force: true });
 await mkdir(output, { recursive: true });
 const server = spawn(process.execPath, [join(repository, 'node_modules/vite/bin/vite.js'), 'preview', '--config', join(repository, 'vite.playground.config.js'), '--host', '127.0.0.1', '--port', String(port)], { cwd: repository, stdio: 'ignore' });
+const profile = await mkdtemp(join(tmpdir(), 'nds-browser-'));
+const browser = spawn(chrome, ['--headless', '--disable-gpu', '--hide-scrollbars', '--no-sandbox', '--remote-debugging-port=0', `--user-data-dir=${profile}`, 'about:blank'], { stdio: 'ignore' });
+let cdp;
 
 try {
   for (let attempt = 0; attempt < 30; attempt += 1) {
@@ -37,10 +87,34 @@ try {
     await new Promise((resolve) => setTimeout(resolve, 100));
   }
 
+  const debugPort = await waitForDebugPort(profile);
+  const targets = await fetch(`http://127.0.0.1:${debugPort}/json/list`).then((response) => response.json());
+  const pageTarget = targets.find((target) => target.type === 'page');
+  assert.ok(pageTarget?.webSocketDebuggerUrl, 'Chrome requires a debuggable page target.');
+  cdp = await connectCdp(pageTarget.webSocketDebuggerUrl);
+  await cdp.send('Page.enable');
+  await cdp.send('Network.enable');
+  await cdp.send('Network.setBlockedURLs', { urls: ['*://fonts.googleapis.com/*', '*://fonts.gstatic.com/*'] });
+
   for (const [name, path] of pages) {
     for (const [width, height] of viewports) {
       const destination = join(output, `${name}-${width}x${height}.png`);
-      await run(chrome, ['--headless', '--disable-gpu', '--hide-scrollbars', '--no-sandbox', '--virtual-time-budget=3000', `--window-size=${width},${height}`, `--screenshot=${destination}`, `http://127.0.0.1:${port}${path}`]);
+      await cdp.send('Emulation.setDeviceMetricsOverride', { width, height, deviceScaleFactor: 1, mobile: false });
+      const pageUrl = new URL(path, `http://127.0.0.1:${port}`);
+      pageUrl.searchParams.set('snapshot', `${width}x${height}`);
+      const loaded = cdp.waitFor('Page.loadEventFired');
+      await cdp.send('Page.navigate', { url: pageUrl.href });
+      await loaded;
+      const fontSource = JSON.stringify(`url(data:font/woff2;base64,${snapshotFont}) format('woff2')`);
+      await cdp.send('Runtime.evaluate', { expression: `(async () => { const font = new FontFace('Onest Snapshot', ${fontSource}, { style: 'normal', weight: '100 900' }); await font.load(); document.fonts.add(font); document.documentElement.style.setProperty('--nds-font-sans', "'Onest Snapshot', sans-serif"); await new Promise((resolve) => setTimeout(resolve, 1000)); })()`, awaitPromise: true });
+      const screenshot = await cdp.send('Page.captureScreenshot', { format: 'png', fromSurface: true, captureBeyondViewport: false });
+      await writeFile(destination, Buffer.from(screenshot.data, 'base64'));
+    }
+  }
+
+  for (const [name] of pages) {
+    for (const [width, height] of viewports) {
+      const destination = join(output, `${name}-${width}x${height}.png`);
       const png = await readFile(destination);
       assert.equal(png.toString('hex', 1, 4), '504e47', `${destination} is a PNG.`);
       assert.equal(png.readUInt32BE(16), width, `${destination} preserves viewport width.`);
@@ -58,5 +132,7 @@ try {
   }
   console.log(`Browser snapshot smoke passed for ${pages.length * viewports.length} viewports.`);
 } finally {
-  server.kill('SIGTERM');
+  cdp?.close();
+  await Promise.all([stop(browser), stop(server)]);
+  await rm(profile, { recursive: true, force: true });
 }

@@ -144,7 +144,7 @@ The project follows [Semantic Versioning](https://semver.org/). Before `1.0.0`, 
 
 ### Fixed
 
-- Browser snapshots now allow web fonts to settle before capture, preventing platform-dependent mobile layout diffs in CI.
+- Browser snapshots now use explicit CDP viewport emulation and wait for web fonts before capture, preventing platform-dependent mobile layout diffs in CI.
 - Settings account deletion now uses the shared risk signal and symmetric confirmation layout.
 - Field controls now retain their token height when adjacent grid fields contain helper or error text.
 - Compact Navigation now opens as a full-width Header panel without leaving permanent empty space, with an animated close state on its trigger.
