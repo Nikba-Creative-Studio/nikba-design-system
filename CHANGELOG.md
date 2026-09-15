@@ -8,6 +8,7 @@ The project follows [Semantic Versioning](https://semver.org/). Before `1.0.0`, 
 
 ### Added
 
+- Rich next-module previews and a verified circular reading order across all 28 component and pattern reference pages.
 - A single-source component catalog that consumes the public library.
 - Separate library and catalog build commands.
 - Baseline API and package verification.

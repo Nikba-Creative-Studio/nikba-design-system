@@ -1,5 +1,6 @@
 import { createToastManager, glassLevels, initAccordions, initDialogs, initForms, initNavigations, initPopovers, initTables, initTabs, initTooltips, setGlassLevel, setTheme, themes } from '../src/index.js';
 import logoUrl from '../src/logo.svg?url';
+import { componentCatalog } from './component-catalog.js';
 import './styles.css';
 
 const root = document.documentElement;
@@ -76,6 +77,36 @@ document.querySelector('[data-appearance-panel]')?.replaceChildren(
     `,
   }),
 );
+
+function enhanceNextComponentPreview() {
+  const currentSlug = location.pathname.match(/\/components\/([^/]+)\.html$/)?.[1];
+  const currentIndex = componentCatalog.findIndex(({ slug }) => slug === currentSlug);
+  const link = document.querySelector('.guidance-panel .nds-link[href]');
+  if (currentIndex < 0 || !link) return;
+
+  const nextItem = componentCatalog[(currentIndex + 1) % componentCatalog.length];
+  const label = document.createElement('span');
+  const body = document.createElement('span');
+  const title = document.createElement('strong');
+  const description = document.createElement('span');
+  const arrow = document.createElement('span');
+
+  label.className = 'component-next-preview__label';
+  label.textContent = `Next ${nextItem.type === 'pattern' ? 'pattern' : 'component'}`;
+  body.className = 'component-next-preview__body';
+  title.textContent = nextItem.title;
+  description.textContent = nextItem.description;
+  arrow.className = 'component-next-preview__arrow';
+  arrow.setAttribute('aria-hidden', 'true');
+  arrow.textContent = '↗';
+  body.append(title, description);
+
+  link.href = `/components/${nextItem.slug}.html`;
+  link.className = 'component-next-preview';
+  link.replaceChildren(label, body, arrow);
+}
+
+enhanceNextComponentPreview();
 
 function updatePressedState(selector, value) {
   document.querySelectorAll(`${selector} button`).forEach((button) => {

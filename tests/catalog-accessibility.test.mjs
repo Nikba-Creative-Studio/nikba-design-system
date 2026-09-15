@@ -1,9 +1,11 @@
 import assert from 'node:assert/strict';
 import { readdir, readFile } from 'node:fs/promises';
+import { componentCatalog } from '../playground/component-catalog.js';
 
 const playground = new URL('../playground/', import.meta.url);
 const componentDirectory = new URL('components/', playground);
-const files = ['index.html', 'foundations.html', 'mcp.html', ...(await readdir(componentDirectory)).filter((file) => file.endsWith('.html')).map((file) => `components/${file}`)];
+const componentFiles = (await readdir(componentDirectory)).filter((file) => file.endsWith('.html'));
+const files = ['index.html', 'foundations.html', 'mcp.html', ...componentFiles.map((file) => `components/${file}`)];
 
 for (const file of files) {
   const html = await readFile(new URL(file, playground), 'utf8');
@@ -16,6 +18,14 @@ for (const file of files) {
   assert.deepEqual(duplicateIds, [], `${file}: duplicate IDs: ${duplicateIds.join(', ')}.`);
   for (const image of html.match(/<img\b[^>]*>/g) ?? []) assert.match(image, /\salt="[^"]*"/, `${file}: images require alt attributes.`);
   for (const dialog of html.match(/<dialog\b[^>]*>/g) ?? []) assert.match(dialog, /aria-label(?:ledby)?="[^"]+"/, `${file}: Dialog requires an accessible name.`);
+}
+
+assert.equal(componentCatalog.length, componentFiles.length - 1, 'Every component reference page requires catalog metadata.');
+for (const [index, component] of componentCatalog.entries()) {
+  const next = componentCatalog[(index + 1) % componentCatalog.length];
+  const html = await readFile(new URL(`${component.slug}.html`, componentDirectory), 'utf8');
+  assert.match(html, /<section[^>]*class="guidance-panel[^>]*>[\s\S]*?<a class="nds-link[^>]*>Next (?:component|pattern): /, `${component.slug}.html: guidance requires a Next link.`);
+  assert.ok(html.includes(`href="/components/${next.slug}.html"`), `${component.slug}.html: Next must point to ${next.slug}.html.`);
 }
 
 console.log(`Catalog accessibility structure passed for ${files.length} pages.`);

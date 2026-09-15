@@ -506,6 +506,56 @@ button {
 .guidance-panel { display: grid; justify-items: start; gap: var(--nds-space-4); background: var(--nds-glass); }
 .guidance-panel .nds-link { margin-top: var(--nds-space-3); }
 
+.component-next-preview {
+  width: 100%;
+  margin-top: var(--nds-space-3);
+  padding: var(--nds-space-5);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: var(--nds-space-4);
+  border: var(--nds-border-width) solid var(--nds-border);
+  border-radius: var(--nds-radius-md);
+  background: var(--nds-surface);
+  color: var(--nds-text);
+  box-shadow: var(--nds-shadow-subtle);
+  text-decoration: none;
+  transition: border-color var(--nds-duration-fast) var(--nds-ease-out),
+    transform var(--nds-duration-fast) var(--nds-ease-out);
+}
+
+.component-next-preview__label {
+  grid-column: 1 / -1;
+  color: var(--nds-text-tertiary);
+  font-size: var(--nds-font-size-xs);
+  font-weight: var(--nds-font-weight-semibold);
+  letter-spacing: var(--nds-letter-spacing-label);
+  text-transform: uppercase;
+}
+
+.component-next-preview__body { min-width: 0; display: grid; gap: var(--nds-space-2); }
+.component-next-preview__body strong { font-size: clamp(1.35rem, 2.5vw, 2rem); letter-spacing: -0.035em; }
+.component-next-preview__body > span { max-width: 680px; color: var(--nds-text-secondary); line-height: 1.55; }
+
+.component-next-preview__arrow {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: var(--nds-border-width) solid var(--nds-border);
+  border-radius: 50%;
+  background: var(--nds-surface-alt);
+  font-size: var(--nds-font-size-lg);
+  line-height: 1;
+  transition: border-color var(--nds-duration-fast) var(--nds-ease-out),
+    transform var(--nds-duration-fast) var(--nds-ease-out);
+}
+
+.component-next-preview:hover { border-color: var(--nds-border-hover); transform: translateY(-2px); }
+.component-next-preview:hover .component-next-preview__arrow { border-color: var(--nds-border-hover); transform: translate(2px, -2px); }
+.component-next-preview:focus-visible { outline: var(--nds-focus-ring-width) solid var(--nds-focus); outline-offset: var(--nds-focus-ring-offset); }
+
 .material-example {
   min-height: 220px;
   padding: var(--nds-space-7);
