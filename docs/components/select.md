@@ -38,6 +38,7 @@ Use `.nds-select` when native validation, no JavaScript, or the platform picker 
 | `[data-nds-select-value]` | Form value updated after selection |
 | `initSelects(root?)` | Initializes keyboard, pointer, value, and popup behavior |
 | `nds:select-change` | Bubbling event with `{ value, option }` detail |
+| `data-nds-select-required` | Clears the connected Select error after a non-empty choice |
 | `.nds-select-shell` / `.nds-select` | Native Select fallback |
 | `.nds-select--small` | 36px native Select |
 | `.nds-select--medium` | 44px native Select |
@@ -63,6 +64,7 @@ Focus remains on the combobox trigger. `aria-activedescendant` identifies the ac
 - Keep `aria-controls`, `aria-haspopup="listbox"`, and `aria-expanded` on the trigger.
 - Put `role="listbox"` on the popup and `role="option"` with `aria-selected` on every option.
 - Use a hidden input when the value must be included in a native form submission.
+- Connect an error marked with `data-nds-select-error` when using `data-nds-select-required`.
 - Use `aria-disabled="true"` only for unavailable designed options. Native Select uses the `disabled` attribute.
 - Keep the complete option label in the DOM even if the closed trigger truncates it.
 - Use searchable autocomplete for hundreds of values.

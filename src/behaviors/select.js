@@ -43,6 +43,7 @@ export function initSelects(root = document) {
     const listbox = select.querySelector('[data-nds-select-listbox]');
     const value = select.querySelector('[data-nds-select-value]');
     const label = select.querySelector('[data-nds-select-label]');
+    const error = select.querySelector('[data-nds-select-error]');
     if (!trigger || !listbox || !value || !label || !listbox.id) continue;
 
     const options = enabledOptions(listbox);
@@ -50,6 +51,8 @@ export function initSelects(root = document) {
 
     const view = select.ownerDocument.defaultView;
     let activeIndex = Math.max(0, options.findIndex((option) => option.getAttribute('aria-selected') === 'true'));
+    const initialValue = value.value;
+    const initialLabel = label.textContent;
     let typeahead = '';
     let typeaheadTimer;
 
@@ -82,6 +85,10 @@ export function initSelects(root = document) {
       activeIndex = options.indexOf(option);
       value.value = nextValue;
       label.textContent = option.textContent.trim();
+      if (select.hasAttribute('data-nds-select-required')) {
+        trigger.setAttribute('aria-invalid', String(!nextValue));
+        if (error) error.hidden = Boolean(nextValue);
+      }
       close();
       trigger.focus();
       value.dispatchEvent(new Event('input', { bubbles: true }));
@@ -155,12 +162,26 @@ export function initSelects(root = document) {
       }
     };
 
+    const form = value.form;
+    const onFormReset = () => queueMicrotask(() => {
+      const initialOption = options.find((option) => (option.dataset.value ?? option.textContent.trim()) === initialValue);
+      value.value = initialValue;
+      label.textContent = initialLabel;
+      options.forEach((option) => option.setAttribute('aria-selected', String(option === initialOption)));
+      activeIndex = Math.max(0, initialOption ? options.indexOf(initialOption) : 0);
+      if (select.hasAttribute('data-nds-select-required')) {
+        trigger.setAttribute('aria-invalid', String(!initialValue));
+        if (error) error.hidden = Boolean(initialValue);
+      }
+    });
+
     trigger.setAttribute('aria-expanded', String(isOpen()));
     trigger.addEventListener('click', onTriggerClick);
     trigger.addEventListener('keydown', onTriggerKeyDown);
     listbox.addEventListener('pointerdown', onListboxPointerDown);
     listbox.addEventListener('click', onListboxClick);
     listbox.addEventListener('beforetoggle', onBeforeToggle);
+    form?.addEventListener('reset', onFormReset);
 
     const cleanup = () => {
       clearTimeout(typeaheadTimer);
@@ -172,6 +193,7 @@ export function initSelects(root = document) {
       listbox.removeEventListener('pointerdown', onListboxPointerDown);
       listbox.removeEventListener('click', onListboxClick);
       listbox.removeEventListener('beforetoggle', onBeforeToggle);
+      form?.removeEventListener('reset', onFormReset);
       initializedSelects.delete(select);
     };
 

@@ -11,6 +11,7 @@ class FakeNode extends EventTarget {
   }
 
   getAttribute(name) { return this.attributes.get(name) ?? null; }
+  hasAttribute(name) { return this.attributes.has(name); }
   setAttribute(name, value) { this.attributes.set(name, String(value)); }
   removeAttribute(name) { this.attributes.delete(name); }
   focus() { this.ownerDocument.activeElement = this; }
@@ -56,6 +57,8 @@ const value = new FakeNode();
 value.value = 'draft';
 const label = new FakeNode();
 label.textContent = 'Draft';
+const error = new FakeNode();
+error.hidden = false;
 const options = [
   new FakeOption('status-draft', 'Draft', 'draft', true),
   new FakeOption('status-review', 'In review', 'review'),
@@ -64,10 +67,12 @@ const options = [
 const listbox = new FakeListbox(options);
 const view = { innerWidth: 800, innerHeight: 600, addEventListener() {}, removeEventListener() {}, requestAnimationFrame(callback) { callback(); } };
 const ownerDocument = { activeElement: trigger, defaultView: view };
-[trigger, value, label, listbox, ...options].forEach((node) => { node.ownerDocument = ownerDocument; });
+[trigger, value, label, error, listbox, ...options].forEach((node) => { node.ownerDocument = ownerDocument; });
 
 const select = new FakeNode();
 select.ownerDocument = ownerDocument;
+select.setAttribute('data-nds-select-required', '');
+trigger.setAttribute('aria-invalid', 'true');
 select.matches = (selector) => selector === '[data-nds-select]';
 select.querySelectorAll = () => [];
 select.querySelector = (selector) => ({
@@ -75,6 +80,7 @@ select.querySelector = (selector) => ({
   '[data-nds-select-listbox]': listbox,
   '[data-nds-select-value]': value,
   '[data-nds-select-label]': label,
+  '[data-nds-select-error]': error,
 }[selector] ?? null);
 
 let changes = 0;
@@ -101,6 +107,8 @@ assert.equal(listbox.open, false);
 assert.equal(value.value, 'review');
 assert.equal(label.textContent, 'In review');
 assert.equal(options[1].getAttribute('aria-selected'), 'true');
+assert.equal(trigger.getAttribute('aria-invalid'), 'false');
+assert.equal(error.hidden, true, 'A valid choice clears the connected error.');
 assert.equal(changes, 1);
 assert.equal(ownerDocument.activeElement, trigger);
 

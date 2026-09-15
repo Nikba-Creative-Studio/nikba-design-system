@@ -57,6 +57,7 @@ const requiredContracts = [
   '.nds-select[aria-invalid=true]',
   '.nds-selectbox',
   '.nds-selectbox__trigger',
+  '.nds-selectbox__trigger[aria-invalid=true]',
   '.nds-selectbox__listbox',
   '.nds-selectbox__option',
   '.nds-choice-group',
