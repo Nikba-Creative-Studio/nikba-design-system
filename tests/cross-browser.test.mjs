@@ -61,6 +61,13 @@ async function verifyEngine(name) {
     await page.goto(baseUrl, { waitUntil: 'domcontentloaded' });
     await assertVisible(page.getByRole('heading', { level: 1 }), `${name}: Overview heading is visible.`);
     assert.equal(await page.locator('.catalog-nav__links a').count(), 4, `${name}: all primary destinations render.`);
+    await page.locator('[data-theme-controls] [data-value="graphite"]').click();
+    await page.locator('[data-glass-controls] [data-value="soft"]').click();
+    const glassFilter = await page.locator('.proof.nds-glass').evaluate((element) => {
+      const styles = getComputedStyle(element);
+      return styles.getPropertyValue('backdrop-filter') || styles.getPropertyValue('-webkit-backdrop-filter');
+    });
+    assert.match(glassFilter, /blur\(8px\)/, `${name}: Graphite Soft applies its backdrop blur.`);
 
     await page.setViewportSize({ width: 390, height: 844 });
     for (const link of await page.locator('.catalog-nav__links a').all()) {

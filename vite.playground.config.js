@@ -26,6 +26,7 @@ export default defineConfig({
   root: resolve(import.meta.dirname, 'playground'),
   plugins: [prefixCatalogLinks()],
   build: {
+    cssMinify: 'esbuild',
     outDir: resolve(import.meta.dirname, 'dist-playground'),
     emptyOutDir: true,
     rollupOptions: {

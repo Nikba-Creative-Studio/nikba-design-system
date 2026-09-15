@@ -3,6 +3,7 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   build: {
+    cssMinify: 'esbuild',
     lib: {
       entry: resolve(import.meta.dirname, 'src/index.js'),
       name: 'NikbaDesignSystem',

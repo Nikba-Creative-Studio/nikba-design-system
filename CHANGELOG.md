@@ -8,6 +8,7 @@ The project follows [Semantic Versioning](https://semver.org/). Before `1.0.0`, 
 
 ### Fixed
 
+- Production CSS now preserves standard and WebKit backdrop filters so Graphite Soft glass visibly blurs its backdrop across supported browsers.
 - The complete home-page catalog now reveals when its first edge enters a compact viewport, including long single-column layouts on iPhone.
 
 ## 0.1.0-alpha.2 - 2026-09-15
