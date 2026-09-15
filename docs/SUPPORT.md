@@ -32,3 +32,5 @@ The JavaScript bundle has no framework dependency. Applications import only the 
 - Catalog effects and examples are not part of the published runtime bundle.
 
 Run `npm run test:budgets` after a library build. A budget increase requires a changelog entry that names the user-facing capability responsible for the growth.
+
+Representative Overview, Form, and Destructive Confirmation pages have approved desktop and compact visual baselines. CI compares a sampled pixel grid with a mean channel-difference limit of 10 and permits at most six sampled channels to differ by more than 24 points. Raw screenshots remain available as artifacts for human review.

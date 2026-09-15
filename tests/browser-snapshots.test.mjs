@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import { spawn } from 'node:child_process';
 import { mkdir, readFile, rm } from 'node:fs/promises';
 import { join } from 'node:path';
+import { pixelGrid, readPng } from './helpers/png-grid.mjs';
 
 const repository = new URL('..', import.meta.url).pathname;
 const output = join(repository, 'artifacts/browser');
@@ -14,6 +15,7 @@ const pages = [
   ['confirmation', '/components/destructive-confirmation.html#demo'],
 ];
 const viewports = [[1280, 900], [390, 844]];
+const baselines = JSON.parse(await readFile(join(repository, 'tests/visual-baselines.json'), 'utf8'));
 
 function run(command, args) {
   return new Promise((resolve, reject) => {
@@ -44,6 +46,14 @@ try {
       assert.equal(png.readUInt32BE(16), width, `${destination} preserves viewport width.`);
       assert.equal(png.readUInt32BE(20), height, `${destination} preserves viewport height.`);
       assert.ok(png.byteLength > 10_000, `${destination} contains a rendered page.`);
+      const baseline = baselines[`${name}-${width}x${height}.png`];
+      assert.ok(baseline, `${destination} has an approved baseline.`);
+      const currentGrid = pixelGrid(readPng(png), 4, 4);
+      const channelDifferences = currentGrid.map((value, index) => Math.abs(value - baseline.grid[index]));
+      const meanDifference = channelDifferences.reduce((total, value) => total + value, 0) / channelDifferences.length;
+      const changedChannels = channelDifferences.filter((value) => value > 24).length;
+      assert.ok(meanDifference <= 10, `${destination} mean visual difference ${meanDifference.toFixed(2)} exceeds 10.`);
+      assert.ok(changedChannels <= 6, `${destination} changed ${changedChannels} sampled channels beyond the 24-point threshold.`);
     }
   }
   console.log(`Browser snapshot smoke passed for ${pages.length * viewports.length} viewports.`);

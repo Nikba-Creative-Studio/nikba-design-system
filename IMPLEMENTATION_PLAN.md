@@ -203,10 +203,10 @@ Goal: prove that the package works in intended environments and prepare a stable
 - [x] Add Blade integration examples.
 - [x] Validate Livewire DOM updates and interaction lifecycle.
 - [x] Evaluate Filament integration and document supported customization boundaries.
-- [ ] Add CI for builds, package validation, behavior, accessibility, and selected visual regression checks.
+- [x] Add CI for builds, package validation, behavior, accessibility, and selected visual regression checks.
   - [x] Run builds, API and behavior contracts, package validation, and packed-consumer builds on supported Node versions.
   - [x] Add catalog accessibility structure checks and cross-viewport browser snapshot artifacts.
-  - [ ] Add approved visual baselines and pixel-difference thresholds.
+  - [x] Add approved representative visual baselines and sampled pixel-difference thresholds.
 - [x] Establish browser coverage, bundle-size budgets, and performance checks.
 - [x] Complete contribution, release, deprecation, migration, and support policies.
 - [ ] Run a full accessibility and API audit before `1.0.0`.
@@ -261,7 +261,7 @@ Open decisions belong in the relevant component document. Once a decision ships 
 
 Begin Phase 4 in this order:
 
-1. Add approved visual baselines and pixel-difference thresholds.
-2. Run a full accessibility and API audit before `1.0.0`.
+1. Run a full accessibility and API audit before `1.0.0`.
+2. Resolve audit findings and prepare the first release candidate.
 
 Each interactive component ships with an explicit initializer, cleanup contract, native fallback where available, and targeted behavior tests.
