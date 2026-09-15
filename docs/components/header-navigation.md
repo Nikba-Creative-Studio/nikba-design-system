@@ -56,6 +56,7 @@ Call `initNavigations()` after markup exists. The initializer is idempotent and 
 - The outside-action listener exists only while the compact panel is open.
 - Changes emit `nds:navigation-change` with `{ open }`.
 - Without JavaScript, Navigation remains visible and wraps below the brand on narrow screens.
+- The enhanced compact panel overlays following content and never reserves empty layout space while closed.
 
 The desktop inner layout uses equal flexible side columns around Navigation. Brand stays aligned to the start, Navigation remains centered, and global actions align to the end even when their widths differ. Compact layout keeps brand, global actions, and Menu control on one balanced row while space permits, then moves actions below at the smallest supported width.
 

@@ -28,7 +28,11 @@
 .nds-header__link:focus-visible, .nds-header__menu-trigger:focus-visible { outline: var(--nds-focus-ring-width) solid var(--nds-focus); outline-offset: var(--nds-focus-ring-offset); }
 .nds-header__actions { display: flex; align-items: center; justify-self: end; gap: var(--nds-space-2); }
 .nds-header__menu-trigger { width: var(--nds-control-height-md); height: var(--nds-control-height-md); padding: 0; display: none; place-items: center; border: var(--nds-border-width) solid var(--nds-border); border-radius: var(--nds-radius-pill); background: transparent; color: var(--nds-text); cursor: pointer; }
-.nds-header__menu-trigger svg { width: 1.125rem; height: 1.125rem; stroke: currentColor; stroke-width: 1.75; fill: none; }
+.nds-header__menu-trigger svg { width: 1.125rem; height: 1.125rem; overflow: visible; stroke: currentColor; stroke-width: 1.75; stroke-linecap: round; fill: none; }
+.nds-header__menu-trigger svg path { transform-box: fill-box; transform-origin: center; transition: transform var(--nds-duration-fast) var(--nds-ease-standard), opacity var(--nds-duration-fast) var(--nds-ease-standard); }
+.nds-header__menu-trigger[aria-expanded='true'] svg path:first-child { transform: translateY(5px) rotate(45deg); }
+.nds-header__menu-trigger[aria-expanded='true'] svg path:nth-child(2) { opacity: 0; }
+.nds-header__menu-trigger[aria-expanded='true'] svg path:last-child { transform: translateY(-5px) rotate(-45deg); }
 
 @media (max-width: 48rem) {
   .nds-header__inner { min-height: 4rem; grid-template-columns: minmax(0, 1fr) auto auto; gap: var(--nds-space-3); }
@@ -49,3 +53,7 @@
 }
 
 @media (forced-colors: active) { .nds-header { border-color: CanvasText; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .nds-header__menu-trigger svg path { transition: none; }
+}
