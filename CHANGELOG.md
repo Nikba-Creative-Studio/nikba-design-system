@@ -6,8 +6,11 @@ The project follows [Semantic Versioning](https://semver.org/). Before `1.0.0`, 
 
 ## Unreleased
 
+## 0.1.0-alpha.2 - 2026-09-15
+
 ### Added
 
+- The first public npm prerelease, available as `@nikba/design-system@next`.
 - A gated GitHub Pages deployment that publishes the verified catalog from `main` with project-base-safe static and runtime navigation.
 - A structured destructive-confirmation target surface for identity, scope metadata, risk, and action placement.
 - Progressive Select enhancement that preserves native form values, reset, validation, labels, option groups, and no-JavaScript fallback.

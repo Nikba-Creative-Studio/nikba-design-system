@@ -10,7 +10,7 @@
     "src/tokens"
   ],
   "bin": {
-    "nikba-design-system-mcp": "./mcp/server.js"
+    "nikba-design-system-mcp": "mcp/server.js"
   },
   "main": "./dist/nikba-design-system.js",
   "module": "./dist/nikba-design-system.js",
@@ -67,6 +67,13 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Nikba-Creative-Studio/nikba-design-system.git"
+  },
+  "homepage": "https://nikba-creative-studio.github.io/nikba-design-system/",
+  "bugs": {
+    "url": "https://github.com/Nikba-Creative-Studio/nikba-design-system/issues"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "devDependencies": {
     "@modelcontextprotocol/client": "^2.0.0",

@@ -56,6 +56,12 @@ CI also checks catalog accessibility structure, compares representative desktop 
 
 ## Usage
 
+Install the current prerelease from npm:
+
+```bash
+npm install @nikba/design-system@next
+```
+
 ```js
 import '@nikba/design-system/css';
 import { setGlassLevel, setTheme } from '@nikba/design-system';
