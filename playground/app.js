@@ -430,7 +430,7 @@ document.addEventListener('click', async event => {
   const button = event.target.closest('[data-copy-example]');
   if (!button) return;
   const example = button.closest('.implementation-example');
-  const status = button.closest('.implementation-panel').querySelector('[role="status"]');
+  const status = button.closest('.implementation-panel, .variant-code-panel').querySelector('[role="status"]');
   try {
     await navigator.clipboard.writeText(example.querySelector('code').textContent);
     status.textContent = 'Example copied.';

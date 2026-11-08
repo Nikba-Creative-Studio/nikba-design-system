@@ -1799,7 +1799,7 @@ button {
 .implementation-copy-status { min-height: 1.5em; }
 
 /* Catalog-only syntax colors: rendered at build time, no browser highlighter. */
-.implementation-panel {
+.implementation-panel, .variant-code-panel {
   --code-tag: #8a3655;
   --code-attribute: #705315;
   --code-string: #246548;
@@ -1807,7 +1807,7 @@ button {
   --code-function: #285e85;
   --code-comment: #64665e;
 }
-[data-theme='graphite'] .implementation-panel {
+[data-theme='graphite'] .implementation-panel, .variant-code-panel {
   --code-tag: #e0a1b6;
   --code-attribute: #d8c18c;
   --code-string: #a2c8ac;
@@ -1830,3 +1830,8 @@ button {
 @media (forced-colors: active) {
   .implementation-example .hljs span { color: CanvasText; }
 }
+
+.variant-code-panel { min-width: 0; width: 100%; margin-top: var(--nds-space-4); }
+.variant-code { border-top: 1px solid var(--nds-border); padding-block: var(--nds-space-3); min-width: 0; }
+.variant-code summary { cursor: pointer; color: var(--nds-text-secondary); overflow-wrap: anywhere; min-height: 44px; align-content: center; }
+.variant-code summary code { color: var(--nds-text); font-size: 0.8rem; }

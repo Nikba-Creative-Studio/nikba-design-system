@@ -57,8 +57,8 @@
     "verify": "npm run build && npm test && npm run test:consumer && npm pack --dry-run",
     "test:release": "node scripts/check-release.mjs",
     "verify:release": "npm run verify && npm run test:release && npm audit --omit=dev --audit-level=high",
-    "examples:generate": "node scripts/catalog-examples.mjs",
-    "test:examples": "node scripts/catalog-examples.mjs --check"
+    "examples:generate": "node scripts/variant-examples.mjs && node scripts/catalog-examples.mjs",
+    "test:examples": "node scripts/variant-examples.mjs --check && node scripts/catalog-examples.mjs --check"
   },
   "keywords": [
     "design-system",
@@ -84,6 +84,7 @@
     "@modelcontextprotocol/client": "^2.4.0",
     "esbuild": "^0.28.2",
     "highlight.js": "^11.12.0",
+    "parse5": "^8.1.1",
     "playwright": "^1.65.0",
     "vite": "^8.3.6"
   },
