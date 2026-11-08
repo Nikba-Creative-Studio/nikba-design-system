@@ -31,7 +31,7 @@ export function initComboboxes(root = document) {
     list.hidden = true;
     let active = -1;
     let visible = [];
-    const sync = () => { input.value = select.selectedOptions[0]?.value ? select.selectedOptions[0].textContent : ''; };
+    const sync = () => { input.disabled = select.disabled || select.matches(':disabled'); input.value = select.selectedOptions[0]?.value ? select.selectedOptions[0].textContent : ''; };
     const close = () => { list.hidden = true; input.setAttribute('aria-expanded', 'false'); input.removeAttribute('aria-activedescendant'); };
     const render = () => {
       visible = [...select.options].filter(o => o.value && !o.disabled && !o.parentElement.disabled && o.textContent.toLocaleLowerCase().includes(input.value.toLocaleLowerCase()));
@@ -50,6 +50,12 @@ export function initComboboxes(root = document) {
       });
       if (!visible.length) { const empty = doc.createElement('div'); empty.textContent = 'No matching options'; empty.setAttribute('role', 'status'); list.append(empty); }
       list.hidden = false;
+      const rect = input.getBoundingClientRect();
+      const below = doc.defaultView.innerHeight - rect.bottom;
+      const above = rect.top;
+      list.style.top = below >= 160 || below >= above ? '100%' : 'auto';
+      list.style.bottom = list.style.top === 'auto' ? '100%' : 'auto';
+      list.style.maxHeight = Math.max(44, Math.min(256, Math.max(below, above) - 16)) + 'px';
       input.setAttribute('aria-expanded', 'true');
     };
     const choose = index => {
@@ -78,6 +84,8 @@ export function initComboboxes(root = document) {
     const change = () => { sync(); input.removeAttribute('aria-invalid'); };
     select.before(shell); shell.append(input, list, select);
     select.hidden = true;
+    const observer = new doc.defaultView.MutationObserver(sync);
+    observer.observe(select, { attributes: true, attributeFilter: ['disabled'], subtree: true });
     input.addEventListener('input', render);
     input.addEventListener('keydown', keydown);
     input.addEventListener('blur', blur);
@@ -91,6 +99,7 @@ export function initComboboxes(root = document) {
       input.removeEventListener('input', render); input.removeEventListener('keydown', keydown); input.removeEventListener('blur', blur);
       select.removeEventListener('change', change); select.removeEventListener('invalid', invalid);
       select.form?.removeEventListener('reset', reset); label?.removeEventListener('click', labelClick);
+      observer.disconnect();
       shell.before(select); select.hidden = false; shell.remove(); mounted.delete(select);
     };
     mounted.set(select, cleanup);
