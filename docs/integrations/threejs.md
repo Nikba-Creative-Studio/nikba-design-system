@@ -1,6 +1,6 @@
 # Three.js Integration Boundary
 
-Status: Alpha guidance for product-owned immersive media
+Status: Beta guidance for product-owned immersive media
 
 ## Decision
 

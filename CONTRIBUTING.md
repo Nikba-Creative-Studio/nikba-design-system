@@ -1,6 +1,6 @@
 # Contributing
 
-Nikba Design System is in Alpha. Open an issue before proposing a new component or a breaking public API change.
+Nikba Design System is in Beta. Open an issue before proposing a new component or a breaking public API change.
 
 ## Language
 

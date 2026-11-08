@@ -12,6 +12,12 @@ Before `1.0.0`, a minor release may contain a breaking change. Every such change
 
 Catalog-only styling and copy are not public API. Accessibility regressions, lost keyboard behavior, and changed event semantics are treated as public defects even when a selector name does not change.
 
+## Pre-1.0 stages
+
+- **Alpha** establishes the architecture and explores the public surface. Contracts may change quickly and only the latest Alpha is supported.
+- **Beta** is a public preview with complete documented contracts, automated package and browser verification, and migration notes for every breaking change. APIs are stabilizing, but compatible refinements may still land before `1.0.0`.
+- **Release candidate** freezes planned public API changes. Work is limited to release blockers, defects, documentation, and final compatibility validation before `1.0.0`.
+
 ## Deprecation
 
 Deprecate an API only when a supported replacement exists. Mark it in its component document and changelog, add a migration example, and preserve it for at least one minor release after `1.0.0`. CSS deprecations keep a compatibility alias when practical. JavaScript deprecations may warn once in development-facing documentation; the runtime must not repeatedly log during ordinary use.
@@ -35,4 +41,4 @@ Removal requires a major release after `1.0.0`. Security, privacy, or severe acc
 
 Supported versions and browsers are listed in `docs/SUPPORT.md`. Report reproducible defects through the repository issue form. Include the package version, browser and operating system, minimal markup, expected and actual behavior, and accessibility impact where applicable.
 
-The current alpha supports the latest published alpha only. After `1.0.0`, the current major receives fixes; the previous major receives critical security and severe accessibility fixes for six months after the next major release. Security-sensitive reports should use the repository's private vulnerability-reporting channel when enabled rather than a public issue.
+The current beta supports the latest published beta only. Alpha releases are superseded and receive no further fixes. After `1.0.0`, the current major receives fixes; the previous major receives critical security and severe accessibility fixes for six months after the next major release. Security-sensitive reports should use the repository's private vulnerability-reporting channel when enabled rather than a public issue.

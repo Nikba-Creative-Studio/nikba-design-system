@@ -11,7 +11,7 @@ The browser baseline is the latest two stable releases of Chrome, Edge, Firefox,
 - `@nikba/design-system` provides an ES module.
 - `@nikba/design-system/css` provides the compiled CSS bundle.
 - Public CSS classes and custom properties use the `nds-` prefix.
-- No CommonJS or UMD JavaScript contract is supported during Alpha.
+- No CommonJS or UMD JavaScript contract is supported during Beta.
 
 ## Progressive enhancement
 

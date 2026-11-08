@@ -70,7 +70,7 @@ Responsive semantic spacing is available through `--nds-page-gutter`, `--nds-sec
 
 Duration tokens range from instant through slow. `--nds-ease-standard` is used for direct state changes; `--nds-ease-out` is used for entrances and larger spatial changes.
 
-Theme elevation roles are `--nds-elevation-subtle` and `--nds-elevation-raised`. Their legacy aliases remain available as `--nds-shadow-subtle` and `--nds-shadow-elevated` during Alpha.
+Theme elevation roles are `--nds-elevation-subtle` and `--nds-elevation-raised`. Their legacy aliases remain available as `--nds-shadow-subtle` and `--nds-shadow-elevated` during Beta.
 
 ### Layering and breakpoints
 

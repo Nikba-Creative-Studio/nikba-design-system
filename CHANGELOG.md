@@ -6,6 +6,21 @@ The project follows [Semantic Versioning](https://semver.org/). Before `1.0.0`, 
 
 ## Unreleased
 
+## 0.1.0-beta.0 - 2026-11-08
+
+### Changed
+
+- Promoted the package, catalog, documentation, and support policy from Alpha to Beta after the public API, accessibility structure, bundle budgets, consumer build, MCP contract, and cross-browser interaction suite reached the Beta quality gate.
+- Catalog release metadata now identifies Beta 01 as a public preview across every presentation and component page.
+
+### Compatibility
+
+- No migration is required from `0.1.0-alpha.3`; the documented CSS, JavaScript, package, and MCP contracts remain compatible.
+
+### Security
+
+- Updated the MCP client and server SDKs, Zod, Vite, and Playwright to patched versions; the final dependency audit reports zero known vulnerabilities.
+
 ## 0.1.0-alpha.3 - 2026-09-15
 
 ### Fixed

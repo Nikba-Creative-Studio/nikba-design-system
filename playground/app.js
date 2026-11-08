@@ -6,7 +6,7 @@ import './styles.css';
 const root = document.documentElement;
 const themeKey = 'nds-catalog-theme';
 const glassKey = 'nds-catalog-glass';
-const catalogRelease = 'Alpha 02';
+const catalogRelease = 'Beta 01';
 const catalogBase = import.meta.env.BASE_URL;
 
 function catalogPath(path) {

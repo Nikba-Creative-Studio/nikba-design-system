@@ -4,7 +4,7 @@ Neutral interface foundations, Onest typography, and selective glassmorphism for
 
 [Open the live component catalog](https://nikba-creative-studio.github.io/nikba-design-system/).
 
-> Status: `0.1.0-alpha.2` — active development. Public APIs may change before `1.0.0`.
+> Status: `0.1.0-beta.0` — public preview. Public APIs are stabilizing and may still change before `1.0.0`.
 
 ## Principles
 
