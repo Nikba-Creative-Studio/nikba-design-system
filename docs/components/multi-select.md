@@ -1,0 +1,3 @@
+# Multi-select
+
+Use a fieldset with a legend, a labeled search input, labeled native checkboxes and a live status region. Apply `data-nds-multi-select` and call `initMultiSelects()`. Filtering preserves checked values; native form submission and reset remain authoritative. Without JavaScript all choices remain available. Cleanup removes filtering and listeners.

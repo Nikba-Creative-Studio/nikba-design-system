@@ -1,3 +1,4 @@
+import { initMultiSelects } from '../behaviors/multi-select.js';
 import { initComboboxes } from '../behaviors/combobox.js';
 import { initAccordions } from '../behaviors/accordion.js';
 import { initDialogs } from '../behaviors/dialog.js';
@@ -10,6 +11,7 @@ import { initTabs } from '../behaviors/tabs.js';
 import { initTooltips } from '../behaviors/tooltip.js';
 
 const definitions = [
+  ['[data-nds-multi-select]', initMultiSelects],
   ['[data-nds-combobox]', initComboboxes],
   ['[data-nds-accordion="single"]', initAccordions],
   ['[data-nds-tabs]', initTabs],

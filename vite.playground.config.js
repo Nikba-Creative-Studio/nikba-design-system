@@ -31,6 +31,7 @@ export default defineConfig({
     emptyOutDir: true,
     rollupOptions: {
       input: [
+        resolve(import.meta.dirname, 'playground/components/multi-select.html'),
         resolve(import.meta.dirname, 'playground/components/combobox.html'),
         resolve(import.meta.dirname, 'playground/index.html'),
         resolve(import.meta.dirname, 'playground/foundations.html'),
