@@ -32,7 +32,7 @@ jobs:
       - name: Install locked dependencies
         run: npm ci
       - name: Build and verify package
-        run: npm run verify
+        run: npm run verify:release
 
   browser:
     name: Browser accessibility and snapshots

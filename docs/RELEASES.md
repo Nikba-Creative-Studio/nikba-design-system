@@ -27,7 +27,7 @@ Removal requires a major release after `1.0.0`. Security, privacy, or severe acc
 ## Release procedure
 
 1. Start from a clean `main` branch and install with `npm ci`.
-2. Run `npm run verify` and `npm run test:browser`.
+2. Run `npm run verify:release` and `npm run test:browser`.
 3. Complete keyboard, theme, responsive, and assistive-technology checks required by the changed contracts.
 4. Move relevant Unreleased entries under a version and ISO date in `CHANGELOG.md`.
 5. Update `docs/MIGRATIONS.md` for every breaking change and deprecation.
@@ -42,3 +42,7 @@ Removal requires a major release after `1.0.0`. Security, privacy, or severe acc
 Supported versions and browsers are listed in `docs/SUPPORT.md`. Report reproducible defects through the repository issue form. Include the package version, browser and operating system, minimal markup, expected and actual behavior, and accessibility impact where applicable.
 
 The current beta supports the latest published beta only. Alpha releases are superseded and receive no further fixes. After `1.0.0`, the current major receives fixes; the previous major receives critical security and severe accessibility fixes for six months after the next major release. Security-sensitive reports should use the repository's private vulnerability-reporting channel when enabled rather than a public issue.
+
+## Automated release checks
+
+`npm run verify:release` verifies the build, public contracts, packed consumer, release metadata, and production dependency audit. High and critical production advisories block the release. The published archive includes CHANGELOG.md so consumers can inspect compatibility changes.

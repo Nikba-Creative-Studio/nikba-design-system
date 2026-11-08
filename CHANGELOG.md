@@ -6,6 +6,11 @@ The project follows [Semantic Versioning](https://semver.org/). Before `1.0.0`, 
 
 ## Unreleased
 
+### Added
+
+- Release metadata validation and a production dependency audit gate in CI.
+- Changelog included in the npm package.
+
 ## 0.1.0-beta.0 - 2026-11-08
 
 ### Changed
