@@ -1,6 +1,6 @@
 # Migration Guide
 
-No migration is required when moving from `0.1.0-alpha.3` to `0.1.0-beta.0`; the documented CSS, JavaScript, package, and MCP contracts remain compatible. This document becomes the chronological source for breaking changes and deprecations.
+No migration is required when moving from `0.1.0-alpha.3` to `0.1.0-beta.1`; the documented CSS, JavaScript, package, and MCP contracts remain compatible. This document becomes the chronological source for breaking changes and deprecations.
 
 ## Entry format
 

@@ -6,12 +6,15 @@ The project follows [Semantic Versioning](https://semver.org/). Before `1.0.0`, 
 
 ## Unreleased
 
+## 0.1.0-beta.1 - 2026-11-08
+
 ### Changed
 
 - Raw bundle budget increases from 140 to 150 KiB for searchable controls, removable selections, adaptive popup placement and Data Table pagination/bulk selection; gzip limits remain unchanged.
 
 ### Added
 
+- Copyable, syntax-highlighted implementation examples and contextual code for 237 component variations.
 - Searchable Combobox and Multi-select, plus a Data Table composition with local filtering, sorting, pagination, responsive browser checks and dynamic DOM lifecycle support.
 
 - Release metadata validation and a production dependency audit gate in CI.
