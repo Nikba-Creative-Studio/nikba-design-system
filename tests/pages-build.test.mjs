@@ -17,7 +17,8 @@ async function htmlFiles(directory) {
 }
 
 const files = await htmlFiles(output);
-assert.equal(files.length, 32, 'GitHub Pages build includes every catalog page.');
+const sourceFiles = await htmlFiles(new URL('../playground/', import.meta.url));
+assert.equal(files.length, sourceFiles.length, 'GitHub Pages build includes every catalog page.');
 
 for (const file of files) {
   const html = await readFile(file, 'utf8');

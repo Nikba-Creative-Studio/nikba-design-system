@@ -18,7 +18,7 @@ Budgets apply to the minified library artifacts produced by `npm run build:libra
 | --- | ---: | --- |
 | CSS | 20 KiB | Foundations, components, patterns, themes |
 | JavaScript | 12 KiB | Optional initializers and lifecycle utilities |
-| Combined raw output | 140 KiB | Review guard for uncompressed growth |
+| Combined raw output | 150 KiB | Review guard for uncompressed growth |
 
 The JavaScript bundle has no framework dependency. Applications import only the initializers they use so their bundler can remove unused exports. The CSS package intentionally ships as one stable entry while the component contract remains in beta.
 

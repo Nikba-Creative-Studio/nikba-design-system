@@ -13,6 +13,6 @@ const sizes = {
 
 assert.ok(sizes.cssGzip <= 20 * kibibyte, `CSS gzip budget exceeded: ${sizes.cssGzip} bytes.`);
 assert.ok(sizes.javascriptGzip <= 12 * kibibyte, `JavaScript gzip budget exceeded: ${sizes.javascriptGzip} bytes.`);
-assert.ok(sizes.combinedRaw <= 140 * kibibyte, `Combined raw budget exceeded: ${sizes.combinedRaw} bytes.`);
+assert.ok(sizes.combinedRaw <= 150 * kibibyte, `Combined raw budget exceeded: ${sizes.combinedRaw} bytes.`);
 
 console.log(`Bundle budgets passed: CSS ${sizes.cssGzip} B gzip, JavaScript ${sizes.javascriptGzip} B gzip, ${sizes.combinedRaw} B raw.`);

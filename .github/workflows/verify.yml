@@ -86,8 +86,10 @@ jobs:
         run: npm run test:cross-browser
       - name: Verify searchable controls and Data Table
         run: |
-          node tests/combobox-browser.test.mjs
-          node tests/modules-browser.test.mjs
+          for engine in chromium firefox webkit; do
+            NDS_BROWSER=$engine node tests/combobox-browser.test.mjs
+            NDS_BROWSER=$engine node tests/modules-browser.test.mjs
+          done
 
   deploy-pages:
     name: Deploy GitHub Pages

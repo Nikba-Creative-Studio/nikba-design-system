@@ -1,10 +1,11 @@
-import { chromium } from 'playwright';
+import { chromium, firefox, webkit } from 'playwright';
 import assert from 'node:assert/strict';
 import { spawn } from 'node:child_process';
 const server=spawn('node',['node_modules/vite/bin/vite.js','--config','vite.playground.config.js','--port','4199'],{cwd:process.cwd()});
 try {
 await new Promise(r=>setTimeout(r,1000));
-const browser=await chromium.launch({executablePath:process.env.NDS_CHROMIUM_PATH || undefined});
+const engine = process.env.NDS_BROWSER || 'chromium';
+const browser=await ({chromium,firefox,webkit}[engine]).launch({executablePath:engine === 'chromium' ? process.env.NDS_CHROMIUM_PATH || undefined : undefined});
 for(const width of [390,776,1280]){
 const page=await browser.newPage({viewport:{width,height:844}});
 await page.goto('http://localhost:4199/components/combobox.html');
