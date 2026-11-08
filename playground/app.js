@@ -1,3 +1,4 @@
+import { initComboboxes } from '../src/behaviors/combobox.js';
 import { createToastManager, glassLevels, initAccordions, initDialogs, initForms, initNavigations, initPopovers, initSelects, initTables, initTabs, initTooltips, setGlassLevel, setTheme, themes } from '../src/index.js';
 import logoUrl from '../src/logo.svg?url';
 import { componentCatalog } from './component-catalog.js';
@@ -411,3 +412,5 @@ if ('IntersectionObserver' in window) {
 } else {
   document.querySelectorAll('.reveal').forEach((element) => element.classList.add('is-visible'));
 }
+
+initComboboxes();

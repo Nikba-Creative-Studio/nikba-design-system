@@ -1,3 +1,4 @@
+import { initComboboxes } from '../behaviors/combobox.js';
 import { initAccordions } from '../behaviors/accordion.js';
 import { initDialogs } from '../behaviors/dialog.js';
 import { initForms } from '../behaviors/form.js';
@@ -9,6 +10,7 @@ import { initTabs } from '../behaviors/tabs.js';
 import { initTooltips } from '../behaviors/tooltip.js';
 
 const definitions = [
+  ['[data-nds-combobox]', initComboboxes],
   ['[data-nds-accordion="single"]', initAccordions],
   ['[data-nds-tabs]', initTabs],
   ['dialog[data-nds-dialog]', initDialogs],

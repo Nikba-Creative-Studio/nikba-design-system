@@ -38,3 +38,5 @@
 @import './styles/settings.css';
 @import './styles/confirmation.css';
 @import './styles/touch-targets.css';
+
+@import './styles/combobox.css';

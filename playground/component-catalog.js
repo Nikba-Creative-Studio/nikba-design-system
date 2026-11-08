@@ -5,6 +5,7 @@ export const componentCatalog = Object.freeze([
   { slug: 'field', title: 'Field', description: 'Labels, guidance, errors, required values, and responsive composition.' },
   { slug: 'input-textarea', title: 'Input and Textarea', description: 'Text entry, sizes, adornments, validation, and character limits.' },
   { slug: 'select', title: 'Select', description: 'Designed listbox selection with native sizes, groups, validation, and fallback.' },
+  { slug: 'combobox', title: 'Combobox', description: 'Searchable single selection with keyboard navigation and native form submission.' },
   { slug: 'checkbox-radio', title: 'Checkbox and Radio', description: 'Independent and exclusive selection, groups, cards, and mixed state.' },
   { slug: 'switch', title: 'Switch', description: 'Immediate binary settings, sizes, settings cards, and async state.' },
   { slug: 'card', title: 'Card', description: 'Semantic content grouping, density, depth, media, and interactive variants.' },

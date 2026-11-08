@@ -29,3 +29,5 @@ export function setGlassLevel(level, target = document.documentElement) {
 
   target.dataset.glass = level;
 }
+
+export { initComboboxes } from './behaviors/combobox.js';
