@@ -1,3 +1,4 @@
+import { initDataTables } from '../src/behaviors/data-table.js';
 import { initMultiSelects } from '../src/behaviors/multi-select.js';
 import { initComboboxes } from '../src/behaviors/combobox.js';
 import { createToastManager, glassLevels, initAccordions, initDialogs, initForms, initNavigations, initPopovers, initSelects, initTables, initTabs, initTooltips, setGlassLevel, setTheme, themes } from '../src/index.js';
@@ -417,3 +418,5 @@ if ('IntersectionObserver' in window) {
 initComboboxes();
 
 initMultiSelects();
+
+initDataTables();

@@ -43,3 +43,9 @@
   .nds-table-scroll { border-color: CanvasText; }
   .nds-table tbody tr[data-selected='true'] { outline: 2px solid Highlight; outline-offset: -2px; }
 }
+
+[data-nds-data-table] { min-width: 0; max-width: 100%; }
+[data-nds-data-table] .nds-table-scroll { width: 100%; max-width: 100%; overflow-x: auto; }
+[data-nds-data-table] .nds-table { min-width: 0; width: 100%; }
+[data-nds-data-table] th, [data-nds-data-table] td { white-space: normal; overflow-wrap: anywhere; }
+[data-nds-data-table] [data-nds-sort] { white-space: normal; padding-inline: var(--nds-space-2); }

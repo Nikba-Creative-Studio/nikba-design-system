@@ -24,6 +24,7 @@ export const componentCatalog = Object.freeze([
   { slug: 'header-navigation', title: 'Header and Navigation', description: 'Container-aligned product identity, primary destinations, actions, and resilient compact disclosure.' },
   { slug: 'breadcrumb-pagination', title: 'Breadcrumb and Pagination', description: 'Hierarchy and stable result-page movement with current, disabled, condensed, and responsive states.' },
   { slug: 'table', title: 'Table', description: 'Semantic structured data with sorting, selection, density, overflow, numeric, and empty states.' },
+  { slug: 'data-table', title: 'Data Table', description: 'Integrated local search, sorting and pagination with announced results.' },
   { slug: 'product-states', title: 'Product States', description: 'Empty, no-result, loading, error, and success compositions with clear recovery and announcement guidance.', type: 'pattern' },
   { slug: 'search-filter', title: 'Search and Filter', description: 'Durable query forms, explicit criteria, active filters, result counts, responsive layout, and empty recovery.', type: 'pattern' },
   { slug: 'form-validation', title: 'Form Validation and Submission', description: 'Native constraints, error summary focus, inline recovery, pending protection, and announced outcomes.', type: 'pattern' },

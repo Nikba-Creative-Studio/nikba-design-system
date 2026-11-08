@@ -33,3 +33,5 @@ export function setGlassLevel(level, target = document.documentElement) {
 export { initComboboxes } from './behaviors/combobox.js';
 
 export { initMultiSelects } from './behaviors/multi-select.js';
+
+export { initDataTables } from './behaviors/data-table.js';
