@@ -25,7 +25,34 @@
 
           <section id="empty" class="specimen specimen--wide reveal" aria-labelledby="empty-title"><div class="specimen-heading"><p class="component-label">Empty state</p><h2 id="empty-title">Keep the Table structure recognizable</h2><p>A spanning row explains why no data appears and points toward the next useful action outside the Table.</p></div><div class="nds-table-scroll"><table class="nds-table"><caption>Archived projects</caption><thead><tr><th scope="col">Project</th><th scope="col">Archived by</th><th scope="col">Date</th></tr></thead><tbody><tr data-table-empty><td class="nds-table__empty" colspan="3">No archived projects</td></tr></tbody></table></div></section>
 
-          <section class="guidance-panel nds-glass reveal" aria-labelledby="guidance-title"><p class="component-label">Usage guidance</p><h2 id="guidance-title">Preserve the comparison model.</h2><p>Contain horizontal overflow and keep key columns stable. Convert data to cards only when row-to-row comparison is no longer the primary task.</p><a class="nds-link nds-link--standalone" href="/components/data-table.html">Next component: Data Table <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></section>
+          <!-- implementation:start -->
+<section class="implementation-panel" aria-labelledby="implementation-title"><p class="component-label">Developer reference</p><h2 id="implementation-title">Implementation</h2><p>Install <code>@nikba/design-system</code>, import <code>@nikba/design-system/css</code>, and place this markup inside <code>.nds-scope</code>. JavaScript examples use the public package exports.</p><div class="implementation-example"><div class="implementation-example__toolbar"><span>HTML · Example 1</span><button type="button" class="nds-button nds-button--secondary nds-button--small" data-copy-example aria-label="Copy Table example 1">Copy</button></div><pre tabindex="0" aria-label="html implementation example 1"><code>&lt;div class=&quot;nds-table-scroll&quot;&gt;
+  &lt;table class=&quot;nds-table&quot; data-nds-table&gt;
+    &lt;caption&gt;Project access&lt;/caption&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th aria-sort=&quot;none&quot;&gt;
+          &lt;button class=&quot;nds-table__sort&quot; type=&quot;button&quot; data-nds-sort=&quot;name&quot;&gt;Name&lt;/button&gt;
+        &lt;/th&gt;
+        &lt;th&gt;Status&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td data-column=&quot;name&quot;&gt;Atlas&lt;/td&gt;
+        &lt;td&gt;Active&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;</code></pre></div>
+<div class="implementation-example"><div class="implementation-example__toolbar"><span>JavaScript · Example 2</span><button type="button" class="nds-button nds-button--secondary nds-button--small" data-copy-example aria-label="Copy Table example 2">Copy</button></div><pre tabindex="0" aria-label="javascript implementation example 2"><code>import { initTables } from '@nikba/design-system';
+
+const cleanup = initTables(document);
+
+// Call before removing the component from the page.
+// cleanup();</code></pre></div><p class="implementation-copy-status" role="status" aria-live="polite"></p></section>
+<!-- implementation:end -->
+<section class="guidance-panel nds-glass reveal" aria-labelledby="guidance-title"><p class="component-label">Usage guidance</p><h2 id="guidance-title">Preserve the comparison model.</h2><p>Contain horizontal overflow and keep key columns stable. Convert data to cards only when row-to-row comparison is no longer the primary task.</p><a class="nds-link nds-link--standalone" href="/components/data-table.html">Next component: Data Table <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></section>
         </div>
       </div>
     </main>

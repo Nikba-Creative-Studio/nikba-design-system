@@ -425,3 +425,21 @@ document.addEventListener('nds:data-table-action', event => {
   const feedback = document.getElementById('bulk-feedback');
   if (feedback) feedback.textContent = 'Archive requested for ' + event.detail.values.join(', ') + '. Demo only.';
 });
+
+document.addEventListener('click', async event => {
+  const button = event.target.closest('[data-copy-example]');
+  if (!button) return;
+  const example = button.closest('.implementation-example');
+  const status = button.closest('.implementation-panel').querySelector('[role="status"]');
+  try {
+    await navigator.clipboard.writeText(example.querySelector('code').textContent);
+    status.textContent = 'Example copied.';
+  } catch {
+    const selection = window.getSelection();
+    const range = document.createRange();
+    range.selectNodeContents(example.querySelector('code'));
+    selection.removeAllRanges();
+    selection.addRange(range);
+    status.textContent = 'Select and copy the highlighted code.';
+  }
+});

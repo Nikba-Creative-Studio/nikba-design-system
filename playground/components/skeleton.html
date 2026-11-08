@@ -57,7 +57,27 @@
             <div class="skeleton-accessibility-demo"><div><code>aria-busy="true"</code><span>Applied to the affected region</span></div><div><code>aria-hidden="true"</code><span>Applied to the placeholder group</span></div><div><code>role="status"</code><span>Used once for the loading message</span></div></div>
           </section>
 
-          <section class="guidance-panel nds-glass reveal" aria-labelledby="guidance-title"><p class="component-label">Usage guidance</p><h2 id="guidance-title">Match the content, then leave cleanly.</h2><p>Use Skeleton only when the expected layout is known. Clear the busy state and replace the complete placeholder group when content arrives.</p><a class="nds-link nds-link--standalone" href="/components/alert.html">Next component: Alert <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></section>
+          <!-- implementation:start -->
+<section class="implementation-panel" aria-labelledby="implementation-title"><p class="component-label">Developer reference</p><h2 id="implementation-title">Implementation</h2><p>Install <code>@nikba/design-system</code>, import <code>@nikba/design-system/css</code>, and place this markup inside <code>.nds-scope</code>. JavaScript examples use the public package exports.</p><div class="implementation-example"><div class="implementation-example__toolbar"><span>HTML · Example 1</span><button type="button" class="nds-button nds-button--secondary nds-button--small" data-copy-example aria-label="Copy Skeleton example 1">Copy</button></div><pre tabindex="0" aria-label="html implementation example 1"><code>&lt;div aria-busy=&quot;true&quot;&gt;
+  &lt;span class=&quot;nds-visually-hidden&quot; role=&quot;status&quot;&gt;Loading article…&lt;/span&gt;
+  &lt;div class=&quot;nds-skeleton-stack&quot; aria-hidden=&quot;true&quot;&gt;
+    &lt;span class=&quot;nds-skeleton nds-skeleton--heading&quot; style=&quot;--nds-skeleton-width: 62%&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;nds-skeleton nds-skeleton--text&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;nds-skeleton nds-skeleton--text&quot; style=&quot;--nds-skeleton-width: 78%&quot;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div>
+<div class="implementation-example"><div class="implementation-example__toolbar"><span>HTML · Example 2</span><button type="button" class="nds-button nds-button--secondary nds-button--small" data-copy-example aria-label="Copy Skeleton example 2">Copy</button></div><pre tabindex="0" aria-label="html implementation example 2"><code>&lt;div aria-busy=&quot;true&quot;&gt;
+  &lt;span class=&quot;nds-visually-hidden&quot; role=&quot;status&quot;&gt;Loading profile…&lt;/span&gt;
+  &lt;div aria-hidden=&quot;true&quot;&gt;
+    &lt;span class=&quot;nds-skeleton nds-skeleton--avatar&quot;&gt;&lt;/span&gt;
+    &lt;div class=&quot;nds-skeleton-stack&quot;&gt;
+      &lt;span class=&quot;nds-skeleton nds-skeleton--text&quot; style=&quot;--nds-skeleton-width: 9rem&quot;&gt;&lt;/span&gt;
+      &lt;span class=&quot;nds-skeleton nds-skeleton--text&quot; style=&quot;--nds-skeleton-width: 6rem&quot;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><p class="implementation-copy-status" role="status" aria-live="polite"></p></section>
+<!-- implementation:end -->
+<section class="guidance-panel nds-glass reveal" aria-labelledby="guidance-title"><p class="component-label">Usage guidance</p><h2 id="guidance-title">Match the content, then leave cleanly.</h2><p>Use Skeleton only when the expected layout is known. Clear the busy state and replace the complete placeholder group when content arrives.</p><a class="nds-link nds-link--standalone" href="/components/alert.html">Next component: Alert <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></section>
         </div>
       </div>
     </main>

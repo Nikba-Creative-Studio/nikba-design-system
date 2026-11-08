@@ -48,7 +48,23 @@
             <div class="specimen-heading"><p class="component-label">Semantics</p><h2 id="semantics-title">Expose structure only when it carries meaning</h2><p>Use a native Horizontal Rule for a thematic break. Hide purely visual boundaries from assistive technology.</p></div>
             <div class="card-demo-grid divider-card-grid"><article class="nds-card nds-card--compact"><h3 class="nds-card__title">Semantic</h3><p class="nds-card__description">Use <code>&lt;hr class="nds-divider" /&gt;</code> when the content changes topic.</p></article><article class="nds-card nds-card--compact"><h3 class="nds-card__title">Decorative</h3><p class="nds-card__description">Use a neutral element with <code>aria-hidden="true"</code> for visual grouping only.</p></article></div>
           </section>
-          <section class="guidance-panel nds-glass reveal" aria-labelledby="guidance-title"><p class="component-label">Usage guidance</p><h2 id="guidance-title">Try spacing before adding a line.</h2><p>Use Divider when space alone cannot communicate the relationship. Avoid repeated rules that fragment a simple page.</p><a class="nds-link nds-link--standalone" href="/components/avatar.html">Next component: Avatar <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></section>
+          <!-- implementation:start -->
+<section class="implementation-panel" aria-labelledby="implementation-title"><p class="component-label">Developer reference</p><h2 id="implementation-title">Implementation</h2><p>Install <code>@nikba/design-system</code>, import <code>@nikba/design-system/css</code>, and place this markup inside <code>.nds-scope</code>. JavaScript examples use the public package exports.</p><div class="implementation-example"><div class="implementation-example__toolbar"><span>HTML · Example 1</span><button type="button" class="nds-button nds-button--secondary nds-button--small" data-copy-example aria-label="Copy Divider example 1">Copy</button></div><pre tabindex="0" aria-label="html implementation example 1"><code>&lt;hr class=&quot;nds-divider&quot; /&gt;</code></pre></div>
+<div class="implementation-example"><div class="implementation-example__toolbar"><span>HTML · Example 2</span><button type="button" class="nds-button nds-button--secondary nds-button--small" data-copy-example aria-label="Copy Divider example 2">Copy</button></div><pre tabindex="0" aria-label="html implementation example 2"><code>&lt;div class=&quot;nds-divider nds-divider--compact&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;</code></pre></div>
+<div class="implementation-example"><div class="implementation-example__toolbar"><span>HTML · Example 3</span><button type="button" class="nds-button nds-button--secondary nds-button--small" data-copy-example aria-label="Copy Divider example 3">Copy</button></div><pre tabindex="0" aria-label="html implementation example 3"><code>&lt;div
+  class=&quot;nds-divider nds-divider--vertical&quot;
+  role=&quot;separator&quot;
+  aria-orientation=&quot;vertical&quot;
+&gt;&lt;/div&gt;</code></pre></div>
+<div class="implementation-example"><div class="implementation-example__toolbar"><span>HTML · Example 4</span><button type="button" class="nds-button nds-button--secondary nds-button--small" data-copy-example aria-label="Copy Divider example 4">Copy</button></div><pre tabindex="0" aria-label="html implementation example 4"><code>&lt;div
+  class=&quot;nds-divider-label&quot;
+  role=&quot;separator&quot;
+  aria-label=&quot;Alternative sign-in method&quot;
+&gt;
+  &lt;span&gt;or continue with&lt;/span&gt;
+&lt;/div&gt;</code></pre></div><p class="implementation-copy-status" role="status" aria-live="polite"></p></section>
+<!-- implementation:end -->
+<section class="guidance-panel nds-glass reveal" aria-labelledby="guidance-title"><p class="component-label">Usage guidance</p><h2 id="guidance-title">Try spacing before adding a line.</h2><p>Use Divider when space alone cannot communicate the relationship. Avoid repeated rules that fragment a simple page.</p><a class="nds-link nds-link--standalone" href="/components/avatar.html">Next component: Avatar <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></section>
         </div>
       </div>
     </main>

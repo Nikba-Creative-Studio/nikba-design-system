@@ -58,7 +58,22 @@
             <div class="alert-semantics-grid"><div><code>No role</code><strong>Static context</strong><span>Already present when the page loads</span></div><div><code>role="status"</code><strong>Polite update</strong><span>Dynamic, useful, and non-urgent</span></div><div><code>role="alert"</code><strong>Urgent update</strong><span>Dynamic and requiring immediate attention</span></div></div>
           </section>
 
-          <section class="guidance-panel nds-glass reveal" aria-labelledby="guidance-title"><p class="component-label">Usage guidance</p><h2 id="guidance-title">Lead with the outcome or condition.</h2><p>Use the description for impact and recovery. Avoid generic titles, vague actions, and urgent announcement semantics for ordinary messages.</p><a class="nds-link nds-link--standalone" href="/components/disclosure-accordion.html">Next component: Disclosure and Accordion <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></section>
+          <!-- implementation:start -->
+<section class="implementation-panel" aria-labelledby="implementation-title"><p class="component-label">Developer reference</p><h2 id="implementation-title">Implementation</h2><p>Install <code>@nikba/design-system</code>, import <code>@nikba/design-system/css</code>, and place this markup inside <code>.nds-scope</code>. JavaScript examples use the public package exports.</p><div class="implementation-example"><div class="implementation-example__toolbar"><span>HTML · Example 1</span><button type="button" class="nds-button nds-button--secondary nds-button--small" data-copy-example aria-label="Copy Alert example 1">Copy</button></div><pre tabindex="0" aria-label="html implementation example 1"><code>&lt;aside class=&quot;nds-alert nds-alert--info&quot;&gt;
+  &lt;span class=&quot;nds-alert__icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;!-- Info icon --&gt;&lt;/span&gt;
+  &lt;div class=&quot;nds-alert__content&quot;&gt;
+    &lt;h2 class=&quot;nds-alert__title&quot;&gt;Preview environment&lt;/h2&gt;
+    &lt;p class=&quot;nds-alert__description&quot;&gt;Changes here do not affect the published website.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/aside&gt;</code></pre></div>
+<div class="implementation-example"><div class="implementation-example__toolbar"><span>HTML · Example 2</span><button type="button" class="nds-button nds-button--secondary nds-button--small" data-copy-example aria-label="Copy Alert example 2">Copy</button></div><pre tabindex="0" aria-label="html implementation example 2"><code>&lt;div class=&quot;nds-alert nds-alert--success&quot; role=&quot;status&quot;&gt;
+  &lt;span class=&quot;nds-alert__icon&quot; aria-hidden=&quot;true&quot;&gt;&lt;!-- Success icon --&gt;&lt;/span&gt;
+  &lt;div class=&quot;nds-alert__content&quot;&gt;
+    &lt;p class=&quot;nds-alert__title&quot;&gt;Changes saved&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre></div><p class="implementation-copy-status" role="status" aria-live="polite"></p></section>
+<!-- implementation:end -->
+<section class="guidance-panel nds-glass reveal" aria-labelledby="guidance-title"><p class="component-label">Usage guidance</p><h2 id="guidance-title">Lead with the outcome or condition.</h2><p>Use the description for impact and recovery. Avoid generic titles, vague actions, and urgent announcement semantics for ordinary messages.</p><a class="nds-link nds-link--standalone" href="/components/disclosure-accordion.html">Next component: Disclosure and Accordion <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></section>
         </div>
       </div>
     </main>

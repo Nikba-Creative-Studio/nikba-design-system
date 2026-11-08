@@ -46,3 +46,7 @@ The current beta supports the latest published beta only. Alpha releases are sup
 ## Automated release checks
 
 `npm run verify:release` verifies the build, public contracts, packed consumer, release metadata, and production dependency audit. High and critical production advisories block the release. The published archive includes CHANGELOG.md so consumers can inspect compatibility changes.
+
+## Catalog implementation examples
+
+Each component page includes copyable implementation snippets. Run `npm run examples:generate` after editing component documentation; `npm run test:examples` verifies generated sections remain synchronized. HTML examples remain readable without JavaScript; Copy uses the Clipboard API with selectable-text fallback.

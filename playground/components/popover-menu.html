@@ -64,7 +64,37 @@
             <div class="tabs-lifecycle-grid"><div><span>Open</span><code>Click / Arrow Up / Arrow Down</code></div><div><span>Navigate</span><code>Arrows / Home / End / typeahead</code></div><div><span>Dismiss</span><code>Escape / Tab / outside action</code></div></div>
           </section>
 
-          <section class="guidance-panel nds-glass reveal" aria-labelledby="guidance-title"><p class="component-label">Usage guidance</p><h2 id="guidance-title">Keep menus compact and action-oriented.</h2><p>Use a generic Popover for context and a Menu for commands. Move forms and multi-step decisions into a Dialog or page.</p><a class="nds-link nds-link--standalone" href="/components/tooltip.html">Next component: Tooltip <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></section>
+          <!-- implementation:start -->
+<section class="implementation-panel" aria-labelledby="implementation-title"><p class="component-label">Developer reference</p><h2 id="implementation-title">Implementation</h2><p>Install <code>@nikba/design-system</code>, import <code>@nikba/design-system/css</code>, and place this markup inside <code>.nds-scope</code>. JavaScript examples use the public package exports.</p><div class="implementation-example"><div class="implementation-example__toolbar"><span>HTML · Example 1</span><button type="button" class="nds-button nds-button--secondary nds-button--small" data-copy-example aria-label="Copy Popover and Dropdown Menu example 1">Copy</button></div><pre tabindex="0" aria-label="html implementation example 1"><code>&lt;button
+  type=&quot;button&quot;
+  aria-haspopup=&quot;menu&quot;
+  aria-controls=&quot;project-menu&quot;
+  data-nds-popover-trigger=&quot;project-menu&quot;
+&gt;
+  Project actions
+&lt;/button&gt;
+
+&lt;div
+  class=&quot;nds-popover nds-menu&quot;
+  id=&quot;project-menu&quot;
+  role=&quot;menu&quot;
+  popover=&quot;auto&quot;
+  data-nds-popover
+  data-align=&quot;end&quot;
+&gt;
+  &lt;button class=&quot;nds-menu__item&quot; type=&quot;button&quot; role=&quot;menuitem&quot;&gt;Rename&lt;/button&gt;
+  &lt;button class=&quot;nds-menu__item&quot; type=&quot;button&quot; role=&quot;menuitem&quot;&gt;Duplicate&lt;/button&gt;
+  &lt;hr class=&quot;nds-menu__separator&quot; role=&quot;separator&quot; /&gt;
+  &lt;button class=&quot;nds-menu__item nds-menu__item--danger&quot; type=&quot;button&quot; role=&quot;menuitem&quot;&gt;Delete&lt;/button&gt;
+&lt;/div&gt;</code></pre></div>
+<div class="implementation-example"><div class="implementation-example__toolbar"><span>JavaScript · Example 2</span><button type="button" class="nds-button nds-button--secondary nds-button--small" data-copy-example aria-label="Copy Popover and Dropdown Menu example 2">Copy</button></div><pre tabindex="0" aria-label="javascript implementation example 2"><code>import { initPopovers } from '@nikba/design-system';
+
+const cleanup = initPopovers(document);
+
+// Call before removing the component from the page.
+// cleanup();</code></pre></div><p class="implementation-copy-status" role="status" aria-live="polite"></p></section>
+<!-- implementation:end -->
+<section class="guidance-panel nds-glass reveal" aria-labelledby="guidance-title"><p class="component-label">Usage guidance</p><h2 id="guidance-title">Keep menus compact and action-oriented.</h2><p>Use a generic Popover for context and a Menu for commands. Move forms and multi-step decisions into a Dialog or page.</p><a class="nds-link nds-link--standalone" href="/components/tooltip.html">Next component: Tooltip <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></section>
         </div>
       </div>
     </main>

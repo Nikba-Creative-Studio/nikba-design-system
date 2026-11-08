@@ -62,7 +62,27 @@
             <div class="specimen-heading"><p class="component-label">Interactive</p><h2 id="interactive-title">Wrap the Avatar in a real control</h2><p>Use Avatar Button for an account menu or profile action. Its accessible name describes the action, and its target remains at least 44px.</p></div>
             <div class="specimen-row"><div><span>Account menu</span><button class="nds-avatar-button" type="button" aria-label="Open Maya Chen account menu"><span class="nds-avatar" aria-hidden="true"><span class="nds-avatar__visual"><img class="nds-avatar__image" src="/avatar-demo.svg" alt="" /></span></span></button></div><div><span>Disabled</span><button class="nds-avatar-button" type="button" aria-label="Maya Chen account menu unavailable" disabled><span class="nds-avatar" aria-hidden="true"><span class="nds-avatar__visual">MC</span></span></button></div></div>
           </section>
-          <section class="guidance-panel nds-glass reveal" aria-labelledby="guidance-title"><p class="component-label">Usage guidance</p><h2 id="guidance-title">Pair identity with a visible name.</h2><p>Avatar supports recognition but should rarely carry the full identity alone. Use initials generated from a stable display name when an Image is unavailable.</p><a class="nds-link nds-link--standalone" href="/components/spinner.html">Next component: Spinner <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></section>
+          <!-- implementation:start -->
+<section class="implementation-panel" aria-labelledby="implementation-title"><p class="component-label">Developer reference</p><h2 id="implementation-title">Implementation</h2><p>Install <code>@nikba/design-system</code>, import <code>@nikba/design-system/css</code>, and place this markup inside <code>.nds-scope</code>. JavaScript examples use the public package exports.</p><div class="implementation-example"><div class="implementation-example__toolbar"><span>HTML · Example 1</span><button type="button" class="nds-button nds-button--secondary nds-button--small" data-copy-example aria-label="Copy Avatar example 1">Copy</button></div><pre tabindex="0" aria-label="html implementation example 1"><code>&lt;span class=&quot;nds-avatar&quot; aria-hidden=&quot;true&quot;&gt;
+  &lt;span class=&quot;nds-avatar__visual&quot;&gt;
+    &lt;img class=&quot;nds-avatar__image&quot; src=&quot;maya.jpg&quot; alt=&quot;&quot; /&gt;
+  &lt;/span&gt;
+&lt;/span&gt;
+&lt;span&gt;Maya Chen&lt;/span&gt;</code></pre></div>
+<div class="implementation-example"><div class="implementation-example__toolbar"><span>HTML · Example 2</span><button type="button" class="nds-button nds-button--secondary nds-button--small" data-copy-example aria-label="Copy Avatar example 2">Copy</button></div><pre tabindex="0" aria-label="html implementation example 2"><code>&lt;span class=&quot;nds-avatar&quot; role=&quot;img&quot; aria-label=&quot;Maya Chen&quot;&gt;
+  &lt;span class=&quot;nds-avatar__visual&quot;&gt;MC&lt;/span&gt;
+&lt;/span&gt;</code></pre></div>
+<div class="implementation-example"><div class="implementation-example__toolbar"><span>HTML · Example 3</span><button type="button" class="nds-button nds-button--secondary nds-button--small" data-copy-example aria-label="Copy Avatar example 3">Copy</button></div><pre tabindex="0" aria-label="html implementation example 3"><code>&lt;button
+  class=&quot;nds-avatar-button&quot;
+  type=&quot;button&quot;
+  aria-label=&quot;Open Maya Chen account menu&quot;
+&gt;
+  &lt;span class=&quot;nds-avatar&quot; aria-hidden=&quot;true&quot;&gt;
+    &lt;span class=&quot;nds-avatar__visual&quot;&gt;MC&lt;/span&gt;
+  &lt;/span&gt;
+&lt;/button&gt;</code></pre></div><p class="implementation-copy-status" role="status" aria-live="polite"></p></section>
+<!-- implementation:end -->
+<section class="guidance-panel nds-glass reveal" aria-labelledby="guidance-title"><p class="component-label">Usage guidance</p><h2 id="guidance-title">Pair identity with a visible name.</h2><p>Avatar supports recognition but should rarely carry the full identity alone. Use initials generated from a stable display name when an Image is unavailable.</p><a class="nds-link nds-link--standalone" href="/components/spinner.html">Next component: Spinner <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></section>
         </div>
       </div>
     </main>

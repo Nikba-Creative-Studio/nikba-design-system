@@ -25,7 +25,25 @@
 
           <section id="lifecycle" class="specimen reveal" aria-labelledby="lifecycle-title"><div class="specimen-heading"><p class="component-label">Lifecycle</p><h2 id="lifecycle-title">Preserve existing descriptions</h2><p>Initialization adds the Tooltip ID to `aria-describedby`; cleanup restores the exact value that existed before initialization.</p></div><div class="tabs-lifecycle-grid"><div><span>Initialize</span><code>const cleanup = initTooltips(root)</code></div><div><span>Observe</span><code>nds:tooltip-show / hide</code></div><div><span>Remove</span><code>cleanup()</code></div></div></section>
 
-          <section class="guidance-panel nds-glass reveal" aria-labelledby="guidance-title"><p class="component-label">Usage guidance</p><h2 id="guidance-title">Never hide essential information in a Tooltip.</h2><p>Use visible labels and helper text for instructions, state, and errors. Tooltips should remain short, optional, and non-interactive.</p><a class="nds-link nds-link--standalone" href="/components/toast.html">Next component: Toast <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></section>
+          <!-- implementation:start -->
+<section class="implementation-panel" aria-labelledby="implementation-title"><p class="component-label">Developer reference</p><h2 id="implementation-title">Implementation</h2><p>Install <code>@nikba/design-system</code>, import <code>@nikba/design-system/css</code>, and place this markup inside <code>.nds-scope</code>. JavaScript examples use the public package exports.</p><div class="implementation-example"><div class="implementation-example__toolbar"><span>HTML · Example 1</span><button type="button" class="nds-button nds-button--secondary nds-button--small" data-copy-example aria-label="Copy Tooltip example 1">Copy</button></div><pre tabindex="0" aria-label="html implementation example 1"><code>&lt;button
+  type=&quot;button&quot;
+  aria-label=&quot;Copy link&quot;
+  data-nds-tooltip-trigger=&quot;copy-tooltip&quot;
+&gt;
+  …
+&lt;/button&gt;
+&lt;span class=&quot;nds-tooltip&quot; id=&quot;copy-tooltip&quot; role=&quot;tooltip&quot; data-nds-tooltip hidden&gt;
+  Copy link
+&lt;/span&gt;</code></pre></div>
+<div class="implementation-example"><div class="implementation-example__toolbar"><span>JavaScript · Example 2</span><button type="button" class="nds-button nds-button--secondary nds-button--small" data-copy-example aria-label="Copy Tooltip example 2">Copy</button></div><pre tabindex="0" aria-label="javascript implementation example 2"><code>import { initTooltips } from '@nikba/design-system';
+
+const cleanup = initTooltips(document);
+
+// Call before removing the component from the page.
+// cleanup();</code></pre></div><p class="implementation-copy-status" role="status" aria-live="polite"></p></section>
+<!-- implementation:end -->
+<section class="guidance-panel nds-glass reveal" aria-labelledby="guidance-title"><p class="component-label">Usage guidance</p><h2 id="guidance-title">Never hide essential information in a Tooltip.</h2><p>Use visible labels and helper text for instructions, state, and errors. Tooltips should remain short, optional, and non-interactive.</p><a class="nds-link nds-link--standalone" href="/components/toast.html">Next component: Toast <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></section>
         </div>
       </div>
     </main>

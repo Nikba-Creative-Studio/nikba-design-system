@@ -85,7 +85,24 @@
             <div class="specimen-heading"><p class="component-label">Content</p><h2 id="content-title">Keep labels concise and distinct</h2><p>Start options with the words that differentiate them. The control truncates visually when space is limited while the native menu preserves the complete label.</p></div>
             <div class="field-specimen field-specimen--narrow"><div class="nds-field"><label class="nds-field__label" for="template">Report template</label><div class="nds-select-shell"><select data-nds-combobox class="nds-select" id="template"><option>Quarterly performance overview for leadership</option><option>Monthly delivery summary for project teams</option><option>Weekly operational risks and decisions</option></select></div></div></div>
           </section>
-          <section class="guidance-panel nds-glass reveal" aria-labelledby="guidance-title"><p class="component-label">Usage guidance</p><h2 id="guidance-title">Use Select when the options are known.</h2><p>For two to five choices that benefit from immediate comparison, Radio may be clearer. Use autocomplete patterns for large or searchable datasets.</p><a class="nds-link nds-link--standalone" href="/components/multi-select.html">Next component: Multi-select <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></section>
+          <!-- implementation:start -->
+<section class="implementation-panel" aria-labelledby="implementation-title"><p class="component-label">Developer reference</p><h2 id="implementation-title">Implementation</h2><p>Install <code>@nikba/design-system</code>, import <code>@nikba/design-system/css</code>, and place this markup inside <code>.nds-scope</code>. JavaScript examples use the public package exports.</p><div class="implementation-example"><div class="implementation-example__toolbar"><span>HTML · Example 1</span><button type="button" class="nds-button nds-button--secondary nds-button--small" data-copy-example aria-label="Copy Combobox example 1">Copy</button></div><pre tabindex="0" aria-label="html implementation example 1"><code>&lt;div class=&quot;field-specimen&quot;&gt;
+              &lt;div class=&quot;nds-field&quot;&gt;
+                &lt;label class=&quot;nds-field__label&quot; for=&quot;project-status&quot;&gt;Project status&lt;/label&gt;
+                &lt;div class=&quot;nds-selectbox&quot; data-native-select&gt;
+                  &lt;select data-nds-combobox class=&quot;nds-select&quot; id=&quot;project-status&quot; name=&quot;status&quot; aria-describedby=&quot;project-status-help&quot;&gt;&lt;option value=&quot;draft&quot;&gt;Draft&lt;/option&gt;&lt;option value=&quot;review&quot;&gt;In review&lt;/option&gt;&lt;option value=&quot;approved&quot;&gt;Approved&lt;/option&gt;&lt;option value=&quot;archived&quot;&gt;Archived&lt;/option&gt;&lt;/select&gt;
+                &lt;/div&gt;
+                &lt;p class=&quot;nds-field__helper&quot; id=&quot;project-status-help&quot;&gt;Status controls where the project appears in team views.&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;</code></pre></div>
+<div class="implementation-example"><div class="implementation-example__toolbar"><span>JavaScript · Example 2</span><button type="button" class="nds-button nds-button--secondary nds-button--small" data-copy-example aria-label="Copy Combobox example 2">Copy</button></div><pre tabindex="0" aria-label="javascript implementation example 2"><code>import { initComboboxes } from '@nikba/design-system';
+
+const cleanup = initComboboxes(document);
+
+// Call before removing the component from the page.
+// cleanup();</code></pre></div><p class="implementation-copy-status" role="status" aria-live="polite"></p></section>
+<!-- implementation:end -->
+<section class="guidance-panel nds-glass reveal" aria-labelledby="guidance-title"><p class="component-label">Usage guidance</p><h2 id="guidance-title">Use Select when the options are known.</h2><p>For two to five choices that benefit from immediate comparison, Radio may be clearer. Use autocomplete patterns for large or searchable datasets.</p><a class="nds-link nds-link--standalone" href="/components/multi-select.html">Next component: Multi-select <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></section>
         </div>
       </div>
     </main>

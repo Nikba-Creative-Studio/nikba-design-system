@@ -48,7 +48,37 @@
             <div class="specimen-heading"><p class="component-label">External destination</p><h2 id="external-title">Announce a new browsing context</h2></div>
             <a class="nds-link nds-link--standalone" href="https://example.com" target="_blank" rel="noreferrer">External resource <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M4 12 12 4M6 4h6v6" /></svg></span><span class="nds-visually-hidden"> (opens in a new tab)</span></a>
           </section>
-          <section id="guidance" class="guidance-panel nds-glass reveal" aria-labelledby="guidance-title"><p class="component-label">Content guidance</p><h2 id="guidance-title">Name the destination.</h2><p>Prefer “Foundation reference” over “Click here.” Use a Button for an interface action and a Link for navigation.</p><a class="nds-link nds-link--standalone" href="/components/badge-chip.html">Next component: Badge and Chip <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></section>
+          <!-- implementation:start -->
+<section class="implementation-panel" aria-labelledby="implementation-title"><p class="component-label">Developer reference</p><h2 id="implementation-title">Implementation</h2><p>Install <code>@nikba/design-system</code>, import <code>@nikba/design-system/css</code>, and place this markup inside <code>.nds-scope</code>. JavaScript examples use the public package exports.</p><div class="implementation-example"><div class="implementation-example__toolbar"><span>HTML · Example 1</span><button type="button" class="nds-button nds-button--secondary nds-button--small" data-copy-example aria-label="Copy Link example 1">Copy</button></div><pre tabindex="0" aria-label="html implementation example 1"><code>&lt;p&gt;
+  Read the
+  &lt;a class=&quot;nds-link&quot; href=&quot;/foundations&quot;&gt;foundation reference&lt;/a&gt;
+  before creating a component.
+&lt;/p&gt;</code></pre></div>
+<div class="implementation-example"><div class="implementation-example__toolbar"><span>HTML · Example 2</span><button type="button" class="nds-button nds-button--secondary nds-button--small" data-copy-example aria-label="Copy Link example 2">Copy</button></div><pre tabindex="0" aria-label="html implementation example 2"><code>&lt;a class=&quot;nds-link nds-link--standalone&quot; href=&quot;/components&quot;&gt;
+  Browse components
+  &lt;span class=&quot;nds-link__icon&quot; aria-hidden=&quot;true&quot;&gt;
+    &lt;svg viewBox=&quot;0 0 16 16&quot;&gt;
+      &lt;path d=&quot;M3 8h10M9 4l4 4-4 4&quot; /&gt;
+    &lt;/svg&gt;
+  &lt;/span&gt;
+&lt;/a&gt;</code></pre></div>
+<div class="implementation-example"><div class="implementation-example__toolbar"><span>HTML · Example 3</span><button type="button" class="nds-button nds-button--secondary nds-button--small" data-copy-example aria-label="Copy Link example 3">Copy</button></div><pre tabindex="0" aria-label="html implementation example 3"><code>&lt;a class=&quot;nds-link&quot; href=&quot;/components/link&quot; aria-current=&quot;page&quot;&gt;Link&lt;/a&gt;</code></pre></div>
+<div class="implementation-example"><div class="implementation-example__toolbar"><span>HTML · Example 4</span><button type="button" class="nds-button nds-button--secondary nds-button--small" data-copy-example aria-label="Copy Link example 4">Copy</button></div><pre tabindex="0" aria-label="html implementation example 4"><code>&lt;a
+  class=&quot;nds-link nds-link--standalone&quot;
+  href=&quot;https://example.com&quot;
+  target=&quot;_blank&quot;
+  rel=&quot;noreferrer&quot;
+&gt;
+  External resource
+  &lt;span class=&quot;nds-link__icon&quot; aria-hidden=&quot;true&quot;&gt;
+    &lt;svg viewBox=&quot;0 0 16 16&quot;&gt;
+      &lt;path d=&quot;M4 12 12 4M6 4h6v6&quot; /&gt;
+    &lt;/svg&gt;
+  &lt;/span&gt;
+  &lt;span class=&quot;nds-visually-hidden&quot;&gt; (opens in a new tab)&lt;/span&gt;
+&lt;/a&gt;</code></pre></div><p class="implementation-copy-status" role="status" aria-live="polite"></p></section>
+<!-- implementation:end -->
+<section id="guidance" class="guidance-panel nds-glass reveal" aria-labelledby="guidance-title"><p class="component-label">Content guidance</p><h2 id="guidance-title">Name the destination.</h2><p>Prefer “Foundation reference” over “Click here.” Use a Button for an interface action and a Link for navigation.</p><a class="nds-link nds-link--standalone" href="/components/badge-chip.html">Next component: Badge and Chip <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></section>
         </div>
       </div>
     </main>

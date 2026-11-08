@@ -48,7 +48,20 @@
             <div class="specimen-heading"><p class="component-label">Controls</p><h2 id="buttons-title">Prevent repeated actions while pending</h2><p>Use the Button loading contract for pending actions. The Button owns its accessible busy state and remains disabled until completion.</p></div>
             <div class="specimen-row"><div><span>Pending action</span><button class="nds-button" type="button" aria-busy="true" disabled>Saving changes</button></div><div><span>Compact custom control</span><button class="spinner-icon-button" type="button" aria-label="Refreshing data" aria-busy="true" disabled><span class="nds-spinner nds-spinner--small" aria-hidden="true"></span></button></div></div>
           </section>
-          <section class="guidance-panel nds-glass reveal" aria-labelledby="guidance-title"><p class="component-label">Usage guidance</p><h2 id="guidance-title">Use determinate progress when measurement exists.</h2><p>Spinner is appropriate only when progress cannot be quantified. For content placeholders that preserve layout, use Skeleton.</p><a class="nds-link nds-link--standalone" href="/components/skeleton.html">Next component: Skeleton <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></section>
+          <!-- implementation:start -->
+<section class="implementation-panel" aria-labelledby="implementation-title"><p class="component-label">Developer reference</p><h2 id="implementation-title">Implementation</h2><p>Install <code>@nikba/design-system</code>, import <code>@nikba/design-system/css</code>, and place this markup inside <code>.nds-scope</code>. JavaScript examples use the public package exports.</p><div class="implementation-example"><div class="implementation-example__toolbar"><span>HTML · Example 1</span><button type="button" class="nds-button nds-button--secondary nds-button--small" data-copy-example aria-label="Copy Spinner example 1">Copy</button></div><pre tabindex="0" aria-label="html implementation example 1"><code>&lt;div class=&quot;nds-spinner-label&quot; role=&quot;status&quot;&gt;
+  &lt;span class=&quot;nds-spinner&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+  &lt;span&gt;Loading projects…&lt;/span&gt;
+&lt;/div&gt;</code></pre></div>
+<div class="implementation-example"><div class="implementation-example__toolbar"><span>HTML · Example 2</span><button type="button" class="nds-button nds-button--secondary nds-button--small" data-copy-example aria-label="Copy Spinner example 2">Copy</button></div><pre tabindex="0" aria-label="html implementation example 2"><code>&lt;section aria-busy=&quot;true&quot; aria-labelledby=&quot;report-title&quot;&gt;
+  &lt;h2 id=&quot;report-title&quot;&gt;Weekly performance&lt;/h2&gt;
+  &lt;div class=&quot;nds-spinner-label nds-spinner-label--stacked&quot; role=&quot;status&quot;&gt;
+    &lt;span class=&quot;nds-spinner nds-spinner--large&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+    &lt;span&gt;Loading report…&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</code></pre></div><p class="implementation-copy-status" role="status" aria-live="polite"></p></section>
+<!-- implementation:end -->
+<section class="guidance-panel nds-glass reveal" aria-labelledby="guidance-title"><p class="component-label">Usage guidance</p><h2 id="guidance-title">Use determinate progress when measurement exists.</h2><p>Spinner is appropriate only when progress cannot be quantified. For content placeholders that preserve layout, use Skeleton.</p><a class="nds-link nds-link--standalone" href="/components/skeleton.html">Next component: Skeleton <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></section>
         </div>
       </div>
     </main>

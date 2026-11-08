@@ -25,7 +25,33 @@
 
           <section id="lifecycle" class="specimen reveal" aria-labelledby="lifecycle-title"><div class="specimen-heading"><p class="component-label">Lifecycle</p><h2 id="lifecycle-title">Enhance a complete fallback</h2><p>Before initialization, compact links remain visible. JavaScript adds the disclosure state and removes outside listeners immediately after closing.</p></div><div class="tabs-lifecycle-grid"><div><span>Initialize</span><code>initNavigations(root)</code></div><div><span>Observe</span><code>nds:navigation-change</code></div><div><span>Remove</span><code>cleanup()</code></div></div></section>
 
-          <section class="guidance-panel nds-glass reveal" aria-labelledby="guidance-title"><p class="component-label">Usage guidance</p><h2 id="guidance-title">Keep the global model stable.</h2><p>Reserve Header space for product identity, primary destinations, and a few global actions. Move local controls into the page.</p><a class="nds-link nds-link--standalone" href="/components/breadcrumb-pagination.html">Next component: Breadcrumb and Pagination <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></section>
+          <!-- implementation:start -->
+<section class="implementation-panel" aria-labelledby="implementation-title"><p class="component-label">Developer reference</p><h2 id="implementation-title">Implementation</h2><p>Install <code>@nikba/design-system</code>, import <code>@nikba/design-system/css</code>, and place this markup inside <code>.nds-scope</code>. JavaScript examples use the public package exports.</p><div class="implementation-example"><div class="implementation-example__toolbar"><span>HTML · Example 1</span><button type="button" class="nds-button nds-button--secondary nds-button--small" data-copy-example aria-label="Copy Header and Navigation example 1">Copy</button></div><pre tabindex="0" aria-label="html implementation example 1"><code>&lt;header class=&quot;nds-header&quot;&gt;
+  &lt;div class=&quot;nds-header__inner nds-container&quot;&gt;
+    &lt;a class=&quot;nds-header__brand&quot; href=&quot;/&quot;&gt;Nikba&lt;/a&gt;
+    &lt;button
+      class=&quot;nds-header__menu-trigger&quot;
+      type=&quot;button&quot;
+      aria-label=&quot;Open navigation&quot;
+      aria-controls=&quot;primary-navigation&quot;
+      data-nds-navigation-trigger
+    &gt;…&lt;/button&gt;
+    &lt;nav class=&quot;nds-header__nav&quot; id=&quot;primary-navigation&quot; aria-label=&quot;Primary&quot; data-nds-navigation&gt;
+      &lt;ul class=&quot;nds-header__list&quot;&gt;
+        &lt;li&gt;&lt;a class=&quot;nds-header__link&quot; href=&quot;/projects&quot; aria-current=&quot;page&quot;&gt;Projects&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class=&quot;nds-header__link&quot; href=&quot;/team&quot;&gt;Team&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/header&gt;</code></pre></div>
+<div class="implementation-example"><div class="implementation-example__toolbar"><span>JavaScript · Example 2</span><button type="button" class="nds-button nds-button--secondary nds-button--small" data-copy-example aria-label="Copy Header and Navigation example 2">Copy</button></div><pre tabindex="0" aria-label="javascript implementation example 2"><code>import { initNavigations } from '@nikba/design-system';
+
+const cleanup = initNavigations(document);
+
+// Call before removing the component from the page.
+// cleanup();</code></pre></div><p class="implementation-copy-status" role="status" aria-live="polite"></p></section>
+<!-- implementation:end -->
+<section class="guidance-panel nds-glass reveal" aria-labelledby="guidance-title"><p class="component-label">Usage guidance</p><h2 id="guidance-title">Keep the global model stable.</h2><p>Reserve Header space for product identity, primary destinations, and a few global actions. Move local controls into the page.</p><a class="nds-link nds-link--standalone" href="/components/breadcrumb-pagination.html">Next component: Breadcrumb and Pagination <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></section>
         </div>
       </div>
     </main>
