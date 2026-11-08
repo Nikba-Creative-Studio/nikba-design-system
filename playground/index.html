@@ -28,7 +28,7 @@
           </p>
           <div class="button-row">
             <a class="nds-button" href="/components/">Explore components</a>
-            <a class="nds-button nds-button--secondary" href="/foundations.html">View foundations</a>
+            <a class="nds-button nds-button--secondary" href="#installation">Install with npm</a>
           </div>
         </div>
         <div class="proof nds-glass" aria-label="System status">
@@ -44,7 +44,21 @@
         </div>
       </section>
 
-      <section class="catalog-section reveal" aria-labelledby="explore-title">
+      <section id="installation" class="implementation-panel installation-panel" aria-labelledby="installation-title"><p class="component-label">Get started · npm</p><h2 id="installation-title">Install. Import. Build.</h2><p>Use the stable <a class="nds-link" href="https://www.npmjs.com/package/@nikba/design-system">npm package</a> in your application. The examples below assume an ES module bundler such as Vite.</p><h3>1. Install with npm</h3><div class="implementation-example"><div class="implementation-example__toolbar"><span>Terminal</span><button class="nds-button nds-button--secondary nds-button--small" type="button" data-copy-example aria-label="Copy installation step 1">Copy</button></div><pre tabindex="0" aria-label="Installation step 1"><code class="hljs">npm install @nikba/design-system</code></pre></div><h3>2. Import CSS and configure your theme</h3><div class="implementation-example"><div class="implementation-example__toolbar"><span>JavaScript</span><button class="nds-button nds-button--secondary nds-button--small" type="button" data-copy-example aria-label="Copy installation step 2">Copy</button></div><pre tabindex="0" aria-label="Installation step 2"><code class="hljs"><span class="hljs-keyword">import</span> <span class="hljs-string">&#x27;@nikba/design-system/css&#x27;</span>;
+<span class="hljs-keyword">import</span> { setTheme, setGlassLevel } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@nikba/design-system&#x27;</span>;
+
+<span class="hljs-title function_">setTheme</span>(<span class="hljs-string">&#x27;frost&#x27;</span>); <span class="hljs-comment">// frost, mist or graphite</span>
+<span class="hljs-title function_">setGlassLevel</span>(<span class="hljs-string">&#x27;soft&#x27;</span>); <span class="hljs-comment">// off, soft or clear</span></code></pre></div><h3>3. Add your first component</h3><div class="implementation-example"><div class="implementation-example__toolbar"><span>HTML</span><button class="nds-button nds-button--secondary nds-button--small" type="button" data-copy-example aria-label="Copy installation step 3">Copy</button></div><pre tabindex="0" aria-label="Installation step 3"><code class="hljs"><span class="hljs-tag">&lt;<span class="hljs-name">main</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nds-scope&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nds-button nds-button--secondary&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>&gt;</span>
+    Preview project
+  <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">main</span>&gt;</span></code></pre></div><h3>4. Initialize interactive components</h3><div class="implementation-example"><div class="implementation-example__toolbar"><span>JavaScript</span><button class="nds-button nds-button--secondary nds-button--small" type="button" data-copy-example aria-label="Copy installation step 4">Copy</button></div><pre tabindex="0" aria-label="Installation step 4"><code class="hljs"><span class="hljs-keyword">import</span> { initDialogs } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@nikba/design-system&#x27;</span>;
+
+<span class="hljs-comment">// Run after the component markup is in the document.</span>
+<span class="hljs-keyword">const</span> cleanup = <span class="hljs-title function_">initDialogs</span>(<span class="hljs-variable language_">document</span>);
+
+<span class="hljs-comment">// Call cleanup() before removing the component.</span></code></pre></div><p>Static components need CSS only. Interactive components such as Dialog, Select and Tabs also need their initializer; copy the matching HTML and JavaScript from the component reference.</p><p>Onest fonts are application-owned: load or self-host Onest separately. <a class="nds-link" href="/foundations.html">Read the foundations guide</a>.</p><p class="implementation-copy-status" role="status" aria-live="polite"></p><a class="nds-link" href="/components/">Browse components and implementation examples →</a></section>
+<section class="catalog-section reveal" aria-labelledby="explore-title">
         <div class="section-heading">
           <p class="component-label">Explore</p>
           <h2 id="explore-title">A complete path from tokens to product flows.</h2>
@@ -67,7 +81,7 @@
           </a>
           <a class="catalog-index-card" href="/mcp.html">
             <span class="status status--complete">Verified</span>
-            <div><h3>MCP for AI</h3><p>Thirty-six published documents, design tokens, six tools, and one implementation prompt.</p></div>
+            <div><h3>MCP for AI</h3><p>Forty published documents, design tokens, six tools, and one implementation prompt.</p></div>
             <span aria-hidden="true">↗</span>
           </a>
           <a class="catalog-index-card" href="/components/button.html">
