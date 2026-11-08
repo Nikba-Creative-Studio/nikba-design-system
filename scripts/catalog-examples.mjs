@@ -1,7 +1,12 @@
+import hljs from 'highlight.js/lib/core';
+import xml from 'highlight.js/lib/languages/xml';
+import javascript from 'highlight.js/lib/languages/javascript';
+hljs.registerLanguage('html', xml);
+hljs.registerLanguage('js', javascript);
+hljs.registerLanguage('javascript', javascript);
 import { readFile, writeFile } from 'node:fs/promises';
 import { componentCatalog } from '../playground/component-catalog.js';
 const check = process.argv.includes('--check');
-const escape = text => text.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;');
 const aliases = { 'form-validation': 'form-validation-submission' };
 for (const component of componentCatalog) {
   const path = new URL('../playground/components/' + component.slug + '.html', import.meta.url);
@@ -18,7 +23,7 @@ for (const component of componentCatalog) {
     const name = initializers[component.slug];
     examples.push({ language: 'javascript', code: "import { " + name + " } from '@nikba/design-system';\n\nconst cleanup = " + name + "(document);\n\n// Call before removing the component from the page.\n// cleanup();" });
   }
-  const blocks = examples.map((example, index) => `<div class="implementation-example"><div class="implementation-example__toolbar"><span>${example.language === 'html' ? 'HTML' : 'JavaScript'} · Example ${index + 1}</span><button type="button" class="nds-button nds-button--secondary nds-button--small" data-copy-example aria-label="Copy ${component.title} example ${index + 1}">Copy</button></div><pre tabindex="0" aria-label="${example.language} implementation example ${index + 1}"><code>${escape(example.code)}</code></pre></div>`).join('\n');
+  const blocks = examples.map((example, index) => `<div class="implementation-example"><div class="implementation-example__toolbar"><span>${example.language === 'html' ? 'HTML' : 'JavaScript'} · Example ${index + 1}</span><button type="button" class="nds-button nds-button--secondary nds-button--small" data-copy-example aria-label="Copy ${component.title} example ${index + 1}">Copy</button></div><pre tabindex="0" aria-label="${example.language} implementation example ${index + 1}"><code class="hljs language-${example.language}">${hljs.highlight(example.code, { language: example.language }).value}</code></pre></div>`).join('\n');
   const section = `<!-- implementation:start -->\n<section class="implementation-panel" aria-labelledby="implementation-title"><p class="component-label">Developer reference</p><h2 id="implementation-title">Implementation</h2><p>Install <code>@nikba/design-system</code>, import <code>@nikba/design-system/css</code>, and place this markup inside <code>.nds-scope</code>. JavaScript examples use the public package exports.</p>${blocks}<p class="implementation-copy-status" role="status" aria-live="polite"></p></section>\n<!-- implementation:end -->`;
   const updated = html.includes('<!-- implementation:start -->') ? html.replace(/<!-- implementation:start -->[\s\S]*?<!-- implementation:end -->/, section) : html.replace(/<section\b[^>]*class="guidance-panel[^>]*>/, match => section + '\n' + match);
   if (updated === html && !html.includes('<!-- implementation:start -->')) throw new Error('No insertion point: ' + component.slug);

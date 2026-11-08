@@ -65,36 +65,36 @@
             </div>
           </section>
           <!-- implementation:start -->
-<section class="implementation-panel" aria-labelledby="implementation-title"><p class="component-label">Developer reference</p><h2 id="implementation-title">Implementation</h2><p>Install <code>@nikba/design-system</code>, import <code>@nikba/design-system/css</code>, and place this markup inside <code>.nds-scope</code>. JavaScript examples use the public package exports.</p><div class="implementation-example"><div class="implementation-example__toolbar"><span>HTML · Example 1</span><button type="button" class="nds-button nds-button--secondary nds-button--small" data-copy-example aria-label="Copy Checkbox and Radio example 1">Copy</button></div><pre tabindex="0" aria-label="html implementation example 1"><code>&lt;label class=&quot;nds-choice&quot;&gt;
-  &lt;input class=&quot;nds-checkbox&quot; type=&quot;checkbox&quot; name=&quot;updates&quot; /&gt;
-  &lt;span class=&quot;nds-choice__control&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
-  &lt;span class=&quot;nds-choice__content&quot;&gt;
-    &lt;span class=&quot;nds-choice__label&quot;&gt;Project updates&lt;/span&gt;
-  &lt;/span&gt;
-&lt;/label&gt;</code></pre></div>
-<div class="implementation-example"><div class="implementation-example__toolbar"><span>HTML · Example 2</span><button type="button" class="nds-button nds-button--secondary nds-button--small" data-copy-example aria-label="Copy Checkbox and Radio example 2">Copy</button></div><pre tabindex="0" aria-label="html implementation example 2"><code>&lt;fieldset class=&quot;nds-choice-group&quot;&gt;
-  &lt;legend class=&quot;nds-choice-group__legend&quot;&gt;Team size&lt;/legend&gt;
-  &lt;label class=&quot;nds-choice&quot;&gt;
-    &lt;input class=&quot;nds-radio&quot; type=&quot;radio&quot; name=&quot;team-size&quot; value=&quot;small&quot; checked /&gt;
-    &lt;span class=&quot;nds-choice__control&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
-    &lt;span class=&quot;nds-choice__content&quot;&gt;
-      &lt;span class=&quot;nds-choice__label&quot;&gt;1–10&lt;/span&gt;
-    &lt;/span&gt;
-  &lt;/label&gt;
-  &lt;label class=&quot;nds-choice&quot;&gt;
-    &lt;input class=&quot;nds-radio&quot; type=&quot;radio&quot; name=&quot;team-size&quot; value=&quot;medium&quot; /&gt;
-    &lt;span class=&quot;nds-choice__control&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
-    &lt;span class=&quot;nds-choice__content&quot;&gt;
-      &lt;span class=&quot;nds-choice__label&quot;&gt;11–50&lt;/span&gt;
-    &lt;/span&gt;
-  &lt;/label&gt;
-&lt;/fieldset&gt;</code></pre></div>
-<div class="implementation-example"><div class="implementation-example__toolbar"><span>JavaScript · Example 3</span><button type="button" class="nds-button nds-button--secondary nds-button--small" data-copy-example aria-label="Copy Checkbox and Radio example 3">Copy</button></div><pre tabindex="0" aria-label="js implementation example 3"><code>const parent = document.querySelector('#select-all');
-const children = [...document.querySelectorAll('[name=&quot;permission&quot;]')];
-const selectedCount = children.filter((input) =&gt; input.checked).length;
+<section class="implementation-panel" aria-labelledby="implementation-title"><p class="component-label">Developer reference</p><h2 id="implementation-title">Implementation</h2><p>Install <code>@nikba/design-system</code>, import <code>@nikba/design-system/css</code>, and place this markup inside <code>.nds-scope</code>. JavaScript examples use the public package exports.</p><div class="implementation-example"><div class="implementation-example__toolbar"><span>HTML · Example 1</span><button type="button" class="nds-button nds-button--secondary nds-button--small" data-copy-example aria-label="Copy Checkbox and Radio example 1">Copy</button></div><pre tabindex="0" aria-label="html implementation example 1"><code class="hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nds-choice&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nds-checkbox&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;updates&quot;</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nds-choice__control&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nds-choice__content&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nds-choice__label&quot;</span>&gt;</span>Project updates<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span></code></pre></div>
+<div class="implementation-example"><div class="implementation-example__toolbar"><span>HTML · Example 2</span><button type="button" class="nds-button nds-button--secondary nds-button--small" data-copy-example aria-label="Copy Checkbox and Radio example 2">Copy</button></div><pre tabindex="0" aria-label="html implementation example 2"><code class="hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">fieldset</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nds-choice-group&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">legend</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nds-choice-group__legend&quot;</span>&gt;</span>Team size<span class="hljs-tag">&lt;/<span class="hljs-name">legend</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nds-choice&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nds-radio&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;radio&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;team-size&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;small&quot;</span> <span class="hljs-attr">checked</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nds-choice__control&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nds-choice__content&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nds-choice__label&quot;</span>&gt;</span>1–10<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nds-choice&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nds-radio&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;radio&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;team-size&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;medium&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nds-choice__control&quot;</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nds-choice__content&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nds-choice__label&quot;</span>&gt;</span>11–50<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">fieldset</span>&gt;</span></code></pre></div>
+<div class="implementation-example"><div class="implementation-example__toolbar"><span>JavaScript · Example 3</span><button type="button" class="nds-button nds-button--secondary nds-button--small" data-copy-example aria-label="Copy Checkbox and Radio example 3">Copy</button></div><pre tabindex="0" aria-label="js implementation example 3"><code class="hljs language-js"><span class="hljs-keyword">const</span> parent = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">&#x27;#select-all&#x27;</span>);
+<span class="hljs-keyword">const</span> children = [...<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelectorAll</span>(<span class="hljs-string">&#x27;[name=&quot;permission&quot;]&#x27;</span>)];
+<span class="hljs-keyword">const</span> selectedCount = children.<span class="hljs-title function_">filter</span>(<span class="hljs-function">(<span class="hljs-params">input</span>) =&gt;</span> input.<span class="hljs-property">checked</span>).<span class="hljs-property">length</span>;
 
-parent.checked = selectedCount === children.length;
-parent.indeterminate = selectedCount &gt; 0 &amp;&amp; selectedCount &lt; children.length;</code></pre></div><p class="implementation-copy-status" role="status" aria-live="polite"></p></section>
+parent.<span class="hljs-property">checked</span> = selectedCount === children.<span class="hljs-property">length</span>;
+parent.<span class="hljs-property">indeterminate</span> = selectedCount &gt; <span class="hljs-number">0</span> &amp;&amp; selectedCount &lt; children.<span class="hljs-property">length</span>;</code></pre></div><p class="implementation-copy-status" role="status" aria-live="polite"></p></section>
 <!-- implementation:end -->
 <section class="guidance-panel nds-glass reveal" aria-labelledby="guidance-title"><p class="component-label">Usage guidance</p><h2 id="guidance-title">Make the selection model obvious.</h2><p>Use Checkbox for independent choices and Radio when one visible option must replace another.</p><a class="nds-link nds-link--standalone" href="/components/switch.html">Next component: Switch <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></section>
         </div>

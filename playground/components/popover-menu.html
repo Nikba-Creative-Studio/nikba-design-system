@@ -65,34 +65,34 @@
           </section>
 
           <!-- implementation:start -->
-<section class="implementation-panel" aria-labelledby="implementation-title"><p class="component-label">Developer reference</p><h2 id="implementation-title">Implementation</h2><p>Install <code>@nikba/design-system</code>, import <code>@nikba/design-system/css</code>, and place this markup inside <code>.nds-scope</code>. JavaScript examples use the public package exports.</p><div class="implementation-example"><div class="implementation-example__toolbar"><span>HTML · Example 1</span><button type="button" class="nds-button nds-button--secondary nds-button--small" data-copy-example aria-label="Copy Popover and Dropdown Menu example 1">Copy</button></div><pre tabindex="0" aria-label="html implementation example 1"><code>&lt;button
-  type=&quot;button&quot;
-  aria-haspopup=&quot;menu&quot;
-  aria-controls=&quot;project-menu&quot;
-  data-nds-popover-trigger=&quot;project-menu&quot;
-&gt;
+<section class="implementation-panel" aria-labelledby="implementation-title"><p class="component-label">Developer reference</p><h2 id="implementation-title">Implementation</h2><p>Install <code>@nikba/design-system</code>, import <code>@nikba/design-system/css</code>, and place this markup inside <code>.nds-scope</code>. JavaScript examples use the public package exports.</p><div class="implementation-example"><div class="implementation-example__toolbar"><span>HTML · Example 1</span><button type="button" class="nds-button nds-button--secondary nds-button--small" data-copy-example aria-label="Copy Popover and Dropdown Menu example 1">Copy</button></div><pre tabindex="0" aria-label="html implementation example 1"><code class="hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+  <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span>
+  <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">&quot;menu&quot;</span>
+  <span class="hljs-attr">aria-controls</span>=<span class="hljs-string">&quot;project-menu&quot;</span>
+  <span class="hljs-attr">data-nds-popover-trigger</span>=<span class="hljs-string">&quot;project-menu&quot;</span>
+&gt;</span>
   Project actions
-&lt;/button&gt;
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
 
-&lt;div
-  class=&quot;nds-popover nds-menu&quot;
-  id=&quot;project-menu&quot;
-  role=&quot;menu&quot;
-  popover=&quot;auto&quot;
-  data-nds-popover
-  data-align=&quot;end&quot;
-&gt;
-  &lt;button class=&quot;nds-menu__item&quot; type=&quot;button&quot; role=&quot;menuitem&quot;&gt;Rename&lt;/button&gt;
-  &lt;button class=&quot;nds-menu__item&quot; type=&quot;button&quot; role=&quot;menuitem&quot;&gt;Duplicate&lt;/button&gt;
-  &lt;hr class=&quot;nds-menu__separator&quot; role=&quot;separator&quot; /&gt;
-  &lt;button class=&quot;nds-menu__item nds-menu__item--danger&quot; type=&quot;button&quot; role=&quot;menuitem&quot;&gt;Delete&lt;/button&gt;
-&lt;/div&gt;</code></pre></div>
-<div class="implementation-example"><div class="implementation-example__toolbar"><span>JavaScript · Example 2</span><button type="button" class="nds-button nds-button--secondary nds-button--small" data-copy-example aria-label="Copy Popover and Dropdown Menu example 2">Copy</button></div><pre tabindex="0" aria-label="javascript implementation example 2"><code>import { initPopovers } from '@nikba/design-system';
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span>
+  <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nds-popover nds-menu&quot;</span>
+  <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;project-menu&quot;</span>
+  <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;menu&quot;</span>
+  <span class="hljs-attr">popover</span>=<span class="hljs-string">&quot;auto&quot;</span>
+  <span class="hljs-attr">data-nds-popover</span>
+  <span class="hljs-attr">data-align</span>=<span class="hljs-string">&quot;end&quot;</span>
+&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nds-menu__item&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;menuitem&quot;</span>&gt;</span>Rename<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nds-menu__item&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;menuitem&quot;</span>&gt;</span>Duplicate<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">hr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nds-menu__separator&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;separator&quot;</span> /&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nds-menu__item nds-menu__item--danger&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;menuitem&quot;</span>&gt;</span>Delete<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></div>
+<div class="implementation-example"><div class="implementation-example__toolbar"><span>JavaScript · Example 2</span><button type="button" class="nds-button nds-button--secondary nds-button--small" data-copy-example aria-label="Copy Popover and Dropdown Menu example 2">Copy</button></div><pre tabindex="0" aria-label="javascript implementation example 2"><code class="hljs language-javascript"><span class="hljs-keyword">import</span> { initPopovers } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@nikba/design-system&#x27;</span>;
 
-const cleanup = initPopovers(document);
+<span class="hljs-keyword">const</span> cleanup = <span class="hljs-title function_">initPopovers</span>(<span class="hljs-variable language_">document</span>);
 
-// Call before removing the component from the page.
-// cleanup();</code></pre></div><p class="implementation-copy-status" role="status" aria-live="polite"></p></section>
+<span class="hljs-comment">// Call before removing the component from the page.</span>
+<span class="hljs-comment">// cleanup();</span></code></pre></div><p class="implementation-copy-status" role="status" aria-live="polite"></p></section>
 <!-- implementation:end -->
 <section class="guidance-panel nds-glass reveal" aria-labelledby="guidance-title"><p class="component-label">Usage guidance</p><h2 id="guidance-title">Keep menus compact and action-oriented.</h2><p>Use a generic Popover for context and a Menu for commands. Move forms and multi-step decisions into a Dialog or page.</p><a class="nds-link nds-link--standalone" href="/components/tooltip.html">Next component: Tooltip <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></section>
         </div>

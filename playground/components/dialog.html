@@ -47,33 +47,33 @@
           </section>
 
           <!-- implementation:start -->
-<section class="implementation-panel" aria-labelledby="implementation-title"><p class="component-label">Developer reference</p><h2 id="implementation-title">Implementation</h2><p>Install <code>@nikba/design-system</code>, import <code>@nikba/design-system/css</code>, and place this markup inside <code>.nds-scope</code>. JavaScript examples use the public package exports.</p><div class="implementation-example"><div class="implementation-example__toolbar"><span>HTML · Example 1</span><button type="button" class="nds-button nds-button--secondary nds-button--small" data-copy-example aria-label="Copy Dialog example 1">Copy</button></div><pre tabindex="0" aria-label="html implementation example 1"><code>&lt;button type=&quot;button&quot; data-nds-dialog-open=&quot;invite-dialog&quot;&gt;Invite member&lt;/button&gt;
+<section class="implementation-panel" aria-labelledby="implementation-title"><p class="component-label">Developer reference</p><h2 id="implementation-title">Implementation</h2><p>Install <code>@nikba/design-system</code>, import <code>@nikba/design-system/css</code>, and place this markup inside <code>.nds-scope</code>. JavaScript examples use the public package exports.</p><div class="implementation-example"><div class="implementation-example__toolbar"><span>HTML · Example 1</span><button type="button" class="nds-button nds-button--secondary nds-button--small" data-copy-example aria-label="Copy Dialog example 1">Copy</button></div><pre tabindex="0" aria-label="html implementation example 1"><code class="hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">data-nds-dialog-open</span>=<span class="hljs-string">&quot;invite-dialog&quot;</span>&gt;</span>Invite member<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
 
-&lt;dialog
-  class=&quot;nds-dialog&quot;
-  id=&quot;invite-dialog&quot;
-  data-nds-dialog
-  aria-labelledby=&quot;invite-title&quot;
-  aria-describedby=&quot;invite-description&quot;
-&gt;
-  &lt;header class=&quot;nds-dialog__header&quot;&gt;
-    &lt;div&gt;
-      &lt;h2 class=&quot;nds-dialog__title&quot; id=&quot;invite-title&quot;&gt;Invite member&lt;/h2&gt;
-      &lt;p class=&quot;nds-dialog__description&quot; id=&quot;invite-description&quot;&gt;Add someone to this workspace.&lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/header&gt;
-  &lt;div class=&quot;nds-dialog__body&quot;&gt;…&lt;/div&gt;
-  &lt;footer class=&quot;nds-dialog__footer&quot;&gt;
-    &lt;button type=&quot;button&quot; data-nds-dialog-close=&quot;cancel&quot;&gt;Cancel&lt;/button&gt;
-    &lt;button type=&quot;button&quot; data-nds-dialog-close=&quot;invite&quot;&gt;Send invite&lt;/button&gt;
-  &lt;/footer&gt;
-&lt;/dialog&gt;</code></pre></div>
-<div class="implementation-example"><div class="implementation-example__toolbar"><span>JavaScript · Example 2</span><button type="button" class="nds-button nds-button--secondary nds-button--small" data-copy-example aria-label="Copy Dialog example 2">Copy</button></div><pre tabindex="0" aria-label="javascript implementation example 2"><code>import { initDialogs } from '@nikba/design-system';
+<span class="hljs-tag">&lt;<span class="hljs-name">dialog</span>
+  <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nds-dialog&quot;</span>
+  <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;invite-dialog&quot;</span>
+  <span class="hljs-attr">data-nds-dialog</span>
+  <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;invite-title&quot;</span>
+  <span class="hljs-attr">aria-describedby</span>=<span class="hljs-string">&quot;invite-description&quot;</span>
+&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nds-dialog__header&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nds-dialog__title&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;invite-title&quot;</span>&gt;</span>Invite member<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nds-dialog__description&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;invite-description&quot;</span>&gt;</span>Add someone to this workspace.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nds-dialog__body&quot;</span>&gt;</span>…<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">footer</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nds-dialog__footer&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">data-nds-dialog-close</span>=<span class="hljs-string">&quot;cancel&quot;</span>&gt;</span>Cancel<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">data-nds-dialog-close</span>=<span class="hljs-string">&quot;invite&quot;</span>&gt;</span>Send invite<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dialog</span>&gt;</span></code></pre></div>
+<div class="implementation-example"><div class="implementation-example__toolbar"><span>JavaScript · Example 2</span><button type="button" class="nds-button nds-button--secondary nds-button--small" data-copy-example aria-label="Copy Dialog example 2">Copy</button></div><pre tabindex="0" aria-label="javascript implementation example 2"><code class="hljs language-javascript"><span class="hljs-keyword">import</span> { initDialogs } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@nikba/design-system&#x27;</span>;
 
-const cleanup = initDialogs(document);
+<span class="hljs-keyword">const</span> cleanup = <span class="hljs-title function_">initDialogs</span>(<span class="hljs-variable language_">document</span>);
 
-// Call before removing the component from the page.
-// cleanup();</code></pre></div><p class="implementation-copy-status" role="status" aria-live="polite"></p></section>
+<span class="hljs-comment">// Call before removing the component from the page.</span>
+<span class="hljs-comment">// cleanup();</span></code></pre></div><p class="implementation-copy-status" role="status" aria-live="polite"></p></section>
 <!-- implementation:end -->
 <section class="guidance-panel nds-glass reveal" aria-labelledby="guidance-title"><p class="component-label">Usage guidance</p><h2 id="guidance-title">Use a modal only for a focused interruption.</h2><p>Keep longer workflows on a page. Avoid nested Dialogs and never hide essential information behind a modal.</p><a class="nds-link nds-link--standalone" href="/components/popover-menu.html">Next component: Popover and Menu <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></section>
         </div>
