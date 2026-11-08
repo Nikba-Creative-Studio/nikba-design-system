@@ -1,6 +1,6 @@
 # Nikba Design System Specification
 
-Status: Beta foundation
+Status: Stable foundation
 
 Visual direction: Nikba Liquid Glass
 
@@ -95,7 +95,7 @@ Each component defines purpose, anatomy, API, variants, sizes, states, responsiv
 
 Native HTML semantics are the default. Visual disabled states never substitute for disabled behavior. Controls must have visible focus, adequate touch targets, and deterministic keyboard behavior.
 
-The current Beta public surface includes Button, Tag, Field, Glass, and scoped foundations. Component expansion follows [IMPLEMENTATION_PLAN.md](./IMPLEMENTATION_PLAN.md).
+The current stable public surface includes Button, Tag, Field, Glass, and scoped foundations. Component expansion follows [IMPLEMENTATION_PLAN.md](./IMPLEMENTATION_PLAN.md).
 
 ## 8. Motion and interaction
 

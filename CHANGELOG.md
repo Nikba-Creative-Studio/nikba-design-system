@@ -6,7 +6,7 @@ The project follows [Semantic Versioning](https://semver.org/). Before `1.0.0`, 
 
 ## Unreleased
 
-## 0.1.0-beta.1 - 2026-11-08
+## 1.0.0 - 2026-11-08
 
 ### Changed
 
@@ -20,12 +20,12 @@ The project follows [Semantic Versioning](https://semver.org/). Before `1.0.0`, 
 - Release metadata validation and a production dependency audit gate in CI.
 - Changelog included in the npm package.
 
-## 0.1.0-beta.0 - 2026-11-08
+### Prerelease preparation
 
 ### Changed
 
-- Promoted the package, catalog, documentation, and support policy from Alpha to Beta after the public API, accessibility structure, bundle budgets, consumer build, MCP contract, and cross-browser interaction suite reached the Beta quality gate.
-- Catalog release metadata now identifies Beta 01 as a public preview across every presentation and component page.
+- Promoted the package, catalog, documentation, and support policy to the first stable release after the public API, accessibility structure, bundle budgets, consumer build, MCP contract, and cross-browser interaction suite reached the Beta quality gate.
+- Catalog release metadata now identifies 1.0.0 as a stable release across every presentation and component page.
 
 ### Compatibility
 

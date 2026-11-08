@@ -2,7 +2,7 @@
 
 ## Status
 
-Complete for the current beta scope.
+Complete for the 1.0 scope.
 
 ## Purpose
 

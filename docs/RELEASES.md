@@ -41,7 +41,7 @@ Removal requires a major release after `1.0.0`. Security, privacy, or severe acc
 
 Supported versions and browsers are listed in `docs/SUPPORT.md`. Report reproducible defects through the repository issue form. Include the package version, browser and operating system, minimal markup, expected and actual behavior, and accessibility impact where applicable.
 
-The current beta supports the latest published beta only. Alpha releases are superseded and receive no further fixes. After `1.0.0`, the current major receives fixes; the previous major receives critical security and severe accessibility fixes for six months after the next major release. Security-sensitive reports should use the repository's private vulnerability-reporting channel when enabled rather than a public issue.
+The current stable major receives fixes. Prereleases are superseded and receive no further fixes; the previous major receives critical security and severe accessibility fixes for six months after the next major release. Security-sensitive reports should use the repository's private vulnerability-reporting channel when enabled rather than a public issue.
 
 ## Automated release checks
 

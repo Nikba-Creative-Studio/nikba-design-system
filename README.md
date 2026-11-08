@@ -4,7 +4,7 @@ Neutral interface foundations, Onest typography, and selective glassmorphism for
 
 [Open the live component catalog](https://nikba-creative-studio.github.io/nikba-design-system/).
 
-> Status: `0.1.0-beta.1` — public preview. Public APIs are stabilizing and may still change before `1.0.0`.
+> Status: `1.0.0` — stable release. Documented public APIs follow Semantic Versioning.
 
 ## Principles
 
@@ -58,10 +58,10 @@ CI also checks catalog accessibility structure, compares representative desktop 
 
 ## Usage
 
-Install the current prerelease from npm:
+Install from npm:
 
 ```bash
-npm install @nikba/design-system@next
+npm install @nikba/design-system
 ```
 
 ```js
