@@ -2,5 +2,5 @@
 .nds-combobox__list { position: absolute; z-index: 30; inset-inline: 0; top: 100%; max-height: 16rem; overflow: auto; padding: var(--nds-space-2); border: 1px solid var(--nds-border); border-radius: var(--nds-radius-md); background: var(--nds-surface); color: var(--nds-text); box-shadow: var(--nds-elevation-raised); }
 .nds-combobox__list [role="option"], .nds-combobox__list [role="status"] { padding: var(--nds-space-3); border-radius: var(--nds-radius-sm); min-height: 44px; box-sizing: border-box; }
 .nds-combobox__list [role="option"] { cursor: pointer; }
-.nds-combobox__list [role="option"]:hover, .nds-combobox__list [data-active="true"] { background: var(--nds-surface-hover); outline: 1px solid var(--nds-border); }
+.nds-combobox__list [role="option"]:hover, .nds-combobox__list [data-active="true"] { background: var(--nds-surface); outline: 1px solid var(--nds-border); }
 .nds-combobox__list [aria-selected="true"] { font-weight: 700; }

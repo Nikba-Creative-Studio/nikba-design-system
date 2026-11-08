@@ -8,6 +8,8 @@ The project follows [Semantic Versioning](https://semver.org/). Before `1.0.0`, 
 
 ### Added
 
+- Searchable Combobox and Multi-select, plus a Data Table composition with local filtering, sorting, pagination, responsive browser checks and dynamic DOM lifecycle support.
+
 - Release metadata validation and a production dependency audit gate in CI.
 - Changelog included in the npm package.
 

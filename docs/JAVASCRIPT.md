@@ -78,3 +78,13 @@ The region emits `nds:toast-show`, `nds:toast-dismiss`, and `nds:toast-action`. 
 ## Lifecycle ownership
 
 Use direct initializers for static pages or application-controlled mounts. Use `observeComponents()` for Livewire and other DOM-replacement systems. Never combine an observer with repeated global direct initialization as an application lifecycle strategy; idempotence prevents duplicates, but ownership and teardown become unclear.
+
+## Searchable controls and data compositions
+
+| Export | Root | Behavior |
+| --- | --- | --- |
+| `initComboboxes(root?)` | `[data-nds-combobox]` | Filters a native Select; preserves native input/change, reset and validation. |
+| `initMultiSelects(root?)` | `[data-nds-multi-select]` | Filters labeled checkboxes while preserving selections and form values. |
+| `initDataTables(root?)` | `[data-nds-data-table]` | Composes local search, sorting and pagination. |
+
+All three return cleanup functions and participate in `observeComponents()`. Explicit initialization is idempotent. Data Table is intended for bounded local datasets; server pagination remains application-owned.

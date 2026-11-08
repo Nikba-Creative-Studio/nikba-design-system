@@ -84,6 +84,10 @@ jobs:
         run: npm run build
       - name: Verify browser interactions
         run: npm run test:cross-browser
+      - name: Verify searchable controls and Data Table
+        run: |
+          node tests/combobox-browser.test.mjs
+          node tests/modules-browser.test.mjs
 
   deploy-pages:
     name: Deploy GitHub Pages

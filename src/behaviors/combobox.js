@@ -17,6 +17,10 @@ export function initComboboxes(root = document) {
     input.setAttribute('aria-expanded', 'false');
     input.autocomplete = 'off';
     input.disabled = select.disabled;
+    for (const name of ['aria-describedby', 'aria-invalid', 'aria-required']) {
+      if (select.hasAttribute(name)) input.setAttribute(name, select.getAttribute(name));
+    }
+    if (select.required) input.setAttribute('aria-required', 'true');
     const label = select.labels?.[0];
     input.setAttribute('aria-label', label?.textContent.trim() || select.getAttribute('aria-label') || 'Choose an option');
     const list = doc.createElement('div');
@@ -62,7 +66,7 @@ export function initComboboxes(root = document) {
         e.preventDefault();
         if (list.hidden) { input.value = ''; render(); }
         if (!visible.length) return;
-        active = (active + (e.key === 'ArrowDown' ? 1 : -1) + visible.length) % visible.length;
+        active = active < 0 ? (e.key === 'ArrowDown' ? 0 : visible.length - 1) : (active + (e.key === 'ArrowDown' ? 1 : -1) + visible.length) % visible.length;
         [...list.children].forEach((item, i) => item.dataset.active = String(i === active));
         input.setAttribute('aria-activedescendant', list.children[active].id);
         list.children[active].scrollIntoView({ block: 'nearest' });

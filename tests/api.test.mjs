@@ -9,6 +9,9 @@ import {
   initNavigations,
   initPopovers,
   initSelects,
+  initComboboxes,
+  initMultiSelects,
+  initDataTables,
   initTooltips,
   initTabs,
   initTables,
@@ -54,3 +57,5 @@ for (const name of ['createToastManager', 'glassLevels', 'initAccordions', 'init
 }
 
 console.log('Public theme and glass APIs passed.');
+
+for (const initialize of [initComboboxes, initMultiSelects, initDataTables]) assert.equal(typeof initialize, 'function');
