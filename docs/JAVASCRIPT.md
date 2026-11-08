@@ -1,6 +1,6 @@
 # JavaScript API Reference
 
-Status: Beta public contract  
+Status: Beta public contract
 Module: `@nikba/design-system`
 
 The package is an ES module. Import the stylesheet separately, then import only the behavior used by the application.
