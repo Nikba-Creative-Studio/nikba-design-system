@@ -47,7 +47,7 @@ jobs:
           release_sha=$(git rev-parse HEAD)
           test "$(git rev-parse "$RELEASE_TAG^{commit}")" = "$release_sha"
           test "$(gh run list --workflow verify.yml --commit "$release_sha" --json status,conclusion --jq 'any(.[]; .status == "completed" and .conclusion == "success")')" = true
-          gh release view "$RELEASE_TAG" --json isDraft --jq '.isDraft == false' | rg '^true$'
+          test "$(gh release view "$RELEASE_TAG" --json isDraft --jq '.isDraft == false')" = true
       - name: Install locked dependencies
         run: npm ci
       - name: Verify final archive
