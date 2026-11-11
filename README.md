@@ -4,7 +4,7 @@ Neutral interface foundations, Onest typography, and selective glassmorphism for
 
 [Open the live component catalog](https://nikba-creative-studio.github.io/nikba-design-system/).
 
-> Status: `1.0.0` — stable release. Documented public APIs follow Semantic Versioning.
+> Status: `1.1.0` — stable release. Documented public APIs follow Semantic Versioning.
 
 ## Principles
 
@@ -87,6 +87,10 @@ The CSS bundle declares the Onest-based font stack but does not download a font.
 
 Use native `disabled` whenever the HTML element supports it. A link styled as a button requires `aria-disabled="true"`, `tabindex="-1"`, and application logic that prevents programmatic activation.
 
+## Native foundations and components
+
+SwiftUI and Jetpack Compose have an initial pilot: shared foundation tokens plus Button, Field, Card, Badge and product states. iOS supports a Swift Package with bundled Onest: add this repository URL in Xcode with Exact Version **1.1.0**, link **NikbaDesignSystem**, and `import NikbaDesignSystem`. Local package development is also supported. See [Build an iOS app](./docs/IOS.md) for the first-screen workflow. Android uses source files. Release 1.1.0 includes native pilot APIs; use the v1.1.0 tag for SwiftPM. The older web-only v1.0.0 tag does not contain this package. [Native foundations and components](./docs/NATIVE.md) describes APIs and platform boundaries.
+
 ## AI and MCP
 
 The package includes a read-only Model Context Protocol server that exposes component contracts and design tokens to compatible AI hosts.
@@ -95,7 +99,7 @@ The package includes a read-only Model Context Protocol server that exposes comp
 npm run mcp
 ```
 
-The server publishes discoverable component, pattern, integration, guide, and token resources; six query tools; and a `build_with_nikba` prompt. See [AI Integration with MCP](./docs/MCP.md) for host configuration and the complete interface, or explore the MCP section in the local catalog.
+The server publishes web and native contracts, source resources, installation steps, complete examples, nine query tools, and a platform-aware `build_with_nikba` prompt. Existing tool calls default to web; pass `platform: "ios"` or `"android"` for native APIs. See [AI Integration with MCP](./docs/MCP.md) for host configuration and the complete interface.
 
 ## Current public surface
 
@@ -113,3 +117,5 @@ Composition guidance is published under [`docs/patterns`](./docs/patterns/), inc
 ## License
 
 [MIT](./LICENSE)
+
+Bundled Onest font: [SIL Open Font License 1.1](./native/ios/Resources/OFL.txt), with [pinned upstream provenance](./native/ios/Resources/provenance.json).

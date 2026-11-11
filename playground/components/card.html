@@ -103,10 +103,28 @@
   <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></code></pre></div><p class="implementation-copy-status" role="status" aria-live="polite"></p></section>
 <!-- implementation:end -->
+<!-- native:start -->
+<section class="implementation-panel" aria-labelledby="native-title">
+  <p class="component-label">SwiftUI · Jetpack Compose · Experimental</p>
+  <h2 id="native-title">Native Card</h2>
+  <p>For iOS, link the local NikbaDesignSystem Swift package and import SwiftUI and NikbaDesignSystem; Onest is bundled. For Android, add NikbaTokens.kt and NikbaComponents.kt and import Compose Material Text and com.nikba.designsystem.*. Examples below belong inside your native view or composable, with application-owned state and actions.</p>
+  <p>Card is a non-interactive surface. Keep navigation and nested action semantics in the consuming app.</p>
+  <div class="implementation-example"><div class="implementation-example__toolbar"><span>SwiftUI · Card</span><button class="nds-button nds-button--secondary nds-button--small" type="button" data-copy-example aria-label="Copy native Card SwiftUI example">Copy</button></div><pre tabindex="0" aria-label="Native Card SwiftUI example"><code>NDSCard {
+    Text(&quot;Project overview&quot;)
+    NDSBadge(&quot;Active&quot;, tone: .success)
+}</code></pre></div><div class="implementation-example"><div class="implementation-example__toolbar"><span>Compose · Card</span><button class="nds-button nds-button--secondary nds-button--small" type="button" data-copy-example aria-label="Copy native Card Compose example">Copy</button></div><pre tabindex="0" aria-label="Native Card Compose example"><code>NDSCard {
+    Text(&quot;Project overview&quot;)
+    NDSBadge(&quot;Active&quot;, tone = NDSBadgeTone.Success)
+}</code></pre></div>
+  <p class="implementation-copy-status" role="status" aria-live="polite"></p>
+  <a class="nds-link" href="/#native-components">Native component availability and integration →</a>
+</section>
+<!-- native:end -->
+
 <section class="guidance-panel nds-glass reveal" aria-labelledby="guidance-title"><p class="component-label">Usage guidance</p><h2 id="guidance-title">Let content determine the element.</h2><p>Use Article for self-contained content, Section for a named region, and Div when no stronger semantic applies. A clickable Card should contain one destination.</p><a class="nds-link nds-link--standalone" href="/components/divider.html">Next component: Divider <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></section>
         </div>
       </div>
     </main>
-    <footer class="catalog-footer nds-container"><span>Designed and built with all the love in the world by the <a class="nds-link" href="https://nikba.com/">Nikba Creative Studio</a>.</span><span>1.0.0 · Stable release</span></footer>
+    <footer class="catalog-footer nds-container"><span>Designed and built with all the love in the world by the <a class="nds-link" href="https://nikba.com/">Nikba Creative Studio</a>.</span><span>1.1.0 · Stable release</span></footer>
   </body>
 </html>

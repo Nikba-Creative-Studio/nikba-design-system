@@ -6,6 +6,19 @@ The project follows [Semantic Versioning](https://semver.org/). Before `1.0.0`, 
 
 ## Unreleased
 
+## 1.1.0 - 2026-11-11
+
+### Added
+
+- Shared token generation for CSS, Swift and Kotlin, and a five-component native pilot.
+- An iOS 17+/Swift 6 local Swift package named NikbaDesignSystem with bundled, OFL-licensed Onest and automatic font registration. The v1.1.0 tag supports remote SwiftPM installation; native APIs remain a pilot.
+- Platform-scoped MCP contracts and search, exact source/example resources, installation guidance, capability discovery and native-control fallbacks. Existing calls continue to default to web.
+- Isolated SwiftPM and Compose consumers that compile the complete examples returned by MCP, packed-archive MCP checks, and native CI jobs.
+
+### Changed
+
+- Landing and component references now describe native availability, installation, examples and experimental API boundaries.
+
 ## 1.0.0 - 2026-11-08
 
 ### Changed

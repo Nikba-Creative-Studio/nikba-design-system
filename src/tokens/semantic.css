@@ -1,3 +1,4 @@
+/* Generated from foundations.json. Do not edit. */
 :root {
   --nds-bg: var(--nds-color-canvas);
   --nds-surface: var(--nds-color-surface);
@@ -21,7 +22,6 @@
   --nds-info: var(--nds-color-info);
   --nds-shadow-subtle: var(--nds-elevation-subtle);
   --nds-shadow-elevated: var(--nds-elevation-raised);
-
   --nds-focus-ring-width: 3px;
   --nds-focus-ring-offset: 3px;
   --nds-disabled-opacity: var(--nds-opacity-disabled);

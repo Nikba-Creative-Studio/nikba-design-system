@@ -30,7 +30,14 @@ try {
   assert.match(html, /assets\/index-[^"']+\.js/);
   assert.ok(assets.some((file) => file.endsWith('.css')), 'Consumer build emits the design-system CSS.');
   assert.ok(assets.some((file) => file.endsWith('.js')), 'Consumer build emits the JavaScript entry.');
-  console.log('Packed plain HTML and JavaScript consumer build passed.');
+  const installed = join(consumer, 'node_modules/@nikba/design-system');
+  assert.match(await readFile(join(installed, 'Package.swift'), 'utf8'), /NikbaDesignSystem/);
+  assert.match(await readFile(join(installed, 'native/ios/Resources/OFL.txt'), 'utf8'), /SIL OPEN FONT LICENSE/);
+  assert.ok((await readFile(join(installed, 'native/ios/Resources/Onest.ttf'))).length > 100_000);
+  await exec(process.execPath, [join(repository, 'tests/mcp.test.mjs')], {
+    cwd: consumer, env: { ...process.env, NDS_MCP_PACKAGE_ROOT: installed },
+  });
+  console.log('Packed web consumer, SwiftPM resources and native MCP contracts passed.');
 } finally {
   await rm(temporary, { recursive: true, force: true });
 }

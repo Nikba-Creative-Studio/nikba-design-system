@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Nikba Design System catalog and implementation reference." />
+    <meta name="description" content="One Nikba design language for web, iOS and Android. Explore stable web components and a native pilot with shared tokens, Button, Field, Card, Badge and product states." />
     <title>Nikba Design System</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,27 +19,28 @@
 
     <main id="main" class="nds-container">
       <section class="hero page-home-hero" aria-labelledby="page-title">
-        <p class="eyebrow">Design language · 1.0.0</p>
+        <p class="eyebrow">Design language · 1.1.0</p>
         <h1 id="page-title" class="nds-display">Clear structure.<br />Quiet character.</h1>
         <div class="hero__footer">
           <p>
-            A framework-agnostic system for building consistent Nikba interfaces with
-            semantic tokens, accessible components, and selective glass surfaces.
+            One design language for web, iOS, and Android. Stable web components and
+            shared native foundations, built around semantic tokens and Onest typography.
           </p>
           <div class="button-row">
             <a class="nds-button" href="/components/">Explore components</a>
             <a class="nds-button nds-button--secondary" href="#installation">Install with npm</a>
+            <a class="nds-link" href="#platforms">Explore native foundations →</a>
           </div>
         </div>
         <div class="proof nds-glass" aria-label="System status">
           <div class="proof__summary">
             <span class="proof__status"><span aria-hidden="true"></span>System status</span>
-            <strong>Ready for products.</strong>
+            <strong>Web stable. Native in pilot.</strong>
           </div>
           <dl class="proof__metrics">
             <div><dt>Components</dt><dd><strong>26</strong><span>complete</span></dd></div>
             <div><dt>Product patterns</dt><dd><strong>5</strong><span>complete</span></dd></div>
-            <div><dt>MCP tools</dt><dd><strong>6</strong><span>verified</span></dd></div>
+            <div><dt>MCP tools</dt><dd><strong>9</strong><span>verified</span></dd></div>
           </dl>
         </div>
       </section>
@@ -58,12 +59,201 @@
 <span class="hljs-keyword">const</span> cleanup = <span class="hljs-title function_">initDialogs</span>(<span class="hljs-variable language_">document</span>);
 
 <span class="hljs-comment">// Call cleanup() before removing the component.</span></code></pre></div><p>Static components need CSS only. Interactive components such as Dialog, Select and Tabs also need their initializer; copy the matching HTML and JavaScript from the component reference.</p><p>Onest fonts are application-owned: load or self-host Onest separately. <a class="nds-link" href="/foundations.html">Read the foundations guide</a>.</p><p class="implementation-copy-status" role="status" aria-live="polite"></p><a class="nds-link" href="/components/">Browse components and implementation examples →</a></section>
+      <section id="platforms" class="catalog-section native-section" aria-labelledby="platforms-title">
+        <div class="section-heading">
+          <p class="component-label">Web · iOS · Android</p>
+          <h2 id="platforms-title">One foundation.<br />Built for each platform.</h2>
+        </div>
+        <p class="native-intro">Share the Nikba visual language across your website and apps. Colors, spacing, radii, fixed type sizes, weights, control heights, durations, and opacity come from one source. Each platform keeps its own components and familiar interactions.</p>
+        <div class="native-platform-grid">
+          <article class="native-platform-card" aria-labelledby="platform-web-title">
+            <span class="status status--complete">Stable · 1.1.0</span>
+            <h3 id="platform-web-title">Web</h3>
+            <p>Framework-agnostic CSS, accessible HTML, and JavaScript behaviors. Explore the full component library, product patterns, and MCP implementation reference.</p>
+            <a class="nds-link" href="#installation">Install the web library →</a>
+          </article>
+          <article class="native-platform-card" aria-labelledby="platform-ios-title">
+            <span class="status">5 components · Pilot</span>
+            <h3 id="platform-ios-title">iOS · SwiftUI</h3>
+            <p>A local Swift package with Button, Field, Card, Badge, product states, and bundled Onest with Dynamic Type. Targets iOS 17+ and Swift 6.</p>
+            <a class="nds-link" href="#native-integration">Integrate with SwiftUI →</a>
+          </article>
+          <article class="native-platform-card" aria-labelledby="platform-android-title">
+            <span class="status">5 components · Pilot</span>
+            <h3 id="platform-android-title">Android · Compose</h3>
+            <p>Jetpack Compose Button, Field, Card, Badge, and product states. Generated Kotlin tokens support your Material theme and existing font resources.</p>
+            <a class="nds-link" href="#native-integration">Integrate with Compose →</a>
+          </article>
+        </div>
+
+        <div class="native-source">
+          <p class="component-label">Shared source</p>
+          <h3>Tokens flow from one place.</h3>
+          <p><code>src/tokens/foundations.json</code> generates the existing CSS token files, <code>NikbaTokens.swift</code>, and <code>NikbaTokens.kt</code>. Frost, Mist, and Graphite are available on all three platforms. On iOS, adaptive colors follow system appearance with Frost in light mode and Graphite in dark mode; Android selects the palette in its theme.</p>
+          <p>The first native consumer is <strong>localhost.md</strong>. Its iOS and Android apps use the shared components for catalog search, panels, badges, recovery actions, and content states. Product-specific navigation and identity stay in the app.</p>
+        </div>
+
+        <div id="native-integration" class="implementation-panel" aria-labelledby="native-integration-title">
+          <p class="component-label">Get started · Native pilot</p>
+          <h3 id="native-integration-title">Add tokens and components to your app.</h3>
+          <p>iOS supports a Swift package with bundled Onest; Android uses source files and an app-owned font resource. Native APIs are published as a pilot in release 1.1.0; the web library retains its stable API.</p>
+          <div id="ios-package" class="native-package-setup">
+            <h4>iOS · Swift Package Manager</h4>
+            <ol>
+              <li>In Xcode, choose Add Package Dependencies, enter <code>https://github.com/Nikba-Creative-Studio/nikba-design-system.git</code>, and select Exact Version <code>1.1.0</code>. MCP’s <code>get_installation({ platform: "ios" })</code> returns remote and local installation options.</li>
+              <li>Link the <code>NikbaDesignSystem</code> product to your iOS app target and <code>import NikbaDesignSystem</code> alongside SwiftUI.</li>
+              <li>Use <code>NDSTypography.font</code> to register bundled Onest automatically. Request <code>get_native_source({ platform: "ios", kind: "example" })</code> for a complete first screen with state and focus bindings.</li>
+            </ol>
+            <p>The <code>v1.1.0</code> release tag contains the Swift package and bundled font. For local development, use Add Local with this checkout. The older web-only <code>v1.0.0</code> tag does not contain Package.swift.</p>
+            <a class="nds-link" href="/mcp.html#native-workflow">Follow the iOS MCP workflow →</a>
+          </div>
+          <h4>Alternative · Source files</h4>
+          <p>Download both files for your platform and add them to an app source set. Source-copy consumers bundle/register Onest themselves. Android also needs Compose UI, Foundation, Material 3 and tooling-preview.</p>
+          <div class="button-row native-downloads">
+            <a class="nds-button nds-button--secondary" href="https://github.com/Nikba-Creative-Studio/nikba-design-system/blob/main/native/ios/NikbaTokens.swift" data-native-download="ios" download="NikbaTokens.swift">Download Swift tokens</a>
+            <a class="nds-button nds-button--secondary" href="https://github.com/Nikba-Creative-Studio/nikba-design-system/blob/main/native/ios/NikbaComponents.swift" data-native-download="ios-components" download="NikbaComponents.swift">Download Swift components</a>
+            <a class="nds-button nds-button--secondary" href="https://github.com/Nikba-Creative-Studio/nikba-design-system/blob/main/native/android/NikbaTokens.kt" data-native-download="android" download="NikbaTokens.kt">Download Kotlin tokens</a>
+            <a class="nds-button nds-button--secondary" href="https://github.com/Nikba-Creative-Studio/nikba-design-system/blob/main/native/android/NikbaComponents.kt" data-native-download="android-components" download="NikbaComponents.kt">Download Kotlin components</a>
+            <a class="nds-button nds-button--secondary" href="https://github.com/Nikba-Creative-Studio/nikba-design-system/blob/main/src/tokens/foundations.json" data-native-download="source" download="foundations.json">Download source JSON</a>
+          </div>
+          <h4>SwiftUI</h4>
+          <p>With SwiftPM, import the module as below. For the source-copy alternative, add <code>NikbaTokens.swift</code> and <code>NikbaComponents.swift</code> to the app and omit the module import. Components use adaptive Frost/Graphite colors and text styles that respond to the reader’s preferred size.</p>
+          <div class="implementation-example">
+            <div class="implementation-example__toolbar"><span>Swift · iOS 17+</span><button class="nds-button nds-button--secondary nds-button--small" type="button" data-copy-example aria-label="Copy SwiftUI foundation example">Copy</button></div>
+            <pre tabindex="0" aria-label="SwiftUI foundation example"><code>import SwiftUI
+import NikbaDesignSystem
+
+struct WelcomeView: View {
+    var body: some View {
+        NDSCard {
+            NDSBadge("Ready", tone: .success)
+            Text("Welcome to Nikba")
+                .font(NDSTypography.font())
+            NDSButton(action: { /* Start your flow. */ }) {
+                Text("Continue")
+            }
+        }
+    }
+}</code></pre>
+          </div>
+          <h4>Jetpack Compose</h4>
+          <p>Add <code>NikbaTokens.kt</code> and <code>NikbaComponents.kt</code> to your Android source set. Their package is <code>com.nikba.designsystem</code>. Keep the Onest font resource and typography role mapping in your app.</p>
+          <div class="implementation-example">
+            <div class="implementation-example__toolbar"><span>Kotlin · Compose</span><button class="nds-button nds-button--secondary nds-button--small" type="button" data-copy-example aria-label="Copy Compose foundation example">Copy</button></div>
+            <pre tabindex="0" aria-label="Compose foundation example"><code>import androidx.compose.foundation.isSystemInDarkTheme
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.lightColorScheme
+import androidx.compose.material3.darkColorScheme
+import androidx.compose.runtime.Composable
+import com.nikba.designsystem.NDSColors
+
+@Composable
+fun NikbaTheme(content: @Composable () -&gt; Unit) {
+    val dark = isSystemInDarkTheme()
+    val palette = if (dark) NDSColors.graphite else NDSColors.frost
+    val colors = if (dark) darkColorScheme(
+        background = palette.canvas, onBackground = palette.text,
+        surface = palette.surface, onSurface = palette.text,
+    ) else lightColorScheme(
+        background = palette.canvas, onBackground = palette.text,
+        surface = palette.surface, onSurface = palette.text,
+    )
+    MaterialTheme(colorScheme = colors, content = content)
+}</code></pre>
+          </div>
+          <p>This Compose example maps the canvas and surface roles. Map the remaining Material roles and your app’s typography when integrating a complete theme.</p>
+          <div class="implementation-example">
+            <div class="implementation-example__toolbar"><span>Kotlin · Components inside your theme</span><button class="nds-button nds-button--secondary nds-button--small" type="button" data-copy-example aria-label="Copy Compose component example">Copy</button></div>
+            <pre tabindex="0" aria-label="Compose component example"><code>// Import androidx.compose.material3.Text and com.nikba.designsystem.*
+NDSCard {
+    NDSBadge("Ready", tone = NDSBadgeTone.Success)
+    Text("Welcome to Nikba")
+    NDSButton(onClick = { /* Start your flow. */ }) {
+        Text("Continue")
+    }
+}</code></pre>
+          </div>
+          <h4>Generate and synchronize</h4>
+          <p>In a checkout of the Nikba Design System repository, edit the source JSON and regenerate. Consumer directories must already exist. Updates to other repositories are explicit; <code>--check</code> verifies that their copies match without writing.</p>
+          <div class="implementation-example">
+            <div class="implementation-example__toolbar"><span>Terminal · Design system repository</span><button class="nds-button nds-button--secondary nds-button--small" type="button" data-copy-example aria-label="Copy native token workflow">Copy</button></div>
+            <pre tabindex="0" aria-label="Native token generation and synchronization"><code>npm run tokens:generate
+npm run tokens:check
+npm run test:tokens
+
+# Synchronize tokens and components to existing app directories.
+npm run native:sync -- \
+  --ios-output /absolute/path/to/ios/sources \
+  --android-output /absolute/path/to/android/sources
+
+# Verify the consumer copies without writing.
+npm run native:sync -- --check \
+  --ios-output /absolute/path/to/ios/sources \
+  --android-output /absolute/path/to/android/sources</code></pre>
+          </div>
+          <p>Commit generated files alongside source changes. <code>npm test</code> detects stale library outputs; <code>native:sync --check</code> checks both tokens and handwritten components in your app. The native files are included in repository package builds; check your installed npm version for the <code>native/</code> directory before using it as a source.</p>
+          <p class="implementation-copy-status" role="status" aria-live="polite"></p>
+        </div>
+
+        <div id="native-components" class="native-mapping" aria-labelledby="native-components-title">
+          <h3 id="native-components-title">Five components. Two native implementations.</h3>
+          <p>Available as pilot APIs through the local iOS Swift package or native source files, with light and dark/large-text previews. Components follow system appearance with Frost and Graphite; Mist remains available through raw palette tokens.</p>
+          <div class="native-table-scroll" role="region" aria-labelledby="native-components-title" tabindex="0">
+            <table class="native-token-table">
+              <caption>SwiftUI and Compose component pilot</caption>
+              <thead><tr><th scope="col">Component</th><th scope="col">States and variants</th><th scope="col">Usage</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Button</th><td>Primary, secondary, ghost, destructive; disabled and loading.</td><td><code>NDSButton</code> keeps the label visible during loading and blocks duplicate activation. Minimum height: 44 pt / 48 dp.</td></tr>
+                <tr><th scope="row">Field</th><td>Label, helper, error, focus, disabled.</td><td><code>NDSField</code> wraps native text input. Your app owns the value, validation, keyboard policy, and focus.</td></tr>
+                <tr><th scope="row">Card</th><td>Bordered surface with shared padding and radius.</td><td><code>NDSCard</code> contains content; your app owns navigation and nested actions.</td></tr>
+                <tr><th scope="row">Badge</th><td>Neutral, success, warning, danger, info.</td><td><code>NDSBadge</code> uses readable text labels and semantic colors; tone text meets 4.5:1 contrast on its surface.</td></tr>
+                <tr><th scope="row">Product states</th><td>Loading, empty, error, success.</td><td><code>NDSState</code> combines a visible title, optional message, native progress, and recovery actions.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="native-mapping" aria-labelledby="native-mapping-title">
+          <h3 id="native-mapping-title">Shared values, platform-aware usage.</h3>
+          <div class="native-table-scroll" role="region" aria-labelledby="native-mapping-title" tabindex="0">
+            <table class="native-token-table">
+              <caption>Token mapping across web, SwiftUI, and Compose</caption>
+              <thead><tr><th scope="col">Foundation</th><th scope="col">Native API</th><th scope="col">Mapping</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Opaque semantic colors</th><td><code>NDSColors</code>, <code>NDSPalette</code></td><td>All three palettes; adaptive or explicit appearance.</td></tr>
+                <tr><th scope="row">Spacing and radius</th><td><code>NDSSpace</code>, <code>NDSRadius</code></td><td>1 rem → 16 pt / dp. Fixed px values map to pt / dp.</td></tr>
+                <tr><th scope="row">Fixed typography</th><td><code>NDSFontSize</code>, <code>NDSFontWeight</code></td><td>pt / sp and numeric weights. Fluid CSS headings need a native type scale.</td></tr>
+                <tr><th scope="row">Control height</th><td><code>NDSControlHeight</code></td><td>Visual size; accessible hit areas are defined per platform.</td></tr>
+                <tr><th scope="row">Motion and opacity</th><td><code>NDSDuration</code>, <code>NDSOpacity</code></td><td>Milliseconds and unitless values. Respect native reduced motion settings.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="native-notes-grid">
+          <article class="native-platform-card">
+            <p class="component-label">Platform ownership</p>
+            <h3>Native behavior stays native.</h3>
+            <p>CSS shadows, glass effects, fluid layout, breakpoints, and z-index remain web values. Native apps own materials, safe areas, navigation, gestures, keyboards, accessible touch targets, screen reader semantics, and reduced motion.</p>
+          </article>
+          <article class="native-platform-card">
+            <p class="component-label">Next milestone · Validation</p>
+            <h3>From pilot to stable APIs.</h3>
+            <p>Five components, SwiftPM installation, bundled iOS fonts, and platform-aware MCP retrieval are available now. The next stage is manual VoiceOver/TalkBack review, wider device coverage, API stabilization, and a stable native API. Android library publication remains future work.</p>
+          </article>
+        </div>
+      </section>
+
 <section class="catalog-section reveal" aria-labelledby="explore-title">
         <div class="section-heading">
           <p class="component-label">Explore</p>
           <h2 id="explore-title">A complete path from tokens to product flows.</h2>
         </div>
         <div class="catalog-index-grid">
+          <a class="catalog-index-card" href="#platforms">
+            <span class="status">Native pilot</span>
+            <div><h3>iOS and Android</h3><p>Shared foundation tokens, source downloads, native integration examples, and the component roadmap.</p></div>
+            <span aria-hidden="true">↗</span>
+          </a>
           <a class="catalog-index-card catalog-index-card--feature" href="/foundations.html">
             <span class="status">Foundation</span>
             <div><h3>Foundations</h3><p>Tokens, typography, color, layout, motion, and glass behavior.</p></div>
@@ -81,7 +271,7 @@
           </a>
           <a class="catalog-index-card" href="/mcp.html">
             <span class="status status--complete">Verified</span>
-            <div><h3>MCP for AI</h3><p>Forty published documents, design tokens, six tools, and one implementation prompt.</p></div>
+            <div><h3>MCP for AI</h3><p>Web and native contracts, installation steps, exact source, nine tools, and platform-aware implementation guidance.</p></div>
             <span aria-hidden="true">↗</span>
           </a>
           <a class="catalog-index-card" href="/components/button.html">
@@ -228,6 +418,6 @@
       </section>
     </main>
 
-    <footer class="catalog-footer nds-container"><span>Designed and built with all the love in the world by the <a class="nds-link" href="https://nikba.com/">Nikba Creative Studio</a>.</span><span>1.0.0 · Stable release</span></footer>
+    <footer class="catalog-footer nds-container"><span>Designed and built with all the love in the world by the <a class="nds-link" href="https://nikba.com/">Nikba Creative Studio</a>.</span><span>1.1.0 · Stable release</span></footer>
   </body>
 </html>

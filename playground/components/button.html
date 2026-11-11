@@ -81,10 +81,26 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></code></pre></div>
 <div class="implementation-example"><div class="implementation-example__toolbar"><span>HTML · Example 4</span><button type="button" class="nds-button nds-button--secondary nds-button--small" data-copy-example aria-label="Copy Button example 4">Copy</button></div><pre tabindex="0" aria-label="html implementation example 4"><code class="hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;nds-button&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">aria-busy</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">disabled</span>&gt;</span>Saving changes<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></code></pre></div><p class="implementation-copy-status" role="status" aria-live="polite"></p></section>
 <!-- implementation:end -->
+<!-- native:start -->
+<section class="implementation-panel" aria-labelledby="native-title">
+  <p class="component-label">SwiftUI · Jetpack Compose · Experimental</p>
+  <h2 id="native-title">Native Button</h2>
+  <p>For iOS, link the local NikbaDesignSystem Swift package and import SwiftUI and NikbaDesignSystem; Onest is bundled. For Android, add NikbaTokens.kt and NikbaComponents.kt and import Compose Material Text and com.nikba.designsystem.*. Examples below belong inside your native view or composable, with application-owned state and actions.</p>
+  <p>Supply your saving state and save action. Loading prevents activation; on SwiftUI, use .disabled(...) for other unavailable states.</p>
+  <div class="implementation-example"><div class="implementation-example__toolbar"><span>SwiftUI · Button</span><button class="nds-button nds-button--secondary nds-button--small" type="button" data-copy-example aria-label="Copy native Button SwiftUI example">Copy</button></div><pre tabindex="0" aria-label="Native Button SwiftUI example"><code>NDSButton(variant: .secondary, isLoading: saving, action: save) {
+    Text(&quot;Save changes&quot;)
+}</code></pre></div><div class="implementation-example"><div class="implementation-example__toolbar"><span>Compose · Button</span><button class="nds-button nds-button--secondary nds-button--small" type="button" data-copy-example aria-label="Copy native Button Compose example">Copy</button></div><pre tabindex="0" aria-label="Native Button Compose example"><code>NDSButton(onClick = save, variant = NDSButtonVariant.Secondary, loading = saving) {
+    Text(&quot;Save changes&quot;)
+}</code></pre></div>
+  <p class="implementation-copy-status" role="status" aria-live="polite"></p>
+  <a class="nds-link" href="/#native-components">Native component availability and integration →</a>
+</section>
+<!-- native:end -->
+
 <section id="guidance" class="guidance-panel nds-glass reveal" aria-labelledby="guidance-title"><p class="component-label">Content guidance</p><h2 id="guidance-title">Start with a clear verb.</h2><p>Write “Save changes,” “Add member,” or “Delete project.” Keep labels concise, specific, and on one line.</p><a class="nds-link nds-link--standalone" href="/components/link.html">Next component: Link <span class="nds-link__icon" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" /></svg></span></a></section>
         </div>
       </div>
     </main>
-    <footer class="catalog-footer nds-container"><span>Designed and built with all the love in the world by the <a class="nds-link" href="https://nikba.com/">Nikba Creative Studio</a>.</span><span>1.0.0 · Stable release</span></footer>
+    <footer class="catalog-footer nds-container"><span>Designed and built with all the love in the world by the <a class="nds-link" href="https://nikba.com/">Nikba Creative Studio</a>.</span><span>1.1.0 · Stable release</span></footer>
   </body>
 </html>

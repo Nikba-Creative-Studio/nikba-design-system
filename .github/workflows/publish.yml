@@ -1,0 +1,56 @@
+name: Publish npm
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Existing verified release tag, such as v1.1.0
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: npm-publication
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      actions: read
+      id-token: write
+    steps:
+      - name: Check out release tag
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.release.tag_name || inputs.tag }}
+          fetch-depth: 0
+      - name: Use Node.js with trusted-publishing support
+        uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          registry-url: https://registry.npmjs.org
+          cache: npm
+      - name: Verify release identity and successful verification run
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ github.event.release.tag_name || inputs.tag }}
+        run: |
+          [[ "$RELEASE_TAG" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]
+          test "$RELEASE_TAG" = "v$(node -p 'require("./package.json").version')"
+          release_sha=$(git rev-parse HEAD)
+          test "$(git rev-parse "$RELEASE_TAG^{commit}")" = "$release_sha"
+          test "$(gh run list --workflow verify.yml --commit "$release_sha" --json status,conclusion --jq 'any(.[]; .status == "completed" and .conclusion == "success")')" = true
+          gh release view "$RELEASE_TAG" --json isDraft --jq '.isDraft == false' | rg '^true$'
+      - name: Install locked dependencies
+        run: npm ci
+      - name: Verify final archive
+        run: npm run verify:release
+      - name: Publish with OIDC and provenance
+        run: npm publish --access public --provenance

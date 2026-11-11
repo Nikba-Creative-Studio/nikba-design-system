@@ -11,4 +11,8 @@ const changelog = await read('CHANGELOG.md');
 assert.ok(changelog.includes('## ' + pkg.version + ' - '), 'Changelog must contain a dated entry for the package version.');
 assert.ok(pkg.files.includes('CHANGELOG.md'), 'Published package must include its changelog.');
 assert.equal(pkg.publishConfig.access, 'public');
+const native = JSON.parse(await read('native/manifest.json'));
+assert.equal(native.nativeVersion, pkg.version, 'Native and npm versions must match.');
+assert.equal(native.releaseTag, 'v' + pkg.version, 'SwiftPM tag must match the npm version.');
+assert.equal(native.releaseStatus, 'published', 'Release artifacts must identify the published distribution.');
 console.log('Release metadata is consistent for ' + pkg.version + '.');

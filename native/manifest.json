@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "nativeVersion": "1.1.0",
+  "status": "pilot",
+  "releaseStatus": "published",
+  "repository": "https://github.com/Nikba-Creative-Studio/nikba-design-system.git",
+  "platforms": {
+    "ios": {
+      "minimumOS": "iOS 17",
+      "language": "Swift 6",
+      "module": "NikbaDesignSystem",
+      "distribution": "Swift Package Manager or source files",
+      "guide": "ios",
+      "example": "native/examples/ios/FirstScreen.swift",
+      "sources": {
+        "tokens": "native/ios/NikbaTokens.swift",
+        "components": "native/ios/NikbaComponents.swift",
+        "fonts": "native/ios/NikbaFonts.swift"
+      }
+    },
+    "android": {
+      "minimumOS": "Android API 26 (pilot consumer baseline)",
+      "language": "Kotlin / Jetpack Compose",
+      "module": "com.nikba.designsystem",
+      "distribution": "source files; Android library publication is not available",
+      "guide": "native",
+      "example": "native/examples/android/FirstScreen.kt",
+      "sources": {
+        "tokens": "native/android/NikbaTokens.kt",
+        "components": "native/android/NikbaComponents.kt"
+      }
+    }
+  },
+  "components": [
+    {
+      "slug": "button",
+      "title": "Button",
+      "symbol": "NDSButton",
+      "description": "Native action with primary, secondary, ghost and destructive variants.",
+      "states": [
+        "default",
+        "disabled",
+        "loading"
+      ],
+      "variants": {
+        "ios": [
+          "primary",
+          "secondary",
+          "ghost",
+          "destructive"
+        ],
+        "android": [
+          "Primary",
+          "Secondary",
+          "Ghost",
+          "Destructive"
+        ]
+      },
+      "guidance": "Loading retains the label and disables activation. SwiftUI uses .disabled(...) for external availability. Minimum height is 44 pt on iOS and 48 dp on Android. Pass localized loadingLabel. Consumers own async state and prevent overlapping requests."
+    },
+    {
+      "slug": "field",
+      "title": "Field",
+      "symbol": "NDSField",
+      "description": "Native text input with a label, helper text and validation error.",
+      "states": [
+        "default",
+        "focused",
+        "disabled",
+        "error"
+      ],
+      "guidance": "The application owns values, validation and keyboard policy. SwiftUI wraps TextField or SecureField and passes isFocused from its FocusState binding. Compose wraps OutlinedTextField. Error text takes precedence over helper text."
+    },
+    {
+      "slug": "card",
+      "title": "Card",
+      "symbol": "NDSCard",
+      "description": "Non-interactive bordered surface using shared spacing and radii.",
+      "states": [
+        "default"
+      ],
+      "guidance": "Navigation, click semantics and nested actions belong to the application. Do not assume Card is a button."
+    },
+    {
+      "slug": "badge",
+      "title": "Badge",
+      "symbol": "NDSBadge",
+      "description": "Readable status label with semantic color tones.",
+      "states": [
+        "default"
+      ],
+      "variants": {
+        "ios": [
+          "neutral",
+          "success",
+          "warning",
+          "danger",
+          "info"
+        ],
+        "android": [
+          "Neutral",
+          "Success",
+          "Warning",
+          "Danger",
+          "Info"
+        ]
+      },
+      "guidance": "The label conveys meaning independently of color. Semantic tones use the primary surface to maintain 4.5:1 text contrast. Badge is not interactive; native Chip is unavailable."
+    },
+    {
+      "slug": "product-states",
+      "title": "Product states",
+      "symbol": "NDSState",
+      "description": "Loading, empty, error and success compositions with optional recovery content.",
+      "states": [
+        "loading",
+        "empty",
+        "error",
+        "success"
+      ],
+      "variants": {
+        "ios": [
+          "loading",
+          "empty",
+          "error",
+          "success"
+        ],
+        "android": [
+          "Loading",
+          "Empty",
+          "Error",
+          "Success"
+        ]
+      },
+      "guidance": "Supply a visible title, optional message and recovery actions. SwiftUI accepts an optional trailing actions ViewBuilder; Compose accepts an optional ColumnScope content lambda. App owns state decisions. Compose uses a polite live region; VoiceOver announcements remain app-owned."
+    }
+  ],
+  "aliases": {
+    "badge-chip": "badge"
+  },
+  "fallbacks": {
+    "ios": {
+      "select": "SwiftUI.Picker",
+      "checkbox-radio": "SwiftUI.Toggle or Picker",
+      "switch": "SwiftUI.Toggle",
+      "dialog": "SwiftUI.sheet or alert",
+      "tabs": "SwiftUI.TabView or Picker, depending on navigation",
+      "table": "SwiftUI.List or Table as appropriate",
+      "input-textarea": "NDSField wrapping a native input; TextEditor for multiline editing",
+      "header-navigation": "SwiftUI.NavigationStack and toolbar"
+    },
+    "android": {
+      "select": "Material3.ExposedDropdownMenuBox",
+      "checkbox-radio": "Material3.Checkbox or RadioButton",
+      "switch": "Material3.Switch",
+      "dialog": "Material3.AlertDialog",
+      "tabs": "Material3.TabRow or NavigationBar",
+      "table": "Compose LazyColumn with app-defined row semantics",
+      "input-textarea": "NDSField with singleLine = false",
+      "header-navigation": "Material3.TopAppBar and platform navigation"
+    }
+  },
+  "releaseTag": "v1.1.0"
+}

@@ -73,9 +73,9 @@ async function verifyEngine(name) {
     for (const link of await page.locator('.catalog-nav__links a').all()) {
       await assertVisible(link, `${name}: primary navigation remains visible on compact screens.`);
     }
-    const homeCatalog = page.locator('.page-home .catalog-section');
+    const homeCatalog = page.locator('.page-home section[aria-labelledby="explore-title"]');
     await homeCatalog.evaluate((element) => element.scrollIntoView());
-    await page.waitForFunction(() => getComputedStyle(document.querySelector('.page-home .catalog-section')).opacity === '1');
+    await page.waitForFunction(() => getComputedStyle(document.querySelector('.page-home section[aria-labelledby="explore-title"]')).opacity === '1');
     assert.equal(await homeCatalog.evaluate((element) => getComputedStyle(element).opacity), '1', `${name}: the complete mobile catalog is revealed.`);
 
     await page.setViewportSize({ width: 1280, height: 900 });

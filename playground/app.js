@@ -3,14 +3,24 @@ import { initMultiSelects } from '../src/behaviors/multi-select.js';
 import { initComboboxes } from '../src/behaviors/combobox.js';
 import { createToastManager, glassLevels, initAccordions, initDialogs, initForms, initNavigations, initPopovers, initSelects, initTables, initTabs, initTooltips, setGlassLevel, setTheme, themes } from '../src/index.js';
 import logoUrl from '../src/logo.svg?url';
+import swiftTokensUrl from '../native/ios/NikbaTokens.swift?url&no-inline';
+import kotlinTokensUrl from '../native/android/NikbaTokens.kt?url&no-inline';
+import swiftComponentsUrl from '../native/ios/NikbaComponents.swift?url&no-inline';
+import kotlinComponentsUrl from '../native/android/NikbaComponents.kt?url&no-inline';
+import foundationSourceUrl from '../src/tokens/foundations.json?url&no-inline';
 import { componentCatalog } from './component-catalog.js';
 import './styles.css';
 
 const root = document.documentElement;
 const themeKey = 'nds-catalog-theme';
 const glassKey = 'nds-catalog-glass';
-const catalogRelease = '1.0.0';
+const catalogRelease = '1.1.0';
 const catalogBase = import.meta.env.BASE_URL;
+const nativeDownloads = { ios: swiftTokensUrl, android: kotlinTokensUrl, 'ios-components': swiftComponentsUrl, 'android-components': kotlinComponentsUrl, source: foundationSourceUrl };
+
+document.querySelectorAll('[data-native-download]').forEach(link => {
+  link.href = nativeDownloads[link.dataset.nativeDownload];
+});
 
 function catalogPath(path) {
   return `${catalogBase}${path.replace(/^\//, '')}`;

@@ -34,6 +34,71 @@ jobs:
       - name: Build and verify package
         run: npm run verify:release
 
+  native-ios:
+    name: SwiftPM consumer and MCP examples
+    runs-on: macos-15
+    timeout-minutes: 20
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+      - name: Use Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install locked dependencies
+        run: npm ci
+      - name: Install consumer project generator
+        run: command -v xcodegen || brew install xcodegen
+      - name: Check generated tokens
+        run: npm run tokens:check
+      - name: Compile MCP examples and test bundled fonts in an isolated SwiftPM app
+        run: npm run test:native:ios -- --packed
+      - name: Upload native test results
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: native-ios-consumer
+          path: artifacts/native-ios
+          if-no-files-found: ignore
+
+  native-android:
+    name: Compose consumer and MCP examples
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+      - name: Use Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+      - name: Set up Java
+        uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: 17
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+      - name: Install consumer SDK platform
+        run: sdkmanager "platforms;android-36" "build-tools;35.0.0"
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v6
+        with:
+          gradle-version: '8.11.1'
+      - name: Install locked dependencies
+        run: npm ci
+      - name: Compile exact MCP Kotlin sources and example
+        run: npm run test:native:android
+      - name: Upload native test log
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: native-android-consumer
+          path: artifacts/native-android
+          if-no-files-found: ignore
+
   browser:
     name: Browser accessibility and snapshots
     runs-on: ubuntu-latest
@@ -94,7 +159,7 @@ jobs:
   deploy-pages:
     name: Deploy GitHub Pages
     if: github.event_name == 'push'
-    needs: [package, browser, cross-browser]
+    needs: [package, native-ios, native-android, browser, cross-browser]
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:

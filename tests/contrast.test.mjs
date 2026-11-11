@@ -36,6 +36,7 @@ for (const theme of themeNames) {
   const block = getThemeBlock(theme);
   const surface = getColor(block, 'surface');
   const canvas = getColor(block, 'canvas');
+  assert.ok(contrast(getColor(block, 'text-secondary'), getColor(block, 'surface-alt')) >= 4.5, `${theme} native neutral badge text must reach 4.5:1 on its surface-alt background.`);
 
   for (const role of ['text', 'text-secondary', 'text-tertiary']) {
     assert.ok(contrast(getColor(block, role), surface) >= 4.5, `${theme} ${role} must reach 4.5:1 on surface.`);
@@ -47,6 +48,7 @@ for (const theme of themeNames) {
 
   for (const role of ['success', 'warning', 'danger', 'info']) {
     assert.ok(contrast(getColor(block, role), surface) >= 3, `${theme} ${role} must reach 3:1 on surface.`);
+    assert.ok(contrast(getColor(block, role), surface) >= 4.5, `${theme} native ${role} badge text must reach 4.5:1 on its surface background.`);
   }
 }
 
