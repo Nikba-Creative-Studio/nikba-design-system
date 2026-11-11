@@ -75,7 +75,12 @@ async function verifyEngine(name) {
     }
     const homeCatalog = page.locator('.page-home section[aria-labelledby="explore-title"]');
     await homeCatalog.evaluate((element) => element.scrollIntoView());
-    await page.waitForFunction(() => getComputedStyle(document.querySelector('.page-home section[aria-labelledby="explore-title"]')).opacity === '1');
+    await page.waitForFunction(() => {
+      const catalog = document.querySelector('.page-home section[aria-labelledby="explore-title"]');
+      return catalog.classList.contains('is-visible')
+        && getComputedStyle(catalog).opacity === '1'
+        && catalog.getAnimations().every(animation => animation.playState !== 'running');
+    });
     assert.equal(await homeCatalog.evaluate((element) => getComputedStyle(element).opacity), '1', `${name}: the complete mobile catalog is revealed.`);
 
     await page.setViewportSize({ width: 1280, height: 900 });
