@@ -4,7 +4,7 @@ Neutral interface foundations, Onest typography, and selective glassmorphism for
 
 [Open the live component catalog](https://nikba-creative-studio.github.io/nikba-design-system/).
 
-> Status: `1.1.0` — stable release. Documented public APIs follow Semantic Versioning.
+> Status: `1.1.1` — stable release. Documented public APIs follow Semantic Versioning.
 
 ## Principles
 
@@ -89,7 +89,7 @@ Use native `disabled` whenever the HTML element supports it. A link styled as a 
 
 ## Native foundations and components
 
-SwiftUI and Jetpack Compose have an initial pilot: shared foundation tokens plus Button, Field, Card, Badge and product states. iOS supports a Swift Package with bundled Onest: add this repository URL in Xcode with Exact Version **1.1.0**, link **NikbaDesignSystem**, and `import NikbaDesignSystem`. Local package development is also supported. See [Build an iOS app](./docs/IOS.md) for the first-screen workflow. Android uses source files. Release 1.1.0 includes native pilot APIs; use the v1.1.0 tag for SwiftPM. The older web-only v1.0.0 tag does not contain this package. [Native foundations and components](./docs/NATIVE.md) describes APIs and platform boundaries.
+SwiftUI and Jetpack Compose have an initial pilot: shared foundation tokens plus Button, Field, Card, Badge and product states. iOS supports a Swift Package with bundled Onest: add this repository URL in Xcode with Exact Version **1.1.1**, link **NikbaDesignSystem**, and `import NikbaDesignSystem`. Local package development is also supported. See [Build an iOS app](./docs/IOS.md) for the first-screen workflow. Android uses source files. Release 1.1.1 includes native pilot APIs; use the v1.1.1 tag for SwiftPM. The older web-only v1.0.0 tag does not contain this package. [Native foundations and components](./docs/NATIVE.md) describes APIs and platform boundaries.
 
 ## AI and MCP
 

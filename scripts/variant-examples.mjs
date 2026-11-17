@@ -30,7 +30,7 @@ for (const component of componentCatalog) {
     const modifiers = classes(target).filter(name => name.startsWith('nds-'));
     const label = modifiers.join(' ');
     count++;
-    return `<details class="variant-code"><summary>View code · <code>${escape(label)}</code></summary><div class="implementation-example"><div class="implementation-example__toolbar"><span>HTML · Variant ${index+1}</span><button type="button" class="nds-button nds-button--secondary nds-button--small" data-copy-example aria-label="Copy ${escape(label)} variant ${index+1}">Copy</button></div><pre tabindex="0" aria-label="${escape(label)} source"><code class="hljs language-html">${hljs.highlight(code,{language:'html'}).value}</code></pre></div></details>`;
+    return `<details class="variant-code"><summary>View code, <code>${escape(label)}</code></summary><div class="implementation-example"><div class="implementation-example__toolbar"><span>HTML, Variant ${index+1}</span><button type="button" class="nds-button nds-button--secondary nds-button--small" data-copy-example aria-label="Copy ${escape(label)} variant ${index+1}">Copy</button></div><pre tabindex="0" aria-label="${escape(label)} source"><code class="hljs language-html">${hljs.highlight(code,{language:'html'}).value}</code></pre></div></details>`;
    });
    if (snippets.length) edits.push({offset:node.sourceCodeLocation.endTag.startOffset,text:'<!-- variants:start --><div class="variant-code-panel">'+snippets.join('\n')+'<p role="status" aria-live="polite" class="implementation-copy-status"></p></div><!-- variants:end -->'});
   }

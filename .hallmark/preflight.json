@@ -1,0 +1,32 @@
+{
+  "scanned": "2026-11-17",
+  "mode": "audit and fixes",
+  "depth": "polish",
+  "findings": {
+    "fonts": "Onest, system fallback (DESIGN.md:48; src/tokens/foundations.json:8)",
+    "palette": "Frost, Mist, Graphite semantic roles (DESIGN.md:15; src/tokens/foundations.json:78)",
+    "motion": "L2 restrained motion with CSS (DESIGN.md:7; src/foundations/motion.css:1)",
+    "spacing": "4px scale, 1280px cap, 760px prose (DESIGN.md:66)",
+    "framework": "Vite multi-page catalog, framework-agnostic library (package.json:98; vite.playground.config.js:54)",
+    "product": "Local catalog http://127.0.0.1:5173; 35 pages, native reference and live specimens",
+    "tools": "Hallmark 2.0.0 at nutlope/hallmark commit 04977e15f3dfd6ee4b74c887dac3eb52665d6c92; puppeteer-core installed only in /tmp/nikba-hallmark-tools"
+  },
+  "preserve": [
+    "Locked DESIGN.md",
+    "Onest and semantic palette",
+    "Public component APIs",
+    "All routes, links, fields, handlers and technical facts"
+  ],
+  "introduce": [
+    "Static navigation and styles",
+    "No-script resilience",
+    "Responsive and keyboard corrections",
+    "Automated 35-route/8-width verification"
+  ],
+  "assumptions": {
+    "audience": "developers integrating Nikba",
+    "use": "install and find implementation examples",
+    "tone": "calm, precise, tactile",
+    "material": "actual library components and existing native sources"
+  }
+}

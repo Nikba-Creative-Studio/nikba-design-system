@@ -31,4 +31,6 @@
   --nds-card-padding: clamp(1.25rem, 3vw, 2.5rem);
   --nds-link-underline-offset: 0.22em;
   --nds-link-underline-thickness: 1px;
+  --nds-dialog-backdrop: rgb(8 10 10 / 0.62);
+  --nds-dialog-backdrop-forced: rgb(0 0 0 / 0.75);
 }

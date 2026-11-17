@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Start a SwiftUI app from a fresh MCP conversation using the version-pinned Nikba Swift package, real component APIs and a compiled first-screen example. The package requires iOS 17+ and Swift 6. Release 1.1.0 includes native pilot APIs alongside the stable web library.
+Start a SwiftUI app from a fresh MCP conversation using the version-pinned Nikba Swift package, real component APIs and a compiled first-screen example. The package requires iOS 17+ and Swift 6. Release 1.1.1 includes native pilot APIs alongside the stable web library.
 
 ## 1. Discover before generating
 
@@ -12,19 +12,19 @@ All native responses carry `nativeVersion`, `status`, `releaseStatus` and a `sou
 
 ## 2. Add the Swift package
 
-In Xcode, select **File > Add Package Dependencies**, enter `https://github.com/Nikba-Creative-Studio/nikba-design-system.git`, and choose **Exact Version 1.1.0**. Add the **NikbaDesignSystem** product to your iOS target. The `v1.1.0` tag contains the package; the older web-only `v1.0.0` tag does not.
+In Xcode, select **File > Add Package Dependencies**, enter `https://github.com/Nikba-Creative-Studio/nikba-design-system.git`, and choose **Exact Version 1.1.1**. Add the **NikbaDesignSystem** product to your iOS target. The `v1.1.1` tag contains the package; the older web-only `v1.0.0` tag does not.
 
 For a consuming SwiftPM manifest:
 
 ```swift
-.package(url: "https://github.com/Nikba-Creative-Studio/nikba-design-system.git", exact: "1.1.0")
+.package(url: "https://github.com/Nikba-Creative-Studio/nikba-design-system.git", exact: "1.1.1")
 // In the consuming target's dependencies:
 .product(name: "NikbaDesignSystem", package: "nikba-design-system")
 ```
 
 For local development, choose **Add Local** and select the `packagePath` returned by MCP. Checkouts and installed npm archives include Package.swift, native sources, examples and the bundled font. The package has no remote dependencies.
 
-The distribution version is 1.1.0 for npm, SwiftPM and MCP. Native APIs remain explicitly marked as a pilot and are not covered by the stable web API guarantee. Pin the exact release version when using this pilot. The content fingerprint is not a Git revision.
+The distribution version is 1.1.1 for npm, SwiftPM and MCP. Native APIs remain explicitly marked as a pilot and are not covered by the stable web API guarantee. Pin the exact release version when using this pilot. The content fingerprint is not a Git revision.
 
 ## 3. Import and use the complete example
 

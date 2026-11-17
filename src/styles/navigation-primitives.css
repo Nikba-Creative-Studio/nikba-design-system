@@ -9,7 +9,7 @@
 .nds-breadcrumb__ellipsis { color: var(--nds-text-tertiary); letter-spacing: 0.08em; }
 
 .nds-pagination { display: flex; align-items: center; justify-content: space-between; gap: var(--nds-space-4); }
-.nds-pagination__list { margin: 0; padding: 0; display: flex; align-items: center; gap: var(--nds-space-1); list-style: none; }
+.nds-pagination__list { margin: 0; padding: 0; display: flex; flex-wrap: wrap; align-items: center; gap: var(--nds-space-1); list-style: none; }
 .nds-pagination__link {
   min-width: var(--nds-control-height-sm);
   min-height: var(--nds-control-height-sm);

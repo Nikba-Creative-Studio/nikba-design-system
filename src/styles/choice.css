@@ -78,9 +78,7 @@
   opacity: 0;
   transform: scale(0.65);
   transition: opacity var(--nds-duration-fast) var(--nds-ease-out),
-    transform var(--nds-duration-fast) var(--nds-ease-out),
-    width var(--nds-duration-fast) var(--nds-ease-out),
-    height var(--nds-duration-fast) var(--nds-ease-out);
+    transform var(--nds-duration-fast) var(--nds-ease-out);
 }
 
 .nds-radio + .nds-choice__control::after {

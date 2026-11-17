@@ -1,0 +1,3812 @@
+[
+  {
+    "file": "playground/components/alert.html",
+    "before": "Alert · Nikba Design System",
+    "after": "Alert, Nikba Design System"
+  },
+  {
+    "file": "playground/components/alert.html",
+    "before": "Component 14 · Complete",
+    "after": "Component 14, Complete"
+  },
+  {
+    "file": "playground/components/alert.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/alert.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/alert.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/alert.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/alert.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/alert.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/alert.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/alert.html",
+    "before": "HTML · Variant 3",
+    "after": "HTML, Variant 3"
+  },
+  {
+    "file": "playground/components/alert.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/alert.html",
+    "before": "HTML · Variant 4",
+    "after": "HTML, Variant 4"
+  },
+  {
+    "file": "playground/components/alert.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/alert.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/alert.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/alert.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/alert.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/alert.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/alert.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/alert.html",
+    "before": "HTML · Variant 3",
+    "after": "HTML, Variant 3"
+  },
+  {
+    "file": "playground/components/alert.html",
+    "before": "HTML · Example 1",
+    "after": "HTML, Example 1"
+  },
+  {
+    "file": "playground/components/alert.html",
+    "before": "HTML · Example 2",
+    "after": "HTML, Example 2"
+  },
+  {
+    "file": "playground/components/avatar.html",
+    "before": "Avatar · Nikba Design System",
+    "after": "Avatar, Nikba Design System"
+  },
+  {
+    "file": "playground/components/avatar.html",
+    "before": "Component 11 · Complete",
+    "after": "Component 11, Complete"
+  },
+  {
+    "file": "playground/components/avatar.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/avatar.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/avatar.html",
+    "before": "Small · 32px",
+    "after": "Small, 32px"
+  },
+  {
+    "file": "playground/components/avatar.html",
+    "before": "Medium · 40px",
+    "after": "Medium, 40px"
+  },
+  {
+    "file": "playground/components/avatar.html",
+    "before": "Large · 48px",
+    "after": "Large, 48px"
+  },
+  {
+    "file": "playground/components/avatar.html",
+    "before": "Extra Large · 64px",
+    "after": "Extra Large, 64px"
+  },
+  {
+    "file": "playground/components/avatar.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/avatar.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/avatar.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/avatar.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/avatar.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/avatar.html",
+    "before": "HTML · Variant 3",
+    "after": "HTML, Variant 3"
+  },
+  {
+    "file": "playground/components/avatar.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/avatar.html",
+    "before": "HTML · Variant 4",
+    "after": "HTML, Variant 4"
+  },
+  {
+    "file": "playground/components/avatar.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/avatar.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/avatar.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/avatar.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/avatar.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/avatar.html",
+    "before": "HTML · Variant 3",
+    "after": "HTML, Variant 3"
+  },
+  {
+    "file": "playground/components/avatar.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/avatar.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/avatar.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/avatar.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/avatar.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/avatar.html",
+    "before": "HTML · Variant 3",
+    "after": "HTML, Variant 3"
+  },
+  {
+    "file": "playground/components/avatar.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/avatar.html",
+    "before": "HTML · Variant 4",
+    "after": "HTML, Variant 4"
+  },
+  {
+    "file": "playground/components/avatar.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/avatar.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/avatar.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/avatar.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/avatar.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/avatar.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/avatar.html",
+    "before": "HTML · Example 1",
+    "after": "HTML, Example 1"
+  },
+  {
+    "file": "playground/components/avatar.html",
+    "before": "HTML · Example 2",
+    "after": "HTML, Example 2"
+  },
+  {
+    "file": "playground/components/avatar.html",
+    "before": "HTML · Example 3",
+    "after": "HTML, Example 3"
+  },
+  {
+    "file": "playground/components/badge-chip.html",
+    "before": "Badge and Chip · Nikba Design System",
+    "after": "Badge and Chip, Nikba Design System"
+  },
+  {
+    "file": "playground/components/badge-chip.html",
+    "before": "Component 03 · Complete",
+    "after": "Component 03, Complete"
+  },
+  {
+    "file": "playground/components/badge-chip.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/badge-chip.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/badge-chip.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/badge-chip.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/badge-chip.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/badge-chip.html",
+    "before": "HTML · Variant 3",
+    "after": "HTML, Variant 3"
+  },
+  {
+    "file": "playground/components/badge-chip.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/badge-chip.html",
+    "before": "HTML · Variant 4",
+    "after": "HTML, Variant 4"
+  },
+  {
+    "file": "playground/components/badge-chip.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/badge-chip.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/badge-chip.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/badge-chip.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/badge-chip.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/badge-chip.html",
+    "before": "HTML · Variant 3",
+    "after": "HTML, Variant 3"
+  },
+  {
+    "file": "playground/components/badge-chip.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/badge-chip.html",
+    "before": "HTML · Variant 4",
+    "after": "HTML, Variant 4"
+  },
+  {
+    "file": "playground/components/badge-chip.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/badge-chip.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/badge-chip.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/badge-chip.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/badge-chip.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/badge-chip.html",
+    "before": "HTML · Variant 3",
+    "after": "HTML, Variant 3"
+  },
+  {
+    "file": "playground/components/badge-chip.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/badge-chip.html",
+    "before": "HTML · Variant 4",
+    "after": "HTML, Variant 4"
+  },
+  {
+    "file": "playground/components/badge-chip.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/badge-chip.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/badge-chip.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/badge-chip.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/badge-chip.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/badge-chip.html",
+    "before": "HTML · Variant 3",
+    "after": "HTML, Variant 3"
+  },
+  {
+    "file": "playground/components/badge-chip.html",
+    "before": "HTML · Example 1",
+    "after": "HTML, Example 1"
+  },
+  {
+    "file": "playground/components/badge-chip.html",
+    "before": "HTML · Example 2",
+    "after": "HTML, Example 2"
+  },
+  {
+    "file": "playground/components/badge-chip.html",
+    "before": "HTML · Example 3",
+    "after": "HTML, Example 3"
+  },
+  {
+    "file": "playground/components/badge-chip.html",
+    "before": "SwiftUI · Jetpack Compose · Experimental",
+    "after": "SwiftUI, Jetpack Compose, Experimental"
+  },
+  {
+    "file": "playground/components/badge-chip.html",
+    "before": "SwiftUI · Badge",
+    "after": "SwiftUI, Badge"
+  },
+  {
+    "file": "playground/components/badge-chip.html",
+    "before": "Compose · Badge",
+    "after": "Compose, Badge"
+  },
+  {
+    "file": "playground/components/badge-chip.html",
+    "before": "Native component availability and integration →",
+    "after": "Native component availability and integration"
+  },
+  {
+    "file": "playground/components/breadcrumb-pagination.html",
+    "before": "Breadcrumb and Pagination · Nikba Design System",
+    "after": "Breadcrumb and Pagination, Nikba Design System"
+  },
+  {
+    "file": "playground/components/breadcrumb-pagination.html",
+    "before": "Component 22 · Complete",
+    "after": "Component 22, Complete"
+  },
+  {
+    "file": "playground/components/breadcrumb-pagination.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/breadcrumb-pagination.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/breadcrumb-pagination.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/breadcrumb-pagination.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/breadcrumb-pagination.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/breadcrumb-pagination.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/breadcrumb-pagination.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/breadcrumb-pagination.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/breadcrumb-pagination.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/breadcrumb-pagination.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/breadcrumb-pagination.html",
+    "before": "HTML · Example 1",
+    "after": "HTML, Example 1"
+  },
+  {
+    "file": "playground/components/breadcrumb-pagination.html",
+    "before": "HTML · Example 2",
+    "after": "HTML, Example 2"
+  },
+  {
+    "file": "playground/components/button.html",
+    "before": "Button · Nikba Design System",
+    "after": "Button, Nikba Design System"
+  },
+  {
+    "file": "playground/components/button.html",
+    "before": "Component 01 · Complete",
+    "after": "Component 01, Complete"
+  },
+  {
+    "file": "playground/components/button.html",
+    "before": "Link →",
+    "after": "Link"
+  },
+  {
+    "file": "playground/components/button.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/button.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/button.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/button.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/button.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/button.html",
+    "before": "HTML · Variant 3",
+    "after": "HTML, Variant 3"
+  },
+  {
+    "file": "playground/components/button.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/button.html",
+    "before": "HTML · Variant 4",
+    "after": "HTML, Variant 4"
+  },
+  {
+    "file": "playground/components/button.html",
+    "before": "Small · 36px",
+    "after": "Small, 36px"
+  },
+  {
+    "file": "playground/components/button.html",
+    "before": "Medium · 44px",
+    "after": "Medium, 44px"
+  },
+  {
+    "file": "playground/components/button.html",
+    "before": "Large · 48px",
+    "after": "Large, 48px"
+  },
+  {
+    "file": "playground/components/button.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/button.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/button.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/button.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/button.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/button.html",
+    "before": "HTML · Variant 3",
+    "after": "HTML, Variant 3"
+  },
+  {
+    "file": "playground/components/button.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/button.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/button.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/button.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/button.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/button.html",
+    "before": "HTML · Variant 3",
+    "after": "HTML, Variant 3"
+  },
+  {
+    "file": "playground/components/button.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/button.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/button.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/button.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/button.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/button.html",
+    "before": "HTML · Variant 3",
+    "after": "HTML, Variant 3"
+  },
+  {
+    "file": "playground/components/button.html",
+    "before": "HTML · Example 1",
+    "after": "HTML, Example 1"
+  },
+  {
+    "file": "playground/components/button.html",
+    "before": "HTML · Example 2",
+    "after": "HTML, Example 2"
+  },
+  {
+    "file": "playground/components/button.html",
+    "before": "HTML · Example 3",
+    "after": "HTML, Example 3"
+  },
+  {
+    "file": "playground/components/button.html",
+    "before": "HTML · Example 4",
+    "after": "HTML, Example 4"
+  },
+  {
+    "file": "playground/components/button.html",
+    "before": "SwiftUI · Jetpack Compose · Experimental",
+    "after": "SwiftUI, Jetpack Compose, Experimental"
+  },
+  {
+    "file": "playground/components/button.html",
+    "before": "SwiftUI · Button",
+    "after": "SwiftUI, Button"
+  },
+  {
+    "file": "playground/components/button.html",
+    "before": "Compose · Button",
+    "after": "Compose, Button"
+  },
+  {
+    "file": "playground/components/button.html",
+    "before": "Native component availability and integration →",
+    "after": "Native component availability and integration"
+  },
+  {
+    "file": "playground/components/card.html",
+    "before": "Card · Nikba Design System",
+    "after": "Card, Nikba Design System"
+  },
+  {
+    "file": "playground/components/card.html",
+    "before": "Component 09 · Complete",
+    "after": "Component 09, Complete"
+  },
+  {
+    "file": "playground/components/card.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/card.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/card.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/card.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/card.html",
+    "before": "Flat · Compact",
+    "after": "Flat, Compact"
+  },
+  {
+    "file": "playground/components/card.html",
+    "before": "Surface · Default",
+    "after": "Surface, Default"
+  },
+  {
+    "file": "playground/components/card.html",
+    "before": "Elevated · Large",
+    "after": "Elevated, Large"
+  },
+  {
+    "file": "playground/components/card.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/card.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/card.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/card.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/card.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/card.html",
+    "before": "HTML · Variant 3",
+    "after": "HTML, Variant 3"
+  },
+  {
+    "file": "playground/components/card.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/card.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/card.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/card.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/card.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/card.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/card.html",
+    "before": "HTML · Example 1",
+    "after": "HTML, Example 1"
+  },
+  {
+    "file": "playground/components/card.html",
+    "before": "HTML · Example 2",
+    "after": "HTML, Example 2"
+  },
+  {
+    "file": "playground/components/card.html",
+    "before": "SwiftUI · Jetpack Compose · Experimental",
+    "after": "SwiftUI, Jetpack Compose, Experimental"
+  },
+  {
+    "file": "playground/components/card.html",
+    "before": "SwiftUI · Card",
+    "after": "SwiftUI, Card"
+  },
+  {
+    "file": "playground/components/card.html",
+    "before": "Compose · Card",
+    "after": "Compose, Card"
+  },
+  {
+    "file": "playground/components/card.html",
+    "before": "Native component availability and integration →",
+    "after": "Native component availability and integration"
+  },
+  {
+    "file": "playground/components/checkbox-radio.html",
+    "before": "Checkbox and Radio · Nikba Design System",
+    "after": "Checkbox and Radio, Nikba Design System"
+  },
+  {
+    "file": "playground/components/checkbox-radio.html",
+    "before": "Component 07 · Complete",
+    "after": "Component 07, Complete"
+  },
+  {
+    "file": "playground/components/checkbox-radio.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/checkbox-radio.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/checkbox-radio.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/checkbox-radio.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/checkbox-radio.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/checkbox-radio.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/checkbox-radio.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/checkbox-radio.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/checkbox-radio.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/checkbox-radio.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/checkbox-radio.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/checkbox-radio.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/checkbox-radio.html",
+    "before": "HTML · Example 1",
+    "after": "HTML, Example 1"
+  },
+  {
+    "file": "playground/components/checkbox-radio.html",
+    "before": "HTML · Example 2",
+    "after": "HTML, Example 2"
+  },
+  {
+    "file": "playground/components/checkbox-radio.html",
+    "before": "JavaScript · Example 3",
+    "after": "JavaScript, Example 3"
+  },
+  {
+    "file": "playground/components/combobox.html",
+    "before": "Combobox · Nikba Design System",
+    "after": "Combobox, Nikba Design System"
+  },
+  {
+    "file": "playground/components/combobox.html",
+    "before": "Component 06 · Complete",
+    "after": "Component 06, Complete"
+  },
+  {
+    "file": "playground/components/combobox.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/combobox.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/combobox.html",
+    "before": "Small · 36px",
+    "after": "Small, 36px"
+  },
+  {
+    "file": "playground/components/combobox.html",
+    "before": "Medium · 44px",
+    "after": "Medium, 44px"
+  },
+  {
+    "file": "playground/components/combobox.html",
+    "before": "Large · 52px",
+    "after": "Large, 52px"
+  },
+  {
+    "file": "playground/components/combobox.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/combobox.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/combobox.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/combobox.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/combobox.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/combobox.html",
+    "before": "HTML · Variant 3",
+    "after": "HTML, Variant 3"
+  },
+  {
+    "file": "playground/components/combobox.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/combobox.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/combobox.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/combobox.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/combobox.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/combobox.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/combobox.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/combobox.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/combobox.html",
+    "before": "HTML · Example 1",
+    "after": "HTML, Example 1"
+  },
+  {
+    "file": "playground/components/combobox.html",
+    "before": "JavaScript · Example 2",
+    "after": "JavaScript, Example 2"
+  },
+  {
+    "file": "playground/components/data-table.html",
+    "before": "Data Table · Nikba Design System",
+    "after": "Data Table, Nikba Design System"
+  },
+  {
+    "file": "playground/components/data-table.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/data-table.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/data-table.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/data-table.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/data-table.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/data-table.html",
+    "before": "HTML · Variant 3",
+    "after": "HTML, Variant 3"
+  },
+  {
+    "file": "playground/components/data-table.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/data-table.html",
+    "before": "HTML · Variant 4",
+    "after": "HTML, Variant 4"
+  },
+  {
+    "file": "playground/components/data-table.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/data-table.html",
+    "before": "HTML · Variant 5",
+    "after": "HTML, Variant 5"
+  },
+  {
+    "file": "playground/components/data-table.html",
+    "before": "HTML · Example 1",
+    "after": "HTML, Example 1"
+  },
+  {
+    "file": "playground/components/data-table.html",
+    "before": "JavaScript · Example 2",
+    "after": "JavaScript, Example 2"
+  },
+  {
+    "file": "playground/components/destructive-confirmation.html",
+    "before": "Destructive Confirmation · Nikba Design System",
+    "after": "Destructive Confirmation, Nikba Design System"
+  },
+  {
+    "file": "playground/components/destructive-confirmation.html",
+    "before": "Pattern 28 · Complete",
+    "after": "Pattern 28, Complete"
+  },
+  {
+    "file": "playground/components/destructive-confirmation.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/destructive-confirmation.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/destructive-confirmation.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/destructive-confirmation.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/destructive-confirmation.html",
+    "before": "HTML · Example 1",
+    "after": "HTML, Example 1"
+  },
+  {
+    "file": "playground/components/destructive-confirmation.html",
+    "before": "12 members · 48 files",
+    "after": "12 members, 48 files"
+  },
+  {
+    "file": "playground/components/dialog.html",
+    "before": "Dialog · Nikba Design System",
+    "after": "Dialog, Nikba Design System"
+  },
+  {
+    "file": "playground/components/dialog.html",
+    "before": "Component 17 · Complete",
+    "after": "Component 17, Complete"
+  },
+  {
+    "file": "playground/components/dialog.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/dialog.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/dialog.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/dialog.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/dialog.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/dialog.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/dialog.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/dialog.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/dialog.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/dialog.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/dialog.html",
+    "before": "HTML · Example 1",
+    "after": "HTML, Example 1"
+  },
+  {
+    "file": "playground/components/dialog.html",
+    "before": "JavaScript · Example 2",
+    "after": "JavaScript, Example 2"
+  },
+  {
+    "file": "playground/components/disclosure-accordion.html",
+    "before": "Disclosure and Accordion · Nikba Design System",
+    "after": "Disclosure and Accordion, Nikba Design System"
+  },
+  {
+    "file": "playground/components/disclosure-accordion.html",
+    "before": "Component 15 · Complete",
+    "after": "Component 15, Complete"
+  },
+  {
+    "file": "playground/components/disclosure-accordion.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/disclosure-accordion.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/disclosure-accordion.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/disclosure-accordion.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/disclosure-accordion.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/disclosure-accordion.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/disclosure-accordion.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/disclosure-accordion.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/disclosure-accordion.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/disclosure-accordion.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/disclosure-accordion.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/disclosure-accordion.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/disclosure-accordion.html",
+    "before": "HTML · Example 1",
+    "after": "HTML, Example 1"
+  },
+  {
+    "file": "playground/components/disclosure-accordion.html",
+    "before": "HTML · Example 2",
+    "after": "HTML, Example 2"
+  },
+  {
+    "file": "playground/components/disclosure-accordion.html",
+    "before": "JavaScript · Example 3",
+    "after": "JavaScript, Example 3"
+  },
+  {
+    "file": "playground/components/divider.html",
+    "before": "Divider · Nikba Design System",
+    "after": "Divider, Nikba Design System"
+  },
+  {
+    "file": "playground/components/divider.html",
+    "before": "Component 10 · Complete",
+    "after": "Component 10, Complete"
+  },
+  {
+    "file": "playground/components/divider.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/divider.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/divider.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/divider.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/divider.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/divider.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/divider.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/divider.html",
+    "before": "HTML · Variant 3",
+    "after": "HTML, Variant 3"
+  },
+  {
+    "file": "playground/components/divider.html",
+    "before": "Compact · 12px",
+    "after": "Compact, 12px"
+  },
+  {
+    "file": "playground/components/divider.html",
+    "before": "Default · 32px",
+    "after": "Default, 32px"
+  },
+  {
+    "file": "playground/components/divider.html",
+    "before": "Spacious · 64px",
+    "after": "Spacious, 64px"
+  },
+  {
+    "file": "playground/components/divider.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/divider.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/divider.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/divider.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/divider.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/divider.html",
+    "before": "HTML · Variant 3",
+    "after": "HTML, Variant 3"
+  },
+  {
+    "file": "playground/components/divider.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/divider.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/divider.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/divider.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/divider.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/divider.html",
+    "before": "HTML · Variant 3",
+    "after": "HTML, Variant 3"
+  },
+  {
+    "file": "playground/components/divider.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/divider.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/divider.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/divider.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/divider.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/divider.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/divider.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/divider.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/divider.html",
+    "before": "HTML · Example 1",
+    "after": "HTML, Example 1"
+  },
+  {
+    "file": "playground/components/divider.html",
+    "before": "HTML · Example 2",
+    "after": "HTML, Example 2"
+  },
+  {
+    "file": "playground/components/divider.html",
+    "before": "HTML · Example 3",
+    "after": "HTML, Example 3"
+  },
+  {
+    "file": "playground/components/divider.html",
+    "before": "HTML · Example 4",
+    "after": "HTML, Example 4"
+  },
+  {
+    "file": "playground/components/field.html",
+    "before": "Field · Nikba Design System",
+    "after": "Field, Nikba Design System"
+  },
+  {
+    "file": "playground/components/field.html",
+    "before": "Component 04 · Complete",
+    "after": "Component 04, Complete"
+  },
+  {
+    "file": "playground/components/field.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/field.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/field.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/field.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/field.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/field.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/field.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/field.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/field.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/field.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/field.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/field.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/field.html",
+    "before": "HTML · Example 1",
+    "after": "HTML, Example 1"
+  },
+  {
+    "file": "playground/components/field.html",
+    "before": "HTML · Example 2",
+    "after": "HTML, Example 2"
+  },
+  {
+    "file": "playground/components/field.html",
+    "before": "SwiftUI · Jetpack Compose · Experimental",
+    "after": "SwiftUI, Jetpack Compose, Experimental"
+  },
+  {
+    "file": "playground/components/field.html",
+    "before": "SwiftUI · Field",
+    "after": "SwiftUI, Field"
+  },
+  {
+    "file": "playground/components/field.html",
+    "before": "Compose · Field",
+    "after": "Compose, Field"
+  },
+  {
+    "file": "playground/components/field.html",
+    "before": "Native component availability and integration →",
+    "after": "Native component availability and integration"
+  },
+  {
+    "file": "playground/components/form-validation.html",
+    "before": "Form Validation and Submission · Nikba Design System",
+    "after": "Form Validation and Submission, Nikba Design System"
+  },
+  {
+    "file": "playground/components/form-validation.html",
+    "before": "Pattern 26 · Complete",
+    "after": "Pattern 26, Complete"
+  },
+  {
+    "file": "playground/components/form-validation.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/form-validation.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/form-validation.html",
+    "before": "HTML · Example 1",
+    "after": "HTML, Example 1"
+  },
+  {
+    "file": "playground/components/form-validation.html",
+    "before": "JavaScript · Example 2",
+    "after": "JavaScript, Example 2"
+  },
+  {
+    "file": "playground/components/header-navigation.html",
+    "before": "Header and Navigation · Nikba Design System",
+    "after": "Header and Navigation, Nikba Design System"
+  },
+  {
+    "file": "playground/components/header-navigation.html",
+    "before": "Component 21 · Complete",
+    "after": "Component 21, Complete"
+  },
+  {
+    "file": "playground/components/header-navigation.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/header-navigation.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/header-navigation.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/header-navigation.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/header-navigation.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/header-navigation.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/header-navigation.html",
+    "before": "HTML · Example 1",
+    "after": "HTML, Example 1"
+  },
+  {
+    "file": "playground/components/header-navigation.html",
+    "before": "JavaScript · Example 2",
+    "after": "JavaScript, Example 2"
+  },
+  {
+    "file": "playground/components/index.html",
+    "before": "Components · Nikba Design System",
+    "after": "Components, Nikba Design System"
+  },
+  {
+    "file": "playground/components/index.html",
+    "before": "1.1.0 · 31 published modules",
+    "after": "1.1.0, 31 published modules"
+  },
+  {
+    "file": "playground/components/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/components/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/components/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/components/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/components/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/components/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/components/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/components/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/components/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/components/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/components/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/components/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/components/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/components/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/components/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/components/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/components/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/components/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/components/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/components/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/components/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/components/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/components/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/components/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/components/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/components/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/components/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/components/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/components/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/components/input-textarea.html",
+    "before": "Input and Textarea · Nikba Design System",
+    "after": "Input and Textarea, Nikba Design System"
+  },
+  {
+    "file": "playground/components/input-textarea.html",
+    "before": "Component 05 · Complete",
+    "after": "Component 05, Complete"
+  },
+  {
+    "file": "playground/components/input-textarea.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/input-textarea.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/input-textarea.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/input-textarea.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/input-textarea.html",
+    "before": "Small · 36px",
+    "after": "Small, 36px"
+  },
+  {
+    "file": "playground/components/input-textarea.html",
+    "before": "Medium · 44px",
+    "after": "Medium, 44px"
+  },
+  {
+    "file": "playground/components/input-textarea.html",
+    "before": "Large · 52px",
+    "after": "Large, 52px"
+  },
+  {
+    "file": "playground/components/input-textarea.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/input-textarea.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/input-textarea.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/input-textarea.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/input-textarea.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/input-textarea.html",
+    "before": "HTML · Variant 3",
+    "after": "HTML, Variant 3"
+  },
+  {
+    "file": "playground/components/input-textarea.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/input-textarea.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/input-textarea.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/input-textarea.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/input-textarea.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/input-textarea.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/input-textarea.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/input-textarea.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/input-textarea.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/input-textarea.html",
+    "before": "HTML · Variant 3",
+    "after": "HTML, Variant 3"
+  },
+  {
+    "file": "playground/components/input-textarea.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/input-textarea.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/input-textarea.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/input-textarea.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/input-textarea.html",
+    "before": "HTML · Example 1",
+    "after": "HTML, Example 1"
+  },
+  {
+    "file": "playground/components/input-textarea.html",
+    "before": "HTML · Example 2",
+    "after": "HTML, Example 2"
+  },
+  {
+    "file": "playground/components/input-textarea.html",
+    "before": "HTML · Example 3",
+    "after": "HTML, Example 3"
+  },
+  {
+    "file": "playground/components/link.html",
+    "before": "Link · Nikba Design System",
+    "after": "Link, Nikba Design System"
+  },
+  {
+    "file": "playground/components/link.html",
+    "before": "Component 02 · Complete",
+    "after": "Component 02, Complete"
+  },
+  {
+    "file": "playground/components/link.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/link.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/link.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/link.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/link.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/link.html",
+    "before": "HTML · Variant 3",
+    "after": "HTML, Variant 3"
+  },
+  {
+    "file": "playground/components/link.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/link.html",
+    "before": "HTML · Variant 4",
+    "after": "HTML, Variant 4"
+  },
+  {
+    "file": "playground/components/link.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/link.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/link.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/link.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/link.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/link.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/link.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/link.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/link.html",
+    "before": "HTML · Example 1",
+    "after": "HTML, Example 1"
+  },
+  {
+    "file": "playground/components/link.html",
+    "before": "HTML · Example 2",
+    "after": "HTML, Example 2"
+  },
+  {
+    "file": "playground/components/link.html",
+    "before": "HTML · Example 3",
+    "after": "HTML, Example 3"
+  },
+  {
+    "file": "playground/components/link.html",
+    "before": "HTML · Example 4",
+    "after": "HTML, Example 4"
+  },
+  {
+    "file": "playground/components/multi-select.html",
+    "before": "Multi-select · Nikba Design System",
+    "after": "Multi-select, Nikba Design System"
+  },
+  {
+    "file": "playground/components/multi-select.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/multi-select.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/multi-select.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/multi-select.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/multi-select.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/multi-select.html",
+    "before": "HTML · Variant 3",
+    "after": "HTML, Variant 3"
+  },
+  {
+    "file": "playground/components/multi-select.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/multi-select.html",
+    "before": "HTML · Variant 4",
+    "after": "HTML, Variant 4"
+  },
+  {
+    "file": "playground/components/multi-select.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/multi-select.html",
+    "before": "HTML · Variant 5",
+    "after": "HTML, Variant 5"
+  },
+  {
+    "file": "playground/components/multi-select.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/multi-select.html",
+    "before": "HTML · Variant 6",
+    "after": "HTML, Variant 6"
+  },
+  {
+    "file": "playground/components/multi-select.html",
+    "before": "HTML · Example 1",
+    "after": "HTML, Example 1"
+  },
+  {
+    "file": "playground/components/multi-select.html",
+    "before": "JavaScript · Example 2",
+    "after": "JavaScript, Example 2"
+  },
+  {
+    "file": "playground/components/popover-menu.html",
+    "before": "Popover and Dropdown Menu · Nikba Design System",
+    "after": "Popover and Dropdown Menu, Nikba Design System"
+  },
+  {
+    "file": "playground/components/popover-menu.html",
+    "before": "Component 18 · Complete",
+    "after": "Component 18, Complete"
+  },
+  {
+    "file": "playground/components/popover-menu.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/popover-menu.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/popover-menu.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/popover-menu.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/popover-menu.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/popover-menu.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/popover-menu.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/popover-menu.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/popover-menu.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/popover-menu.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/popover-menu.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/popover-menu.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/popover-menu.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/popover-menu.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/popover-menu.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/popover-menu.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/popover-menu.html",
+    "before": "HTML · Example 1",
+    "after": "HTML, Example 1"
+  },
+  {
+    "file": "playground/components/popover-menu.html",
+    "before": "JavaScript · Example 2",
+    "after": "JavaScript, Example 2"
+  },
+  {
+    "file": "playground/components/product-states.html",
+    "before": "Product States · Nikba Design System",
+    "after": "Product States, Nikba Design System"
+  },
+  {
+    "file": "playground/components/product-states.html",
+    "before": "Pattern 24 · Complete",
+    "after": "Pattern 24, Complete"
+  },
+  {
+    "file": "playground/components/product-states.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/product-states.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/product-states.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/product-states.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/product-states.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/product-states.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/product-states.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/product-states.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/product-states.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/product-states.html",
+    "before": "HTML · Variant 3",
+    "after": "HTML, Variant 3"
+  },
+  {
+    "file": "playground/components/product-states.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/product-states.html",
+    "before": "HTML · Variant 4",
+    "after": "HTML, Variant 4"
+  },
+  {
+    "file": "playground/components/product-states.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/product-states.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/product-states.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/product-states.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/product-states.html",
+    "before": "HTML · Example 1",
+    "after": "HTML, Example 1"
+  },
+  {
+    "file": "playground/components/product-states.html",
+    "before": "SwiftUI · Jetpack Compose · Experimental",
+    "after": "SwiftUI, Jetpack Compose, Experimental"
+  },
+  {
+    "file": "playground/components/product-states.html",
+    "before": "SwiftUI · Product states",
+    "after": "SwiftUI, Product states"
+  },
+  {
+    "file": "playground/components/product-states.html",
+    "before": "Compose · Product states",
+    "after": "Compose, Product states"
+  },
+  {
+    "file": "playground/components/product-states.html",
+    "before": "Native component availability and integration →",
+    "after": "Native component availability and integration"
+  },
+  {
+    "file": "playground/components/search-filter.html",
+    "before": "Search and Filter · Nikba Design System",
+    "after": "Search and Filter, Nikba Design System"
+  },
+  {
+    "file": "playground/components/search-filter.html",
+    "before": "Pattern 25 · Complete",
+    "after": "Pattern 25, Complete"
+  },
+  {
+    "file": "playground/components/search-filter.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/search-filter.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/search-filter.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/search-filter.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/search-filter.html",
+    "before": "HTML · Example 1",
+    "after": "HTML, Example 1"
+  },
+  {
+    "file": "playground/components/select.html",
+    "before": "Select · Nikba Design System",
+    "after": "Select, Nikba Design System"
+  },
+  {
+    "file": "playground/components/select.html",
+    "before": "Component 06 · Complete",
+    "after": "Component 06, Complete"
+  },
+  {
+    "file": "playground/components/select.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/select.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/select.html",
+    "before": "Small · 36px",
+    "after": "Small, 36px"
+  },
+  {
+    "file": "playground/components/select.html",
+    "before": "Medium · 44px",
+    "after": "Medium, 44px"
+  },
+  {
+    "file": "playground/components/select.html",
+    "before": "Large · 52px",
+    "after": "Large, 52px"
+  },
+  {
+    "file": "playground/components/select.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/select.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/select.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/select.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/select.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/select.html",
+    "before": "HTML · Variant 3",
+    "after": "HTML, Variant 3"
+  },
+  {
+    "file": "playground/components/select.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/select.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/select.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/select.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/select.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/select.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/select.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/select.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/select.html",
+    "before": "HTML · Example 1",
+    "after": "HTML, Example 1"
+  },
+  {
+    "file": "playground/components/select.html",
+    "before": "HTML · Example 2",
+    "after": "HTML, Example 2"
+  },
+  {
+    "file": "playground/components/select.html",
+    "before": "JavaScript · Example 3",
+    "after": "JavaScript, Example 3"
+  },
+  {
+    "file": "playground/components/settings-account.html",
+    "before": "Settings and Account · Nikba Design System",
+    "after": "Settings and Account, Nikba Design System"
+  },
+  {
+    "file": "playground/components/settings-account.html",
+    "before": "Pattern 27 · Complete",
+    "after": "Pattern 27, Complete"
+  },
+  {
+    "file": "playground/components/settings-account.html",
+    "before": "MacBook Pro · Current session",
+    "after": "MacBook Pro, Current session"
+  },
+  {
+    "file": "playground/components/settings-account.html",
+    "before": "Chișinău, Moldova · Active now",
+    "after": "Chișinău, Moldova, Active now"
+  },
+  {
+    "file": "playground/components/settings-account.html",
+    "before": "Chișinău, Moldova · 2 hours ago",
+    "after": "Chișinău, Moldova, 2 hours ago"
+  },
+  {
+    "file": "playground/components/settings-account.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/settings-account.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/settings-account.html",
+    "before": "HTML · Example 1",
+    "after": "HTML, Example 1"
+  },
+  {
+    "file": "playground/components/skeleton.html",
+    "before": "Skeleton · Nikba Design System",
+    "after": "Skeleton, Nikba Design System"
+  },
+  {
+    "file": "playground/components/skeleton.html",
+    "before": "Component 13 · Complete",
+    "after": "Component 13, Complete"
+  },
+  {
+    "file": "playground/components/skeleton.html",
+    "before": "Alert →",
+    "after": "Alert"
+  },
+  {
+    "file": "playground/components/skeleton.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/skeleton.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/skeleton.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/skeleton.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/skeleton.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/skeleton.html",
+    "before": "HTML · Variant 3",
+    "after": "HTML, Variant 3"
+  },
+  {
+    "file": "playground/components/skeleton.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/skeleton.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/skeleton.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/skeleton.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/skeleton.html",
+    "before": "Media · 16:9",
+    "after": "Media, 16:9"
+  },
+  {
+    "file": "playground/components/skeleton.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/skeleton.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/skeleton.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/skeleton.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/skeleton.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/skeleton.html",
+    "before": "HTML · Variant 3",
+    "after": "HTML, Variant 3"
+  },
+  {
+    "file": "playground/components/skeleton.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/skeleton.html",
+    "before": "HTML · Variant 4",
+    "after": "HTML, Variant 4"
+  },
+  {
+    "file": "playground/components/skeleton.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/skeleton.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/skeleton.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/skeleton.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/skeleton.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/skeleton.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/skeleton.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/skeleton.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/skeleton.html",
+    "before": "HTML · Example 1",
+    "after": "HTML, Example 1"
+  },
+  {
+    "file": "playground/components/skeleton.html",
+    "before": "HTML · Example 2",
+    "after": "HTML, Example 2"
+  },
+  {
+    "file": "playground/components/spinner.html",
+    "before": "Spinner · Nikba Design System",
+    "after": "Spinner, Nikba Design System"
+  },
+  {
+    "file": "playground/components/spinner.html",
+    "before": "Component 12 · Complete",
+    "after": "Component 12, Complete"
+  },
+  {
+    "file": "playground/components/spinner.html",
+    "before": "Skeleton →",
+    "after": "Skeleton"
+  },
+  {
+    "file": "playground/components/spinner.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/spinner.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/spinner.html",
+    "before": "Small · 16px",
+    "after": "Small, 16px"
+  },
+  {
+    "file": "playground/components/spinner.html",
+    "before": "Medium · 20px",
+    "after": "Medium, 20px"
+  },
+  {
+    "file": "playground/components/spinner.html",
+    "before": "Large · 32px",
+    "after": "Large, 32px"
+  },
+  {
+    "file": "playground/components/spinner.html",
+    "before": "Extra Large · 48px",
+    "after": "Extra Large, 48px"
+  },
+  {
+    "file": "playground/components/spinner.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/spinner.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/spinner.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/spinner.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/spinner.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/spinner.html",
+    "before": "HTML · Variant 3",
+    "after": "HTML, Variant 3"
+  },
+  {
+    "file": "playground/components/spinner.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/spinner.html",
+    "before": "HTML · Variant 4",
+    "after": "HTML, Variant 4"
+  },
+  {
+    "file": "playground/components/spinner.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/spinner.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/spinner.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/spinner.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/spinner.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/spinner.html",
+    "before": "HTML · Variant 3",
+    "after": "HTML, Variant 3"
+  },
+  {
+    "file": "playground/components/spinner.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/spinner.html",
+    "before": "HTML · Variant 4",
+    "after": "HTML, Variant 4"
+  },
+  {
+    "file": "playground/components/spinner.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/spinner.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/spinner.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/spinner.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/spinner.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/spinner.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/spinner.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/spinner.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/spinner.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/spinner.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/spinner.html",
+    "before": "HTML · Example 1",
+    "after": "HTML, Example 1"
+  },
+  {
+    "file": "playground/components/spinner.html",
+    "before": "HTML · Example 2",
+    "after": "HTML, Example 2"
+  },
+  {
+    "file": "playground/components/switch.html",
+    "before": "Switch · Nikba Design System",
+    "after": "Switch, Nikba Design System"
+  },
+  {
+    "file": "playground/components/switch.html",
+    "before": "Component 08 · Complete",
+    "after": "Component 08, Complete"
+  },
+  {
+    "file": "playground/components/switch.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/switch.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/switch.html",
+    "before": "Small · 36px",
+    "after": "Small, 36px"
+  },
+  {
+    "file": "playground/components/switch.html",
+    "before": "Medium · 44px",
+    "after": "Medium, 44px"
+  },
+  {
+    "file": "playground/components/switch.html",
+    "before": "Large · 52px",
+    "after": "Large, 52px"
+  },
+  {
+    "file": "playground/components/switch.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/switch.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/switch.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/switch.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/switch.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/switch.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/switch.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/switch.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/switch.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/switch.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/switch.html",
+    "before": "HTML · Example 1",
+    "after": "HTML, Example 1"
+  },
+  {
+    "file": "playground/components/table.html",
+    "before": "Table · Nikba Design System",
+    "after": "Table, Nikba Design System"
+  },
+  {
+    "file": "playground/components/table.html",
+    "before": "Component 23 · Complete",
+    "after": "Component 23, Complete"
+  },
+  {
+    "file": "playground/components/table.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/table.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/table.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/table.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/table.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/table.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/table.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/table.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/table.html",
+    "before": "HTML · Example 1",
+    "after": "HTML, Example 1"
+  },
+  {
+    "file": "playground/components/table.html",
+    "before": "JavaScript · Example 2",
+    "after": "JavaScript, Example 2"
+  },
+  {
+    "file": "playground/components/tabs.html",
+    "before": "Tabs · Nikba Design System",
+    "after": "Tabs, Nikba Design System"
+  },
+  {
+    "file": "playground/components/tabs.html",
+    "before": "Component 16 · Complete",
+    "after": "Component 16, Complete"
+  },
+  {
+    "file": "playground/components/tabs.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/tabs.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/tabs.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/tabs.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/tabs.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/tabs.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/tabs.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/tabs.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/tabs.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/tabs.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/tabs.html",
+    "before": "HTML · Example 1",
+    "after": "HTML, Example 1"
+  },
+  {
+    "file": "playground/components/tabs.html",
+    "before": "JavaScript · Example 2",
+    "after": "JavaScript, Example 2"
+  },
+  {
+    "file": "playground/components/toast.html",
+    "before": "Toast · Nikba Design System",
+    "after": "Toast, Nikba Design System"
+  },
+  {
+    "file": "playground/components/toast.html",
+    "before": "Component 20 · Complete",
+    "after": "Component 20, Complete"
+  },
+  {
+    "file": "playground/components/toast.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/toast.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/toast.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/toast.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/toast.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/toast.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/toast.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/toast.html",
+    "before": "HTML · Variant 3",
+    "after": "HTML, Variant 3"
+  },
+  {
+    "file": "playground/components/toast.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/toast.html",
+    "before": "HTML · Variant 4",
+    "after": "HTML, Variant 4"
+  },
+  {
+    "file": "playground/components/toast.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/toast.html",
+    "before": "HTML · Variant 5",
+    "after": "HTML, Variant 5"
+  },
+  {
+    "file": "playground/components/toast.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/toast.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/toast.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/toast.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/toast.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/toast.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/toast.html",
+    "before": "JavaScript · Example 1",
+    "after": "JavaScript, Example 1"
+  },
+  {
+    "file": "playground/components/toast.html",
+    "before": "HTML · Example 2",
+    "after": "HTML, Example 2"
+  },
+  {
+    "file": "playground/components/tooltip.html",
+    "before": "Tooltip · Nikba Design System",
+    "after": "Tooltip, Nikba Design System"
+  },
+  {
+    "file": "playground/components/tooltip.html",
+    "before": "Component 19 · Complete",
+    "after": "Component 19, Complete"
+  },
+  {
+    "file": "playground/components/tooltip.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/tooltip.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/tooltip.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/tooltip.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/tooltip.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/tooltip.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/tooltip.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/tooltip.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/tooltip.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/tooltip.html",
+    "before": "HTML · Variant 3",
+    "after": "HTML, Variant 3"
+  },
+  {
+    "file": "playground/components/tooltip.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/tooltip.html",
+    "before": "HTML · Variant 4",
+    "after": "HTML, Variant 4"
+  },
+  {
+    "file": "playground/components/tooltip.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/tooltip.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/tooltip.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/tooltip.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/tooltip.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/tooltip.html",
+    "before": "HTML · Variant 3",
+    "after": "HTML, Variant 3"
+  },
+  {
+    "file": "playground/components/tooltip.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/tooltip.html",
+    "before": "HTML · Variant 4",
+    "after": "HTML, Variant 4"
+  },
+  {
+    "file": "playground/components/tooltip.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/tooltip.html",
+    "before": "HTML · Variant 1",
+    "after": "HTML, Variant 1"
+  },
+  {
+    "file": "playground/components/tooltip.html",
+    "before": "View code · ",
+    "after": "View code, "
+  },
+  {
+    "file": "playground/components/tooltip.html",
+    "before": "HTML · Variant 2",
+    "after": "HTML, Variant 2"
+  },
+  {
+    "file": "playground/components/tooltip.html",
+    "before": "HTML · Example 1",
+    "after": "HTML, Example 1"
+  },
+  {
+    "file": "playground/components/tooltip.html",
+    "before": "JavaScript · Example 2",
+    "after": "JavaScript, Example 2"
+  },
+  {
+    "file": "playground/foundations.html",
+    "before": "Foundations · Nikba Design System",
+    "after": "Foundations, Nikba Design System"
+  },
+  {
+    "file": "playground/foundations.html",
+    "before": "1.1.0 · Foundation reference",
+    "after": "1.1.0, Foundation reference"
+  },
+  {
+    "file": "playground/foundations.html",
+    "before": "Get started: install from npm →",
+    "after": "Get started: install from npm"
+  },
+  {
+    "file": "playground/foundations.html",
+    "before": "01 · System contract",
+    "after": "01, System contract"
+  },
+  {
+    "file": "playground/foundations.html",
+    "before": "02 · Typography",
+    "after": "02, Typography"
+  },
+  {
+    "file": "playground/foundations.html",
+    "before": "03 · Semantic color",
+    "after": "03, Semantic color"
+  },
+  {
+    "file": "playground/foundations.html",
+    "before": "04 · Material",
+    "after": "04, Material"
+  },
+  {
+    "file": "playground/foundations.html",
+    "before": "05 · Layout",
+    "after": "05, Layout"
+  },
+  {
+    "file": "playground/index.html",
+    "before": "Design language · 1.1.0",
+    "after": "Design language, 1.1.0"
+  },
+  {
+    "file": "playground/index.html",
+    "before": "Explore native foundations →",
+    "after": "Explore native foundations"
+  },
+  {
+    "file": "playground/index.html",
+    "before": "Get started · npm",
+    "after": "Get started, npm"
+  },
+  {
+    "file": "playground/index.html",
+    "before": "Browse components and implementation examples →",
+    "after": "Browse components and implementation examples"
+  },
+  {
+    "file": "playground/index.html",
+    "before": "Web · iOS · Android",
+    "after": "Web, iOS, Android"
+  },
+  {
+    "file": "playground/index.html",
+    "before": "Stable · 1.1.0",
+    "after": "Stable, 1.1.0"
+  },
+  {
+    "file": "playground/index.html",
+    "before": "Install the web library →",
+    "after": "Install the web library"
+  },
+  {
+    "file": "playground/index.html",
+    "before": "5 components · Pilot",
+    "after": "5 components, Pilot"
+  },
+  {
+    "file": "playground/index.html",
+    "before": "iOS · SwiftUI",
+    "after": "iOS, SwiftUI"
+  },
+  {
+    "file": "playground/index.html",
+    "before": "Integrate with SwiftUI →",
+    "after": "Integrate with SwiftUI"
+  },
+  {
+    "file": "playground/index.html",
+    "before": "5 components · Pilot",
+    "after": "5 components, Pilot"
+  },
+  {
+    "file": "playground/index.html",
+    "before": "Android · Compose",
+    "after": "Android, Compose"
+  },
+  {
+    "file": "playground/index.html",
+    "before": "Integrate with Compose →",
+    "after": "Integrate with Compose"
+  },
+  {
+    "file": "playground/index.html",
+    "before": "Get started · Native pilot",
+    "after": "Get started, Native pilot"
+  },
+  {
+    "file": "playground/index.html",
+    "before": "iOS · Swift Package Manager",
+    "after": "iOS, Swift Package Manager"
+  },
+  {
+    "file": "playground/index.html",
+    "before": "Follow the iOS MCP workflow →",
+    "after": "Follow the iOS MCP workflow"
+  },
+  {
+    "file": "playground/index.html",
+    "before": "Alternative · Source files",
+    "after": "Alternative, Source files"
+  },
+  {
+    "file": "playground/index.html",
+    "before": "Swift · iOS 17+",
+    "after": "Swift, iOS 17+"
+  },
+  {
+    "file": "playground/index.html",
+    "before": "Kotlin · Compose",
+    "after": "Kotlin, Compose"
+  },
+  {
+    "file": "playground/index.html",
+    "before": "Kotlin · Components inside your theme",
+    "after": "Kotlin, Components inside your theme"
+  },
+  {
+    "file": "playground/index.html",
+    "before": "Terminal · Design system repository",
+    "after": "Terminal, Design system repository"
+  },
+  {
+    "file": "playground/index.html",
+    "before": "Next milestone · Validation",
+    "after": "Next milestone, Validation"
+  },
+  {
+    "file": "playground/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/index.html",
+    "before": "↗",
+    "after": ""
+  },
+  {
+    "file": "playground/mcp.html",
+    "before": "MCP · Nikba Design System",
+    "after": "MCP, Nikba Design System"
+  },
+  {
+    "file": "playground/mcp.html",
+    "before": "1.1.0 · AI integration · Read only",
+    "after": "1.1.0, AI integration, Read only"
+  },
+  {
+    "file": "playground/mcp.html",
+    "before": "01 · Architecture",
+    "after": "01, Architecture"
+  },
+  {
+    "file": "playground/mcp.html",
+    "before": "02 · Resources",
+    "after": "02, Resources"
+  },
+  {
+    "file": "playground/mcp.html",
+    "before": "03 · Tools",
+    "after": "03, Tools"
+  },
+  {
+    "file": "playground/mcp.html",
+    "before": "MCP tool calls · iOS",
+    "after": "MCP tool calls, iOS"
+  },
+  {
+    "file": "playground/mcp.html",
+    "before": "iOS package setup and downloads →",
+    "after": "iOS package setup and downloads"
+  },
+  {
+    "file": "playground/mcp.html",
+    "before": "04 · Connect",
+    "after": "04, Connect"
+  }
+]

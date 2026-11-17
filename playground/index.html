@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./catalog.css" />
     <script type="module" src="/app.js"></script>
   </head>
   <body class="nds-scope page-home">
@@ -19,8 +20,8 @@
 
     <main id="main" class="nds-container">
       <section class="hero page-home-hero" aria-labelledby="page-title">
-        <p class="eyebrow">Design language · 1.1.0</p>
-        <h1 id="page-title" class="nds-display">Clear structure.<br />Quiet character.</h1>
+
+        <h1 id="page-title" class="nds-display">Clear structure.<br />Quiet character.</h1><p class="eyebrow">Design language, 1.1.1</p>
         <div class="hero__footer">
           <p>
             One design language for web, iOS, and Android. Stable web components and
@@ -29,12 +30,12 @@
           <div class="button-row">
             <a class="nds-button" href="/components/">Explore components</a>
             <a class="nds-button nds-button--secondary" href="#installation">Install with npm</a>
-            <a class="nds-link" href="#platforms">Explore native foundations →</a>
+            <a class="nds-link" href="#platforms">Explore native foundations</a>
           </div>
         </div>
         <div class="proof nds-glass" aria-label="System status">
           <div class="proof__summary">
-            <span class="proof__status"><span aria-hidden="true"></span>System status</span>
+            <span class="proof__status">System status</span>
             <strong>Web stable. Native in pilot.</strong>
           </div>
           <dl class="proof__metrics">
@@ -45,7 +46,7 @@
         </div>
       </section>
 
-      <section id="installation" class="implementation-panel installation-panel" aria-labelledby="installation-title"><p class="component-label">Get started · npm</p><h2 id="installation-title">Install. Import. Build.</h2><p>Use the stable <a class="nds-link" href="https://www.npmjs.com/package/@nikba/design-system">npm package</a> in your application. The examples below assume an ES module bundler such as Vite.</p><h3>1. Install with npm</h3><div class="implementation-example"><div class="implementation-example__toolbar"><span>Terminal</span><button class="nds-button nds-button--secondary nds-button--small" type="button" data-copy-example aria-label="Copy installation step 1">Copy</button></div><pre tabindex="0" aria-label="Installation step 1"><code class="hljs">npm install @nikba/design-system</code></pre></div><h3>2. Import CSS and configure your theme</h3><div class="implementation-example"><div class="implementation-example__toolbar"><span>JavaScript</span><button class="nds-button nds-button--secondary nds-button--small" type="button" data-copy-example aria-label="Copy installation step 2">Copy</button></div><pre tabindex="0" aria-label="Installation step 2"><code class="hljs"><span class="hljs-keyword">import</span> <span class="hljs-string">&#x27;@nikba/design-system/css&#x27;</span>;
+      <section id="installation" class="implementation-panel installation-panel" aria-labelledby="installation-title"><h2 id="installation-title">Install the web library</h2><p class="component-label">Get started, npm</p><p>Use the stable <a class="nds-link" href="https://www.npmjs.com/package/@nikba/design-system">npm package</a> in your application. The examples below assume an ES module bundler such as Vite.</p><h3>1. Install with npm</h3><div class="implementation-example"><div class="implementation-example__toolbar"><span>Terminal</span><button class="nds-button nds-button--secondary nds-button--small" type="button" data-copy-example aria-label="Copy installation step 1">Copy</button></div><pre tabindex="0" aria-label="Installation step 1"><code class="hljs">npm install @nikba/design-system</code></pre></div><h3>2. Import CSS and configure your theme</h3><div class="implementation-example"><div class="implementation-example__toolbar"><span>JavaScript</span><button class="nds-button nds-button--secondary nds-button--small" type="button" data-copy-example aria-label="Copy installation step 2">Copy</button></div><pre tabindex="0" aria-label="Installation step 2"><code class="hljs"><span class="hljs-keyword">import</span> <span class="hljs-string">&#x27;@nikba/design-system/css&#x27;</span>;
 <span class="hljs-keyword">import</span> { setTheme, setGlassLevel } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@nikba/design-system&#x27;</span>;
 
 <span class="hljs-title function_">setTheme</span>(<span class="hljs-string">&#x27;frost&#x27;</span>); <span class="hljs-comment">// frost, mist or graphite</span>
@@ -58,68 +59,68 @@
 <span class="hljs-comment">// Run after the component markup is in the document.</span>
 <span class="hljs-keyword">const</span> cleanup = <span class="hljs-title function_">initDialogs</span>(<span class="hljs-variable language_">document</span>);
 
-<span class="hljs-comment">// Call cleanup() before removing the component.</span></code></pre></div><p>Static components need CSS only. Interactive components such as Dialog, Select and Tabs also need their initializer; copy the matching HTML and JavaScript from the component reference.</p><p>Onest fonts are application-owned: load or self-host Onest separately. <a class="nds-link" href="/foundations.html">Read the foundations guide</a>.</p><p class="implementation-copy-status" role="status" aria-live="polite"></p><a class="nds-link" href="/components/">Browse components and implementation examples →</a></section>
+<span class="hljs-comment">// Call cleanup() before removing the component.</span></code></pre></div><p>Static components need CSS only. Interactive components such as Dialog, Select and Tabs also need their initializer; copy the matching HTML and JavaScript from the component reference.</p><p>Onest fonts are application-owned: load or self-host Onest separately. <a class="nds-link" href="/foundations.html">Read the foundations guide</a>.</p><p class="implementation-copy-status" role="status" aria-live="polite"></p><a class="nds-link" href="/components/">Browse components</a></section>
       <section id="platforms" class="catalog-section native-section" aria-labelledby="platforms-title">
         <div class="section-heading">
-          <p class="component-label">Web · iOS · Android</p>
-          <h2 id="platforms-title">One foundation.<br />Built for each platform.</h2>
+
+          <h2 id="platforms-title">One foundation.<br />Built for each platform.</h2><p class="component-label">Web, iOS, Android</p>
         </div>
         <p class="native-intro">Share the Nikba visual language across your website and apps. Colors, spacing, radii, fixed type sizes, weights, control heights, durations, and opacity come from one source. Each platform keeps its own components and familiar interactions.</p>
         <div class="native-platform-grid">
           <article class="native-platform-card" aria-labelledby="platform-web-title">
-            <span class="status status--complete">Stable · 1.1.0</span>
+            <span class="status status--complete">Stable, 1.1.1</span>
             <h3 id="platform-web-title">Web</h3>
             <p>Framework-agnostic CSS, accessible HTML, and JavaScript behaviors. Explore the full component library, product patterns, and MCP implementation reference.</p>
-            <a class="nds-link" href="#installation">Install the web library →</a>
+            <a class="nds-link" href="#installation">Install the web library</a>
           </article>
           <article class="native-platform-card" aria-labelledby="platform-ios-title">
-            <span class="status">5 components · Pilot</span>
-            <h3 id="platform-ios-title">iOS · SwiftUI</h3>
+            <span class="status">5 components, Pilot</span>
+            <h3 id="platform-ios-title">iOS, SwiftUI</h3>
             <p>A local Swift package with Button, Field, Card, Badge, product states, and bundled Onest with Dynamic Type. Targets iOS 17+ and Swift 6.</p>
-            <a class="nds-link" href="#native-integration">Integrate with SwiftUI →</a>
+            <a class="nds-link" href="#native-integration">Integrate with SwiftUI</a>
           </article>
           <article class="native-platform-card" aria-labelledby="platform-android-title">
-            <span class="status">5 components · Pilot</span>
-            <h3 id="platform-android-title">Android · Compose</h3>
+            <span class="status">5 components, Pilot</span>
+            <h3 id="platform-android-title">Android, Compose</h3>
             <p>Jetpack Compose Button, Field, Card, Badge, and product states. Generated Kotlin tokens support your Material theme and existing font resources.</p>
-            <a class="nds-link" href="#native-integration">Integrate with Compose →</a>
+            <a class="nds-link" href="#native-integration">Integrate with Compose</a>
           </article>
         </div>
 
         <div class="native-source">
-          <p class="component-label">Shared source</p>
-          <h3>Tokens flow from one place.</h3>
+
+          <h3>Tokens flow from one place.</h3><p class="component-label">Shared source</p>
           <p><code>src/tokens/foundations.json</code> generates the existing CSS token files, <code>NikbaTokens.swift</code>, and <code>NikbaTokens.kt</code>. Frost, Mist, and Graphite are available on all three platforms. On iOS, adaptive colors follow system appearance with Frost in light mode and Graphite in dark mode; Android selects the palette in its theme.</p>
           <p>The first native consumer is <strong>localhost.md</strong>. Its iOS and Android apps use the shared components for catalog search, panels, badges, recovery actions, and content states. Product-specific navigation and identity stay in the app.</p>
         </div>
 
         <div id="native-integration" class="implementation-panel" aria-labelledby="native-integration-title">
-          <p class="component-label">Get started · Native pilot</p>
-          <h3 id="native-integration-title">Add tokens and components to your app.</h3>
-          <p>iOS supports a Swift package with bundled Onest; Android uses source files and an app-owned font resource. Native APIs are published as a pilot in release 1.1.0; the web library retains its stable API.</p>
+
+          <h3 id="native-integration-title">Add tokens and components to your app.</h3><p class="component-label">Get started, Native pilot</p>
+          <p>iOS supports a Swift package with bundled Onest; Android uses source files and an app-owned font resource. Native APIs are published as a pilot in release 1.1.1; the web library retains its stable API.</p>
           <div id="ios-package" class="native-package-setup">
-            <h4>iOS · Swift Package Manager</h4>
+            <h4>iOS, Swift Package Manager</h4>
             <ol>
-              <li>In Xcode, choose Add Package Dependencies, enter <code>https://github.com/Nikba-Creative-Studio/nikba-design-system.git</code>, and select Exact Version <code>1.1.0</code>. MCP’s <code>get_installation({ platform: "ios" })</code> returns remote and local installation options.</li>
+              <li>In Xcode, choose Add Package Dependencies, enter <code>https://github.com/Nikba-Creative-Studio/nikba-design-system.git</code>, and select Exact Version <code>1.1.1</code>. MCP’s <code>get_installation({ platform: "ios" })</code> returns remote and local installation options.</li>
               <li>Link the <code>NikbaDesignSystem</code> product to your iOS app target and <code>import NikbaDesignSystem</code> alongside SwiftUI.</li>
               <li>Use <code>NDSTypography.font</code> to register bundled Onest automatically. Request <code>get_native_source({ platform: "ios", kind: "example" })</code> for a complete first screen with state and focus bindings.</li>
             </ol>
-            <p>The <code>v1.1.0</code> release tag contains the Swift package and bundled font. For local development, use Add Local with this checkout. The older web-only <code>v1.0.0</code> tag does not contain Package.swift.</p>
-            <a class="nds-link" href="/mcp.html#native-workflow">Follow the iOS MCP workflow →</a>
+            <p>The <code>v1.1.1</code> release tag contains the Swift package and bundled font. For local development, use Add Local with this checkout. The older web-only <code>v1.0.0</code> tag does not contain Package.swift.</p>
+            <a class="nds-link" href="/mcp.html#native-workflow">iOS MCP guide</a>
           </div>
-          <h4>Alternative · Source files</h4>
+          <h4>Alternative, Source files</h4>
           <p>Download both files for your platform and add them to an app source set. Source-copy consumers bundle/register Onest themselves. Android also needs Compose UI, Foundation, Material 3 and tooling-preview.</p>
           <div class="button-row native-downloads">
             <a class="nds-button nds-button--secondary" href="https://github.com/Nikba-Creative-Studio/nikba-design-system/blob/main/native/ios/NikbaTokens.swift" data-native-download="ios" download="NikbaTokens.swift">Download Swift tokens</a>
-            <a class="nds-button nds-button--secondary" href="https://github.com/Nikba-Creative-Studio/nikba-design-system/blob/main/native/ios/NikbaComponents.swift" data-native-download="ios-components" download="NikbaComponents.swift">Download Swift components</a>
+            <a class="nds-button nds-button--secondary" href="https://github.com/Nikba-Creative-Studio/nikba-design-system/blob/main/native/ios/NikbaComponents.swift" data-native-download="ios-components" download="NikbaComponents.swift">Swift components</a>
             <a class="nds-button nds-button--secondary" href="https://github.com/Nikba-Creative-Studio/nikba-design-system/blob/main/native/android/NikbaTokens.kt" data-native-download="android" download="NikbaTokens.kt">Download Kotlin tokens</a>
-            <a class="nds-button nds-button--secondary" href="https://github.com/Nikba-Creative-Studio/nikba-design-system/blob/main/native/android/NikbaComponents.kt" data-native-download="android-components" download="NikbaComponents.kt">Download Kotlin components</a>
+            <a class="nds-button nds-button--secondary" href="https://github.com/Nikba-Creative-Studio/nikba-design-system/blob/main/native/android/NikbaComponents.kt" data-native-download="android-components" download="NikbaComponents.kt">Kotlin components</a>
             <a class="nds-button nds-button--secondary" href="https://github.com/Nikba-Creative-Studio/nikba-design-system/blob/main/src/tokens/foundations.json" data-native-download="source" download="foundations.json">Download source JSON</a>
           </div>
           <h4>SwiftUI</h4>
           <p>With SwiftPM, import the module as below. For the source-copy alternative, add <code>NikbaTokens.swift</code> and <code>NikbaComponents.swift</code> to the app and omit the module import. Components use adaptive Frost/Graphite colors and text styles that respond to the reader’s preferred size.</p>
           <div class="implementation-example">
-            <div class="implementation-example__toolbar"><span>Swift · iOS 17+</span><button class="nds-button nds-button--secondary nds-button--small" type="button" data-copy-example aria-label="Copy SwiftUI foundation example">Copy</button></div>
+            <div class="implementation-example__toolbar"><span>Swift, iOS 17+</span><button class="nds-button nds-button--secondary nds-button--small" type="button" data-copy-example aria-label="Copy SwiftUI foundation example">Copy</button></div>
             <pre tabindex="0" aria-label="SwiftUI foundation example"><code>import SwiftUI
 import NikbaDesignSystem
 
@@ -139,7 +140,7 @@ struct WelcomeView: View {
           <h4>Jetpack Compose</h4>
           <p>Add <code>NikbaTokens.kt</code> and <code>NikbaComponents.kt</code> to your Android source set. Their package is <code>com.nikba.designsystem</code>. Keep the Onest font resource and typography role mapping in your app.</p>
           <div class="implementation-example">
-            <div class="implementation-example__toolbar"><span>Kotlin · Compose</span><button class="nds-button nds-button--secondary nds-button--small" type="button" data-copy-example aria-label="Copy Compose foundation example">Copy</button></div>
+            <div class="implementation-example__toolbar"><span>Kotlin, Compose</span><button class="nds-button nds-button--secondary nds-button--small" type="button" data-copy-example aria-label="Copy Compose foundation example">Copy</button></div>
             <pre tabindex="0" aria-label="Compose foundation example"><code>import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.lightColorScheme
@@ -163,7 +164,7 @@ fun NikbaTheme(content: @Composable () -&gt; Unit) {
           </div>
           <p>This Compose example maps the canvas and surface roles. Map the remaining Material roles and your app’s typography when integrating a complete theme.</p>
           <div class="implementation-example">
-            <div class="implementation-example__toolbar"><span>Kotlin · Components inside your theme</span><button class="nds-button nds-button--secondary nds-button--small" type="button" data-copy-example aria-label="Copy Compose component example">Copy</button></div>
+            <div class="implementation-example__toolbar"><span>Kotlin, Components inside your theme</span><button class="nds-button nds-button--secondary nds-button--small" type="button" data-copy-example aria-label="Copy Compose component example">Copy</button></div>
             <pre tabindex="0" aria-label="Compose component example"><code>// Import androidx.compose.material3.Text and com.nikba.designsystem.*
 NDSCard {
     NDSBadge("Ready", tone = NDSBadgeTone.Success)
@@ -176,7 +177,7 @@ NDSCard {
           <h4>Generate and synchronize</h4>
           <p>In a checkout of the Nikba Design System repository, edit the source JSON and regenerate. Consumer directories must already exist. Updates to other repositories are explicit; <code>--check</code> verifies that their copies match without writing.</p>
           <div class="implementation-example">
-            <div class="implementation-example__toolbar"><span>Terminal · Design system repository</span><button class="nds-button nds-button--secondary nds-button--small" type="button" data-copy-example aria-label="Copy native token workflow">Copy</button></div>
+            <div class="implementation-example__toolbar"><span>Terminal, Design system repository</span><button class="nds-button nds-button--secondary nds-button--small" type="button" data-copy-example aria-label="Copy native token workflow">Copy</button></div>
             <pre tabindex="0" aria-label="Native token generation and synchronization"><code>npm run tokens:generate
 npm run tokens:check
 npm run test:tokens
@@ -231,13 +232,13 @@ npm run native:sync -- --check \
         </div>
         <div class="native-notes-grid">
           <article class="native-platform-card">
-            <p class="component-label">Platform ownership</p>
-            <h3>Native behavior stays native.</h3>
+
+            <h3>Native behavior stays native.</h3><p class="component-label">Platform ownership</p>
             <p>CSS shadows, glass effects, fluid layout, breakpoints, and z-index remain web values. Native apps own materials, safe areas, navigation, gestures, keyboards, accessible touch targets, screen reader semantics, and reduced motion.</p>
           </article>
           <article class="native-platform-card">
-            <p class="component-label">Next milestone · Validation</p>
-            <h3>From pilot to stable APIs.</h3>
+
+            <h3>From pilot to stable APIs.</h3><p class="component-label">Next milestone, Validation</p>
             <p>Five components, SwiftPM installation, bundled iOS fonts, and platform-aware MCP retrieval are available now. The next stage is manual VoiceOver/TalkBack review, wider device coverage, API stabilization, and a stable native API. Android library publication remains future work.</p>
           </article>
         </div>
@@ -245,179 +246,179 @@ npm run native:sync -- --check \
 
 <section class="catalog-section reveal" aria-labelledby="explore-title">
         <div class="section-heading">
-          <p class="component-label">Explore</p>
-          <h2 id="explore-title">A complete path from tokens to product flows.</h2>
+
+          <h2 id="explore-title">A complete path from tokens to product flows.</h2><p class="component-label">Explore</p>
         </div>
         <div class="catalog-index-grid">
           <a class="catalog-index-card" href="#platforms">
             <span class="status">Native pilot</span>
             <div><h3>iOS and Android</h3><p>Shared foundation tokens, source downloads, native integration examples, and the component roadmap.</p></div>
-            <span aria-hidden="true">↗</span>
+
           </a>
           <a class="catalog-index-card catalog-index-card--feature" href="/foundations.html">
             <span class="status">Foundation</span>
             <div><h3>Foundations</h3><p>Tokens, typography, color, layout, motion, and glass behavior.</p></div>
-            <span aria-hidden="true">↗</span>
+
           </a>
           <a class="catalog-index-card catalog-index-card--feature" href="/components/">
             <span class="status status--complete">26 complete</span>
             <div><h3>Components</h3><p>Accessible controls, feedback, navigation, overlays, and structured data with documented public APIs.</p></div>
-            <span aria-hidden="true">↗</span>
+
           </a>
           <a class="catalog-index-card" href="/components/#patterns">
             <span class="status status--complete">5 complete</span>
             <div><h3>Product Patterns</h3><p>Reusable flows for states, search, forms, settings, and consequential actions.</p></div>
-            <span aria-hidden="true">↗</span>
+
           </a>
           <a class="catalog-index-card" href="/mcp.html">
             <span class="status status--complete">Verified</span>
             <div><h3>MCP for AI</h3><p>Web and native contracts, installation steps, exact source, nine tools, and platform-aware implementation guidance.</p></div>
-            <span aria-hidden="true">↗</span>
+
           </a>
           <a class="catalog-index-card" href="/components/button.html">
             <span class="status status--complete">Complete</span>
             <div><h3>Button</h3><p>Actions, sizes, emphasis, icons, loading, toggles, and disabled states.</p></div>
-            <span aria-hidden="true">↗</span>
+
           </a>
           <a class="catalog-index-card" href="/components/link.html">
             <span class="status status--complete">Complete</span>
             <div><h3>Link</h3><p>Inline and standalone navigation with clear interaction states.</p></div>
-            <span aria-hidden="true">↗</span>
+
           </a>
           <a class="catalog-index-card" href="/components/badge-chip.html">
             <span class="status status--complete">Complete</span>
             <div><h3>Badge and Chip</h3><p>Compact status and accessible filter selection.</p></div>
-            <span aria-hidden="true">↗</span>
+
           </a>
           <a class="catalog-index-card" href="/components/field.html">
             <span class="status status--complete">Complete</span>
             <div><h3>Field</h3><p>Accessible labels, guidance, validation, and responsive layout.</p></div>
-            <span aria-hidden="true">↗</span>
+
           </a>
           <a class="catalog-index-card" href="/components/input-textarea.html">
             <span class="status status--complete">Complete</span>
             <div><h3>Input and Textarea</h3><p>Text entry, adornments, validation, and character limits.</p></div>
-            <span aria-hidden="true">↗</span>
+
           </a>
           <a class="catalog-index-card" href="/components/select.html">
             <span class="status status--complete">Complete</span>
             <div><h3>Select</h3><p>Designed single-choice selection with a native fallback.</p></div>
-            <span aria-hidden="true">↗</span>
+
           </a>
           <a class="catalog-index-card" href="/components/checkbox-radio.html">
             <span class="status status--complete">Complete</span>
             <div><h3>Checkbox and Radio</h3><p>Independent and exclusive selection with native semantics.</p></div>
-            <span aria-hidden="true">↗</span>
+
           </a>
           <a class="catalog-index-card" href="/components/switch.html">
             <span class="status status--complete">Complete</span>
             <div><h3>Switch</h3><p>Immediate binary settings with explicit on and off semantics.</p></div>
-            <span aria-hidden="true">↗</span>
+
           </a>
           <a class="catalog-index-card" href="/components/card.html">
             <span class="status status--complete">Complete</span>
             <div><h3>Card</h3><p>Semantic content surfaces with flexible depth and composition.</p></div>
-            <span aria-hidden="true">↗</span>
+
           </a>
           <a class="catalog-index-card" href="/components/divider.html">
             <span class="status status--complete">Complete</span>
             <div><h3>Divider</h3><p>Meaningful content separation with controlled emphasis and spacing.</p></div>
-            <span aria-hidden="true">↗</span>
+
           </a>
           <a class="catalog-index-card" href="/components/avatar.html">
             <span class="status status--complete">Complete</span>
             <div><h3>Avatar</h3><p>Recognizable identity through images, initials, groups, and presence.</p></div>
-            <span aria-hidden="true">↗</span>
+
           </a>
           <a class="catalog-index-card" href="/components/spinner.html">
             <span class="status status--complete">Complete</span>
             <div><h3>Spinner</h3><p>Indeterminate progress with accessible status and busy-region patterns.</p></div>
-            <span aria-hidden="true">↗</span>
+
           </a>
           <a class="catalog-index-card" href="/components/skeleton.html">
             <span class="status status--complete">Complete</span>
             <div><h3>Skeleton</h3><p>Layout-preserving placeholders for content that is expected to arrive.</p></div>
-            <span aria-hidden="true">↗</span>
+
           </a>
           <a class="catalog-index-card" href="/components/alert.html">
             <span class="status status--complete">Complete</span>
             <div><h3>Alert</h3><p>Persistent feedback with semantic tone, actions, and deliberate announcement behavior.</p></div>
-            <span aria-hidden="true">↗</span>
+
           </a>
           <a class="catalog-index-card" href="/components/disclosure-accordion.html">
             <span class="status status--complete">Complete</span>
             <div><h3>Disclosure and Accordion</h3><p>Native progressive disclosure with optional single-open behavior.</p></div>
-            <span aria-hidden="true">↗</span>
+
           </a>
           <a class="catalog-index-card" href="/components/tabs.html">
             <span class="status status--complete">Complete</span>
             <div><h3>Tabs</h3><p>Related views with automatic or manual keyboard activation.</p></div>
-            <span aria-hidden="true">↗</span>
+
           </a>
           <a class="catalog-index-card" href="/components/dialog.html">
             <span class="status status--complete">Complete</span>
             <div><h3>Dialog</h3><p>Focused modal tasks with native containment and focus restoration.</p></div>
-            <span aria-hidden="true">↗</span>
+
           </a>
           <a class="catalog-index-card" href="/components/popover-menu.html">
             <span class="status status--complete">Complete</span>
             <div><h3>Popover and Dropdown Menu</h3><p>Anchored context and actions with light dismissal and complete keyboard behavior.</p></div>
-            <span aria-hidden="true">↗</span>
+
           </a>
           <a class="catalog-index-card" href="/components/tooltip.html">
             <span class="status status--complete">Complete</span>
             <div><h3>Tooltip</h3><p>Concise supporting labels with pointer, keyboard, and adaptive placement.</p></div>
-            <span aria-hidden="true">↗</span>
+
           </a>
           <a class="catalog-index-card" href="/components/toast.html">
             <span class="status status--complete">Complete</span>
             <div><h3>Toast</h3><p>Brief status messages with semantic priority, bounded queues, and deliberate timing.</p></div>
-            <span aria-hidden="true">↗</span>
+
           </a>
           <a class="catalog-index-card" href="/components/header-navigation.html">
             <span class="status status--complete">Complete</span>
             <div><h3>Header and Navigation</h3><p>Container-aligned identity and responsive primary navigation.</p></div>
-            <span aria-hidden="true">↗</span>
+
           </a>
           <a class="catalog-index-card" href="/components/breadcrumb-pagination.html">
             <span class="status status--complete">Complete</span>
             <div><h3>Breadcrumb and Pagination</h3><p>Hierarchy and stable result-page movement with responsive states.</p></div>
-            <span aria-hidden="true">↗</span>
+
           </a>
           <a class="catalog-index-card" href="/components/table.html">
             <span class="status status--complete">Complete</span>
             <div><h3>Table</h3><p>Semantic structured data with sorting, selection, density, and contained overflow.</p></div>
-            <span aria-hidden="true">↗</span>
+
           </a>
           <a class="catalog-index-card" href="/components/product-states.html">
             <span class="status status--complete">Complete</span>
             <div><h3>Product States</h3><p>Empty, loading, error, and success compositions with clear next actions.</p></div>
-            <span aria-hidden="true">↗</span>
+
           </a>
           <a class="catalog-index-card" href="/components/search-filter.html">
             <span class="status status--complete">Complete</span>
             <div><h3>Search and Filter</h3><p>Durable query forms, applied criteria, live result counts, and recovery.</p></div>
-            <span aria-hidden="true">↗</span>
+
           </a>
           <a class="catalog-index-card" href="/components/form-validation.html">
             <span class="status status--complete">Complete</span>
             <div><h3>Form Validation</h3><p>Native constraints, actionable error recovery, protected submission, and announced outcomes.</p></div>
-            <span aria-hidden="true">↗</span>
+
           </a>
           <a class="catalog-index-card" href="/components/settings-account.html">
             <span class="status status--complete">Complete</span>
             <div><h3>Settings and Account</h3><p>Identity, immediate preferences, active sessions, and consequential account actions.</p></div>
-            <span aria-hidden="true">↗</span>
+
           </a>
           <a class="catalog-index-card" href="/components/destructive-confirmation.html">
             <span class="status status--complete">Complete</span>
             <div><h3>Destructive Confirmation</h3><p>Risk-proportional confirmation, concrete consequences, verification, and protected submission.</p></div>
-            <span aria-hidden="true">↗</span>
+
           </a>
         </div>
       </section>
     </main>
 
-    <footer class="catalog-footer nds-container"><span>Designed and built with all the love in the world by the <a class="nds-link" href="https://nikba.com/">Nikba Creative Studio</a>.</span><span>1.1.0 · Stable release</span></footer>
+    <footer class="catalog-footer nds-container"><span>Designed and built with all the love in the world by the <a class="nds-link" href="https://nikba.com/">Nikba Creative Studio</a>.</span><span>1.1.1 · Stable release</span></footer>
   </body>
 </html>

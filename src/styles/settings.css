@@ -20,7 +20,7 @@
 .nds-settings__row-copy span { color: var(--nds-text-secondary); font-size: var(--nds-font-size-sm); }
 
 @media (max-width: 48rem) {
-  .nds-settings { grid-template-columns: 1fr; }
+  .nds-settings { grid-template-columns: minmax(0, 1fr); }
   .nds-settings__nav { position: static; overflow-x: auto; }
   .nds-settings__nav-list { grid-auto-flow: column; grid-auto-columns: max-content; }
 }

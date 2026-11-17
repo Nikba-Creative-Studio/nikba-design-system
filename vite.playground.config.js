@@ -1,5 +1,27 @@
 import { resolve } from 'node:path';
+import { readFileSync } from 'node:fs';
 import { defineConfig } from 'vite';
+
+// Render essential navigation before JS enhancement, in development and production.
+function catalogNavigation() {
+  const logo = `data:image/svg+xml;base64,${readFileSync(new URL('./src/logo.svg', import.meta.url)).toString('base64')}`;
+  const { version } = JSON.parse(readFileSync(new URL('./package.json', import.meta.url), 'utf8'));
+  const items = [['overview', '/', 'Overview'], ['foundations', '/foundations.html', 'Foundations'], ['components', '/components/', 'Components'], ['mcp', '/mcp.html', 'MCP']];
+  return {
+    name: 'catalog-navigation',
+    transformIndexHtml: {
+      order: 'pre',
+      handler(html) {
+        return html.replace(/(<header data-catalog-header data-current="([^"]+)">)<\/header>/g, (_, opening, current) => `${opening}
+          <nav class="catalog-nav" aria-label="Primary navigation">
+            <a class="wordmark" href="/" aria-label="Nikba home"><img src="${logo}" width="102" height="34" alt="" /></a>
+            <div class="catalog-nav__links">${items.map(([id, href, label]) => `<a href="${href}"${id === current ? ' aria-current="page"' : ''}>${label}</a>`).join('')}</div>
+            <span class="release-badge">${version}</span>
+          </nav></header>`);
+      },
+    },
+  };
+}
 
 function prefixCatalogLinks() {
   let base = '/';
@@ -24,7 +46,7 @@ function prefixCatalogLinks() {
 
 export default defineConfig({
   root: resolve(import.meta.dirname, 'playground'),
-  plugins: [prefixCatalogLinks()],
+  plugins: [catalogNavigation(), prefixCatalogLinks()],
   build: {
     cssMinify: 'esbuild',
     outDir: resolve(import.meta.dirname, 'dist-playground'),

@@ -2,7 +2,7 @@
   position: fixed;
   z-index: var(--nds-z-toast);
   inset: auto var(--nds-space-5) var(--nds-space-5) auto;
-  width: min(24rem, calc(100vw - (var(--nds-space-5) * 2)));
+  width: min(24rem, calc(100% - (var(--nds-space-5) * 2)));
   display: grid;
   gap: var(--nds-space-3);
   pointer-events: none;

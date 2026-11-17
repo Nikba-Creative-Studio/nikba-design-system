@@ -216,3 +216,16 @@
     padding-inline: var(--nds-space-3);
   }
 }
+
+/* Adapt to the space assigned by an app shell, including a sidebar layout. */
+.nds-search-filter { container-type: inline-size; }
+@container (max-width: 56rem) {
+  .nds-search-filter__form { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .nds-search-filter__query, .nds-search-filter__actions { grid-column: 1 / -1; }
+  .nds-search-filter__actions { justify-content: flex-end; }
+}
+@container (max-width: 36rem) {
+  .nds-search-filter__form { grid-template-columns: minmax(0, 1fr); }
+  .nds-search-filter__query, .nds-search-filter__actions { grid-column: auto; }
+  .nds-search-filter__actions .nds-button { flex: 1; }
+}

@@ -28,7 +28,6 @@
   font: var(--nds-font-weight-regular) var(--nds-font-size-base)/1.4 var(--nds-font-sans);
   cursor: pointer;
   transition: border-color var(--nds-duration-fast) var(--nds-ease-standard),
-    box-shadow var(--nds-duration-fast) var(--nds-ease-standard),
     background-color var(--nds-duration-fast) var(--nds-ease-standard);
 }
 
@@ -52,7 +51,6 @@
 .nds-select:focus {
   border-color: var(--nds-focus);
   outline: none;
-  box-shadow: 0 0 0 var(--nds-focus-ring-width) color-mix(in srgb, var(--nds-focus) 18%, transparent);
 }
 
 .nds-select:disabled {
@@ -66,7 +64,7 @@
 
 .nds-select[aria-invalid='true']:focus {
   border-color: var(--nds-danger);
-  box-shadow: 0 0 0 var(--nds-focus-ring-width) color-mix(in srgb, var(--nds-danger) 18%, transparent);
+  outline-color: var(--nds-danger);
 }
 
 .nds-select:required:invalid { color: var(--nds-text-tertiary); }
@@ -124,7 +122,6 @@
   text-align: start;
   cursor: pointer;
   transition: border-color var(--nds-duration-fast) var(--nds-ease-standard),
-    box-shadow var(--nds-duration-fast) var(--nds-ease-standard),
     background-color var(--nds-duration-fast) var(--nds-ease-standard);
 }
 
@@ -148,8 +145,8 @@
 
 .nds-selectbox__trigger:focus-visible {
   border-color: var(--nds-focus);
-  outline: none;
-  box-shadow: 0 0 0 var(--nds-focus-ring-width) color-mix(in srgb, var(--nds-focus) 18%, transparent);
+  outline: var(--nds-focus-ring-width) solid var(--nds-focus);
+  outline-offset: var(--nds-focus-ring-offset);
 }
 
 .nds-selectbox__trigger[aria-invalid='true'] { border-color: var(--nds-danger); }
@@ -157,7 +154,7 @@
 
 .nds-selectbox__trigger[aria-invalid='true']:focus-visible {
   border-color: var(--nds-danger);
-  box-shadow: 0 0 0 var(--nds-focus-ring-width) color-mix(in srgb, var(--nds-danger) 18%, transparent);
+  outline-color: var(--nds-danger);
 }
 
 .nds-selectbox__trigger[aria-expanded='true']::after { transform: translateY(25%) rotate(225deg); }
@@ -171,7 +168,7 @@
   position: fixed;
   z-index: var(--nds-z-dropdown);
   min-width: 12rem;
-  max-width: calc(100vw - var(--nds-space-4));
+  max-width: calc(100% - var(--nds-space-4));
   max-height: min(20rem, calc(100dvh - var(--nds-space-4)));
   margin: 0;
   padding: var(--nds-space-2);

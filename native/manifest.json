@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "nativeVersion": "1.1.0",
+  "nativeVersion": "1.1.1",
   "status": "pilot",
   "releaseStatus": "published",
   "repository": "https://github.com/Nikba-Creative-Studio/nikba-design-system.git",
@@ -160,5 +160,5 @@
       "header-navigation": "Material3.TopAppBar and platform navigation"
     }
   },
-  "releaseTag": "v1.1.0"
+  "releaseTag": "v1.1.1"
 }

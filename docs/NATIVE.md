@@ -4,9 +4,9 @@ Nikba shares design values across web, SwiftUI and Jetpack Compose. Five native 
 
 ## Preferred iOS installation
 
-Add `https://github.com/Nikba-Creative-Studio/nikba-design-system.git` in Xcode with Exact Version **1.1.0** and link the **NikbaDesignSystem** product. For local development, add the root `Package.swift` directory as a local dependency. Import `NikbaDesignSystem` alongside SwiftUI. `NDSTypography.font` registers the bundled Onest font automatically; `NDSFonts.register()` is also available. The included OFL license and provenance accompany the font asset.
+Add `https://github.com/Nikba-Creative-Studio/nikba-design-system.git` in Xcode with Exact Version **1.1.1** and link the **NikbaDesignSystem** product. For local development, add the root `Package.swift` directory as a local dependency. Import `NikbaDesignSystem` alongside SwiftUI. `NDSTypography.font` registers the bundled Onest font automatically; `NDSFonts.register()` is also available. The included OFL license and provenance accompany the font asset.
 
-The `v1.1.0` release tag contains the published native pilot. Native APIs remain experimental; the older web-only `v1.0.0` tag does not contain this package. See [Build an iOS app](./IOS.md) for the full startup path. MCP's `get_installation({platform: "ios"})` returns the remote package URL, exact version, local package path and pilot status.
+The `v1.1.1` release tag contains the published native pilot. Native APIs remain experimental; the older web-only `v1.0.0` tag does not contain this package. See [Build an iOS app](./IOS.md) for the full startup path. MCP's `get_installation({platform: "ios"})` returns the remote package URL, exact version, local package path and pilot status.
 
 ## Source and generated artifacts
 

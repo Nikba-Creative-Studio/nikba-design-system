@@ -2,6 +2,10 @@
 
 No migration is required when moving from `0.1.0-alpha.3` to `1.0.0`; the documented CSS, JavaScript, package, and MCP contracts remain compatible. This document becomes the chronological source for breaking changes and deprecations.
 
+## 1.1.1 — Catalog resilience and interface fixes
+
+No migration is required from 1.1.0. Existing CSS, JavaScript and native component APIs remain compatible. Update npm to `@nikba/design-system@1.1.1`; SwiftPM consumers can pin exact version `1.1.1`. Native APIs remain a pilot.
+
 ## 1.1.0 — Native distribution and platform-aware MCP
 
 No migration is required for existing CSS, JavaScript or MCP consumers. Original MCP calls continue to default to web. Pass `platform: "ios"` or `"android"` to request native contracts. iOS apps can add the repository as a Swift package pinned to exact version `1.1.0`; native APIs remain a pilot.

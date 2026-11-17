@@ -6,6 +6,25 @@ The project follows [Semantic Versioning](https://semver.org/). Before `1.0.0`, 
 
 ## Unreleased
 
+## 1.1.1 - 2026-11-17
+
+### Fixed
+
+- Catalog navigation, styles and reference content remain available when JavaScript does not run.
+- Responsive native downloads, pagination, code toolbars, search filters and the mobile layout specimen fit their available space.
+- Mobile appearance controls start collapsed; landing actions remain visible at the desktop fold.
+- Correct theme-specific syntax colors, improve catalog text contrast, and show Select focus immediately.
+- Remove dimension transitions from Chip and Checkbox, constrain popup widths, and tokenize the dialog backdrop.
+
+### Changed
+
+- Apply a Hallmark audit to the catalog while preserving Nikba typography, semantic themes, technical content and public component APIs.
+- Add catalog resilience coverage for 35 routes at eight widths, no-script navigation, native source downloads, reduced motion and keyboard focus.
+
+### Compatibility
+
+- No migration is required from 1.1.0. Web APIs remain stable; native APIs retain their pilot status.
+
 ## 1.1.0 - 2026-11-11
 
 ### Added

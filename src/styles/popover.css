@@ -1,7 +1,7 @@
 .nds-popover {
   position: fixed;
   inset: auto;
-  width: min(calc(100vw - (var(--nds-space-4) * 2)), 20rem);
+  width: min(calc(100% - (var(--nds-space-4) * 2)), 20rem);
   max-height: calc(100dvh - (var(--nds-space-4) * 2));
   margin: 0;
   padding: var(--nds-space-4);
@@ -17,7 +17,7 @@
 .nds-popover__title { margin: 0 0 var(--nds-space-2); font-size: var(--nds-font-size-md); }
 .nds-popover__description { margin: 0; color: var(--nds-text-secondary); font-size: var(--nds-font-size-sm); line-height: var(--nds-line-height-body); }
 
-.nds-menu { width: min(calc(100vw - (var(--nds-space-4) * 2)), 17rem); padding: var(--nds-space-2); }
+.nds-menu { width: min(calc(100% - (var(--nds-space-4) * 2)), 17rem); padding: var(--nds-space-2); }
 .nds-menu__label { padding: var(--nds-space-2) var(--nds-space-3); color: var(--nds-text-tertiary); font-size: var(--nds-font-size-xs); font-weight: var(--nds-font-weight-semibold); text-transform: uppercase; }
 
 .nds-menu__item {

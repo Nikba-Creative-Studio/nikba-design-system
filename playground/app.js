@@ -2,19 +2,16 @@ import { initDataTables } from '../src/behaviors/data-table.js';
 import { initMultiSelects } from '../src/behaviors/multi-select.js';
 import { initComboboxes } from '../src/behaviors/combobox.js';
 import { createToastManager, glassLevels, initAccordions, initDialogs, initForms, initNavigations, initPopovers, initSelects, initTables, initTabs, initTooltips, setGlassLevel, setTheme, themes } from '../src/index.js';
-import logoUrl from '../src/logo.svg?url';
 import swiftTokensUrl from '../native/ios/NikbaTokens.swift?url&no-inline';
 import kotlinTokensUrl from '../native/android/NikbaTokens.kt?url&no-inline';
 import swiftComponentsUrl from '../native/ios/NikbaComponents.swift?url&no-inline';
 import kotlinComponentsUrl from '../native/android/NikbaComponents.kt?url&no-inline';
 import foundationSourceUrl from '../src/tokens/foundations.json?url&no-inline';
 import { componentCatalog } from './component-catalog.js';
-import './styles.css';
 
 const root = document.documentElement;
 const themeKey = 'nds-catalog-theme';
 const glassKey = 'nds-catalog-glass';
-const catalogRelease = '1.1.0';
 const catalogBase = import.meta.env.BASE_URL;
 const nativeDownloads = { ios: swiftTokensUrl, android: kotlinTokensUrl, 'ios-components': swiftComponentsUrl, 'android-components': kotlinComponentsUrl, source: foundationSourceUrl };
 
@@ -43,39 +40,11 @@ function writePreference(key, value) {
   }
 }
 
-const currentSection = document.querySelector('[data-catalog-header]')?.dataset.current;
-const navigationItems = [
-  ['overview', '/', 'Overview'],
-  ['foundations', '/foundations.html', 'Foundations'],
-  ['components', '/components/', 'Components'],
-  ['mcp', '/mcp.html', 'MCP'],
-];
-
-document.querySelector('[data-catalog-header]')?.replaceChildren(
-  Object.assign(document.createElement('nav'), {
-    className: 'catalog-nav',
-    ariaLabel: 'Primary navigation',
-    innerHTML: `
-      <a class="wordmark" href="${catalogPath('/')}" aria-label="Nikba home">
-        <img src="${logoUrl}" width="102" height="34" alt="" />
-      </a>
-      <div class="catalog-nav__links">
-        ${navigationItems
-          .map(
-            ([id, href, label]) =>
-              `<a href="${catalogPath(href)}"${id === currentSection ? ' aria-current="page"' : ''}>${label}</a>`,
-          )
-          .join('')}
-      </div>
-      <span class="release-badge">${catalogRelease}</span>
-    `,
-  }),
-);
-
 document.querySelector('[data-appearance-panel]')?.replaceChildren(
   Object.assign(document.createElement('div'), {
     className: 'lab-panel nds-glass',
     innerHTML: `
+      <details class="appearance-disclosure"><summary>Appearance</summary><div class="appearance-options">
       <fieldset class="control-group">
         <legend>Theme</legend>
         <div class="segmented" data-theme-controls>
@@ -92,9 +61,13 @@ document.querySelector('[data-appearance-panel]')?.replaceChildren(
           <button type="button" data-value="clear">Clear</button>
         </div>
       </fieldset>
+      </div></details>
     `,
   }),
 );
+
+const appearanceDisclosure = document.querySelector('.appearance-disclosure');
+if (appearanceDisclosure) appearanceDisclosure.open = !window.matchMedia('(max-width: 699px)').matches;
 
 function enhanceNextComponentPreview() {
   const currentSlug = location.pathname.match(/\/components\/([^/]+)\.html$/)?.[1];

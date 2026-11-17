@@ -62,8 +62,7 @@
   width: 0;
   overflow: hidden;
   opacity: 0;
-  transition: width var(--nds-duration-fast) var(--nds-ease-standard),
-    opacity var(--nds-duration-fast) var(--nds-ease-standard);
+  transition: opacity var(--nds-duration-fast) var(--nds-ease-standard);
 }
 
 .nds-chip[aria-pressed='true'] .nds-chip__check {

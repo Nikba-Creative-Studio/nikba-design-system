@@ -1,0 +1,1317 @@
+[
+  {
+    "file": "playground/mcp.html",
+    "before": "<p class=\"eyebrow\">1.1.0 \u00b7 AI integration \u00b7 Read only</p>\n        <h1 class=\"nds-display\">Give AI the same source of truth.</h1>",
+    "after": "\n        <h1 class=\"nds-display\">Give AI the same source of truth.</h1><p class=\"eyebrow\">1.1.0 \u00b7 AI integration \u00b7 Read only</p>"
+  },
+  {
+    "file": "playground/mcp.html",
+    "before": "<p class=\"component-label\">01 \u00b7 Architecture</p>\n              <h2 id=\"overview-title\">One contract from source to output</h2>",
+    "after": "\n              <h2 id=\"overview-title\">One contract from source to output</h2><p class=\"component-label\">01 \u00b7 Architecture</p>"
+  },
+  {
+    "file": "playground/mcp.html",
+    "before": "<p class=\"component-label\">02 \u00b7 Resources</p>\n              <h2 id=\"resources-title\">Published knowledge</h2>",
+    "after": "\n              <h2 id=\"resources-title\">Published knowledge</h2><p class=\"component-label\">02 \u00b7 Resources</p>"
+  },
+  {
+    "file": "playground/mcp.html",
+    "before": "<p class=\"component-label\">03 \u00b7 Tools</p>\n              <h2 id=\"tools-title\">Focused retrieval for AI</h2>",
+    "after": "\n              <h2 id=\"tools-title\">Focused retrieval for AI</h2><p class=\"component-label\">03 \u00b7 Tools</p>"
+  },
+  {
+    "file": "playground/mcp.html",
+    "before": "<p class=\"component-label\">From a fresh conversation</p>\n            <h2 id=\"native-workflow-title\">Build your first iOS screen.</h2>",
+    "after": "\n            <h2 id=\"native-workflow-title\">Build your first iOS screen.</h2><p class=\"component-label\">From a fresh conversation</p>"
+  },
+  {
+    "file": "playground/mcp.html",
+    "before": "<p class=\"component-label\">04 \u00b7 Connect</p>\n              <h2 id=\"connect-title\">Start through standard input and output</h2>",
+    "after": "\n              <h2 id=\"connect-title\">Start through standard input and output</h2><p class=\"component-label\">04 \u00b7 Connect</p>"
+  },
+  {
+    "file": "playground/index.html",
+    "before": "<p class=\"eyebrow\">Design language \u00b7 1.1.0</p>\n        <h1 id=\"page-title\" class=\"nds-display\">Clear structure.<br />Quiet character.</h1>",
+    "after": "\n        <h1 id=\"page-title\" class=\"nds-display\">Clear structure.<br />Quiet character.</h1><p class=\"eyebrow\">Design language \u00b7 1.1.0</p>"
+  },
+  {
+    "file": "playground/index.html",
+    "before": "<p class=\"component-label\">Get started \u00b7 npm</p><h2 id=\"installation-title\">Install. Import. Build.</h2>",
+    "after": "<h2 id=\"installation-title\">Install. Import. Build.</h2><p class=\"component-label\">Get started \u00b7 npm</p>"
+  },
+  {
+    "file": "playground/index.html",
+    "before": "<p class=\"component-label\">Web \u00b7 iOS \u00b7 Android</p>\n          <h2 id=\"platforms-title\">One foundation.<br />Built for each platform.</h2>",
+    "after": "\n          <h2 id=\"platforms-title\">One foundation.<br />Built for each platform.</h2><p class=\"component-label\">Web \u00b7 iOS \u00b7 Android</p>"
+  },
+  {
+    "file": "playground/index.html",
+    "before": "<p class=\"component-label\">Shared source</p>\n          <h3>Tokens flow from one place.</h3>",
+    "after": "\n          <h3>Tokens flow from one place.</h3><p class=\"component-label\">Shared source</p>"
+  },
+  {
+    "file": "playground/index.html",
+    "before": "<p class=\"component-label\">Get started \u00b7 Native pilot</p>\n          <h3 id=\"native-integration-title\">Add tokens and components to your app.</h3>",
+    "after": "\n          <h3 id=\"native-integration-title\">Add tokens and components to your app.</h3><p class=\"component-label\">Get started \u00b7 Native pilot</p>"
+  },
+  {
+    "file": "playground/index.html",
+    "before": "<p class=\"component-label\">Platform ownership</p>\n            <h3>Native behavior stays native.</h3>",
+    "after": "\n            <h3>Native behavior stays native.</h3><p class=\"component-label\">Platform ownership</p>"
+  },
+  {
+    "file": "playground/index.html",
+    "before": "<p class=\"component-label\">Next milestone \u00b7 Validation</p>\n            <h3>From pilot to stable APIs.</h3>",
+    "after": "\n            <h3>From pilot to stable APIs.</h3><p class=\"component-label\">Next milestone \u00b7 Validation</p>"
+  },
+  {
+    "file": "playground/index.html",
+    "before": "<p class=\"component-label\">Explore</p>\n          <h2 id=\"explore-title\">A complete path from tokens to product flows.</h2>",
+    "after": "\n          <h2 id=\"explore-title\">A complete path from tokens to product flows.</h2><p class=\"component-label\">Explore</p>"
+  },
+  {
+    "file": "playground/foundations.html",
+    "before": "<p class=\"eyebrow\">1.1.0 \u00b7 Foundation reference</p>\n        <h1 class=\"nds-display\">The shared decisions behind every component.</h1>",
+    "after": "\n        <h1 class=\"nds-display\">The shared decisions behind every component.</h1><p class=\"eyebrow\">1.1.0 \u00b7 Foundation reference</p>"
+  },
+  {
+    "file": "playground/foundations.html",
+    "before": "<p class=\"component-label\">01 \u00b7 System contract</p><h2 id=\"contract-title\">Decisions that scale with the catalog</h2>",
+    "after": "<h2 id=\"contract-title\">Decisions that scale with the catalog</h2><p class=\"component-label\">01 \u00b7 System contract</p>"
+  },
+  {
+    "file": "playground/foundations.html",
+    "before": "<p class=\"component-label\">02 \u00b7 Typography</p><h2 id=\"type-title\">Onest</h2>",
+    "after": "<h2 id=\"type-title\">Onest</h2><p class=\"component-label\">02 \u00b7 Typography</p>"
+  },
+  {
+    "file": "playground/foundations.html",
+    "before": "<p class=\"component-label\">03 \u00b7 Semantic color</p><h2 id=\"color-title\">Meaning before pigment</h2>",
+    "after": "<h2 id=\"color-title\">Meaning before pigment</h2><p class=\"component-label\">03 \u00b7 Semantic color</p>"
+  },
+  {
+    "file": "playground/foundations.html",
+    "before": "<p class=\"component-label\">04 \u00b7 Material</p><h2 id=\"material-title\">Selective glass</h2>",
+    "after": "<h2 id=\"material-title\">Selective glass</h2><p class=\"component-label\">04 \u00b7 Material</p>"
+  },
+  {
+    "file": "playground/foundations.html",
+    "before": "<p class=\"component-label\">05 \u00b7 Layout</p><h2 id=\"layout-title\">Composable primitives</h2>",
+    "after": "<h2 id=\"layout-title\">Composable primitives</h2><p class=\"component-label\">05 \u00b7 Layout</p>"
+  },
+  {
+    "file": "playground/components/settings-account.html",
+    "before": "<p class=\"eyebrow\">Pattern 27 \u00b7 Complete</p><h1 class=\"nds-display\">Settings<br />and Account</h1>",
+    "after": "<h1 class=\"nds-display\">Settings<br />and Account</h1><p class=\"eyebrow\">Pattern 27 \u00b7 Complete</p>"
+  },
+  {
+    "file": "playground/components/settings-account.html",
+    "before": "<p class=\"component-label\">Complete layout</p><h2 id=\"layout-title\">Make the scope of every change clear</h2>",
+    "after": "<h2 id=\"layout-title\">Make the scope of every change clear</h2><p class=\"component-label\">Complete layout</p>"
+  },
+  {
+    "file": "playground/components/settings-account.html",
+    "before": "<p class=\"component-label\">Behavior model</p><h2 id=\"behavior-title\">Match control to consequence</h2>",
+    "after": "<h2 id=\"behavior-title\">Match control to consequence</h2><p class=\"component-label\">Behavior model</p>"
+  },
+  {
+    "file": "playground/components/settings-account.html",
+    "before": "<p class=\"component-label\">Responsive behavior</p><h2 id=\"responsive-title\">Keep every category reachable</h2>",
+    "after": "<h2 id=\"responsive-title\">Keep every category reachable</h2><p class=\"component-label\">Responsive behavior</p>"
+  },
+  {
+    "file": "playground/components/settings-account.html",
+    "before": "<p class=\"component-label\">Developer reference</p><h2 id=\"implementation-title\">Implementation</h2>",
+    "after": "<h2 id=\"implementation-title\">Implementation</h2><p class=\"component-label\">Developer reference</p>"
+  },
+  {
+    "file": "playground/components/settings-account.html",
+    "before": "<p class=\"component-label\">Usage guidance</p><h2 id=\"guidance-title\">Group settings by user intent.</h2>",
+    "after": "<h2 id=\"guidance-title\">Group settings by user intent.</h2><p class=\"component-label\">Usage guidance</p>"
+  },
+  {
+    "file": "playground/components/select.html",
+    "before": "<p class=\"eyebrow\">Component 06 \u00b7 Complete</p><h1 class=\"nds-display\">Select</h1>",
+    "after": "<h1 class=\"nds-display\">Select</h1><p class=\"eyebrow\">Component 06 \u00b7 Complete</p>"
+  },
+  {
+    "file": "playground/components/select.html",
+    "before": "<p class=\"component-label\">Progressive listbox</p><h2 id=\"default-title\">One choice, fully designed</h2>",
+    "after": "<h2 id=\"default-title\">One choice, fully designed</h2><p class=\"component-label\">Progressive listbox</p>"
+  },
+  {
+    "file": "playground/components/select.html",
+    "before": "<p class=\"component-label\">Native fallback</p><h2 id=\"sizes-title\">Three density levels</h2>",
+    "after": "<h2 id=\"sizes-title\">Three density levels</h2><p class=\"component-label\">Native fallback</p>"
+  },
+  {
+    "file": "playground/components/select.html",
+    "before": "<p class=\"component-label\">Option groups</p><h2 id=\"groups-title\">Organize a longer list</h2>",
+    "after": "<h2 id=\"groups-title\">Organize a longer list</h2><p class=\"component-label\">Option groups</p>"
+  },
+  {
+    "file": "playground/components/select.html",
+    "before": "<p class=\"component-label\">States</p><h2 id=\"states-title\">Make the next action clear</h2>",
+    "after": "<h2 id=\"states-title\">Make the next action clear</h2><p class=\"component-label\">States</p>"
+  },
+  {
+    "file": "playground/components/select.html",
+    "before": "<p class=\"component-label\">Content</p><h2 id=\"content-title\">Keep labels concise and distinct</h2>",
+    "after": "<h2 id=\"content-title\">Keep labels concise and distinct</h2><p class=\"component-label\">Content</p>"
+  },
+  {
+    "file": "playground/components/select.html",
+    "before": "<p class=\"component-label\">Developer reference</p><h2 id=\"implementation-title\">Implementation</h2>",
+    "after": "<h2 id=\"implementation-title\">Implementation</h2><p class=\"component-label\">Developer reference</p>"
+  },
+  {
+    "file": "playground/components/select.html",
+    "before": "<p class=\"component-label\">Usage guidance</p><h2 id=\"guidance-title\">Use Select when the options are known.</h2>",
+    "after": "<h2 id=\"guidance-title\">Use Select when the options are known.</h2><p class=\"component-label\">Usage guidance</p>"
+  },
+  {
+    "file": "playground/components/breadcrumb-pagination.html",
+    "before": "<p class=\"eyebrow\">Component 22 \u00b7 Complete</p><h1 class=\"nds-display\">Breadcrumb<br />and Pagination</h1>",
+    "after": "<h1 class=\"nds-display\">Breadcrumb<br />and Pagination</h1><p class=\"eyebrow\">Component 22 \u00b7 Complete</p>"
+  },
+  {
+    "file": "playground/components/breadcrumb-pagination.html",
+    "before": "<p class=\"component-label\">Breadcrumb</p><h2 id=\"breadcrumb-title\">Show the current hierarchy</h2>",
+    "after": "<h2 id=\"breadcrumb-title\">Show the current hierarchy</h2><p class=\"component-label\">Breadcrumb</p>"
+  },
+  {
+    "file": "playground/components/breadcrumb-pagination.html",
+    "before": "<p class=\"component-label\">Long hierarchy</p><h2 id=\"collapse-title\">Preserve useful endpoints</h2>",
+    "after": "<h2 id=\"collapse-title\">Preserve useful endpoints</h2><p class=\"component-label\">Long hierarchy</p>"
+  },
+  {
+    "file": "playground/components/breadcrumb-pagination.html",
+    "before": "<p class=\"component-label\">Pagination</p><h2 id=\"pagination-title\">Link to stable result pages</h2>",
+    "after": "<h2 id=\"pagination-title\">Link to stable result pages</h2><p class=\"component-label\">Pagination</p>"
+  },
+  {
+    "file": "playground/components/breadcrumb-pagination.html",
+    "before": "<p class=\"component-label\">Compact</p><h2 id=\"compact-title\">Keep movement and context</h2>",
+    "after": "<h2 id=\"compact-title\">Keep movement and context</h2><p class=\"component-label\">Compact</p>"
+  },
+  {
+    "file": "playground/components/breadcrumb-pagination.html",
+    "before": "<p class=\"component-label\">Boundary states</p><h2 id=\"states-title\">Remove unavailable destinations</h2>",
+    "after": "<h2 id=\"states-title\">Remove unavailable destinations</h2><p class=\"component-label\">Boundary states</p>"
+  },
+  {
+    "file": "playground/components/breadcrumb-pagination.html",
+    "before": "<p class=\"component-label\">Developer reference</p><h2 id=\"implementation-title\">Implementation</h2>",
+    "after": "<h2 id=\"implementation-title\">Implementation</h2><p class=\"component-label\">Developer reference</p>"
+  },
+  {
+    "file": "playground/components/breadcrumb-pagination.html",
+    "before": "<p class=\"component-label\">Usage guidance</p><h2 id=\"guidance-title\">Preserve real navigation behavior.</h2>",
+    "after": "<h2 id=\"guidance-title\">Preserve real navigation behavior.</h2><p class=\"component-label\">Usage guidance</p>"
+  },
+  {
+    "file": "playground/components/link.html",
+    "before": "<p class=\"eyebrow\">Component 02 \u00b7 Complete</p><h1 class=\"nds-display\">Link</h1>",
+    "after": "<h1 class=\"nds-display\">Link</h1><p class=\"eyebrow\">Component 02 \u00b7 Complete</p>"
+  },
+  {
+    "file": "playground/components/link.html",
+    "before": "<p class=\"component-label\">Variants</p><h2 id=\"variants-title\">Match emphasis to context</h2>",
+    "after": "<h2 id=\"variants-title\">Match emphasis to context</h2><p class=\"component-label\">Variants</p>"
+  },
+  {
+    "file": "playground/components/link.html",
+    "before": "<p class=\"component-label\">In context</p><h2 id=\"context-title\">Visible inside real copy</h2>",
+    "after": "<h2 id=\"context-title\">Visible inside real copy</h2><p class=\"component-label\">In context</p>"
+  },
+  {
+    "file": "playground/components/link.html",
+    "before": "<p class=\"component-label\">States</p><h2 id=\"states-title\">Location and availability</h2>",
+    "after": "<h2 id=\"states-title\">Location and availability</h2><p class=\"component-label\">States</p>"
+  },
+  {
+    "file": "playground/components/link.html",
+    "before": "<p class=\"component-label\">External destination</p><h2 id=\"external-title\">Announce a new browsing context</h2>",
+    "after": "<h2 id=\"external-title\">Announce a new browsing context</h2><p class=\"component-label\">External destination</p>"
+  },
+  {
+    "file": "playground/components/link.html",
+    "before": "<p class=\"component-label\">Developer reference</p><h2 id=\"implementation-title\">Implementation</h2>",
+    "after": "<h2 id=\"implementation-title\">Implementation</h2><p class=\"component-label\">Developer reference</p>"
+  },
+  {
+    "file": "playground/components/link.html",
+    "before": "<p class=\"component-label\">Content guidance</p><h2 id=\"guidance-title\">Name the destination.</h2>",
+    "after": "<h2 id=\"guidance-title\">Name the destination.</h2><p class=\"component-label\">Content guidance</p>"
+  },
+  {
+    "file": "playground/components/index.html",
+    "before": "<p class=\"eyebrow\">1.1.0 \u00b7 31 published modules</p>\n        <h1 class=\"nds-display\">Build interfaces from controls to complete flows.</h1>",
+    "after": "\n        <h1 class=\"nds-display\">Build interfaces from controls to complete flows.</h1><p class=\"eyebrow\">1.1.0 \u00b7 31 published modules</p>"
+  },
+  {
+    "file": "playground/components/index.html",
+    "before": "<p class=\"component-label\">23 ready to use</p><h2 id=\"ready-title\">Published components</h2>",
+    "after": "<h2 id=\"ready-title\">Published components</h2><p class=\"component-label\">23 ready to use</p>"
+  },
+  {
+    "file": "playground/components/index.html",
+    "before": "<p class=\"component-label\">5 ready to use</p><h2 id=\"patterns-title\">Product patterns</h2>",
+    "after": "<h2 id=\"patterns-title\">Product patterns</h2><p class=\"component-label\">5 ready to use</p>"
+  },
+  {
+    "file": "playground/components/index.html",
+    "before": "<p class=\"component-label\">Integration ready</p><h2 id=\"integration-title\">From package to product</h2>",
+    "after": "<h2 id=\"integration-title\">From package to product</h2><p class=\"component-label\">Integration ready</p>"
+  },
+  {
+    "file": "playground/components/form-validation.html",
+    "before": "<p class=\"eyebrow\">Pattern 26 \u00b7 Complete</p><h1 class=\"nds-display\">Form Validation<br />and Submission</h1>",
+    "after": "<h1 class=\"nds-display\">Form Validation<br />and Submission</h1><p class=\"eyebrow\">Pattern 26 \u00b7 Complete</p>"
+  },
+  {
+    "file": "playground/components/form-validation.html",
+    "before": "<p class=\"component-label\">Functional demo</p><h2 id=\"demo-title\">Validate before sending</h2>",
+    "after": "<h2 id=\"demo-title\">Validate before sending</h2><p class=\"component-label\">Functional demo</p>"
+  },
+  {
+    "file": "playground/components/form-validation.html",
+    "before": "<p class=\"component-label\">Error model</p><h2 id=\"errors-title\">Connect summary, field, and recovery</h2>",
+    "after": "<h2 id=\"errors-title\">Connect summary, field, and recovery</h2><p class=\"component-label\">Error model</p>"
+  },
+  {
+    "file": "playground/components/form-validation.html",
+    "before": "<p class=\"component-label\">Submission</p><h2 id=\"submission-title\">Protect the transition</h2>",
+    "after": "<h2 id=\"submission-title\">Protect the transition</h2><p class=\"component-label\">Submission</p>"
+  },
+  {
+    "file": "playground/components/form-validation.html",
+    "before": "<p class=\"component-label\">Responsive behavior</p><h2 id=\"responsive-title\">Keep source order stable</h2>",
+    "after": "<h2 id=\"responsive-title\">Keep source order stable</h2><p class=\"component-label\">Responsive behavior</p>"
+  },
+  {
+    "file": "playground/components/form-validation.html",
+    "before": "<p class=\"component-label\">Developer reference</p><h2 id=\"implementation-title\">Implementation</h2>",
+    "after": "<h2 id=\"implementation-title\">Implementation</h2><p class=\"component-label\">Developer reference</p>"
+  },
+  {
+    "file": "playground/components/form-validation.html",
+    "before": "<p class=\"component-label\">Usage guidance</p><h2 id=\"guidance-title\">Validate at the point of commitment.</h2>",
+    "after": "<h2 id=\"guidance-title\">Validate at the point of commitment.</h2><p class=\"component-label\">Usage guidance</p>"
+  },
+  {
+    "file": "playground/components/search-filter.html",
+    "before": "<p class=\"eyebrow\">Pattern 25 \u00b7 Complete</p><h1 class=\"nds-display\">Search<br />and Filter</h1>",
+    "after": "<h1 class=\"nds-display\">Search<br />and Filter</h1><p class=\"eyebrow\">Pattern 25 \u00b7 Complete</p>"
+  },
+  {
+    "file": "playground/components/search-filter.html",
+    "before": "<p class=\"component-label\">Functional demo</p><h2 id=\"demo-title\">Apply related criteria together</h2>",
+    "after": "<h2 id=\"demo-title\">Apply related criteria together</h2><p class=\"component-label\">Functional demo</p>"
+  },
+  {
+    "file": "playground/components/search-filter.html",
+    "before": "<p class=\"component-label\">Active criteria</p><h2 id=\"active-title\">Keep applied filters visible</h2>",
+    "after": "<h2 id=\"active-title\">Keep applied filters visible</h2><p class=\"component-label\">Active criteria</p>"
+  },
+  {
+    "file": "playground/components/search-filter.html",
+    "before": "<p class=\"component-label\">No results</p><h2 id=\"empty-title\">Keep the criteria and recovery together</h2>",
+    "after": "<h2 id=\"empty-title\">Keep the criteria and recovery together</h2><p class=\"component-label\">No results</p>"
+  },
+  {
+    "file": "playground/components/search-filter.html",
+    "before": "<p class=\"component-label\">Responsive behavior</p><h2 id=\"responsive-title\">Stack without changing meaning</h2>",
+    "after": "<h2 id=\"responsive-title\">Stack without changing meaning</h2><p class=\"component-label\">Responsive behavior</p>"
+  },
+  {
+    "file": "playground/components/search-filter.html",
+    "before": "<p class=\"component-label\">Developer reference</p><h2 id=\"implementation-title\">Implementation</h2>",
+    "after": "<h2 id=\"implementation-title\">Implementation</h2><p class=\"component-label\">Developer reference</p>"
+  },
+  {
+    "file": "playground/components/search-filter.html",
+    "before": "<p class=\"component-label\">Usage guidance</p><h2 id=\"guidance-title\">Make every applied criterion reversible.</h2>",
+    "after": "<h2 id=\"guidance-title\">Make every applied criterion reversible.</h2><p class=\"component-label\">Usage guidance</p>"
+  },
+  {
+    "file": "playground/components/combobox.html",
+    "before": "<p class=\"eyebrow\">Component 06 \u00b7 Complete</p><h1 class=\"nds-display\">Select</h1>",
+    "after": "<h1 class=\"nds-display\">Select</h1><p class=\"eyebrow\">Component 06 \u00b7 Complete</p>"
+  },
+  {
+    "file": "playground/components/combobox.html",
+    "before": "<p class=\"component-label\">Progressive listbox</p><h2 id=\"default-title\">One choice, fully designed</h2>",
+    "after": "<h2 id=\"default-title\">One choice, fully designed</h2><p class=\"component-label\">Progressive listbox</p>"
+  },
+  {
+    "file": "playground/components/combobox.html",
+    "before": "<p class=\"component-label\">Native fallback</p><h2 id=\"sizes-title\">Three density levels</h2>",
+    "after": "<h2 id=\"sizes-title\">Three density levels</h2><p class=\"component-label\">Native fallback</p>"
+  },
+  {
+    "file": "playground/components/combobox.html",
+    "before": "<p class=\"component-label\">Option groups</p><h2 id=\"groups-title\">Organize a longer list</h2>",
+    "after": "<h2 id=\"groups-title\">Organize a longer list</h2><p class=\"component-label\">Option groups</p>"
+  },
+  {
+    "file": "playground/components/combobox.html",
+    "before": "<p class=\"component-label\">States</p><h2 id=\"states-title\">Make the next action clear</h2>",
+    "after": "<h2 id=\"states-title\">Make the next action clear</h2><p class=\"component-label\">States</p>"
+  },
+  {
+    "file": "playground/components/combobox.html",
+    "before": "<p class=\"component-label\">Content</p><h2 id=\"content-title\">Keep labels concise and distinct</h2>",
+    "after": "<h2 id=\"content-title\">Keep labels concise and distinct</h2><p class=\"component-label\">Content</p>"
+  },
+  {
+    "file": "playground/components/combobox.html",
+    "before": "<p class=\"component-label\">Developer reference</p><h2 id=\"implementation-title\">Implementation</h2>",
+    "after": "<h2 id=\"implementation-title\">Implementation</h2><p class=\"component-label\">Developer reference</p>"
+  },
+  {
+    "file": "playground/components/combobox.html",
+    "before": "<p class=\"component-label\">Usage guidance</p><h2 id=\"guidance-title\">Use Select when the options are known.</h2>",
+    "after": "<h2 id=\"guidance-title\">Use Select when the options are known.</h2><p class=\"component-label\">Usage guidance</p>"
+  },
+  {
+    "file": "playground/components/avatar.html",
+    "before": "<p class=\"eyebrow\">Component 11 \u00b7 Complete</p><h1 class=\"nds-display\">Avatar</h1>",
+    "after": "<h1 class=\"nds-display\">Avatar</h1><p class=\"eyebrow\">Component 11 \u00b7 Complete</p>"
+  },
+  {
+    "file": "playground/components/avatar.html",
+    "before": "<p class=\"component-label\">Default</p><h2 id=\"default-title\">Represent one identity consistently</h2>",
+    "after": "<h2 id=\"default-title\">Represent one identity consistently</h2><p class=\"component-label\">Default</p>"
+  },
+  {
+    "file": "playground/components/avatar.html",
+    "before": "<p class=\"component-label\">Sizes</p><h2 id=\"sizes-title\">Use size to match context</h2>",
+    "after": "<h2 id=\"sizes-title\">Use size to match context</h2><p class=\"component-label\">Sizes</p>"
+  },
+  {
+    "file": "playground/components/avatar.html",
+    "before": "<p class=\"component-label\">Fallbacks</p><h2 id=\"fallbacks-title\">Remain recognizable without an image</h2>",
+    "after": "<h2 id=\"fallbacks-title\">Remain recognizable without an image</h2><p class=\"component-label\">Fallbacks</p>"
+  },
+  {
+    "file": "playground/components/avatar.html",
+    "before": "<p class=\"component-label\">Presence</p><h2 id=\"presence-title\">Keep availability secondary</h2>",
+    "after": "<h2 id=\"presence-title\">Keep availability secondary</h2><p class=\"component-label\">Presence</p>"
+  },
+  {
+    "file": "playground/components/avatar.html",
+    "before": "<p class=\"component-label\">Avatar Group</p><h2 id=\"group-title\">Summarize a small set of people</h2>",
+    "after": "<h2 id=\"group-title\">Summarize a small set of people</h2><p class=\"component-label\">Avatar Group</p>"
+  },
+  {
+    "file": "playground/components/avatar.html",
+    "before": "<p class=\"component-label\">Interactive</p><h2 id=\"interactive-title\">Wrap the Avatar in a real control</h2>",
+    "after": "<h2 id=\"interactive-title\">Wrap the Avatar in a real control</h2><p class=\"component-label\">Interactive</p>"
+  },
+  {
+    "file": "playground/components/avatar.html",
+    "before": "<p class=\"component-label\">Developer reference</p><h2 id=\"implementation-title\">Implementation</h2>",
+    "after": "<h2 id=\"implementation-title\">Implementation</h2><p class=\"component-label\">Developer reference</p>"
+  },
+  {
+    "file": "playground/components/avatar.html",
+    "before": "<p class=\"component-label\">Usage guidance</p><h2 id=\"guidance-title\">Pair identity with a visible name.</h2>",
+    "after": "<h2 id=\"guidance-title\">Pair identity with a visible name.</h2><p class=\"component-label\">Usage guidance</p>"
+  },
+  {
+    "file": "playground/components/badge-chip.html",
+    "before": "<p class=\"eyebrow\">Component 03 \u00b7 Complete</p><h1 class=\"nds-display\">Badge and Chip</h1>",
+    "after": "<h1 class=\"nds-display\">Badge and Chip</h1><p class=\"eyebrow\">Component 03 \u00b7 Complete</p>"
+  },
+  {
+    "file": "playground/components/badge-chip.html",
+    "before": "<p class=\"component-label\">Badge</p><h2 id=\"badge-title\">Compact, read-only information</h2>",
+    "after": "<h2 id=\"badge-title\">Compact, read-only information</h2><p class=\"component-label\">Badge</p>"
+  },
+  {
+    "file": "playground/components/badge-chip.html",
+    "before": "<p class=\"component-label\">Semantic tones</p><h2 id=\"tones-title\">Meaning stays consistent across themes</h2>",
+    "after": "<h2 id=\"tones-title\">Meaning stays consistent across themes</h2><p class=\"component-label\">Semantic tones</p>"
+  },
+  {
+    "file": "playground/components/badge-chip.html",
+    "before": "<p class=\"component-label\">Selectable Chip</p><h2 id=\"chip-title\">Independent filter choices</h2>",
+    "after": "<h2 id=\"chip-title\">Independent filter choices</h2><p class=\"component-label\">Selectable Chip</p>"
+  },
+  {
+    "file": "playground/components/badge-chip.html",
+    "before": "<p class=\"component-label\">Variants and states</p><h2 id=\"states-title\">Clear selection and availability</h2>",
+    "after": "<h2 id=\"states-title\">Clear selection and availability</h2><p class=\"component-label\">Variants and states</p>"
+  },
+  {
+    "file": "playground/components/badge-chip.html",
+    "before": "<p class=\"component-label\">Developer reference</p><h2 id=\"implementation-title\">Implementation</h2>",
+    "after": "<h2 id=\"implementation-title\">Implementation</h2><p class=\"component-label\">Developer reference</p>"
+  },
+  {
+    "file": "playground/components/badge-chip.html",
+    "before": "<p class=\"component-label\">SwiftUI \u00b7 Jetpack Compose \u00b7 Experimental</p>\n  <h2 id=\"native-title\">Native Badge</h2>",
+    "after": "\n  <h2 id=\"native-title\">Native Badge</h2><p class=\"component-label\">SwiftUI \u00b7 Jetpack Compose \u00b7 Experimental</p>"
+  },
+  {
+    "file": "playground/components/badge-chip.html",
+    "before": "<p class=\"component-label\">Usage guidance</p><h2 id=\"guidance-title\">Keep information and interaction distinct.</h2>",
+    "after": "<h2 id=\"guidance-title\">Keep information and interaction distinct.</h2><p class=\"component-label\">Usage guidance</p>"
+  },
+  {
+    "file": "playground/components/destructive-confirmation.html",
+    "before": "<p class=\"eyebrow\">Pattern 28 \u00b7 Complete</p><h1 class=\"nds-display\">Destructive<br />Confirmation</h1>",
+    "after": "<h1 class=\"nds-display\">Destructive<br />Confirmation</h1><p class=\"eyebrow\">Pattern 28 \u00b7 Complete</p>"
+  },
+  {
+    "file": "playground/components/destructive-confirmation.html",
+    "before": "<p class=\"component-label\">Functional demo</p><h2 id=\"demo-title\">Name the target and consequence</h2>",
+    "after": "<h2 id=\"demo-title\">Name the target and consequence</h2><p class=\"component-label\">Functional demo</p>"
+  },
+  {
+    "file": "playground/components/destructive-confirmation.html",
+    "before": "<p class=\"component-label\">Decision levels</p><h2 id=\"levels-title\">Add friction in proportion to risk</h2>",
+    "after": "<h2 id=\"levels-title\">Add friction in proportion to risk</h2><p class=\"component-label\">Decision levels</p>"
+  },
+  {
+    "file": "playground/components/destructive-confirmation.html",
+    "before": "<p class=\"component-label\">Submission lifecycle</p><h2 id=\"lifecycle-title\">Keep request state unambiguous</h2>",
+    "after": "<h2 id=\"lifecycle-title\">Keep request state unambiguous</h2><p class=\"component-label\">Submission lifecycle</p>"
+  },
+  {
+    "file": "playground/components/destructive-confirmation.html",
+    "before": "<p class=\"component-label\">Developer reference</p><h2 id=\"implementation-title\">Implementation</h2>",
+    "after": "<h2 id=\"implementation-title\">Implementation</h2><p class=\"component-label\">Developer reference</p>"
+  },
+  {
+    "file": "playground/components/destructive-confirmation.html",
+    "before": "<p class=\"component-label\">Usage guidance</p><h2 id=\"guidance-title\">Use confirmation for meaningful risk.</h2>",
+    "after": "<h2 id=\"guidance-title\">Use confirmation for meaningful risk.</h2><p class=\"component-label\">Usage guidance</p>"
+  },
+  {
+    "file": "playground/components/skeleton.html",
+    "before": "<p class=\"eyebrow\">Component 13 \u00b7 Complete</p><h1 class=\"nds-display\">Skeleton</h1>",
+    "after": "<h1 class=\"nds-display\">Skeleton</h1><p class=\"eyebrow\">Component 13 \u00b7 Complete</p>"
+  },
+  {
+    "file": "playground/components/skeleton.html",
+    "before": "<p class=\"component-label\">Default</p><h2 id=\"default-title\">Preserve the space content will use</h2>",
+    "after": "<h2 id=\"default-title\">Preserve the space content will use</h2><p class=\"component-label\">Default</p>"
+  },
+  {
+    "file": "playground/components/skeleton.html",
+    "before": "<p class=\"component-label\">Text</p><h2 id=\"text-title\">Suggest hierarchy and natural rhythm</h2>",
+    "after": "<h2 id=\"text-title\">Suggest hierarchy and natural rhythm</h2><p class=\"component-label\">Text</p>"
+  },
+  {
+    "file": "playground/components/skeleton.html",
+    "before": "<p class=\"component-label\">Shapes</p><h2 id=\"shapes-title\">Match recognizable interface geometry</h2>",
+    "after": "<h2 id=\"shapes-title\">Match recognizable interface geometry</h2><p class=\"component-label\">Shapes</p>"
+  },
+  {
+    "file": "playground/components/skeleton.html",
+    "before": "<p class=\"component-label\">Composition</p><h2 id=\"composition-title\">Build the placeholder inside the real container</h2>",
+    "after": "<h2 id=\"composition-title\">Build the placeholder inside the real container</h2><p class=\"component-label\">Composition</p>"
+  },
+  {
+    "file": "playground/components/skeleton.html",
+    "before": "<p class=\"component-label\">Static</p><h2 id=\"static-title\">Remove movement when activity is not the message</h2>",
+    "after": "<h2 id=\"static-title\">Remove movement when activity is not the message</h2><p class=\"component-label\">Static</p>"
+  },
+  {
+    "file": "playground/components/skeleton.html",
+    "before": "<p class=\"component-label\">Accessibility</p><h2 id=\"accessibility-title\">Announce the region once</h2>",
+    "after": "<h2 id=\"accessibility-title\">Announce the region once</h2><p class=\"component-label\">Accessibility</p>"
+  },
+  {
+    "file": "playground/components/skeleton.html",
+    "before": "<p class=\"component-label\">Developer reference</p><h2 id=\"implementation-title\">Implementation</h2>",
+    "after": "<h2 id=\"implementation-title\">Implementation</h2><p class=\"component-label\">Developer reference</p>"
+  },
+  {
+    "file": "playground/components/skeleton.html",
+    "before": "<p class=\"component-label\">Usage guidance</p><h2 id=\"guidance-title\">Match the content, then leave cleanly.</h2>",
+    "after": "<h2 id=\"guidance-title\">Match the content, then leave cleanly.</h2><p class=\"component-label\">Usage guidance</p>"
+  },
+  {
+    "file": "playground/components/tabs.html",
+    "before": "<p class=\"eyebrow\">Component 16 \u00b7 Complete</p><h1 class=\"nds-display\">Tabs</h1>",
+    "after": "<h1 class=\"nds-display\">Tabs</h1><p class=\"eyebrow\">Component 16 \u00b7 Complete</p>"
+  },
+  {
+    "file": "playground/components/tabs.html",
+    "before": "<p class=\"component-label\">Automatic activation</p><h2 id=\"automatic-title\">Reveal content as focus moves</h2>",
+    "after": "<h2 id=\"automatic-title\">Reveal content as focus moves</h2><p class=\"component-label\">Automatic activation</p>"
+  },
+  {
+    "file": "playground/components/tabs.html",
+    "before": "<p class=\"component-label\">Contained</p><h2 id=\"contained-title\">Strengthen the selected state</h2>",
+    "after": "<h2 id=\"contained-title\">Strengthen the selected state</h2><p class=\"component-label\">Contained</p>"
+  },
+  {
+    "file": "playground/components/tabs.html",
+    "before": "<p class=\"component-label\">Manual activation</p><h2 id=\"manual-title\">Separate focus from selection</h2>",
+    "after": "<h2 id=\"manual-title\">Separate focus from selection</h2><p class=\"component-label\">Manual activation</p>"
+  },
+  {
+    "file": "playground/components/tabs.html",
+    "before": "<p class=\"component-label\">Vertical</p><h2 id=\"vertical-title\">Support broader navigation labels</h2>",
+    "after": "<h2 id=\"vertical-title\">Support broader navigation labels</h2><p class=\"component-label\">Vertical</p>"
+  },
+  {
+    "file": "playground/components/tabs.html",
+    "before": "<p class=\"component-label\">Overflow and disabled</p><h2 id=\"overflow-title\">Keep one readable row</h2>",
+    "after": "<h2 id=\"overflow-title\">Keep one readable row</h2><p class=\"component-label\">Overflow and disabled</p>"
+  },
+  {
+    "file": "playground/components/tabs.html",
+    "before": "<p class=\"component-label\">Lifecycle</p><h2 id=\"lifecycle-title\">Initialize only the region that changed</h2>",
+    "after": "<h2 id=\"lifecycle-title\">Initialize only the region that changed</h2><p class=\"component-label\">Lifecycle</p>"
+  },
+  {
+    "file": "playground/components/tabs.html",
+    "before": "<p class=\"component-label\">Developer reference</p><h2 id=\"implementation-title\">Implementation</h2>",
+    "after": "<h2 id=\"implementation-title\">Implementation</h2><p class=\"component-label\">Developer reference</p>"
+  },
+  {
+    "file": "playground/components/tabs.html",
+    "before": "<p class=\"component-label\">Usage guidance</p><h2 id=\"guidance-title\">Keep every view at the same level.</h2>",
+    "after": "<h2 id=\"guidance-title\">Keep every view at the same level.</h2><p class=\"component-label\">Usage guidance</p>"
+  },
+  {
+    "file": "playground/components/table.html",
+    "before": "<p class=\"eyebrow\">Component 23 \u00b7 Complete</p><h1 class=\"nds-display\">Table</h1>",
+    "after": "<h1 class=\"nds-display\">Table</h1><p class=\"eyebrow\">Component 23 \u00b7 Complete</p>"
+  },
+  {
+    "file": "playground/components/table.html",
+    "before": "<p class=\"component-label\">Default</p><h2 id=\"default-title\">Keep comparable data aligned</h2>",
+    "after": "<h2 id=\"default-title\">Keep comparable data aligned</h2><p class=\"component-label\">Default</p>"
+  },
+  {
+    "file": "playground/components/table.html",
+    "before": "<p class=\"component-label\">Sorting and selection</p><h2 id=\"sorting-title\">Expose controls in the Table model</h2>",
+    "after": "<h2 id=\"sorting-title\">Expose controls in the Table model</h2><p class=\"component-label\">Sorting and selection</p>"
+  },
+  {
+    "file": "playground/components/table.html",
+    "before": "<p class=\"component-label\">Selection contract</p><h2 id=\"selection-title\">Keep selection independent from navigation</h2>",
+    "after": "<h2 id=\"selection-title\">Keep selection independent from navigation</h2><p class=\"component-label\">Selection contract</p>"
+  },
+  {
+    "file": "playground/components/table.html",
+    "before": "<p class=\"component-label\">Compact density</p><h2 id=\"density-title\">Increase density without losing targets</h2>",
+    "after": "<h2 id=\"density-title\">Increase density without losing targets</h2><p class=\"component-label\">Compact density</p>"
+  },
+  {
+    "file": "playground/components/table.html",
+    "before": "<p class=\"component-label\">Empty state</p><h2 id=\"empty-title\">Keep the Table structure recognizable</h2>",
+    "after": "<h2 id=\"empty-title\">Keep the Table structure recognizable</h2><p class=\"component-label\">Empty state</p>"
+  },
+  {
+    "file": "playground/components/table.html",
+    "before": "<p class=\"component-label\">Developer reference</p><h2 id=\"implementation-title\">Implementation</h2>",
+    "after": "<h2 id=\"implementation-title\">Implementation</h2><p class=\"component-label\">Developer reference</p>"
+  },
+  {
+    "file": "playground/components/table.html",
+    "before": "<p class=\"component-label\">Usage guidance</p><h2 id=\"guidance-title\">Preserve the comparison model.</h2>",
+    "after": "<h2 id=\"guidance-title\">Preserve the comparison model.</h2><p class=\"component-label\">Usage guidance</p>"
+  },
+  {
+    "file": "playground/components/card.html",
+    "before": "<p class=\"eyebrow\">Component 09 \u00b7 Complete</p><h1 class=\"nds-display\">Card</h1>",
+    "after": "<h1 class=\"nds-display\">Card</h1><p class=\"eyebrow\">Component 09 \u00b7 Complete</p>"
+  },
+  {
+    "file": "playground/components/card.html",
+    "before": "<p class=\"component-label\">Default</p><h2 id=\"default-title\">Create one clear content group</h2>",
+    "after": "<h2 id=\"default-title\">Create one clear content group</h2><p class=\"component-label\">Default</p>"
+  },
+  {
+    "file": "playground/components/card.html",
+    "before": "<p class=\"component-label\">Composition</p><h2 id=\"composition-title\">Keep structure flexible</h2>",
+    "after": "<h2 id=\"composition-title\">Keep structure flexible</h2><p class=\"component-label\">Composition</p>"
+  },
+  {
+    "file": "playground/components/card.html",
+    "before": "<p class=\"component-label\">Variants and density</p><h2 id=\"variants-title\">Use depth to express hierarchy</h2>",
+    "after": "<h2 id=\"variants-title\">Use depth to express hierarchy</h2><p class=\"component-label\">Variants and density</p>"
+  },
+  {
+    "file": "playground/components/card.html",
+    "before": "<p class=\"component-label\">Interactive Card</p><h2 id=\"interactive-title\">Make one destination the whole target</h2>",
+    "after": "<h2 id=\"interactive-title\">Make one destination the whole target</h2><p class=\"component-label\">Interactive Card</p>"
+  },
+  {
+    "file": "playground/components/card.html",
+    "before": "<p class=\"component-label\">Horizontal</p><h2 id=\"horizontal-title\">Adapt editorial content to available space</h2>",
+    "after": "<h2 id=\"horizontal-title\">Adapt editorial content to available space</h2><p class=\"component-label\">Horizontal</p>"
+  },
+  {
+    "file": "playground/components/card.html",
+    "before": "<p class=\"component-label\">Developer reference</p><h2 id=\"implementation-title\">Implementation</h2>",
+    "after": "<h2 id=\"implementation-title\">Implementation</h2><p class=\"component-label\">Developer reference</p>"
+  },
+  {
+    "file": "playground/components/card.html",
+    "before": "<p class=\"component-label\">SwiftUI \u00b7 Jetpack Compose \u00b7 Experimental</p>\n  <h2 id=\"native-title\">Native Card</h2>",
+    "after": "\n  <h2 id=\"native-title\">Native Card</h2><p class=\"component-label\">SwiftUI \u00b7 Jetpack Compose \u00b7 Experimental</p>"
+  },
+  {
+    "file": "playground/components/card.html",
+    "before": "<p class=\"component-label\">Usage guidance</p><h2 id=\"guidance-title\">Let content determine the element.</h2>",
+    "after": "<h2 id=\"guidance-title\">Let content determine the element.</h2><p class=\"component-label\">Usage guidance</p>"
+  },
+  {
+    "file": "playground/components/disclosure-accordion.html",
+    "before": "<p class=\"eyebrow\">Component 15 \u00b7 Complete</p><h1 class=\"nds-display\">Disclosure<br />and Accordion</h1>",
+    "after": "<h1 class=\"nds-display\">Disclosure<br />and Accordion</h1><p class=\"eyebrow\">Component 15 \u00b7 Complete</p>"
+  },
+  {
+    "file": "playground/components/disclosure-accordion.html",
+    "before": "<p class=\"component-label\">Default</p><h2 id=\"default-title\">Let the browser own disclosure behavior</h2>",
+    "after": "<h2 id=\"default-title\">Let the browser own disclosure behavior</h2><p class=\"component-label\">Default</p>"
+  },
+  {
+    "file": "playground/components/disclosure-accordion.html",
+    "before": "<p class=\"component-label\">Contained</p><h2 id=\"contained-title\">Create a focused standalone surface</h2>",
+    "after": "<h2 id=\"contained-title\">Create a focused standalone surface</h2><p class=\"component-label\">Contained</p>"
+  },
+  {
+    "file": "playground/components/disclosure-accordion.html",
+    "before": "<p class=\"component-label\">Multiple open</p><h2 id=\"multiple-title\">Keep comparison available</h2>",
+    "after": "<h2 id=\"multiple-title\">Keep comparison available</h2><p class=\"component-label\">Multiple open</p>"
+  },
+  {
+    "file": "playground/components/disclosure-accordion.html",
+    "before": "<p class=\"component-label\">Single open</p><h2 id=\"single-title\">Reduce vertical expansion</h2>",
+    "after": "<h2 id=\"single-title\">Reduce vertical expansion</h2><p class=\"component-label\">Single open</p>"
+  },
+  {
+    "file": "playground/components/disclosure-accordion.html",
+    "before": "<p class=\"component-label\">Nested content</p><h2 id=\"nested-title\">Keep group boundaries explicit</h2>",
+    "after": "<h2 id=\"nested-title\">Keep group boundaries explicit</h2><p class=\"component-label\">Nested content</p>"
+  },
+  {
+    "file": "playground/components/disclosure-accordion.html",
+    "before": "<p class=\"component-label\">Lifecycle</p><h2 id=\"lifecycle-title\">Initialize the region that changed</h2>",
+    "after": "<h2 id=\"lifecycle-title\">Initialize the region that changed</h2><p class=\"component-label\">Lifecycle</p>"
+  },
+  {
+    "file": "playground/components/disclosure-accordion.html",
+    "before": "<p class=\"component-label\">Developer reference</p><h2 id=\"implementation-title\">Implementation</h2>",
+    "after": "<h2 id=\"implementation-title\">Implementation</h2><p class=\"component-label\">Developer reference</p>"
+  },
+  {
+    "file": "playground/components/disclosure-accordion.html",
+    "before": "<p class=\"component-label\">Usage guidance</p><h2 id=\"guidance-title\">Keep essential information visible.</h2>",
+    "after": "<h2 id=\"guidance-title\">Keep essential information visible.</h2><p class=\"component-label\">Usage guidance</p>"
+  },
+  {
+    "file": "playground/components/button.html",
+    "before": "<p class=\"eyebrow\">Component 01 \u00b7 Complete</p><h1 class=\"nds-display\">Button</h1>",
+    "after": "<h1 class=\"nds-display\">Button</h1><p class=\"eyebrow\">Component 01 \u00b7 Complete</p>"
+  },
+  {
+    "file": "playground/components/button.html",
+    "before": "<p class=\"component-label\">Variants</p><h2 id=\"variants-title\">Action hierarchy</h2>",
+    "after": "<h2 id=\"variants-title\">Action hierarchy</h2><p class=\"component-label\">Variants</p>"
+  },
+  {
+    "file": "playground/components/button.html",
+    "before": "<p class=\"component-label\">Sizes</p><h2 id=\"sizes-title\">Three density levels</h2>",
+    "after": "<h2 id=\"sizes-title\">Three density levels</h2><p class=\"component-label\">Sizes</p>"
+  },
+  {
+    "file": "playground/components/button.html",
+    "before": "<p class=\"component-label\">Icons</p><h2 id=\"icons-title\">Support the label</h2>",
+    "after": "<h2 id=\"icons-title\">Support the label</h2><p class=\"component-label\">Icons</p>"
+  },
+  {
+    "file": "playground/components/button.html",
+    "before": "<p class=\"component-label\">States</p><h2 id=\"states-title\">Behavior is part of the contract</h2>",
+    "after": "<h2 id=\"states-title\">Behavior is part of the contract</h2><p class=\"component-label\">States</p>"
+  },
+  {
+    "file": "playground/components/button.html",
+    "before": "<p class=\"component-label\">Developer reference</p><h2 id=\"implementation-title\">Implementation</h2>",
+    "after": "<h2 id=\"implementation-title\">Implementation</h2><p class=\"component-label\">Developer reference</p>"
+  },
+  {
+    "file": "playground/components/button.html",
+    "before": "<p class=\"component-label\">SwiftUI \u00b7 Jetpack Compose \u00b7 Experimental</p>\n  <h2 id=\"native-title\">Native Button</h2>",
+    "after": "\n  <h2 id=\"native-title\">Native Button</h2><p class=\"component-label\">SwiftUI \u00b7 Jetpack Compose \u00b7 Experimental</p>"
+  },
+  {
+    "file": "playground/components/button.html",
+    "before": "<p class=\"component-label\">Content guidance</p><h2 id=\"guidance-title\">Start with a clear verb.</h2>",
+    "after": "<h2 id=\"guidance-title\">Start with a clear verb.</h2><p class=\"component-label\">Content guidance</p>"
+  },
+  {
+    "file": "playground/components/data-table.html",
+    "before": "<p class=\"component-label\">Developer reference</p><h2 id=\"implementation-title\">Implementation</h2>",
+    "after": "<h2 id=\"implementation-title\">Implementation</h2><p class=\"component-label\">Developer reference</p>"
+  },
+  {
+    "file": "playground/components/dialog.html",
+    "before": "<p class=\"eyebrow\">Component 17 \u00b7 Complete</p><h1 class=\"nds-display\">Dialog</h1>",
+    "after": "<h1 class=\"nds-display\">Dialog</h1><p class=\"eyebrow\">Component 17 \u00b7 Complete</p>"
+  },
+  {
+    "file": "playground/components/dialog.html",
+    "before": "<p class=\"component-label\">Default</p><h2 id=\"default-title\">Keep the task focused</h2>",
+    "after": "<h2 id=\"default-title\">Keep the task focused</h2><p class=\"component-label\">Default</p>"
+  },
+  {
+    "file": "playground/components/dialog.html",
+    "before": "<p class=\"component-label\">Destructive confirmation</p><h2 id=\"confirmation-title\">Name the consequence clearly</h2>",
+    "after": "<h2 id=\"confirmation-title\">Name the consequence clearly</h2><p class=\"component-label\">Destructive confirmation</p>"
+  },
+  {
+    "file": "playground/components/dialog.html",
+    "before": "<p class=\"component-label\">Sizes</p><h2 id=\"sizes-title\">Match width to task complexity</h2>",
+    "after": "<h2 id=\"sizes-title\">Match width to task complexity</h2><p class=\"component-label\">Sizes</p>"
+  },
+  {
+    "file": "playground/components/dialog.html",
+    "before": "<p class=\"component-label\">Content overflow</p><h2 id=\"scroll-title\">Keep title and actions stable</h2>",
+    "after": "<h2 id=\"scroll-title\">Keep title and actions stable</h2><p class=\"component-label\">Content overflow</p>"
+  },
+  {
+    "file": "playground/components/dialog.html",
+    "before": "<p class=\"component-label\">Lifecycle</p><h2 id=\"lifecycle-title\">Restore the previous context</h2>",
+    "after": "<h2 id=\"lifecycle-title\">Restore the previous context</h2><p class=\"component-label\">Lifecycle</p>"
+  },
+  {
+    "file": "playground/components/dialog.html",
+    "before": "<p class=\"component-label\">Developer reference</p><h2 id=\"implementation-title\">Implementation</h2>",
+    "after": "<h2 id=\"implementation-title\">Implementation</h2><p class=\"component-label\">Developer reference</p>"
+  },
+  {
+    "file": "playground/components/dialog.html",
+    "before": "<p class=\"component-label\">Usage guidance</p><h2 id=\"guidance-title\">Use a modal only for a focused interruption.</h2>",
+    "after": "<h2 id=\"guidance-title\">Use a modal only for a focused interruption.</h2><p class=\"component-label\">Usage guidance</p>"
+  },
+  {
+    "file": "playground/components/alert.html",
+    "before": "<p class=\"eyebrow\">Component 14 \u00b7 Complete</p><h1 class=\"nds-display\">Alert</h1>",
+    "after": "<h1 class=\"nds-display\">Alert</h1><p class=\"eyebrow\">Component 14 \u00b7 Complete</p>"
+  },
+  {
+    "file": "playground/components/alert.html",
+    "before": "<p class=\"component-label\">Default</p><h2 id=\"default-title\">Keep relevant context in the page</h2>",
+    "after": "<h2 id=\"default-title\">Keep relevant context in the page</h2><p class=\"component-label\">Default</p>"
+  },
+  {
+    "file": "playground/components/alert.html",
+    "before": "<p class=\"component-label\">Tones</p><h2 id=\"tones-title\">Match the message, not its intensity</h2>",
+    "after": "<h2 id=\"tones-title\">Match the message, not its intensity</h2><p class=\"component-label\">Tones</p>"
+  },
+  {
+    "file": "playground/components/alert.html",
+    "before": "<p class=\"component-label\">Actions</p><h2 id=\"actions-title\">Offer a clear next step</h2>",
+    "after": "<h2 id=\"actions-title\">Offer a clear next step</h2><p class=\"component-label\">Actions</p>"
+  },
+  {
+    "file": "playground/components/alert.html",
+    "before": "<p class=\"component-label\">Dismissible</p><h2 id=\"dismissible-title\">Preserve a logical focus destination</h2>",
+    "after": "<h2 id=\"dismissible-title\">Preserve a logical focus destination</h2><p class=\"component-label\">Dismissible</p>"
+  },
+  {
+    "file": "playground/components/alert.html",
+    "before": "<p class=\"component-label\">Semantics</p><h2 id=\"semantics-title\">Choose announcement behavior deliberately</h2>",
+    "after": "<h2 id=\"semantics-title\">Choose announcement behavior deliberately</h2><p class=\"component-label\">Semantics</p>"
+  },
+  {
+    "file": "playground/components/alert.html",
+    "before": "<p class=\"component-label\">Developer reference</p><h2 id=\"implementation-title\">Implementation</h2>",
+    "after": "<h2 id=\"implementation-title\">Implementation</h2><p class=\"component-label\">Developer reference</p>"
+  },
+  {
+    "file": "playground/components/alert.html",
+    "before": "<p class=\"component-label\">Usage guidance</p><h2 id=\"guidance-title\">Lead with the outcome or condition.</h2>",
+    "after": "<h2 id=\"guidance-title\">Lead with the outcome or condition.</h2><p class=\"component-label\">Usage guidance</p>"
+  },
+  {
+    "file": "playground/components/divider.html",
+    "before": "<p class=\"eyebrow\">Component 10 \u00b7 Complete</p><h1 class=\"nds-display\">Divider</h1>",
+    "after": "<h1 class=\"nds-display\">Divider</h1><p class=\"eyebrow\">Component 10 \u00b7 Complete</p>"
+  },
+  {
+    "file": "playground/components/divider.html",
+    "before": "<p class=\"component-label\">Default</p><h2 id=\"default-title\">Separate a meaningful change in topic</h2>",
+    "after": "<h2 id=\"default-title\">Separate a meaningful change in topic</h2><p class=\"component-label\">Default</p>"
+  },
+  {
+    "file": "playground/components/divider.html",
+    "before": "<p class=\"component-label\">Overview</p><h3>Research direction</h3>",
+    "after": "<h3>Research direction</h3><p class=\"component-label\">Overview</p>"
+  },
+  {
+    "file": "playground/components/divider.html",
+    "before": "<p class=\"component-label\">Next</p><h3>Interface principles</h3>",
+    "after": "<h3>Interface principles</h3><p class=\"component-label\">Next</p>"
+  },
+  {
+    "file": "playground/components/divider.html",
+    "before": "<p class=\"component-label\">Emphasis</p><h2 id=\"emphasis-title\">Match the strength of the boundary</h2>",
+    "after": "<h2 id=\"emphasis-title\">Match the strength of the boundary</h2><p class=\"component-label\">Emphasis</p>"
+  },
+  {
+    "file": "playground/components/divider.html",
+    "before": "<p class=\"component-label\">Spacing</p><h2 id=\"spacing-title\">Keep separation proportional to content</h2>",
+    "after": "<h2 id=\"spacing-title\">Keep separation proportional to content</h2><p class=\"component-label\">Spacing</p>"
+  },
+  {
+    "file": "playground/components/divider.html",
+    "before": "<p class=\"component-label\">With label</p><h2 id=\"label-title\">Explain two equivalent paths</h2>",
+    "after": "<h2 id=\"label-title\">Explain two equivalent paths</h2><p class=\"component-label\">With label</p>"
+  },
+  {
+    "file": "playground/components/divider.html",
+    "before": "<p class=\"component-label\">Vertical</p><h2 id=\"vertical-title\">Separate compact inline groups</h2>",
+    "after": "<h2 id=\"vertical-title\">Separate compact inline groups</h2><p class=\"component-label\">Vertical</p>"
+  },
+  {
+    "file": "playground/components/divider.html",
+    "before": "<p class=\"component-label\">Semantics</p><h2 id=\"semantics-title\">Expose structure only when it carries meaning</h2>",
+    "after": "<h2 id=\"semantics-title\">Expose structure only when it carries meaning</h2><p class=\"component-label\">Semantics</p>"
+  },
+  {
+    "file": "playground/components/divider.html",
+    "before": "<p class=\"component-label\">Developer reference</p><h2 id=\"implementation-title\">Implementation</h2>",
+    "after": "<h2 id=\"implementation-title\">Implementation</h2><p class=\"component-label\">Developer reference</p>"
+  },
+  {
+    "file": "playground/components/divider.html",
+    "before": "<p class=\"component-label\">Usage guidance</p><h2 id=\"guidance-title\">Try spacing before adding a line.</h2>",
+    "after": "<h2 id=\"guidance-title\">Try spacing before adding a line.</h2><p class=\"component-label\">Usage guidance</p>"
+  },
+  {
+    "file": "playground/components/popover-menu.html",
+    "before": "<p class=\"eyebrow\">Component 18 \u00b7 Complete</p><h1 class=\"nds-display\">Popover<br />and Menu</h1>",
+    "after": "<h1 class=\"nds-display\">Popover<br />and Menu</h1><p class=\"eyebrow\">Component 18 \u00b7 Complete</p>"
+  },
+  {
+    "file": "playground/components/popover-menu.html",
+    "before": "<p class=\"component-label\">Popover</p><h2 id=\"popover-title\">Add context near its source</h2>",
+    "after": "<h2 id=\"popover-title\">Add context near its source</h2><p class=\"component-label\">Popover</p>"
+  },
+  {
+    "file": "playground/components/popover-menu.html",
+    "before": "<p class=\"component-label\">Action menu</p><h2 id=\"menu-title\">Keep actions close to their object</h2>",
+    "after": "<h2 id=\"menu-title\">Keep actions close to their object</h2><p class=\"component-label\">Action menu</p>"
+  },
+  {
+    "file": "playground/components/popover-menu.html",
+    "before": "<p class=\"component-label\">Selection menu</p><h2 id=\"selection-title\">Expose persistent choices</h2>",
+    "after": "<h2 id=\"selection-title\">Expose persistent choices</h2><p class=\"component-label\">Selection menu</p>"
+  },
+  {
+    "file": "playground/components/popover-menu.html",
+    "before": "<p class=\"component-label\">Alignment</p><h2 id=\"alignment-title\">Stay inside the viewport</h2>",
+    "after": "<h2 id=\"alignment-title\">Stay inside the viewport</h2><p class=\"component-label\">Alignment</p>"
+  },
+  {
+    "file": "playground/components/popover-menu.html",
+    "before": "<p class=\"component-label\">Keyboard contract</p><h2 id=\"keyboard-title\">Make every action reachable</h2>",
+    "after": "<h2 id=\"keyboard-title\">Make every action reachable</h2><p class=\"component-label\">Keyboard contract</p>"
+  },
+  {
+    "file": "playground/components/popover-menu.html",
+    "before": "<p class=\"component-label\">Developer reference</p><h2 id=\"implementation-title\">Implementation</h2>",
+    "after": "<h2 id=\"implementation-title\">Implementation</h2><p class=\"component-label\">Developer reference</p>"
+  },
+  {
+    "file": "playground/components/popover-menu.html",
+    "before": "<p class=\"component-label\">Usage guidance</p><h2 id=\"guidance-title\">Keep menus compact and action-oriented.</h2>",
+    "after": "<h2 id=\"guidance-title\">Keep menus compact and action-oriented.</h2><p class=\"component-label\">Usage guidance</p>"
+  },
+  {
+    "file": "playground/components/header-navigation.html",
+    "before": "<p class=\"eyebrow\">Component 21 \u00b7 Complete</p><h1 class=\"nds-display\">Header<br />and Navigation</h1>",
+    "after": "<h1 class=\"nds-display\">Header<br />and Navigation</h1><p class=\"eyebrow\">Component 21 \u00b7 Complete</p>"
+  },
+  {
+    "file": "playground/components/header-navigation.html",
+    "before": "<p class=\"component-label\">Default</p><h2 id=\"default-title\">Keep primary destinations visible</h2>",
+    "after": "<h2 id=\"default-title\">Keep primary destinations visible</h2><p class=\"component-label\">Default</p>"
+  },
+  {
+    "file": "playground/components/header-navigation.html",
+    "before": "<p class=\"component-label\">Compact</p><h2 id=\"compact-title\">Collapse links behind one clear control</h2>",
+    "after": "<h2 id=\"compact-title\">Collapse links behind one clear control</h2><p class=\"component-label\">Compact</p>"
+  },
+  {
+    "file": "playground/components/header-navigation.html",
+    "before": "<p class=\"component-label\">Current destination</p><h2 id=\"current-title\">Expose location without extra decoration</h2>",
+    "after": "<h2 id=\"current-title\">Expose location without extra decoration</h2><p class=\"component-label\">Current destination</p>"
+  },
+  {
+    "file": "playground/components/header-navigation.html",
+    "before": "<p class=\"component-label\">Surface variants</p><h2 id=\"variants-title\">Choose depth from page behavior</h2>",
+    "after": "<h2 id=\"variants-title\">Choose depth from page behavior</h2><p class=\"component-label\">Surface variants</p>"
+  },
+  {
+    "file": "playground/components/header-navigation.html",
+    "before": "<p class=\"component-label\">Lifecycle</p><h2 id=\"lifecycle-title\">Enhance a complete fallback</h2>",
+    "after": "<h2 id=\"lifecycle-title\">Enhance a complete fallback</h2><p class=\"component-label\">Lifecycle</p>"
+  },
+  {
+    "file": "playground/components/header-navigation.html",
+    "before": "<p class=\"component-label\">Developer reference</p><h2 id=\"implementation-title\">Implementation</h2>",
+    "after": "<h2 id=\"implementation-title\">Implementation</h2><p class=\"component-label\">Developer reference</p>"
+  },
+  {
+    "file": "playground/components/header-navigation.html",
+    "before": "<p class=\"component-label\">Usage guidance</p><h2 id=\"guidance-title\">Keep the global model stable.</h2>",
+    "after": "<h2 id=\"guidance-title\">Keep the global model stable.</h2><p class=\"component-label\">Usage guidance</p>"
+  },
+  {
+    "file": "playground/components/multi-select.html",
+    "before": "<p class=\"component-label\">Developer reference</p><h2 id=\"implementation-title\">Implementation</h2>",
+    "after": "<h2 id=\"implementation-title\">Implementation</h2><p class=\"component-label\">Developer reference</p>"
+  },
+  {
+    "file": "playground/components/spinner.html",
+    "before": "<p class=\"eyebrow\">Component 12 \u00b7 Complete</p><h1 class=\"nds-display\">Spinner</h1>",
+    "after": "<h1 class=\"nds-display\">Spinner</h1><p class=\"eyebrow\">Component 12 \u00b7 Complete</p>"
+  },
+  {
+    "file": "playground/components/spinner.html",
+    "before": "<p class=\"component-label\">Default</p><h2 id=\"default-title\">Show work with an unknown duration</h2>",
+    "after": "<h2 id=\"default-title\">Show work with an unknown duration</h2><p class=\"component-label\">Default</p>"
+  },
+  {
+    "file": "playground/components/spinner.html",
+    "before": "<p class=\"component-label\">Sizes</p><h2 id=\"sizes-title\">Match the space and emphasis</h2>",
+    "after": "<h2 id=\"sizes-title\">Match the space and emphasis</h2><p class=\"component-label\">Sizes</p>"
+  },
+  {
+    "file": "playground/components/spinner.html",
+    "before": "<p class=\"component-label\">Tones</p><h2 id=\"tones-title\">Inherit the surrounding emphasis</h2>",
+    "after": "<h2 id=\"tones-title\">Inherit the surrounding emphasis</h2><p class=\"component-label\">Tones</p>"
+  },
+  {
+    "file": "playground/components/spinner.html",
+    "before": "<p class=\"component-label\">Labels</p><h2 id=\"labels-title\">Say what the interface is doing</h2>",
+    "after": "<h2 id=\"labels-title\">Say what the interface is doing</h2><p class=\"component-label\">Labels</p>"
+  },
+  {
+    "file": "playground/components/spinner.html",
+    "before": "<p class=\"component-label\">Loading region</p><h2 id=\"regions-title\">Keep the busy state on the affected area</h2>",
+    "after": "<h2 id=\"regions-title\">Keep the busy state on the affected area</h2><p class=\"component-label\">Loading region</p>"
+  },
+  {
+    "file": "playground/components/spinner.html",
+    "before": "<p class=\"component-label\">Controls</p><h2 id=\"buttons-title\">Prevent repeated actions while pending</h2>",
+    "after": "<h2 id=\"buttons-title\">Prevent repeated actions while pending</h2><p class=\"component-label\">Controls</p>"
+  },
+  {
+    "file": "playground/components/spinner.html",
+    "before": "<p class=\"component-label\">Developer reference</p><h2 id=\"implementation-title\">Implementation</h2>",
+    "after": "<h2 id=\"implementation-title\">Implementation</h2><p class=\"component-label\">Developer reference</p>"
+  },
+  {
+    "file": "playground/components/spinner.html",
+    "before": "<p class=\"component-label\">Usage guidance</p><h2 id=\"guidance-title\">Use determinate progress when measurement exists.</h2>",
+    "after": "<h2 id=\"guidance-title\">Use determinate progress when measurement exists.</h2><p class=\"component-label\">Usage guidance</p>"
+  },
+  {
+    "file": "playground/components/product-states.html",
+    "before": "<p class=\"eyebrow\">Pattern 24 \u00b7 Complete</p><h1 class=\"nds-display\">Product<br />States</h1>",
+    "after": "<h1 class=\"nds-display\">Product<br />States</h1><p class=\"eyebrow\">Pattern 24 \u00b7 Complete</p>"
+  },
+  {
+    "file": "playground/components/product-states.html",
+    "before": "<p class=\"component-label\">First-use empty</p><h2 id=\"empty-section-title\">Explain the starting point</h2>",
+    "after": "<h2 id=\"empty-section-title\">Explain the starting point</h2><p class=\"component-label\">First-use empty</p>"
+  },
+  {
+    "file": "playground/components/product-states.html",
+    "before": "<p class=\"component-label\">Empty results</p><h2 id=\"results-section-title\">Preserve the active search context</h2>",
+    "after": "<h2 id=\"results-section-title\">Preserve the active search context</h2><p class=\"component-label\">Empty results</p>"
+  },
+  {
+    "file": "playground/components/product-states.html",
+    "before": "<p class=\"component-label\">Loading</p><h2 id=\"loading-section-title\">Match feedback to what is known</h2>",
+    "after": "<h2 id=\"loading-section-title\">Match feedback to what is known</h2><p class=\"component-label\">Loading</p>"
+  },
+  {
+    "file": "playground/components/product-states.html",
+    "before": "<p class=\"component-label\">Error</p><h2 id=\"error-section-title\">Preserve context and offer recovery</h2>",
+    "after": "<h2 id=\"error-section-title\">Preserve context and offer recovery</h2><p class=\"component-label\">Error</p>"
+  },
+  {
+    "file": "playground/components/product-states.html",
+    "before": "<p class=\"component-label\">Success</p><h2 id=\"success-section-title\">Confirm completion when it is unclear</h2>",
+    "after": "<h2 id=\"success-section-title\">Confirm completion when it is unclear</h2><p class=\"component-label\">Success</p>"
+  },
+  {
+    "file": "playground/components/product-states.html",
+    "before": "<p class=\"component-label\">Developer reference</p><h2 id=\"implementation-title\">Implementation</h2>",
+    "after": "<h2 id=\"implementation-title\">Implementation</h2><p class=\"component-label\">Developer reference</p>"
+  },
+  {
+    "file": "playground/components/product-states.html",
+    "before": "<p class=\"component-label\">SwiftUI \u00b7 Jetpack Compose \u00b7 Experimental</p>\n  <h2 id=\"native-title\">Native Product states</h2>",
+    "after": "\n  <h2 id=\"native-title\">Native Product states</h2><p class=\"component-label\">SwiftUI \u00b7 Jetpack Compose \u00b7 Experimental</p>"
+  },
+  {
+    "file": "playground/components/product-states.html",
+    "before": "<p class=\"component-label\">Usage guidance</p><h2 id=\"guidance-title\">Name the object, state, and next action.</h2>",
+    "after": "<h2 id=\"guidance-title\">Name the object, state, and next action.</h2><p class=\"component-label\">Usage guidance</p>"
+  },
+  {
+    "file": "playground/components/tooltip.html",
+    "before": "<p class=\"eyebrow\">Component 19 \u00b7 Complete</p><h1 class=\"nds-display\">Tooltip</h1>",
+    "after": "<h1 class=\"nds-display\">Tooltip</h1><p class=\"eyebrow\">Component 19 \u00b7 Complete</p>"
+  },
+  {
+    "file": "playground/components/tooltip.html",
+    "before": "<p class=\"component-label\">Default</p><h2 id=\"default-title\">Add a short explanation</h2>",
+    "after": "<h2 id=\"default-title\">Add a short explanation</h2><p class=\"component-label\">Default</p>"
+  },
+  {
+    "file": "playground/components/tooltip.html",
+    "before": "<p class=\"component-label\">Icon controls</p><h2 id=\"icons-title\">Clarify unfamiliar symbols</h2>",
+    "after": "<h2 id=\"icons-title\">Clarify unfamiliar symbols</h2><p class=\"component-label\">Icon controls</p>"
+  },
+  {
+    "file": "playground/components/tooltip.html",
+    "before": "<p class=\"component-label\">Placement</p><h2 id=\"placement-title\">Prefer a side and allow fallback</h2>",
+    "after": "<h2 id=\"placement-title\">Prefer a side and allow fallback</h2><p class=\"component-label\">Placement</p>"
+  },
+  {
+    "file": "playground/components/tooltip.html",
+    "before": "<p class=\"component-label\">Content</p><h2 id=\"content-title\">Keep it concise</h2>",
+    "after": "<h2 id=\"content-title\">Keep it concise</h2><p class=\"component-label\">Content</p>"
+  },
+  {
+    "file": "playground/components/tooltip.html",
+    "before": "<p class=\"component-label\">Lifecycle</p><h2 id=\"lifecycle-title\">Preserve existing descriptions</h2>",
+    "after": "<h2 id=\"lifecycle-title\">Preserve existing descriptions</h2><p class=\"component-label\">Lifecycle</p>"
+  },
+  {
+    "file": "playground/components/tooltip.html",
+    "before": "<p class=\"component-label\">Developer reference</p><h2 id=\"implementation-title\">Implementation</h2>",
+    "after": "<h2 id=\"implementation-title\">Implementation</h2><p class=\"component-label\">Developer reference</p>"
+  },
+  {
+    "file": "playground/components/tooltip.html",
+    "before": "<p class=\"component-label\">Usage guidance</p><h2 id=\"guidance-title\">Never hide essential information in a Tooltip.</h2>",
+    "after": "<h2 id=\"guidance-title\">Never hide essential information in a Tooltip.</h2><p class=\"component-label\">Usage guidance</p>"
+  },
+  {
+    "file": "playground/components/checkbox-radio.html",
+    "before": "<p class=\"eyebrow\">Component 07 \u00b7 Complete</p><h1 class=\"nds-display\">Checkbox and Radio</h1>",
+    "after": "<h1 class=\"nds-display\">Checkbox and Radio</h1><p class=\"eyebrow\">Component 07 \u00b7 Complete</p>"
+  },
+  {
+    "file": "playground/components/checkbox-radio.html",
+    "before": "<p class=\"component-label\">Checkbox</p><h2 id=\"checkbox-title\">Choose any number of options</h2>",
+    "after": "<h2 id=\"checkbox-title\">Choose any number of options</h2><p class=\"component-label\">Checkbox</p>"
+  },
+  {
+    "file": "playground/components/checkbox-radio.html",
+    "before": "<p class=\"component-label\">Indeterminate</p><h2 id=\"indeterminate-title\">Reflect a partially selected group</h2>",
+    "after": "<h2 id=\"indeterminate-title\">Reflect a partially selected group</h2><p class=\"component-label\">Indeterminate</p>"
+  },
+  {
+    "file": "playground/components/checkbox-radio.html",
+    "before": "<p class=\"component-label\">Radio</p><h2 id=\"radio-title\">Choose exactly one option</h2>",
+    "after": "<h2 id=\"radio-title\">Choose exactly one option</h2><p class=\"component-label\">Radio</p>"
+  },
+  {
+    "file": "playground/components/checkbox-radio.html",
+    "before": "<p class=\"component-label\">Choice cards</p><h2 id=\"cards-title\">Add description without changing semantics</h2>",
+    "after": "<h2 id=\"cards-title\">Add description without changing semantics</h2><p class=\"component-label\">Choice cards</p>"
+  },
+  {
+    "file": "playground/components/checkbox-radio.html",
+    "before": "<p class=\"component-label\">States</p><h2 id=\"states-title\">Unavailable and invalid choices remain explicit</h2>",
+    "after": "<h2 id=\"states-title\">Unavailable and invalid choices remain explicit</h2><p class=\"component-label\">States</p>"
+  },
+  {
+    "file": "playground/components/checkbox-radio.html",
+    "before": "<p class=\"component-label\">Developer reference</p><h2 id=\"implementation-title\">Implementation</h2>",
+    "after": "<h2 id=\"implementation-title\">Implementation</h2><p class=\"component-label\">Developer reference</p>"
+  },
+  {
+    "file": "playground/components/checkbox-radio.html",
+    "before": "<p class=\"component-label\">Usage guidance</p><h2 id=\"guidance-title\">Make the selection model obvious.</h2>",
+    "after": "<h2 id=\"guidance-title\">Make the selection model obvious.</h2><p class=\"component-label\">Usage guidance</p>"
+  },
+  {
+    "file": "playground/components/field.html",
+    "before": "<p class=\"eyebrow\">Component 04 \u00b7 Complete</p><h1 class=\"nds-display\">Field</h1>",
+    "after": "<h1 class=\"nds-display\">Field</h1><p class=\"eyebrow\">Component 04 \u00b7 Complete</p>"
+  },
+  {
+    "file": "playground/components/field.html",
+    "before": "<p class=\"component-label\">Anatomy</p><h2 id=\"anatomy-title\">A visible label and useful guidance</h2>",
+    "after": "<h2 id=\"anatomy-title\">A visible label and useful guidance</h2><p class=\"component-label\">Anatomy</p>"
+  },
+  {
+    "file": "playground/components/field.html",
+    "before": "<p class=\"component-label\">Optional value</p><h2 id=\"optional-title\">State optionality explicitly</h2>",
+    "after": "<h2 id=\"optional-title\">State optionality explicitly</h2><p class=\"component-label\">Optional value</p>"
+  },
+  {
+    "file": "playground/components/field.html",
+    "before": "<p class=\"component-label\">Validation</p><h2 id=\"invalid-title\">Explain how to recover</h2>",
+    "after": "<h2 id=\"invalid-title\">Explain how to recover</h2><p class=\"component-label\">Validation</p>"
+  },
+  {
+    "file": "playground/components/field.html",
+    "before": "<p class=\"component-label\">States</p><h2 id=\"states-title\">Disabled and readonly are different</h2>",
+    "after": "<h2 id=\"states-title\">Disabled and readonly are different</h2><p class=\"component-label\">States</p>"
+  },
+  {
+    "file": "playground/components/field.html",
+    "before": "<p class=\"component-label\">Responsive layout</p><h2 id=\"inline-title\">Inline when space supports it</h2>",
+    "after": "<h2 id=\"inline-title\">Inline when space supports it</h2><p class=\"component-label\">Responsive layout</p>"
+  },
+  {
+    "file": "playground/components/field.html",
+    "before": "<p class=\"component-label\">Developer reference</p><h2 id=\"implementation-title\">Implementation</h2>",
+    "after": "<h2 id=\"implementation-title\">Implementation</h2><p class=\"component-label\">Developer reference</p>"
+  },
+  {
+    "file": "playground/components/field.html",
+    "before": "<p class=\"component-label\">SwiftUI \u00b7 Jetpack Compose \u00b7 Experimental</p>\n  <h2 id=\"native-title\">Native Field</h2>",
+    "after": "\n  <h2 id=\"native-title\">Native Field</h2><p class=\"component-label\">SwiftUI \u00b7 Jetpack Compose \u00b7 Experimental</p>"
+  },
+  {
+    "file": "playground/components/field.html",
+    "before": "<p class=\"component-label\">Usage guidance</p><h2 id=\"guidance-title\">Write labels that survive without placeholders.</h2>",
+    "after": "<h2 id=\"guidance-title\">Write labels that survive without placeholders.</h2><p class=\"component-label\">Usage guidance</p>"
+  },
+  {
+    "file": "playground/components/toast.html",
+    "before": "<p class=\"eyebrow\">Component 20 \u00b7 Complete</p><h1 class=\"nds-display\">Toast</h1>",
+    "after": "<h1 class=\"nds-display\">Toast</h1><p class=\"eyebrow\">Component 20 \u00b7 Complete</p>"
+  },
+  {
+    "file": "playground/components/toast.html",
+    "before": "<p class=\"component-label\">Default</p><h2 id=\"default-title\">Confirm an outcome without interruption</h2>",
+    "after": "<h2 id=\"default-title\">Confirm an outcome without interruption</h2><p class=\"component-label\">Default</p>"
+  },
+  {
+    "file": "playground/components/toast.html",
+    "before": "<p class=\"component-label\">Semantic tones</p><h2 id=\"tones-title\">Match announcement priority to impact</h2>",
+    "after": "<h2 id=\"tones-title\">Match announcement priority to impact</h2><p class=\"component-label\">Semantic tones</p>"
+  },
+  {
+    "file": "playground/components/toast.html",
+    "before": "<p class=\"component-label\">Optional action</p><h2 id=\"actions-title\">Offer one clear next step</h2>",
+    "after": "<h2 id=\"actions-title\">Offer one clear next step</h2><p class=\"component-label\">Optional action</p>"
+  },
+  {
+    "file": "playground/components/toast.html",
+    "before": "<p class=\"component-label\">Queue</p><h2 id=\"queue-title\">Bound the visible stack</h2>",
+    "after": "<h2 id=\"queue-title\">Bound the visible stack</h2><p class=\"component-label\">Queue</p>"
+  },
+  {
+    "file": "playground/components/toast.html",
+    "before": "<p class=\"component-label\">Lifecycle</p><h2 id=\"lifecycle-title\">Keep application effects explicit</h2>",
+    "after": "<h2 id=\"lifecycle-title\">Keep application effects explicit</h2><p class=\"component-label\">Lifecycle</p>"
+  },
+  {
+    "file": "playground/components/toast.html",
+    "before": "<p class=\"component-label\">Developer reference</p><h2 id=\"implementation-title\">Implementation</h2>",
+    "after": "<h2 id=\"implementation-title\">Implementation</h2><p class=\"component-label\">Developer reference</p>"
+  },
+  {
+    "file": "playground/components/toast.html",
+    "before": "<p class=\"component-label\">Usage guidance</p><h2 id=\"guidance-title\">Reserve Toast for brief outcomes.</h2>",
+    "after": "<h2 id=\"guidance-title\">Reserve Toast for brief outcomes.</h2><p class=\"component-label\">Usage guidance</p>"
+  },
+  {
+    "file": "playground/components/input-textarea.html",
+    "before": "<p class=\"eyebrow\">Component 05 \u00b7 Complete</p><h1 class=\"nds-display\">Input and Textarea</h1>",
+    "after": "<h1 class=\"nds-display\">Input and Textarea</h1><p class=\"eyebrow\">Component 05 \u00b7 Complete</p>"
+  },
+  {
+    "file": "playground/components/input-textarea.html",
+    "before": "<p class=\"component-label\">Input</p><h2 id=\"input-title\">Use the native type that matches the value</h2>",
+    "after": "<h2 id=\"input-title\">Use the native type that matches the value</h2><p class=\"component-label\">Input</p>"
+  },
+  {
+    "file": "playground/components/input-textarea.html",
+    "before": "<p class=\"component-label\">Sizes</p><h2 id=\"sizes-title\">Match density to the interface</h2>",
+    "after": "<h2 id=\"sizes-title\">Match density to the interface</h2><p class=\"component-label\">Sizes</p>"
+  },
+  {
+    "file": "playground/components/input-textarea.html",
+    "before": "<p class=\"component-label\">Adornments</p><h2 id=\"adornments-title\">Clarify format without replacing the label</h2>",
+    "after": "<h2 id=\"adornments-title\">Clarify format without replacing the label</h2><p class=\"component-label\">Adornments</p>"
+  },
+  {
+    "file": "playground/components/input-textarea.html",
+    "before": "<p class=\"component-label\">States</p><h2 id=\"states-title\">Preserve meaning and entered values</h2>",
+    "after": "<h2 id=\"states-title\">Preserve meaning and entered values</h2><p class=\"component-label\">States</p>"
+  },
+  {
+    "file": "playground/components/input-textarea.html",
+    "before": "<p class=\"component-label\">Textarea</p><h2 id=\"textarea-title\">Long-form text with vertical resize</h2>",
+    "after": "<h2 id=\"textarea-title\">Long-form text with vertical resize</h2><p class=\"component-label\">Textarea</p>"
+  },
+  {
+    "file": "playground/components/input-textarea.html",
+    "before": "<p class=\"component-label\">Character count</p><h2 id=\"count-title\">Show limits before they become errors</h2>",
+    "after": "<h2 id=\"count-title\">Show limits before they become errors</h2><p class=\"component-label\">Character count</p>"
+  },
+  {
+    "file": "playground/components/input-textarea.html",
+    "before": "<p class=\"component-label\">Developer reference</p><h2 id=\"implementation-title\">Implementation</h2>",
+    "after": "<h2 id=\"implementation-title\">Implementation</h2><p class=\"component-label\">Developer reference</p>"
+  },
+  {
+    "file": "playground/components/input-textarea.html",
+    "before": "<p class=\"component-label\">Usage guidance</p><h2 id=\"guidance-title\">Ask only for information the experience needs.</h2>",
+    "after": "<h2 id=\"guidance-title\">Ask only for information the experience needs.</h2><p class=\"component-label\">Usage guidance</p>"
+  },
+  {
+    "file": "playground/components/switch.html",
+    "before": "<p class=\"eyebrow\">Component 08 \u00b7 Complete</p><h1 class=\"nds-display\">Switch</h1>",
+    "after": "<h1 class=\"nds-display\">Switch</h1><p class=\"eyebrow\">Component 08 \u00b7 Complete</p>"
+  },
+  {
+    "file": "playground/components/switch.html",
+    "before": "<p class=\"component-label\">Default</p><h2 id=\"default-title\">Apply a setting immediately</h2>",
+    "after": "<h2 id=\"default-title\">Apply a setting immediately</h2><p class=\"component-label\">Default</p>"
+  },
+  {
+    "file": "playground/components/switch.html",
+    "before": "<p class=\"component-label\">Sizes</p><h2 id=\"sizes-title\">Match the surrounding density</h2>",
+    "after": "<h2 id=\"sizes-title\">Match the surrounding density</h2><p class=\"component-label\">Sizes</p>"
+  },
+  {
+    "file": "playground/components/switch.html",
+    "before": "<p class=\"component-label\">Settings list</p><h2 id=\"cards-title\">Group related controls without hiding them</h2>",
+    "after": "<h2 id=\"cards-title\">Group related controls without hiding them</h2><p class=\"component-label\">Settings list</p>"
+  },
+  {
+    "file": "playground/components/switch.html",
+    "before": "<p class=\"component-label\">States</p><h2 id=\"states-title\">Make availability and progress explicit</h2>",
+    "after": "<h2 id=\"states-title\">Make availability and progress explicit</h2><p class=\"component-label\">States</p>"
+  },
+  {
+    "file": "playground/components/switch.html",
+    "before": "<p class=\"component-label\">Content</p><h2 id=\"content-title\">Name the state that becomes active</h2>",
+    "after": "<h2 id=\"content-title\">Name the state that becomes active</h2><p class=\"component-label\">Content</p>"
+  },
+  {
+    "file": "playground/components/switch.html",
+    "before": "<p class=\"component-label\">Developer reference</p><h2 id=\"implementation-title\">Implementation</h2>",
+    "after": "<h2 id=\"implementation-title\">Implementation</h2><p class=\"component-label\">Developer reference</p>"
+  },
+  {
+    "file": "playground/components/switch.html",
+    "before": "<p class=\"component-label\">Usage guidance</p><h2 id=\"guidance-title\">Use Switch only for immediate changes.</h2>",
+    "after": "<h2 id=\"guidance-title\">Use Switch only for immediate changes.</h2><p class=\"component-label\">Usage guidance</p>"
+  }
+]

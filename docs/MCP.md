@@ -76,7 +76,7 @@ The original six tools accept an optional `platform` (`web`, `ios`, `android`) t
 
 Native `get_tokens` calls use `category: "all"` (the default). CSS layer categories are web-only and return an explicit error for native requests. Native component responses include `available`, `nativeVersion`, `status`, `releaseStatus`, `sourceFingerprint`, API declarations, example context URI and source URI. Unknown or unsupported native components return `available: false` and a native-control fallback. `badge-chip` aliases the native Badge; it does not expose a native Chip.
 
-The native distribution version is `1.1.0`, published with pilot APIs. The content fingerprint matches sources and font assets across calls; it is not a Git revision. The `v1.1.0` tag supports SwiftPM; the older web-only `v1.0.0` tag does not. `get_installation` returns the repository URL and exact version plus an optional local package path. Local server paths only apply on the server’s machine.
+The native distribution version is `1.1.1`, published with pilot APIs. The content fingerprint matches sources and font assets across calls; it is not a Git revision. The `v1.1.1` tag supports SwiftPM; the older web-only `v1.0.0` tag does not. `get_installation` returns the repository URL and exact version plus an optional local package path. Local server paths only apply on the server’s machine.
 
 All tools are read-only, deterministic for a given package version, and limited to files shipped with Nikba Design System. The server does not modify projects, call external services, or collect prompts.
 
@@ -96,7 +96,7 @@ Use this sequence through the MCP client:
 {"name":"get_native_source","arguments":{"platform":"ios","kind":"example"}}
 ```
 
-Add the returned repository URL in Xcode with Exact Version 1.1.0 (or use its local packagePath), link NikbaDesignSystem, and add the returned complete first-screen source to your app. The package registers bundled Onest automatically through NDSTypography.font. Read [Build an iOS app](./IOS.md) for the complete workflow and version boundaries.
+Add the returned repository URL in Xcode with Exact Version 1.1.1 (or use its local packagePath), link NikbaDesignSystem, and add the returned complete first-screen source to your app. The package registers bundled Onest automatically through NDSTypography.font. Read [Build an iOS app](./IOS.md) for the complete workflow and version boundaries.
 
 ## Verification
 

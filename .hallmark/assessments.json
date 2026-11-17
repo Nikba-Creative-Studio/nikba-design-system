@@ -1,0 +1,490 @@
+[
+  {
+    "file": "playground/components/breadcrumb-pagination.html",
+    "line": 22,
+    "grade": "FAIL",
+    "gate": "19",
+    "finding": "dash \"–\" in copy | fix: A comma, a colon, a full stop or parentheses; never a dash",
+    "assessment": "Terminologie tehnică și intervale numerice din documentație, nu copy promoțional: Elevated este varianta Card, iar en dash reprezintă intervale."
+  },
+  {
+    "file": "playground/components/card.html",
+    "line": 55,
+    "grade": "FAIL",
+    "gate": "19",
+    "finding": "buzzword \"Elevated\" | fix: Say what the product does, in its own nouns",
+    "assessment": "Terminologie tehnică și intervale numerice din documentație, nu copy promoțional: Elevated este varianta Card, iar en dash reprezintă intervale."
+  },
+  {
+    "file": "playground/components/card.html",
+    "line": 31,
+    "grade": "FAIL",
+    "gate": "54",
+    "finding": "eyebrow \"Project update\" before <h3> | fix: Cut it; the heading already says this (craft.md § 7 has twelve other openings)",
+    "assessment": "Exemple de componente publice: Card eyebrow și etichete de specimen. DESIGN.md permite etichete scurte; auditul păstrează API-ul documentat."
+  },
+  {
+    "file": "playground/components/card.html",
+    "line": 44,
+    "grade": "FAIL",
+    "gate": "54",
+    "finding": "eyebrow \"Design systems\" before <h3>",
+    "assessment": "Exemple de componente publice: Card eyebrow și etichete de specimen. DESIGN.md permite etichete scurte; auditul păstrează API-ul documentat."
+  },
+  {
+    "file": "playground/components/card.html",
+    "line": 57,
+    "grade": "FAIL",
+    "gate": "54",
+    "finding": "eyebrow \"Flat, Compact\" before <h3>",
+    "assessment": "Exemple de componente publice: Card eyebrow și etichete de specimen. DESIGN.md permite etichete scurte; auditul păstrează API-ul documentat."
+  },
+  {
+    "file": "playground/components/card.html",
+    "line": 58,
+    "grade": "FAIL",
+    "gate": "54",
+    "finding": "eyebrow \"Surface, Default\" before <h3>",
+    "assessment": "Exemple de componente publice: Card eyebrow și etichete de specimen. DESIGN.md permite etichete scurte; auditul păstrează API-ul documentat."
+  },
+  {
+    "file": "playground/components/card.html",
+    "line": 59,
+    "grade": "FAIL",
+    "gate": "54",
+    "finding": "eyebrow \"Elevated, Large\" before <h3>",
+    "assessment": "Exemple de componente publice: Card eyebrow și etichete de specimen. DESIGN.md permite etichete scurte; auditul păstrează API-ul documentat."
+  },
+  {
+    "file": "playground/components/card.html",
+    "line": 67,
+    "grade": "FAIL",
+    "gate": "54",
+    "finding": "eyebrow \"Case study\" before <h3>",
+    "assessment": "Exemple de componente publice: Card eyebrow și etichete de specimen. DESIGN.md permite etichete scurte; auditul păstrează API-ul documentat."
+  },
+  {
+    "file": "playground/components/card.html",
+    "line": 68,
+    "grade": "FAIL",
+    "gate": "54",
+    "finding": "eyebrow \"Reference\" before <h3>",
+    "assessment": "Exemple de componente publice: Card eyebrow și etichete de specimen. DESIGN.md permite etichete scurte; auditul păstrează API-ul documentat."
+  },
+  {
+    "file": "playground/components/card.html",
+    "line": 76,
+    "grade": "FAIL",
+    "gate": "54",
+    "finding": "eyebrow \"Studio journal\" before <h3>",
+    "assessment": "Exemple de componente publice: Card eyebrow și etichete de specimen. DESIGN.md permite etichete scurte; auditul păstrează API-ul documentat."
+  },
+  {
+    "file": "playground/components/checkbox-radio.html",
+    "line": 59,
+    "grade": "FAIL",
+    "gate": "19",
+    "finding": "dash \"–\" in copy",
+    "assessment": "Terminologie tehnică și intervale numerice din documentație, nu copy promoțional: Elevated este varianta Card, iar en dash reprezintă intervale."
+  },
+  {
+    "file": "src/styles/choice.css",
+    "line": 175,
+    "grade": "FAIL",
+    "gate": "39a",
+    "finding": "disabled via opacity alone on .nds-checkbox:disabled + .nds-choice__control, .nds-radio:disabled + .nds-choice__control… | fix: Three disabled channels: fill, ink and cursor, plus the disabled attribute",
+    "assessment": "Fals pozitiv de analiză locală: pseudo-elementul sau fratele vizual primește opacitate, însă controlul real are atribut disabled, iar părintele are cursor not-allowed (choice.css, switch.css, select.css)."
+  },
+  {
+    "file": "src/styles/choice.css",
+    "line": 62,
+    "grade": "WARN",
+    "gate": "40",
+    "finding": "1.04:1 < 4.5:1 on .nds-choice__control | fix: Raise the contrast to threshold",
+    "assessment": "Indicatorul choice folosește cerneală inversă, ascunsă până la selectare; contrastul trebuie evaluat în starea selectată, nu pe fundalul neactiv. Rolurile semantice trec testele de contrast."
+  },
+  {
+    "file": "src/styles/choice.css",
+    "line": 161,
+    "grade": "WARN",
+    "gate": "41",
+    "finding": "dark surface (L 22%) on .nds-choice--card sets no text colour | fix: Swap text to paper in the same rule",
+    "assessment": "Culoarea textului este moștenită de la .nds-scope și mapată semantic pe teme. Lipsa unei redeclarări locale nu dovedește text ilizibil; testele de contrast și stările din browser au fost verificate."
+  },
+  {
+    "file": "src/styles/choice.css",
+    "line": 169,
+    "grade": "WARN",
+    "gate": "41",
+    "finding": "dark surface (L 28%) on .nds-choice--card:has(.nds-checkbox:checked, .nds-radio:checked) sets no text colour",
+    "assessment": "Culoarea textului este moștenită de la .nds-scope și mapată semantic pe teme. Lipsa unei redeclarări locale nu dovedește text ilizibil; testele de contrast și stările din browser au fost verificate."
+  },
+  {
+    "file": "src/styles/select.css",
+    "line": 61,
+    "grade": "FAIL",
+    "gate": "39a",
+    "finding": "disabled via opacity alone on .nds-select-shell:has(.nds-select:disabled)::after",
+    "assessment": "Fals pozitiv de analiză locală: pseudo-elementul sau fratele vizual primește opacitate, însă controlul real are atribut disabled, iar părintele are cursor not-allowed (choice.css, switch.css, select.css)."
+  },
+  {
+    "file": "src/styles/select.css",
+    "line": 187,
+    "grade": "FAIL",
+    "gate": "67",
+    "finding": ".nds-selectbox__group: uppercase tracked 0.04em at 12px in a label role | fix: Labels, captions, table heads, nav links and meta are the body face (or the theme's label face), a step smaller, sentence case, untracked",
+    "assessment": "Tipografie de componentă blocată de DESIGN.md:48-60, cu rol Label explicit și capitale permise pentru etichete scurte. Fără modificarea API-ului global pentru a satisface o euristică de landing."
+  },
+  {
+    "file": "src/styles/switch.css",
+    "line": 129,
+    "grade": "FAIL",
+    "gate": "39a",
+    "finding": "disabled via opacity alone on .nds-switch__input:disabled + .nds-switch__track, .nds-switch:has(.nds-switch__input:disa…",
+    "assessment": "Fals pozitiv de analiză locală: pseudo-elementul sau fratele vizual primește opacitate, însă controlul real are atribut disabled, iar părintele are cursor not-allowed (choice.css, switch.css, select.css)."
+  },
+  {
+    "file": "src/styles/switch.css",
+    "line": 113,
+    "grade": "WARN",
+    "gate": "41",
+    "finding": "dark surface (L 22%) on .nds-switch--card sets no text colour",
+    "assessment": "Culoarea textului este moștenită de la .nds-scope și mapată semantic pe teme. Lipsa unei redeclarări locale nu dovedește text ilizibil; testele de contrast și stările din browser au fost verificate."
+  },
+  {
+    "file": "src/styles/switch.css",
+    "line": 121,
+    "grade": "WARN",
+    "gate": "41",
+    "finding": "dark surface (L 28%) on .nds-switch--card:has(.nds-switch__input:checked) sets no text colour",
+    "assessment": "Culoarea textului este moștenită de la .nds-scope și mapată semantic pe teme. Lipsa unei redeclarări locale nu dovedește text ilizibil; testele de contrast și stările din browser au fost verificate."
+  },
+  {
+    "file": "playground/components/destructive-confirmation.html",
+    "line": 8,
+    "grade": "FAIL",
+    "gate": "54",
+    "finding": "eyebrow \"Design system\" before <h3>",
+    "assessment": "Exemple de componente publice: Card eyebrow și etichete de specimen. DESIGN.md permite etichete scurte; auditul păstrează API-ul documentat."
+  },
+  {
+    "file": "playground/components/spinner.html",
+    "line": 53,
+    "grade": "FAIL",
+    "gate": "54",
+    "finding": "eyebrow \"Analytics\" before <h3>",
+    "assessment": "Exemple de componente publice: Card eyebrow și etichete de specimen. DESIGN.md permite etichete scurte; auditul păstrează API-ul documentat."
+  },
+  {
+    "file": "playground/mcp.html",
+    "line": 87,
+    "grade": "FAIL",
+    "gate": "63",
+    "finding": "middle-dot meta string \"web · ios · android\" | fix: Line breaks, columns or hairlines; one dot in a byline at most",
+    "assessment": "Șir de platforme în codul/documentația MCP; păstrat ca material tehnic. Punctuația decorativă a landingului a fost corectată."
+  },
+  {
+    "file": "src/foundations/typography.css",
+    "line": 57,
+    "grade": "FAIL",
+    "gate": "67",
+    "finding": ".nds-label: uppercase tracked 0.08em at 12px in a label role",
+    "assessment": "Tipografie de componentă blocată de DESIGN.md:48-60, cu rol Label explicit și capitale permise pentru etichete scurte. Fără modificarea API-ului global pentru a satisface o euristică de landing."
+  },
+  {
+    "file": "src/styles/card.css",
+    "line": 57,
+    "grade": "FAIL",
+    "gate": "67",
+    "finding": ".nds-card__eyebrow: uppercase tracked 0.08em at 12px in a label role",
+    "assessment": "Tipografie de componentă blocată de DESIGN.md:48-60, cu rol Label explicit și capitale permise pentru etichete scurte. Fără modificarea API-ului global pentru a satisface o euristică de landing."
+  },
+  {
+    "file": "src/styles/card.css",
+    "line": 84,
+    "grade": "WARN",
+    "gate": "41",
+    "finding": "dark surface (L 25%) on .nds-card__media sets no text colour",
+    "assessment": "Culoarea textului este moștenită de la .nds-scope și mapată semantic pe teme. Lipsa unei redeclarări locale nu dovedește text ilizibil; testele de contrast și stările din browser au fost verificate."
+  },
+  {
+    "file": "src/styles/confirmation.css",
+    "line": 3,
+    "grade": "FAIL",
+    "gate": "67",
+    "finding": ".nds-confirmation-target__mark: letter-spaced tracked 0.08em at 14px in a label role",
+    "assessment": "Tipografie de componentă blocată de DESIGN.md:48-60, cu rol Label explicit și capitale permise pentru etichete scurte. Fără modificarea API-ului global pentru a satisface o euristică de landing."
+  },
+  {
+    "file": "src/styles/popover.css",
+    "line": 21,
+    "grade": "FAIL",
+    "gate": "67",
+    "finding": ".nds-menu__label: uppercase at 12px in a label role",
+    "assessment": "Tipografie de componentă blocată de DESIGN.md:48-60, cu rol Label explicit și capitale permise pentru etichete scurte. Fără modificarea API-ului global pentru a satisface o euristică de landing."
+  },
+  {
+    "file": "src/styles/table.css",
+    "line": 5,
+    "grade": "FAIL",
+    "gate": "67",
+    "finding": ".nds-table th: uppercase tracked 0.04em at 12px in a label role",
+    "assessment": "Tipografie de componentă blocată de DESIGN.md:48-60, cu rol Label explicit și capitale permise pentru etichete scurte. Fără modificarea API-ului global pentru a satisface o euristică de landing."
+  },
+  {
+    "file": "src/styles/state.css",
+    "line": 28,
+    "grade": "WARN",
+    "gate": "25",
+    "finding": "measure 44ch on .nds-state__description (45-75ch range) | fix: Set prose measure between 45 and 75ch; a one-sentence lede or caption from 28ch",
+    "assessment": "Descriere scurtă a unei stări de produs, nu un paragraf lung; măsura 44ch este intenționată."
+  },
+  {
+    "file": "src/styles/state.css",
+    "line": 22,
+    "grade": "WARN",
+    "gate": "F5",
+    "finding": "icon-in-coloured-circle coin: .nds-state__icon | fix: Drop the tinted coin; set the icon at text size in currentColor",
+    "assessment": "Indicatori de stare, buton de încărcare și verificare MCP în catalog; nu sunt monede decorative folosite în locul materialului produsului."
+  },
+  {
+    "file": "src/styles/dialog.css",
+    "line": 54,
+    "grade": "WARN",
+    "gate": "29",
+    "finding": "glass panel: backdrop-filter blur over a translucent black on .nds-dialog::backdrop | fix: Solid or grained surface; elevation by lightness",
+    "assessment": "Materialul dialogului este definit de Nikba Liquid Glass, DESIGN.md:6 și secțiunea Depth and glass; nu este un fundal decorativ de landing."
+  },
+  {
+    "file": "playground/styles.css",
+    "line": 464,
+    "grade": "WARN",
+    "gate": "41",
+    "finding": "dark surface (L 22%) on .specimen, .guidance-panel sets no text colour",
+    "assessment": "Culoarea textului este moștenită de la .nds-scope și mapată semantic pe teme. Lipsa unei redeclarări locale nu dovedește text ilizibil; testele de contrast și stările din browser au fost verificate."
+  },
+  {
+    "file": "playground/styles.css",
+    "line": 798,
+    "grade": "WARN",
+    "gate": "41",
+    "finding": "dark surface (L 25%) on .catalog-index-card--static sets no text colour",
+    "assessment": "Culoarea textului este moștenită de la .nds-scope și mapată semantic pe teme. Lipsa unei redeclarări locale nu dovedește text ilizibil; testele de contrast și stările din browser au fost verificate."
+  },
+  {
+    "file": "playground/styles.css",
+    "line": 896,
+    "grade": "WARN",
+    "gate": "41",
+    "finding": "dark surface (L 25%) on .divider-demo-panel sets no text colour",
+    "assessment": "Culoarea textului este moștenită de la .nds-scope și mapată semantic pe teme. Lipsa unei redeclarări locale nu dovedește text ilizibil; testele de contrast și stările din browser au fost verificate."
+  },
+  {
+    "file": "playground/styles.css",
+    "line": 1229,
+    "grade": "WARN",
+    "gate": "41",
+    "finding": "dark surface (L 25%) on .tabs-panel-card sets no text colour",
+    "assessment": "Culoarea textului este moștenită de la .nds-scope și mapată semantic pe teme. Lipsa unei redeclarări locale nu dovedește text ilizibil; testele de contrast și stările din browser au fost verificate."
+  },
+  {
+    "file": "playground/styles.css",
+    "line": 1306,
+    "grade": "WARN",
+    "gate": "41",
+    "finding": "dark surface (L 22%) on .state-skeleton-card sets no text colour",
+    "assessment": "Culoarea textului este moștenită de la .nds-scope și mapată semantic pe teme. Lipsa unei redeclarări locale nu dovedește text ilizibil; testele de contrast și stările din browser au fost verificate."
+  },
+  {
+    "file": "playground/styles.css",
+    "line": 1340,
+    "grade": "WARN",
+    "gate": "41",
+    "finding": "dark surface (L 22%) on .catalog-card:not(.nds-glass) sets no text colour",
+    "assessment": "Culoarea textului este moștenită de la .nds-scope și mapată semantic pe teme. Lipsa unei redeclarări locale nu dovedește text ilizibil; testele de contrast și stările din browser au fost verificate."
+  },
+  {
+    "file": "playground/styles.css",
+    "line": 1780,
+    "grade": "WARN",
+    "gate": "41",
+    "finding": "dark surface (L 22%) on .catalog-nav.is-scrolled, .catalog-card.nds-glass sets no text colour",
+    "assessment": "Culoarea textului este moștenită de la .nds-scope și mapată semantic pe teme. Lipsa unei redeclarări locale nu dovedește text ilizibil; testele de contrast și stările din browser au fost verificate."
+  },
+  {
+    "file": "playground/styles.css",
+    "line": 1803,
+    "grade": "WARN",
+    "gate": "41",
+    "finding": "dark surface (L 22%) on .implementation-panel sets no text colour",
+    "assessment": "Culoarea textului este moștenită de la .nds-scope și mapată semantic pe teme. Lipsa unei redeclarări locale nu dovedește text ilizibil; testele de contrast și stările din browser au fost verificate."
+  },
+  {
+    "file": "playground/styles.css",
+    "line": 1815,
+    "grade": "WARN",
+    "gate": "41",
+    "finding": "dark surface (L 22%) on .native-platform-card sets no text colour",
+    "assessment": "Culoarea textului este moștenită de la .nds-scope și mapată semantic pe teme. Lipsa unei redeclarări locale nu dovedește text ilizibil; testele de contrast și stările din browser au fost verificate."
+  },
+  {
+    "file": "playground/styles.css",
+    "line": 711,
+    "grade": "WARN",
+    "gate": "F5",
+    "finding": "icon-in-coloured-circle coin: .mcp-verification__icon",
+    "assessment": "Indicatori de stare, buton de încărcare și verificare MCP în catalog; nu sunt monede decorative folosite în locul materialului produsului."
+  },
+  {
+    "file": "playground/styles.css",
+    "line": 1072,
+    "grade": "WARN",
+    "gate": "F5",
+    "finding": "icon-in-coloured-circle coin: .spinner-icon-button",
+    "assessment": "Indicatori de stare, buton de încărcare și verificare MCP în catalog; nu sunt monede decorative folosite în locul materialului produsului."
+  },
+  {
+    "file": "playground/styles.css",
+    "line": 90,
+    "grade": "WARN",
+    "gate": "F7",
+    "finding": "the pill radius on 11 non-control selectors (.catalog-nav, .tooltip-toolbar, .catalog-nav__l…) | fix: Pills are for controls; boxes and media take the card radius",
+    "assessment": "Consistență intenționată între specimenele aceluiași design system și rolurile de suprafață. Nu se schimbă geometria publică pentru a introduce varietate artificială."
+  },
+  {
+    "file": "playground/styles.css",
+    "line": 591,
+    "grade": "WARN",
+    "gate": "F7",
+    "finding": "same container recipe on 6 selectors (.mcp-flow, .alert-semantics-grid, .disclosure-l…...) | fix: Vary weight, radius, or fill by role; not every box is the same box",
+    "assessment": "Consistență intenționată între specimenele aceluiași design system și rolurile de suprafață. Nu se schimbă geometria publică pentru a introduce varietate artificială."
+  },
+  {
+    "file": "playground/styles.css",
+    "line": 891,
+    "grade": "WARN",
+    "gate": "F7",
+    "finding": "same container recipe on 15 selectors (.divider-demo-panel, .divider-inline-demo, .ava…...)",
+    "assessment": "Consistență intenționată între specimenele aceluiași design system și rolurile de suprafață. Nu se schimbă geometria publică pentru a introduce varietate artificială."
+  },
+  {
+    "file": "playground/styles.css",
+    "line": 1295,
+    "grade": "WARN",
+    "gate": "F7",
+    "finding": "same container recipe on 6 selectors (.header-demo--compact .nds-header__nav, .nds-se…...)",
+    "assessment": "Consistență intenționată între specimenele aceluiași design system și rolurile de suprafață. Nu se schimbă geometria publică pentru a introduce varietate artificială."
+  },
+  {
+    "file": "playground/styles.css",
+    "line": 1306,
+    "grade": "WARN",
+    "gate": "F7",
+    "finding": "same container recipe on 6 selectors (.state-skeleton-card, .implementation-panel, .n…...)",
+    "assessment": "Consistență intenționată între specimenele aceluiași design system și rolurile de suprafață. Nu se schimbă geometria publică pentru a introduce varietate artificială."
+  },
+  {
+    "file": "playground/styles.css",
+    "line": 1815,
+    "grade": "WARN",
+    "gate": "F7",
+    "finding": "same container recipe on 8 selectors (.native-platform-card, .nds-input, .nds-input-s…...)",
+    "assessment": "Consistență intenționată între specimenele aceluiași design system și rolurile de suprafață. Nu se schimbă geometria publică pentru a introduce varietate artificială."
+  },
+  {
+    "file": "playground/styles.css",
+    "line": 465,
+    "grade": "WARN",
+    "gate": "F24",
+    "finding": "a hairline border under a wide soft shadow on .specimen, .guidance-panel | fix: Commit to one: a defined edge, or elevation by shadow",
+    "assessment": "Bordură plus umbră de suprafață din sistemul Nikba blocat. Fără defect funcțional confirmat."
+  },
+  {
+    "file": "src/styles/settings.css",
+    "line": 9,
+    "grade": "WARN",
+    "gate": "41",
+    "finding": "dark surface (L 22%) on .nds-settings__section sets no text colour",
+    "assessment": "Culoarea textului este moștenită de la .nds-scope și mapată semantic pe teme. Lipsa unei redeclarări locale nu dovedește text ilizibil; testele de contrast și stările din browser au fost verificate."
+  },
+  {
+    "file": "playground/components/header-navigation.html",
+    "line": 22,
+    "grade": "WARN",
+    "gate": "F1",
+    "finding": "straight quote in prose x2 (first: s `aria-current=\"page\"` and a qu) | fix: Use typographic quotes: “ ” ’",
+    "assessment": "Literal tehnic aria-current=\"page\"; ghilimelele fac parte din sintaxa explicată."
+  },
+  {
+    "file": "playground/components/button.html",
+    "line": 90,
+    "grade": "WARN",
+    "gate": "F2",
+    "finding": "three-period ellipsis in prose x1 | fix: Use a true ellipsis character (…)",
+    "assessment": "Literal Swift .disabled(...), nu o elipsă editorială."
+  },
+  {
+    "file": "playground/index.html",
+    "line": 32,
+    "grade": "WARN",
+    "gate": "F4",
+    "finding": "two filled buttons side by side in the hero: \"Explore components\" and \"Install with npm\" | fix: One filled primary per screen; the second action is outlined or a typographic link",
+    "assessment": "Există o singură acțiune primară; Install with npm folosește .nds-button--secondary cu contur. Detectorul confundă fundalul alb cu o a doua acțiune primară."
+  },
+  {
+    "file": "playground/catalog.css",
+    "line": 1,
+    "grade": "WARN",
+    "gate": "F15",
+    "finding": "2 container widths on one page (1050, 900px) | fix: One container width, applied by the same two-element pattern in every section",
+    "assessment": "Măsuri interne diferite pentru titlu, proză și exemple; containerul exterior rămâne plafonat și centrat. Găurile dintre familiile de componente sunt diferite prin rol."
+  },
+  {
+    "file": "playground/catalog.css",
+    "line": 1,
+    "grade": "WARN",
+    "gate": "F15",
+    "finding": "6 different column gaps across multi-column sections (120px), 1.5rem, 2rem, 32px, 24px, 4rem) | fix: One column gap for every multi-column section",
+    "assessment": "Măsuri interne diferite pentru titlu, proză și exemple; containerul exterior rămâne plafonat și centrat. Găurile dintre familiile de componente sunt diferite prin rol."
+  },
+  {
+    "file": "http://127.0.0.1:5173/",
+    "line": 1,
+    "grade": "WARN",
+    "gate": "F19",
+    "finding": "[1440px] 4 font weights in running use (400, 500, 600, 700) | fix: Three weights at most, display and body together, picked as extremes",
+    "assessment": "Cele patru greutăți Onest sunt materialul documentat al sistemului, nu patru stiluri promoționale arbitrare."
+  },
+  {
+    "file": "http://127.0.0.1:5173/",
+    "line": 1,
+    "grade": "WARN",
+    "gate": "F20",
+    "finding": "[1440px] div.button-row leaves one item alone on its last row (2 + 1) | fix: Change the count or the columns so the last row is not an orphan",
+    "assessment": "Descărcările reprezintă două perechi de fișiere native și sursa JSON. Ultimul element reprezintă o resursă distinctă; ordinea și toate destinațiile rămân disponibile."
+  },
+  {
+    "file": "http://127.0.0.1:5173/",
+    "line": 1,
+    "grade": "WARN",
+    "gate": "F25",
+    "finding": "[375px] a table opens with 2 columns off-screen (from \"Usage\") | fix: Keep the column that names the row and the one that acts on it in view: restack each row, or pin the first column",
+    "assessment": "Tabel de referință cu toate datele păstrate, regiune de scroll etichetată și accesibilă prin tastatură, prima coloană fixată. Detectorul raportează totuși coloanele aflate inițial în afara cadrului."
+  },
+  {
+    "file": ".hallmark/before.json",
+    "line": 1,
+    "grade": "WARN",
+    "gate": "kept",
+    "finding": "headings gone or reworded since the before record: ios · swiftui, android · compose, ios · swift package manager, alternative · source files | fix: Restore it, or record it in the stamp: /* Hallmark · reworded \"<old>\" to \"<new>\" · <the gate that named it> */ or dropped <item> · <the reason>",
+    "assessment": "Patru titluri schimbă doar separatorul; titlul de instalare a fost reformulat conform gate 19. Logo-ul folosește exact același SVG încorporat în HTML, disponibil fără JS. Nicio destinație sau informație de platformă eliminată."
+  },
+  {
+    "file": ".hallmark/before.json",
+    "line": 1,
+    "grade": "WARN",
+    "gate": "kept",
+    "finding": "images gone or reworded since the before record: logo.svg",
+    "assessment": "Patru titluri schimbă doar separatorul; titlul de instalare a fost reformulat conform gate 19. Logo-ul folosește exact același SVG încorporat în HTML, disponibil fără JS. Nicio destinație sau informație de platformă eliminată."
+  }
+]
